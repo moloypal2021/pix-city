@@ -16,7 +16,7 @@ html {
 
 .object-cover {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .g-32 {
@@ -82,8 +82,8 @@ header nav .social-icon {
   header nav .social-icon {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -120,13 +120,11 @@ header nav .dropdown button {
   }
 }
 
-header nav .dropdown button:focus,
-header nav .dropdown button:hover,
-header nav .dropdown button:active {
+header nav .dropdown button:focus, header nav .dropdown button:hover, header nav .dropdown button:active {
   outline: none !important;
   border: 0;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important;
+          box-shadow: none !important;
   background-color: #31b997;
 }
 
@@ -146,8 +144,7 @@ header nav .dropdown button:active {
   max-width: 758px;
 }
 
-.heros-section .main-title,
-.heros-section .sub-title {
+.heros-section .main-title, .heros-section .sub-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   color: #183555;
@@ -158,24 +155,21 @@ header nav .dropdown button:active {
 }
 
 @media (min-width: 576px) {
-  .heros-section .main-title,
-  .heros-section .sub-title {
+  .heros-section .main-title, .heros-section .sub-title {
     font-size: 32px;
     line-height: 36px;
   }
 }
 
 @media (min-width: 768px) {
-  .heros-section .main-title,
-  .heros-section .sub-title {
+  .heros-section .main-title, .heros-section .sub-title {
     font-size: 40px;
     line-height: 48px;
   }
 }
 
 @media (min-width: 992px) {
-  .heros-section .main-title,
-  .heros-section .sub-title {
+  .heros-section .main-title, .heros-section .sub-title {
     font-size: 50px;
     line-height: 63px;
   }
@@ -240,9 +234,9 @@ header nav .dropdown button:active {
 
 .heros-section .slider .slider-img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   height: 380px;
 }
 
@@ -351,6 +345,8 @@ header nav .dropdown button:active {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
+  -webkit-box-shadow: 0 25px 30px -12px rgba(238, 98, 143, 0.5);
+          box-shadow: 0 25px 30px -12px rgba(238, 98, 143, 0.5);
 }
 
 @media (min-width: 576px) {
@@ -374,32 +370,41 @@ header nav .dropdown button:active {
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 10px;
-  height: 72px;
-  background: rgba(238, 98, 143, 0.3);
-  -webkit-filter: blur(40px);
-  filter: blur(40px);
+  margin-top: 50px;
+  height: 15px;
 }
 
 .heros-section .btn-avis {
   font-family: "Lato", sans-serif;
-  margin-left: 28px;
+  padding-left: 64px;
+  padding-right: 64px;
   color: #222831;
   font-weight: 700;
   font-size: 16px;
+  margin-left: 12px;
 }
 
 @media (min-width: 576px) {
   .heros-section .btn-avis {
     font-size: 18px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
 @media (min-width: 992px) {
   .heros-section .btn-avis {
     font-size: 20px;
-    margin-left: 128px;
+    padding-left: 107px;
+    padding-right: 107px;
   }
+}
+
+.heros-section .btn-avis:hover {
+  background: #ed5485;
+  color: #ffffff;
+  -webkit-box-shadow: 0 25px 30px -12px rgba(238, 98, 143, 0.5);
+          box-shadow: 0 25px 30px -12px rgba(238, 98, 143, 0.5);
 }
 
 .photos-par-section {
@@ -425,9 +430,9 @@ header nav .dropdown button:active {
 .photos-par-section .big-img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   margin-bottom: 32px;
   height: 480px;
 }
@@ -453,9 +458,9 @@ header nav .dropdown button:active {
 .photos-par-section .small-img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   height: 200px;
 }
 
@@ -505,18 +510,8 @@ header nav .dropdown button:active {
 .autres-section .card-autres {
   width: 100%;
   height: 417px;
-  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
-    drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
-    drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
-    drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
-    drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
-    drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
-  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
-    drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
-    drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
-    drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
-    drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
-    drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
   border-radius: 5px;
   cursor: pointer;
 }
@@ -527,9 +522,9 @@ header nav .dropdown button:active {
   bottom: 0;
   background: rgba(96, 85, 85, 0.37);
   -webkit-box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
-  box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
+          box-shadow: 0px 30px 60px -15px rgba(143, 144, 188, 0.15);
   -webkit-backdrop-filter: blur(11px);
-  backdrop-filter: blur(11px);
+          backdrop-filter: blur(11px);
   font-family: "Rubik", sans-serif;
   border-radius: 5px;
   padding-top: 40px;
@@ -546,9 +541,7 @@ header nav .dropdown button:active {
   margin-bottom: 12px;
 }
 
-.autres-section .card-autres .card-captions .main-title,
-.autres-section .card-autres .card-captions .heros-section .sub-title,
-.heros-section .autres-section .card-autres .card-captions .sub-title {
+.autres-section .card-autres .card-captions .main-title, .autres-section .card-autres .card-captions .heros-section .sub-title, .heros-section .autres-section .card-autres .card-captions .sub-title {
   font-weight: 500;
   color: #ffffff;
   font-size: 1.375rem;
@@ -719,11 +712,11 @@ footer .content-area .newsletter button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #ffffff;
 }
 
@@ -746,3 +739,4 @@ footer .bottom-footer .copyright {
   font-family: "Rubik", sans-serif;
   color: #ffffff;
 }
+/*# sourceMappingURL=style.css.map */
