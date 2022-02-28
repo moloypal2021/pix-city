@@ -457,42 +457,39 @@ header nav .dropdown button:focus, header nav .dropdown button:hover, header nav
 
 .photos-par-section .small-img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  height: 80px;
+}
+
+.photos-par-section .sliderNav .carousel-cell {
+  width: 25%;
+  height: 100%;
+  margin-right: 32px;
+}
+
+.photos-par-section .sliderNav .flickity-viewport {
+  height: 80px !important;
 }
 
 @media (min-width: 576px) {
-  .photos-par-section .small-img {
-    height: 130px;
+  .photos-par-section .sliderNav .flickity-viewport {
+    height: 130px !important;
   }
 }
 
 @media (min-width: 992px) {
-  .photos-par-section .small-img {
-    height: 220px;
+  .photos-par-section .sliderNav .flickity-viewport {
+    height: 220px !important;
   }
 }
 
 @media (min-width: 1200px) {
-  .photos-par-section .small-img {
-    height: 311px;
+  .photos-par-section .sliderNav .flickity-viewport {
+    height: 311px !important;
   }
-}
-
-.photos-par-section .sliderNav {
-  list-style: none;
-  padding: 0px;
-  cursor: pointer;
-}
-
-.photos-par-section .sliderNav .active {
-  max-width: 0%;
-  padding-left: 0px;
-  padding-right: 0px;
-  opacity: 0;
 }
 
 .map-section {
