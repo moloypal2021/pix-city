@@ -380,15 +380,27 @@ header {
     width: 100%;
     object-fit: cover;
     object-position: center;
-    height: 200px;
+    height: 80px;
     @media (min-width: 576px) {
-      height: 250px;
+      height: 130px;
     }
     @media (min-width: 992px) {
       height: 220px;
     }
     @media (min-width: 1200px) {
       height: 311px;
+    }
+  }
+
+  .sliderNav {
+    list-style: none;
+    padding: 0px;
+    cursor: pointer;
+    .active {
+      max-width: 0%;
+      padding-left: 0px;
+      padding-right: 0px;
+      opacity: 0;
     }
   }
 }

@@ -461,12 +461,12 @@ header nav .dropdown button:focus, header nav .dropdown button:hover, header nav
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  height: 200px;
+  height: 80px;
 }
 
 @media (min-width: 576px) {
   .photos-par-section .small-img {
-    height: 250px;
+    height: 130px;
   }
 }
 
@@ -480,6 +480,19 @@ header nav .dropdown button:focus, header nav .dropdown button:hover, header nav
   .photos-par-section .small-img {
     height: 311px;
   }
+}
+
+.photos-par-section .sliderNav {
+  list-style: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.photos-par-section .sliderNav .active {
+  max-width: 0%;
+  padding-left: 0px;
+  padding-right: 0px;
+  opacity: 0;
 }
 
 .map-section {
