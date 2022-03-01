@@ -2,11 +2,14 @@
 $white: #ffffff;
 $dark-10: #222831;
 $dark-20: #182f43;
+$dark-30: #121127;
+$dark-40: #354252;
 $blue-10: #084279;
 $blue-20: #183555;
 $blue-30: #10375c;
 $blue-40: #103558;
 $blue-50: #0f3151;
+$blue-50: #0e3757;
 $green-10: #31b997;
 $green-20: #328090;
 $gray-10: #979797;
@@ -19,6 +22,7 @@ $light: #f1f1f1;
 $montserrat: "Montserrat", sans-serif !important;
 $rubik: "Rubik", sans-serif !important;
 $lato: "Lato", sans-serif !important;
+$poppins: "Poppins", sans-serif !important;
 
 // Font Responsive
 html {
@@ -37,6 +41,81 @@ html {
   object-fit: cover;
 }
 
+.font-montserrat {
+  font-family: $montserrat;
+}
+
+.font-rubik {
+  font-family: $rubik;
+}
+.font-poppins {
+  font-family: $poppins;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+.text-gray-10 {
+  color: $gray-10;
+}
+.text-green-10 {
+  color: $green-10;
+}
+
+.text-green-20 {
+  color: $green-20;
+}
+.text-blue-10 {
+  color: $blue-10;
+}
+.text-blue-30 {
+  color: $blue-30;
+}
+
+.text-blue-50 {
+  color: $blue-50;
+}
+
+.text-dark-30 {
+  color: $dark-30;
+}
+
+.text-dark-40 {
+  color: $dark-40;
+}
+
+.text-pink-10 {
+  color: $pink-10;
+}
+
+.text-pink-20 {
+  color: $pink-20;
+}
+
+.bg-green-10 {
+  background: $green-10;
+}
+.text-14 {
+  font-size: 14px;
+}
+.text-15 {
+  font-size: 0.9375rem;
+}
+.text-26 {
+  font-size: 1.625rem;
+}
+
+.leading-32 {
+  line-height: 2rem;
+}
+
+.opacity-72 {
+  opacity: 0.72;
+}
 .g-32 {
   gap: 16px;
 }
@@ -200,7 +279,6 @@ header {
   // Slider
   .slider {
     margin-top: 20px;
-    margin-bottom: 100px;
     .slider-img {
       object-fit: cover;
       object-position: center;
@@ -281,47 +359,25 @@ header {
       }
     }
   }
+}
+// Heros Section End
 
-  // Facilities
-  .btn-pink {
-    padding-left: 64px;
-    padding-right: 64px;
-    background: $pink-10;
-    color: $white;
-    font-family: $montserrat;
-    font-weight: 700;
-    font-size: 16px;
-    @media (min-width: 576px) {
-      font-size: 18px;
-      padding-left: 80px;
-      padding-right: 80px;
-    }
-    @media (min-width: 992px) {
-      font-size: 20px;
-      padding-left: 107px;
-      padding-right: 107px;
-    }
-    box-shadow: 0 25px 30px -12px rgba(238, 98, 143, 0.5);
+// Tab Section
+.tabSection {
+  .tabMenu {
+    margin-bottom: 60px;
   }
-  .shadow-pink {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 50px;
-    height: 15px;
-    // background: rgba(238, 98, 143, 1);
-    // filter: blur(15px);
-  }
-
-  .btn-avis {
+  .btn-tab {
     font-family: $lato;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 40px;
+    padding-right: 40px;
     color: $dark-10;
     font-weight: 700;
     font-size: 16px;
-    margin-left: 12px;
+    &:not(:last-child) {
+      margin-left: 12px;
+    }
+
     @media (min-width: 576px) {
       font-size: 18px;
       padding-left: 80px;
@@ -337,9 +393,15 @@ header {
       color: $white;
       box-shadow: 0 25px 30px -12px rgba(238, 98, 143, 0.5);
     }
+
+    &.active {
+      background: $pink-10;
+      color: $white;
+      font-family: $montserrat;
+      box-shadow: 0 25px 30px -12px rgba(238, 98, 143, 0.5);
+    }
   }
 }
-// Heros Section End
 
 // photos-par-section Start
 .photos-par-section {
@@ -408,6 +470,90 @@ header {
 // map-section Start
 .map-section {
   padding-top: 84px;
+}
+
+// Tab 2 Section Start
+.cat-title {
+  font-family: $montserrat;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 64px;
+  color: $blue-20;
+  margin-right: 36px;
+}
+
+.btn-pink-outline {
+  padding: 8px 28px;
+  border: 1px solid $pink-20;
+  font-family: $montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  color: $pink-20;
+}
+
+.tab-2-img {
+  max-width: 545px;
+  margin-bottom: 50px;
+  img {
+    width: 100%;
+    height: 365px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 22px;
+  }
+}
+
+.col-card-size {
+  @media (min-width: 1200px) {
+    width: 458px;
+  }
+}
+
+.profile-card {
+  border: 1px solid #c4c4c4;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 48px;
+  @media (min-width: 576px) {
+    margin-bottom: 128px;
+  }
+
+  .card-cover {
+    width: 100%;
+    height: 190px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .avater-img {
+    width: 166px;
+    height: 166px;
+    border-radius: 100%;
+    border: 6px solid white;
+    transform: translateY(50px);
+  }
+  .card-body {
+    padding: 60px 16px 34px 16px;
+
+    @media (min-width: 576px) {
+      padding: 60px 36px 34px 36px;
+    }
+  }
+
+  .circle-stats {
+    width: 50px;
+    height: 50px;
+    background-color: #328090;
+  }
+}
+
+.card-info {
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  padding: 20px;
+  @media (min-width: 576px) {
+    padding: 38px 48px 32px 48px;
+  }
 }
 
 // autres-section Start

@@ -15,7 +15,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
     <!-- Flickity CSS -->
@@ -162,72 +164,282 @@
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
                 </div>
-
             </div>
         </div>
 
-        <!-- Facilities -->
-        <div class="d-flex flex-wrap align-items-center">
-            <div class="position-relative m-1">
-                <a href="#" class="btn btn-pink py-4 rounded-pill">Galleria</a>
-                <div class="shadow-pink"></div>
-            </div>
-            <div class="m-1">
-                <a href="#" class="btn btn-avis py-4 rounded-pill">Avis</a>
-            </div>
-        </div>
     </section>
     <!-- Heros Section End -->
 
-    <!-- Photos Par Section Start -->
-    <section class="photos-par-section">
+    <!-- Tab Section Start -->
+    <section class="tabSection">
+        <!-- Tab Menu -->
         <div class="container px-4">
-            <h1 class="title">Photos par <span>Marion Carteaux</span></h1>
+            <ul class=" d-flex flex-wrap align-items-center tabMenu nav nav-tabs border-0" id="myTab" role="tablist">
+                <li class="position-relative m-1" role="presentation">
+                    <button class="btn btn-tab py-4 rounded-pill active" id="tabbutton-1" data-bs-toggle="tab"
+                        data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1"
+                        aria-selected="true">Galleria</button>
+                </li>
+                <li class="position-relative m-1">
+                    <button class="btn btn-tab py-4 rounded-pill" id="tabbutton-2" data-bs-toggle="tab"
+                        data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2"
+                        aria-selected="true">Avis</button>
+                </li>
+            </ul>
+        </div>
 
-            <div class="carousel carousel-main"
-                data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false }'>
-                <div class="w-100">
-                    <img src="./assets/images/img-2.png" alt="" class="big-img">
-                </div>
-                <div class="w-100">
-                    <img src="./assets/images/img-3.png" alt="" class="big-img">
-                </div>
-                <div class="w-100">
-                    <img src="./assets/images/img-4.png" alt="" class="big-img">
-                </div>
-                <div class="w-100">
-                    <img src="./assets/images/img-5.png" alt="" class="big-img">
-                </div>
-                <div class="w-100">
-                    <img src="./assets/images/img-6.png" alt="" class="big-img">
-                </div>
+        <!-- Tab Contents Start -->
+
+        <div class="tab-content" id="myTabContent">
+            <!-- Tab-1 Start -->
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tabbutton-1">
+                <!-- Photos Par Section Start -->
+                <section class="photos-par-section">
+                    <div class="container px-4">
+                        <h1 class="title">Photos par <span>Marion Carteaux</span></h1>
+
+                        <div class="carousel carousel-main"
+                            data-flickity='{ "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+                            <div class="w-100">
+                                <img src="./assets/images/img-2.png" alt="" class="big-img">
+                            </div>
+                            <div class="w-100">
+                                <img src="./assets/images/img-3.png" alt="" class="big-img">
+                            </div>
+                            <div class="w-100">
+                                <img src="./assets/images/img-4.png" alt="" class="big-img">
+                            </div>
+                            <div class="w-100">
+                                <img src="./assets/images/img-5.png" alt="" class="big-img">
+                            </div>
+                            <div class="w-100">
+                                <img src="./assets/images/img-6.png" alt="" class="big-img">
+                            </div>
+                        </div>
+
+
+                        <div class="sliderNav"
+                            data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "adaptiveHeight": true }'>
+                            <div class="carousel-cell">
+                                <img src="./assets/images/img-2.png" alt="" class="small-img">
+                            </div>
+                            <div class="carousel-cell"> <img src="./assets/images/img-3.png" alt="" class="small-img">
+                            </div>
+                            <div class="carousel-cell"> <img src="./assets/images/img-4.png" alt="" class="small-img">
+                            </div>
+                            <div class="carousel-cell"> <img src="./assets/images/img-5.png" alt="" class="small-img">
+                            </div>
+                            <div class="carousel-cell"> <img src="./assets/images/img-6.png" alt="" class="small-img">
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- Photos Par Section End -->
+
+                <!-- Map Section Start -->
+                <section class="container px-4 map-section">
+                    <img src="./assets/images/map.png" alt="" class="w-100">
+                </section>
+                <!-- Map Section End -->
             </div>
+            <!-- Tab-1 End -->
 
+            <!-- Tab 2 Start -->
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tabbutton-2">
+                <section class="container px-4">
+                    <div class="d-flex flex-wrap align-items-center" style="margin-bottom: 38px;">
+                        <h3 class="cat-title">Category</h3>
 
-            <div class="sliderNav"
-                data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "adaptiveHeight": true }'>
-                <div class="carousel-cell">
-                    <img src="./assets/images/img-2.png" alt="" class="small-img">
-                </div>
-                <div class="carousel-cell"> <img src="./assets/images/img-3.png" alt="" class="small-img">
-                </div>
-                <div class="carousel-cell"> <img src="./assets/images/img-4.png" alt="" class="small-img">
-                </div>
-                <div class="carousel-cell"> <img src="./assets/images/img-5.png" alt="" class="small-img">
-                </div>
-                <div class="carousel-cell"> <img src="./assets/images/img-6.png" alt="" class="small-img">
-                </div>
+                        <a href="#" class="btn btn-pink-outline rounded-pill">Touristic site</a>
+                    </div>
+                    <h6 class="font-montserrat font-semibold text-green-20" style="margin-bottom: 4px;">
+                        NOUVELLE-AQUITAINE</h6>
+
+                    <div class="row justify-content-between">
+                        <div class="col-lg-6 col-xl-7">
+                            <h1 class="font-montserrat font-extrabold text-blue-30" style="margin-bottom: 62px;">
+                                L'église
+                                Notre-Dame de Royan</h1>
+                            <h3 class="text-26 fw-bold font-montserrat text-dark-30 mb-3">Tu nous présentes en quelques
+                                mots
+                                cet édifice... ?</h3>
+                            <p class="font-montserrat leading-32 text-dark-30 opacity-72 " style="margin-bottom: 40px">
+                                L'église Notre
+                                Dame se situe au cœur de
+                                Royan, ville de Charente-Maritime. Elle a été classée Monument historique en 1988 et
+                                labellisée « Monument du XXe siècle » en 2004. Son édification émane d'une volonté de
+                                reconstruire une ville détruite à 85% lors des bombardements du 5 janvier 1945. Sa
+                                construction se fit en trois ans par les architectes Guillaume Gillet et Marc Hébrard en
+                                collaboration avec les ingénieurs Bernard Lafaille, René Sarger et Ou Tseng. Son
+                                inauguration se fit en 1958. Construite entièrement en béton, elle est considérée comme
+                                un chef-d'œuvre de l'architecture moderne. Elle est constituée d'une nef de 35 m de
+                                haut, de 24 piliers en V de 10 à 12 cm, d'un clocher à 56 cm ainsi qu'un orgue de 47
+                                jeux et 3600 tuyaux. Elle peut accueillir jusqu'à 2000 fidèles.</p>
+
+                            <h3 class="text-26 fw-bold font-montserrat text-dark-30 mb-3">C'est quand le meilleur moment
+                                pour s’y rendre ?</h3>
+                            <p class="font-montserrat leading-32 text-dark-30 opacity-72 " style="margin-bottom: 40px">
+                                L'église Notre Dame est visitable toute l'année. Pour ceux qui souhaitent obtenir des
+                                informations détaillées sur son histoire et son architecture, des visites guidées sont
+                                organisées par le service culture et patrimoine de la ville. Ces dernières sont sur
+                                réservation. Enfin pour les personnes voulant découvrir cet édifice sous un autre angle,
+                                une fête des lumières est organisée chaque année au mois de décembre mettant en lumière
+                                cet édifice sacré.</p>
+                            <h3 class="text-26 fw-bold font-montserrat text-dark-30 mb-3">C’est facile d’accès ? Pour se
+                                garer par exemple ?</h3>
+                            <p class="font-montserrat leading-32 text-dark-30 opacity-72 " style="margin-bottom: 40px">
+                                Ce lieu est très facile d'accès. Vous pouvez vous garer sur le parking en face de
+                                l'église ou dans les rues adjacentes. A savoir que les places de stationnement sont
+                                gratuites à Royan.</p>
+                            <h3 class="text-26 fw-bold font-montserrat text-dark-30 mb-4">La photo qu’il faut absolument
+                                prendre, ce serait laquelle ?</h3>
+                            <div class="tab-2-img">
+                                <img src="./assets/images/img-14.png" alt="" class="">
+                                <p class="font-montserrat font-semibold text-center text-dark-30 opacity-72 ">By <span
+                                        class="text-pink-10">Marion Carteaux</span></p>
+                            </div>
+                            <h3 class="text-26 fw-bold font-montserrat text-dark-30 mb-3">Tu crois qu’en 2150, il sera
+                                toujours debout ?</h3>
+                            <p class="font-montserrat leading-32 text-dark-30 opacity-72 " style="margin-bottom: 40px">
+                                S' il continue à être entretenu, il y a de fortes chances que cet édifice soit toujours
+                                présent en 2150.</p>
+                            <h3 class="text-26 fw-bold font-montserrat text-dark-30 mb-3">Si un film avait dû y être
+                                tourné, cela aurait été lequel ?</h3>
+                            <p class="font-montserrat leading-32 text-dark-30 opacity-72 " style="margin-bottom: 40px">
+                                Je dirais "Sister Act" !</p>
+                            <h3 class="text-26 fw-bold font-montserrat text-dark-30 mb-3">Y a aussi beau ailleurs en
+                                France ?</h3>
+                            <p class="font-montserrat leading-32 text-dark-30 opacity-72 " style="margin-bottom: 40px">
+                                Oui, vous avez l'église Saint-Joseph du Havre classée au patrimoine mondial de l'Unesco
+                                ainsi que l'église Notre-Dame du Raincy en Seine-Saint-Denis, qui fut la première à
+                                avoir été construite en béton armé en France.</p>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-4 col-card-size">
+                            <div class="card profile-card w-100">
+                                <div class="card-cover d-flex justify-content-center align-items-end"
+                                    style="background-image: url(./assets/images/card-cover.png);">
+                                    <img src="./assets/images/avater-2.png" alt="" class="avater-img  mx-auto">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="text-center font-poppins fw-bold text-dark-30 font-semibold">Marion
+                                        Carteaux
+                                    </h3>
+                                    <p class="text-14 text-center font-montserrat font-semibold text-green-10"
+                                        style="margin-bottom: 40px;"></p>
+                                    <div class="row justify-content-between pb-3 border-bottom"
+                                        style="margin-bottom: 20px;">
+                                        <div class="col">
+                                            <div
+                                                class="circle-stats rounded-circle d-flex justify-content-center align-items-center fw-bold font-montserrat text-white mb-3 mx-auto">
+                                                307
+                                            </div>
+                                            <p class="text-14 font-semibold font-montserrat text-gray-10 text-center">
+                                                Publications
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="circle-stats rounded-circle d-flex justify-content-center align-items-center fw-bold font-montserrat text-white mb-3 mx-auto">
+                                                799
+                                            </div>
+                                            <p class="text-14 font-semibold font-montserrat text-gray-10 text-center">
+                                                Abonnés
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="circle-stats rounded-circle d-flex justify-content-center align-items-center fw-bold font-montserrat text-white mb-3 mx-auto">
+                                                370
+                                            </div>
+                                            <p class="text-14 font-semibold font-montserrat text-gray-10 text-center">
+                                                Abonnements
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex items-center justify-content-center mb-5">
+                                        <div class="d-flex me-2 me-sm-3">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_2_1923)">
+                                                    <path
+                                                        d="M17 22H3C2.20435 22 1.44129 21.6839 0.87868 21.1213C0.316071 20.5587 0 19.7956 0 19V5C0 4.20435 0.316071 3.44129 0.87868 2.87868C1.44129 2.31607 2.20435 2 3 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V21C18 21.2652 17.8946 21.5196 17.7071 21.7071C17.5196 21.8946 17.2652 22 17 22ZM16 20V18H3C2.73478 18 2.48043 18.1054 2.29289 18.2929C2.10536 18.4804 2 18.7348 2 19C2 19.2652 2.10536 19.5196 2.29289 19.7071C2.48043 19.8946 2.73478 20 3 20H16ZM9 10C9.53043 10 10.0391 9.78929 10.4142 9.41421C10.7893 9.03914 11 8.53043 11 8C11 7.46957 10.7893 6.96086 10.4142 6.58579C10.0391 6.21071 9.53043 6 9 6C8.46957 6 7.96086 6.21071 7.58579 6.58579C7.21071 6.96086 7 7.46957 7 8C7 8.53043 7.21071 9.03914 7.58579 9.41421C7.96086 9.78929 8.46957 10 9 10ZM6 14H12C12 13.2044 11.6839 12.4413 11.1213 11.8787C10.5587 11.3161 9.79565 11 9 11C8.20435 11 7.44129 11.3161 6.87868 11.8787C6.31607 12.4413 6 13.2044 6 14Z"
+                                                        fill="#038090" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2_1923">
+                                                        <rect width="24" height="24" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            <p class="text-gray-10 font-montserrat ml-3">10180 Members</p>
+                                        </div>
+                                        <div class="d-flex ms-sm-4">
+                                            <img src="./assets/images/cards-icon.png" alt="" class="" width="24"
+                                                height="24">
+
+                                            <p class="text-gray-10 font-montserrat ml-3">2 Cards</p>
+                                        </div>
+                                    </div>
+
+                                    <a href="#"
+                                        class="btn rounded-pill text-white font-montserrat fw-bold text-15 bg-green-10 w-100 px-3 py-3"><span
+                                            class="me-3">Je
+                                            veux travailler avec “MARION”</span>
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="16" cy="16" r="16" fill="white" />
+                                            <path
+                                                d="M14.498 21.0002C14.3664 21.0009 14.2359 20.9757 14.1141 20.9259C13.9922 20.8762 13.8814 20.8029 13.788 20.7102C13.6943 20.6172 13.6199 20.5066 13.5691 20.3848C13.5183 20.2629 13.4922 20.1322 13.4922 20.0002C13.4922 19.8682 13.5183 19.7375 13.5691 19.6156C13.6199 19.4937 13.6943 19.3831 13.788 19.2902L17.098 16.0002L13.918 12.6902C13.7317 12.5028 13.6272 12.2494 13.6272 11.9852C13.6272 11.721 13.7317 11.4675 13.918 11.2802C14.0109 11.1864 14.1215 11.1121 14.2434 11.0613C14.3653 11.0105 14.496 10.9844 14.628 10.9844C14.76 10.9844 14.8907 11.0105 15.0126 11.0613C15.1344 11.1121 15.245 11.1864 15.338 11.2802L19.198 15.2802C19.3812 15.4671 19.4838 15.7184 19.4838 15.9802C19.4838 16.2419 19.3812 16.4932 19.198 16.6802L15.198 20.6802C15.1082 20.7771 15.0002 20.8553 14.88 20.9102C14.7599 20.9651 14.63 20.9957 14.498 21.0002Z"
+                                                fill="#EE628F" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="card card-info">
+                                <h2 class="font-rubik fw-bold text-blue-50 mb-3">INFOS PRATIQUES</h2>
+                                <h5 class="font-rubik fw-bold text-dark-40">Category</h5>
+                                <div class="mb-4">
+                                    <a href="#"
+                                        class="btn bg-green-10 font-montserrat fw-bold text-white rounded-pill">Touristic
+                                        site</a>
+                                </div>
+                                <h5 class="font-rubik fw-bold text-pink-20 mb-1">Site internet du lieu</h5>
+                                <a href="http://www.notre-dame-royan.com/"
+                                    class="font-rubik text-blue-10 pb-3">http://www.notre-dame-royan.com/</a>
+                                <h5 class="font-rubik fw-bold text-pink-20 mb-1">Mois d’ouverture</h5>
+                                <p class="font-rubik" style="margin-bottom: 20px;">Toute l'année</p>
+                                <h5 class="font-rubik fw-bold text-pink-20 mb-1">Durée d’une visite</h5>
+                                <p class="font-rubik" style="margin-bottom: 20px;">15 min (visite libre)</p>
+                                <h5 class="font-rubik fw-bold text-pink-20 mb-1">Accès handicapé</h5>
+                                <p class="font-rubik" style="margin-bottom: 20px;">Étage non accessible en fauteuil</p>
+                                <h5 class="font-rubik fw-bold text-pink-20 mb-1">Visite faite le</h5>
+                                <p class="font-rubik" style="margin-bottom: 32px;">07/02/2019</p>
+                                <h5 class="font-rubik fw-bold text-green-20 mb-1">Adresse :</h5>
+                                <p class="font-rubik mb-3">1 Rue de Foncillon, 17200 Royan</p>
+                                <h5 class="font-rubik fw-bold text-green-20 mb-1">Telephone :</h5>
+                                <p class="font-rubik mb-3">+33 5 46 38 33 03</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
             </div>
+            <!-- Tab 2 End -->
 
         </div>
-    </section>
-    <!-- Photos Par Section End -->
 
-    <!-- Map Section Start -->
-    <section class="container px-4 map-section">
-        <img src="./assets/images/map.png" alt="" class="w-100">
+        <!-- Tab Contents End -->
+
+
+
+
     </section>
-    <!-- Map Section End -->
+    <!-- Tab Section End -->
 
 
     <!-- Autres Cards Section Start -->
