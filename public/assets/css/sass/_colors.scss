@@ -1,0 +1,136 @@
+.text-blue-10 {
+  color: #183555;
+}
+.bg-blue-10 {
+  background: #183555;
+}
+
+.text-blue-20 {
+  color: #1e255d;
+}
+.bg-blue-20 {
+  background: #1e255d;
+}
+
+.text-blue-30 {
+  color: #10375c;
+}
+.bg-blue-30 {
+  background: #10375c;
+}
+
+.text-blue-40 {
+  color: #103558;
+}
+.bg-blue-40 {
+  background: #103558;
+}
+
+.text-blue-50 {
+  color: #0e3757;
+}
+.bg-blue-50 {
+  background: #0e3757;
+}
+
+.text-blue-60 {
+  color: #084279;
+}
+.bg-blue-60 {
+  background: #084279;
+}
+
+.text-green-10 {
+  color: #31b997;
+}
+.bg-green-10 {
+  background: #31b997;
+}
+
+.text-green-20 {
+  color: #328090;
+}
+.bg-green-20 {
+  background: #328090;
+}
+
+.text-teal-10 {
+  color: #038090;
+}
+.bg-teal-10 {
+  background: #038090;
+}
+
+.text-pink-10 {
+  color: #ed5485;
+}
+.bg-pink-10 {
+  background: #ed5485;
+}
+
+.text-pink-20 {
+  color: #ee628f;
+}
+.bg-pink-20 {
+  background: #ee628f;
+}
+
+.text-gray-10 {
+  color: #4f4f55;
+}
+.bg-gray-10 {
+  background: #4f4f55;
+}
+
+.text-gray-20 {
+  color: #637381;
+}
+.bg-gray-20 {
+  background: #637381;
+}
+
+.text-gray-30 {
+  color: #979797;
+}
+.bg-gray-30 {
+  background: #979797;
+}
+
+.text-dark-10 {
+  color: #222831;
+}
+.bg-dark-10 {
+  background: #222831;
+}
+
+.text-dark-20 {
+  color: #182f43;
+}
+.bg-dark-20 {
+  background: #182f43;
+}
+
+.text-dark-30 {
+  color: #121127;
+}
+.bg-dark-30 {
+  background: #121127;
+}
+
+.text-dark-40 {
+  color: #354252;
+}
+.bg-dark-40 {
+  background: #354252;
+}
+
+.text-md-white {
+  @include break-up(md) {
+    color: white !important;
+  }
+}
+.text-lg-white {
+  @include break-up(lg) {
+    color: white !important;
+  }
+}

@@ -1,0 +1,61 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  .navbar {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .navbar-brand .logo-color {
+    fill: currentColor;
+  }
+
+  .nav-menus {
+    @include break-up(md) {
+      margin-right: 48px;
+    }
+    @include break-up(lg) {
+      margin-right: 120px;
+    }
+    @include break-up(xl) {
+      margin-right: 100px;
+    }
+    @include break-up(xxl) {
+      margin-right: 154px;
+    }
+
+    li {
+      @include break-up(md) {
+        margin-left: 32px;
+      }
+    }
+  }
+
+  .social-icon {
+    li {
+      margin-right: 28px;
+    }
+  }
+  .divider {
+    display: none;
+    @include break-up(md) {
+      display: inline;
+      height: 24px;
+      width: 1px;
+      background: #fff;
+      margin-right: 24px;
+    }
+  }
+
+  .dropdown {
+    .btn {
+      width: 100%;
+      @include break-up(md) {
+        width: auto;
+        padding: 14px 44px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,654 @@
+.homepage {
+  transition: all 0.5s ease-in-out;
+  &.heros {
+    padding-top: 68px;
+    @include break-up(sm) {
+      padding-top: 100px;
+    }
+    @include break-up(md) {
+      padding-top: 144px;
+    }
+    @include break-up(xl) {
+      padding-top: 118px;
+    }
+    .title {
+      font-size: 22px;
+      line-height: 32px;
+      margin-bottom: 60px;
+      @include break-up(md) {
+        font-size: 30px;
+        line-height: 52px;
+      }
+
+      @include break-up(xl) {
+        font-size: 50px;
+        line-height: 70px;
+        margin-bottom: 72px;
+      }
+    }
+
+    .hero-img {
+      width: 290px;
+      @include break-up(sm) {
+        width: 400px;
+      }
+      @include break-up(md) {
+        width: 100%;
+      }
+    }
+    .blue-background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background: #103558;
+      border-bottom-left-radius: 246px;
+      width: 50%;
+      height: 350px;
+      transition: 0.5s ease-in-out;
+      @include break-up(sm) {
+        height: 470px;
+      }
+      @include break-up(md) {
+        height: 570px;
+        width: 42%;
+      }
+      @include break-up(lg) {
+        height: 650px;
+        width: 33%;
+      }
+      @include break-up(xl) {
+        height: 750px;
+        width: 32%;
+      }
+      @include break-up(xxl) {
+        height: 840px;
+        width: 30%;
+      }
+
+      @media (min-width: 1640px) {
+        width: 36%;
+      }
+    }
+  }
+
+  &.client {
+    padding-top: 90px;
+    @include break-up(md) {
+      padding-top: 120px;
+    }
+    .title {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 20px;
+      @include break-up(sm) {
+        font-size: 26px;
+        line-height: 43px;
+        margin-bottom: 34px;
+      }
+
+      @include break-up(lg) {
+        font-size: 40px;
+        line-height: 53px;
+        margin-bottom: 56px;
+      }
+    }
+
+    .carglass {
+      width: 63px;
+      @include break-up(sm) {
+        width: 75px;
+      }
+      @include break-up(lg) {
+        width: 100px;
+      }
+    }
+
+    .columbus {
+      width: 26px;
+      @include break-up(sm) {
+        width: 33px;
+      }
+      @include break-up(lg) {
+        width: 49px;
+      }
+    }
+
+    .pizzahat {
+      width: 87px;
+      @include break-up(sm) {
+        width: 93px;
+      }
+      @include break-up(lg) {
+        width: 132px;
+      }
+    }
+
+    .securetrust {
+      width: 85px;
+      @include break-up(sm) {
+        width: 105px;
+      }
+      @include break-up(lg) {
+        width: 144px;
+      }
+    }
+    .dessange {
+      width: 72px;
+      @include break-up(sm) {
+        width: 90px;
+      }
+      @include break-up(lg) {
+        width: 133px;
+      }
+    }
+
+    .mrbricolage {
+      width: 96px;
+      @include break-up(sm) {
+        width: 117px;
+      }
+      @include break-up(lg) {
+        width: 150px;
+      }
+    }
+    .laforet {
+      width: 105px;
+      @include break-up(sm) {
+        width: 95px;
+      }
+      @include break-up(lg) {
+        width: 123px;
+      }
+    }
+  }
+
+  &.nos {
+    padding-top: 90px;
+    @include break-up(md) {
+      padding-top: 130px;
+    }
+    @include break-up(lg) {
+      padding-top: 140px;
+    }
+
+    .title {
+      margin-bottom: 12px;
+      //   @include break-up(md) {
+      //     margin-bottom: 40px;
+      //   }
+      //   @include break-up(lg) {
+      //     margin-bottom: 44px;
+      //   }
+    }
+
+    .nos-box {
+      border-radius: 6px 6px 0px 0px;
+      padding: 20px 6px;
+      padding-bottom: 0px;
+      margin-bottom: 4px;
+      overflow: hidden;
+      @include break-up(md) {
+        padding: 30px 20px;
+        padding-bottom: 0px;
+      }
+      @include break-up(lg) {
+        padding: 40px 30px;
+        padding-bottom: 0px;
+      }
+
+      .nos-icon {
+        min-width: 34px;
+        width: 34px;
+        margin-right: 15px;
+        @include break-up(lg) {
+          width: 42px;
+          margin-right: 23px;
+        }
+      }
+
+      .nos-title {
+        font-size: 12px;
+        color: #4f4f55;
+        @include break-up(md) {
+          font-size: 17px;
+        }
+        @include break-up(lg) {
+          font-size: 18px;
+        }
+      }
+
+      .nos-arrow {
+        width: 22px;
+        min-width: 22px;
+        margin-left: auto;
+        transform: rotate(180deg);
+        transition: all 0.2s ease-in-out;
+        @include break-up(lg) {
+          width: 32px;
+        }
+      }
+
+      .nos-details {
+        max-width: 350px;
+        margin-left: 36px;
+        @include break-up(md) {
+          margin-left: 32px;
+        }
+        @include break-up(lg) {
+          margin-left: 48px;
+        }
+        @include break-up(xl) {
+          margin-left: 66px;
+        }
+      }
+
+      .nos-paragraph {
+        color: #798691;
+      }
+
+      .social-icon {
+        max-height: 28px;
+        margin-right: 20px;
+        @include break-up(sm) {
+          max-height: 36px;
+          margin-right: 24px;
+        }
+        @include break-up(lg) {
+          max-height: 58px;
+          margin-right: 28px;
+        }
+      }
+
+      .nos-border {
+        margin-top: 20px;
+        margin-left: 36px;
+        max-width: 450px;
+        margin-left: 48px;
+        @include break-up(md) {
+          margin-left: 48px;
+          margin-top: 30px;
+          max-width: 200px;
+        }
+        @include break-up(lg) {
+          margin-left: 64px;
+          margin-top: 40px;
+          max-width: 280px;
+        }
+        @include break-up(xl) {
+          margin-left: 66px;
+          max-width: 450px;
+        }
+        width: 100%;
+        height: 2px;
+        background: #ebe9e9;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        &:before {
+          content: "";
+          width: 0%;
+          height: 2px;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #ebe9e9;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+
+      &.active {
+        transition: all 0.5s ease-in-out;
+        background-color: #fff;
+        box-shadow: 0px 32px 64px rgba(57, 20, 0, 0.04);
+        .nos-arrow {
+          transform: rotate(0deg);
+        }
+        .nos-border {
+          background: rgba(237, 84, 133, 0.2);
+          &:before {
+            width: 20%;
+            background: rgba(237, 84, 133, 1);
+          }
+        }
+      }
+    }
+  }
+
+  &.feature {
+    padding-top: 90px;
+    @include break-up(sm) {
+      padding-top: 135px;
+    }
+    @include break-up(lg) {
+      padding-top: 140px;
+    }
+
+    .check-icon {
+      min-width: 19px;
+      width: 19px;
+      margin-right: 10px;
+      @include break-up(lg) {
+        min-width: 24px;
+        width: 24px;
+        margin-right: 20px;
+      }
+    }
+
+    .title-2 {
+      font-size: 12px;
+      max-width: 714px;
+      margin-top: 24px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 60px;
+      @include break-up(md) {
+        font-size: 18px;
+        margin-top: 40px;
+        margin-bottom: 70px;
+      }
+      @include break-up(lg) {
+        font-size: 26px;
+        margin-top: 70px;
+      }
+    }
+  }
+
+  &.cta {
+    margin-top: 90px;
+    @include break-up(sm) {
+      margin-top: 130px;
+    }
+    @include break-up(lg) {
+      margin-top: 140px;
+    }
+    .card {
+      border-radius: 16px;
+      background: #103558;
+      position: relative;
+      box-shadow: 0px 20px 200px rgba(8, 56, 104, 0.08);
+      padding-top: 44px;
+      padding-bottom: 44px;
+      max-width: 954px;
+      .bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+      }
+
+      .icon-1 {
+        min-width: 86px;
+        width: 86px;
+        @include break-up(sm) {
+          min-width: 110px;
+          width: 110px;
+        }
+        @include break-up(md) {
+          min-width: 178px;
+          width: 178px;
+        }
+      }
+
+      .icon-2 {
+        min-width: 106px;
+        width: 106px;
+        @include break-up(sm) {
+          min-width: 136px;
+          width: 136px;
+        }
+        @include break-up(md) {
+          min-width: 222px;
+          width: 222px;
+        }
+      }
+    }
+  }
+
+  &.audit {
+    margin-top: 90px;
+    @include break-up(sm) {
+      margin-top: 95px;
+    }
+    @include break-up(lg) {
+      margin-top: 150px;
+    }
+
+    .pic-label {
+      background: #328090;
+      width: 130px;
+      height: 130px;
+      margin-top: -80px;
+      position: relative;
+      z-index: 1;
+      @include break-up(sm) {
+        width: 160px;
+        height: 160px;
+      }
+      @include break-up(lg) {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    .title {
+      font-size: 20px;
+      line-height: 32px;
+      @include break-up(sm) {
+        font-size: 26px;
+        line-height: 38px;
+      }
+      @include break-up(lg) {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+
+    .paragraph {
+      letter-spacing: 0.03em;
+      font-size: 14px;
+      line-height: 23px;
+      @include break-up(sm) {
+        font-size: 16px;
+      }
+    }
+
+    .check-icon {
+      margin-right: 10px;
+      min-width: 16px;
+      width: 16px;
+      margin-top: 6px;
+      @include break-up(lg) {
+        margin-right: 18px;
+        min-width: 32px;
+        width: 32px;
+      }
+    }
+  }
+
+  &.gallary {
+    background-color: #f8f8f8;
+    margin-top: 50px;
+    padding-top: 52px;
+    padding-bottom: 54px;
+    @include break-up(md) {
+      margin-top: 38px;
+      padding-top: 80px;
+      padding-bottom: 100px;
+    }
+    @include break-up(lg) {
+      margin-top: 104px;
+    }
+    .title {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 12px;
+      @include break-up(sm) {
+        font-size: 26px;
+        line-height: 38px;
+      }
+      @include break-up(lg) {
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+
+    .nav-tabs {
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: 45px;
+      @include break-up(lg) {
+        margin-bottom: 56px;
+      }
+
+      .nav-link {
+        padding: 10px 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        color: #5f5f5f;
+        @include break-up(lg) {
+          font-size: 16px;
+        }
+
+        &.active,
+        &:hover {
+          border: 1px solid rgba(3, 128, 144, 0.17);
+          background-color: rgba(3, 128, 144, 0.17);
+          font-weight: 700;
+          color: #038090;
+        }
+      }
+    }
+
+    .tab-carousel {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      @include break-up(sm) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .flickity-page-dots {
+        bottom: -56px;
+      }
+      .flickity-page-dots .dot {
+        width: 12px;
+        height: 12px;
+        background-color: #39425d;
+      }
+      .flickity-prev-next-button {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* position outside */
+      .flickity-prev-next-button.previous {
+        left: -40px;
+      }
+      .flickity-prev-next-button.next {
+        right: -40px;
+      }
+
+      /* no circle */
+      .flickity-button {
+        width: 32px;
+        height: 32px;
+        .flickity-button-icon {
+          fill: white;
+          &:hover {
+            fill: white;
+          }
+        }
+        background: #038090;
+        &:disabled {
+          background: rgba(108, 108, 108, 0.4);
+          .flickity-button-icon {
+            fill: #000;
+          }
+        }
+        &:hover {
+          background: #038090;
+        }
+        @include break-up(md) {
+          display: none;
+        }
+      }
+      .carousel-cell {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        filter: drop-shadow(0px 20px 50px rgba(15, 24, 44, 0.01));
+        @include break-up(sm) {
+          width: 236px;
+        }
+        @include break-up(md) {
+          width: 200px;
+        }
+        @include break-up(lg) {
+          width: 280px;
+        }
+        @include break-up(xl) {
+          width: 310px;
+        }
+        @include break-up(xxl) {
+          width: 390px;
+        }
+
+        img {
+          height: 328px;
+          border-radius: 16px;
+          @include break-up(md) {
+            height: 330px;
+          }
+          @include break-up(lg) {
+            height: 400px;
+          }
+          @include break-up(xl) {
+            height: 440px;
+          }
+          @include break-up(xxl) {
+            height: 500px;
+          }
+        }
+
+        .content {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+          padding: 24px 16px !important;
+          @include break-up(xl) {
+            padding: 40px 32px !important;
+          }
+          .title {
+            font-size: 14px;
+            line-height: 20px;
+            @include break-up(lg) {
+              font-size: 18px;
+              line-height: 24px;
+            }
+          }
+          .paragraph {
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: -0.03em;
+            margin-bottom: 12px;
+            @include break-up(lg) {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
