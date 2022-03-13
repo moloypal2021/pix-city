@@ -28,6 +28,9 @@
 
     li {
       @include break-up(md) {
+        margin-left: 16px;
+      }
+      @include break-up(lg) {
         margin-left: 32px;
       }
     }

@@ -1,0 +1,213 @@
+.communitypage {
+  &.heros {
+    padding-top: 98px;
+    @include break-up(sm) {
+      padding-top: 100px;
+    }
+    @include break-up(md) {
+      padding-top: 144px;
+    }
+    @include break-up(xl) {
+      padding-top: 184px;
+    }
+
+    .blue-background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background: #103558;
+      width: 50%;
+      height: 310px;
+      transition: 0.5s ease-in-out;
+      @media (min-width: 400px) {
+        height: 380px;
+      }
+      @include break-up(sm) {
+        height: 470px;
+      }
+      @include break-up(md) {
+        height: 630px;
+        width: 42%;
+      }
+      @include break-up(lg) {
+        height: 580px;
+        width: 33%;
+      }
+      @include break-up(xl) {
+        height: 850px;
+        width: 32%;
+      }
+      @include break-up(xxl) {
+        height: 840px;
+        width: 30%;
+      }
+
+      @media (min-width: 1640px) {
+        width: 38%;
+      }
+    }
+
+    .hero-img {
+      width: 280px;
+      margin-bottom: 24px;
+      @media (min-width: 400px) {
+        width: 380px;
+      }
+      @include break-up(sm) {
+        width: 100%;
+      }
+      @include break-up(lg) {
+        margin-bottom: 40px;
+      }
+      @include break-up(lg) {
+        width: 125%;
+        margin-bottom: 0px;
+        margin-left: -120px;
+      }
+      @include break-up(xl) {
+        width: 135%;
+        margin-left: -150px;
+      }
+      @include break-up(xxl) {
+        width: 140%;
+        margin-left: -200px;
+      }
+    }
+
+    .title {
+      font-size: 22px;
+      line-height: 32px;
+      margin-bottom: 60px;
+      @include break-up(md) {
+        font-size: 30px;
+        line-height: 52px;
+        margin-bottom: 72px;
+      }
+
+      @include break-up(xl) {
+        font-size: 50px;
+        line-height: 70px;
+      }
+    }
+  }
+
+  &.client {
+    padding-top: 130px;
+
+    .title {
+      max-width: 745px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 30px;
+      @include break-up(sm) {
+        font-size: 26px;
+        line-height: 43px;
+        margin-bottom: 34px;
+      }
+
+      @include break-up(lg) {
+        font-size: 40px;
+        line-height: 53px;
+        margin-bottom: 56px;
+      }
+    }
+
+    .columbus {
+      width: 26px;
+      @include break-up(sm) {
+        width: 33px;
+      }
+      @include break-up(lg) {
+        width: 49px;
+      }
+    }
+
+    .pizzahat {
+      width: 87px;
+      @include break-up(sm) {
+        width: 93px;
+      }
+      @include break-up(lg) {
+        width: 132px;
+      }
+    }
+
+    .mrbricolage {
+      width: 96px;
+      @include break-up(sm) {
+        width: 117px;
+      }
+      @include break-up(lg) {
+        width: 150px;
+      }
+    }
+  }
+
+  &.cta {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    @include break-up(sm) {
+      padding-top: 100px;
+    }
+    @include break-up(md) {
+      padding-top: 130px;
+    }
+    @include break-up(xl) {
+      padding-top: 158px;
+    }
+    .title {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 32px;
+      @include break-up(sm) {
+        font-size: 26px;
+        line-height: 43px;
+        margin-bottom: 40px;
+      }
+
+      @include break-up(lg) {
+        font-size: 40px;
+        line-height: 53px;
+      }
+    }
+
+    .t-title-box {
+      .border-bar {
+        width: 38px;
+        height: 3px;
+        background-color: #ee628f;
+      }
+      @include break-up(md) {
+        width: 182px;
+        min-width: 182px;
+        margin-right: 74px;
+      }
+
+      .t-title {
+        font-size: 14px;
+        @include break-up(md) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .t-paragraph {
+      font-size: 14px;
+      color: #5f5f5f;
+      @include break-up(md) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &.howitworks {
+    padding-top: 108px;
+    padding-top: 80px;
+    background-image: url("../images/how-it-works-bg-1.png");
+    object-fit: cover;
+    object-position: left;
+  }
+}

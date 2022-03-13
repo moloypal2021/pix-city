@@ -366,6 +366,12 @@
 
 @media (min-width: 768px) {
   .header .nav-menus li {
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header .nav-menus li {
     margin-left: 32px;
   }
 }
@@ -2044,6 +2050,318 @@
   .cardpage .card-info {
     padding: 38px 48px 32px 48px;
   }
+}
+
+.communitypage.heros {
+  padding-top: 98px;
+}
+
+@media (min-width: 576px) {
+  .communitypage.heros {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .communitypage.heros {
+    padding-top: 144px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .communitypage.heros {
+    padding-top: 184px;
+  }
+}
+
+.communitypage.heros .blue-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: #103558;
+  width: 50%;
+  height: 310px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+@media (min-width: 400px) {
+  .communitypage.heros .blue-background {
+    height: 380px;
+  }
+}
+
+@media (min-width: 576px) {
+  .communitypage.heros .blue-background {
+    height: 470px;
+  }
+}
+
+@media (min-width: 768px) {
+  .communitypage.heros .blue-background {
+    height: 630px;
+    width: 42%;
+  }
+}
+
+@media (min-width: 992px) {
+  .communitypage.heros .blue-background {
+    height: 580px;
+    width: 33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .communitypage.heros .blue-background {
+    height: 850px;
+    width: 32%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .communitypage.heros .blue-background {
+    height: 840px;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1640px) {
+  .communitypage.heros .blue-background {
+    width: 38%;
+  }
+}
+
+.communitypage.heros .hero-img {
+  width: 280px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 400px) {
+  .communitypage.heros .hero-img {
+    width: 380px;
+  }
+}
+
+@media (min-width: 576px) {
+  .communitypage.heros .hero-img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .communitypage.heros .hero-img {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .communitypage.heros .hero-img {
+    width: 125%;
+    margin-bottom: 0px;
+    margin-left: -120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .communitypage.heros .hero-img {
+    width: 135%;
+    margin-left: -150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .communitypage.heros .hero-img {
+    width: 140%;
+    margin-left: -200px;
+  }
+}
+
+.communitypage.heros .title {
+  font-size: 22px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .communitypage.heros .title {
+    font-size: 30px;
+    line-height: 52px;
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .communitypage.heros .title {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+
+.communitypage.client {
+  padding-top: 130px;
+}
+
+.communitypage.client .title {
+  max-width: 745px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 576px) {
+  .communitypage.client .title {
+    font-size: 26px;
+    line-height: 43px;
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: 992px) {
+  .communitypage.client .title {
+    font-size: 40px;
+    line-height: 53px;
+    margin-bottom: 56px;
+  }
+}
+
+.communitypage.client .columbus {
+  width: 26px;
+}
+
+@media (min-width: 576px) {
+  .communitypage.client .columbus {
+    width: 33px;
+  }
+}
+
+@media (min-width: 992px) {
+  .communitypage.client .columbus {
+    width: 49px;
+  }
+}
+
+.communitypage.client .pizzahat {
+  width: 87px;
+}
+
+@media (min-width: 576px) {
+  .communitypage.client .pizzahat {
+    width: 93px;
+  }
+}
+
+@media (min-width: 992px) {
+  .communitypage.client .pizzahat {
+    width: 132px;
+  }
+}
+
+.communitypage.client .mrbricolage {
+  width: 96px;
+}
+
+@media (min-width: 576px) {
+  .communitypage.client .mrbricolage {
+    width: 117px;
+  }
+}
+
+@media (min-width: 992px) {
+  .communitypage.client .mrbricolage {
+    width: 150px;
+  }
+}
+
+.communitypage.cta {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 576px) {
+  .communitypage.cta {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .communitypage.cta {
+    padding-top: 130px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .communitypage.cta {
+    padding-top: 158px;
+  }
+}
+
+.communitypage.cta .title {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 576px) {
+  .communitypage.cta .title {
+    font-size: 26px;
+    line-height: 43px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .communitypage.cta .title {
+    font-size: 40px;
+    line-height: 53px;
+  }
+}
+
+.communitypage.cta .t-title-box .border-bar {
+  width: 38px;
+  height: 3px;
+  background-color: #ee628f;
+}
+
+@media (min-width: 768px) {
+  .communitypage.cta .t-title-box {
+    width: 182px;
+    min-width: 182px;
+    margin-right: 74px;
+  }
+}
+
+.communitypage.cta .t-title-box .t-title {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .communitypage.cta .t-title-box .t-title {
+    font-size: 16px;
+  }
+}
+
+.communitypage.cta .t-paragraph {
+  font-size: 14px;
+  color: #5f5f5f;
+}
+
+@media (min-width: 768px) {
+  .communitypage.cta .t-paragraph {
+    font-size: 18px;
+  }
+}
+
+.communitypage.howitworks {
+  padding-top: 108px;
+  padding-top: 80px;
+  background-image: url("../images/how-it-works-bg-1.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 
 html {
