@@ -124,6 +124,20 @@
   background: #354252;
 }
 
+.text-dark-50 {
+  color: #0f2137;
+}
+.bg-dark-50 {
+  background: #0f2137;
+}
+
+.text-dark-60 {
+  color: #4b4a62;
+}
+.bg-dark-60 {
+  background: #4b4a62;
+}
+
 .text-md-white {
   @include break-up(md) {
     color: white !important;

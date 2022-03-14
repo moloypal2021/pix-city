@@ -48,6 +48,10 @@
   font-family: "Poppins", sans-serif !important;
 }
 
+.font-lexend {
+  font-family: "Lexend Deca", sans-serif !important;
+}
+
 // Font Weight
 .fw-light {
   font-weight: 300 !important;
@@ -99,6 +103,13 @@
   }
 }
 
+.-mx-lg-24px {
+  @include break-up(lg) {
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
 // Max Width
 .max-w-120px {
   max-width: 120px;
@@ -120,4 +131,8 @@
   @include break-up(xl) {
     white-space: nowrap;
   }
+}
+
+.opacity-65 {
+  opacity: 0.65;
 }
