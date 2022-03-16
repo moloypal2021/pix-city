@@ -1,5 +1,21 @@
 .communitypage {
   &.heros {
+    .header {
+      .navbar {
+        .container {
+          justify-content: start;
+        }
+      }
+      .navbar-toggler {
+        position: static;
+        margin-right: 8px;
+      }
+
+      .navbar-brand {
+        position: static;
+      }
+    }
+
     padding-top: 98px;
     @include break-up(sm) {
       padding-top: 100px;
@@ -139,7 +155,7 @@
         filter: drop-shadow(0px 20px 58px rgba(0, 0, 0, 0.13));
         width: 33.3333%;
         @include break-up(sm) {
-          width: 138px;
+          width: 140px;
         }
         @include break-up(md) {
           width: 238px;
@@ -160,7 +176,7 @@
       //   height: 560px;
 
       .carousel-cell {
-        width: 33.3333333%;
+        width: 33.2%;
         padding-top: 18%;
         padding-bottom: 10%;
         margin-left: 0.6%;
@@ -186,8 +202,8 @@
         @include break-up(xl) {
           margin-left: 37px;
           margin-right: 37px;
-          padding-top: 10%;
-          padding-bottom: 10%;
+          padding-top: 11%;
+          padding-bottom: 11%;
         }
         @include break-up(xxl) {
           margin-left: 42px;
@@ -219,6 +235,13 @@
             margin-right: auto;
             filter: none;
           }
+        }
+      }
+
+      .flickity-page-dots {
+        display: none;
+        @include break-up(lg) {
+          display: inline;
         }
       }
     }

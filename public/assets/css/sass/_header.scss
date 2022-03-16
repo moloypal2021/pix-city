@@ -4,17 +4,50 @@
   left: 0;
   right: 0;
   z-index: 50;
+
+  .toggled {
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+    @include break-up(md) {
+      background-color: transparent;
+    }
+  }
+
   .navbar {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    .container {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      position: relative;
+    }
   }
   .navbar-brand .logo-color {
     fill: currentColor;
   }
 
+  .navbar-toggler {
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    z-index: 2;
+  }
+  .navbar-brand {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+    z-index: 1;
+    @include break-up(md) {
+      position: static;
+    }
+  }
+
   .nav-menus {
+    margin-top: 32px;
     @include break-up(md) {
       margin-right: 48px;
+      margin-top: 0px;
     }
     @include break-up(lg) {
       margin-right: 120px;

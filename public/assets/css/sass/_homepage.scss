@@ -1,6 +1,21 @@
 .homepage {
   transition: all 0.5s ease-in-out;
   &.heros {
+    .header {
+      .navbar {
+        .container {
+          justify-content: start;
+        }
+      }
+      .navbar-toggler {
+        position: static;
+        margin-right: 8px;
+      }
+
+      .navbar-brand {
+        position: static;
+      }
+    }
     padding-top: 68px;
     @include break-up(sm) {
       padding-top: 100px;
@@ -416,18 +431,37 @@
 
     .pic-label {
       background: #328090;
-      width: 130px;
+      width: 132px;
       height: 130px;
       margin-top: -80px;
       position: relative;
       z-index: 1;
-      @include break-up(sm) {
+      @include break-up(md) {
         width: 160px;
         height: 160px;
       }
       @include break-up(lg) {
         width: 200px;
         height: 200px;
+      }
+      .text-title {
+        font-size: 14px;
+        @include break-up(md) {
+          font-size: 18px;
+        }
+        @include break-up(lg) {
+          font-size: 22px;
+        }
+      }
+
+      .text-sub {
+        font-size: 12px;
+        @include break-up(md) {
+          font-size: 16px;
+        }
+        @include break-up(lg) {
+          font-size: 20px;
+        }
       }
     }
 

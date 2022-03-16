@@ -36,8 +36,18 @@
     <section class="homepage heros">
         <!-- Header Section Start -->
         <header class="header">
-            <nav class="navbar navbar-expand-md navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light" id="navbar">
                 <div class="container">
+                    <!-- Hamburger -->
+                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z" fill="#328090" />
+                        </svg>
+                    </button>
+
+                    <!-- Logo -->
                     <a class="navbar-brand" href="#">
                         <svg class="" fill="#103558" xmlns="http://www.w3.org/2000/svg" width="93" height="31.428"
                             viewBox="0 0 93 31.428">
@@ -48,16 +58,6 @@
                         </svg>
                     </a>
 
-                    <!-- Hamburger -->
-                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <svg class="" width="24" height="24" viewBox="0 0 16 16" fill="#fff"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.75 4.25H13.25M2.75 12.25H13.25H2.75ZM2.75 8.25H13.25H2.75Z" stroke="#fff"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -686,9 +686,15 @@
                     <img src="./assets/images/pic.png" alt="" class="w-100">
                     <div class="pic-label rounded-circle d-flex justify-content-center align-items-center px-1">
                         <div>
-                            <h4 class="text-22px text-white fw-extrabold text-center font-montserrat">“Marie Fouris</h4>
-                            <p class="text-20px text-white fw-bold text-center font-montserrat mb-0">Co-fondatrice
-                                de Pix.city“</p>
+
+                            <h4
+                                class="text-title text-white fw-extrabold text-center font-montserrat d-flex justify-content-center align-items-end">
+                                <span class="font-rubik mb-2">“</span> <span>Marie
+                                    Fouris</span>
+                            </h4>
+                            <p class="text-sub text-white fw-bold text-center font-montserrat mb-0">Co-fondatrice
+                                de Pix.city <span
+                                    class="text-22px text-white fw-extrabold text-center font-rubik">“</span></p>
                         </div>
                     </div>
                 </div>
@@ -1168,6 +1174,17 @@
             }, 200);
 
         });
+
+
+        var myCollapsible = document.getElementById('navbarSupportedContent')
+        myCollapsible.addEventListener('hidden.bs.collapse', function () {
+            console.log(document.getElementById('navbar').classList.remove('toggled'));
+
+        })
+        myCollapsible.addEventListener('shown.bs.collapse', function () {
+            console.log(document.getElementById('navbar').classList.add('toggled'));
+
+        })
 
     </script>
 </body>

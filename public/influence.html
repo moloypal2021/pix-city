@@ -35,8 +35,19 @@
 
     <!-- Header Section Start -->
     <header class="influence header">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light" id="navbar">
             <div class="container">
+
+                <!-- Hamburger -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z" fill="#328090" />
+                    </svg>
+                </button>
+
+                <!-- Logo -->
                 <a class="navbar-brand" href="#">
                     <svg class="" fill="#103558" xmlns="http://www.w3.org/2000/svg" width="93" height="31.428"
                         viewBox="0 0 93 31.428">
@@ -47,16 +58,8 @@
                     </svg>
                 </a>
 
-                <!-- Hamburger -->
-                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <svg class="" width="24" height="24" viewBox="0 0 16 16" fill="#0e3757"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.75 4.25H13.25M2.75 12.25H13.25H2.75ZM2.75 8.25H13.25H2.75Z" stroke="#0e3757"
-                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
+
+
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -691,6 +694,18 @@
 
     <!-- Flickity JavaScript -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+        var myCollapsible = document.getElementById('navbarSupportedContent')
+        myCollapsible.addEventListener('hidden.bs.collapse', function () {
+            console.log(document.getElementById('navbar').classList.remove('toggled'));
+
+        })
+        myCollapsible.addEventListener('shown.bs.collapse', function () {
+            console.log(document.getElementById('navbar').classList.add('toggled'));
+
+        })
+    </script>
 
 </body>
 
