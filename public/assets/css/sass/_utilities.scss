@@ -86,9 +86,17 @@
 .mb-44px {
   margin-bottom: 44px;
 }
-
+.mb-70px {
+  margin-bottom: 70px;
+}
 .mb-72px {
   margin-bottom: 72px;
+}
+
+.mb-md-84px {
+  @include break-up(md) {
+    margin-bottom: 84px;
+  }
 }
 .mt-140px {
   margin-top: 140px;
