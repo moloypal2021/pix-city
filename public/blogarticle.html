@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Rubik, latto and Montserrat Font -->
+    <link rel="stylesheet" href="./assets/fonts/Lato/lato.css">
+    <link rel="stylesheet" href="./assets/fonts/Montserrat/montserrat.css">
+    <link rel="stylesheet" href="./assets/fonts/Rubik/rubik.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Header Section Start -->
+    <header class="blogarticlepage header">
+        <nav class="navbar navbar-expand-md navbar-light" id="navbar">
+            <div class="container">
+                <!-- Hamburger -->
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z" fill="#328090" />
+                    </svg>
+                </button>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <svg class="" fill="#103558" xmlns="http://www.w3.org/2000/svg" width="93" height="31.428"
+                        viewBox="0 0 93 31.428">
+                        <path
+                            d="M24.591 4.079c-.027-1.454-.8-2.793-2.284-2.793-1.389 0-1.779 1.373-1.728 2.863.086 2.554 4.058 2.488 4.012-.07ZM14.506 1.467A10.454 10.454 0 0 0 7.527.078a10.231 10.231 0 0 0-4.163 1.273A7.983 7.983 0 0 0 .687 3.527a3.059 3.059 0 0 0-.679 1.678q.052.312.567.266a2.387 2.387 0 0 0 1.08-.417c.374-.247.8-.517 1.277-.81a9.762 9.762 0 0 1 4.317-1.4 6.2 6.2 0 0 1 3.831.664 3.781 3.781 0 0 1 1.755 2.758q.486 2.928-.764 4.313a3.166 3.166 0 0 1-1.25.864 12.918 12.918 0 0 1-1.323.424c-.374.1-.679.189-.93.282-.629.143-1.181.224-1.655.289l.023-.5q.133-2.755.081-4.483a15.276 15.276 0 0 0-.212-1.975c-.123-.741-.3-1.1-.529-1.076a1.138 1.138 0 0 0-.6.228Q3.755 6.021 3.014 12.9a26.3 26.3 0 0 0 .023 6.929 13.029 13.029 0 0 0 .467 2.022.861.861 0 0 0 .964.648q3.293-.3 3.013-1.975l-.6-5.347c2.623-.729 5.567-.918 7.809-2.65.031-.023.058-.046.085-.069a6.292 6.292 0 0 0 1.355-1.425 4.576 4.576 0 0 0 .567-.957 6.708 6.708 0 0 0 .633-4.232 6.313 6.313 0 0 0-2.824-4.377ZM32.681 15.344a92.333 92.333 0 0 0 2.859-3.7 1.912 1.912 0 0 0-.174-2.527s-1.466-1.358-4.5 3.653c0 0 0 .008-.008.008-.934-1.335-1.8-2.527-2.458-3.326a2.149 2.149 0 0 0-1.933-1c-2.554.17-.4 4.209.332 5.378a23.7 23.7 0 0 1 1.443 2.346c-2.361 3.214-4.653 3.4-5.189 3.233-.621-.193-1.092-.91-.729-3.9l.054-.3c.1-.586.174-1.115.231-1.593v-.031a12.981 12.981 0 0 0 .147-2.427 3.883 3.883 0 0 0-.5-1.7q-.573-1.123-1.408-1.123-.758 0-1.354 1.073c-.023.042-.05.089-.073.135-1.508 2.65-1.682 7.326-1.651 9.494a3.451 3.451 0 0 0 2.878 3.642 7.824 7.824 0 0 0 3.036-.1 7.418 7.418 0 0 0 2.218-.81s0 0 .008 0a17.156 17.156 0 0 0 3.835-3.16c1.451 2.33 3.3 4.278 5.224 3.669a5.374 5.374 0 0 0 .505-.189 2.836 2.836 0 0 0 1.03-.679 1.855 1.855 0 0 0-.367-2.589 31.937 31.937 0 0 1-3.456-3.477ZM65.354 4.079c-.027-1.454-.8-2.793-2.284-2.793-1.389 0-1.779 1.373-1.728 2.863.088 2.554 4.058 2.488 4.012-.07ZM40.594 12.786c-1.007 0-1.485.729-1.655 1.7a6 6 0 0 0-.073 1.165 1.918 1.918 0 0 0 .042.309 1.749 1.749 0 0 0 1.046 1.366 1.984 1.984 0 0 0 2.924-1.744c-.028-1.453-.803-2.796-2.284-2.796Z" />
+                        <path
+                            d="M87.973 23.5c.054-.239.1-.475.147-.71.471-2.658 1.007-9.039 1.15-10.123a3.684 3.684 0 0 0-.718-3.248c-.9-.876-1.91-1.79-2.647-.417-1.042 1.941-.019 5.224-1.636 7.735-3.383 5.262-3.866 1.582-3.777.521.147-1.771.683-4.34.891-5.887.336-2.477-1.142-2.905-1.863-2.716s-1.254 1.269-1.659 2.45a34.463 34.463 0 0 0-.988 4.718 6.2 6.2 0 0 0-.293.424c-1.593 2.531-4.672 4.9-4.957 1.466 0-.212-.008-.413-.023-.6a29.865 29.865 0 0 1 .394-5.255 10.763 10.763 0 0 0 3.048-.421c.806-.293.968-1.161.968-1.944 0-.934-1.308-1.142-3.264-1.065.17-.613.355-1.238.579-1.883.4-1.146-.914-2.261-2.114-2.064a1.029 1.029 0 0 0-.228.073 1.718 1.718 0 0 0-1.146.957 12.278 12.278 0 0 0-1.2 3.333c-.239.042-.467.081-.66.12a2.4 2.4 0 0 0-1.69 1.6c-.181.81.312 1.231 1.755 1.246h.023a29.236 29.236 0 0 0-.394 4.556c-.694 1.188-2.928 3.04-3.866 3.04a1.223 1.223 0 0 1-.737-.231 1.076 1.076 0 0 1-.367-.833 17.716 17.716 0 0 1 .427-3.129 20.149 20.149 0 0 0 .386-4.055 3.884 3.884 0 0 0-.5-1.7q-.573-1.123-1.408-1.123-1.412 0-2.253 3.68a29.45 29.45 0 0 0-.733 5.671c-4.066 3.445-7.2 1.065-7.137-4.221.062-5.814 2.92-8.468 4.433-9.39s2.855-.853 2.886-1.323-.231-2.261-3.356-1.96-8.179 4.383-8.734 11.991 3.785 9.884 6.906 10a7.143 7.143 0 0 0 5.582-2.261 3.892 3.892 0 0 0 2.049 1.968 2.529 2.529 0 0 0 1.065.224 6.494 6.494 0 0 0 4.572-1.883 15.8 15.8 0 0 0 1.1-1.335c.231 1.991 2.708 5.76 8.333.745.127-.127.255-.251.374-.378.475 1.887 3.287 4.417 8.067.667l-.147 1.385a24.516 24.516 0 0 1-.228 1.481c-.583.012-1.181.039-1.8.077-5.88.366-7.847 3.187-7.18 5.347s3.422 3.329 6.879 2.122a8.656 8.656 0 0 0 4.853-4.95c3.569.027 5.872.417 5.864-.181-.001-1.254-1.984-2.033-5.028-2.311Zm-3.106-3.044c.031-.023.023-.015 0 0Zm-5.887 8.052c-.378-.2-1.431-1.906 4.271-2.38.12-.012.239-.019.355-.027-1.636 3.792-4.325 2.561-4.626 2.407Z" />
+                    </svg>
+                </a>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <!-- Menus -->
+                    <ul class="navbar-nav nav-menus ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-blue-60 font-rubik fw-medium" aria-current="page"
+                                href="#">Connexion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-blue-60 font-rubik fw-medium" href="#">Devenir City
+                                Maker</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icon -->
+                    <ul class="navbar-nav flex-row social-icon mb-3 mb-md-0">
+                        <li><a href="#">
+                                <svg class="fill-current text-blue-50" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.402 21v-6.966h2.333l.349-2.708h-2.682V9.598c0-.784.218-1.319 1.342-1.319h1.434V5.857a19.188 19.188 0 0 0-2.09-.107c-2.067 0-3.482 1.262-3.482 3.58v1.996h-2.338v2.708h2.338V21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1h-4.598Z"
+                                        fill="current" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="fill-current text-blue-50" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.509.5.902 1.105 1.153 1.772.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772c-.5.508-1.105.902-1.772 1.153-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2Zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm6.5-.25a1.25 1.25 0 1 0-2.5 0 1.25 1.25 0 0 0 2.5 0ZM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"
+                                        fill="current" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="divider"></div>
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn text-white bg-green-10 rounded-pill dropdown-toggle" type="button"
+                            id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            FR
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item" href="#">BN</a></li>
+                            <li><a class="dropdown-item" href="#">FR</a></li>
+                            <li><a class="dropdown-item" href="#">US</a></li>
+                            <li><a class="dropdown-item" href="#">IN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Heros Section Start -->
+    <section class="blogarticlepage heros container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex align-items-center">
+                    <p class="badge badge-pink-10 fw-semibold font-montserrat rounded-pill mb-0">Instagram
+                    </p>
+                    <div class="border-line"></div>
+                    <p class="post-date font-montserrat mb-0">17 JUIN 2020</p>
+                </div>
+                <h1 class="title fw-bold text-blue-60 font-montserrat">Nutritionnistes / Diététiciens : 6 conseils pour
+                    utiliser
+                    Instagram pour développer votre activité</h1>
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/images/blog-article-img-1.png" alt="" class="heros-img">
+            </div>
+        </div>
+
+        <p class="paragraph font-montserrat">Sur Instagram (c’est aussi le cas sur les autres réseaux
+            sociaux),
+            nombreuses sont les personnes à y aller de leurs conseils en matière de nutrition ou de diététique. C’est la
+            magie des réseaux sociaux : beaucoup s’érigent en « experts ». Quand il s’agit de mode ou de restauration,
+            cela passe encore (quoique certains restaurateurs vous diraient que non), mais quand on parle diététique ou
+            nutrition, c’est nettement plus dommageable. De l’aveu des vrais experts en matière de nutrition, il se dit
+            n’importe quoi : non, un « avocado toast » n’est pas un brûleur de graisse.</p>
+    </section>
+    <!-- Heros Section End -->
+
+
+
+    <!-- Details Section Start -->
+    <section class="blogarticlepage details container">
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="title-1 font-montserrat text-black fw-semibold">1. Optimisez vos photos</h4>
+
+                <p class="paragraph-1 font-montserrat" style="color: #76777C;;">Instagram est une plate-forme visuelle.
+                    Pour vous démarquer de la
+                    foule, vous devez donc disposer de photos de haute qualité. Mais cela ne signifie pas pour autant
+                    que vous ayez besoin d’un appareil photo sophistiqué. Vous pouvez prendre des photos incroyables
+                    avec votre iPhone par exemple!
+                    <br>
+                    <br>
+                    <span class="fw-medium"> Bonnes pratiques pour de belles photos :</span>
+
+                    <br>
+                    <br>
+                    - Faites attention à l'éclairage : le meilleur éclairage est généralement au lever et au coucher du
+                    soleil lorsque la lumière est plus douce. Ceci est particulièrement important pour les photos
+                    autoportraits ou de style de vie.
+                    <br>
+                    <br>
+                    - Retouchez vos photos au besoin. Et vous pouvez le faire très facilement avec différentes
+                    applications : Snapseed, Facetune, VSCO ou encore Lightroom mobile. La plupart a des versions
+                    gratuites et payantes, mais elles sont toutes très faciles à utiliser.
+                    <br>
+                    <br>
+                    - Les photos de votre feed Instagram doivent répondre d’une même esthétique. Il est ainsi conseillé
+                    de toujours utiliser des filtres et des éclairages similaires pour que l’ensemble du feed conserve
+                    sa cohérence.
+                    <br>
+                    <br>
+                    - Assurez-vous également que chacune de vos photos est liée à votre activité de nutrition, d’une
+                    manière ou d’une autre. Même si c'est une photo de vous à Paris, vous pouvez utiliser la légende
+                    pour parler de la nourriture lors de votre séjour.
+                </p>
+
+                <img src="./assets/images/img-25.png" alt="" class="img-1">
+
+                <h4 class="title-1 font-montserrat text-black fw-semibold">2. Écrivez de bonnes légendes</h4>
+
+                <p class="paragraph-1 font-montserrat" style="color: #76777C;;">D’accord : Instagram est une plate-forme
+                    visuelle, mais vos légendes sont presque aussi importantes que vos photos. Inciter aux commentaires,
+                    poser une question ou inviter vos followers à « tagguer un ami » sont tous d'excellents moyens de
+                    susciter l'engagement et d'engager la conversation avec votre audience, renforçant ainsi la
+                    confiance qu’elle vous accorde.
+                    <br>
+                    <br>
+                    Si vous avez besoin d’idées sur ce qu’il faut dire dans vos légendes, vous pouvez toujours raconter
+                    une histoire sur ce qui se passe dans « les coulisses » de la photo (ce que l’on ne voit pas dans le
+                    cadre), partager une citation inspirante, poser une question à votre audience ou parler d’un nouveau
+                    blog ou d’une nouvelle promotion.
+                </p>
+                <h4 class="title-1 font-montserrat text-black fw-semibold">3. Travaillez vos hashtags</h4>
+                <p class="paragraph-1 font-montserrat" style="color: #76777C;;">Les hashtags sont très importants car
+                    ils constituent l’un des meilleurs moyens pour votre client type de vous trouver. Commencez votre
+                    recherche en utilisant des mots-clés que votre public idéal pourrait rechercher.
+                    <br>
+                    <br>
+                    Par exemple, si vous êtes un nutritionniste spécialisé en équilibrage hormonal, votre client idéal
+                    pourrait en fait effectuer des recherches comme #pertedepoids ou #equilibrehormonal.
+                    <br>
+                    <br>
+                    Assurez-vous d’intégrer des hashtags dans une langue que votre client idéal utilise réellement, et
+                    non dans la langue/le langage que vous utilisez. Par exemple, en tant que nutritionniste,
+                    l’utilisation de hashtags « techniques » est plutôt à proscrire (en tout cas ils ne sont pas
+                    prioritaires) car ils attireront probablement uniquement les autres nutritionnistes, car ces termes
+                    ne sont pas ceux que votre client idéal utiliserait
+                    <br>
+                    <br>
+                    A retenir sur les hashtags :
+                    <br>
+                    <br>
+                    - Vous avez droit à 30 hashtags dans votre légende - utilisez-les tous pour vous assurer d'obtenir
+                    le plus de visibilité possible - souvenez-vous d'utiliser SEULEMENT la langue que votre public idéal
+                    utiliserait ou ce qu'il rechercherait,
+                    <br>
+                    <br>
+                    - N’utilisez pas de hashtags qui ont été utilisés plus de 500 000 fois car, à moins que vous ne
+                    comptiez déjà un très grand nombre de fans, votre message va juste se perdre parmi les autres,
+                    <br>
+                    <br>
+                    - D'autre part, n’utilisez pas de hashtags trop originaux, même si vous pensez être drôle (et vous
+                    l’êtes !), car si personne ne cherche ce hashtag, c'est un gâchis. Choisissez des hashtags qui ont
+                    été utilisés au moins 5000 fois.
+                    <br>
+                    <br>
+                    >> A lire : "Instagram Pro : comment trouver les bons hashtags ?"
+                </p>
+
+                <img src="./assets/images/img-26.png" alt="" class="img-1">
+
+                <h4 class="title-1 font-montserrat text-black fw-semibold">4. Collaborez avec d'autres comptes</h4>
+                <p class="paragraph-1 font-montserrat" style="color: #76777C;;">Ceci est un conseil important si vous
+                    souhaitez améliorer significativement votre portée sur Instagram. Les options permettant de
+                    collaborer avec d’autres comptes : republication, taggage... Ce sont d'excellents moyens de nouer
+                    des relations autour de votre activité et d'exposer votre message à des publics qui « pensent »
+                    comme vous et qui ne vous suivent peut-être pas encore. Utilisez-le comme un moyen de créer une
+                    communauté et d’augmenter votre auditoire avant de vendre tout type de produit ou service, de sorte
+                    que vous ne soyez en aucune manière en concurrence avec la personne avec laquelle vous collaborez.
+                </p>
+                <h4 class="title-1 font-montserrat text-black fw-semibold">5. Soyez cohérent</h4>
+                <p class="paragraph-1 font-montserrat" style="color: #76777C;;">C’est l’une des questions les plus
+                    populaires parmi les instagrammeurs : « combien de fois dois-je publier sur Instagram ? » Poster 1
+                    fois par jour est idéal, mais en même temps, ne postez pas juste pour poster. Assurez-vous de
+                    disposer d'une image de haute qualité pouvant être liée à votre activité de
+                    nutritionniste/diététiciens. Mieux vaut poster 2 à 3 fois par semaine et apporter une vraie valeur,
+                    que 10 fois par semaine avec des photos moyennes qui ne racontent aucune histoire. Pour la
+                    publication de stories Instagram, en poster 10 à 20 par jour est une bonne moyenne !
+                </p>
+                <h4 class="title-1 font-montserrat text-black fw-semibold">6. Faites des cadeaux !</h4>
+                <p class="paragraph-1 font-montserrat" style="color: #76777C;;">L’un des moyens les plus efficaces de se
+                    constituer un public fidèle et engagé sur Instagram est de… donner, et de continuer à donner. Que
+                    faut-il entendre par là ? Une fois que vous savez exactement qui est votre public, vous devez savoir
+                    exactement ce qui les aiderait et leur faciliterait la vie. Il s’agira par exemple d’un guide de
+                    planification des repas, ou peut-être que si vous aimez la vidéo, il peut s’agir « d’un cours de
+                    nutrition » ou d’un atelier où vous leur apprenez quelque chose.
+                    <br>
+                    <br>
+                    Vous pouvez utiliser Instagram pour promouvoir le service que vous offrez - et en retour, votre
+                    auditoire vous communiquera son adresse e-mail, ou rejoindra votre groupe Facebook ou ce que vous
+                    demanderez en échange. Cela vous permet de lui fournir continuellement de la valeur afin qu'à
+                    l'avenir, lorsque vous aurez un produit ou un service à vendre, il soit beaucoup mieux préparé à
+                    acheter car il vous connait !
+                </p>
+            </div>
+            <div class="col-md-4 d-none d-md-inline">
+                <div class="right-side">
+                    <svg class="w-100" viewBox="0 0 265 295" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_159_76)">
+                            <path
+                                d="M124.5 12.6188C129.45 9.76068 135.55 9.76068 140.5 12.6188L236.65 68.1312C241.601 70.9893 244.65 76.2714 244.65 81.9876V193.012C244.65 198.729 241.601 204.011 236.65 206.869L140.5 262.381C135.55 265.239 129.45 265.239 124.5 262.381L28.3497 206.869C23.3993 204.011 20.3497 198.729 20.3497 193.012V81.9876C20.3497 76.2714 23.3993 70.9893 28.3497 68.1312L124.5 12.6188Z"
+                                fill="white" />
+                        </g>
+                        <path
+                            d="M215.581 133.335C215.58 133.335 215.579 133.335 215.578 133.335C214.872 133.334 214.209 133.059 213.71 132.559C213.211 132.06 212.937 131.396 212.938 130.69C212.939 129.984 213.214 129.321 213.714 128.822C214.213 128.325 214.876 128.051 215.58 128.051C215.582 128.051 215.583 128.051 215.584 128.051C216.29 128.052 216.953 128.327 217.452 128.827C217.95 129.327 218.224 129.991 218.223 130.696L217.711 130.695L218.223 130.696C218.222 131.402 217.946 132.065 217.447 132.564C216.948 133.061 216.286 133.335 215.581 133.335ZM215.58 129.075C215.149 129.075 214.743 129.243 214.438 129.548C214.132 129.853 213.962 130.259 213.962 130.691C213.961 131.123 214.13 131.529 214.435 131.836C214.74 132.141 215.147 132.31 215.579 132.311C215.58 132.311 215.58 132.311 215.581 132.311C216.012 132.311 216.418 132.143 216.723 131.839C217.029 131.533 217.198 131.127 217.198 130.695C217.199 130.263 217.031 129.857 216.726 129.55C216.421 129.245 216.015 129.076 215.583 129.075C215.582 129.075 215.581 129.075 215.58 129.075Z"
+                            fill="#328090" />
+                        <path
+                            d="M50.2531 131.554C50.2516 131.554 50.2506 131.554 50.2496 131.554C49.5438 131.553 48.8805 131.277 48.3817 130.778C47.8825 130.278 47.6084 129.614 47.6094 128.909C47.6104 128.203 47.886 127.54 48.3862 127.041C48.885 126.544 49.5478 126.27 50.2521 126.27C50.2536 126.27 50.2546 126.27 50.2556 126.27C50.9614 126.271 51.6247 126.546 52.1234 127.046C52.6217 127.546 52.8958 128.209 52.8948 128.915L52.3826 128.914L52.8948 128.915C52.8938 129.621 52.6182 130.284 52.1184 130.783C51.6197 131.28 50.9574 131.554 50.2531 131.554ZM50.2521 127.294C49.8209 127.294 49.4152 127.462 49.1096 127.767C48.8034 128.072 48.6343 128.478 48.6338 128.91C48.6333 129.342 48.8014 129.748 49.1066 130.054C49.4122 130.36 49.8184 130.529 50.2506 130.529C50.2516 130.529 50.2521 130.529 50.2531 130.529C50.6843 130.529 51.0895 130.362 51.3951 130.057C51.7007 129.752 51.8698 129.346 51.8703 128.914C51.8708 128.482 51.7032 128.075 51.3981 127.769C51.093 127.464 50.6868 127.294 50.2546 127.294C50.2536 127.294 50.2531 127.294 50.2521 127.294Z"
+                            fill="#31B997" />
+                        <path
+                            d="M204.46 145.799C204.329 145.799 204.199 145.75 204.099 145.65L202.404 143.968C202.204 143.768 202.203 143.444 202.402 143.243L203.592 142.043L202.393 140.853C202.297 140.757 202.243 140.627 202.242 140.491C202.242 140.356 202.295 140.225 202.391 140.128L204.075 138.434C204.275 138.234 204.599 138.233 204.799 138.432L205.998 139.622L207.19 138.424C207.39 138.224 207.714 138.223 207.914 138.422L209.609 140.104C209.705 140.201 209.759 140.331 209.76 140.467C209.76 140.602 209.707 140.733 209.611 140.829L208.42 142.027L209.618 143.219C209.819 143.418 209.82 143.743 209.621 143.944L207.938 145.638C207.738 145.839 207.414 145.84 207.213 145.64L206.014 144.45L204.823 145.648C204.723 145.749 204.591 145.799 204.46 145.799ZM203.49 143.602L204.457 144.562L205.649 143.364C205.848 143.164 206.172 143.163 206.373 143.362L207.572 144.552L208.533 143.585L207.334 142.393C207.237 142.297 207.183 142.166 207.182 142.031C207.182 141.895 207.236 141.764 207.332 141.668L208.523 140.471L207.555 139.51L206.364 140.708C206.164 140.908 205.84 140.909 205.639 140.71L204.441 139.52L203.479 140.487L204.678 141.677C204.878 141.877 204.879 142.201 204.68 142.402L203.49 143.602Z"
+                            fill="#328090" />
+                        <path
+                            d="M97.3179 100.947C97.1874 100.947 97.0568 100.898 96.9568 100.799L94.7198 98.5768C94.5192 98.3772 94.5182 98.0531 94.7173 97.8525L96.405 96.1522L94.7058 94.4655C94.6097 94.3694 94.5552 94.2394 94.5547 94.1033C94.5542 93.9677 94.6077 93.8372 94.7038 93.7406L96.9268 91.5036C97.1264 91.3035 97.4505 91.3025 97.6511 91.5011L99.3499 93.1884L101.039 91.4906C101.239 91.2905 101.563 91.2895 101.763 91.4881L103.999 93.7096C104.096 93.8057 104.15 93.9357 104.151 94.0718C104.151 94.2073 104.098 94.3379 104.001 94.4344L102.314 96.1327L104.013 97.822C104.214 98.0211 104.215 98.3452 104.015 98.5463L101.793 100.783C101.593 100.984 101.27 100.985 101.069 100.786L99.3699 99.0981L97.6811 100.796C97.5811 100.897 97.4495 100.947 97.3179 100.947ZM95.8053 98.2107L97.3154 99.7108L99.0042 98.0126C99.2038 97.813 99.528 97.8115 99.7285 98.0101L101.427 99.6978L102.928 98.1877L101.228 96.4979C101.131 96.4023 101.077 96.2718 101.077 96.1362C101.076 96.0002 101.13 95.8696 101.226 95.7736L102.914 94.0758L101.404 92.5761L99.7155 94.2739C99.5165 94.4745 99.1923 94.476 98.9912 94.2764L97.2924 92.5891L95.7913 94.0993L97.4905 95.7861C97.6911 95.9856 97.6921 96.3098 97.493 96.5104L95.8053 98.2107Z"
+                            fill="#E34175" />
+                        <path
+                            d="M55.52 157.881C55.3895 157.881 55.2589 157.831 55.1588 157.732L53.1289 155.715C52.9283 155.516 52.9273 155.192 53.1264 154.991L54.6246 153.482L53.1159 151.984C53.0199 151.888 52.9653 151.758 52.9648 151.622C52.9643 151.486 53.0179 151.356 53.1139 151.259L55.1313 149.229C55.3309 149.029 55.6551 149.028 55.8557 149.227L57.3639 150.725L58.863 149.217C59.0626 149.017 59.3868 149.016 59.5874 149.215L61.6173 151.232C61.7133 151.327 61.7679 151.457 61.7684 151.593C61.7689 151.729 61.7153 151.859 61.6193 151.956L60.1206 153.464L61.6293 154.963C61.8299 155.162 61.8309 155.487 61.6313 155.688L59.6149 157.718C59.4158 157.918 59.0916 157.919 58.8905 157.72L57.3824 156.222L55.8832 157.73C55.7831 157.83 55.6516 157.881 55.52 157.881ZM54.2144 155.35L55.5175 156.644L57.0167 155.136C57.2163 154.936 57.5404 154.935 57.741 155.134L59.2492 156.632L60.5438 155.329L59.0351 153.829C58.9386 153.733 58.8845 153.603 58.884 153.467C58.8835 153.331 58.9371 153.201 59.0331 153.105L60.5318 151.597L59.2287 150.303L57.7295 151.81C57.5304 152.011 57.2063 152.013 57.0052 151.813L55.497 150.315L54.2014 151.618L55.7101 153.116C55.9107 153.315 55.9117 153.639 55.7126 153.84L54.2144 155.35Z"
+                            fill="#E34175" />
+                        <path opacity="0.67"
+                            d="M187.983 156.784C187.953 181.323 151.305 194.48 126.767 194.449C102.228 194.419 82.3759 161.489 82.4063 136.95C82.4367 112.411 102.338 105.556 126.877 105.586C151.415 105.616 188.014 132.245 187.983 156.784Z"
+                            fill="#E3EEFA" />
+                        <path
+                            d="M121.194 109.558C121.192 109.558 121.191 109.558 121.19 109.558C119.733 109.556 118.549 108.369 118.551 106.913C118.553 105.457 119.738 104.273 121.194 104.273C121.195 104.273 121.196 104.273 121.197 104.273C121.903 104.274 122.566 104.55 123.065 105.05C123.563 105.55 123.837 106.213 123.836 106.919C123.834 108.375 122.649 109.558 121.194 109.558ZM121.194 105.298C120.303 105.298 119.576 106.022 119.575 106.914C119.574 107.806 120.299 108.532 121.191 108.533C121.192 108.533 121.193 108.533 121.193 108.533C122.085 108.533 122.811 107.809 122.812 106.918L123.324 106.919L122.812 106.918C122.812 106.486 122.645 106.079 122.34 105.773C122.034 105.467 121.628 105.298 121.196 105.298C121.195 105.298 121.195 105.298 121.194 105.298Z"
+                            fill="#328090" />
+                        <path
+                            d="M97.811 152.952C97.8095 152.952 97.8085 152.952 97.8075 152.952C96.1282 152.95 94.7636 151.582 94.7656 149.904C94.7681 148.226 96.1338 146.863 97.811 146.863C97.8125 146.863 97.8135 146.863 97.8145 146.863C99.4933 146.866 100.857 148.233 100.855 149.911C100.853 151.589 99.4873 152.952 97.811 152.952ZM97.811 147.888C96.698 147.888 95.7916 148.792 95.7901 149.905C95.7891 151.019 96.6945 151.926 97.8085 151.928C97.8095 151.928 97.8105 151.928 97.811 151.928C98.9235 151.928 99.8294 151.023 99.8309 149.91C99.8319 148.797 98.927 147.889 97.8135 147.888C97.8125 147.888 97.8115 147.888 97.811 147.888ZM100.343 149.911H100.348H100.343Z"
+                            fill="#31B997" />
+                        <path
+                            d="M123.105 156.247C123.107 154.925 122.197 153.842 121.085 153.841L110.967 153.828C109.854 153.827 108.943 154.907 108.941 156.229L108.922 171.596L123.086 171.613L123.105 156.247Z"
+                            fill="#EE628F" />
+                        <path
+                            d="M160.211 171.661C160.226 171.544 160.236 171.426 160.236 171.304L160.247 162.842C160.248 161.47 159.282 160.346 158.1 160.345L147.968 160.332C146.785 160.331 145.817 161.452 145.815 162.824L145.805 171.286C145.805 171.408 145.815 171.526 145.829 171.643L160.211 171.661Z"
+                            fill="#EE628F" />
+                        <path
+                            d="M163.352 175.583L106.869 175.513C106.234 175.513 105.714 174.992 105.715 174.356L105.717 172.748C105.718 172.113 106.238 171.593 106.874 171.594L163.356 171.664C163.992 171.664 164.512 172.185 164.511 172.821L164.509 174.429C164.508 175.065 163.987 175.584 163.352 175.583Z"
+                            fill="#EE628F" />
+                        <path
+                            d="M141.796 171.637L141.824 149.232C141.826 147.91 140.862 146.827 139.683 146.825L129.272 146.813C128.093 146.811 127.127 147.891 127.125 149.214L127.098 171.619L141.796 171.637Z"
+                            fill="#EE628F" />
+                        <path
+                            d="M119.099 151.453L113.982 151.446L113.867 149.587C113.802 148.334 113.737 147.082 113.676 145.83L113.456 145.742C113.26 145.663 113.062 145.584 112.865 145.508C112.492 145.365 112.272 145.041 112.275 144.642C112.277 144.238 112.275 143.832 112.275 143.426C112.272 142.615 112.271 141.804 112.291 140.993C112.34 139.132 113.709 137.468 115.547 137.036C116.692 136.766 117.863 136.948 118.838 137.55C119.814 138.152 120.5 139.116 120.77 140.263C120.835 140.54 120.869 140.844 120.871 141.166C120.875 141.868 120.874 142.57 120.873 143.272V144.635C120.873 145.056 120.651 145.379 120.265 145.524C120.065 145.599 119.866 145.679 119.667 145.759C119.601 145.785 119.534 145.812 119.468 145.839C119.403 147.055 119.205 150.69 119.187 150.818L119.099 151.453ZM115.357 149.979L117.769 149.982C117.837 148.799 117.972 146.384 118.018 145.442C118.038 145.04 118.266 144.728 118.643 144.585C118.8 144.525 118.96 144.46 119.121 144.397C119.215 144.359 119.31 144.321 119.405 144.283V143.27C119.406 142.572 119.407 141.874 119.403 141.175C119.401 140.963 119.38 140.769 119.34 140.599C119.161 139.834 118.709 139.196 118.067 138.799C117.425 138.403 116.648 138.284 115.883 138.465C114.703 138.742 113.79 139.846 113.759 141.031C113.738 141.828 113.741 142.625 113.743 143.422C113.744 143.707 113.744 143.991 113.744 144.276C113.831 144.311 113.918 144.346 114.004 144.381L114.496 144.576C115.02 144.781 115.116 145.207 115.127 145.443C115.192 146.798 115.263 148.154 115.333 149.51L115.357 149.979ZM119.17 145.956C119.169 145.956 119.167 145.956 119.166 145.957C119.167 145.956 119.169 145.956 119.17 145.956ZM113.96 145.943C113.961 145.944 113.962 145.944 113.964 145.944L113.96 145.943ZM113.66 145.512C113.66 145.513 113.66 145.513 113.66 145.514C113.66 145.513 113.66 145.513 113.66 145.512ZM113.743 144.648C113.743 144.65 113.743 144.65 113.743 144.651C113.743 144.65 113.743 144.65 113.743 144.648Z"
+                            fill="#328090" />
+                        <path
+                            d="M116.582 136.389C116.581 136.389 116.58 136.389 116.579 136.389C115.082 136.388 113.864 135.171 113.863 133.677C113.863 132.953 114.148 132.269 114.667 131.752C115.183 131.236 115.863 130.953 116.582 130.953C116.585 130.953 116.587 130.953 116.59 130.953C117.314 130.955 117.996 131.243 118.512 131.762C119.027 132.282 119.308 132.966 119.304 133.689C119.294 135.178 118.074 136.389 116.582 136.389ZM116.582 132.421C116.255 132.421 115.943 132.552 115.704 132.79C115.463 133.031 115.331 133.345 115.331 133.676C115.332 134.35 115.904 134.92 116.58 134.921C116.581 134.921 116.582 134.921 116.582 134.921C117.257 134.921 117.831 134.353 117.836 133.679C117.838 133.35 117.707 133.036 117.469 132.796C117.23 132.555 116.916 132.422 116.585 132.421C116.585 132.421 116.583 132.421 116.582 132.421Z"
+                            fill="#328090" />
+                        <path
+                            d="M137.138 144.214L132.014 144.207L131.899 142.348C131.834 141.096 131.769 139.844 131.708 138.591L131.488 138.504C131.292 138.425 131.094 138.345 130.897 138.27C130.525 138.124 130.306 137.803 130.306 137.409C130.308 137.003 130.307 136.601 130.306 136.199C130.304 135.385 130.302 134.569 130.323 133.754C130.371 131.894 131.74 130.229 133.578 129.797C134.723 129.528 135.894 129.709 136.87 130.311C137.846 130.914 138.532 131.878 138.802 133.025C138.867 133.301 138.901 133.605 138.903 133.928C138.907 134.63 138.906 135.331 138.905 136.033V137.396C138.905 137.818 138.683 138.141 138.297 138.286C138.103 138.358 137.911 138.436 137.718 138.513C137.645 138.542 137.573 138.571 137.5 138.6C137.433 139.872 137.235 143.454 137.22 143.572L137.138 144.214ZM133.389 142.74L135.801 142.744C135.87 141.545 136.006 139.094 136.05 138.203C136.07 137.803 136.296 137.491 136.67 137.347C136.84 137.283 137.006 137.216 137.172 137.15C137.26 137.114 137.349 137.079 137.437 137.044V136.032C137.438 135.334 137.439 134.635 137.435 133.936C137.433 133.724 137.412 133.531 137.372 133.361C137.193 132.596 136.741 131.957 136.098 131.561C135.457 131.165 134.684 131.046 133.914 131.227C132.735 131.504 131.821 132.607 131.791 133.792C131.77 134.594 131.772 135.395 131.774 136.195C131.775 136.476 131.775 136.757 131.775 137.037C131.862 137.072 131.949 137.107 132.036 137.142L132.528 137.337C133.049 137.541 133.147 137.965 133.159 138.2C133.224 139.56 133.295 140.915 133.365 142.272L133.389 142.74ZM131.992 138.704C131.993 138.705 131.994 138.705 131.996 138.706L131.992 138.704Z"
+                            fill="#328090" />
+                        <path
+                            d="M134.617 129.151C134.615 129.151 134.614 129.151 134.613 129.151C133.117 129.149 131.899 127.932 131.898 126.439C131.898 125.716 132.182 125.032 132.701 124.514C133.217 123.999 133.897 123.715 134.618 123.715C134.62 123.715 134.622 123.715 134.625 123.715C135.348 123.717 136.031 124.004 136.546 124.524C137.061 125.043 137.342 125.728 137.338 126.45C137.33 127.94 136.109 129.151 134.617 129.151ZM134.615 127.683C134.615 127.683 134.616 127.683 134.617 127.683C135.292 127.683 135.866 127.115 135.87 126.442C135.872 126.112 135.742 125.798 135.504 125.557C135.265 125.317 134.952 125.184 134.62 125.183C134.62 125.183 134.618 125.183 134.618 125.183C134.289 125.183 133.977 125.314 133.738 125.553C133.499 125.792 133.366 126.106 133.367 126.438C133.367 127.111 133.939 127.682 134.615 127.683Z"
+                            fill="#328090" />
+                        <path
+                            d="M155.507 158.225L151.03 158.219L150.914 156.357C150.849 155.105 150.785 153.854 150.724 152.603L150.492 152.511C150.299 152.434 150.106 152.356 149.911 152.281C149.542 152.139 149.321 151.818 149.321 151.421C149.324 151.015 149.322 150.613 149.321 150.211C149.319 149.397 149.318 148.581 149.339 147.766C149.387 145.906 150.756 144.241 152.594 143.809C153.739 143.54 154.91 143.721 155.885 144.323C156.862 144.926 157.548 145.89 157.817 147.037C157.882 147.313 157.916 147.617 157.918 147.941C157.923 148.642 157.922 149.344 157.92 150.045V151.408C157.92 151.83 157.699 152.153 157.313 152.298C157.115 152.372 156.918 152.451 156.72 152.53C156.652 152.557 156.584 152.585 156.516 152.612C156.48 153.332 156.44 154.052 156.401 154.772L156.262 157.364C156.259 157.419 156.252 157.472 156.243 157.532L156.149 158.159L155.507 158.225ZM152.405 156.752L154.823 156.756L154.935 154.691C154.98 153.866 155.025 153.041 155.066 152.216C155.086 151.815 155.313 151.502 155.689 151.359C155.85 151.298 156.012 151.232 156.174 151.167C156.267 151.13 156.359 151.093 156.452 151.056V150.044C156.454 149.346 156.454 148.647 156.45 147.949C156.449 147.736 156.428 147.543 156.388 147.373C156.209 146.608 155.756 145.969 155.114 145.573C154.473 145.177 153.699 145.057 152.93 145.239C151.75 145.516 150.837 146.619 150.807 147.804C150.786 148.606 150.788 149.407 150.79 150.207C150.79 150.488 150.791 150.769 150.79 151.05C150.874 151.083 150.957 151.116 151.04 151.149L151.544 151.349C152.064 151.553 152.162 151.978 152.175 152.214C152.24 153.57 152.31 154.925 152.38 156.28L152.405 156.752ZM156.215 152.73C156.214 152.73 156.214 152.731 156.213 152.731C156.214 152.731 156.214 152.73 156.215 152.73ZM151.008 152.716C151.009 152.717 151.01 152.717 151.011 152.718L151.008 152.716Z"
+                            fill="#328090" />
+                        <path
+                            d="M153.633 143.163C153.632 143.163 153.63 143.163 153.63 143.163C152.133 143.161 150.915 141.945 150.914 140.451C150.913 139.727 151.198 139.043 151.716 138.526C152.232 138.01 152.913 137.727 153.633 137.727C153.635 137.727 153.637 137.727 153.64 137.727C154.364 137.729 155.046 138.015 155.562 138.536C156.077 139.055 156.358 139.74 156.354 140.462C156.345 141.952 155.124 143.163 153.633 143.163ZM153.633 139.195C153.305 139.195 152.993 139.326 152.754 139.565C152.514 139.805 152.382 140.119 152.382 140.449C152.383 141.124 152.954 141.694 153.631 141.695C153.632 141.695 153.632 141.695 153.633 141.695C154.308 141.695 154.881 141.127 154.886 140.454C154.888 140.124 154.757 139.81 154.519 139.57C154.281 139.329 153.967 139.195 153.636 139.195C153.635 139.195 153.634 139.195 153.633 139.195Z"
+                            fill="#328090" />
+                        <defs>
+                            <filter id="filter0_d_159_76" x="0.349609" y="0.475098" width="264.301" height="294.05"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="10" />
+                                <feGaussianBlur stdDeviation="10" />
+                                <feColorMatrix type="matrix"
+                                    values="0 0 0 0 0.160784 0 0 0 0 0.160784 0 0 0 0 0.164706 0 0 0 0.07 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_159_76" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_159_76"
+                                    result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+
+                    <h6 class="title text-center font-montserrat fw-bold text-green-20 mb-3 px-5">Faites le point avec
+                        un
+                        expert</h6>
+                    <p class="paragraph text-center font-montserrat">Échangez 15 minutes pour évaluer vos besoins en
+                        communication digitale en fonction de votre secteur d'activité (startupper , commerçant,
+                        industriel, profession libérale... etc).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Details Section End -->
+
+
+
+    <!-- Nos Audit Section strat -->
+    <section class="blogarticlepage audit container">
+        <div class="row">
+            <div class="col-md-4 col-lg-5 col-xl-6">
+                <div class="d-md-none">
+                    <h1 class="title fw-bold font-montserrat text-blue-30 text-center text-md-start">Découvrez nos
+                        audits
+                    </h1>
+                    <p class="paragraph text-center fw-semibold font-montserrat text-gray-20 text-md-start">Après un 1er
+                        échange de cadrage, les équipes de Marie travailleront sur un audit 100% personnalisé et
+                        exclusif.
+                        Sous 5 jours, nous pouvons vous indiquer</p>
+                </div>
+                <div class="position-relative pe-lg-5 mt-5 mb-4">
+                    <img src="./assets/images/pic.png" alt="" class="w-100">
+                    <div class="pic-label rounded-circle d-flex justify-content-center align-items-center px-1">
+                        <div>
+
+                            <h4
+                                class="text-title text-white fw-extrabold text-center font-montserrat d-flex justify-content-center align-items-end">
+                                <span class="font-rubik mb-2">“</span> <span>Marie
+                                    Fouris</span>
+                            </h4>
+                            <p class="text-sub text-white fw-bold text-center font-montserrat mb-0">Co-fondatrice
+                                de Pix.city <span
+                                    class="text-22px text-white fw-extrabold text-center font-rubik">“</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-7 col-xl-6 ps-lg-5">
+                <div class="d-none d-md-inline">
+                    <h1 class="title fw-bold font-montserrat text-blue-30 text-center text-md-start">Découvrez nos
+                        audits
+                    </h1>
+                    <p class="paragraph text-center fw-semibold font-montserrat text-gray-20 text-md-start mb-3">Après
+                        un 1er
+                        échange de cadrage, les équipes de Marie travailleront sur un audit 100% personnalisé et
+                        exclusif.
+                        Sous 5 jours, nous pouvons vous indiquer</p>
+                </div>
+                <div class="d-flex align-items-start mb-lg-4 mb-3">
+                    <svg class="check-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#31B997" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1177 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9667 18.1236 14.5 23C12.5117 20.2129 10.3398 17.6189 7 14.9206Z"
+                            fill="white" />
+                    </svg>
+                    <p class="text-18px fw-medium font-montserrat text-gray-20">Qui sont les meilleurs sur
+                        Google parmi vos concurrents ? Comment font-ils ?
+                    </p>
+                </div>
+                <div class="d-flex align-items-start mb-lg-4 mb-3">
+                    <svg class="check-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#31B997" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1177 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9667 18.1236 14.5 23C12.5117 20.2129 10.3398 17.6189 7 14.9206Z"
+                            fill="white" />
+                    </svg>
+                    <p class="text-18px fw-medium font-montserrat text-gray-20">Quel réseau social choisir ?
+                    </p>
+                </div>
+                <div class="d-flex align-items-start mb-lg-4 mb-3">
+                    <svg class="check-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#31B997" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1177 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9667 18.1236 14.5 23C12.5117 20.2129 10.3398 17.6189 7 14.9206Z"
+                            fill="white" />
+                    </svg>
+                    <p class="text-18px fw-medium font-montserrat text-gray-20">Quels sont les posts ayant le plus
+                        fort potentiel de partage sur les réseaux sociaux ?
+                    </p>
+                </div>
+                <div class="d-flex align-items-start mb-lg-4 mb-3">
+                    <svg class="check-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#31B997" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1177 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9667 18.1236 14.5 23C12.5117 20.2129 10.3398 17.6189 7 14.9206Z"
+                            fill="white" />
+                    </svg>
+                    <p class="text-18px fw-medium font-montserrat text-gray-20">Quels influenceurs sont disponibles
+                        en local pour créer l’évènement pour votre marque ?
+                    </p>
+                </div>
+                <div class="d-flex align-items-start mb-lg-4 mb-3">
+                    <svg class="check-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#31B997" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1177 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9667 18.1236 14.5 23C12.5117 20.2129 10.3398 17.6189 7 14.9206Z"
+                            fill="white" />
+                    </svg>
+                    <p class="text-18px fw-medium font-montserrat text-gray-20">Avez-vous besoin de nouvelles photos
+                        pour mettre en valeur votre entreprise?
+                    </p>
+                </div>
+                <div class="d-flex align-items-start mb-lg-4 mb-3">
+                    <svg class="check-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="16" fill="#31B997" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 14.9206C9.07075 15.3461 11.734 16.1698 13.75 17.465C16.1177 14.3345 20.371 11.406 25 9C20.6042 13.2739 16.9667 18.1236 14.5 23C12.5117 20.2129 10.3398 17.6189 7 14.9206Z"
+                            fill="white" />
+                    </svg>
+                    <p class="text-18px fw-medium font-montserrat text-gray-20">Quel est le potentiel pour votre
+                        entreprise de Google ads, facebook ads, linkedin ads et même tiktok ads ?
+                    </p>
+                </div>
+                <p class="text-14px text-white fw-semibold font-montserrat mb-72px badge">
+                    Vous
+                    voulez un audit 100% personnalisé ?
+                </p>
+
+                <div class="text-center text-md-start">
+                    <a href="#"
+                        class="btn btn-icon bg-green-10 rounded-pill text-lg text-white font-montserrat"><span>Prendre
+                            rendez-vous</span> <svg viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16.5" cy="16" r="16" fill="white" />
+                            <path
+                                d="M14.998 21.0002C14.8664 21.0009 14.7359 20.9757 14.6141 20.9259C14.4922 20.8762 14.3814 20.8029 14.288 20.7102C14.1943 20.6172 14.1199 20.5066 14.0691 20.3848C14.0183 20.2629 13.9922 20.1322 13.9922 20.0002C13.9922 19.8682 14.0183 19.7375 14.0691 19.6156C14.1199 19.4937 14.1943 19.3831 14.288 19.2902L17.598 16.0002L14.418 12.6902C14.2317 12.5028 14.1272 12.2494 14.1272 11.9852C14.1272 11.721 14.2317 11.4675 14.418 11.2802C14.5109 11.1864 14.6215 11.1121 14.7434 11.0613C14.8653 11.0105 14.996 10.9844 15.128 10.9844C15.26 10.9844 15.3907 11.0105 15.5126 11.0613C15.6344 11.1121 15.745 11.1864 15.838 11.2802L19.698 15.2802C19.8812 15.4671 19.9838 15.7184 19.9838 15.9802C19.9838 16.2419 19.8812 16.4932 19.698 16.6802L15.698 20.6802C15.6082 20.7771 15.5002 20.8553 15.38 20.9102C15.2599 20.9651 15.13 20.9957 14.998 21.0002V21.0002Z"
+                                fill="#EE628F" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Nos Audit Section end -->
+
+
+    <!-- Gallary Tab Section Start -->
+    <section class="blogarticlepage gallary">
+        <div class="container">
+            <h1 class="title fw-bold font-montserrat text-blue-30 text-center">Tous nos audits sectoriels</h1>
+            <ul class="d-md-flex d-none nav nav-tabs border-0 justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn active" id="tab-1" data-bs-toggle="tab"
+                        data-bs-target="#content-1" type="button" role="tab" aria-controls="content-1"
+                        aria-selected="true">All</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-2" data-bs-toggle="tab"
+                        data-bs-target="#content-2" type="button" role="tab" aria-controls="content-2"
+                        aria-selected="false">Touristic Site</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-3" data-bs-toggle="tab"
+                        data-bs-target="#content-3" type="button" role="tab" aria-controls="content-3"
+                        aria-selected="false">Local Guide</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-4" data-bs-toggle="tab"
+                        data-bs-target="#content-4" type="button" role="tab" aria-controls="content-4"
+                        aria-selected="false">Bars & Cafes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-5" data-bs-toggle="tab"
+                        data-bs-target="#content-5" type="button" role="tab" aria-controls="content-5"
+                        aria-selected="false">Local Guide</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-6" data-bs-toggle="tab"
+                        data-bs-target="#content-6" type="button" role="tab" aria-controls="content-6"
+                        aria-selected="false">Bars & Cafes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-7" data-bs-toggle="tab"
+                        data-bs-target="#content-7" type="button" role="tab" aria-controls="content-7"
+                        aria-selected="false">Historie</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-8" data-bs-toggle="tab"
+                        data-bs-target="#content-8" type="button" role="tab" aria-controls="content-8"
+                        aria-selected="false">Local Guide</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-9" data-bs-toggle="tab"
+                        data-bs-target="#content-9" type="button" role="tab" aria-controls="content-9"
+                        aria-selected="false">Historie</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-10" data-bs-toggle="tab"
+                        data-bs-target="#content-10" type="button" role="tab" aria-controls="content-10"
+                        aria-selected="false">Bars & Cafes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-11" data-bs-toggle="tab"
+                        data-bs-target="#content-11" type="button" role="tab" aria-controls="content-11"
+                        aria-selected="false">Local Guide</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-12" data-bs-toggle="tab"
+                        data-bs-target="#content-12" type="button" role="tab" aria-controls="content-12"
+                        aria-selected="false">Historie</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-pill font-montserrat tab-btn" id="tab-13" data-bs-toggle="tab"
+                        data-bs-target="#content-13" type="button" role="tab" aria-controls="content-13"
+                        aria-selected="false">Historie</button>
+                </li>
+            </ul>
+
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="content-1" role="tabpanel" aria-labelledby="tab-1">
+
+                    <div class="tab-carousel">
+                        <div class="carousel-cell">
+                            <img src="./assets/images/gallary-img-1.png" alt="" class="w-100  object-cover">
+                            <div class="content">
+                                <h5 class="title fw-bold font-montserrat text-white">EN VALORISANT VOTRE ZONE</h5>
+                                <p class="paragraph fw-light text-white font-montserrat">Montrez à vos clients sur
+                                    quelle zone vous intervenez pour qu’ils </p>
+
+                                <a href="#" class="btn text-pink-10 font-montserrat fw-bold px-0">En savoir plus <svg
+                                        class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                            fill="#ED5485" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-cell">
+                            <img src="./assets/images/gallary-img-2.png" alt="" class="w-100  object-cover">
+                            <div class="content">
+                                <h5 class="title fw-bold font-montserrat text-white">EN VALORISANT VOTRE ZONE</h5>
+                                <p class="paragraph fw-light text-white font-montserrat">Montrez à vos clients sur
+                                    quelle zone vous intervenez pour qu’ils </p>
+
+                                <a href="#" class="btn text-pink-10 font-montserrat fw-bold px-0">En savoir plus <svg
+                                        class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                            fill="#ED5485" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-cell">
+                            <img src="./assets/images/gallary-img-3.png" alt="" class="w-100  object-cover">
+                            <div class="content">
+                                <h5 class="title fw-bold font-montserrat text-white">EN VALORISANT VOTRE ZONE</h5>
+                                <p class="paragraph fw-light text-white font-montserrat">Montrez à vos clients sur
+                                    quelle zone vous intervenez pour qu’ils </p>
+
+                                <a href="#" class="btn text-pink-10 font-montserrat fw-bold px-0">En savoir plus <svg
+                                        class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                            fill="#ED5485" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="tab-pane fade" id="content-2" role="tabpanel" aria-labelledby="tab-2">
+                    <div class="tab-carousel">
+                        <div class="carousel-cell">
+                            <img src="./assets/images/gallary-img-1.png" alt="" class="w-100  object-cover">
+                            <div class="content">
+                                <h5 class="title fw-bold font-montserrat text-white">EN VALORISANT VOTRE ZONE</h5>
+                                <p class="paragraph fw-light text-white font-montserrat">Montrez à vos clients sur
+                                    quelle zone vous intervenez pour qu’ils </p>
+
+                                <a href="#" class="btn text-pink-10 font-montserrat fw-bold px-0">En savoir plus <svg
+                                        class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                            fill="#ED5485" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-cell">
+                            <img src="./assets/images/gallary-img-2.png" alt="" class="w-100  object-cover">
+                            <div class="content">
+                                <h5 class="title fw-bold font-montserrat text-white">EN VALORISANT VOTRE ZONE</h5>
+                                <p class="paragraph fw-light text-white font-montserrat">Montrez à vos clients sur
+                                    quelle zone vous intervenez pour qu’ils </p>
+
+                                <a href="#" class="btn text-pink-10 font-montserrat fw-bold px-0">En savoir plus <svg
+                                        class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                            fill="#ED5485" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-cell">
+                            <img src="./assets/images/gallary-img-3.png" alt="" class="w-100  object-cover">
+                            <div class="content">
+                                <h5 class="title fw-bold font-montserrat text-white">EN VALORISANT VOTRE ZONE</h5>
+                                <p class="paragraph fw-light text-white font-montserrat">Montrez à vos clients sur
+                                    quelle zone vous intervenez pour qu’ils </p>
+
+                                <a href="#" class="btn text-pink-10 font-montserrat fw-bold px-0">En savoir plus <svg
+                                        class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                            fill="#ED5485" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="content-3" role="tabpanel" aria-labelledby="tab-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur quaerat eveniet
+                    aspernatur quae perspiciatis, sit, repudiandae distinctio nulla quam ad cupiditate nam minus.
+                    Deserunt perferendis obcaecati, voluptates ab nemo alias beatae praesentium doloremque corrupti
+                    minima possimus a culpa ducimus.
+                </div>
+            </div>
+
+            <div class="text-center mt-140px">
+                <a href="#" class="btn btn-icon bg-green-10 rounded-pill text-lg text-white font-montserrat"><span>Je
+                        veux un audit</span> <svg viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16.5" cy="16" r="16" fill="white" />
+                        <path
+                            d="M14.998 21.0002C14.8664 21.0009 14.7359 20.9757 14.6141 20.9259C14.4922 20.8762 14.3814 20.8029 14.288 20.7102C14.1943 20.6172 14.1199 20.5066 14.0691 20.3848C14.0183 20.2629 13.9922 20.1322 13.9922 20.0002C13.9922 19.8682 14.0183 19.7375 14.0691 19.6156C14.1199 19.4937 14.1943 19.3831 14.288 19.2902L17.598 16.0002L14.418 12.6902C14.2317 12.5028 14.1272 12.2494 14.1272 11.9852C14.1272 11.721 14.2317 11.4675 14.418 11.2802C14.5109 11.1864 14.6215 11.1121 14.7434 11.0613C14.8653 11.0105 14.996 10.9844 15.128 10.9844C15.26 10.9844 15.3907 11.0105 15.5126 11.0613C15.6344 11.1121 15.745 11.1864 15.838 11.2802L19.698 15.2802C19.8812 15.4671 19.9838 15.7184 19.9838 15.9802C19.9838 16.2419 19.8812 16.4932 19.698 16.6802L15.698 20.6802C15.6082 20.7771 15.5002 20.8553 15.38 20.9102C15.2599 20.9651 15.13 20.9957 14.998 21.0002V21.0002Z"
+                            fill="#EE628F" />
+                    </svg>
+                </a>
+
+            </div>
+    </section>
+    <!-- Gallary Tab Section End -->
+
+    <!-- Blog Post 2 Section Start -->
+    <section class="blogarticlepage blogpost container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-between mb-5 mb-lg-0">
+                <div>
+                    <img src="./assets/images/post-img-4.png" alt="" class="blog-img">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="badge badge-green-10 fw-semibold font-montserrat rounded-pill">Facebook
+                        </p>
+
+                        <p class="post-date font-montserrat fw-medium mb-0">17 JUIN 2020</p>
+                    </div>
+
+                    <h5 class="post-title font-montserrat fw-bold text-dark-30">Comment utiliser efficacement les
+                        réseaux
+                        sociaux dans le secteur de l’immobilier ?</h5>
+
+                </div>
+                <div>
+                    <p class="post-details font-montserrat">Si les entreprises de toutes formes et de toutes tailles
+                        peuvent
+                        bénéficier d’une présence sur les réseaux....</p>
+                    <a href="#" class="btn post-btn fw-bold font-montserrat text-pink-10 align-items-center p-0">
+                        <span>Lire l'article complet</span>
+                        <svg class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                fill="#ED5485" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-between mb-5 mb-lg-0">
+                <div>
+                    <img src="./assets/images/post-img-5.png" alt="" class="blog-img">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="badge badge-pink-10 fw-semibold font-montserrat rounded-pill">
+                            Instagram
+                        </p>
+
+                        <p class="post-date font-montserrat fw-medium mb-0">17 JUIN 2020</p>
+                    </div>
+
+                    <h5 class="post-title font-montserrat fw-bold text-dark-30">Les comptes Instagram à suivre à Nantes
+                        pour
+                        découvrir la Cité des Ducs</h5>
+                </div>
+
+                <div>
+                    <p class="post-details font-montserrat">Nous avons choisi pour vous 5 comptes Instagram à suivre
+                        pour
+                        découvrir Nantes sous toutes ses coutures !...</p>
+                    <a href="#" class="btn post-btn fw-bold font-montserrat text-pink-10 align-items-center p-0">
+                        <span>Lire l'article complet</span>
+                        <svg class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                fill="#ED5485" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-flex flex-column justify-content-between mb-5 mb-lg-0">
+                <div>
+                    <img src="./assets/images/post-img-6.png" alt="" class="blog-img">
+
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <p class="badge badge-green-10 fw-semibold font-montserrat rounded-pill">
+                            Facebook
+                        </p>
+
+                        <p class="post-date font-montserrat fw-medium mb-0">17 JUIN 2020</p>
+                    </div>
+
+                    <h5 class="post-title font-montserrat fw-bold text-dark-30">Les comptes Instagram à suivre à Nice
+                        pour
+                        découvrir Nissa la bella</h5>
+                </div>
+                <div>
+                    <p class="post-details font-montserrat">Nous avons choisi pour vous 8 comptes Instagram à suivre
+                        pour
+                        découvrir Nice sous toutes ses coutures !</p>
+                    <a href="#" class="btn post-btn fw-bold font-montserrat text-pink-10 align-items-center p-0">
+                        <span>Lire l'article complet</span>
+                        <svg class="ms-2" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.57031 1.58203C5.29688 1.85547 5.32422 2.26562 5.57031 2.53906L8.87891 5.65625H1.03125C0.648438 5.65625 0.375 5.95703 0.375 6.3125V7.1875C0.375 7.57031 0.648438 7.84375 1.03125 7.84375H8.87891L5.57031 10.9883C5.32422 11.2617 5.32422 11.6719 5.57031 11.9453L6.17188 12.5469C6.44531 12.793 6.85547 12.793 7.10156 12.5469L12.4336 7.21484C12.6797 6.96875 12.6797 6.55859 12.4336 6.28516L7.10156 0.980469C6.85547 0.734375 6.44531 0.734375 6.17188 0.980469L5.57031 1.58203Z"
+                                fill="#ED5485" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Blog Post 2 Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="container px-4 content-area">
+            <div class="row gy-5">
+                <div class="col-lg-3">
+                    <a href="#" class="btn p-0"><img src="./assets/images/logo-wh.png" alt="" class="logo"></a>
+                    <p class="paragraph">L’influence locale au <br>
+                        Service de votre commerce</p>
+                </div>
+                <div class="col-lg-5 col-xl-6">
+                    <h3 class="title mb-3">À PROPOS DE NOUS</h3>
+                    <div class="d-md-flex d-lg-inline d-xl-flex">
+                        <ul class="menus">
+                            <li><a href="#">Mentions Légales</a></li>
+                            <li><a href="#">Foire aux Questions</a></li>
+                            <li><a href="#">Conditions générales d'utilisation et de vente
+                                </a></li>
+                            <li><a href="#">Politique de protection des données
+                                </a></li>
+                            <li><a href="#">Notre équipe</a></li>
+                        </ul>
+
+                        <ul class="menus">
+                            <li><a href="#">Tous les city-makers</a></li>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Parrainage</a></li>
+                            <li><a href="#">L'équipe</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-xl-3">
+                    <h3 class="title mb-3">RESTEZ À JOUR</h3>
+
+                    <form action="" class="d-flex newsletter mb-5">
+                        <input type="email" class="form-control rounded-0" id="exampleFormControlInput1"
+                            placeholder="Entrez votre courriel">
+                        <button class="btn rounded-0">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.7062 3.21843C21.6049 3.11768 21.477 3.04793 21.3374 3.01737C21.1978 2.98681 21.0523 2.99672 20.9182 3.04593L4.40671 9.04593C4.26432 9.0999 4.14172 9.19589 4.05521 9.32114C3.9687 9.44639 3.92236 9.59498 3.92236 9.74718C3.92236 9.89937 3.9687 10.048 4.05521 10.1732C4.14172 10.2985 4.26432 10.3945 4.40671 10.4484L10.8537 13.0209L15.612 8.25093L16.6702 9.30843L11.8894 14.0859L14.4712 20.5284C14.5268 20.668 14.6231 20.7876 14.7475 20.8719C14.872 20.9561 15.0189 21.0011 15.1692 21.0009C15.3209 20.9978 15.468 20.9489 15.5913 20.8605C15.7145 20.7721 15.8081 20.6485 15.8597 20.5059L21.8638 4.00593C21.915 3.87323 21.9273 3.72875 21.8994 3.58932C21.8715 3.44989 21.8045 3.32126 21.7062 3.21843Z"
+                                    fill="#328090" />
+                            </svg>
+                        </button>
+                    </form>
+
+                    <h3 class="title mb-3">RÉSEAUX SOCIAUX</h3>
+                    <ul class="social-icons d-flex">
+                        <li>
+                            <a href="#">
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.7408 40C31.7942 40 40.7547 31.0457 40.7547 20C40.7547 8.9543 31.7942 0 20.7408 0C9.68746 0 0.726929 8.9543 0.726929 20C0.726929 31.0457 9.68746 40 20.7408 40Z"
+                                        fill="#F6F6F6" />
+                                    <path
+                                        d="M27.1359 19.3023H21.3658C21.3658 19.902 21.3658 21.1013 21.3621 21.701H24.7057C24.5776 22.3006 24.1233 23.1402 23.4815 23.5629C23.4808 23.5623 23.4802 23.5665 23.479 23.5659C22.6256 24.129 21.4994 24.2567 20.6632 24.0888C19.3525 23.8286 18.3152 22.8787 17.894 21.6722C17.8965 21.6704 17.8983 21.6536 17.9001 21.6524C17.6365 20.904 17.6365 19.902 17.9001 19.3023H17.8995C18.2392 18.2001 19.3077 17.1945 20.6203 16.9193C21.676 16.6956 22.8672 16.9378 23.7432 17.757C23.8597 17.6431 25.3556 16.1835 25.4678 16.0647C22.4748 13.3561 17.6825 14.3089 15.8893 17.8068H15.8887C15.8887 17.8068 15.8893 17.8068 15.8856 17.8134C14.9985 19.5314 15.0353 21.5559 15.8917 23.1917C15.8893 23.1935 15.8874 23.1947 15.8856 23.1965C16.6617 24.7017 18.0742 25.856 19.7761 26.2956C21.584 26.7693 23.8849 26.4455 25.4261 25.0525C25.4267 25.0531 25.4273 25.0537 25.4279 25.0543C26.7338 23.8789 27.5467 21.8767 27.1359 19.3023Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.7643 40C31.8176 40 40.7782 31.0457 40.7782 20C40.7782 8.9543 31.8176 0 20.7643 0C9.71089 0 0.750366 8.9543 0.750366 20C0.750366 31.0457 9.71089 40 20.7643 40Z"
+                                        fill="#F6F6F6" />
+                                    <path
+                                        d="M22.2268 27V20.7H24.4143L24.7716 17.9H22.2268V16.5364C22.2268 15.8154 22.2479 15.1 23.4001 15.1H24.5672V13.098C24.5672 13.0679 23.5647 13 22.5506 13C20.4325 13 19.1063 14.1599 19.1063 16.29V17.9H16.766V20.7H19.1063V27H22.2268Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.0139 40C31.0673 40 40.0278 31.0457 40.0278 20C40.0278 8.9543 31.0673 0 20.0139 0C8.96053 0 0 8.9543 0 20C0 31.0457 8.96053 40 20.0139 40Z"
+                                        fill="#F6F6F6" />
+                                    <path
+                                        d="M20 10C22.717 10 23.056 10.01 24.122 10.06C25.187 10.11 25.912 10.277 26.55 10.525C27.21 10.779 27.766 11.123 28.322 11.678C28.8305 12.1779 29.224 12.7826 29.475 13.45C29.722 14.087 29.89 14.813 29.94 15.878C29.987 16.944 30 17.283 30 20C30 22.717 29.99 23.056 29.94 24.122C29.89 25.187 29.722 25.912 29.475 26.55C29.2247 27.2178 28.8311 27.8226 28.322 28.322C27.822 28.8303 27.2173 29.2238 26.55 29.475C25.913 29.722 25.187 29.89 24.122 29.94C23.056 29.987 22.717 30 20 30C17.283 30 16.944 29.99 15.878 29.94C14.813 29.89 14.088 29.722 13.45 29.475C12.7823 29.2245 12.1775 28.8309 11.678 28.322C11.1694 27.8222 10.7759 27.2175 10.525 26.55C10.277 25.913 10.11 25.187 10.06 24.122C10.013 23.056 10 22.717 10 20C10 17.283 10.01 16.944 10.06 15.878C10.11 14.812 10.277 14.088 10.525 13.45C10.7752 12.7822 11.1688 12.1773 11.678 11.678C12.1777 11.1692 12.7824 10.7757 13.45 10.525C14.088 10.277 14.812 10.11 15.878 10.06C16.944 10.013 17.283 10 20 10ZM20 15C18.6739 15 17.4021 15.5268 16.4645 16.4645C15.5268 17.4021 15 18.6739 15 20C15 21.3261 15.5268 22.5979 16.4645 23.5355C17.4021 24.4732 18.6739 25 20 25C21.3261 25 22.5979 24.4732 23.5355 23.5355C24.4732 22.5979 25 21.3261 25 20C25 18.6739 24.4732 17.4021 23.5355 16.4645C22.5979 15.5268 21.3261 15 20 15ZM26.5 14.75C26.5 14.4185 26.3683 14.1005 26.1339 13.8661C25.8995 13.6317 25.5815 13.5 25.25 13.5C24.9185 13.5 24.6005 13.6317 24.3661 13.8661C24.1317 14.1005 24 14.4185 24 14.75C24 15.0815 24.1317 15.3995 24.3661 15.6339C24.6005 15.8683 24.9185 16 25.25 16C25.5815 16 25.8995 15.8683 26.1339 15.6339C26.3683 15.3995 26.5 15.0815 26.5 14.75ZM20 17C20.7956 17 21.5587 17.3161 22.1213 17.8787C22.6839 18.4413 23 19.2044 23 20C23 20.7956 22.6839 21.5587 22.1213 22.1213C21.5587 22.6839 20.7956 23 20 23C19.2044 23 18.4413 22.6839 17.8787 22.1213C17.3161 21.5587 17 20.7956 17 20C17 19.2044 17.3161 18.4413 17.8787 17.8787C18.4413 17.3161 19.2044 17 20 17Z"
+                                        fill="white" />
+                                </svg>
+
+                            </a></li>
+                        <li><a href="#"><svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.0139 40C31.0673 40 40.0278 31.0457 40.0278 20C40.0278 8.9543 31.0673 0 20.0139 0C8.96053 0 0 8.9543 0 20C0 31.0457 8.96053 40 20.0139 40Z"
+                                        fill="#F6F6F6" />
+                                    <path
+                                        d="M18.0639 19.3037C17.465 19.1847 16.9071 19.6687 16.9071 20.2799V22.3471C16.9071 22.7655 17.1984 23.1018 17.5922 23.2495C18.3388 23.5284 18.8762 24.2503 18.8762 25.0953C18.8762 26.1822 17.9942 27.0641 16.9071 27.0641C15.82 27.0641 14.9381 26.1822 14.9381 25.0953V14.923C14.9381 14.3775 14.4992 13.9386 13.9536 13.9386H11.9845C11.4389 13.9386 11 14.3775 11 14.923V25.0953C11 28.7663 14.3679 31.6662 18.1788 30.8664C20.4104 30.3988 22.2112 28.594 22.6789 26.3668C23.3927 22.9665 21.1611 19.9189 18.0639 19.3037ZM19.5735 10.001C19.1961 9.98049 18.8762 10.2799 18.8762 10.6573V11.9534C18.8762 12.302 19.1469 12.5892 19.4915 12.6056C24.7997 12.8927 29.066 17.1995 29.3736 22.5112C29.3941 22.8557 29.6813 23.1264 30.0259 23.1264H31.3427C31.7201 23.1264 32.0195 22.8065 31.999 22.4292C31.6503 15.7352 26.2683 10.3537 19.5735 10.001ZM19.5858 13.9386C19.2043 13.9099 18.8762 14.2134 18.8762 14.599V15.9156C18.8762 16.2602 19.1428 16.5432 19.4833 16.5678C22.6338 16.8262 25.1443 19.3652 25.4273 22.5235C25.4601 22.8639 25.7391 23.1264 26.0796 23.1264H27.4005C27.782 23.1264 28.0896 22.7983 28.0609 22.4168C27.7163 17.9009 24.1023 14.2873 19.5858 13.9386Z"
+                                        fill="white" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bottom-footer">
+            <div class="container-fluid px-4">
+                <div class="d-flex">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 1.5C13.14 1.5 16.5 4.86 16.5 9C16.5 13.14 13.14 16.5 9 16.5C4.86 16.5 1.5 13.14 1.5 9C1.5 4.86 4.86 1.5 9 1.5ZM9 5.25C6.93 5.25 5.25 6.93 5.25 9C5.25 11.07 6.93 12.75 9 12.75C10.365 12.75 11.5597 12.0202 12.216 10.929L10.9298 10.158C10.7273 10.4952 10.44 10.7735 10.0965 10.9651C9.75305 11.1566 9.36533 11.2548 8.97206 11.2498C8.57878 11.2448 8.19368 11.1368 7.85516 10.9366C7.51663 10.7364 7.23651 10.4509 7.04272 10.1086C6.84892 9.7664 6.74822 9.37933 6.75067 8.98603C6.75311 8.59273 6.8586 8.20694 7.05663 7.86712C7.25467 7.52731 7.53831 7.24534 7.8793 7.04932C8.22028 6.85331 8.60669 6.75011 9 6.75C9.81975 6.75 10.5375 7.188 10.9305 7.84275L12.216 7.07025C11.8828 6.51493 11.4114 6.05538 10.8478 5.73638C10.2842 5.41739 9.64762 5.24982 9 5.25Z"
+                            fill="white" />
+                    </svg>
+                    <p class="copyright ms-2 mb-0">2022 Pix.city</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Bootstrap -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Flickity JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+
+        var $carousel = $('.tab-carousel').flickity({
+            // options
+            cellAlign: 'center',
+            contain: true
+        });
+
+        $('.tab-btn').on('click', function () {
+            // expand carousel by toggling class
+            setTimeout(function () {
+                $carousel.toggleClass('is-expanded')
+                    .flickity('resize');
+                $carousel.flickity('reposition');
+            }, 200);
+
+        });
+
+
+
+        // Navbar
+        var myCollapsible = document.getElementById('navbarSupportedContent')
+        myCollapsible.addEventListener('hidden.bs.collapse', function () {
+            console.log(document.getElementById('navbar').classList.remove('toggled'));
+
+        })
+        myCollapsible.addEventListener('shown.bs.collapse', function () {
+            console.log(document.getElementById('navbar').classList.add('toggled'));
+
+        })
+    </script>
+
+</body>
+
+</html>

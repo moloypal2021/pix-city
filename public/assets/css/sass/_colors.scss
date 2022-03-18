@@ -54,6 +54,13 @@
   background: #328090;
 }
 
+.text-green-30 {
+  color: #c0e6ee;
+}
+.bg-green-30 {
+  background: #c0e6ee;
+}
+
 .text-teal-10 {
   color: #038090;
 }
@@ -101,6 +108,13 @@
 }
 .bg-gray-40 {
   background: #746a6a;
+}
+
+.text-gray-50 {
+  color: #8e8e8e;
+}
+.bg-gray-50 {
+  background: #8e8e8e;
 }
 
 .text-dark-10 {
@@ -161,4 +175,13 @@
   @include break-up(lg) {
     color: white !important;
   }
+}
+
+.badge-green-10 {
+  background: rgba(192, 230, 238, 0.8);
+  color: #328090;
+}
+.badge-pink-10 {
+  background: rgba(238, 98, 143, 0.34);
+  color: #ee628f;
 }
