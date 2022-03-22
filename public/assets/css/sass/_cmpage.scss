@@ -4,8 +4,13 @@
   }
 
   &.content {
-    padding-top: 130px;
-
+    padding-top: 40px;
+    @include break-up(md) {
+      padding-top: 70px;
+    }
+    @include break-up(lg) {
+      padding-top: 130px;
+    }
     .title {
       max-width: 758px;
       margin-left: auto;

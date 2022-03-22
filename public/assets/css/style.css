@@ -5714,7 +5714,19 @@
 }
 
 .cmpage.content {
-  padding-top: 130px;
+  padding-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .cmpage.content {
+    padding-top: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.content {
+    padding-top: 130px;
+  }
 }
 
 .cmpage.content .title {
