@@ -5715,7 +5715,6 @@
 
 .cmpage.content {
   padding-top: 130px;
-  padding-bottom: 130px;
 }
 
 .cmpage.content .title {
@@ -5747,6 +5746,299 @@
     font-size: 50px;
     line-height: 62px;
     margin-bottom: 80px;
+  }
+}
+
+.cmpage.content .avater-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#328090), to(#ed5485));
+  background-image: linear-gradient(180deg, #328090 0%, #ed5485 100%);
+  width: 105px;
+  height: 105px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .cmpage.content .avater-border {
+    width: 155px;
+    height: 155px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.content .avater-border {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+.cmpage.content .avater-border .avater {
+  width: 98px;
+  height: 98px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #fff;
+}
+
+@media (min-width: 768px) {
+  .cmpage.content .avater-border .avater {
+    width: 148px;
+    height: 148px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.content .avater-border .avater {
+    width: 173px;
+    height: 173px;
+  }
+}
+
+.cmpage.content .user-title {
+  font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  .cmpage.content .user-title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.cmpage.content .user-name {
+  font-size: 20px;
+  margin-bottom: 28px;
+}
+
+.cmpage.content .card {
+  max-width: 885px;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 18px;
+  border: 0;
+  padding: 25px 30px 36px 30px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+  .cmpage.content .card {
+    padding: 25px 50px 36px 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cmpage.content .card {
+    margin-bottom: 72px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.content .card {
+    margin-bottom: 92px;
+  }
+}
+
+.cmpage.content .card .oval-text {
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  background-color: #328090;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 992px) {
+  .cmpage.content .card .oval-text {
+    width: 68px;
+    height: 68px;
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+}
+
+.cmpage.content .card .user-title-name {
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .cmpage.content .card .user-title-name {
+    font-size: 20px;
+  }
+}
+
+.cmpage.content .card .stats {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .cmpage.content .card .stats {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.content .card .stats {
+    font-size: 20px;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+}
+
+.cmpage.content .card .stats svg,
+.cmpage.content .card .stats img {
+  width: 18px;
+  min-width: 18px;
+  margin-right: 10px;
+}
+
+@media (min-width: 992px) {
+  .cmpage.content .card .stats svg,
+  .cmpage.content .card .stats img {
+    width: 24px;
+  }
+}
+
+.cmpage.gallary {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 992px) {
+  .cmpage.gallary {
+    padding-bottom: 130px;
+    padding-top: 130px;
+  }
+}
+
+.cmpage.gallary .title {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .cmpage.gallary .title {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.gallary .title {
+    margin-bottom: 40px;
+  }
+}
+
+.cmpage.gallary .big-card, .cmpage.gallary .small-card {
+  border: 0;
+  width: 100%;
+  height: 330px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cmpage.gallary .big-card, .cmpage.gallary .small-card {
+    height: 395px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.gallary .big-card, .cmpage.gallary .small-card {
+    height: 654px;
+  }
+}
+
+.cmpage.gallary .big-card .card-img, .cmpage.gallary .small-card .card-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cmpage.gallary .big-card .card-text, .cmpage.gallary .small-card .card-text {
+  padding: 24px 18px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .cmpage.gallary .big-card .card-text, .cmpage.gallary .small-card .card-text {
+    padding: 30px;
+  }
+}
+
+.cmpage.gallary .big-card .card-text .badge, .cmpage.gallary .small-card .card-text .badge {
+  background-color: #fff;
+  padding: 8px 24px;
+  color: #393c40;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .cmpage.gallary .big-card .card-text .badge, .cmpage.gallary .small-card .card-text .badge {
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.gallary .big-card .card-text .badge, .cmpage.gallary .small-card .card-text .badge {
+    font-size: 16px;
+  }
+}
+
+.cmpage.gallary .big-card .card-text .title, .cmpage.gallary .small-card .card-text .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .cmpage.gallary .big-card .card-text .title, .cmpage.gallary .small-card .card-text .title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.gallary .big-card .card-text .title, .cmpage.gallary .small-card .card-text .title {
+    font-size: 22px;
+  }
+}
+
+.cmpage.gallary .small-card {
+  height: 330px;
+}
+
+@media (min-width: 768px) {
+  .cmpage.gallary .small-card {
+    height: 188px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cmpage.gallary .small-card {
+    height: 315px;
   }
 }
 
