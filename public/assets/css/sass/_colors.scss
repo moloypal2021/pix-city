@@ -166,6 +166,13 @@
   background: #18191f;
 }
 
+.text-dark-80 {
+  color: #41474e;
+}
+.bg-dark-80 {
+  background: #41474e;
+}
+
 .text-md-white {
   @include break-up(md) {
     color: white !important;

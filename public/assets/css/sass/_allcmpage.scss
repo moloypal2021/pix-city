@@ -1,0 +1,186 @@
+.allcmpage {
+  &.header {
+    position: relative !important;
+    .nav-menus {
+      @include break-up(md) {
+        margin-right: 44px;
+      }
+      @include break-up(lg) {
+        margin-right: 44px;
+      }
+      @include break-up(xl) {
+        margin-right: 44px;
+      }
+      @include break-up(xxl) {
+        margin-right: 44px;
+      }
+    }
+  }
+  &.heros {
+    main {
+      padding-top: 68px;
+      padding-bottom: 80px;
+      @include break-up(sm) {
+        padding-top: 100px;
+      }
+      @include break-up(md) {
+        padding-top: 147px;
+        padding-bottom: 146px;
+      }
+      @include break-up(lg) {
+        padding-top: 230px;
+        padding-bottom: 146px;
+      }
+
+      .title {
+        font-size: 20px;
+        line-height: 32px;
+        @include break-up(sm) {
+          font-size: 30px;
+          line-height: 48px;
+        }
+        @include break-up(lg) {
+          font-size: 40px;
+          line-height: 52px;
+        }
+        @include break-up(xl) {
+          font-size: 50px;
+          line-height: 81px;
+        }
+      }
+
+      .hero-img {
+        width: 246px;
+        margin-left: auto;
+        margin-right: auto;
+        @include break-up(sm) {
+          width: 344px;
+        }
+        @include break-up(md) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 272px;
+          transform: translateY(-50px);
+        }
+        @include break-up(lg) {
+          width: 300px;
+        }
+        @include break-up(xl) {
+          width: 344px;
+        }
+      }
+    }
+  }
+
+  &.content {
+    padding-top: 26px;
+    padding-bottom: 65px;
+    @include break-up(md) {
+      padding-top: 80px;
+      padding-bottom: 40px;
+    }
+    @include break-up(lg) {
+      padding-top: 96px;
+      padding-bottom: 40px;
+    }
+
+    .dropdown-group {
+      margin-bottom: 30px;
+      @include break-up(md) {
+        margin-bottom: 55px;
+      }
+    }
+
+    .btn-dropdown {
+      border: 1px solid rgba(18, 17, 39, 0.12);
+      font-size: 14px;
+      width: 144px;
+      padding: 6px 16px;
+      @include break-up(md) {
+        font-size: 16px;
+        width: 200px;
+        padding: 6px 24px;
+      }
+      @include break-up(lg) {
+        font-size: 18px;
+      }
+      svg {
+        margin-left: auto;
+      }
+      &::after {
+        display: none;
+        border: 0;
+      }
+    }
+
+    .region-area {
+      margin-bottom: 30px;
+      @include break-up(sm) {
+        font-size: 44px;
+      }
+      @include break-up(md) {
+        font-size: 64px;
+      }
+      @include break-up(md) {
+        font-size: 72px;
+      }
+    }
+    .title-block {
+      background-color: #103558;
+      border-radius: 40px 5px;
+      padding: 6px 20px;
+      @include break-up(md) {
+        padding: 4px 36px;
+      }
+      @include break-up(md) {
+        padding: 10px 36px;
+      }
+      .title {
+        font-size: 14px;
+        @include break-up(sm) {
+          font-size: 16px;
+        }
+        @include break-up(md) {
+          font-size: 18px;
+        }
+        @include break-up(lg) {
+          font-size: 24px;
+        }
+      }
+
+      .bar {
+        width: 1px;
+        height: 32px;
+        background-color: #fff;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        @include break-up(lg) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .avater-block {
+      margin-bottom: 40px;
+      @include break-up(md) {
+        margin-bottom: 44px;
+      }
+      @include break-up(lg) {
+        margin-bottom: 80px;
+      }
+    }
+
+    .avater-img {
+      width: 96px;
+      height: 96px;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+    .avater-title {
+      font-size: 14px;
+    }
+  }
+}
