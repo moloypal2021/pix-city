@@ -258,6 +258,22 @@
   background: #ee628f;
 }
 
+.text-pink-30 {
+  color: #e86d94;
+}
+
+.bg-pink-30 {
+  background: #e86d94;
+}
+
+.text-pink-40 {
+  color: #ff6060;
+}
+
+.bg-pink-40 {
+  background: #ff6060;
+}
+
 .text-gray-10 {
   color: #4f4f55;
 }
@@ -360,6 +376,14 @@
 
 .bg-dark-80 {
   background: #41474e;
+}
+
+.text-dark-90 {
+  color: #1f1f26;
+}
+
+.bg-dark-90 {
+  background: #1f1f26;
 }
 
 @media (min-width: 768px) {
@@ -5066,6 +5090,7 @@
 
 .publicatepage.feature {
   padding-top: 68px;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -5104,6 +5129,8 @@
   right: 0;
   bottom: 90px;
   width: 80px;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 @media (min-width: 768px) {
@@ -6052,6 +6079,374 @@
   .cmpage.gallary .small-card {
     height: 315px;
   }
+}
+
+.referencementpage.header {
+  position: relative !important;
+}
+
+.referencementpage.heros {
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.heros {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.heros {
+    padding-top: 60px;
+  }
+}
+
+.referencementpage.heros .subtitle {
+  font-size: 16px;
+  margin-bottom: 22px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.heros .subtitle {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.heros .subtitle {
+    margin-bottom: 28px;
+  }
+}
+
+.referencementpage.heros .title {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.heros .title {
+    font-size: 30px;
+    line-height: 48px;
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.heros .title {
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .referencementpage.heros .title {
+    font-size: 50px;
+    line-height: 73px;
+    margin-bottom: 62px;
+  }
+}
+
+.referencementpage.heros .hero-img {
+  width: 120%;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.heros .hero-img {
+    width: 150%;
+  }
+}
+
+.referencementpage.feature {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.feature {
+    padding-top: 116px;
+    padding-bottom: 130px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.feature {
+    padding-top: 140px;
+  }
+}
+
+.referencementpage.feature .leftside-design {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 80px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.feature .leftside-design {
+    width: 110px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.feature .leftside-design {
+    width: 180px;
+  }
+}
+
+.referencementpage.feature .rightside-design {
+  position: absolute;
+  right: 0;
+  bottom: 90px;
+  width: 80px;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+@media (min-width: 768px) {
+  .referencementpage.feature .rightside-design {
+    width: 148px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.feature .rightside-design {
+    width: 196px;
+  }
+}
+
+.referencementpage.feature .content {
+  max-width: 1054px;
+}
+
+.referencementpage.feature .content .title {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.feature .content .title {
+    font-size: 26px;
+    line-height: 43px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.feature .content .title {
+    font-size: 40px;
+    line-height: 64px;
+    margin-bottom: 32px;
+  }
+}
+
+.referencementpage.feature .content .check-area {
+  max-width: 900px;
+}
+
+.referencementpage.feature .content .check-area .col-md-6 {
+  margin-bottom: 40px;
+}
+
+.referencementpage.feature .content .check-area .check-icon {
+  width: 28px;
+  min-width: 28px;
+  margin-right: 16px;
+  margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.feature .content .check-area .check-icon {
+    margin-right: 20px;
+  }
+}
+
+.referencementpage.feature .content .check-area .check-text {
+  font-size: 16px;
+  color: #637381;
+}
+
+@media (min-width: 992px) {
+  .referencementpage.feature .content .check-area .check-text {
+    font-size: 16px;
+  }
+}
+
+.referencementpage.feature .content .title-2 {
+  font-size: 12px;
+  max-width: 714px;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.feature .content .title-2 {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.feature .content .title-2 {
+    font-size: 26px;
+    margin-top: 70px;
+  }
+}
+
+.referencementpage.content {
+  padding-top: 82px;
+}
+
+.referencementpage.content .leftside-design {
+  position: absolute;
+  left: 0;
+  bottom: 240px;
+  width: 80px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.content .leftside-design {
+    width: 110px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.content .leftside-design {
+    width: 180px;
+  }
+}
+
+.referencementpage.content .rightside-design {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: 80px;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+@media (min-width: 768px) {
+  .referencementpage.content .rightside-design {
+    width: 148px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.content .rightside-design {
+    width: 196px;
+  }
+}
+
+.referencementpage.content .main-title, .referencementpage.content .cardpage.heros .sub-title, .cardpage.heros .referencementpage.content .sub-title {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .referencementpage.content .main-title, .referencementpage.content .cardpage.heros .sub-title, .cardpage.heros .referencementpage.content .sub-title {
+    font-size: 26px;
+    line-height: 43px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.content .main-title, .referencementpage.content .cardpage.heros .sub-title, .cardpage.heros .referencementpage.content .sub-title {
+    font-size: 40px;
+    line-height: 64px;
+    margin-bottom: 44px;
+  }
+}
+
+.referencementpage.content .content-1, .referencementpage.content .content-2, .referencementpage.content .content-3, .referencementpage.content .content-4 {
+  margin-bottom: 40px;
+}
+
+.referencementpage.content .content-1 .sub-title, .referencementpage.content .content-2 .sub-title, .referencementpage.content .content-3 .sub-title, .referencementpage.content .content-4 .sub-title {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 576px) {
+  .referencementpage.content .content-1 .sub-title, .referencementpage.content .content-2 .sub-title, .referencementpage.content .content-3 .sub-title, .referencementpage.content .content-4 .sub-title {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .referencementpage.content .content-1 .sub-title, .referencementpage.content .content-2 .sub-title, .referencementpage.content .content-3 .sub-title, .referencementpage.content .content-4 .sub-title {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.content .content-1 .sub-title, .referencementpage.content .content-2 .sub-title, .referencementpage.content .content-3 .sub-title, .referencementpage.content .content-4 .sub-title {
+    margin-bottom: 22px;
+  }
+}
+
+.referencementpage.content .content-1 .title, .referencementpage.content .content-2 .title, .referencementpage.content .content-3 .title, .referencementpage.content .content-4 .title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .referencementpage.content .content-1 .title, .referencementpage.content .content-2 .title, .referencementpage.content .content-3 .title, .referencementpage.content .content-4 .title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .referencementpage.content .content-1 .title, .referencementpage.content .content-2 .title, .referencementpage.content .content-3 .title, .referencementpage.content .content-4 .title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .referencementpage.content .content-1 .title, .referencementpage.content .content-2 .title, .referencementpage.content .content-3 .title, .referencementpage.content .content-4 .title {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+}
+
+.referencementpage.content .content-1 .paragraph, .referencementpage.content .content-2 .paragraph, .referencementpage.content .content-3 .paragraph, .referencementpage.content .content-4 .paragraph {
+  font-size: 14px;
+  max-width: 547px;
+  color: #5f5f5f;
+  letter-spacing: 0.01em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .referencementpage.content .content-1 .paragraph, .referencementpage.content .content-2 .paragraph, .referencementpage.content .content-3 .paragraph, .referencementpage.content .content-4 .paragraph {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .referencementpage.content .content-1 .paragraph, .referencementpage.content .content-2 .paragraph, .referencementpage.content .content-3 .paragraph, .referencementpage.content .content-4 .paragraph {
+    font-size: 18px;
+  }
+}
+
+.referencementpage.content .content-3 .paragraph {
+  max-width: 403px;
+}
+
+.referencementpage.content .content-4 .paragraph {
+  max-width: 576px;
 }
 
 html {

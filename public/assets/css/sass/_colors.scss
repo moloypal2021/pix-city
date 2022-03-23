@@ -82,6 +82,20 @@
   background: #ee628f;
 }
 
+.text-pink-30 {
+  color: #e86d94;
+}
+.bg-pink-30 {
+  background: #e86d94;
+}
+
+.text-pink-40 {
+  color: #ff6060;
+}
+.bg-pink-40 {
+  background: #ff6060;
+}
+
 .text-gray-10 {
   color: #4f4f55;
 }
@@ -173,6 +187,12 @@
   background: #41474e;
 }
 
+.text-dark-90 {
+  color: #1f1f26;
+}
+.bg-dark-90 {
+  background: #1f1f26;
+}
 .text-md-white {
   @include break-up(md) {
     color: white !important;

@@ -53,6 +53,7 @@
     @include break-up(lg) {
       padding-top: 140px;
     }
+    overflow: hidden;
     .leftside-design {
       position: absolute;
       left: 0;
@@ -70,6 +71,7 @@
       right: 0;
       bottom: 90px;
       width: 80px;
+      transform: translateX(30px);
       @include break-up(md) {
         width: 148px;
       }
