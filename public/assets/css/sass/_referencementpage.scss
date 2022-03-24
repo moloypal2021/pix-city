@@ -244,6 +244,7 @@
         }
         @include break-up(md) {
           font-size: 18px;
+          margin-left: 0;
         }
       }
     }
@@ -263,6 +264,111 @@
       @extend .content-1;
       .paragraph {
         max-width: 576px;
+      }
+    }
+  }
+
+  &.cta {
+    padding-bottom: 80px;
+    @include break-up(md) {
+      padding-bottom: 100px;
+    }
+    @include break-up(lg) {
+      padding-bottom: 130px;
+    }
+    .card {
+      max-width: 955px;
+      border: 0;
+      background: #ffffff;
+      box-shadow: -8px 30px 80px -9px rgba(82, 82, 82, 0.11);
+      border-radius: 8px;
+      padding: 40px 28px 54px 28px;
+      margin-bottom: 60px;
+      @include break-up(md) {
+        padding: 32px 106px 32px 106px;
+        margin-bottom: 72px;
+      }
+      @include break-up(lg) {
+        padding: 12px 106px 32px 106px;
+      }
+
+      .youtube-logo {
+        width: 90px;
+        @include break-up(md) {
+          width: 100px;
+        }
+      }
+
+      .paragraph {
+        font-size: 16px;
+        @include break-up(md) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  &.cta-2 {
+    background-color: #edeff1;
+    padding-top: 50px;
+    padding-bottom: 48px;
+    @include break-up(md) {
+      padding-top: 90px;
+      padding-bottom: 150px;
+    }
+    @include break-up(lg) {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+    .title {
+      font-size: 20px;
+      line-height: 32px;
+      margin-bottom: 4px;
+      @include break-up(md) {
+        font-size: 26px;
+        line-height: 43px;
+        margin-bottom: 14px;
+      }
+      @include break-up(lg) {
+        font-size: 32px;
+        line-height: 64px;
+        margin-bottom: 20px;
+      }
+      @include break-up(xl) {
+        font-size: 40px;
+        line-height: 64px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .paragraph {
+      font-size: 16px;
+      line-height: 152%;
+      letter-spacing: -0.03em;
+      color: #878080;
+      margin-bottom: 28px;
+      @include break-up(md) {
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+      @include break-up(lg) {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+    }
+
+    .sub-title {
+      font-size: 16px;
+      margin-bottom: 60px;
+      line-height: 152%;
+      letter-spacing: -0.03em;
+      @include break-up(md) {
+        font-size: 20px;
+        margin-bottom: 72px;
+      }
+      @include break-up(lg) {
+        font-size: 24px;
+        margin-bottom: 72px;
       }
     }
   }
