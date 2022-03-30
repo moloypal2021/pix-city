@@ -721,7 +721,7 @@
 
 @media (min-width: 1200px) {
   .homepage.heros {
-    padding-top: 118px;
+    padding-top: 140px;
   }
 }
 
@@ -1066,6 +1066,32 @@
 
 @media (min-width: 1200px) {
   .homepage.nos .nos-box .nos-details {
+    margin-left: 66px;
+  }
+}
+
+.homepage.nos .nos-box .nos-details2 {
+  margin-left: 36px;
+}
+
+.homepage.nos .nos-box .nos-details2 .nos-paragraph {
+  max-width: 350px;
+}
+
+@media (min-width: 768px) {
+  .homepage.nos .nos-box .nos-details2 {
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .homepage.nos .nos-box .nos-details2 {
+    margin-left: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .homepage.nos .nos-box .nos-details2 {
     margin-left: 66px;
   }
 }
@@ -1877,6 +1903,11 @@
   background-color: #183555;
 }
 
+.cardpage.heros .slider .carousel-control-next,
+.cardpage.heros .slider .carousel-control-prev {
+  opacity: 1;
+}
+
 .cardpage.tabSection .tabMenu {
   margin-bottom: 60px;
 }
@@ -1952,24 +1983,24 @@
   -o-object-position: center;
      object-position: center;
   margin-bottom: 32px;
-  height: 480px;
+  height: 380px;
 }
 
 @media (min-width: 576px) {
   .cardpage.tabSection .photos-par-section .big-img {
-    height: 600px;
+    height: 400px;
   }
 }
 
 @media (min-width: 992px) {
   .cardpage.tabSection .photos-par-section .big-img {
-    height: 780px;
+    height: 480px;
   }
 }
 
 @media (min-width: 1200px) {
   .cardpage.tabSection .photos-par-section .big-img {
-    height: 928px;
+    height: 568px;
   }
 }
 
@@ -2006,7 +2037,7 @@
 
 @media (min-width: 1200px) {
   .cardpage.tabSection .photos-par-section .sliderNav .flickity-viewport {
-    height: 311px !important;
+    height: 250px !important;
   }
 }
 
@@ -3213,20 +3244,42 @@
 
 .influence.heros .big-img {
   aspect-ratio: 16 / 8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.influence.heros .big-img img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  border-radius: 12px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.influence.heros .big-img img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .influence.heros .img-1 {
   aspect-ratio: 16 / 10;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.influence.heros .img-1 img {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  border-radius: 12px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.influence.heros .img-1 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .influence.team {
@@ -3442,12 +3495,14 @@
 .influence.howitworks .step {
   font-size: 24px;
   margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 992px) {
   .influence.howitworks .step {
     font-size: 40px;
-    line-height: 54px;
+    line-height: 40px;
   }
 }
 
@@ -4359,6 +4414,14 @@
 .blogarticlepage.details .right-side {
   max-width: 280px;
   margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 992px) {
+  .blogarticlepage.details .right-side {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 
 .blogarticlepage.details .right-side .title {
@@ -4540,7 +4603,7 @@
 
 @media (min-width: 992px) {
   .pizzahatpage.content .resultas {
-    font-size: 40px;
+    font-size: 28px;
     line-height: 60px;
     margin-bottom: 0px;
     margin-right: 46px;
@@ -4622,7 +4685,7 @@
 
 @media (min-width: 992px) {
   .allbenepage.content .contentarea {
-    max-width: 858px;
+    max-width: 940px;
   }
 }
 
@@ -4661,6 +4724,9 @@
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 26px;
+  max-width: 758px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -4742,7 +4808,7 @@
 
 @media (min-width: 992px) {
   .allbenepage.content .resultas {
-    font-size: 40px;
+    font-size: 28px;
     line-height: 60px;
     margin-bottom: 0px;
     margin-right: 46px;
@@ -4824,7 +4890,7 @@
 
 @media (min-width: 992px) {
   .bricolagepage.content .contentarea {
-    max-width: 858px;
+    max-width: 1000px;
   }
 }
 
@@ -4851,6 +4917,9 @@
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 26px;
+  max-width: 758px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -4932,7 +5001,7 @@
 
 @media (min-width: 992px) {
   .bricolagepage.content .resultas {
-    font-size: 40px;
+    font-size: 28px;
     line-height: 60px;
     margin-bottom: 0px;
     margin-right: 46px;
@@ -5401,20 +5470,33 @@
   overflow: hidden;
 }
 
-.publicatepage.blogpost .blog-img {
+.publicatepage.blogpost .card-image {
   width: 100%;
   height: 169px;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 9px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 @media (min-width: 992px) {
-  .publicatepage.blogpost .blog-img {
+  .publicatepage.blogpost .card-image {
     height: 200px;
     margin-bottom: 32px;
   }
+}
+
+.publicatepage.blogpost .blog-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.publicatepage.blogpost .blog-img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .publicatepage.blogpost .post-social {
@@ -5636,19 +5718,19 @@
 
 @media (min-width: 576px) {
   .allcmpage.content .region-area {
-    font-size: 44px;
+    margin-bottom: 44px;
   }
 }
 
 @media (min-width: 768px) {
   .allcmpage.content .region-area {
-    font-size: 64px;
+    margin-bottom: 64px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .allcmpage.content .region-area {
-    font-size: 72px;
+    margin-bottom: 87px;
   }
 }
 
@@ -5688,7 +5770,7 @@
 
 @media (min-width: 992px) {
   .allcmpage.content .title-block .title {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -5710,6 +5792,8 @@
 
 .allcmpage.content .avater-block {
   margin-bottom: 40px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -5722,6 +5806,12 @@
   .allcmpage.content .avater-block {
     margin-bottom: 80px;
   }
+}
+
+.allcmpage.content .avater-block:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .allcmpage.content .avater-img {
@@ -6010,6 +6100,13 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.cmpage.gallary .big-card .card-img:hover, .cmpage.gallary .small-card .card-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .cmpage.gallary .big-card .card-text, .cmpage.gallary .small-card .card-text {

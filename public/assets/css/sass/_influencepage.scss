@@ -64,16 +64,30 @@
     }
     .big-img {
       aspect-ratio: 16 / 8;
-      object-fit: cover;
-      object-position: top;
       border-radius: 12px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        object-position: top;
+        transition: 300ms ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
 
     .img-1 {
       aspect-ratio: 16 / 10;
-      object-fit: cover;
-      object-position: top;
       border-radius: 12px;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+        object-position: top;
+        transition: 300ms ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
   }
 
@@ -233,9 +247,11 @@
     .step {
       font-size: 24px;
       margin-right: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
       @include break-up(lg) {
         font-size: 40px;
-        line-height: 54px;
+        line-height: 40px;
       }
     }
 

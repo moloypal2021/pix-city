@@ -158,6 +158,11 @@
           background-color: #183555;
         }
       }
+
+      .carousel-control-next,
+      .carousel-control-prev {
+        opacity: 1;
+      }
     }
   }
 
@@ -224,15 +229,15 @@
         object-fit: cover;
         object-position: center;
         margin-bottom: 32px;
-        height: 480px;
+        height: 380px;
         @media (min-width: 576px) {
-          height: 600px;
+          height: 400px;
         }
         @media (min-width: 992px) {
-          height: 780px;
+          height: 480px;
         }
         @media (min-width: 1200px) {
-          height: 928px;
+          height: 568px;
         }
       }
       .small-img {
@@ -257,7 +262,7 @@
             height: 220px !important;
           }
           @media (min-width: 1200px) {
-            height: 311px !important;
+            height: 250px !important;
           }
         }
       }

@@ -17,7 +17,7 @@
     .contentarea {
       max-width: 656px;
       @include break-up(lg) {
-        max-width: 858px;
+        max-width: 940px;
       }
     }
     .logo {
@@ -43,6 +43,9 @@
       font-size: 22px;
       line-height: 32px;
       margin-bottom: 26px;
+      max-width: 758px;
+      margin-left: auto;
+      margin-right: auto;
       @include break-up(md) {
         font-size: 30px;
         line-height: 45px;
@@ -99,7 +102,7 @@
         margin-bottom: 14px;
       }
       @include break-up(lg) {
-        font-size: 40px;
+        font-size: 28px;
         line-height: 60px;
         margin-bottom: 0px;
         margin-right: 46px;

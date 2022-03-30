@@ -24,7 +24,7 @@
       padding-top: 144px;
     }
     @include break-up(xl) {
-      padding-top: 118px;
+      padding-top: 140px;
     }
     .title {
       font-size: 22px;
@@ -246,6 +246,23 @@
 
       .nos-details {
         max-width: 350px;
+        margin-left: 36px;
+        @include break-up(md) {
+          margin-left: 32px;
+        }
+        @include break-up(lg) {
+          margin-left: 48px;
+        }
+        @include break-up(xl) {
+          margin-left: 66px;
+        }
+      }
+
+      .nos-details2 {
+        .nos-paragraph {
+          max-width: 350px;
+        }
+
         margin-left: 36px;
         @include break-up(md) {
           margin-left: 32px;

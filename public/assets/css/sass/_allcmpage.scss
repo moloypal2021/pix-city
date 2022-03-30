@@ -117,13 +117,13 @@
     .region-area {
       margin-bottom: 30px;
       @include break-up(sm) {
-        font-size: 44px;
+        margin-bottom: 44px;
       }
       @include break-up(md) {
-        font-size: 64px;
+        margin-bottom: 64px;
       }
-      @include break-up(md) {
-        font-size: 72px;
+      @include break-up(lg) {
+        margin-bottom: 87px;
       }
     }
     .title-block {
@@ -145,7 +145,7 @@
           font-size: 18px;
         }
         @include break-up(lg) {
-          font-size: 24px;
+          font-size: 20px;
         }
       }
 
@@ -170,6 +170,12 @@
       }
       @include break-up(lg) {
         margin-bottom: 80px;
+      }
+      transition: 300ms ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
       }
     }
 

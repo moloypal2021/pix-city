@@ -114,7 +114,11 @@
     .right-side {
       max-width: 280px;
       margin-left: auto;
-
+      margin-right: auto;
+      @include break-up(lg) {
+        margin-left: auto;
+        margin-right: 0;
+      }
       .title {
         font-size: 18px;
         line-height: 25px;
