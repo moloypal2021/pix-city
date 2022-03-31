@@ -698,6 +698,11 @@
               line-height: 24px;
             }
           }
+          .btn{
+            &:hover{
+              color: white;
+            }
+          }
         }
       }
     }

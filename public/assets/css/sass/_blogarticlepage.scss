@@ -52,13 +52,22 @@
     .heros-img {
       width: 100%;
       height: 350px;
-      object-fit: cover;
+    overflow: hidden; 
       @include break-up(sm) {
         height: 350px;
       }
 
       @include break-up(lg) {
         height: 550px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 300ms ease-in-out;
+        &:hover{
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -97,17 +106,61 @@
       font-size: 12px;
       @include break-up(lg) {
         font-size: 16px;
+        margin-bottom: 40px;
       }
     }
 
     .img-1 {
       width: 100%;
+      height: 275px;
       margin-bottom: 30px;
+      overflow: hidden;
+      @include break-up(sm) {
+      height: 375px;
+      }
       @include break-up(md) {
         margin-bottom: 40px;
+        height: 432px;
       }
       @include break-up(lg) {
         margin-bottom: 60px;
+        height: 509px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 300ms ease-in-out;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .img-2 {
+      width: 100%;
+      height: 258px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      @include break-up(sm) {
+      height: 345px;
+      }
+      @include break-up(md) {
+        margin-bottom: 40px;
+        height: 402px;
+      }
+      @include break-up(lg) {
+        margin-bottom: 60px;
+        height: 472px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 300ms ease-in-out;
+        &:hover{
+          transform: scale(1.1);
+        }
       }
     }
 
