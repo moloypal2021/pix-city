@@ -6,6 +6,7 @@
           justify-content: start;
         }
       }
+
       .navbar-toggler {
         position: static;
         margin-right: 8px;
@@ -17,12 +18,15 @@
     }
 
     padding-top: 98px;
+
     @include break-up(sm) {
       padding-top: 100px;
     }
+
     @include break-up(md) {
       padding-top: 144px;
     }
+
     @include break-up(xl) {
       padding-top: 184px;
     }
@@ -36,24 +40,30 @@
       width: 50%;
       height: 310px;
       transition: 0.5s ease-in-out;
+
       @media (min-width: 400px) {
         height: 380px;
       }
+
       @include break-up(sm) {
         height: 470px;
       }
+
       @include break-up(md) {
         height: 630px;
         width: 42%;
       }
+
       @include break-up(lg) {
         height: 580px;
         width: 33%;
       }
+
       @include break-up(xl) {
         height: 850px;
         width: 32%;
       }
+
       @include break-up(xxl) {
         height: 840px;
         width: 30%;
@@ -67,24 +77,30 @@
     .hero-img {
       width: 280px;
       margin-bottom: 24px;
+
       @media (min-width: 400px) {
         width: 380px;
       }
+
       @include break-up(sm) {
         width: 100%;
       }
+
       @include break-up(lg) {
         margin-bottom: 40px;
       }
+
       @include break-up(lg) {
         width: 125%;
         margin-bottom: 0px;
         margin-left: -120px;
       }
+
       @include break-up(xl) {
         width: 135%;
         margin-left: -150px;
       }
+
       @include break-up(xxl) {
         width: 140%;
         margin-left: -200px;
@@ -95,6 +111,7 @@
       font-size: 22px;
       line-height: 32px;
       margin-bottom: 60px;
+
       @include break-up(md) {
         font-size: 30px;
         line-height: 52px;
@@ -110,6 +127,7 @@
 
   &.testmonial {
     padding-top: 130px;
+
     .title {
       max-width: 745px;
       margin-left: auto;
@@ -117,6 +135,7 @@
       font-size: 20px;
       line-height: 32px;
       margin-bottom: 42px;
+
       @include break-up(sm) {
         font-size: 26px;
         line-height: 43px;
@@ -131,12 +150,10 @@
     }
 
     .top-indicator {
-      background: linear-gradient(
-        90deg,
-        #751bcf 2.82%,
-        #b62586 46.46%,
-        #f7a34b 99.13%
-      );
+      background: linear-gradient(90deg,
+          #751bcf 2.82%,
+          #b62586 46.46%,
+          #f7a34b 99.13%);
       width: 128px;
       height: 12px;
       margin-left: auto;
@@ -151,21 +168,27 @@
       z-index: -1;
       display: flex;
       justify-content: center;
+
       img {
         filter: drop-shadow(0px 20px 58px rgba(0, 0, 0, 0.13));
         width: 33.3333%;
+
         @include break-up(sm) {
           width: 140px;
         }
+
         @include break-up(md) {
           width: 238px;
         }
+
         @include break-up(lg) {
           width: 258px;
         }
+
         @include break-up(xl) {
           width: 258px;
         }
+
         @include break-up(xxl) {
           width: 300px;
         }
@@ -181,49 +204,60 @@
         padding-bottom: 10%;
         margin-left: 0.6%;
         margin-right: 0.6%;
+
         @include break-up(sm) {
           padding-top: 13%;
           padding-bottom: 13%;
           margin-left: 12px;
           margin-right: 12px;
         }
+
         @include break-up(md) {
           padding-top: 17%;
           padding-bottom: 17%;
           margin-left: 6px;
           margin-right: 6px;
         }
+
         @include break-up(lg) {
           padding-top: 13%;
           padding-bottom: 13%;
           margin-left: 22px;
           margin-right: 22px;
         }
+
         @include break-up(xl) {
           margin-left: 37px;
           margin-right: 37px;
           padding-top: 11%;
           padding-bottom: 11%;
         }
+
         @include break-up(xxl) {
           margin-left: 42px;
           margin-right: 42px;
         }
+
         img {
           width: 95%;
           filter: drop-shadow(0px 20px 58px rgba(0, 0, 0, 0.13));
+
           @include break-up(sm) {
             width: 120px;
           }
+
           @include break-up(md) {
             width: 204px;
           }
+
           @include break-up(lg) {
             width: 222px;
           }
+
           @include break-up(xl) {
             width: 222px;
           }
+
           @include break-up(xxl) {
             width: 260px;
           }
@@ -240,6 +274,7 @@
 
       .flickity-page-dots {
         display: none;
+
         @include break-up(lg) {
           display: inline;
         }
@@ -257,6 +292,7 @@
       font-size: 20px;
       line-height: 32px;
       margin-bottom: 30px;
+
       @include break-up(sm) {
         font-size: 26px;
         line-height: 43px;
@@ -272,9 +308,11 @@
 
     .columbus {
       width: 26px;
+
       @include break-up(sm) {
         width: 33px;
       }
+
       @include break-up(lg) {
         width: 49px;
       }
@@ -282,9 +320,11 @@
 
     .pizzahat {
       width: 87px;
+
       @include break-up(sm) {
         width: 93px;
       }
+
       @include break-up(lg) {
         width: 132px;
       }
@@ -292,9 +332,11 @@
 
     .mrbricolage {
       width: 96px;
+
       @include break-up(sm) {
         width: 117px;
       }
+
       @include break-up(lg) {
         width: 150px;
       }
@@ -304,19 +346,24 @@
   &.cta {
     padding-top: 90px;
     padding-bottom: 100px;
+
     @include break-up(sm) {
       padding-top: 100px;
     }
+
     @include break-up(md) {
       padding-top: 130px;
     }
+
     @include break-up(xl) {
       padding-top: 158px;
     }
+
     .title {
       font-size: 20px;
       line-height: 32px;
       margin-bottom: 32px;
+
       @include break-up(sm) {
         font-size: 26px;
         line-height: 43px;
@@ -335,6 +382,7 @@
         height: 3px;
         background-color: #ee628f;
       }
+
       @include break-up(md) {
         width: 182px;
         min-width: 182px;
@@ -343,6 +391,7 @@
 
       .t-title {
         font-size: 14px;
+
         @include break-up(md) {
           font-size: 16px;
         }
@@ -352,6 +401,7 @@
     .t-paragraph {
       font-size: 14px;
       color: #5f5f5f;
+
       @include break-up(md) {
         font-size: 18px;
       }
@@ -361,10 +411,12 @@
   &.howitworks {
     padding-top: 66px;
     padding-bottom: 54px;
+
     @include break-up(md) {
       padding-top: 108px;
       padding-bottom: 80px;
     }
+
     background: #103558;
     position: relative;
     margin-bottom: 137px;
@@ -378,6 +430,7 @@
       left: 0;
       z-index: 0;
       height: 338px;
+
       @include break-up(sm) {
         height: 440px;
       }
@@ -390,10 +443,12 @@
         height: 660px;
       }
     }
+
     .title {
       font-size: 20px;
       line-height: 32px;
       margin-bottom: 48px;
+
       @include break-up(sm) {
         font-size: 26px;
         line-height: 43px;
@@ -410,6 +465,7 @@
     .step {
       position: relative;
     }
+
     .number {
       color: #22437d;
       font-size: 20px;
@@ -418,26 +474,32 @@
       min-width: 40px;
       border-radius: 28px;
       background-color: #fff;
+
       @include break-up(md) {
         margin-right: 0px;
       }
+
       @include break-up(lg) {
         font-size: 30px;
         width: 72px;
         height: 72px;
       }
     }
+
     .step-number {
       margin-right: 20px;
+
       @include break-up(md) {
         margin-right: 0px;
         margin-bottom: 20px;
         position: relative;
       }
+
       @include break-up(lg) {
         margin-bottom: 38px;
       }
     }
+
     .arrow {
       position: absolute;
       top: 48px;
@@ -445,6 +507,7 @@
       width: 100%;
       height: 100%;
       transform: translate(0%, 0%);
+
       @include break-up(md) {
         display: flex;
         align-items: center;
@@ -455,16 +518,20 @@
         height: auto;
         transform: translate(-90%, 0%);
       }
+
       svg {
         height: 40%;
+
         @include break-up(md) {
           height: auto;
           width: 80%;
         }
       }
     }
+
     .work-title {
       font-size: 16px;
+
       @include break-up(lg) {
         font-size: 20px;
       }
@@ -473,6 +540,7 @@
 
   &.feature {
     padding-bottom: 90px;
+
     @include break-up(md) {
       padding-bottom: 130px;
     }
@@ -481,6 +549,7 @@
       font-size: 20px;
       line-height: 32px;
       margin-bottom: 30px;
+
       @include break-up(sm) {
         font-size: 30px;
         line-height: 43px;
@@ -492,8 +561,10 @@
         line-height: 53px;
         margin-bottom: 42px;
       }
+
       .emoji {
         width: 20px;
+
         @include break-up(sm) {
           width: 30px;
         }
@@ -506,6 +577,7 @@
 
     .sub-title {
       font-size: 16px;
+
       @include break-up(md) {
         font-size: 22px;
       }
@@ -514,8 +586,9 @@
     .list {
       &:not(:last-child) {
         margin-bottom: 16px;
+
         @include break-up(md) {
-          margin-bottom: 32px;
+          margin-bottom: 34px;
         }
       }
     }
@@ -524,6 +597,7 @@
       width: 22px;
       min-width: 22px;
       margin-right: 8px;
+
       @include break-up(md) {
         margin-right: 18px;
         width: 32px;
@@ -533,6 +607,7 @@
 
     .list-text {
       font-size: 14px;
+
       @include break-up(md) {
         font-size: 18px;
       }
@@ -541,9 +616,11 @@
 
   &.blog {
     padding-bottom: 100px;
+
     @include break-up(md) {
       padding-bottom: 130px;
     }
+
     @include break-up(lg) {
       padding-bottom: 140px;
     }
@@ -554,34 +631,56 @@
       border-radius: 12px;
       overflow: hidden;
       margin-bottom: 36px;
+
       .card-img-top {
+        width: 100%;
         height: 170px;
+        overflow: hidden;
+
         @include break-up(lg) {
           height: 200px;
         }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 300ms ease-in-out;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
       }
+
       .card-body {
         padding: 20px;
+
         @include break-up(xl) {
           padding: 32px 24px;
         }
 
         .sub-title {
           font-size: 12px;
+
           @include break-up(md) {
             font-size: 14px;
           }
         }
+
         .title {
           font-size: 12px;
           margin-bottom: 6;
+
           @include break-up(md) {
             font-size: 16px;
             margin-bottom: 12;
           }
+
           @include break-up(lg) {
             font-size: 18px;
           }
+
           @include break-up(xl) {
             font-size: 20px;
           }
@@ -590,6 +689,7 @@
         .card-text {
           font-size: 11px;
           color: rgba(18, 17, 39, 0.56);
+
           @include break-up(md) {
             font-size: 14px;
           }
