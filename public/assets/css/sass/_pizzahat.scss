@@ -6,43 +6,46 @@
   &.content {
     padding-top: 30px;
     padding-bottom: 80px;
+
     @include break-up(md) {
       padding-top: 78px;
       padding-bottom: 100px;
     }
+
     @include break-up(lg) {
       padding-top: 140px;
       padding-bottom: 153px;
     }
+
     .contentarea {
       max-width: 656px;
+
       @include break-up(lg) {
         max-width: 858px;
       }
     }
+
     .pizzalogo {
       width: 115px;
       height: 115px;
       display: flex;
       align-items: center;
       justify-content: center;
-      filter: drop-shadow(0px 131px 397px rgba(0, 0, 0, 0.13))
-        drop-shadow(0px 54.7287px 165.857px rgba(0, 0, 0, 0.0934511))
-        drop-shadow(0px 29.2606px 88.6751px rgba(0, 0, 0, 0.0774939))
-        drop-shadow(0px 16.4032px 49.7106px rgba(0, 0, 0, 0.065))
-        drop-shadow(0px 8.71163px 26.4009px rgba(0, 0, 0, 0.0525061))
-        drop-shadow(0px 3.62511px 10.986px rgba(0, 0, 0, 0.0365489));
+      filter: drop-shadow(0px 131px 397px rgba(0, 0, 0, 0.13)) drop-shadow(0px 54.7287px 165.857px rgba(0, 0, 0, 0.0934511)) drop-shadow(0px 29.2606px 88.6751px rgba(0, 0, 0, 0.0774939)) drop-shadow(0px 16.4032px 49.7106px rgba(0, 0, 0, 0.065)) drop-shadow(0px 8.71163px 26.4009px rgba(0, 0, 0, 0.0525061)) drop-shadow(0px 3.62511px 10.986px rgba(0, 0, 0, 0.0365489));
       margin-bottom: 48px;
+
       @include break-up(md) {
         margin-bottom: 58px;
         width: 150px;
         height: 150px;
       }
+
       @include break-up(lg) {
         margin-bottom: 40px;
         width: 172px;
         height: 172px;
       }
+
       .logo {
         width: 130%;
         height: 130%;
@@ -53,26 +56,31 @@
       font-size: 22px;
       line-height: 32px;
       margin-bottom: 26px;
+
       @include break-up(md) {
         font-size: 30px;
         line-height: 45px;
         margin-bottom: 20px;
       }
+
       @include break-up(lg) {
         font-size: 48px;
         line-height: 63px;
         margin-bottom: 26px;
       }
     }
+
     .time {
       font-size: 18px;
       line-height: 26px;
       margin-bottom: 60px;
+
       @include break-up(md) {
         font-size: 24px;
         line-height: 34px;
         margin-bottom: 72px;
       }
+
       @include break-up(lg) {
         font-size: 32px;
         line-height: 44px;
@@ -84,17 +92,17 @@
       line-height: 32px;
       margin-top: 70px;
       margin-bottom: 50px;
+
       @include break-up(md) {
         font-size: 26px;
         line-height: 43px;
         margin-top: 100px;
-        margin-bottom: 26px;
       }
+
       @include break-up(lg) {
         font-size: 28px;
         line-height: 43px;
         margin-top: 120px;
-        margin-bottom: 20px;
       }
     }
 
@@ -103,11 +111,13 @@
       line-height: 32px;
       margin-bottom: 22px;
       letter-spacing: -1.5px;
+
       @include break-up(md) {
         font-size: 26px;
         line-height: 43px;
         margin-bottom: 14px;
       }
+
       @include break-up(lg) {
         font-size: 28px;
         line-height: 60px;
@@ -119,6 +129,7 @@
     .check-text {
       font-size: 14px;
       line-height: 24px;
+
       @include break-up(md) {
         font-size: 18px;
         line-height: 20px;
@@ -127,21 +138,27 @@
 
     .post {
       margin-top: 40px;
+
       @include break-up(md) {
         margin-top: 50px;
       }
+
       @include break-up(md) {
         margin-top: 85px;
       }
+
       .col-md-6 {
         margin-bottom: 28px;
+
         @include break-up(md) {
           padding-left: 35px;
           padding-right: 35px;
           margin-bottom: 0px;
+
           &:first-child {
             padding-left: 0px;
           }
+
           &:last-child {
             padding-right: 0px;
           }

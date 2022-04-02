@@ -5,6 +5,7 @@
 
   &.heros {
     padding-top: 8px;
+
     @include break-up(sm) {
       padding-top: 20px;
     }
@@ -16,10 +17,12 @@
     .subtitle {
       font-size: 16px;
       margin-bottom: 18px;
+
       @include break-up(sm) {
         font-size: 20px;
         margin-bottom: 24px;
       }
+
       @include break-up(lg) {
         font-size: 22px;
         margin-bottom: 20px;
@@ -30,22 +33,27 @@
       font-size: 22px;
       line-height: 32px;
       margin-bottom: 60px;
+
       @include break-up(sm) {
         font-size: 26px;
       }
+
       @include break-up(md) {
         font-size: 30px;
         line-height: 52px;
         margin-bottom: 72px;
       }
+
       @include break-up(lg) {
         font-size: 40px;
         line-height: 52px;
       }
+
       @include break-up(xl) {
         font-size: 44px;
         line-height: 52px;
       }
+
       @include break-up(xxl) {
         font-size: 54px;
         line-height: 73px;
@@ -57,19 +65,23 @@
         padding-left: 32px;
         padding-right: 32px;
       }
+
       @include break-up(lg) {
         padding-left: 60px;
         padding-right: 60px;
       }
     }
+
     .big-img {
       aspect-ratio: 16 / 8;
       border-radius: 12px;
       overflow: hidden;
+
       img {
         object-fit: cover;
         object-position: top;
         transition: 300ms ease-in-out;
+
         &:hover {
           transform: scale(1.1);
         }
@@ -80,10 +92,12 @@
       aspect-ratio: 16 / 10;
       border-radius: 12px;
       overflow: hidden;
+
       img {
         object-fit: cover;
         object-position: top;
         transition: 300ms ease-in-out;
+
         &:hover {
           transform: scale(1.1);
         }
@@ -93,6 +107,7 @@
 
   &.team {
     padding-top: 84px;
+
     @include break-up(sm) {
       padding-top: 130px;
     }
@@ -102,11 +117,13 @@
       line-height: 32px;
       max-width: 1140px;
       margin-bottom: 32px;
+
       @include break-up(sm) {
         font-size: 26px;
         line-height: 46px;
         margin-bottom: 38px;
       }
+
       @include break-up(lg) {
         font-size: 40px;
         line-height: 64px;
@@ -117,14 +134,17 @@
     .main-carousel {
       margin-left: -20px;
       margin-right: -20px;
+
       @include break-up(sm) {
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 46px;
       }
+
       @include break-up(md) {
         margin-bottom: 46px;
       }
+
       @include break-up(sm) {
         margin-bottom: 54px;
       }
@@ -132,17 +152,20 @@
       .carousel-cell {
         min-width: 200px;
       }
+
       .avater {
         width: 120px;
         height: 120px;
         object-fit: cover;
         object-position: top;
       }
+
       .prof-title {
         font-size: 14px;
         line-height: 26px;
         margin-bottom: 2px;
       }
+
       .username {
         font-size: 12px;
         line-height: 22px;
@@ -178,6 +201,7 @@
       font-size: 20px;
       line-height: 32px;
       margin-bottom: 30px;
+
       @include break-up(sm) {
         font-size: 26px;
         line-height: 43px;
@@ -193,9 +217,11 @@
 
     .columbus {
       width: 26px;
+
       @include break-up(sm) {
         width: 33px;
       }
+
       @include break-up(lg) {
         width: 49px;
       }
@@ -203,9 +229,11 @@
 
     .pizzahat {
       width: 87px;
+
       @include break-up(sm) {
         width: 93px;
       }
+
       @include break-up(lg) {
         width: 132px;
       }
@@ -213,9 +241,11 @@
 
     .mrbricolage {
       width: 96px;
+
       @include break-up(sm) {
         width: 117px;
       }
+
       @include break-up(lg) {
         width: 150px;
       }
@@ -224,19 +254,23 @@
 
   &.howitworks {
     padding-top: 100px;
+
     @include break-up(md) {
       padding-top: 130px;
     }
+
     .title {
       font-size: 20px;
       line-height: 32px;
       max-width: 1140px;
       margin-bottom: 38px;
+
       @include break-up(sm) {
         font-size: 26px;
         line-height: 46px;
         margin-bottom: 40px;
       }
+
       @include break-up(lg) {
         font-size: 40px;
         line-height: 64px;
@@ -249,6 +283,7 @@
       margin-right: 20px;
       margin-top: 0px;
       margin-bottom: 0px;
+
       @include break-up(lg) {
         font-size: 40px;
         line-height: 40px;
@@ -258,9 +293,11 @@
     .step-tile {
       font-size: 1rem;
       margin-bottom: 16px;
+
       @include break-up(md) {
         margin-bottom: 22px;
       }
+
       @include break-up(lg) {
         margin-bottom: 38px;
       }
@@ -268,16 +305,29 @@
 
     .step-img {
       aspect-ratio: 16 / 8;
-      object-fit: cover;
-      object-position: center;
       width: 100%;
       border-radius: 8px;
       margin-bottom: 32px;
+      overflow: hidden;
+
       @include break-up(md) {
         margin-bottom: 48px;
       }
+
       @include break-up(lg) {
         margin-bottom: 42px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: 300ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
 
@@ -287,6 +337,7 @@
           padding-left: 32px;
           padding-right: 32px;
         }
+
         @include break-up(lg) {
           padding-left: 60px;
           padding-right: 60px;
@@ -297,22 +348,27 @@
 
   &.research {
     padding-bottom: 75px;
+
     @include break-up(sm) {
       padding-bottom: 45px;
     }
+
     @include break-up(lg) {
       padding-bottom: 80px;
     }
+
     .title {
       font-size: 20px;
       line-height: 32px;
       max-width: 1140px;
       margin-bottom: 12px;
+
       @include break-up(sm) {
         font-size: 26px;
         line-height: 46px;
         margin-bottom: 24px;
       }
+
       @include break-up(lg) {
         font-size: 40px;
         line-height: 64px;
@@ -331,9 +387,11 @@
       box-shadow: 0px 20px 50px rgba(18, 17, 39, 0.18);
       border-radius: 12px;
       padding: 18px 13px 40px 13px;
+
       @include break-up(md) {
         padding: 18px 13px;
       }
+
       position: relative;
 
       .select-area {
@@ -350,6 +408,7 @@
           .dropdown-toggle {
             position: relative !important;
             text-align: left;
+
             &::after {
               position: absolute;
               right: 0;
@@ -359,13 +418,16 @@
               margin-right: 16px;
             }
           }
+
           .title {
             font-size: 12px;
             line-height: 12px;
+
             @include break-up(lg) {
               font-size: 14px;
               line-height: 14px;
             }
+
             margin-bottom: 12px;
             color: #333333;
           }
@@ -373,10 +435,12 @@
           .subtitle {
             font-size: 14px;
             line-height: 14px;
+
             @include break-up(lg) {
               font-size: 16px;
               line-height: 16px;
             }
+
             color: #a3a5a7;
           }
         }
@@ -384,9 +448,11 @@
 
       .button {
         padding: 10px 32px;
+
         @include break-up(lg) {
           padding: 20px 60px;
         }
+
         @include break-up(xl) {
           padding: 26px 90px;
         }
@@ -398,6 +464,7 @@
         left: 0;
         right: 0;
         transform: translateY(50%);
+
         @include break-up(md) {
           position: static;
           transform: translateY(0%);
@@ -407,6 +474,7 @@
       .divider {
         &:not(:last-child) {
           border-bottom: 1px solid rgba(177, 180, 183, 0.3);
+
           @include break-up(md) {
             border-bottom: 0px solid rgba(177, 180, 183, 0.3);
             border-right: 1px solid rgba(177, 180, 183, 0.3);
@@ -418,27 +486,46 @@
 
   &.testmonial {
     padding-bottom: 90px;
+
     @include break-up(md) {
       padding-bottom: 130px;
     }
+
     .card {
       border: 0;
       border-radius: 24px 24px 24px 24px;
       overflow: hidden;
       box-shadow: 10px 10px 48px rgba(0, 0, 0, 0.1);
+
       .card-img-top {
-        object-fit: cover;
-        object-position: center;
+        width: 100%;
         height: 220px;
+        overflow: hidden;
+
         @include break-up(md) {
           height: 240px;
         }
+
         @include break-up(lg) {
           height: 300px;
         }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          transition: 300ms ease-in-out;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
       }
+
       .card-body {
         padding: 12px;
+
         @include break-up(lg) {
           padding: 18px;
         }
@@ -450,10 +537,12 @@
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap;
+
           @include break-up(md) {
             font-size: 22px;
             margin-bottom: 6px;
           }
+
           @include break-up(lg) {
             font-size: 22px;
           }
@@ -463,6 +552,7 @@
           font-size: 12px;
           margin-bottom: 14px;
           color: #898989;
+
           @include break-up(lg) {
             font-size: 16px;
             margin-bottom: 22px;
@@ -475,6 +565,7 @@
           margin-right: 10px;
           object-fit: cover;
           object-position: center;
+
           @include break-up(lg) {
             width: 56px;
             height: 56px;
@@ -491,9 +582,11 @@
 
   &.cta {
     margin-bottom: 100px;
+
     @include break-up(md) {
       margin-bottom: 130px;
     }
+
     .cta-card {
       background-color: rgba(49, 181, 208, 0.3);
       border-radius: 129px 20px 20px 20px;
@@ -503,13 +596,16 @@
       padding: 102px 40px;
       position: relative;
       overflow: hidden;
+
       .title {
         font-size: 20px;
         margin-bottom: 40px;
+
         @include break-up(md) {
           font-size: 24px;
           margin-bottom: 32px;
         }
+
         @include break-up(md) {
           font-size: 30px;
           margin-bottom: 72px;
@@ -523,28 +619,35 @@
         transform: translateX(-100px);
         z-index: -1;
         width: 260px;
+
         @include break-up(sm) {
           width: 300px;
         }
+
         @include break-up(md) {
           width: 400px;
         }
+
         @include break-up(lg) {
           width: 480px;
         }
       }
+
       .right-design {
         position: absolute;
         right: 0;
         top: 0;
         z-index: -1;
         width: 190px;
+
         @include break-up(sm) {
           width: 210px;
         }
+
         @include break-up(md) {
           width: 240px;
         }
+
         @include break-up(lg) {
           width: 264px;
         }

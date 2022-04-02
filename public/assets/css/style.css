@@ -1624,6 +1624,8 @@
 .homepage.gallary .tab-carousel .carousel-cell img, .blogpage.gallary .tab-carousel .carousel-cell img, .blogarticlepage.gallary .tab-carousel .carousel-cell img {
   height: 328px;
   border-radius: 16px;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -1648,6 +1650,11 @@
   .homepage.gallary .tab-carousel .carousel-cell img, .blogpage.gallary .tab-carousel .carousel-cell img, .blogarticlepage.gallary .tab-carousel .carousel-cell img {
     height: 500px;
   }
+}
+
+.homepage.gallary .tab-carousel .carousel-cell img:hover, .blogpage.gallary .tab-carousel .carousel-cell img:hover, .blogarticlepage.gallary .tab-carousel .carousel-cell img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .homepage.gallary .tab-carousel .carousel-cell .content, .blogpage.gallary .tab-carousel .carousel-cell .content, .blogarticlepage.gallary .tab-carousel .carousel-cell .content {
@@ -3529,13 +3536,10 @@
 
 .influence.howitworks .step-img {
   aspect-ratio: 16 / 8;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   width: 100%;
   border-radius: 8px;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -3548,6 +3552,22 @@
   .influence.howitworks .step-img {
     margin-bottom: 42px;
   }
+}
+
+.influence.howitworks .step-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.influence.howitworks .step-img img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (min-width: 768px) {
@@ -3742,11 +3762,9 @@
 }
 
 .influence.testmonial .card .card-img-top {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  width: 100%;
   height: 220px;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -3759,6 +3777,22 @@
   .influence.testmonial .card .card-img-top {
     height: 300px;
   }
+}
+
+.influence.testmonial .card .card-img-top img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.influence.testmonial .card .card-img-top img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .influence.testmonial .card .card-body {
@@ -4695,7 +4729,6 @@
     font-size: 26px;
     line-height: 43px;
     margin-top: 100px;
-    margin-bottom: 26px;
   }
 }
 
@@ -4704,7 +4737,6 @@
     font-size: 28px;
     line-height: 43px;
     margin-top: 120px;
-    margin-bottom: 20px;
   }
 }
 
@@ -4900,7 +4932,6 @@
     font-size: 26px;
     line-height: 43px;
     margin-top: 100px;
-    margin-bottom: 26px;
   }
 }
 
@@ -4909,7 +4940,6 @@
     font-size: 28px;
     line-height: 43px;
     margin-top: 120px;
-    margin-bottom: 20px;
   }
 }
 
@@ -5093,7 +5123,6 @@
     font-size: 26px;
     line-height: 43px;
     margin-top: 100px;
-    margin-bottom: 26px;
   }
 }
 
@@ -5102,7 +5131,6 @@
     font-size: 28px;
     line-height: 43px;
     margin-top: 120px;
-    margin-bottom: 20px;
   }
 }
 

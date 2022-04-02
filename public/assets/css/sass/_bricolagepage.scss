@@ -6,27 +6,34 @@
   &.content {
     padding-top: 30px;
     padding-bottom: 80px;
+
     @include break-up(md) {
       padding-top: 78px;
       padding-bottom: 100px;
     }
+
     @include break-up(lg) {
       padding-top: 140px;
       padding-bottom: 153px;
     }
+
     .contentarea {
       max-width: 656px;
+
       @include break-up(lg) {
         max-width: 1000px;
       }
     }
+
     .logo {
       width: 177px;
       margin-bottom: 48px;
+
       @include break-up(md) {
         margin-bottom: 58px;
         width: 236px;
       }
+
       @include break-up(lg) {
         margin-bottom: 40px;
         width: 236px;
@@ -40,26 +47,31 @@
       max-width: 758px;
       margin-left: auto;
       margin-right: auto;
+
       @include break-up(md) {
         font-size: 30px;
         line-height: 45px;
         margin-bottom: 20px;
       }
+
       @include break-up(lg) {
         font-size: 48px;
         line-height: 63px;
         margin-bottom: 26px;
       }
     }
+
     .time {
       font-size: 18px;
       line-height: 26px;
       margin-bottom: 60px;
+
       @include break-up(md) {
         font-size: 24px;
         line-height: 34px;
         margin-bottom: 72px;
       }
+
       @include break-up(lg) {
         font-size: 32px;
         line-height: 44px;
@@ -71,17 +83,17 @@
       line-height: 32px;
       margin-top: 70px;
       margin-bottom: 50px;
+
       @include break-up(md) {
         font-size: 26px;
         line-height: 43px;
         margin-top: 100px;
-        margin-bottom: 26px;
       }
+
       @include break-up(lg) {
         font-size: 28px;
         line-height: 43px;
         margin-top: 120px;
-        margin-bottom: 20px;
       }
     }
 
@@ -90,11 +102,13 @@
       line-height: 32px;
       margin-bottom: 22px;
       letter-spacing: -1.5px;
+
       @include break-up(md) {
         font-size: 26px;
         line-height: 43px;
         margin-bottom: 14px;
       }
+
       @include break-up(lg) {
         font-size: 28px;
         line-height: 60px;
@@ -106,6 +120,7 @@
     .check-text {
       font-size: 14px;
       line-height: 24px;
+
       @include break-up(md) {
         font-size: 18px;
         line-height: 20px;
@@ -114,39 +129,50 @@
 
     .post {
       margin-top: 40px;
+
       @include break-up(md) {
         margin-top: 50px;
       }
+
       @include break-up(md) {
         margin-top: 85px;
       }
+
       .col-md-6,
       .col-6 {
         margin-bottom: 32px;
       }
+
       .post-img-1 {
         width: 100%;
         height: 245px;
+
         @include break-up(md) {
           height: 398px;
         }
+
         @include break-up(lg) {
           height: 600px;
         }
+
         @include break-up(xl) {
           height: 668px;
         }
       }
+
       .post-img {
         width: 100%;
         height: 161px;
         object-fit: cover;
+
         @include break-up(md) {
           height: 187px;
         }
+
         @include break-up(lg) {
           height: 284px;
         }
+
         @include break-up(xl) {
           height: 315px;
         }
