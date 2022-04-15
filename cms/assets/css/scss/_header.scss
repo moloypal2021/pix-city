@@ -1,0 +1,114 @@
+.header {
+    box-shadow: 0px 4px 70px 5px rgba(195, 197, 205, 0.9);
+
+    .navbar-top {
+        @include br-up(lg) {
+            border-bottom: 1px solid rgba(195, 197, 205, 0.09);
+        }
+    }
+
+    .dropdown-toggle::after {
+        display: none;
+    }
+
+    .logo {
+        width: 108px;
+
+        @include br-up(lg) {
+            width: 135px;
+        }
+    }
+
+    .menus {
+        font-family: 'Gilroy-Medium', sans-serif;
+
+        .nav-item {
+
+
+            .nav-link {
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 500;
+                text-transform: capitalize;
+                padding: 10px 10px;
+
+                @include br-up(xl) {
+                    padding: 16px 16px;
+                    font-size: 13px;
+                }
+
+                .menu-icon {
+                    width: 20px;
+                    margin-right: 6px;
+
+                    @include br-up(xl) {
+                        width: 24px;
+                        margin-right: 14px;
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    background-color: #3B5673;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+
+
+
+    .language {
+        background-color: #3AB67D;
+        border-radius: 4px;
+        font-family: 'Gilroy-Bold', sans-serif;
+        font-size: 12px;
+        padding: 2px 8px;
+
+        @include br-up(sm) {
+            padding: 6px 12px;
+        }
+
+        @include br-up(md) {
+            font-size: 14px;
+        }
+    }
+
+    .noti-badge {
+        background: #3AB67D;
+        border-radius: 10px;
+        font-size: 10px;
+        line-height: 10px;
+        color: #FFFFFF;
+        font-family: 'Gilroy-Bold', sans-serif;
+        padding: 4px 8px;
+    }
+
+    .profile-dropdown {
+        .profile-icon {
+            width: 32px;
+            height: 32px;
+
+            @include br-up(sm) {
+                width: 34px;
+                height: 34px;
+            }
+
+            @include br-up(md) {
+                width: 37px;
+                height: 37px;
+            }
+
+            @include br-up(xl) {
+                width: 46px;
+                height: 46px;
+            }
+        }
+
+        font-family: 'Gilroy-Bold',
+        sans-serif;
+        color: #687A92 !important;
+        font-size: 13px;
+
+    }
+}
