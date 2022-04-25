@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="bg-blue-10 header">
+        <nav class="navbar-expand-lg">
+            <div class="d-flex flex-lg-column align-items-center align-items-lg-stretch">
+                <div class="navbar-top">
+                    <div class="container-fluid d-flex align-items-center">
+                        <a href="#" class="navbar-brand d-none d-md-inline-block">
+                            <img src="./assets/images/logo-1.png" alt="" class="logo">
+                        </a>
+
+                        <button class="btn p-0 d-md-none navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="container-fluid d-flex align-items-center justify-content-lg-between justify-content-end py-3">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav d-flex flex-column flex-lg-row menus">
+                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="menu-icon" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#a)">
+                                            <path
+                                                d="M3 13.101h8V3.023H3v10.078Zm0 8.062h8v-6.046H3v6.046Zm10 0h8V11.085h-8v10.078Zm0-18.14V9.07h8V3.023h-8Z"
+                                                fill="#fff" />
+                                            <path d="M11 21.163H3v-6.046h8v6.046ZM13 9.07V3.023h8V9.07h-8Z"
+                                                fill="#51CBFF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="a">
+                                                <path fill="#fff" d="M0 0h24v24.186H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="mb-0">Dashboard</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 14.252V16.342C13.0949 16.022 12.1263 15.9239 11.1754 16.0558C10.2245 16.1877 9.3192 16.5459 8.53543 17.1002C7.75166 17.6545 7.11234 18.3888 6.67116 19.2414C6.22998 20.094 5.99982 21.04 6 22L4 21.999C3.99969 20.7779 4.27892 19.5729 4.8163 18.4764C5.35368 17.3799 6.13494 16.4209 7.10022 15.673C8.0655 14.9251 9.18918 14.4081 10.3852 14.1616C11.5811 13.9152 12.8177 13.9467 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM17.793 19.914L21.328 16.379L22.743 17.793L17.793 22.743L14.257 19.207L15.672 17.793L17.793 19.914Z"
+                                            fill="white" />
+                                        <path
+                                            d="M17.7938 19.9139L21.3288 16.3789L22.7438 17.7929L17.7938 22.7429L14.2578 19.2069L15.6728 17.7929L17.7938 19.9139Z"
+                                            fill="#51CBFF" />
+                                    </svg>
+
+                                    <span class="mb-0">Usagers</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                                <a class="nav-link active dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21 3C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21ZM20 5H4V19H20V5ZM18 7V9H6V7H18Z"
+                                            fill="white" />
+                                        <rect x="6" y="7" width="12" height="2" fill="#51CBFF" />
+                                    </svg>
+
+
+                                    <span class="mb-0">Workspace</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 18H9V20H2V18ZM2 11H11V13H2V11ZM2 4H22V6H2V4ZM20.674 13.025L21.83 12.634L22.83 14.366L21.914 15.171C22.0293 15.7177 22.0293 16.2823 21.914 16.829L22.83 17.634L21.83 19.366L20.674 18.975C20.264 19.345 19.776 19.63 19.239 19.805L19 21H17L16.76 19.804C16.2293 19.6306 15.7408 19.3478 15.326 18.974L14.17 19.366L13.17 17.634L14.086 16.829C13.9707 16.2823 13.9707 15.7177 14.086 15.171L13.17 14.366L14.17 12.634L15.326 13.025C15.736 12.655 16.224 12.37 16.761 12.195L17 11H19L19.24 12.196C19.776 12.37 20.264 12.656 20.674 13.026V13.025ZM18 17C18.2652 17 18.5196 16.8946 18.7071 16.7071C18.8946 16.5196 19 16.2652 19 16C19 15.7348 18.8946 15.4804 18.7071 15.2929C18.5196 15.1054 18.2652 15 18 15C17.7348 15 17.4804 15.1054 17.2929 15.2929C17.1054 15.4804 17 15.7348 17 16C17 16.2652 17.1054 16.5196 17.2929 16.7071C17.4804 16.8946 17.7348 17 18 17Z"
+                                            fill="white" />
+                                        <path
+                                            d="M20.504 13.025L21.66 12.634L22.66 14.366L21.744 15.171C21.8593 15.7177 21.8593 16.2823 21.744 16.829L22.66 17.634L21.66 19.366L20.504 18.975C20.094 19.345 19.606 19.63 19.069 19.805L18.83 21H16.83L16.59 19.804C16.0593 19.6306 15.5708 19.3478 15.156 18.974L14 19.366L13 17.634L13.916 16.829C13.8007 16.2823 13.8007 15.7177 13.916 15.171L13 14.366L14 12.634L15.156 13.025C15.566 12.655 16.054 12.37 16.591 12.195L16.83 11H18.83L19.07 12.196C19.606 12.37 20.094 12.656 20.504 13.026V13.025ZM17.83 17C18.0952 17 18.3496 16.8946 18.5371 16.7071C18.7246 16.5196 18.83 16.2652 18.83 16C18.83 15.7348 18.7246 15.4804 18.5371 15.2929C18.3496 15.1054 18.0952 15 17.83 15C17.5648 15 17.3104 15.1054 17.1229 15.2929C16.9354 15.4804 16.83 15.7348 16.83 16C16.83 16.2652 16.9354 16.5196 17.1229 16.7071C17.3104 16.8946 17.5648 17 17.83 17Z"
+                                            fill="#51CBFF" />
+                                    </svg>
+
+                                    <span class="mb-0">Usagers</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <ul class="nav d-flex flex-nowrap align-items-center">
+                        <li class="nav-item dropdown me-3 me-lg-2 me-xl-3 me-xxl-4">
+                            <a class="nav-link dropdown-toggle language align-items-center text-white" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <span class="mb-0 me-1">FR</span>
+
+                                <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item d-flex align-items-center me-2 me-lg-2 me-xl-3 me-xxl-4">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.3 16V16.2899L17.505 16.495L19.3 18.29V18.3H4.7V18.2899L6.49497 16.495L6.7 16.2899V16V11C6.7 8.16412 8.17906 5.94929 10.6614 5.36114L11.2 5.23353V4.68V4C11.2 3.5566 11.5566 3.2 12 3.2C12.4434 3.2 12.8 3.5566 12.8 4V4.68V5.23308L13.3381 5.36102C15.8114 5.94907 17.3 8.17474 17.3 11V16ZM13.0932 20.7C12.861 21.0599 12.4565 21.3 12 21.3C11.5382 21.3 11.1347 21.0603 10.9042 20.7H13.0932Z"
+                                    fill="white" stroke="#C2CFE0" stroke-width="1.4" />
+                            </svg>
+                            <div class="noti-badge">99+</div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle profile-dropdown align-items-center text-white" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg class="profile-icon" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="46" height="46" rx="23" fill="#C2CFE0" />
+                                    <path
+                                        d="M31 32v-2a4 4 0 0 0-4-4h-8a4 4 0 0 0-4 4v2M23 22a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                                        stroke="#687A92" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="mb-0 me-0 me-md-1 ms-2 d-none d-md-inline">User Name 1</span>
+
+                                <svg class="ms-auto d-none d-md-inline mb-1" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                        fill="#687A92" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Content Section Start -->
+    <section class="newCityMaker content">
+        <div class="container-fluid">
+
+            <!-- Breadcumb Start -->
+            <nav class="d-none d-md-block" aria-label="breadcrumb">
+                <ol class="breadcrumb align-items-center">
+                    <li class="breadcrumb-item"><a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 19.9999C20 20.2651 19.8946 20.5195 19.7071 20.707C19.5196 20.8946 19.2652 20.9999 19 20.9999H5C4.73478 20.9999 4.48043 20.8946 4.29289 20.707C4.10536 20.5195 4 20.2651 4 19.9999V10.9999H1L11.327 1.61192C11.5111 1.4444 11.7511 1.35156 12 1.35156C12.2489 1.35156 12.4889 1.4444 12.673 1.61192L23 10.9999H20V19.9999ZM11 12.9999V18.9999H13V12.9999H11Z"
+                                    fill="#31B997" />
+                            </svg>
+                        </a></li>
+                    <li class="breadcrumb-item"><a href="#">Users</a></li>
+                    <li class="breadcrumb-item" aria-current="page"> Travellers</li>
+                </ol>
+            </nav>
+
+
+            <!-- Tabs Start -->
+            <div class="tab-menu">
+
+                <h1 class="title">City-Makers</h1>
+                <ul class="nav nav-pills flex-column flex-md-row font-montserrat mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-General-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-General" type="button" role="tab" aria-controls="pills-General"
+                            aria-selected="true">
+                            <span>General</span>
+                            <span class="active-border"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Profil-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Profil" type="button" role="tab" aria-controls="pills-Profil"
+                            aria-selected="false"><span>Profil du City-Maker</span>
+                            <span class="active-border"></span></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Informations-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Informations" type="button" role="tab"
+                            aria-controls="pills-Informations" aria-selected="false"><span>Informations de
+                                rémunération</span>
+                            <span class="active-border"></span></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Services-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-Services" type="button" role="tab" aria-controls="pills-Services"
+                            aria-selected="false"><span>Profil Services</span>
+                            <span class="active-border"></span></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-Quiz-tab" data-bs-toggle="pill" data-bs-target="#pills-Quiz"
+                            type="button" role="tab" aria-controls="pills-Quiz" aria-selected="false"><span>Quiz</span>
+                            <span class="active-border"></span></button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Tabs End -->
+
+
+            <!-- Tab Content Start -->
+            <div class="tab-content" id="pills-tabContent">
+
+                <!-- Genarel Tab Start -->
+                <div class="tab-pane genarel fade show active" id="pills-General" role="tabpanel"
+                    aria-labelledby="pills-General-tab">
+
+                    <div class="d-flex flex-column flex-sm-row align-items-sm-center input-box">
+                        <label for="avater-upload" class="form-label w-64px me-5">Avatar</label>
+
+                        <label class="avater-upload ms-lg-5">
+                            <input type="file" id="avater-upload" class="form-control d-none">
+                            <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.7">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M20.844 4.20732C20.898 4.29822 20.9925 4.36315 21.114 4.36315C24.354 4.36315 27 6.90832 27 10.0249V17.7383C27 20.8548 24.354 23.4 21.114 23.4H5.886C2.6325 23.4 0 20.8548 0 17.7383V10.0249C0 6.90832 2.6325 4.36315 5.886 4.36315C5.994 4.36315 6.102 4.31121 6.1425 4.20732L6.2235 4.0515C6.27005 3.95714 6.31783 3.86023 6.36634 3.76185C6.71169 3.06137 7.09375 2.28642 7.3305 1.83097C7.9515 0.662264 9.0045 0.0129856 10.314 0H16.6725C17.982 0.0129856 19.0485 0.662264 19.6695 1.83097C19.8821 2.24006 20.2061 2.89905 20.5184 3.53417C20.5828 3.66514 20.6467 3.7951 20.709 3.92164L20.844 4.20732ZM19.8594 9.19341C19.8594 9.84268 20.3994 10.3621 21.0744 10.3621C21.7494 10.3621 22.3029 9.84268 22.3029 9.19341C22.3029 8.54413 21.7494 8.01172 21.0744 8.01172C20.3994 8.01172 19.8594 8.54413 19.8594 9.19341ZM11.1641 11.2064C11.7986 10.5961 12.6221 10.2715 13.4996 10.2715C14.3771 10.2715 15.2006 10.5961 15.8216 11.1935C16.4426 11.7908 16.7801 12.5829 16.7801 13.427C16.7666 15.167 15.3086 16.5825 13.4996 16.5825C12.6221 16.5825 11.7986 16.2578 11.1776 15.6605C10.5566 15.0632 10.2191 14.271 10.2191 13.427V13.414C10.2056 12.5959 10.5431 11.8038 11.1641 11.2064ZM17.2406 17.0375C16.2821 17.9595 14.9591 18.5309 13.5011 18.5309C12.0836 18.5309 10.7606 17.9985 9.74805 17.0375C8.74905 16.0636 8.19555 14.791 8.19555 13.4275C8.18205 12.077 8.73555 10.8045 9.73455 9.83055C10.7471 8.85663 12.0836 8.32422 13.5011 8.32422C14.9186 8.32422 16.2551 8.85663 17.2541 9.81756C18.2531 10.7915 18.8066 12.077 18.8066 13.4275C18.7931 14.843 18.1991 16.1156 17.2406 17.0375Z"
+                                        fill="#030229" />
+                                </g>
+                            </svg>
+                        </label>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row align-items-sm-center input-box">
+                        <label for="" class="form-label w-64px me-5">Activé</label>
+
+                        <div class="form-check form-switch ps-0 ms-lg-5">
+
+                            <label class="form-check-label" for="Activé">NON</label>
+
+                            <input class="form-check-input" type="checkbox" role="switch" id="Activé" checked>
+
+                            <label class="form-check-label" for="Activé">OUI</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-lg-row align-items-lg-center input-box">
+                        <label for="" class="form-label w-64px mb-3 mb-lg-0 me-5">Rôle</label>
+
+                        <div class="role-box ms-lg-5">
+                            <div class="d-flex flex-column flex-lg-row justify-content-lg-around">
+                                <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                    <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                        for="Voyageur">Voyageur
+                                    </label>
+                                    <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                        id="Voyageur">
+                                </div>
+
+                                <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                    <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                        for="City-Maker">City-Maker
+                                    </label>
+                                    <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                        id="City-Maker">
+                                </div>
+
+                                <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                    <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                        for="City-Maker2">City-Maker
+                                    </label>
+                                    <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                        id="City-Maker2">
+                                </div>
+                            </div>
+
+                            <div class="border-line">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row input-box">
+                        <div class="col-lg-6 pe-lg-5">
+                            <label for="Prénom" class="form-label font-montserrat mb-0">Prénom</label>
+                            <input type="text" class="form-control" id="Prénom" placeholder="Enter here...">
+                        </div>
+                        <div class="col-lg-6 ps-lg-5">
+                            <label for="Nom" class="form-label font-montserrat mb-0">Nom</label>
+                            <input type="text" class="form-control" id="Nom" placeholder="Enter here...">
+                        </div>
+                    </div>
+
+                    <div class="row input-box">
+                        <div class="col-lg-6 pe-lg-5">
+                            <label for="Numéro de téléphone" class="form-label font-montserrat mb-0">Numéro de
+                                téléphone</label>
+                            <input type="text" class="form-control" id="Numéro de téléphone"
+                                placeholder="Enter here...">
+                        </div>
+                    </div>
+
+                    <div class="row input-box">
+                        <div class="col-lg-6 pe-lg-5">
+                            <label for="Date de naissance" class="form-label font-montserrat mb-0">Numéro de
+                                téléphone</label>
+                            <div class="date-area">
+                                <input type="date" class="form-control date" id="Date de naissance"
+                                    placeholder="Enter here...">
+
+                                <svg class="date-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.5 4V4.5H17H19C19.663 4.5 20.2989 4.76339 20.7678 5.23223C21.2366 5.70107 21.5 6.33696 21.5 7V19C21.5 19.663 21.2366 20.2989 20.7678 20.7678C20.2989 21.2366 19.663 21.5 19 21.5H5C4.33696 21.5 3.70107 21.2366 3.23223 20.7678C2.76339 20.2989 2.5 19.663 2.5 19V7C2.5 6.33696 2.76339 5.70107 3.23223 5.23223C3.70107 4.76339 4.33696 4.5 5 4.5H7H7.5V4V3C7.5 2.86739 7.55268 2.74021 7.64645 2.64645C7.74021 2.55268 7.86739 2.5 8 2.5C8.13261 2.5 8.25979 2.55268 8.35355 2.64645C8.44732 2.74021 8.5 2.86739 8.5 3V4V4.5H9H15H15.5V4V3C15.5 2.86739 15.5527 2.74021 15.6464 2.64645C15.7402 2.55268 15.8674 2.5 16 2.5C16.1326 2.5 16.2598 2.55268 16.3536 2.64645C16.4473 2.74021 16.5 2.86739 16.5 3V4ZM4 11.5H3.5V12V19C3.5 19.3978 3.65804 19.7794 3.93934 20.0607C4.22065 20.342 4.60218 20.5 5 20.5H19C19.3978 20.5 19.7794 20.342 20.0607 20.0607C20.342 19.7794 20.5 19.3978 20.5 19V12V11.5H20H4ZM20 10.5H20.5V10V7C20.5 6.60218 20.342 6.22064 20.0607 5.93934C19.7794 5.65804 19.3978 5.5 19 5.5H17H16.5V6V7C16.5 7.13261 16.4473 7.25979 16.3536 7.35355C16.2598 7.44732 16.1326 7.5 16 7.5C15.8674 7.5 15.7402 7.44732 15.6464 7.35355C15.5527 7.25978 15.5 7.13261 15.5 7V6V5.5H15H9H8.5V6V7C8.5 7.13261 8.44732 7.25978 8.35355 7.35355C8.25978 7.44732 8.13261 7.5 8 7.5C7.86739 7.5 7.74022 7.44732 7.64645 7.35355C7.55268 7.25978 7.5 7.13261 7.5 7V6V5.5H7H5C4.60217 5.5 4.22064 5.65804 3.93934 5.93934C3.65804 6.22064 3.5 6.60218 3.5 7V10V10.5H4H20Z"
+                                        stroke="black" stroke-opacity="0.6" />
+                                </svg>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row input-box">
+                        <div class="col-lg-6 pe-lg-5">
+                            <label for="Email" class="form-label font-montserrat mb-0">Email</label>
+                            <input type="text" class="form-control" id="Email" placeholder="Enter here...">
+                        </div>
+                    </div>
+
+                    <div class="row input-box">
+                        <div class="col-lg-6 pe-lg-5">
+                            <label for="Confirmation" class="form-label font-montserrat mb-0">Confirmation du mot de
+                                passe</label>
+                            <input type="text" class="form-control" id="Confirmation" placeholder="Enter here...">
+                        </div>
+                        <div class="col-lg-6 ps-lg-5">
+                            <label for="passe" class="form-label font-montserrat mb-0">Mot de passe</label>
+                            <input type="text" class="form-control" id="passe" placeholder="Enter here...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-end pt-4">
+                        <button class="btn btn-cancle">Annuler</button>
+                        <button class="btn btn-submit">Enregistrer</button>
+                    </div>
+
+                </div>
+                <!-- Genarel Tab End -->
+
+
+                <!-- Profil du City-Maker Tab Start -->
+                <div class="tab-pane Profile-tab fade" id="pills-Profil" role="tabpanel"
+                    aria-labelledby="pills-Profil-tab">
+
+                    <div class="mb-4 pb-2">
+                        <h5 class="tab-title font-montserrat">Réseaux sociaux</h5>
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Facebook" class="form-label font-montserrat mb-0">Facebook</label>
+                                <input type="text" class="form-control" id="Facebook" placeholder="Add link">
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="Twitter" class="form-label font-montserrat mb-0">Twitter</label>
+                                <input type="text" class="form-control" id="Twitter"
+                                    placeholder="https://www.twitter.com">
+                            </div>
+                        </div>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Instagram" class="form-label font-montserrat mb-0">Instagram</label>
+                                <input type="text" class="form-control" id="Instagram" placeholder="Add link">
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="Youtube" class="form-label font-montserrat mb-0">Youtube</label>
+                                <input type="text" class="form-control" id="Youtube"
+                                    placeholder="https://www.twitter.com">
+                            </div>
+                        </div>
+
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Blog" class="form-label font-montserrat mb-0">Blog</label>
+                                <input type="text" class="form-control" id="Blog" placeholder="Add link">
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="Website" class="form-label font-montserrat mb-0">Website</label>
+                                <input type="text" class="form-control" id="Website" placeholder="Add link">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="tab-title font-montserrat">Adressex</h5>
+                    <div class="row input-box">
+                        <div class="col-lg-6 pe-lg-5">
+                            <label for="Adresse" class="form-label font-montserrat mb-0">Adresse</label>
+                            <input type="text" class="form-control" id="Adresse" placeholder="Enter here...">
+                        </div>
+                    </div>
+
+                    <div class="row input-box">
+                        <div class="col-lg-6 pe-lg-5">
+                            <label for="Code Postal" class="form-label font-montserrat mb-0">Code Postal</label>
+                            <input type="text" class="form-control" id="Code Postal" placeholder="Enter here...">
+                        </div>
+                        <div class="col-lg-6 ps-lg-5">
+                            <label for="Ville" class="form-label font-montserrat mb-0">Ville</label>
+                            <input type="text" class="form-control" id="Ville" placeholder="Enter here...">
+                        </div>
+                    </div>
+
+                    <div class="row input-box">
+                        <div class="col-lg-6 pe-lg-5">
+                            <label for="Country" class="form-label font-montserrat mb-0">Country</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected disabled>Select here...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="" class="form-label font-montserrat ">L'adresse personnelle et l'adresse de
+                            facturation sont les mêmes</label>
+                        <div class="form-check form-switch ps-0">
+
+                            <label class="form-check-label" for="Visibilité">NON</label>
+
+                            <input class="form-check-input" type="checkbox" role="switch" id="Visibilité" checked>
+
+                            <label class="form-check-label" for="Visibilité">OUI</label>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-end pt-5">
+                        <button class="btn btn-cancle">Annuler</button>
+                        <button class="btn btn-submit">Enregistrer</button>
+                    </div>
+
+
+                </div>
+                <!-- Profil du City-Maker Tab End -->
+
+                <!-- Informations de rémunération Tab Start -->
+                <div class="tab-pane Informations-tab fade" id="pills-Informations" role="tabpanel"
+                    aria-labelledby="pills-Informations-tab">
+
+                    <div class="mb-4 pb-2">
+                        <h5 class="tab-title font-montserrat">Informations</h5>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Staut" class="form-label font-montserrat mb-0">Staut</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected disabled>Select here...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="Dénomination sociale" class="form-label font-montserrat mb-0">Dénomination
+                                    sociale</label>
+                                <input type="text" class="form-control" id="Dénomination sociale"
+                                    placeholder="Enter here...">
+                            </div>
+                        </div>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Prénom" class="form-label font-montserrat mb-0">Prénom</label>
+                                <input type="text" class="form-control" id="Prénom" placeholder="Enter here...">
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="Nom" class="form-label font-montserrat mb-0">Nom</label>
+                                <input type="text" class="form-control" id="Nom" placeholder="Enter here...">
+                            </div>
+                        </div>
+
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Numéro de téléphone" class="form-label font-montserrat mb-0">Numéro de
+                                    téléphone</label>
+                                <input type="text" class="form-control" id="Numéro de téléphone"
+                                    placeholder="Enter here...">
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="SIRET" class="form-label font-montserrat mb-0">SIRET</label>
+                                <input type="text" class="form-control" id="SIRET" placeholder="Enter here...">
+                            </div>
+                        </div>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="SIREN" class="form-label font-montserrat mb-0">SIREN</label>
+                                <input type="text" class="form-control" id="SIREN" placeholder="Enter here...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 pb-2">
+                        <h5 class="tab-title font-montserrat">Adresse</h5>
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Adresse" class="form-label font-montserrat mb-0">Adresse</label>
+                                <input type="text" class="form-control" id="Adresse" placeholder="Enter here...">
+                            </div>
+                        </div>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Code Postal" class="form-label font-montserrat mb-0">Code Postal</label>
+                                <input type="text" class="form-control" id="Code Postal" placeholder="Enter here...">
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="Ville" class="form-label font-montserrat mb-0">Ville</label>
+                                <input type="text" class="form-control" id="Ville" placeholder="Enter here...">
+                            </div>
+                        </div>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Country" class="form-label font-montserrat mb-0">Country</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected disabled>Select here...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="mb-5 pb-5">
+                        <h5 class="tab-title font-montserrat">Rémunération</h5>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Choix de rémunération" class="form-label font-montserrat mb-0">Choix de
+                                    rémunération</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected disabled>Select here...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Nom du bénéficiaire" class="form-label font-montserrat mb-0">Nom du
+                                    bénéficiaire</label>
+                                <input type="text" class="form-control" id="Nom du bénéficiaire"
+                                    placeholder="Enter here...">
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="Pays" class="form-label font-montserrat mb-0">Pays</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected disabled>Select here...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="IBAN" class="form-label font-montserrat mb-0">IBAN</label>
+                                <input type="text" class="form-control" id="IBAN" placeholder="Enter here...">
+                            </div>
+                            <div class="col-lg-6 ps-lg-5">
+                                <label for="BIC" class="form-label font-montserrat mb-0">BIC</label>
+                                <input type="text" class="form-control" id="BIC" placeholder="Enter here...">
+                            </div>
+                        </div>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="" class="form-label font-montserrat mb-0">RIB</label>
+
+                                <div class="file-upload-box d-flex align-items-center">
+
+                                    <label class="file-upload">
+                                        <input type="file" class="form-control d-none" id="RIB-file"
+                                            placeholder="Enter here...">
+                                        <div class="btn upload-btn">Upload</div>
+
+                                        <p class="file-name">No file Chosen</p>
+                                    </label>
+
+                                    <p class="allow-file font-montserrat">Allowed File .pdf, ,jpg</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-end pt-5">
+                        <button class="btn btn-cancle">Annuler</button>
+                        <button class="btn btn-submit">Enregistrer</button>
+                    </div>
+
+                </div>
+                <!-- Informations de rémunération Tab End -->
+
+
+                <!-- Profil Services Tab Start -->
+                <div class="tab-pane service-tab fade" id="pills-Services" role="tabpanel"
+                    aria-labelledby="pills-Services-tab">
+                    <div class="mb-4 pb-2">
+                        <h5 class="tab-title font-montserrat">Statut du City-maker</h5>
+
+                        <div class="row input-box">
+                            <div class="col-lg-6 pe-lg-5">
+                                <label for="Statut du City-maker" class="form-label font-montserrat mb-0">Statut du
+                                    City-maker</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected disabled>Select here...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-lg-row align-items-lg-center input-box">
+                            <label for="" class="form-label w-160px mb-3 mb-lg-0 ">Rôle</label>
+
+                            <div class="role-box ms-lg-3 ms-xl-5">
+                                <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+                                    <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                        <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                            for="Influencer">Influencer
+                                            Local
+                                        </label>
+                                        <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                            id="Influencer">
+                                    </div>
+                                    <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                        <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                            for="Community">Community
+                                            Manager
+                                        </label>
+                                        <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                            id="Community">
+                                    </div>
+                                    <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                        <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                            for="Photographe">Photographe
+                                        </label>
+                                        <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                            id="Photographe">
+                                    </div>
+                                    <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                        <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                            for="Autre">Autre
+                                        </label>
+                                        <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                            id="Autre">
+                                    </div>
+                                    <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                        <label class="form-check-label text-lg-center order-2 order-lg-1" for="CMS">CMS
+                                        </label>
+                                        <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                            id="CMS">
+                                    </div>
+                                    <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                        <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                            for="Facebook">Facebook
+                                        </label>
+                                        <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                            id="Facebook">
+                                    </div>
+                                    <div class="d-lg-inline-flex d-flex flex-lg-column align-items-center">
+                                        <label class="form-check-label text-lg-center order-2 order-lg-1"
+                                            for="Other">Other
+                                        </label>
+                                        <input class="form-check-input order-1 order-lg-2" type="checkbox" value=""
+                                            id="Other">
+                                    </div>
+                                </div>
+
+                                <div class="border-line">
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row input-box upload pt-lg-4">
+                            <div class="d-flex flex-column flex-lg-row pe-lg-5">
+                                <label for="" class="form-label font-montserrat mb-3 mb-lg-0 w-160px">Upload ID pour le
+                                    KYC
+                                    (mangopay)</label>
+
+                                <div class="file-upload-box d-flex align-items-center ms-lg-3 ms-xl-5">
+
+                                    <label class="file-upload">
+                                        <input type="file" class="form-control d-none" id="mangopay-file"
+                                            placeholder="Enter here...">
+                                        <div class="btn upload-btn">Upload</div>
+
+                                        <p class="file-name">No file Chosen</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row input-box upload">
+                            <div class="d-flex flex-column flex-lg-row pe-lg-5">
+                                <label for="" class="form-label font-montserrat mb-3 mb-lg-0 w-160px">Upload preuve
+                                    adresse pour
+                                    - le KYC (mangopay)</label>
+
+                                <div class="file-upload-box d-flex align-items-center ms-lg-3 ms-xl-5">
+
+                                    <label class="file-upload">
+                                        <input type="file" class="form-control d-none" id="KYC-file"
+                                            placeholder="Enter here...">
+                                        <div class="btn upload-btn">Upload</div>
+
+                                        <p class="file-name">No file Chosen</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-end pt-5">
+                        <button class="btn btn-cancle">Annuler</button>
+                        <button class="btn btn-submit">Enregistrer</button>
+                    </div>
+
+                </div>
+                <!-- Profil Services Tab End -->
+
+                <!-- Quiz Tab Start -->
+                <div class="tab-pane fade" id="pills-Quiz" role="tabpanel" aria-labelledby="pills-Quiz-tab">...</div>
+                <!-- Quiz Tab End -->
+
+            </div>
+            <!-- Tab Content End -->
+
+
+        </div>
+    </section>
+    <!-- Content Section End -->
+
+
+
+
+    <!--  Editor -->
+    <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+    <!-- Bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- jquery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        // Create From
+        $('#create').click(function () {
+            $('.social-details').first().clone().appendTo('.social-list').show();
+            attach_delete();
+        });
+
+        //Delete
+        function attach_delete() {
+            $('.delete').off();
+            $('.delete').click(function () {
+                console.log("click");
+                $(this).closest('.social-details').remove();
+            });
+        }
+
+
+        CKEDITOR.replace('editor1', {
+            width: '100%',
+            height: '400px'
+
+        });
+
+    </script>
+</body>
+
+</html>
