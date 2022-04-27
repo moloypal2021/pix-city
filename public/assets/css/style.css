@@ -2540,7 +2540,6 @@
   -webkit-filter: drop-shadow(0px 20px 58px rgba(0, 0, 0, 0.13));
           filter: drop-shadow(0px 20px 58px rgba(0, 0, 0, 0.13));
   width: 33.3333%;
-  height: 100%;
 }
 
 @media (min-width: 576px) {
