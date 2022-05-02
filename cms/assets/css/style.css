@@ -131,8 +131,20 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 32px 16px;
-  margin-top: 80px;
+  padding: 16px;
+  margin-top: 48px;
+}
+
+@media (min-width: 576px) {
+  .header .navbar-collapse {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .navbar-collapse {
+    margin-top: 70px;
+  }
 }
 
 @media (min-width: 992px) {
