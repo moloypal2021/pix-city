@@ -103,10 +103,9 @@
                     </div>
                 </div>
 
-                <div
-                    class="container-fluid d-flex align-items-center justify-content-lg-between justify-content-end py-lg-3">
+                <div class="container-fluid d-flex align-items-center justify-content-lg-between justify-content-end">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav d-flex flex-column flex-lg-row menus">
+                        <ul class="nav d-flex flex-column flex-lg-row menus py-lg-3">
                             <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
                                 <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -255,7 +254,7 @@
 
 
     <!-- Content Section Start -->
-    <section class="clientInfoPage content">
+    <section class="clientInfoViewPage content">
         <div class="container-fluid">
 
             <!-- Breadcumb Start -->
@@ -269,291 +268,158 @@
                                     fill="#31B997" />
                             </svg>
                         </a></li>
-                    <li class="breadcrumb-item"><a href="#">Users</a></li>
-                    <li class="breadcrumb-item" aria-current="page">Clients (Juliedesk Paul Users)</li>
+                    <li class="breadcrumb-item"><a href="#">Blog Posts </a></li>
                 </ol>
             </nav>
 
             <!-- Title Start-->
             <div class="title-header d-flex flex-md-row flex-column  items-center justify-content-between">
-                <h1 class="title fw-normal">Clients (Juliedesk Paul Users)</h1>
+                <h1 class="title fw-normal">Client Information</h1>
 
                 <!-- Options Start-->
                 <div class="d-flex align-items-center mt-4 mt-md-0">
-                    <button type="button" class="btn edit-btn shadow-none  me-3">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0_689_11656" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="12" height="12">
-                                <path
-                                    d="M11.6262 1.45451C11.7726 1.60095 11.7726 1.83839 11.6262 1.98484L10.844 2.767L9.34403 1.267L10.1262 0.484835C10.2726 0.338388 10.5101 0.338388 10.6565 0.484835L11.6262 1.45451Z"
-                                    fill="black" />
-                                <path
-                                    d="M10.3137 3.29733L8.8137 1.79733L3.70396 6.90707C3.66279 6.94824 3.63178 6.99842 3.61337 7.05365L3.00995 8.86391C2.96109 9.01049 3.10054 9.14994 3.24712 9.10108L5.05738 8.49766C5.11261 8.47925 5.16279 8.44824 5.20396 8.40707L10.3137 3.29733Z"
-                                    fill="black" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M0.75 10.125C0.75 10.7463 1.25368 11.25 1.875 11.25H10.125C10.7463 11.25 11.25 10.7463 11.25 10.125V5.625C11.25 5.41789 11.0821 5.25 10.875 5.25C10.6679 5.25 10.5 5.41789 10.5 5.625V10.125C10.5 10.3321 10.3321 10.5 10.125 10.5H1.875C1.66789 10.5 1.5 10.3321 1.5 10.125V1.875C1.5 1.66789 1.66789 1.5 1.875 1.5H6.75C6.95711 1.5 7.125 1.33211 7.125 1.125C7.125 0.917893 6.95711 0.75 6.75 0.75H1.875C1.25368 0.75 0.75 1.25368 0.75 1.875V10.125Z"
-                                    fill="black" />
-                            </mask>
-                            <g mask="url(#mask0_689_11656)">
-                                <rect width="12" height="12" fill="#16192C" />
-                            </g>
-                        </svg>Edit</button>
-
-                    <button type="button" class="btn clear-btn shadow-none "><svg width="12" height="12"
-                            viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <mask id="mask0_553_9222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                                width="12" height="12">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M6 0C6.66274 0 7.2 0.537258 7.2 1.2V4.8H10.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2H7.2V10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8V7.2H1.2C0.537258 7.2 0 6.66274 0 6C0 5.33726 0.537258 4.8 1.2 4.8H4.8V1.2C4.8 0.537258 5.33726 0 6 0Z"
-                                    fill="black" />
-                            </mask>
-                            <g mask="url(#mask0_553_9222)">
-                                <rect width="12" height="12" fill="white" />
-                            </g>
-                        </svg>Create</button>
+                    <button type="button" class="btn primary-btn shadow-none  me-3">
+                        Back to List
+                    </button>
                 </div>
                 <!-- Options End-->
             </div>
             <!-- Title End-->
 
+            <div class="row form-part justify-content-between">
+                <div class="col-lg-6 col-xl-7">
+                    <div class="input-box">
+                        <label for="JobTitle" class="form-label font-montserrat mb-0">Job Title:</label>
+                        <input type="text" class="form-control" id="JobTitle"
+                            placeholder="Enter your Job title here...">
+                    </div>
+                    <div class="input-box">
+                        <label for="" class="t-label font-montserrat text-nowrap me-4">Description :</label>
 
-            <!-- Client Stats Start -->
-            <div class="stats">
-                <div class="row flex-lg-nowrap align-items-center justify-content-lg-between">
-                    <div class="col-lg-auto mb-3 mb-lg-0">
-                        <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <img src="./assets/images/avater-1.png" alt="" class="avater">
-                            <div class="avater-details text-center text-lg-start">
-                                <h4 class="avater-name font-montserrat">Bob Nothin</h4>
-                                <p class="avater-mail font-montserrat mb-0">Bob@mailme.com</p>
-                            </div>
+                        <div class="w-100">
+                            <textarea name="editor1" class="w-100 editor-area"></textarea>
                         </div>
                     </div>
+                    <div class="input-box">
+                        <label for="" class="t-label font-montserrat text-nowrap me-4">Contenu</label>
 
-                    <div class="col-sm-6 col-lg-auto col-card-mission mb-3 mb-lg-0">
-                        <div class="d-flex align-items-center card-mission">
+                        <div class="w-100">
+                            <textarea name="editor2" class="w-100 editor-area"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-4">
+                    <div class="input-box pb-4">
+                        <label for="" class="form-label font-montserrat mb-0">Post Card</label>
+
+                        <label for="" class="uploader">
+                            <input type="file" class="d-none">
+
                             <svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M0 8C0 3.58172 3.58172 0 8 0H38C42.4183 0 46 3.58172 46 8V38C46 42.4183 42.4183 46 38 46H8C3.58172 46 0 42.4183 0 38V8Z"
-                                    fill="#DEFFEE" />
-                                <mask id="mask0_689_11645" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14"
-                                    y="14" width="18" height="18">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M17.9375 14C18.2482 14 18.5 14.2518 18.5 14.5625V15.125H27.5V14.5625C27.5 14.2518 27.7518 14 28.0625 14C28.3732 14 28.625 14.2518 28.625 14.5625V15.125H29.75C30.9926 15.125 32 16.1324 32 17.375V29.75C32 30.9926 30.9926 32 29.75 32H16.25C15.0074 32 14 30.9926 14 29.75V17.375C14 16.1324 15.0074 15.125 16.25 15.125H17.375V14.5625C17.375 14.2518 17.6268 14 17.9375 14ZM15.125 18.5V29.75C15.125 30.3713 15.6287 30.875 16.25 30.875H29.75C30.3713 30.875 30.875 30.3713 30.875 29.75V18.5H15.125Z"
-                                        fill="black" />
+                                    d="M3 23C3 11.9543 11.9543 3 23 3C34.0457 3 43 11.9543 43 23C43 34.0457 34.0457 43 23 43C11.9543 43 3 34.0457 3 23Z"
+                                    fill="#F2F4F7" />
+                                <g clip-path="url(#clip0_764_19499)">
                                     <path
-                                        d="M24.125 21.875C24.125 21.2537 24.6287 20.75 25.25 20.75H30.875V23H25.25C24.6287 23 24.125 22.4963 24.125 21.875Z"
-                                        fill="black" />
-                                    <path
-                                        d="M15.125 24.125H19.625C20.2463 24.125 20.75 24.6287 20.75 25.25C20.75 25.8713 20.2463 26.375 19.625 26.375H15.125V24.125Z"
-                                        fill="black" />
-                                </mask>
-                                <g mask="url(#mask0_689_11645)">
-                                    <rect x="14" y="14" width="18" height="18" fill="#66CB9F" />
+                                        d="M26.3335 26.3332L23.0002 22.9999M23.0002 22.9999L19.6669 26.3332M23.0002 22.9999V30.4999M29.9919 28.3249C30.8047 27.8818 31.4467 27.1806 31.8168 26.3321C32.1868 25.4835 32.2637 24.5359 32.0354 23.6388C31.807 22.7417 31.2865 21.9462 30.5558 21.3778C29.8251 20.8094 28.9259 20.5005 28.0002 20.4999H26.9502C26.698 19.5243 26.2278 18.6185 25.5752 17.8507C24.9225 17.0829 24.1043 16.4731 23.182 16.0671C22.2597 15.661 21.2573 15.4694 20.2503 15.5065C19.2433 15.5436 18.2578 15.8085 17.3679 16.2813C16.478 16.7541 15.7068 17.4225 15.1124 18.2362C14.518 19.05 14.1158 19.9879 13.936 20.9794C13.7563 21.9709 13.8036 22.9903 14.0746 23.961C14.3455 24.9316 14.8329 25.8281 15.5002 26.5832"
+                                        stroke="#475467" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
                                 </g>
-                            </svg>
-
-                            <div class="ms-xl-3 ms-2">
-                                <h6 class="mission-title font-montserrat">Current Mission number</h6>
-                                <h4 class="mission-value font-montserrat mb-0">0</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-auto col-card-mission mb-3 mb-lg-0">
-                        <div class="d-flex align-items-center card-mission">
-                            <svg width="47" height="46" viewBox="0 0 47 46" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M0.5 8C0.5 3.58172 4.08172 0 8.5 0H38.5C42.9183 0 46.5 3.58172 46.5 8V38C46.5 42.4183 42.9183 46 38.5 46H8.5C4.08172 46 0.5 42.4183 0.5 38V8Z"
-                                    fill="#FFEEF1" />
-                                <mask id="mask0_689_11637" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14"
-                                    y="14" width="19" height="18">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M19 26.375H16.75V29.75H19V26.375ZM24.625 21.875H22.375V29.75H24.625V21.875ZM30.25 16.25L28 16.25V29.75H30.25V16.25ZM28 15.125C27.3787 15.125 26.875 15.6287 26.875 16.25V29.75C26.875 30.3713 27.3787 30.875 28 30.875H30.25C30.8713 30.875 31.375 30.3713 31.375 29.75V16.25C31.375 15.6287 30.8713 15.125 30.25 15.125H28ZM21.25 21.875C21.25 21.2537 21.7537 20.75 22.375 20.75H24.625C25.2463 20.75 25.75 21.2537 25.75 21.875V29.75C25.75 30.3713 25.2463 30.875 24.625 30.875H22.375C21.7537 30.875 21.25 30.3713 21.25 29.75V21.875ZM15.625 26.375C15.625 25.7537 16.1287 25.25 16.75 25.25H19C19.6213 25.25 20.125 25.7537 20.125 26.375V29.75C20.125 30.3713 19.6213 30.875 19 30.875H16.75C16.1287 30.875 15.625 30.3713 15.625 29.75V26.375Z"
-                                        fill="black" />
-                                </mask>
-                                <g mask="url(#mask0_689_11637)">
-                                    <rect x="14.5" y="14" width="18" height="18" fill="#FF92AE" />
-                                </g>
+                                    d="M23 40C13.6112 40 6 32.3888 6 23H0C0 35.7025 10.2975 46 23 46V40ZM40 23C40 32.3888 32.3888 40 23 40V46C35.7025 46 46 35.7025 46 23H40ZM23 6C32.3888 6 40 13.6112 40 23H46C46 10.2975 35.7025 0 23 0V6ZM23 0C10.2975 0 0 10.2975 0 23H6C6 13.6112 13.6112 6 23 6V0Z"
+                                    fill="#F9FAFB" />
+                                <defs>
+                                    <clipPath id="clip0_764_19499">
+                                        <rect width="20" height="20" fill="white" transform="translate(13 13)" />
+                                    </clipPath>
+                                </defs>
                             </svg>
 
-
-                            <div class="ms-xl-3 ms-2">
-                                <h6 class="mission-title font-montserrat">Current mission turnover</h6>
-                                <h4 class="mission-value font-montserrat mb-0">0</h4>
-                            </div>
-                        </div>
+                            <p class="click-upload font-montserrat text-center ">
+                                <span class="text-pink-10 fw-medium">Click to upload</span>
+                                or drag and drop
+                            </p>
+                            <p class="file-type text-center">SVG, PNG, JPG or GIF (max. 800x400px)</p>
+                        </label>
                     </div>
 
-                    <div class="col-lg-auto mb-3 mb-lg-0 text-center text-lg-end">
-                        <a href="#" class="btn login-btn font-montserrat">Login</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Client Stats End -->
+                    <div class="input-box pb-4">
+                        <label for="" class="form-label font-montserrat mb-0">Bannière</label>
 
-            <!-- Customer Pitch Start -->
-            <div class="customer-pitch">
-                <h6 class="t-title font-montserrat">Customer Pitch</h6>
+                        <label for="" class="uploader">
+                            <input type="file" class="d-none">
 
-                <div class="d-lg-flex text-editor">
-                    <label for="" class="t-label font-montserrat text-nowrap me-4">Description :</label>
+                            <svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 23C3 11.9543 11.9543 3 23 3C34.0457 3 43 11.9543 43 23C43 34.0457 34.0457 43 23 43C11.9543 43 3 34.0457 3 23Z"
+                                    fill="#F2F4F7" />
+                                <g clip-path="url(#clip0_764_19499)">
+                                    <path
+                                        d="M26.3335 26.3332L23.0002 22.9999M23.0002 22.9999L19.6669 26.3332M23.0002 22.9999V30.4999M29.9919 28.3249C30.8047 27.8818 31.4467 27.1806 31.8168 26.3321C32.1868 25.4835 32.2637 24.5359 32.0354 23.6388C31.807 22.7417 31.2865 21.9462 30.5558 21.3778C29.8251 20.8094 28.9259 20.5005 28.0002 20.4999H26.9502C26.698 19.5243 26.2278 18.6185 25.5752 17.8507C24.9225 17.0829 24.1043 16.4731 23.182 16.0671C22.2597 15.661 21.2573 15.4694 20.2503 15.5065C19.2433 15.5436 18.2578 15.8085 17.3679 16.2813C16.478 16.7541 15.7068 17.4225 15.1124 18.2362C14.518 19.05 14.1158 19.9879 13.936 20.9794C13.7563 21.9709 13.8036 22.9903 14.0746 23.961C14.3455 24.9316 14.8329 25.8281 15.5002 26.5832"
+                                        stroke="#475467" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <path
+                                    d="M23 40C13.6112 40 6 32.3888 6 23H0C0 35.7025 10.2975 46 23 46V40ZM40 23C40 32.3888 32.3888 40 23 40V46C35.7025 46 46 35.7025 46 23H40ZM23 6C32.3888 6 40 13.6112 40 23H46C46 10.2975 35.7025 0 23 0V6ZM23 0C10.2975 0 0 10.2975 0 23H6C6 13.6112 13.6112 6 23 6V0Z"
+                                    fill="#F9FAFB" />
+                                <defs>
+                                    <clipPath id="clip0_764_19499">
+                                        <rect width="20" height="20" fill="white" transform="translate(13 13)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
 
-                    <div class="w-100">
-                        <textarea name="editor1" class="w-100 editor-area"></textarea>
-                    </div>
-                </div>
-
-                <div class="d-lg-flex document">
-                    <div class="t-label font-montserrat text-nowrap me-4">Document :</div>
-                    <input type="file" name="" id="file-input" class="input-file">
-                </div>
-                <div class="d-lg-flex google-link">
-                    <div class="t-label font-montserrat text-nowrap me-4">Google Links :</div>
-
-                    <input type="text" name="" id="" class="google-input form-control font-montserrat"
-                        placeholder="Google Links">
-                </div>
-
-            </div>
-            <!-- Customer Pitch End -->
-
-
-
-            <!-- Form Start -->
-            <form action="" class="form-part">
-                <h5 class="f-title font-montserrat">Company Details</h5>
-
-                <div class="row input-box">
-                    <div class="col-lg-6 pe-lg-4">
-                        <label for="" class="form-label font-montserrat mb-0">Client Type</label>
-                        <div class="d-flex mt-3">
-                            <div class="form-check me-4 me-sm-5">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="SMB" checked>
-                                <label class="form-check-label mb-0 font-montserrat" for="SMB">
-                                    SMB
-                                </label>
-                            </div>
-                            <div class="form-check ms-4">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="PREMIUM">
-                                <label class="form-check-label mb-0 font-montserrat" for="PREMIUM">
-                                    PREMIUM
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 ps-lg-4">
-                        <label for="CompanyName" class="form-label font-montserrat mb-0">Country Name</label>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected disabled>Select here...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 pe-lg-4 input-box">
-                    <label for="CompanyName" class="form-label font-montserrat mb-0">Company Name</label>
-                    <input type="text" class="form-control" id="CompanyName" placeholder="Enter here...">
-                </div>
-
-                <div class="input-box">
-                    <label for="Address" class="form-label font-montserrat mb-0">Address</label>
-                    <input type="text" class="form-control" id="Address" placeholder="Enter here...">
-                </div>
-
-                <div class="row input-box">
-                    <div class="col-lg-6 pe-lg-4">
-                        <label for="Postal Code" class="form-label font-montserrat mb-0">Postal Code</label>
-                        <input type="text" class="form-control" id="Postal Code" placeholder="Enter here...">
-                    </div>
-                    <div class="col-lg-6 ps-lg-4">
-                        <label for="City" class="form-label font-montserrat mb-0">City</label>
-                        <input type="text" class="form-control" id="City" placeholder="Enter here...">
-                    </div>
-                </div>
-
-                <div class="row input-box">
-                    <div class="col-lg-6 pe-lg-4">
-                        <label for="Phone Number" class="form-label font-montserrat mb-0">Phone Number</label>
-                        <input type="text" class="form-control" id="Phone Number" placeholder="Enter here...">
-                    </div>
-                    <div class="col-lg-6 ps-lg-4">
-                        <label for="Legal Status" class="form-label font-montserrat mb-0">Legal Status</label>
-                        <input type="text" class="form-control" id="Legal Status" placeholder="Enter here...">
-                    </div>
-                </div>
-
-                <div class="row input-box">
-                    <div class="col-lg-6 pe-lg-4">
-                        <label for="Registration Number" class="form-label font-montserrat mb-0">Registration
-                            Number</label>
-                        <input type="text" class="form-control" id="Registration Number" placeholder="Enter here...">
-                    </div>
-                    <div class="col-lg-6 ps-lg-4">
-                        <label for="VAT Identification Number" class="form-label font-montserrat mb-0">VAT
-                            Identification Number</label>
-                        <input type="text" class="form-control" id="VAT Identification Number"
-                            placeholder="Enter here...">
-                    </div>
-                </div>
-
-                <div class="row input-box">
-                    <div class="col-lg-6 pe-lg-4">
-                        <label for="AccÈS CLIENT" class="form-label font-montserrat mb-0">AccÈS CLIENT</label>
-                        <input type="text" class="form-control" id="AccÈS CLIENT" placeholder="Enter here...">
-                    </div>
-                    <div class="col-lg-6 ps-lg-4">
-                        <label for="Client Access Code" class="form-label font-montserrat mb-0">Client Access
-                            Code</label>
-                        <input type="text" class="form-control" id="Client Access Code" placeholder="Enter here...">
-                    </div>
-                </div>
-
-                <div class="row input-box">
-                    <div class="col-lg-6 pe-lg-4">
-                        <label for="Facebook Page ID" class="form-label font-montserrat mb-0">Facebook Page ID</label>
-                        <input type="text" class="form-control" id="Facebook Page ID" placeholder="Enter here...">
-                    </div>
-                    <div class="col-lg-6 ps-lg-4">
-                        <label for="CFacebook Ad Account ID" class="form-label font-montserrat mb-0">CFacebook Ad
-                            Account
-                            ID</label>
-                        <input type="text" class="form-control" id="CFacebook Ad Account ID"
-                            placeholder="Enter here...">
-                    </div>
-                </div>
-
-                <div class="col-lg-6pe-lg-4">
-                    <label for="" class="form-label font-montserrat mb-0">User Type</label>
-                    <div class="d-flex">
-                        <div class="form-check me-4 me-sm-5">
-                            <input class="form-check-input" type="radio" name="User_Type" id="PIX.CITY" checked>
-                            <label class="form-check-label mb-0 font-montserrat" for="User Type">
-                                PIX.CITY
-                            </label>
-                        </div>
-                        <div class="form-check ms-4">
-                            <input class="form-check-input" type="radio" name="User_Type" id="JULIEDESK">
-                            <label class="form-check-label mb-0 font-montserrat" for="JULIEDESK">
-                                JULIEDESK
-                            </label>
-                        </div>
+                            <p class="click-upload font-montserrat text-center ">
+                                <span class="text-pink-10 fw-medium">Click to upload</span>
+                                or drag and drop
+                            </p>
+                            <p class="file-type text-center">SVG, PNG, JPG or GIF (max. 800x400px)</p>
+                        </label>
                     </div>
                 </div>
 
 
-                <!-- Social Net Start -->
-                <div class="social">
-                    <h5 class="s-title font-montserrat">Social Networks</h5>
-                    <p class="s-para font-montserrat">Add your social networks link beloq</p>
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="input-box">
+                        <label for="PostCardAtl" class="form-label font-montserrat mb-0">Post Card Atl</label>
+                        <input type="text" class="form-control" id="PostCardAtl" placeholder="Enter here....">
+                    </div>
+                </div>
 
-                    <div class="d-flex align-items-end font-montserrat" style="margin-bottom: 30px;">
-                        <div class="col-lg-6 pe-lg-4">
-                            <label for="CompanyName" class="form-label  mb-0">Country Name</label>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="input-box">
+                        <label for="BannerAlt" class="form-label font-montserrat mb-0">Banner Alt</label>
+                        <input type="text" class="form-control" id="BannerAlt" placeholder="Enter here....">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="input-box">
+                        <label for="Slug" class="form-label font-montserrat mb-0">Slug</label>
+                        <input type="text" class="form-control" id="Slug" placeholder="Enter here....">
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="input-box">
+                        <label for="MetaTitle" class="form-label font-montserrat mb-0">Meta Title</label>
+                        <input type="text" class="form-control" id="MetaTitle" placeholder="Enter here....">
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 pe-lg-5">
+                    <div class="input-box">
+                        <label for="Metadesc" class="form-label font-montserrat mb-0">Meta desc</label>
+                        <input type="text" class="form-control" id="Metadesc" placeholder="Enter here....">
+                    </div>
+
+
+                    <div class="row mb-5 pb-2">
+                        <div class="col-sm-6 pe-sm-4">
+                            <label for="PostStatus" class="form-label  mb-0">Post Status</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected disabled>Select here...</option>
                                 <option value="1">One</option>
@@ -562,62 +428,110 @@
                             </select>
                         </div>
 
-                        <div class="ps-4">
-                            <button class="btn btn-add font-montserrat">ADD</button>
+                        <div class="col-sm-6 ps-sm-4">
+                            <label for="Category" class="form-label  mb-0">Category</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected disabled>Select here...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
                         </div>
                     </div>
 
 
-                    <!-- Added Item -->
-                    <div class="s-item d-flex align-items-center">
-                        <div class="col-lg-6 pe-lg-4">
-                            <h6 class="si-title">Facebook</h6>
-                            <p class="si-url">https://facebook.com/usernameID</p>
-                        </div>
-                        <div class="">
-                            <button class="btn btn-dl">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    <div class="input-box">
+                        <div class="d-flex justify-content-between mb-4">
+                            <label for="Blog Tag" class="form-label font-montserrat mb-0">Blog Tag</label>
+
+                            <button type="button" class="btn success-btn shadow-none">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <circle opacity="0.1" cx="20" cy="20" r="20" fill="#DF6F79" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M26.101 15.2701C26.3733 15.2701 26.6 15.4962 26.6 15.7839V16.0499C26.6 16.3306 26.3733 16.5637 26.101 16.5637H14.4997C14.2267 16.5637 14 16.3306 14 16.0499V15.7839C14 15.4962 14.2267 15.2701 14.4997 15.2701H16.5407C16.9553 15.2701 17.3161 14.9754 17.4094 14.5596L17.5163 14.0822C17.6824 13.4319 18.229 13 18.8547 13H21.7453C22.3641 13 22.9169 13.4319 23.0769 14.0479L23.1913 14.5589C23.2839 14.9754 23.6447 15.2701 24.06 15.2701H26.101ZM25.0641 24.9937C25.2772 23.0079 25.6502 18.2899 25.6502 18.2423C25.6639 18.0981 25.6169 17.9616 25.5236 17.8517C25.4235 17.7488 25.2969 17.6879 25.1574 17.6879H15.448C15.3077 17.6879 15.1743 17.7488 15.0817 17.8517C14.9878 17.9616 14.9415 18.0981 14.9483 18.2423C14.9495 18.2511 14.9629 18.4172 14.9853 18.6951C15.0847 19.9293 15.3616 23.367 15.5406 24.9937C15.6672 26.1921 16.4535 26.9453 17.5925 26.9726C18.4713 26.9929 19.3768 26.9999 20.3027 26.9999C21.1748 26.9999 22.0605 26.9929 22.9666 26.9726C24.145 26.9523 24.9307 26.2124 25.0641 24.9937Z"
-                                        fill="#D11A2A" />
+                                    <mask id="mask0_764_19577" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="12" height="12">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6 0C6.66274 0 7.2 0.537258 7.2 1.2V4.8H10.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2H7.2V10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8V7.2H1.2C0.537258 7.2 0 6.66274 0 6C0 5.33726 0.537258 4.8 1.2 4.8H4.8V1.2C4.8 0.537258 5.33726 0 6 0Z"
+                                            fill="black" />
+                                    </mask>
+                                    <g mask="url(#mask0_764_19577)">
+                                        <rect width="12" height="12" fill="white" />
+                                    </g>
                                 </svg>
-                            </button>
+
+                                Create</button>
+
+                        </div>
+
+                        <div class="input-group mb-4 pb-3">
+                            <span class="input-group-text" id="basic-addon1">https://</span>
+                            <input type="text" class="form-control" placeholder="olivia" aria-label="olivia"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-4 pb-3">
+                            <span class="input-group-text" id="basic-addon1">https://</span>
+                            <input type="text" class="form-control" placeholder="olivia" aria-label="olivia"
+                                aria-describedby="basic-addon1">
                         </div>
                     </div>
 
-                    <div class="s-item d-flex align-items-center">
-                        <div class="col-lg-6 pe-lg-4">
-                            <h6 class="si-title">Instagram</h6>
-                            <p class="si-url">https://instagram/com/UserID</p>
-                        </div>
-                        <div class="">
-                            <button class="btn btn-dl">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    <div class="input-box">
+                        <div class="d-flex justify-content-between mb-4">
+                            <label for="Article" class="form-label font-montserrat mb-0">Article</label>
+
+                            <button type="button" class="btn success-btn shadow-none">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <circle opacity="0.1" cx="20" cy="20" r="20" fill="#DF6F79" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M26.101 15.2701C26.3733 15.2701 26.6 15.4962 26.6 15.7839V16.0499C26.6 16.3306 26.3733 16.5637 26.101 16.5637H14.4997C14.2267 16.5637 14 16.3306 14 16.0499V15.7839C14 15.4962 14.2267 15.2701 14.4997 15.2701H16.5407C16.9553 15.2701 17.3161 14.9754 17.4094 14.5596L17.5163 14.0822C17.6824 13.4319 18.229 13 18.8547 13H21.7453C22.3641 13 22.9169 13.4319 23.0769 14.0479L23.1913 14.5589C23.2839 14.9754 23.6447 15.2701 24.06 15.2701H26.101ZM25.0641 24.9937C25.2772 23.0079 25.6502 18.2899 25.6502 18.2423C25.6639 18.0981 25.6169 17.9616 25.5236 17.8517C25.4235 17.7488 25.2969 17.6879 25.1574 17.6879H15.448C15.3077 17.6879 15.1743 17.7488 15.0817 17.8517C14.9878 17.9616 14.9415 18.0981 14.9483 18.2423C14.9495 18.2511 14.9629 18.4172 14.9853 18.6951C15.0847 19.9293 15.3616 23.367 15.5406 24.9937C15.6672 26.1921 16.4535 26.9453 17.5925 26.9726C18.4713 26.9929 19.3768 26.9999 20.3027 26.9999C21.1748 26.9999 22.0605 26.9929 22.9666 26.9726C24.145 26.9523 24.9307 26.2124 25.0641 24.9937Z"
-                                        fill="#D11A2A" />
+                                    <mask id="mask0_764_19577" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="12" height="12">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6 0C6.66274 0 7.2 0.537258 7.2 1.2V4.8H10.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2H7.2V10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8V7.2H1.2C0.537258 7.2 0 6.66274 0 6C0 5.33726 0.537258 4.8 1.2 4.8H4.8V1.2C4.8 0.537258 5.33726 0 6 0Z"
+                                            fill="black" />
+                                    </mask>
+                                    <g mask="url(#mask0_764_19577)">
+                                        <rect width="12" height="12" fill="white" />
+                                    </g>
                                 </svg>
-                            </button>
+
+                                Create</button>
                         </div>
+
+                        <div class="input-box">
+                            <label for="Name" class="form-label font-montserrat mb-0">Name</label>
+                            <input type="text" class="form-control" id="Name" placeholder="Enter here....">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Content" class="form-label font-montserrat mb-0">Content</label>
+                            <textarea type="text" class="form-control" rows="3" id="Content"
+                                placeholder="Enter here...."></textarea>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="Instatitle" class="form-label font-montserrat mb-0">Insta title</label>
+                            <input type="text" class="form-control" id="Instatitle"
+                                placeholder="Enter your Job title here...">
+                        </div>
+
+
+                        <div class="input-box">
+                            <label for="" class="t-label font-montserrat text-nowrap me-4">Réussir ton post
+                                insta</label>
+
+                            <div class="w-100">
+                                <textarea name="editor3" class="w-100 editor-area"></textarea>
+                            </div>
+                        </div>
+
                     </div>
-
-
                 </div>
-                <!-- Social Net End -->
-            </form>
-            <!-- Form End -->
 
-
+            </div>
 
             <div class="d-flex justify-content-end font-montserrat form-btns">
                 <button class="btn btn-cancel">Cancel</button>
                 <button class="btn btn-submit">Submit</button>
             </div>
-
 
         </div>
     </section>
@@ -658,10 +572,21 @@
 
         CKEDITOR.replace('editor1', {
             width: '100%',
-            height: '400px'
+            height: '390px'
 
         });
 
+        CKEDITOR.replace('editor2', {
+            width: '100%',
+            height: '260px'
+
+        });
+
+        CKEDITOR.replace('editor3', {
+            width: '100%',
+            height: '390px'
+
+        });
     </script>
 </body>
 

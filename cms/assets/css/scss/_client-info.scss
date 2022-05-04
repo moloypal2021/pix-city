@@ -323,7 +323,7 @@
         }
 
         .google-link {
-            margin-bottom: 128px;
+            margin-bottom: 40px;
 
             .google-input {
                 max-width: 448px;
@@ -341,27 +341,6 @@
             }
         }
 
-        .btn-cancel {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            color: #4F4F55;
-            padding: 14px 36px;
-            border: 1px solid #C4CACF;
-            box-sizing: border-box;
-            border-radius: 6px;
-            margin-right: 32px;
-        }
-
-        .btn-submit {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            color: #FFFFFF;
-            padding: 14px 36px;
-            background-color: #31B997;
-            border-radius: 6px;
-        }
 
     }
 
@@ -534,4 +513,33 @@
             padding: 0px;
         }
     }
+
+
+    .form-btns {
+        margin-top: 60px;
+
+        .btn-cancel {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #4F4F55;
+            padding: 14px 36px;
+            border: 1px solid #C4CACF;
+            box-sizing: border-box;
+            border-radius: 6px;
+            margin-right: 32px;
+        }
+
+        .btn-submit {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            padding: 14px 36px;
+            background-color: #31B997;
+            border-radius: 6px;
+        }
+    }
+
+
 }
