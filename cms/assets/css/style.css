@@ -52,6 +52,20 @@
   font-weight: 900 !important;
 }
 
+.success-btn {
+  background: #31B997;
+  border-radius: 6px;
+  padding: 16px 24px;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.mb-40px {
+  margin-bottom: 40px;
+}
+
 .text-blue-10 {
   color: #1E3E62;
 }
@@ -74,6 +88,22 @@
 
 .bg-pink-10 {
   background-color: #ED5485;
+}
+
+.bg-pink-20 {
+  background-color: #FF92AE;
+}
+
+.text-gray-10 {
+  color: #425466;
+}
+
+.bg-primary-10 {
+  background-color: #4C6FFF;
+}
+
+.text-green-10 {
+  color: #31B997;
 }
 
 .breadcrumb {
@@ -2644,6 +2674,909 @@
   padding: 14px 36px;
   background-color: #31B997;
   border-radius: 6px;
+}
+
+.clientInfoView {
+  background: #F6F9FC;
+  padding-top: 36px;
+  padding-bottom: 26px;
+}
+
+@media (min-width: 768px) {
+  .clientInfoView {
+    padding-top: 32px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView {
+    padding-top: 29px;
+    padding-bottom: 48px;
+  }
+}
+
+.clientInfoView .container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .clientInfoView .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .container-fluid {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+.clientInfoView .title-header {
+  padding-top: 32px;
+}
+
+@media (min-width: 576px) {
+  .clientInfoView .title-header {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .title-header {
+    padding-top: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .title-header {
+    padding-top: 57px;
+  }
+}
+
+.clientInfoView .title-header .title {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #084279;
+}
+
+.clientInfoView .title-header .clear-btn {
+  background: #31B997;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+  min-width: 100px;
+}
+
+.clientInfoView .title-header .clear-btn svg {
+  margin-right: 8px;
+}
+
+.clientInfoView .title-header .edit-btn {
+  border: 1px solid #C4CACF;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  min-width: 100px;
+  color: #16192C;
+}
+
+.clientInfoView .title-header .edit-btn svg {
+  margin-right: 8px;
+}
+
+.clientInfoView .client-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+          box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  -webkit-filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+          filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+  padding: 24px 24px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .client-card {
+    padding: 24px 40px;
+  }
+}
+
+.clientInfoView .client-card .avater-img {
+  width: 108px;
+  height: 108px;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 576px) {
+  .clientInfoView .client-card .avater-img {
+    margin-right: 16px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .client-card .avater-img {
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .client-card .avater-img {
+    margin-right: 20px;
+    width: 108px;
+    height: 108px;
+  }
+}
+
+.clientInfoView .client-card .client-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 12px;
+  color: #183555;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .client-card .client-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .client-card .client-title {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+}
+
+.clientInfoView .client-card .connexion-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  color: #2D2A2A;
+}
+
+.clientInfoView .client-card .connexion-btn {
+  background: #ED5485;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.clientInfoView .card-stats {
+  background: #FFFFFF;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+          box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  -webkit-filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+          filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+  padding: 16px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .card-stats {
+    width: 100%;
+    padding: 24px;
+  }
+}
+
+.clientInfoView .card-stats svg {
+  width: 46px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .card-stats svg {
+    width: 36px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .clientInfoView .card-stats svg {
+    width: 46px;
+  }
+}
+
+.clientInfoView .card-stats .card-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7A7A9D;
+  margin-bottom: 2px;
+}
+
+@media (min-width: 576px) {
+  .clientInfoView .card-stats .card-title {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clientInfoView .card-stats .card-title {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .card-stats .card-title {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .clientInfoView .card-stats .card-title {
+    font-size: 14px;
+  }
+}
+
+.clientInfoView .card-stats .card-value {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 136.52%;
+  color: #16192C;
+}
+
+.clientInfoView .info-card {
+  -webkit-box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+          box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  -webkit-filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+          filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .info-card {
+    padding-bottom: 44px;
+  }
+}
+
+.clientInfoView .info-card .info-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.clientInfoView .info-card .border-divider {
+  width: 1px;
+  height: 35px;
+  background-color: #C5C5C5;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .info-card .border-divider {
+    background-color: transparent;
+    height: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .info-card .border-divider {
+    width: 1px;
+    height: 35px;
+    margin-left: 44px;
+    margin-right: 44px;
+    background-color: #C5C5C5;
+  }
+}
+
+.clientInfoView .company-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .clientInfoView .company-card {
+    padding: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .company-card {
+    padding: 28px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clientInfoView .company-card {
+    padding: 48px;
+  }
+}
+
+.clientInfoView .company-card .title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #183555;
+  margin-bottom: 32px;
+}
+
+.clientInfoView .company-card .c-title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: #425466;
+  margin-bottom: 3px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .company-card .c-title {
+    font-size: 14px;
+    line-height: 38px;
+  }
+}
+
+.clientInfoView .company-card .c-para {
+  font-size: 12px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .company-card .c-para {
+    font-size: 14px;
+    line-height: 38px;
+  }
+}
+
+.clientInfoView .company-card .hr-border {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  border-color: #F0F0F0;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .company-card .hr-border {
+    margin-bottom: 196px;
+  }
+}
+
+.clientInfoView .mission-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.clientInfoView .mission-card .title {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #084279;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+
+.clientInfoView .mission-card .table-box {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.clientInfoView .mission-card .table-box .table {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.clientInfoView .mission-card .table-box .table thead {
+  background: #F2F4F7;
+  -webkit-box-shadow: inset 0px -1px 0px #EDF2F7;
+          box-shadow: inset 0px -1px 0px #EDF2F7;
+}
+
+.clientInfoView .mission-card .table-box .table thead .th-name {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #8492A6;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.clientInfoView .mission-card .table-box .table thead .sort-group {
+  background: rgba(215, 227, 238, 0.5);
+  border-radius: 4px;
+}
+
+.clientInfoView .mission-card .table-box .table thead .sort-group .btn-sort-up {
+  padding: 0px 6px;
+  margin-bottom: -4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.clientInfoView .mission-card .table-box .table thead .sort-group .btn-sort-down {
+  padding: 0px 6px;
+  margin-top: -4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.clientInfoView .mission-card .table-box .table .max-w-205px {
+  max-width: 205px;
+}
+
+.clientInfoView .mission-card .table-box .table th,
+.clientInfoView .mission-card .table-box .table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.clientInfoView .mission-card .table-box .table th:first-child,
+.clientInfoView .mission-card .table-box .table td:first-child {
+  padding-left: 16px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .mission-card .table-box .table th:first-child,
+  .clientInfoView .mission-card .table-box .table td:first-child {
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .mission-card .table-box .table th:first-child,
+  .clientInfoView .mission-card .table-box .table td:first-child {
+    padding-left: 48px;
+  }
+}
+
+.clientInfoView .mission-card .table-box .table th:last-child,
+.clientInfoView .mission-card .table-box .table td:last-child {
+  padding-right: 16px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .mission-card .table-box .table th:last-child,
+  .clientInfoView .mission-card .table-box .table td:last-child {
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .mission-card .table-box .table th:last-child,
+  .clientInfoView .mission-card .table-box .table td:last-child {
+    padding-right: 48px;
+  }
+}
+
+.clientInfoView .mission-card .table-box .table tbody th,
+.clientInfoView .mission-card .table-box .table tbody td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(232, 233, 235, 0.4);
+  font-size: 15px;
+}
+
+.clientInfoView .mission-card .table-box .table .client-avater {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-right: 12px;
+}
+
+.clientInfoView .history-card {
+  background: #FFFFFF;
+  border-radius: 8px 8px 0px 0px;
+  padding: 22px 14px;
+}
+
+.clientInfoView .history-card .h-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #084279;
+  margin-bottom: 10px;
+}
+
+.clientInfoView .history-card .l-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 38px;
+  color: #425466;
+}
+
+.clientInfoView .history-card .form-control {
+  background: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 12px 24px;
+  color: #425466;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .history-card .form-control {
+    line-height: 38px;
+    padding: 6px 32px;
+  }
+}
+
+.clientInfoView .history-card .form-control::-webkit-input-placeholder {
+  color: #B5B5BD;
+}
+
+.clientInfoView .history-card .form-control:-ms-input-placeholder {
+  color: #B5B5BD;
+}
+
+.clientInfoView .history-card .form-control::-ms-input-placeholder {
+  color: #B5B5BD;
+}
+
+.clientInfoView .history-card .form-control::placeholder {
+  color: #B5B5BD;
+}
+
+.clientInfoView .history-card .custom-group {
+  background: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.clientInfoView .history-card .custom-group .form-control {
+  border: 0px;
+  padding-left: 16px;
+}
+
+.clientInfoView .history-card .custom-group .input-group-btn {
+  width: 48px;
+  height: 48px;
+  background: #31B997;
+  border-radius: 4px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clientInfoView .history-card .tag-btn {
+  background: #EBF2FA;
+  border-radius: 6px;
+  padding: 10px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 14px;
+  margin-bottom: 14px;
+}
+
+.clientInfoView .history-card .tag-btn .tag-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #7C889D;
+  margin-right: 12px;
+  margin-bottom: 0px;
+}
+
+.clientInfoView .history-card .date {
+  position: relative;
+}
+
+.clientInfoView .history-card .date input {
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  height: 100%;
+}
+
+.clientInfoView .history-card .date input::-webkit-inner-spin-button, .clientInfoView .history-card .date input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.clientInfoView .history-card .date .date-btn {
+  position: absolute;
+  pointer-events: none;
+  right: 8px;
+  z-index: 5;
+}
+
+.clientInfoView .history-card .browser-file-box {
+  background: #F8FAFB;
+  border-radius: 6px;
+  padding: 32px 18px;
+}
+
+.clientInfoView .history-card .browser-file-box .file-btn {
+  background: #EF5285;
+  border-radius: 4px;
+  padding: 4px 12px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clientInfoView .history-card .browser-file-box .file-btn .btn-text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.clientInfoView .history-card .post-btn {
+  background: #31B997;
+  border-radius: 4px;
+  padding: 16px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.clientInfoView .history-card .border-dash-bottom {
+  border-bottom: 1px dashed #C0C0C1;
+}
+
+.clientInfoView .history-card .c-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.005em;
+  color: #16192C;
+  margin-bottom: 28px;
+}
+
+.clientInfoView .history-card .comment .c-avater-details {
+  margin-bottom: 14px;
+}
+
+.clientInfoView .history-card .comment .c-avater-details .avater {
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  margin-right: 14px;
+}
+
+.clientInfoView .history-card .comment .c-avater-details .avater-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #27272E;
+}
+
+.clientInfoView .history-card .comment .c-avater-details .c-date {
+  font-size: 14px;
+  line-height: 23px;
+  color: #9199A1;
+}
+
+.clientInfoView .history-card .comment .c-avater-details .c-time {
+  font-size: 14px;
+  line-height: 23px;
+  color: #9199A1;
+}
+
+.clientInfoView .history-card .comment .c-timer-card {
+  background: rgba(239, 82, 133, 0.05);
+  border-radius: 10px;
+  padding: 18px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 14px;
+}
+
+.clientInfoView .history-card .comment .c-timer-card .time-icon {
+  width: 35px;
+  min-width: 32px;
+}
+
+.clientInfoView .history-card .comment .c-timer-card .date-time {
+  font-size: 14px;
+  line-height: 20px;
+  color: #030229;
+}
+
+.clientInfoView .history-card .comment .c-timer-card .time-zone {
+  font-size: 12px;
+  line-height: 20px;
+  color: rgba(1, 13, 28, 0.5);
+}
+
+.clientInfoView .history-card .comment .c-paragraph {
+  font-size: 14px;
+  line-height: 23px;
+  color: #425466;
+  margin-bottom: 32px;
+}
+
+.clientInfoView .history-card .uploaded-file {
+  background: #FAFCFF;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.clientInfoView .history-card .uploaded-file .f-icon {
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+
+.clientInfoView .history-card .uploaded-file .f-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.clientInfoView .history-card .uploaded-file .f-date {
+  font-size: 11px;
+  line-height: 38px;
+  color: #A7B0BA;
+}
+
+.clientInfoView .history-card .border-file {
+  width: 96%;
+  height: 1px;
+  background: #F0F0F0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clientInfoView .history-card .s-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.clientInfoView .history-card .btn-dropdown {
+  background: #FFFFFF;
+  border-color: rgba(50, 50, 71, 0.08);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #525257;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  padding: 12px 16px;
+}
+
+.clientInfoView .history-card .dropdown-menu {
+  background: #FFFFFF;
+  border-color: rgba(50, 50, 71, 0.08);
+  border-radius: 8px;
+  padding: 16px 20px 26px 20px;
+}
+
+.clientInfoView .history-card .dropdown-menu .d-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  margin-bottom: 18px;
+}
+
+.clientInfoView .history-card .dropdown-menu .avater {
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  margin-right: 16px;
+}
+
+.clientInfoView .history-card .dropdown-menu .d-item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #425466;
+}
+
+.clientInfoView .history-card .dropdown-menu .d-item {
+  margin-bottom: 14px;
+}
+
+.clientInfoView .history-card .title-2 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
 }
 
 .container {

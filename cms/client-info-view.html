@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="bg-blue-10 header">
+        <nav class="navbar-expand-lg">
+            <div class="d-flex flex-column align-items-center align-items-lg-stretch">
+                <div class="navbar-top w-100">
+                    <div class="container-fluid d-flex align-items-center justify-content-between">
+                        <a href="#" class="navbar-brand d-none d-md-inline-block">
+                            <img src="./assets/images/logo-1.png" alt="" class="logo">
+                        </a>
+
+                        <button class="btn p-0 d-md-none navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="white" />
+                            </svg>
+                        </button>
+
+                        <ul class="nav d-flex flex-nowrap align-items-center justify-content-end">
+                            <li class="nav-item dropdown me-3 me-lg-2 me-xl-3 me-xxl-4">
+                                <a class="nav-link dropdown-toggle language align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    <span class="mb-0 me-1">FR</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item d-flex align-items-center me-2 me-lg-2 me-xl-3 me-xxl-4">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.3 16V16.2899L17.505 16.495L19.3 18.29V18.3H4.7V18.2899L6.49497 16.495L6.7 16.2899V16V11C6.7 8.16412 8.17906 5.94929 10.6614 5.36114L11.2 5.23353V4.68V4C11.2 3.5566 11.5566 3.2 12 3.2C12.4434 3.2 12.8 3.5566 12.8 4V4.68V5.23308L13.3381 5.36102C15.8114 5.94907 17.3 8.17474 17.3 11V16ZM13.0932 20.7C12.861 21.0599 12.4565 21.3 12 21.3C11.5382 21.3 11.1347 21.0603 10.9042 20.7H13.0932Z"
+                                        fill="white" stroke="#C2CFE0" stroke-width="1.4" />
+                                </svg>
+                                <div class="noti-badge">99+</div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle profile-dropdown align-items-center text-white"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <svg class="profile-icon" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="46" height="46" rx="23" fill="#C2CFE0" />
+                                        <path
+                                            d="M31 32v-2a4 4 0 0 0-4-4h-8a4 4 0 0 0-4 4v2M23 22a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                                            stroke="#687A92" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="mb-0 me-0 me-md-1 ms-2 d-none d-md-inline">User Name 1</span>
+
+                                    <svg class="ms-auto d-none d-md-inline mb-1" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="#687A92" />
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="container-fluid d-flex align-items-center justify-content-lg-between justify-content-end py-lg-3">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav d-flex flex-column flex-lg-row menus">
+                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="menu-icon" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#a)">
+                                            <path
+                                                d="M3 13.101h8V3.023H3v10.078Zm0 8.062h8v-6.046H3v6.046Zm10 0h8V11.085h-8v10.078Zm0-18.14V9.07h8V3.023h-8Z"
+                                                fill="#fff" />
+                                            <path d="M11 21.163H3v-6.046h8v6.046ZM13 9.07V3.023h8V9.07h-8Z"
+                                                fill="#51CBFF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="a">
+                                                <path fill="#fff" d="M0 0h24v24.186H0z" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="mb-0">Dashboard</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 14.252V16.342C13.0949 16.022 12.1263 15.9239 11.1754 16.0558C10.2245 16.1877 9.3192 16.5459 8.53543 17.1002C7.75166 17.6545 7.11234 18.3888 6.67116 19.2414C6.22998 20.094 5.99982 21.04 6 22L4 21.999C3.99969 20.7779 4.27892 19.5729 4.8163 18.4764C5.35368 17.3799 6.13494 16.4209 7.10022 15.673C8.0655 14.9251 9.18918 14.4081 10.3852 14.1616C11.5811 13.9152 12.8177 13.9467 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM17.793 19.914L21.328 16.379L22.743 17.793L17.793 22.743L14.257 19.207L15.672 17.793L17.793 19.914Z"
+                                            fill="white" />
+                                        <path
+                                            d="M17.7938 19.9139L21.3288 16.3789L22.7438 17.7929L17.7938 22.7429L14.2578 19.2069L15.6728 17.7929L17.7938 19.9139Z"
+                                            fill="#51CBFF" />
+                                    </svg>
+
+                                    <span class="mb-0">Usagers</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                                <a class="nav-link active dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21 3C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21ZM20 5H4V19H20V5ZM18 7V9H6V7H18Z"
+                                            fill="white" />
+                                        <rect x="6" y="7" width="12" height="2" fill="#51CBFF" />
+                                    </svg>
+
+
+                                    <span class="mb-0">Workspace</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2 18H9V20H2V18ZM2 11H11V13H2V11ZM2 4H22V6H2V4ZM20.674 13.025L21.83 12.634L22.83 14.366L21.914 15.171C22.0293 15.7177 22.0293 16.2823 21.914 16.829L22.83 17.634L21.83 19.366L20.674 18.975C20.264 19.345 19.776 19.63 19.239 19.805L19 21H17L16.76 19.804C16.2293 19.6306 15.7408 19.3478 15.326 18.974L14.17 19.366L13.17 17.634L14.086 16.829C13.9707 16.2823 13.9707 15.7177 14.086 15.171L13.17 14.366L14.17 12.634L15.326 13.025C15.736 12.655 16.224 12.37 16.761 12.195L17 11H19L19.24 12.196C19.776 12.37 20.264 12.656 20.674 13.026V13.025ZM18 17C18.2652 17 18.5196 16.8946 18.7071 16.7071C18.8946 16.5196 19 16.2652 19 16C19 15.7348 18.8946 15.4804 18.7071 15.2929C18.5196 15.1054 18.2652 15 18 15C17.7348 15 17.4804 15.1054 17.2929 15.2929C17.1054 15.4804 17 15.7348 17 16C17 16.2652 17.1054 16.5196 17.2929 16.7071C17.4804 16.8946 17.7348 17 18 17Z"
+                                            fill="white" />
+                                        <path
+                                            d="M20.504 13.025L21.66 12.634L22.66 14.366L21.744 15.171C21.8593 15.7177 21.8593 16.2823 21.744 16.829L22.66 17.634L21.66 19.366L20.504 18.975C20.094 19.345 19.606 19.63 19.069 19.805L18.83 21H16.83L16.59 19.804C16.0593 19.6306 15.5708 19.3478 15.156 18.974L14 19.366L13 17.634L13.916 16.829C13.8007 16.2823 13.8007 15.7177 13.916 15.171L13 14.366L14 12.634L15.156 13.025C15.566 12.655 16.054 12.37 16.591 12.195L16.83 11H18.83L19.07 12.196C19.606 12.37 20.094 12.656 20.504 13.026V13.025ZM17.83 17C18.0952 17 18.3496 16.8946 18.5371 16.7071C18.7246 16.5196 18.83 16.2652 18.83 16C18.83 15.7348 18.7246 15.4804 18.5371 15.2929C18.3496 15.1054 18.0952 15 17.83 15C17.5648 15 17.3104 15.1054 17.1229 15.2929C16.9354 15.4804 16.83 15.7348 16.83 16C16.83 16.2652 16.9354 16.5196 17.1229 16.7071C17.3104 16.8946 17.5648 17 17.83 17Z"
+                                            fill="#51CBFF" />
+                                    </svg>
+
+                                    <span class="mb-0">Usagers</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Content Section Start -->
+    <section class="clientInfoView content">
+        <div class="container-fluid">
+
+            <!-- Breadcumb Start -->
+            <nav class="d-none d-md-block" aria-label="breadcrumb">
+                <ol class="breadcrumb align-items-center">
+                    <li class="breadcrumb-item"><a href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 19.9999C20 20.2651 19.8946 20.5195 19.7071 20.707C19.5196 20.8946 19.2652 20.9999 19 20.9999H5C4.73478 20.9999 4.48043 20.8946 4.29289 20.707C4.10536 20.5195 4 20.2651 4 19.9999V10.9999H1L11.327 1.61192C11.5111 1.4444 11.7511 1.35156 12 1.35156C12.2489 1.35156 12.4889 1.4444 12.673 1.61192L23 10.9999H20V19.9999ZM11 12.9999V18.9999H13V12.9999H11Z"
+                                    fill="#31B997" />
+                            </svg>
+                        </a></li>
+                    <li class="breadcrumb-item"><a href="#">Users</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Clients (Juliedesk Paul Users)</li>
+                </ol>
+            </nav>
+
+            <!-- Title Start-->
+            <div class="title-header d-flex flex-md-row flex-column  items-center justify-content-between">
+                <h1 class="title fw-normal">Client Information</h1>
+
+                <!-- Options Start-->
+                <div class="d-flex align-items-center mt-4 mt-md-0">
+                    <button type="button" class="btn edit-btn shadow-none  me-3">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_689_11656" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="12" height="12">
+                                <path
+                                    d="M11.6262 1.45451C11.7726 1.60095 11.7726 1.83839 11.6262 1.98484L10.844 2.767L9.34403 1.267L10.1262 0.484835C10.2726 0.338388 10.5101 0.338388 10.6565 0.484835L11.6262 1.45451Z"
+                                    fill="black" />
+                                <path
+                                    d="M10.3137 3.29733L8.8137 1.79733L3.70396 6.90707C3.66279 6.94824 3.63178 6.99842 3.61337 7.05365L3.00995 8.86391C2.96109 9.01049 3.10054 9.14994 3.24712 9.10108L5.05738 8.49766C5.11261 8.47925 5.16279 8.44824 5.20396 8.40707L10.3137 3.29733Z"
+                                    fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.75 10.125C0.75 10.7463 1.25368 11.25 1.875 11.25H10.125C10.7463 11.25 11.25 10.7463 11.25 10.125V5.625C11.25 5.41789 11.0821 5.25 10.875 5.25C10.6679 5.25 10.5 5.41789 10.5 5.625V10.125C10.5 10.3321 10.3321 10.5 10.125 10.5H1.875C1.66789 10.5 1.5 10.3321 1.5 10.125V1.875C1.5 1.66789 1.66789 1.5 1.875 1.5H6.75C6.95711 1.5 7.125 1.33211 7.125 1.125C7.125 0.917893 6.95711 0.75 6.75 0.75H1.875C1.25368 0.75 0.75 1.25368 0.75 1.875V10.125Z"
+                                    fill="black" />
+                            </mask>
+                            <g mask="url(#mask0_689_11656)">
+                                <rect width="12" height="12" fill="#16192C" />
+                            </g>
+                        </svg>Edit</button>
+
+                    <button type="button" class="btn clear-btn shadow-none "><svg width="12" height="12"
+                            viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_553_9222" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="12" height="12">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 0C6.66274 0 7.2 0.537258 7.2 1.2V4.8H10.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2H7.2V10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8V7.2H1.2C0.537258 7.2 0 6.66274 0 6C0 5.33726 0.537258 4.8 1.2 4.8H4.8V1.2C4.8 0.537258 5.33726 0 6 0Z"
+                                    fill="black" />
+                            </mask>
+                            <g mask="url(#mask0_553_9222)">
+                                <rect width="12" height="12" fill="white" />
+                            </g>
+                        </svg>Create</button>
+                </div>
+                <!-- Options End-->
+            </div>
+            <!-- Title End-->
+
+
+            <!-- Content Start -->
+            <div class="row mt-5">
+                <div class="col-lg-7 col-xl-8 pe-xl-5">
+                    <!-- Client Card Start -->
+                    <div
+                        class="client-card d-flex flex-column flex-sm-row align-items-center justify-content-between font-montserrat">
+                        <div class="d-flex flex-column flex-sm-row align-items-center text-center text-sm-start">
+                            <img src="./assets/images/avater-1.png" alt="" class="avater-img">
+                            <div class="">
+                                <h3 class="client-title">Bob Nothin</h3>
+                                <p class="client-mail mb-4 mb-sm-0">Bob@mailme.com</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn connexion-btn">Connexion</a>
+                    </div>
+                    <!-- Client Card End -->
+
+
+                    <!-- Stats Start -->
+                    <div class="row">
+                        <div class="col-sm-6 pe-lg-4">
+                            <div class="d-flex align-items-center card-stats">
+                                <svg viewBox="0 0 49 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.234375 8C0.234375 3.58172 3.8161 0 8.23438 0H40.6001C45.0184 0 48.6001 3.58172 48.6001 8V38C48.6001 42.4183 45.0184 46 40.6001 46H8.23437C3.8161 46 0.234375 42.4183 0.234375 38V8Z"
+                                        fill="#DEFFEE" />
+                                    <mask id="mask0_764_20250" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16"
+                                        y="14" width="19" height="18">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.1719 14C20.4825 14 20.7344 14.2518 20.7344 14.5625V15.125H29.7344V14.5625C29.7344 14.2518 29.9862 14 30.2969 14C30.6075 14 30.8594 14.2518 30.8594 14.5625V15.125H31.9844C33.227 15.125 34.2344 16.1324 34.2344 17.375V29.75C34.2344 30.9926 33.227 32 31.9844 32H18.4844C17.2417 32 16.2344 30.9926 16.2344 29.75V17.375C16.2344 16.1324 17.2417 15.125 18.4844 15.125H19.6094V14.5625C19.6094 14.2518 19.8612 14 20.1719 14ZM17.3594 18.5V29.75C17.3594 30.3713 17.8631 30.875 18.4844 30.875H31.9844C32.6057 30.875 33.1094 30.3713 33.1094 29.75V18.5H17.3594Z"
+                                            fill="black" />
+                                        <path
+                                            d="M26.3594 21.875C26.3594 21.2537 26.8631 20.75 27.4844 20.75H33.1094V23H27.4844C26.8631 23 26.3594 22.4963 26.3594 21.875Z"
+                                            fill="black" />
+                                        <path
+                                            d="M17.3594 24.125H21.8594C22.4807 24.125 22.9844 24.6287 22.9844 25.25C22.9844 25.8713 22.4807 26.375 21.8594 26.375H17.3594V24.125Z"
+                                            fill="black" />
+                                    </mask>
+                                    <g mask="url(#mask0_764_20250)">
+                                        <rect x="16.2344" y="14" width="18" height="18" fill="#66CB9F" />
+                                    </g>
+                                </svg>
+
+
+                                <div class="ms-xl-3 ms-2">
+                                    <h6 class="card-title font-montserrat">Nombre de missions en cours</h6>
+                                    <h4 class="card-value font-montserrat mb-0">0</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 ps-lg-4">
+                            <div class="d-flex align-items-center card-stats">
+                                <svg viewBox="0 0 49 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.234375 8C0.234375 3.58172 3.8161 0 8.23438 0H40.6001C45.0184 0 48.6001 3.58172 48.6001 8V38C48.6001 42.4183 45.0184 46 40.6001 46H8.23437C3.8161 46 0.234375 42.4183 0.234375 38V8Z"
+                                        fill="#FFEEF1" />
+                                    <mask id="mask0_764_20242" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16"
+                                        y="14" width="19" height="18">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.7344 26.375H18.4844V29.75H20.7344V26.375ZM26.3594 21.875H24.1094V29.75H26.3594V21.875ZM31.9844 16.25L29.7344 16.25V29.75H31.9844V16.25ZM29.7344 15.125C29.1131 15.125 28.6094 15.6287 28.6094 16.25V29.75C28.6094 30.3713 29.1131 30.875 29.7344 30.875H31.9844C32.6057 30.875 33.1094 30.3713 33.1094 29.75V16.25C33.1094 15.6287 32.6057 15.125 31.9844 15.125H29.7344ZM22.9844 21.875C22.9844 21.2537 23.4881 20.75 24.1094 20.75H26.3594C26.9807 20.75 27.4844 21.2537 27.4844 21.875V29.75C27.4844 30.3713 26.9807 30.875 26.3594 30.875H24.1094C23.4881 30.875 22.9844 30.3713 22.9844 29.75V21.875ZM17.3594 26.375C17.3594 25.7537 17.8631 25.25 18.4844 25.25H20.7344C21.3557 25.25 21.8594 25.7537 21.8594 26.375V29.75C21.8594 30.3713 21.3557 30.875 20.7344 30.875H18.4844C17.8631 30.875 17.3594 30.3713 17.3594 29.75V26.375Z"
+                                            fill="black" />
+                                    </mask>
+                                    <g mask="url(#mask0_764_20242)">
+                                        <rect x="16.2344" y="14" width="18" height="18" fill="#FF92AE" />
+                                    </g>
+                                </svg>
+                                <div class="ms-xl-3 ms-2">
+                                    <h6 class="card-title font-montserrat">Rotation de la mission en cours</h6>
+                                    <h4 class="card-value font-montserrat mb-0">0</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Stats End -->
+
+
+                    <!-- Info Card Start -->
+                    <div
+                        class="info-card d-flex flex-column flex-md-row align-items-center justify-content-between font-montserrat">
+                        <div class="text-center text-md-start">
+                            <h6 class="info-title mb-4">Information Stripe / banque</h6>
+
+                            <div
+                                class="d-flex flex-xl-row flex-lg-column align-items-center align-items-lg-start  align-xl-items-center mb-3 mb-md-0">
+                                <p class="text-gray-10 mb-0">Nom du pays : <span
+                                        class="ms-xl-4 fw-semibold text-black">FR</span></p>
+
+                                <div class="border-divider"></div>
+
+                                <p class="text-gray-10 mb-0">Monnaie : <span
+                                        class="ms-xl-4 fw-semibold text-black">euro</span></p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn success-btn">Connectez-vous à Stripe</a>
+                    </div>
+                    <!-- Info Card End -->
+
+
+                    <!-- Company Detail Card Start -->
+                    <div class="company-card font-montserrat mb-5">
+                        <h5 class="title">Company Details</h5>
+
+                        <div class="row mb-40px">
+                            <div class="col-sm-4">
+                                <h6 class="c-title">Client Type</h6>
+                                <p class="c-paragraph">SMB</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="c-title">Country Name</h6>
+                                <p class="c-paragraph">FR</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="c-title">Company Name</h6>
+                                <p class="c-paragraph">PIXIELANES PVT LTD FR</p>
+                            </div>
+                        </div>
+
+                        <h6 class="c-title">Address</h6>
+                        <p class="c-paragraph mb-40px">48 RUE DU ROI DE SICILE48 RUE DU ROI DE SICILE 48 RUE DU ROI DE
+                            SICILE</p>
+
+                        <div class="row mb-40px">
+                            <div class="col-sm-4">
+                                <h6 class="c-title">City</h6>
+                                <p class="c-paragraph">PARIS</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="c-title">Postal Code</h6>
+                                <p class="c-paragraph">75003</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="c-title">Registration Number</h6>
+                                <p class="c-paragraph">123123123321</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-40px">
+                            <div class="col-sm-8">
+                                <h6 class="c-title">Legal Status</h6>
+                                <p class="c-paragraph">ENTERPRISE_INDIVIDUELLE</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="c-title">Phone Number</h6>
+                                <p class="c-paragraph">12345678</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-40px">
+                            <div class="col-sm-8">
+                                <h6 class="c-title">VAT Identification Number</h6>
+                                <p class="c-paragraph">VOLUPTATEM ELIGENDI</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="c-title">Facebook Page ID</h6>
+                                <p class="c-paragraph">106431401957938</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-40px">
+                            <div class="col-sm-8">
+                                <h6 class="c-title">Client Access Code</h6>
+                                <p class="c-paragraph">ASDADADASDASDASDASDASD</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="c-title">AccÈS CLIENT</h6>
+                                <p class="c-paragraph">106431401957938</p>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-end mb-40px">
+                            <div class="col-sm-8">
+                                <h6 class="c-title">Facebook Ad Account ID</h6>
+                                <p class="c-paragraph">1951503385007867</p>
+                                <p class="c-paragraph">510400589988392</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6 class="c-title">USER TYPE</h6>
+                                <p class="c-paragraph">PIX.CITY</p>
+                            </div>
+                        </div>
+
+                        <h6 class="c-title">Social Networks</h6>
+                        <a href="#" class="text-pink-10 nav-link p-0 c-paragraph">https://facebook.com/usernameID</a>
+                        <a href="#" class="text-pink-10 nav-link p-0 c-paragraph">https://instagram/com/UserID</a>
+
+
+                        <hr class="hr-border">
+                    </div>
+                    <!-- Company Detail Card End -->
+
+
+                    <!-- Mission Card Start -->
+                    <div class="mission-card">
+                        <h3 class="title font-gilroy-bold">Mission</h3>
+
+                        <!-- Table Start -->
+                        <div class="table-box">
+                            <table class="table">
+                                <thead>
+                                    <tr class="">
+                                        <th scope="col" class="border-0">
+                                            <div class="d-flex align-items-center">
+                                                <span class="th-name text-nowrap">Id</span>
+                                                <div class="d-flex flex-column sort-group">
+                                                    <button class="btn btn-sort-up">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                    <button class="btn btn-sort-down">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th scope="col" class="border-0 max-w-205px">
+                                            <div class="d-flex align-items-center ps-4">
+                                                <span class="th-name text-nowrap">TITLE</span>
+                                                <div class="d-flex flex-column sort-group">
+                                                    <button class="btn btn-sort-up">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                    <button class="btn btn-sort-down">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </th>
+
+                                        <th scope="col" class="border-0">
+                                            <div class="d-flex align-items-center">
+                                                <span class="th-name text-nowrap">Created ON</span>
+                                                <div class="d-flex flex-column sort-group">
+                                                    <button class="btn btn-sort-up">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                    <button class="btn btn-sort-down">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </th>
+
+                                        <th scope="col" class="border-0">
+                                            <div class="d-flex align-items-center">
+                                                <span class="th-name text-nowrap">TYPE</span>
+                                                <div class="d-flex flex-column sort-group">
+                                                    <button class="btn btn-sort-up">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                    <button class="btn btn-sort-down">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </th>
+
+                                        <th scope="col" class="border-0">
+                                            <div class="d-flex align-items-center">
+                                                <span class="th-name text-nowrap">PRICE</span>
+                                                <div class="d-flex flex-column sort-group">
+                                                    <button class="btn btn-sort-up">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                    <button class="btn btn-sort-down">
+                                                        <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </th>
+
+                                        <th scope="col" class="border-0 align-middle">
+                                        </th>
+
+                                    </tr>
+                                </thead>
+                                <tbody class="align-middle">
+                                    <tr>
+                                        <th scope="row" class="bg-dark-10 font-gilroy-medium">76</th>
+                                        <td class="max-w-205px">
+                                            <a href="£" class="text-pink-10 font-gilroy-medium mb-0 ">Title Created the
+                                                Type Rate
+                                                Test Mission </a>
+                                        </td>
+                                        <td class="bg-dark-10 font-gilroy-medium">March 05, 2020</td>
+                                        <td class="bg-dark-10 font-gilroy-medium">
+                                            R(0)
+                                        </td>
+                                        <td class="bg-dark-10 font-gilroy-medium">150</td>
+                                        <td class="">
+                                            <button class="btn p-0">
+                                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M24.166 12.5a2.356 2.356 0 0 1 4.024 1.668 2.358 2.358 0 0 1-.69 1.666l-11.25 11.25-4.584 1.25 1.25-4.583 11.25-11.25Z"
+                                                        stroke="#667085" stroke-width="1.667" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="bg-dark-10 font-gilroy-medium">75</th>
+                                        <td class="max-w-205px">
+                                            <a href="£" class="text-pink-10 font-gilroy-medium mb-0 ">JD Mission
+                                                Test</a>
+                                        </td>
+                                        <td class="bg-dark-10 font-gilroy-medium">March 05, 2020</td>
+                                        <td class="bg-dark-10 font-gilroy-medium">
+                                            R(0)
+                                        </td>
+                                        <td class="bg-dark-10 font-gilroy-medium">150</td>
+                                        <td class="">
+                                            <button class="btn p-0">
+                                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M24.166 12.5a2.356 2.356 0 0 1 4.024 1.668 2.358 2.358 0 0 1-.69 1.666l-11.25 11.25-4.584 1.25 1.25-4.583 11.25-11.25Z"
+                                                        stroke="#667085" stroke-width="1.667" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="bg-dark-10 font-gilroy-medium">76</th>
+                                        <td class="max-w-205px">
+                                            <a href="£" class="text-pink-10 font-gilroy-medium mb-0 ">Title Created the
+                                                Type Rate
+                                                Test Mission </a>
+                                        </td>
+                                        <td class="bg-dark-10 font-gilroy-medium">March 05, 2020</td>
+                                        <td class="bg-dark-10 font-gilroy-medium">
+                                            R(0)
+                                        </td>
+                                        <td class="bg-dark-10 font-gilroy-medium">150</td>
+                                        <td class="">
+                                            <button class="btn p-0">
+                                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M24.166 12.5a2.356 2.356 0 0 1 4.024 1.668 2.358 2.358 0 0 1-.69 1.666l-11.25 11.25-4.584 1.25 1.25-4.583 11.25-11.25Z"
+                                                        stroke="#667085" stroke-width="1.667" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th scope="row" class="bg-dark-10 font-gilroy-medium">75</th>
+                                        <td class="max-w-205px">
+                                            <a href="£" class="text-pink-10 font-gilroy-medium mb-0 ">JD Mission
+                                                Test</a>
+                                        </td>
+                                        <td class="bg-dark-10 font-gilroy-medium">March 05, 2020</td>
+                                        <td class="bg-dark-10 font-gilroy-medium">
+                                            R(0)
+                                        </td>
+                                        <td class="bg-dark-10 font-gilroy-medium">150</td>
+                                        <td class="">
+                                            <button class="btn p-0">
+                                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M24.166 12.5a2.356 2.356 0 0 1 4.024 1.668 2.358 2.358 0 0 1-.69 1.666l-11.25 11.25-4.584 1.25 1.25-4.583 11.25-11.25Z"
+                                                        stroke="#667085" stroke-width="1.667" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Table End -->
+                    </div>
+                    <!-- Mission Card End  -->
+
+                </div>
+
+                <div class="col-lg-5 col-xl-4 ps-xl-4 history-card">
+                    <h3 class="h-title font-montserrat px-3">History</h3>
+
+
+                    <div class="px-3 font-montserrat pb-3 border-dash-bottom">
+
+                        <!-- Comment -->
+                        <div class="mb-4 pb-2">
+                            <h6 class="l-title mb-0">Comment</h6>
+                            <textarea rows="3" class="form-control mb-1"
+                                placeholder="Add your comment here..."></textarea>
+                        </div>
+
+                        <!-- Add Tah -->
+                        <div class="mb-3">
+                            <h6 class="l-title mb-0">Add tag</h6>
+                            <div class="input-group custom-group">
+                                <input type="text" class="form-control shadow-none" placeholder="Enter Tag here"
+                                    aria-label="" aria-describedby="basic-addon1">
+                                <button class="btn input-group-btn shadow-none" id="basic-addon1">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2V18" stroke="white" stroke-width="3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M2 10H18" stroke="white" stroke-width="3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Quick tags -->
+                        <div class="mb-4">
+                            <h6 class="l-title mb-0">Quick tags</h6>
+                            <div class="d-flex flex-wrap">
+                                <div class="tag-btn">
+                                    <p class="tag-text">Future Meeting</p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.27933 11.3718C2.90689 11.7442 2.90689 12.3481 3.27933 12.7205C3.65177 13.093 4.25561 13.093 4.62805 12.7205L7.99994 9.34861L11.3719 12.7207C11.7444 13.0931 12.3482 13.0931 12.7207 12.7207C13.0931 12.3482 13.0931 11.7444 12.7207 11.3719L9.34866 7.99986L12.7204 4.62808C13.0928 4.25563 13.0928 3.65178 12.7204 3.27933C12.348 2.90689 11.7441 2.90689 11.3717 3.27933L7.99994 6.65112L4.62833 3.27946C4.25589 2.90702 3.65205 2.90702 3.27961 3.27946C2.90717 3.65191 2.90717 4.25576 3.27961 4.62821L6.65121 7.99986L3.27933 11.3718Z"
+                                            fill="#425466" />
+                                    </svg>
+                                </div>
+
+                                <div class="tag-btn">
+                                    <p class="tag-text">Tag 1</p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.27933 11.3718C2.90689 11.7442 2.90689 12.3481 3.27933 12.7205C3.65177 13.093 4.25561 13.093 4.62805 12.7205L7.99994 9.34861L11.3719 12.7207C11.7444 13.0931 12.3482 13.0931 12.7207 12.7207C13.0931 12.3482 13.0931 11.7444 12.7207 11.3719L9.34866 7.99986L12.7204 4.62808C13.0928 4.25563 13.0928 3.65178 12.7204 3.27933C12.348 2.90689 11.7441 2.90689 11.3717 3.27933L7.99994 6.65112L4.62833 3.27946C4.25589 2.90702 3.65205 2.90702 3.27961 3.27946C2.90717 3.65191 2.90717 4.25576 3.27961 4.62821L6.65121 7.99986L3.27933 11.3718Z"
+                                            fill="#425466" />
+                                    </svg>
+                                </div>
+
+                                <div class="tag-btn">
+                                    <p class="tag-text">Tag 1</p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.27933 11.3718C2.90689 11.7442 2.90689 12.3481 3.27933 12.7205C3.65177 13.093 4.25561 13.093 4.62805 12.7205L7.99994 9.34861L11.3719 12.7207C11.7444 13.0931 12.3482 13.0931 12.7207 12.7207C13.0931 12.3482 13.0931 11.7444 12.7207 11.3719L9.34866 7.99986L12.7204 4.62808C13.0928 4.25563 13.0928 3.65178 12.7204 3.27933C12.348 2.90689 11.7441 2.90689 11.3717 3.27933L7.99994 6.65112L4.62833 3.27946C4.25589 2.90702 3.65205 2.90702 3.27961 3.27946C2.90717 3.65191 2.90717 4.25576 3.27961 4.62821L6.65121 7.99986L3.27933 11.3718Z"
+                                            fill="#425466" />
+                                    </svg>
+                                </div>
+
+                                <div class="tag-btn">
+                                    <p class="tag-text">Future Appointments</p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.27933 11.3718C2.90689 11.7442 2.90689 12.3481 3.27933 12.7205C3.65177 13.093 4.25561 13.093 4.62805 12.7205L7.99994 9.34861L11.3719 12.7207C11.7444 13.0931 12.3482 13.0931 12.7207 12.7207C13.0931 12.3482 13.0931 11.7444 12.7207 11.3719L9.34866 7.99986L12.7204 4.62808C13.0928 4.25563 13.0928 3.65178 12.7204 3.27933C12.348 2.90689 11.7441 2.90689 11.3717 3.27933L7.99994 6.65112L4.62833 3.27946C4.25589 2.90702 3.65205 2.90702 3.27961 3.27946C2.90717 3.65191 2.90717 4.25576 3.27961 4.62821L6.65121 7.99986L3.27933 11.3718Z"
+                                            fill="#425466" />
+                                    </svg>
+                                </div>
+
+                                <div class="tag-btn">
+                                    <p class="tag-text">Future Meeting</p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.27933 11.3718C2.90689 11.7442 2.90689 12.3481 3.27933 12.7205C3.65177 13.093 4.25561 13.093 4.62805 12.7205L7.99994 9.34861L11.3719 12.7207C11.7444 13.0931 12.3482 13.0931 12.7207 12.7207C13.0931 12.3482 13.0931 11.7444 12.7207 11.3719L9.34866 7.99986L12.7204 4.62808C13.0928 4.25563 13.0928 3.65178 12.7204 3.27933C12.348 2.90689 11.7441 2.90689 11.3717 3.27933L7.99994 6.65112L4.62833 3.27946C4.25589 2.90702 3.65205 2.90702 3.27961 3.27946C2.90717 3.65191 2.90717 4.25576 3.27961 4.62821L6.65121 7.99986L3.27933 11.3718Z"
+                                            fill="#425466" />
+                                    </svg>
+                                </div>
+
+                                <div class="tag-btn">
+                                    <p class="tag-text">Tag 1</p>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.27933 11.3718C2.90689 11.7442 2.90689 12.3481 3.27933 12.7205C3.65177 13.093 4.25561 13.093 4.62805 12.7205L7.99994 9.34861L11.3719 12.7207C11.7444 13.0931 12.3482 13.0931 12.7207 12.7207C13.0931 12.3482 13.0931 11.7444 12.7207 11.3719L9.34866 7.99986L12.7204 4.62808C13.0928 4.25563 13.0928 3.65178 12.7204 3.27933C12.348 2.90689 11.7441 2.90689 11.3717 3.27933L7.99994 6.65112L4.62833 3.27946C4.25589 2.90702 3.65205 2.90702 3.27961 3.27946C2.90717 3.65191 2.90717 4.25576 3.27961 4.62821L6.65121 7.99986L3.27933 11.3718Z"
+                                            fill="#425466" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Date -->
+                        <div class="mb-3">
+                            <h6 class="l-title mb-0">Date</h6>
+                            <div class="input-group custom-group date">
+                                <input type="date" class="form-control shadow-none" placeholder="Enter Tag here"
+                                    aria-label="" aria-describedby="basic-addon1">
+                                <button class="btn input-group-btn shadow-none date-btn" id="basic-addon1">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2V6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M8 2V6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M3 10H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Attachment -->
+                        <div class="attachment mb-5 pb-3">
+                            <h6 class="l-title mb-0">Attachment</h6>
+                            <div class="browser-file-box text-center">
+                                <input type="file" id="file-br" class="d-none">
+                                <label for="file-br" class="file-btn">
+                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.0351562 4C0.0351562 1.79086 1.82602 0 4.03516 0H28.0352C30.2443 0 32.0352 1.79086 32.0352 4V28C32.0352 30.2091 30.2443 32 28.0352 32H4.03516C1.82602 32 0.0351562 30.2091 0.0351562 28V4Z"
+                                            fill="#FB739F" />
+                                        <path
+                                            d="M22.2574 8H9.81293C8.83109 8 8.03516 8.79594 8.03516 9.77778V22.2222C8.03516 23.2041 8.83109 24 9.81293 24H22.2574C23.2392 24 24.0352 23.2041 24.0352 22.2222V9.77778C24.0352 8.79594 23.2392 8 22.2574 8Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16.0352 12V20" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M12.0352 16H20.0352" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <div class="btn-text">Browse Files</div>
+                                </label>
+                            </div>
+                        </div>
+
+
+                        <!-- post comment btn -->
+                        <button class="btn post-btn mb-4">Post Comment</button>
+                    </div>
+
+
+                    <!-- Comment Section -->
+                    <div class="px-3 font-montserrat mt-4 pt-2 pb-5 border-dash-bottom">
+                        <h5 class="c-title">Comments Section</h5>
+
+                        <div class="comment mb-4 pb-2">
+                            <div class="d-flex align-items-center justify-content-between c-avater-details">
+                                <div class="d-flex">
+                                    <div class="avater bg-primary-10">
+                                        JF
+                                    </div>
+
+                                    <div class="">
+                                        <h6 class="avater-title mb-0">Julien Wolff</h6>
+                                        <p class="c-date mb-0">10/01/2022</p>
+                                    </div>
+                                </div>
+
+                                <p class="c-time mb-0">3:05pm</p>
+                            </div>
+
+                            <div class="c-timer-card">
+                                <svg class="time-icon" viewBox="0 0 35 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect opacity="0.1" width="35" height="35" rx="17.5" fill="#EF5285" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 27C13.032 27 9 22.977 9 18C9 13.032 13.032 9 18 9C22.977 9 27 13.032 27 18C27 22.977 22.977 27 18 27ZM20.8649 21.3393C20.9729 21.4023 21.0899 21.4383 21.2159 21.4383C21.4409 21.4383 21.6659 21.3213 21.7919 21.1053C21.9809 20.7903 21.8819 20.3763 21.5579 20.1783L18.3539 18.2703V14.1123C18.3539 13.7343 18.0479 13.4373 17.6789 13.4373C17.3099 13.4373 17.0039 13.7343 17.0039 14.1123V18.6573C17.0039 18.8913 17.1299 19.1073 17.3369 19.2333L20.8649 21.3393Z"
+                                        fill="#EF5285" />
+                                </svg>
+                                <div class="ms-2">
+                                    <p class="date-time mb-0">Thursday. December 5 12:00pm - 1:00pm</p>
+                                    <p class="time-zone mb-0">Time zone - Does not repeat</p>
+                                </div>
+                            </div>
+
+                            <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetur adiping elit. Commodo
+                                pellentesque massa tellus ac augue.</p>
+
+
+                            <div class="uploaded-file d-flex align-items-center justify-content-between">
+                                <div class="d-flex">
+                                    <div class="f-icon">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21.0371 9V20.993C21.038 21.1243 21.013 21.2545 20.9636 21.3762C20.9141 21.4979 20.8412 21.6087 20.7489 21.7022C20.6566 21.7957 20.5468 21.8701 20.4258 21.9212C20.3047 21.9723 20.1747 21.9991 20.0433 22H4.01719C3.7538 22 3.50119 21.8955 3.31485 21.7095C3.12852 21.5235 3.0237 21.2712 3.02344 21.008V2.992C3.02344 2.455 3.47078 2 4.02219 2H14.0318V8C14.0318 8.26522 14.1372 8.51957 14.3249 8.70711C14.5126 8.89464 14.7671 9 15.0325 9H21.0371ZM21.0371 7H16.0333V2.003L21.0371 7Z"
+                                                fill="#1B87F2" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h6 class="f-title mb-0">file1.pdf</h6>
+                                        <p class="f-date mb-0">12\05\2021</p>
+                                    </div>
+                                </div>
+
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1795 22C6.65227 22 2.17188 17.523 2.17188 12C2.17188 6.477 6.65227 2 12.1795 2C17.7066 2 22.187 6.477 22.187 12C22.187 17.523 17.7066 22 12.1795 22ZM11.1817 16L18.2571 8.929L16.842 7.515L11.1817 13.172L8.35055 10.343L6.93548 11.757L11.1817 16Z"
+                                        fill="#31B997" />
+                                </svg>
+                            </div>
+                            <div class="border-file"></div>
+                        </div>
+
+
+                        <div class="mb-2">
+                            <h6 class="s-title">Select mission to display the comment</h6>
+
+                            <div class="dropdown w-100">
+                                <button class="btn btn-secondary btn-dropdown dropdown-toggle w-100" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select here
+                                </button>
+                                <ul class="dropdown-menu w-100 mt-2" aria-labelledby="dropdownMenuButton1">
+                                    <p class="d-title">All [Default]</p>
+                                    <li class="d-item">
+                                        <a class="dropdown-item p-0 d-flex align-items-center" href="#">
+                                            <div class="avater bg-pink-20">
+                                                M1
+                                            </div>
+                                            <p class="d-item-text mb-0">Mission 1</p>
+                                        </a>
+                                    </li>
+                                    <li class="d-item">
+                                        <a class="dropdown-item p-0 d-flex align-items-center" href="#">
+                                            <div class="avater bg-primary-10">
+                                                M2
+                                            </div>
+                                            <p class="d-item-text mb-0">Mission 2</p>
+                                        </a>
+                                    </li>
+                                    <li class="d-item">
+                                        <a class="dropdown-item p-0 d-flex align-items-center" href="#">
+                                            <div class="avater bg-primary-10">
+                                                M3
+                                            </div>
+                                            <p class="d-item-text mb-0">Mission 3</p>
+                                        </a>
+                                    </li>
+                                    <li class="d-item">
+                                        <a class="dropdown-item p-0 d-flex align-items-center" href="#">
+                                            <div class="avater bg-pink-20">
+                                                M4
+                                            </div>
+                                            <p class="d-item-text mb-0">Mission 4</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="px-3 mt-4 pt-2 font-montserrat">
+                        <div class="comment mb-4 pb-2">
+                            <div class="d-flex align-items-center justify-content-between c-avater-details">
+                                <div class="d-flex">
+                                    <div class="avater bg-primary-10">
+                                        JF
+                                    </div>
+
+                                    <div class="">
+                                        <h6 class="avater-title mb-0">Julien Wolff</h6>
+                                        <p class="c-date mb-0">10/01/2022</p>
+                                    </div>
+                                </div>
+
+                                <p class="c-time mb-0">3:05pm</p>
+                            </div>
+
+                            <div class="c-timer-card">
+                                <svg class="time-icon" viewBox="0 0 35 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect opacity="0.1" width="35" height="35" rx="17.5" fill="#EF5285" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 27C13.032 27 9 22.977 9 18C9 13.032 13.032 9 18 9C22.977 9 27 13.032 27 18C27 22.977 22.977 27 18 27ZM20.8649 21.3393C20.9729 21.4023 21.0899 21.4383 21.2159 21.4383C21.4409 21.4383 21.6659 21.3213 21.7919 21.1053C21.9809 20.7903 21.8819 20.3763 21.5579 20.1783L18.3539 18.2703V14.1123C18.3539 13.7343 18.0479 13.4373 17.6789 13.4373C17.3099 13.4373 17.0039 13.7343 17.0039 14.1123V18.6573C17.0039 18.8913 17.1299 19.1073 17.3369 19.2333L20.8649 21.3393Z"
+                                        fill="#EF5285" />
+                                </svg>
+                                <div class="ms-2">
+                                    <p class="date-time mb-0">Thursday. December 5 12:00pm - 1:00pm</p>
+                                    <p class="time-zone mb-0">Time zone - Does not repeat</p>
+                                </div>
+                            </div>
+
+                            <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetur adiping elit. Commodo
+                                pellentesque massa tellus ac augue.</p>
+
+
+                            <div class="uploaded-file d-flex align-items-center justify-content-between">
+                                <div class="d-flex">
+                                    <div class="f-icon">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21.0371 9V20.993C21.038 21.1243 21.013 21.2545 20.9636 21.3762C20.9141 21.4979 20.8412 21.6087 20.7489 21.7022C20.6566 21.7957 20.5468 21.8701 20.4258 21.9212C20.3047 21.9723 20.1747 21.9991 20.0433 22H4.01719C3.7538 22 3.50119 21.8955 3.31485 21.7095C3.12852 21.5235 3.0237 21.2712 3.02344 21.008V2.992C3.02344 2.455 3.47078 2 4.02219 2H14.0318V8C14.0318 8.26522 14.1372 8.51957 14.3249 8.70711C14.5126 8.89464 14.7671 9 15.0325 9H21.0371ZM21.0371 7H16.0333V2.003L21.0371 7Z"
+                                                fill="#1B87F2" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h6 class="f-title mb-0">file1.pdf</h6>
+                                        <p class="f-date mb-0">12\05\2021</p>
+                                    </div>
+                                </div>
+
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1795 22C6.65227 22 2.17188 17.523 2.17188 12C2.17188 6.477 6.65227 2 12.1795 2C17.7066 2 22.187 6.477 22.187 12C22.187 17.523 17.7066 22 12.1795 22ZM11.1817 16L18.2571 8.929L16.842 7.515L11.1817 13.172L8.35055 10.343L6.93548 11.757L11.1817 16Z"
+                                        fill="#31B997" />
+                                </svg>
+                            </div>
+                            <div class="border-file"></div>
+                        </div>
+                    </div>
+
+                    <div class="px-3 mt-4 pt-2 font-montserrat pb-4 border-dash-bottom">
+                        <p class="title-2 fw-medium mb-2"> Comment displayed on - <span
+                                class="text-green-10 fw-semibold">All
+                                the missions</span></p>
+                    </div>
+
+                    <div class="px-3 mt-4 pt-2 font-montserrat">
+                        <div class="comment mb-4">
+                            <div class="d-flex align-items-center justify-content-between c-avater-details">
+                                <div class="d-flex">
+                                    <div class="avater bg-primary-10">
+                                        JF
+                                    </div>
+
+                                    <div class="">
+                                        <h6 class="avater-title mb-0">Julien Wolff</h6>
+                                        <p class="c-date mb-0">10/01/2022</p>
+                                    </div>
+                                </div>
+
+                                <p class="c-time mb-0">3:05pm</p>
+                            </div>
+
+                            <div class="c-timer-card">
+                                <svg class="time-icon" viewBox="0 0 35 35" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect opacity="0.1" width="35" height="35" rx="17.5" fill="#EF5285" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 27C13.032 27 9 22.977 9 18C9 13.032 13.032 9 18 9C22.977 9 27 13.032 27 18C27 22.977 22.977 27 18 27ZM20.8649 21.3393C20.9729 21.4023 21.0899 21.4383 21.2159 21.4383C21.4409 21.4383 21.6659 21.3213 21.7919 21.1053C21.9809 20.7903 21.8819 20.3763 21.5579 20.1783L18.3539 18.2703V14.1123C18.3539 13.7343 18.0479 13.4373 17.6789 13.4373C17.3099 13.4373 17.0039 13.7343 17.0039 14.1123V18.6573C17.0039 18.8913 17.1299 19.1073 17.3369 19.2333L20.8649 21.3393Z"
+                                        fill="#EF5285" />
+                                </svg>
+                                <div class="ms-2">
+                                    <p class="date-time mb-0">Thursday. December 5 12:00pm - 1:00pm</p>
+                                    <p class="time-zone mb-0">Time zone - Does not repeat</p>
+                                </div>
+                            </div>
+
+                            <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetur adiping elit. Commodo
+                                pellentesque massa tellus ac augue.</p>
+
+
+                            <div class="uploaded-file d-flex align-items-center justify-content-between">
+                                <div class="d-flex">
+                                    <div class="f-icon">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21.0371 9V20.993C21.038 21.1243 21.013 21.2545 20.9636 21.3762C20.9141 21.4979 20.8412 21.6087 20.7489 21.7022C20.6566 21.7957 20.5468 21.8701 20.4258 21.9212C20.3047 21.9723 20.1747 21.9991 20.0433 22H4.01719C3.7538 22 3.50119 21.8955 3.31485 21.7095C3.12852 21.5235 3.0237 21.2712 3.02344 21.008V2.992C3.02344 2.455 3.47078 2 4.02219 2H14.0318V8C14.0318 8.26522 14.1372 8.51957 14.3249 8.70711C14.5126 8.89464 14.7671 9 15.0325 9H21.0371ZM21.0371 7H16.0333V2.003L21.0371 7Z"
+                                                fill="#1B87F2" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h6 class="f-title mb-0">file1.pdf</h6>
+                                        <p class="f-date mb-0">12\05\2021</p>
+                                    </div>
+                                </div>
+
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1795 22C6.65227 22 2.17188 17.523 2.17188 12C2.17188 6.477 6.65227 2 12.1795 2C17.7066 2 22.187 6.477 22.187 12C22.187 17.523 17.7066 22 12.1795 22ZM11.1817 16L18.2571 8.929L16.842 7.515L11.1817 13.172L8.35055 10.343L6.93548 11.757L11.1817 16Z"
+                                        fill="#31B997" />
+                                </svg>
+                            </div>
+                            <div class="border-file"></div>
+                        </div>
+
+
+                        <div class="comment-display d-flex align-items-center">
+                            <p class="cd-title"> Comment displayed on - </p>
+                            <div class="avater-group">
+                                <div class="avater-1 bg-primary-10">
+                                    M1
+                                </div>
+                                <div class="avater-2 bg-pink-20">
+                                    M4
+                                </div>
+                            </div>
+                            <p class="avater-name">Mission 2,</p>
+                            <p class="avater-name">Mission 4,</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- Content End -->
+
+
+        </div>
+    </section>
+    <!-- Content Section End -->
+
+
+
+
+    <!--  Editor -->
+    <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+    <!-- Bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- jquery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        // Create From
+        $('#create').click(function () {
+            $('.social-details').first().clone().appendTo('.social-list').show();
+            attach_delete();
+        });
+
+        //Delete
+        function attach_delete() {
+            $('.delete').off();
+            $('.delete').click(function () {
+                console.log("click");
+                $(this).closest('.social-details').remove();
+            });
+        }
+
+
+        CKEDITOR.replace('editor1', {
+            width: '100%',
+            height: '400px'
+
+        });
+
+    </script>
+</body>
+
+</html>
