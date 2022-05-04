@@ -13,7 +13,7 @@
         "scss/_create_new.scss",
         "scss/_client-info.scss",
         "scss/_newCityMaker.scss",
-        "scss/_clientInfoViewPage.scss"
+        "scss/blogPostsCreateNew.scss"
     ],
     "names": [],
     "file": "style.css"

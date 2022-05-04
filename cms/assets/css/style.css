@@ -2332,68 +2332,68 @@
   line-height: 28px;
 }
 
-.clientInfoViewPage {
+.blogPostsCreateNew {
   background: #F6F9FC;
   padding-top: 36px;
   padding-bottom: 26px;
 }
 
 @media (min-width: 768px) {
-  .clientInfoViewPage {
+  .blogPostsCreateNew {
     padding-top: 32px;
     padding-bottom: 60px;
   }
 }
 
 @media (min-width: 992px) {
-  .clientInfoViewPage {
+  .blogPostsCreateNew {
     padding-top: 29px;
     padding-bottom: 48px;
   }
 }
 
-.clientInfoViewPage .container-fluid {
+.blogPostsCreateNew .container-fluid {
   padding-left: 16px;
   padding-right: 16px;
 }
 
 @media (min-width: 768px) {
-  .clientInfoViewPage .container-fluid {
+  .blogPostsCreateNew .container-fluid {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
 @media (min-width: 1200px) {
-  .clientInfoViewPage .container-fluid {
+  .blogPostsCreateNew .container-fluid {
     padding-left: 72px;
     padding-right: 72px;
   }
 }
 
-.clientInfoViewPage .title-header {
+.blogPostsCreateNew .title-header {
   padding-top: 32px;
 }
 
 @media (min-width: 576px) {
-  .clientInfoViewPage .title-header {
+  .blogPostsCreateNew .title-header {
     padding-top: 40px;
   }
 }
 
 @media (min-width: 992px) {
-  .clientInfoViewPage .title-header {
+  .blogPostsCreateNew .title-header {
     padding-top: 48px;
   }
 }
 
 @media (min-width: 1200px) {
-  .clientInfoViewPage .title-header {
+  .blogPostsCreateNew .title-header {
     padding-top: 57px;
   }
 }
 
-.clientInfoViewPage .title-header .title {
+.blogPostsCreateNew .title-header .title {
   font-family: 'Gilroy-Bold', sans-serif;
   font-size: 24px;
   line-height: 28px;
@@ -2401,7 +2401,7 @@
   color: #084279;
 }
 
-.clientInfoViewPage .title-header .primary-btn {
+.blogPostsCreateNew .title-header .primary-btn {
   border: 1px solid #C4CACF;
   border-radius: 6px;
   padding: 12px 20px;
@@ -2413,34 +2413,34 @@
   color: #16192C;
 }
 
-.clientInfoViewPage .form-part {
+.blogPostsCreateNew .form-part {
   margin-top: 36px;
 }
 
-.clientInfoViewPage .form-part .input-box {
+.blogPostsCreateNew .form-part .input-box {
   margin-bottom: 20px;
 }
 
 @media (min-width: 576px) {
-  .clientInfoViewPage .form-part .input-box {
+  .blogPostsCreateNew .form-part .input-box {
     margin-bottom: 28px;
   }
 }
 
 @media (min-width: 992px) {
-  .clientInfoViewPage .form-part .input-box {
+  .blogPostsCreateNew .form-part .input-box {
     margin-bottom: 40px;
   }
 }
 
-.clientInfoViewPage .form-part .form-label {
+.blogPostsCreateNew .form-part .form-label {
   font-weight: 600;
   font-size: 14px;
   line-height: 38px;
   color: #425466;
 }
 
-.clientInfoViewPage .form-part .form-control {
+.blogPostsCreateNew .form-part .form-control {
   background: #FFFFFF;
   border: 1px solid #E8ECF1;
   -webkit-box-sizing: border-box;
@@ -2454,38 +2454,38 @@
 }
 
 @media (min-width: 992px) {
-  .clientInfoViewPage .form-part .form-control {
+  .blogPostsCreateNew .form-part .form-control {
     line-height: 38px;
     padding: 6px 32px;
   }
 }
 
-.clientInfoViewPage .form-part .form-control::-webkit-input-placeholder {
+.blogPostsCreateNew .form-part .form-control::-webkit-input-placeholder {
   color: #B5B5BD;
 }
 
-.clientInfoViewPage .form-part .form-control:-ms-input-placeholder {
+.blogPostsCreateNew .form-part .form-control:-ms-input-placeholder {
   color: #B5B5BD;
 }
 
-.clientInfoViewPage .form-part .form-control::-ms-input-placeholder {
+.blogPostsCreateNew .form-part .form-control::-ms-input-placeholder {
   color: #B5B5BD;
 }
 
-.clientInfoViewPage .form-part .form-control::placeholder {
+.blogPostsCreateNew .form-part .form-control::placeholder {
   color: #B5B5BD;
 }
 
-.clientInfoViewPage .form-part .text-editor {
+.blogPostsCreateNew .form-part .text-editor {
   width: 100%;
   margin-bottom: 50px;
 }
 
-.clientInfoViewPage .form-part .text-editor .editor-area {
+.blogPostsCreateNew .form-part .text-editor .editor-area {
   width: 100%;
 }
 
-.clientInfoViewPage .form-part .t-label {
+.blogPostsCreateNew .form-part .t-label {
   font-weight: 600;
   font-size: 14px;
   line-height: 38px;
@@ -2493,7 +2493,7 @@
   width: 105px;
 }
 
-.clientInfoViewPage .form-part .uploader {
+.blogPostsCreateNew .form-part .uploader {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2512,25 +2512,25 @@
   padding: 36px 24px;
 }
 
-.clientInfoViewPage .form-part .uploader svg {
+.blogPostsCreateNew .form-part .uploader svg {
   width: 40px;
   margin-bottom: 12px;
 }
 
-.clientInfoViewPage .form-part .uploader .click-upload {
+.blogPostsCreateNew .form-part .uploader .click-upload {
   color: #667085;
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 4px;
 }
 
-.clientInfoViewPage .form-part .uploader .file-type {
+.blogPostsCreateNew .form-part .uploader .file-type {
   font-size: 12px;
   line-height: 18px;
   color: #667085;
 }
 
-.clientInfoViewPage .form-part .form-select {
+.blogPostsCreateNew .form-part .form-select {
   background-color: #FFFFFF;
   border: 1px solid #E8ECF1;
   -webkit-box-sizing: border-box;
@@ -2547,29 +2547,29 @@
 }
 
 @media (min-width: 992px) {
-  .clientInfoViewPage .form-part .form-select {
+  .blogPostsCreateNew .form-part .form-select {
     line-height: 38px;
     padding: 6px 32px;
   }
 }
 
-.clientInfoViewPage .form-part .form-select::-webkit-input-placeholder {
+.blogPostsCreateNew .form-part .form-select::-webkit-input-placeholder {
   color: #B5B5BD;
 }
 
-.clientInfoViewPage .form-part .form-select:-ms-input-placeholder {
+.blogPostsCreateNew .form-part .form-select:-ms-input-placeholder {
   color: #B5B5BD;
 }
 
-.clientInfoViewPage .form-part .form-select::-ms-input-placeholder {
+.blogPostsCreateNew .form-part .form-select::-ms-input-placeholder {
   color: #B5B5BD;
 }
 
-.clientInfoViewPage .form-part .form-select::placeholder {
+.blogPostsCreateNew .form-part .form-select::placeholder {
   color: #B5B5BD;
 }
 
-.clientInfoViewPage .form-part .success-btn {
+.blogPostsCreateNew .form-part .success-btn {
   background: #31B997;
   border-radius: 6px;
   padding: 12px 20px;
@@ -2581,11 +2581,11 @@
   display: inline-block;
 }
 
-.clientInfoViewPage .form-part .success-btn svg {
+.blogPostsCreateNew .form-part .success-btn svg {
   margin-right: 8px;
 }
 
-.clientInfoViewPage .form-part .input-group {
+.blogPostsCreateNew .form-part .input-group {
   border: 1px solid #E8ECF1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2593,7 +2593,7 @@
   overflow: hidden;
 }
 
-.clientInfoViewPage .form-part .input-group .input-group-text {
+.blogPostsCreateNew .form-part .input-group .input-group-text {
   background: #FFFFFF;
   border: 0;
   -webkit-box-sizing: border-box;
@@ -2605,7 +2605,7 @@
   padding-right: 14px;
 }
 
-.clientInfoViewPage .form-part .input-group .form-control {
+.blogPostsCreateNew .form-part .input-group .form-control {
   border: 0;
   border-left: 1px solid #E8ECF1;
   -webkit-box-sizing: border-box;
@@ -2613,17 +2613,17 @@
   border-radius: 6px !important;
 }
 
-.clientInfoViewPage .form-btns {
+.blogPostsCreateNew .form-btns {
   margin-top: 60px;
 }
 
 @media (min-width: 992px) {
-  .clientInfoViewPage .form-btns {
+  .blogPostsCreateNew .form-btns {
     margin-top: 100px;
   }
 }
 
-.clientInfoViewPage .form-btns .btn-cancel {
+.blogPostsCreateNew .form-btns .btn-cancel {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -2636,7 +2636,7 @@
   margin-right: 32px;
 }
 
-.clientInfoViewPage .form-btns .btn-submit {
+.blogPostsCreateNew .form-btns .btn-submit {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
