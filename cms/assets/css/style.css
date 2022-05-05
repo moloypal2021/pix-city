@@ -3579,6 +3579,213 @@
   color: #000000;
 }
 
+.clientInfoView .history-card .comment-display .cd-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  color: #000000;
+  margin-right: 4px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 1400px) {
+  .clientInfoView .history-card .comment-display .cd-title {
+    font-size: 14px;
+    margin-right: 8px;
+  }
+}
+
+.clientInfoView .history-card .comment-display .avater-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #425466;
+  margin-left: 6px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 1400px) {
+  .clientInfoView .history-card .comment-display .avater-name {
+    font-size: 14px;
+  }
+}
+
+.clientInfoView .history-card .comment-display .avater-1,
+.clientInfoView .history-card .comment-display .avater-2 {
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+}
+
+@media (min-width: 1400px) {
+  .clientInfoView .history-card .comment-display .avater-1,
+  .clientInfoView .history-card .comment-display .avater-2 {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
+.clientInfoView .history-card .comment-display .avater-1 {
+  position: relative;
+  border: 3px solid #FFFFFF;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
+}
+
+@media (min-width: 1400px) {
+  .clientInfoView .history-card .comment-display .avater-1 {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.clientInfoView .history-card .comment-display .avater-2 {
+  margin-left: -16px;
+}
+
+.clientInfoView .ongoing-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.clientInfoView .ongoing-card .title {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #084279;
+  margin-bottom: 40px;
+  margin-left: 30px;
+}
+
+.clientInfoView .ongoing-card .table-box {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.clientInfoView .ongoing-card .table-box .table {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.clientInfoView .ongoing-card .table-box .table thead {
+  background: #F2F4F7;
+  -webkit-box-shadow: inset 0px -1px 0px #EDF2F7;
+          box-shadow: inset 0px -1px 0px #EDF2F7;
+}
+
+.clientInfoView .ongoing-card .table-box .table thead .th-name {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #8492A6;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.clientInfoView .ongoing-card .table-box .table thead .sort-group {
+  background: rgba(215, 227, 238, 0.5);
+  border-radius: 4px;
+}
+
+.clientInfoView .ongoing-card .table-box .table thead .sort-group .btn-sort-up {
+  padding: 0px 6px;
+  margin-bottom: -4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.clientInfoView .ongoing-card .table-box .table thead .sort-group .btn-sort-down {
+  padding: 0px 6px;
+  margin-top: -4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.clientInfoView .ongoing-card .table-box .table .max-w-205px {
+  max-width: 205px;
+}
+
+.clientInfoView .ongoing-card .table-box .table th,
+.clientInfoView .ongoing-card .table-box .table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.clientInfoView .ongoing-card .table-box .table th:first-child,
+.clientInfoView .ongoing-card .table-box .table td:first-child {
+  padding-left: 16px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .ongoing-card .table-box .table th:first-child,
+  .clientInfoView .ongoing-card .table-box .table td:first-child {
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .ongoing-card .table-box .table th:first-child,
+  .clientInfoView .ongoing-card .table-box .table td:first-child {
+    padding-left: 48px;
+  }
+}
+
+.clientInfoView .ongoing-card .table-box .table th:last-child,
+.clientInfoView .ongoing-card .table-box .table td:last-child {
+  padding-right: 16px;
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .ongoing-card .table-box .table th:last-child,
+  .clientInfoView .ongoing-card .table-box .table td:last-child {
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .clientInfoView .ongoing-card .table-box .table th:last-child,
+  .clientInfoView .ongoing-card .table-box .table td:last-child {
+    padding-right: 48px;
+  }
+}
+
+.clientInfoView .ongoing-card .table-box .table tbody th,
+.clientInfoView .ongoing-card .table-box .table tbody td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(232, 233, 235, 0.4);
+  font-size: 15px;
+}
+
+.clientInfoView .ongoing-card .table-box .table .client-avater {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-right: 12px;
+}
+
 .container {
   padding-right: 16px;
   padding-left: 6px;
