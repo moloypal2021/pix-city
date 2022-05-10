@@ -142,4 +142,24 @@
         font-size: 13px;
 
     }
+
+    .dropdown {
+        .dropdown-toggle {
+
+            &.show,
+            &:hover {
+                color: #0d6efd !important;
+
+
+            }
+        }
+    }
+
+
+    .mission-cms-translation-btn {
+        background-color: #3ab67d;
+        height: 36px;
+        border-radius: 4px;
+    }
+
 }
