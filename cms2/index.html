@@ -22,41 +22,30 @@
             <div class="d-flex flex-column align-items-center align-items-lg-stretch">
                 <div class="navbar-top w-100">
                     <div class="container-fluid d-flex align-items-center justify-content-between">
-                        <a href="#" class="navbar-brand d-none d-md-inline-block">
-                            <img src="./assets/images/logo-1.png" alt="" class="logo">
-                        </a>
-
-                        <button class="btn p-0 d-md-none navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="white" />
-                            </svg>
-                        </button>
+                        <div class="d-flex align-items-center">
+                            <button class="btn p-0 d-lg-none navbar-toggler mb-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="white" />
+                                </svg>
+                            </button>
+                            <a href="#" class="navbar-brand">
+                                <img src="./assets/images/logo-1.png" alt="" class="logo">
+                            </a>
+                        </div>
 
                         <ul class="nav d-flex flex-nowrap align-items-center justify-content-end">
                             <li class="nav-item dropdown me-3 me-lg-2 me-xl-3 me-xxl-4">
-                                <a class="nav-link dropdown-toggle language align-items-center text-white" href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-
-                                    <span class="mb-0 me-1">FR</span>
-
-                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
-                                            fill="white" />
-                                    </svg>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                <div class="language-select">
+                                    <select class="mission-cms-translation-btn text-white">
+                                        <option value="en">EN</option>
+                                        <option value="fr">FR</option>
+                                        <option value="es">ES</option>
+                                    </select>
+                                </div>
                             </li>
 
                             <li class="nav-item d-flex align-items-center me-2 me-lg-2 me-xl-3 me-xxl-4">
@@ -106,56 +95,17 @@
                 <div class="container-fluid d-flex align-items-center justify-content-lg-between justify-content-end">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav d-flex flex-column flex-lg-row menus py-lg-3">
-                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
-                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="menu-icon" viewBox="0 0 24 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#a)">
-                                            <path
-                                                d="M3 13.101h8V3.023H3v10.078Zm0 8.062h8v-6.046H3v6.046Zm10 0h8V11.085h-8v10.078Zm0-18.14V9.07h8V3.023h-8Z"
-                                                fill="#fff" />
-                                            <path d="M11 21.163H3v-6.046h8v6.046ZM13 9.07V3.023h8V9.07h-8Z"
-                                                fill="#51CBFF" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="a">
-                                                <path fill="#fff" d="M0 0h24v24.186H0z" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link  align-items-center text-white" href="#">
+                                    <img src="./assets/images/dashboard-fill.svg" alt="" class="menu-icon">
                                     <span class="mb-0">Dashboard</span>
-
-                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
-                                            fill="white" />
-                                    </svg>
-
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
                             </li>
 
-                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
                                 <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14 14.252V16.342C13.0949 16.022 12.1263 15.9239 11.1754 16.0558C10.2245 16.1877 9.3192 16.5459 8.53543 17.1002C7.75166 17.6545 7.11234 18.3888 6.67116 19.2414C6.22998 20.094 5.99982 21.04 6 22L4 21.999C3.99969 20.7779 4.27892 19.5729 4.8163 18.4764C5.35368 17.3799 6.13494 16.4209 7.10022 15.673C8.0655 14.9251 9.18918 14.4081 10.3852 14.1616C11.5811 13.9152 12.8177 13.9467 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM17.793 19.914L21.328 16.379L22.743 17.793L17.793 22.743L14.257 19.207L15.672 17.793L17.793 19.914Z"
-                                            fill="white" />
-                                        <path
-                                            d="M17.7938 19.9139L21.3288 16.3789L22.7438 17.7929L17.7938 22.7429L14.2578 19.2069L15.6728 17.7929L17.7938 19.9139Z"
-                                            fill="#51CBFF" />
-                                    </svg>
+                                    <img src="./assets/images/user-follow-line.svg" alt="" class="menu-icon">
 
                                     <span class="mb-0">Usagers</span>
 
@@ -168,29 +118,20 @@
 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Client</a></li>
+                                    <li><a class="dropdown-item" href="#">Client - Juliedesk</a></li>
+                                    <li><a class="dropdown-item" href="#">City-makers</a></li>
+                                    <li><a class="dropdown-item" href="#">Travellers</a></li>
                                 </ul>
                             </li>
 
 
-                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
                                 <a class="nav-link active dropdown-toggle align-items-center text-white" href="#"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M21 3C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21ZM20 5H4V19H20V5ZM18 7V9H6V7H18Z"
-                                            fill="white" />
-                                        <rect x="6" y="7" width="12" height="2" fill="#51CBFF" />
-                                    </svg>
+                                    <img src="./assets/images/Cards.svg" alt="" class="menu-icon">
 
-
-                                    <span class="mb-0">Workspace</span>
+                                    <span class="mb-0">Cards</span>
 
                                     <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -201,30 +142,21 @@
 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Projet d'ajout de fiches</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets de cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Ajout de la carte</a></li>
+                                    <li><a class="dropdown-item" href="#">Cards à valider</a></li>
+                                    <li><a class="dropdown-item" href="#">Modèles de cards</a></li>
                                 </ul>
                             </li>
 
 
-                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
                                 <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2 18H9V20H2V18ZM2 11H11V13H2V11ZM2 4H22V6H2V4ZM20.674 13.025L21.83 12.634L22.83 14.366L21.914 15.171C22.0293 15.7177 22.0293 16.2823 21.914 16.829L22.83 17.634L21.83 19.366L20.674 18.975C20.264 19.345 19.776 19.63 19.239 19.805L19 21H17L16.76 19.804C16.2293 19.6306 15.7408 19.3478 15.326 18.974L14.17 19.366L13.17 17.634L14.086 16.829C13.9707 16.2823 13.9707 15.7177 14.086 15.171L13.17 14.366L14.17 12.634L15.326 13.025C15.736 12.655 16.224 12.37 16.761 12.195L17 11H19L19.24 12.196C19.776 12.37 20.264 12.656 20.674 13.026V13.025ZM18 17C18.2652 17 18.5196 16.8946 18.7071 16.7071C18.8946 16.5196 19 16.2652 19 16C19 15.7348 18.8946 15.4804 18.7071 15.2929C18.5196 15.1054 18.2652 15 18 15C17.7348 15 17.4804 15.1054 17.2929 15.2929C17.1054 15.4804 17 15.7348 17 16C17 16.2652 17.1054 16.5196 17.2929 16.7071C17.4804 16.8946 17.7348 17 18 17Z"
-                                            fill="white" />
-                                        <path
-                                            d="M20.504 13.025L21.66 12.634L22.66 14.366L21.744 15.171C21.8593 15.7177 21.8593 16.2823 21.744 16.829L22.66 17.634L21.66 19.366L20.504 18.975C20.094 19.345 19.606 19.63 19.069 19.805L18.83 21H16.83L16.59 19.804C16.0593 19.6306 15.5708 19.3478 15.156 18.974L14 19.366L13 17.634L13.916 16.829C13.8007 16.2823 13.8007 15.7177 13.916 15.171L13 14.366L14 12.634L15.156 13.025C15.566 12.655 16.054 12.37 16.591 12.195L16.83 11H18.83L19.07 12.196C19.606 12.37 20.094 12.656 20.504 13.026V13.025ZM17.83 17C18.0952 17 18.3496 16.8946 18.5371 16.7071C18.7246 16.5196 18.83 16.2652 18.83 16C18.83 15.7348 18.7246 15.4804 18.5371 15.2929C18.3496 15.1054 18.0952 15 17.83 15C17.5648 15 17.3104 15.1054 17.1229 15.2929C16.9354 15.4804 16.83 15.7348 16.83 16C16.83 16.2652 16.9354 16.5196 17.1229 16.7071C17.3104 16.8946 17.5648 17 17.83 17Z"
-                                            fill="#51CBFF" />
-                                    </svg>
+                                    <img src="./assets/images/Posts.svg" alt="" class="menu-icon">
 
-                                    <span class="mb-0">Usagers</span>
+                                    <span class="mb-0">Posts</span>
 
                                     <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -235,16 +167,108 @@
 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <a href="#" class="dropdown-item">Ajouter Post</a>
+                                    <a href="#" class="dropdown-item">Modèles de posts</a>
+                                    <a href="#" class="dropdown-item">Projets de posts</a>
+                                    <a href="#" class="dropdown-item">Posts envoyés</a>
+                                    <a href="#" class="dropdown-item">Posts
+                                        validés</a>
                                 </ul>
                             </li>
 
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/AUdit.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Audit</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Audit</a>
+                                    <a href="#" class="dropdown-item">Default Audit</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/Missions.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Missions</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Pixcity Mission
+                                        List</a>
+                                    <a class="dropdown-item" href="#">Juliedesk Mission
+                                        List</a>
+                                    <a class="dropdown-item" href="#">Devis Clients</a>
+                                    <a class="dropdown-item" href="#">Ad Statistics</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/bank-card-line.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Payments</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Transactions</a>
+                                    <a class="dropdown-item" href="#">Facture Service</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/General.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">General</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Pages</a>
+                                    <a class="dropdown-item" href="#">Email Template Config</a>
+                                </ul>
+                            </li>
+
+
                         </ul>
+
+
+
                     </div>
                 </div>
             </div>
@@ -792,16 +816,7 @@
 
 
                 <!-- Table page-controller Start -->
-                <div class="d-flex flex-xl-row flex-column align-items-center justify-content-between page-controller">
-
-                    <!-- Page Show  -->
-                    <div class="d-flex align-items-center page-show mb-4 lg:mb-0">
-                        <p class="title mb-0">Affichage de 1 à</p>
-                        <input type="number" name="" id="" value="1" class="form-control font-montserrat text-center">
-                        <p class="show-entry font-montserrat mb-0">de 10 entrées</p>
-                    </div>
-
-
+                <div class="d-flex flex-xl-row flex-column align-items-center justify-content-end page-controller">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-end align-items-center">
                             <li class="page-item">
