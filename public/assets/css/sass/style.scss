@@ -21,6 +21,7 @@
 @import "cmpage";
 @import "referencementpage";
 @import "photoshootpage";
+@import "lifepage";
 
 // Font Responsive
 html {
@@ -29,6 +30,7 @@ html {
   @media (min-width: 768px) {
     font-size: 14px !important;
   }
+
   @media (min-width: 992px) {
     font-size: 16px !important;
   }
@@ -37,6 +39,7 @@ html {
 .container {
   padding-right: 20px;
   padding-left: 20px;
+
   @include break-up(xxl) {
     max-width: 1320px;
   }
