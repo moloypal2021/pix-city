@@ -471,6 +471,75 @@
   margin-right: 8px;
 }
 
+.allLeadPage .filter .checkboxs {
+  margin-top: 20px;
+}
+
+.allLeadPage .filter .checkboxs .check-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #D8D6DE;
+  border-radius: 5px;
+  padding: 10px 14px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.allLeadPage .filter .checkboxs .check-btn .form-check-input {
+  width: 18px;
+  height: 18px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0px;
+}
+
+.allLeadPage .filter .checkboxs .check-btn .form-check-input:checked {
+  background-color: #31B997 !important;
+  border-color: #31B997 !important;
+}
+
+.allLeadPage .filter .checkboxs .check-btn .form-check-label {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #5E5873;
+  margin-top: 1px;
+  margin-left: 8px;
+}
+
+.allLeadPage .filter .checkboxs .btn-hideShow {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #31B997;
+  padding: 10px 24px;
+  background: rgba(49, 185, 151, 0.2);
+  border: 1px solid #31B997;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .allLeadPage .filter .checkboxs .btn-hideShow {
+    margin-left: 38px;
+  }
+}
+
 .container {
   padding-right: 16px;
   padding-left: 6px;
