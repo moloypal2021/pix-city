@@ -398,7 +398,1998 @@
         <!-- Table area Start -->
         <div class="table-box">
             <!-- Table Tabs Start-->
+            <div class="d-xl-flex justify-content-between align-items-center table-tabArea">
+
+                <!-- Tabs -->
+                <ul class="nav nav-tabs flex-lg-nowrap me-lg-4" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="allLeads-tab" data-bs-toggle="tab"
+                            data-bs-target="#allLeads" type="button" role="tab" aria-controls="allLeads"
+                            aria-selected="true">
+                            <span>All Leads</span>
+                            <div class="active-border"></div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Inbound-tab" data-bs-toggle="tab" data-bs-target="#Inbound"
+                            type="button" role="tab" aria-controls="Inbound" aria-selected="false">
+                            <span>Inbound
+                                Leads</span>
+                            <div class="active-border"></div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Outbound-tab" data-bs-toggle="tab" data-bs-target="#Outbound"
+                            type="button" role="tab" aria-controls="Outbound" aria-selected="false">
+                            <span>Outbound
+                                Leads</span>
+                            <div class="active-border"></div>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Remarketing-tab" data-bs-toggle="tab" data-bs-target="#Remarketing"
+                            type="button" role="tab" aria-controls="Remarketing" aria-selected="false"><span>Remarketing
+                                Leads</span>
+                            <div class="active-border"></div>
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Options -->
+                <div class="d-flex flex-wrap align-items-center filter-btn">
+                    <button class="btn align-items-center">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" width="23" height="23" rx="2" fill="#084279" />
+                            <path
+                                d="M11.5 7.90697C13.025 7.90697 14.4875 8.51277 15.5659 9.5911C16.6442 10.6694 17.25 12.132 17.25 13.657C17.25 15.182 16.6442 16.6445 15.5659 17.7228C14.4875 18.8012 13.025 19.407 11.5 19.407C9.97501 19.407 8.51247 18.8012 7.43414 17.7228C6.3558 16.6445 5.75 15.182 5.75 13.657C5.75 12.132 6.3558 10.6694 7.43414 9.5911C8.51247 8.51277 9.97501 7.90697 11.5 7.90697ZM11.5 10.4226L10.5491 12.3488L8.42375 12.6579L9.96187 14.1565L9.59891 16.2739L11.5 15.2742L13.4011 16.2732L13.0381 14.1565L14.5763 12.6572L12.4509 12.3481L11.5 10.4226ZM12.2188 4.3125L15.8125 4.31322V6.46947L14.8328 7.28741C14.0199 6.86089 13.1323 6.59513 12.2188 6.50469V4.31322V4.3125ZM10.7812 4.3125V6.50469C9.86797 6.595 8.98065 6.86051 8.16787 7.28669L7.1875 6.46947V4.31322L10.7812 4.3125Z"
+                                fill="#084279" />
+                        </svg>
+                        Inbound
+                    </button>
+
+                    <button class="btn align-items-center">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" width="23" height="23" rx="2" fill="#ED5485" />
+                            <path
+                                d="M11.5 7.90697C13.025 7.90697 14.4875 8.51277 15.5659 9.5911C16.6442 10.6694 17.25 12.132 17.25 13.657C17.25 15.182 16.6442 16.6445 15.5659 17.7228C14.4875 18.8012 13.025 19.407 11.5 19.407C9.97501 19.407 8.51247 18.8012 7.43414 17.7228C6.3558 16.6445 5.75 15.182 5.75 13.657C5.75 12.132 6.3558 10.6694 7.43414 9.5911C8.51247 8.51277 9.97501 7.90697 11.5 7.90697ZM11.5 10.4226L10.5491 12.3488L8.42375 12.6579L9.96187 14.1565L9.59891 16.2739L11.5 15.2742L13.4011 16.2732L13.0381 14.1565L14.5763 12.6572L12.4509 12.3481L11.5 10.4226ZM12.2188 4.3125L15.8125 4.31322V6.46947L14.8328 7.28741C14.0199 6.86089 13.1323 6.59513 12.2188 6.50469V4.31322V4.3125ZM10.7812 4.3125V6.50469C9.86797 6.595 8.98065 6.86051 8.16787 7.28669L7.1875 6.46947V4.31322L10.7812 4.3125Z"
+                                fill="#ED5485" />
+                        </svg>
+
+                        Outbound
+                    </button>
+
+                    <button class="btn align-items-center">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" width="23" height="23" rx="2" fill="#31B997" />
+                            <path
+                                d="M11.5 7.90697C13.025 7.90697 14.4875 8.51277 15.5659 9.5911C16.6442 10.6694 17.25 12.132 17.25 13.657C17.25 15.182 16.6442 16.6445 15.5659 17.7228C14.4875 18.8012 13.025 19.407 11.5 19.407C9.97501 19.407 8.51247 18.8012 7.43414 17.7228C6.3558 16.6445 5.75 15.182 5.75 13.657C5.75 12.132 6.3558 10.6694 7.43414 9.5911C8.51247 8.51277 9.97501 7.90697 11.5 7.90697ZM11.5 10.4226L10.5491 12.3488L8.42375 12.6579L9.96187 14.1565L9.59891 16.2739L11.5 15.2742L13.4011 16.2732L13.0381 14.1565L14.5763 12.6572L12.4509 12.3481L11.5 10.4226ZM12.2188 4.3125L15.8125 4.31322V6.46947L14.8328 7.28741C14.0199 6.86089 13.1323 6.59513 12.2188 6.50469V4.31322V4.3125ZM10.7812 4.3125V6.50469C9.86797 6.595 8.98065 6.86051 8.16787 7.28669L7.1875 6.46947V4.31322L10.7812 4.3125Z"
+                                fill="#31B997" />
+                        </svg>
+                        Remarketing
+                    </button>
+
+                    <button class="btn align-items-center">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" width="23" height="23" rx="2" fill="#EC638F" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.3876 4.53803L14.3883 5.06277C16.3166 5.2139 17.5903 6.52784 17.5924 8.54283L17.6 14.4409C17.6028 16.6378 16.2226 17.9895 14.0103 17.993L8.60633 18C6.40784 18.0028 5.01038 16.6189 5.00761 14.4157L5.00001 8.58691C4.99725 6.55862 6.22608 5.24818 8.15433 5.07117L8.15364 4.54643C8.15294 4.23858 8.38102 4.007 8.68511 4.007C8.98921 4.0063 9.21728 4.23719 9.21797 4.54503L9.21867 5.03479L13.324 5.02919L13.3233 4.53943C13.3226 4.23159 13.5507 4.0007 13.8548 4C14.1519 3.9993 14.3869 4.23019 14.3876 4.53803ZM6.0632 8.80387L16.5269 8.78988V8.545C16.4972 7.04075 15.7425 6.25155 14.3879 6.13401L14.3885 6.67274C14.3885 6.97359 14.1542 7.21217 13.8571 7.21217C13.553 7.21287 13.3242 6.97499 13.3242 6.67414L13.3235 6.10742L9.2182 6.11302L9.21889 6.67904C9.21889 6.98058 8.99151 7.21847 8.68741 7.21847C8.38332 7.21917 8.15455 6.98198 8.15455 6.68043L8.15386 6.1417C6.80616 6.27674 6.06043 7.06874 6.0625 8.58628L6.0632 8.80387ZM13.5664 11.9842V11.9919C13.5733 12.3137 13.8359 12.5579 14.1546 12.5509C14.4656 12.5432 14.7137 12.2766 14.7068 11.9548C14.6923 11.647 14.4428 11.3958 14.1324 11.3965C13.8145 11.4035 13.5657 11.6624 13.5664 11.9842ZM14.1377 15.1257C13.8197 15.1187 13.5633 14.8535 13.5626 14.5316C13.5557 14.2098 13.8108 13.9432 14.1287 13.9355H14.1356C14.4604 13.9355 14.7237 14.2007 14.7237 14.5295C14.7244 14.8584 14.4618 15.125 14.1377 15.1257ZM10.7186 11.995C10.7324 12.3168 10.9957 12.568 11.3136 12.554C11.6247 12.5393 11.8728 12.2735 11.8589 11.9516C11.8513 11.6368 11.5956 11.3919 11.2846 11.3926C10.9667 11.4066 10.7179 11.6732 10.7186 11.995ZM11.3177 15.0931C10.9998 15.1071 10.7372 14.8559 10.7227 14.534C10.7227 14.2122 10.9708 13.9463 11.2887 13.9316C11.5997 13.9309 11.8561 14.1758 11.863 14.49C11.8775 14.8125 11.6287 15.0784 11.3177 15.0931ZM7.8711 12.0204C7.88492 12.3422 8.14824 12.5941 8.46616 12.5794C8.77717 12.5654 9.02528 12.2988 9.01077 11.977C9.00386 11.6621 8.74814 11.4173 8.43644 11.418C8.11852 11.432 7.8704 11.6985 7.8711 12.0204ZM8.47006 15.097C8.15214 15.1117 7.88952 14.8598 7.875 14.5379C7.87431 14.2161 8.12312 13.9495 8.44104 13.9355C8.75204 13.9348 9.00845 14.1797 9.01537 14.4946C9.02988 14.8164 8.78176 15.083 8.47006 15.097Z"
+                                fill="#EE628F" />
+                        </svg>
+
+
+                        Call1
+                    </button>
+
+                    <button class="btn align-items-center">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.1" width="23" height="23" rx="2" fill="#348090" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.3876 4.53803L14.3883 5.06277C16.3166 5.2139 17.5903 6.52784 17.5924 8.54283L17.6 14.4409C17.6028 16.6378 16.2226 17.9895 14.0103 17.993L8.60633 18C6.40784 18.0028 5.01038 16.6189 5.00761 14.4157L5.00001 8.58691C4.99725 6.55862 6.22608 5.24818 8.15433 5.07117L8.15364 4.54643C8.15294 4.23858 8.38102 4.007 8.68511 4.007C8.98921 4.0063 9.21728 4.23719 9.21797 4.54503L9.21867 5.03479L13.324 5.02919L13.3233 4.53943C13.3226 4.23159 13.5507 4.0007 13.8548 4C14.1519 3.9993 14.3869 4.23019 14.3876 4.53803ZM6.0632 8.80387L16.5269 8.78988V8.545C16.4972 7.04075 15.7425 6.25155 14.3879 6.13401L14.3885 6.67274C14.3885 6.97359 14.1542 7.21217 13.8571 7.21217C13.553 7.21287 13.3242 6.97499 13.3242 6.67414L13.3235 6.10742L9.2182 6.11302L9.21889 6.67904C9.21889 6.98058 8.99151 7.21847 8.68741 7.21847C8.38332 7.21917 8.15455 6.98198 8.15455 6.68043L8.15386 6.1417C6.80616 6.27674 6.06043 7.06874 6.0625 8.58628L6.0632 8.80387ZM13.5664 11.9842V11.9919C13.5733 12.3137 13.8359 12.5579 14.1546 12.5509C14.4656 12.5432 14.7137 12.2766 14.7068 11.9548C14.6923 11.647 14.4428 11.3958 14.1324 11.3965C13.8145 11.4035 13.5657 11.6624 13.5664 11.9842ZM14.1377 15.1257C13.8197 15.1187 13.5633 14.8535 13.5626 14.5316C13.5557 14.2098 13.8108 13.9432 14.1287 13.9355H14.1356C14.4604 13.9355 14.7237 14.2007 14.7237 14.5295C14.7244 14.8584 14.4618 15.125 14.1377 15.1257ZM10.7186 11.995C10.7324 12.3168 10.9957 12.568 11.3136 12.554C11.6247 12.5393 11.8728 12.2735 11.8589 11.9516C11.8513 11.6368 11.5956 11.3919 11.2846 11.3926C10.9667 11.4066 10.7179 11.6732 10.7186 11.995ZM11.3177 15.0931C10.9998 15.1071 10.7372 14.8559 10.7227 14.534C10.7227 14.2122 10.9708 13.9463 11.2887 13.9316C11.5997 13.9309 11.8561 14.1758 11.863 14.49C11.8775 14.8125 11.6287 15.0784 11.3177 15.0931ZM7.8711 12.0204C7.88492 12.3422 8.14824 12.5941 8.46616 12.5794C8.77717 12.5654 9.02528 12.2988 9.01077 11.977C9.00386 11.6621 8.74814 11.4173 8.43644 11.418C8.11852 11.432 7.8704 11.6985 7.8711 12.0204ZM8.47006 15.097C8.15214 15.1117 7.88952 14.8598 7.875 14.5379C7.87431 14.2161 8.12312 13.9495 8.44104 13.9355C8.75204 13.9348 9.00845 14.1797 9.01537 14.4946C9.02988 14.8164 8.78176 15.083 8.47006 15.097Z"
+                                fill="#328090" />
+                        </svg>
+
+
+
+                        Call2
+                    </button>
+
+                    <button class="btn align-items-center">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.3876 4.53803L14.3883 5.06277C16.3166 5.2139 17.5903 6.52784 17.5924 8.54283L17.6 14.4409C17.6028 16.6378 16.2226 17.9895 14.0103 17.993L8.60633 18C6.40784 18.0028 5.01038 16.6189 5.00761 14.4157L5.00001 8.58691C4.99725 6.55862 6.22608 5.24818 8.15433 5.07117L8.15364 4.54643C8.15294 4.23858 8.38102 4.007 8.68511 4.007C8.98921 4.0063 9.21728 4.23719 9.21797 4.54503L9.21867 5.03479L13.324 5.02919L13.3233 4.53943C13.3226 4.23159 13.5507 4.0007 13.8548 4C14.1519 3.9993 14.3869 4.23019 14.3876 4.53803ZM6.0632 8.80387L16.5269 8.78988V8.545C16.4972 7.04075 15.7425 6.25155 14.3879 6.13401L14.3885 6.67274C14.3885 6.97359 14.1542 7.21217 13.8571 7.21217C13.553 7.21287 13.3242 6.97499 13.3242 6.67414L13.3235 6.10742L9.2182 6.11302L9.21889 6.67904C9.21889 6.98058 8.99151 7.21847 8.68741 7.21847C8.38332 7.21917 8.15455 6.98198 8.15455 6.68043L8.15386 6.1417C6.80616 6.27674 6.06043 7.06874 6.0625 8.58628L6.0632 8.80387ZM13.5664 11.9842V11.9919C13.5733 12.3137 13.8359 12.5579 14.1546 12.5509C14.4656 12.5432 14.7137 12.2766 14.7068 11.9548C14.6923 11.647 14.4428 11.3958 14.1324 11.3965C13.8145 11.4035 13.5657 11.6624 13.5664 11.9842ZM14.1377 15.1257C13.8197 15.1187 13.5633 14.8535 13.5626 14.5316C13.5557 14.2098 13.8108 13.9432 14.1287 13.9355H14.1356C14.4604 13.9355 14.7237 14.2007 14.7237 14.5295C14.7244 14.8584 14.4618 15.125 14.1377 15.1257ZM10.7186 11.995C10.7324 12.3168 10.9957 12.568 11.3136 12.554C11.6247 12.5393 11.8728 12.2735 11.8589 11.9516C11.8513 11.6368 11.5956 11.3919 11.2846 11.3926C10.9667 11.4066 10.7179 11.6732 10.7186 11.995ZM11.3177 15.0931C10.9998 15.1071 10.7372 14.8559 10.7227 14.534C10.7227 14.2122 10.9708 13.9463 11.2887 13.9316C11.5997 13.9309 11.8561 14.1758 11.863 14.49C11.8775 14.8125 11.6287 15.0784 11.3177 15.0931ZM7.8711 12.0204C7.88492 12.3422 8.14824 12.5941 8.46616 12.5794C8.77717 12.5654 9.02528 12.2988 9.01077 11.977C9.00386 11.6621 8.74814 11.4173 8.43644 11.418C8.11852 11.432 7.8704 11.6985 7.8711 12.0204ZM8.47006 15.097C8.15214 15.1117 7.88952 14.8598 7.875 14.5379C7.87431 14.2161 8.12312 13.9495 8.44104 13.9355C8.75204 13.9348 9.00845 14.1797 9.01537 14.4946C9.02988 14.8164 8.78176 15.083 8.47006 15.097Z"
+                                fill="#C3C5CD" fill-opacity="0.9" />
+                            <rect opacity="0.1" width="23" height="23" rx="2" fill="#C9CBD2" />
+                        </svg>
+
+                        Passed
+                    </button>
+                </div>
+            </div>
             <!-- Table Tabs End-->
+
+
+            <!-- Table Start -->
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr class="">
+                            <th scope="col" class="border-0 sticky-check">
+
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <span class="th-name text-nowrap">Personal Info</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center ps-4">
+                                    <span class="th-name text-nowrap">Call 1&2 date</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">Level1 notes with dates</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">STATUS</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">LEAD OWNER</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">HOT %</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th scope="col" class="border-0 align-middle">
+                                <div class="d-flex align-items-center h-100">
+                                    <span class="th-name text-nowrap">AUDIT LINK</span>
+
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">Remarketing start date</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">Audit STatus & theme</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">Audit request date</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">Budget</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">Remarketing STATUS</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">Mail status</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">SEQUENCE date</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">SMS STATUS</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">HOT %</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+
+                            <th scope="col" class="border-0">
+                                <div class="d-flex align-items-center">
+                                    <span class="th-name text-nowrap">Audit STatus & theme</span>
+                                    <div class="d-flex flex-column sort-group">
+                                        <button class="btn btn-sort-up">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 0L8 4H0L4 0Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn btn-sort-down">
+                                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4L0 0H8L4 4Z" fill="#757D8A" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody class=" align-middle">
+                        <tr>
+                            <th scope="row" class="bg-dark-10 font-gilroy-medium sticky-check">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                            </th>
+
+                            <!-- Personal Info -->
+                            <td class="bg-dark-10 font-gilroy-medium ">
+                                <div class="personal-info d-flex align-items-center">
+                                    <div class="d-flex flex-column justify-content-center align-items-center column1">
+                                        <button class="btn p-0 mb-4">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 6.99905C14.1217 6.99905 16.1566 7.8419 17.6569 9.34219C19.1571 10.8425 20 12.8773 20 14.999C20 17.1208 19.1571 19.1556 17.6569 20.6559C16.1566 22.1562 14.1217 22.999 12 22.999C9.87827 22.999 7.84344 22.1562 6.34315 20.6559C4.84285 19.1556 4 17.1208 4 14.999C4 12.8773 4.84285 10.8425 6.34315 9.34219C7.84344 7.8419 9.87827 6.99905 12 6.99905ZM12 10.499L10.677 13.179L7.72 13.609L9.86 15.694L9.355 18.64L12 17.249L14.645 18.639L14.14 15.694L16.28 13.608L13.323 13.178L12 10.499ZM13 1.99805L18 1.99905V4.99905L16.637 6.13705C15.5059 5.54363 14.2711 5.17388 13 5.04805V1.99905V1.99805ZM11 1.99805V5.04805C9.72935 5.17369 8.49482 5.5431 7.364 6.13605L6 4.99905V1.99905L11 1.99805Z"
+                                                    fill="#084279" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn p-0">
+                                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.08 11.1971C14.8347 11.4349 14.722 11.7788 14.7778 12.116L15.62 16.7768C15.691 17.1718 15.5243 17.5716 15.1937 17.7999C14.8697 18.0367 14.4387 18.0651 14.0854 17.8757L9.88975 15.6874C9.74386 15.6097 9.58187 15.568 9.4161 15.5633H9.15938C9.07033 15.5765 8.98318 15.605 8.9036 15.6485L4.70704 17.8472C4.49958 17.9514 4.26465 17.9884 4.03446 17.9514C3.47365 17.8453 3.09946 17.3111 3.19135 16.7474L4.03446 12.0867C4.09035 11.7466 3.97762 11.4008 3.73226 11.1593L0.311546 7.84369C0.0254596 7.56613 -0.0740075 7.14931 0.0567207 6.77323C0.18366 6.3981 0.507638 6.12433 0.898875 6.06275L5.60698 5.37975C5.96506 5.3428 6.27957 5.12492 6.44061 4.80284L8.51521 0.549437C8.56447 0.454706 8.62794 0.367554 8.70467 0.293665L8.78993 0.227353C8.83445 0.178093 8.8856 0.137359 8.94244 0.104204L9.0457 0.0663114L9.20674 0H9.60556C9.96174 0.0369449 10.2753 0.250089 10.4392 0.568383L12.5413 4.80284C12.6928 5.11261 12.9874 5.32764 13.3275 5.37975L18.0356 6.06275C18.4335 6.11959 18.766 6.39431 18.8977 6.77323C19.0218 7.1531 18.9147 7.56992 18.623 7.84369L15.08 11.1971Z"
+                                                    fill="#FFD66B" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+
+                                    <!-- Option Buttons -->
+                                    <div class="me-5">
+                                        <h6 class="title text-nowrap">Myra Foster</h6>
+                                        <div class="row">
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M9.33333 6.66667H18V8H9.33333V6.66667ZM7.33333 6V8H8V8.66667H6V8H6.66667V6.66667H6V6H7.33333ZM6 13.3333V11.6667H7.33333V11.3333H6V10.6667H8V12.3333H6.66667V12.6667H8V13.3333H6ZM7.33333 17H6V16.3333H7.33333V16H6V15.3333H8V18H6V17.3333H7.33333V17ZM9.33333 11.3333H18V12.6667H9.33333V11.3333ZM9.33333 16H18V17.3333H9.33333V16Z"
+                                                            fill="#084279" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M6.0026 6H18.0026C18.1794 6 18.349 6.07024 18.474 6.19526C18.599 6.32029 18.6693 6.48986 18.6693 6.66667V17.3333C18.6693 17.5101 18.599 17.6797 18.474 17.8047C18.349 17.9298 18.1794 18 18.0026 18H6.0026C5.82579 18 5.65622 17.9298 5.5312 17.8047C5.40618 17.6797 5.33594 17.5101 5.33594 17.3333V6.66667C5.33594 6.48986 5.40618 6.32029 5.5312 6.19526C5.65622 6.07024 5.82579 6 6.0026 6ZM12.0426 11.7887L7.76794 8.15867L6.9046 9.17467L12.0513 13.5447L17.1053 9.17133L16.2333 8.16267L12.0433 11.7887H12.0426Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M18 14.9467V17.304C18.0001 17.4728 17.9361 17.6353 17.8211 17.7588C17.706 17.8823 17.5484 17.9575 17.38 17.9693C17.0887 17.9893 16.8507 18 16.6667 18C10.7753 18 6 13.2247 6 7.33333C6 7.14933 6.01 6.91133 6.03067 6.62C6.04248 6.45163 6.11772 6.29401 6.2412 6.17894C6.36468 6.06387 6.52722 5.99992 6.696 6H9.05333C9.13603 5.99992 9.2158 6.03057 9.27715 6.08601C9.33851 6.14145 9.37706 6.21772 9.38533 6.3C9.40067 6.45333 9.41467 6.57533 9.428 6.668C9.56049 7.59262 9.832 8.49189 10.2333 9.33533C10.2967 9.46867 10.2553 9.628 10.1353 9.71333L8.69667 10.7413C9.5763 12.791 11.2097 14.4244 13.2593 15.304L14.286 13.868C14.328 13.8093 14.3892 13.7673 14.459 13.7491C14.5288 13.7309 14.6028 13.7379 14.668 13.7687C15.5113 14.1692 16.4104 14.4401 17.3347 14.572C17.4273 14.5853 17.5493 14.6 17.7013 14.6147C17.7835 14.6231 17.8596 14.6617 17.9149 14.7231C17.9702 14.7844 18.0008 14.8641 18.0007 14.9467H18Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M17.9974 16.6667H19.3307V18H4.66406V16.6667H5.9974V6.66667C5.9974 6.48986 6.06763 6.32029 6.19266 6.19526C6.31768 6.07024 6.48725 6 6.66406 6H13.3307C13.5075 6 13.6771 6.07024 13.8021 6.19526C13.9272 6.32029 13.9974 6.48986 13.9974 6.66667V16.6667H15.3307V10H17.3307C17.5075 10 17.6771 10.0702 17.8021 10.1953C17.9272 10.3203 17.9974 10.4899 17.9974 10.6667V16.6667ZM8.66406 11.3333V12.6667H11.3307V11.3333H8.66406ZM8.66406 8.66667V10H11.3307V8.66667H8.66406Z"
+                                                            fill="#084279" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+
+                                                <div class="dropdown">
+                                                    <button id="dLabel" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="true" class="btn p-0">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="24" height="24" rx="4" fill="#084279"
+                                                                fill-opacity="0.05" />
+                                                            <path
+                                                                d="M16.0233 15.0787L18.8786 17.9333L17.9353 18.8766L15.0806 16.0213C14.0184 16.8728 12.6973 17.3359 11.3359 17.334C8.02394 17.334 5.33594 14.646 5.33594 11.334C5.33594 8.02198 8.02394 5.33398 11.3359 5.33398C14.6479 5.33398 17.3359 8.02198 17.3359 11.334C17.3379 12.6953 16.8748 14.0165 16.0233 15.0787ZM14.6859 14.584C15.532 13.7139 16.0045 12.5476 16.0026 11.334C16.0026 8.75532 13.9139 6.66732 11.3359 6.66732C8.75727 6.66732 6.66927 8.75532 6.66927 11.334C6.66927 13.912 8.75727 16.0007 11.3359 16.0007C12.5496 16.0026 13.7159 15.5301 14.5859 14.684L14.6859 14.584ZM12.1213 8.78465C11.9247 8.87345 11.7526 9.00862 11.6197 9.17855C11.4869 9.34849 11.3972 9.54812 11.3585 9.76032C11.3198 9.97252 11.3331 10.191 11.3973 10.3969C11.4616 10.6028 11.5748 10.79 11.7273 10.9426C11.8799 11.0951 12.0671 11.2083 12.273 11.2726C12.479 11.3368 12.6974 11.3502 12.9096 11.3114C13.1218 11.2727 13.3214 11.183 13.4914 11.0502C13.6613 10.9173 13.7965 10.7452 13.8853 10.5487C14.0605 11.1177 14.0402 11.7291 13.8276 12.2853C13.615 12.8415 13.2224 13.3105 12.7123 13.6177C12.2022 13.9249 11.604 14.0525 11.013 13.9802C10.4219 13.9079 9.87207 13.6399 9.45103 13.2189C9.02999 12.7979 8.76198 12.248 8.6897 11.657C8.61742 11.0659 8.74504 10.4677 9.05221 9.95761C9.35938 9.44752 9.82843 9.05491 10.3846 8.84233C10.9408 8.62976 11.5522 8.60945 12.1213 8.78465Z"
+                                                                fill="#084279" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+
+                                                        <div class="dropbox">
+                                                            <div class="top-arrow"></div>
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-SRC</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">Google</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-MEDIUM</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">Google</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-CAMPAIGN</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">3a_campaign</p>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-TERM</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">es_ad_3</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-CONTENT</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">google_spain</p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M10.4284 17.8258L16.5305 9.93463C16.8621 9.50908 16.98 9.0171 16.8695 8.51615C16.7737 8.06075 16.4936 7.62774 16.0736 7.29925L15.0492 6.4855C14.1575 5.77626 13.052 5.85092 12.4182 6.66467L11.7328 7.55383C11.6444 7.66507 11.6665 7.82931 11.777 7.9189C11.777 7.9189 13.5089 9.30751 13.5458 9.33737C13.6637 9.44936 13.7521 9.59867 13.7742 9.77785C13.8111 10.1287 13.5679 10.4572 13.2068 10.502C13.0373 10.5244 12.8751 10.4722 12.7572 10.3751L10.9369 8.92676C10.8485 8.86032 10.7158 8.8745 10.6421 8.96409L6.31609 14.5633C6.03604 14.9142 5.94024 15.3696 6.03604 15.8101L6.58877 18.2066C6.61825 18.3335 6.7288 18.4231 6.86145 18.4231L9.29345 18.3932C9.73563 18.3857 10.1483 18.1842 10.4284 17.8258ZM13.8305 17.0781H17.7961C18.183 17.0781 18.4977 17.3969 18.4977 17.7889C18.4977 18.1815 18.183 18.4996 17.7961 18.4996H13.8305C13.4436 18.4996 13.1289 18.1815 13.1289 17.7889C13.1289 17.3969 13.4436 17.0781 13.8305 17.0781Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+
+                            <!-- Call 1 &2 date -->
+                            <td class="callDate">
+                                <div class="d-flex align-items-center mb-4">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.38762 0.538032L9.38831 1.06277C11.3166 1.21389 12.5903 2.52784 12.5924 4.54283L12.6 10.4409C12.6028 12.6378 11.2226 13.9895 9.01026 13.993L3.60632 14C1.40784 14.0028 0.0103716 12.6189 0.00760708 10.4157L4.65482e-06 4.5869C-0.00275986 2.55862 1.22607 1.24818 3.15432 1.07117L3.15363 0.546428C3.15294 0.238582 3.38101 0.00699808 3.68511 0.00699808C3.9892 0.00629843 4.21728 0.237183 4.21797 0.545029L4.21866 1.03478L8.32397 1.02919L8.32328 0.539431C8.32259 0.231586 8.55066 0.000701235 8.85476 1.58584e-06C9.15194 -0.000698064 9.38693 0.230186 9.38762 0.538032ZM1.06319 4.80387L11.5269 4.78988V4.545C11.4972 3.04075 10.7425 2.25155 9.38784 2.13401L9.38853 2.67274C9.38853 2.97359 9.15424 3.21217 8.85706 3.21217C8.55296 3.21287 8.3242 2.97499 8.3242 2.67414L8.3235 2.10742L4.21819 2.11302L4.21889 2.67903C4.21889 2.98058 3.9915 3.21846 3.68741 3.21846C3.38331 3.21916 3.15455 2.98198 3.15455 2.68043L3.15386 2.1417C1.80615 2.27673 1.06042 3.06874 1.0625 4.58628L1.06319 4.80387ZM8.5664 7.98419V7.99189C8.57331 8.31372 8.83594 8.5579 9.15455 8.55091C9.46556 8.54321 9.71368 8.27664 9.70676 7.9548C9.69225 7.64696 9.44275 7.39578 9.13244 7.39648C8.81452 7.40348 8.56571 7.66235 8.5664 7.98419ZM9.13765 11.1256C8.81973 11.1187 8.56332 10.8535 8.56263 10.5316C8.55572 10.2098 8.81075 9.94324 9.12867 9.93554H9.13558C9.46041 9.93554 9.72373 10.2007 9.72373 10.5295C9.72442 10.8584 9.46179 11.1249 9.13765 11.1256ZM5.71857 7.995C5.7324 8.31684 5.99572 8.56801 6.31364 8.55402C6.62464 8.53933 6.87276 8.27346 6.85894 7.95162C6.85134 7.63678 6.59562 7.3919 6.28461 7.3926C5.96669 7.40659 5.71788 7.67316 5.71857 7.995ZM6.31771 11.0931C5.99979 11.1071 5.73716 10.8559 5.72265 10.534C5.72265 10.2122 5.97077 9.94633 6.28868 9.93164C6.59969 9.93094 6.8561 10.1758 6.86301 10.49C6.87753 10.8125 6.62872 11.0784 6.31771 11.0931ZM2.87109 8.02037C2.88491 8.34221 3.14823 8.59408 3.46615 8.57939C3.77716 8.56539 4.02528 8.29883 4.01076 7.97699C4.00385 7.66215 3.74813 7.41727 3.43643 7.41797C3.11851 7.43196 2.8704 7.69853 2.87109 8.02037ZM3.47006 11.097C3.15214 11.1117 2.88951 10.8598 2.87499 10.5379C2.8743 10.2161 3.12311 9.94954 3.44103 9.93555C3.75204 9.93485 4.00845 10.1797 4.01536 10.4946C4.02987 10.8164 3.78176 11.083 3.47006 11.097Z"
+                                            fill="#C3C5CD" fill-opacity="0.9" />
+                                    </svg>
+                                    <del class="date text-mute">01 May, 2022</del>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.38762 0.538032L9.38831 1.06277C11.3166 1.21389 12.5903 2.52784 12.5924 4.54283L12.6 10.4409C12.6028 12.6378 11.2226 13.9895 9.01026 13.993L3.60632 14C1.40784 14.0028 0.0103716 12.6189 0.00760708 10.4157L4.65482e-06 4.5869C-0.00275986 2.55862 1.22607 1.24818 3.15432 1.07117L3.15363 0.546428C3.15294 0.238582 3.38101 0.00699808 3.68511 0.00699808C3.9892 0.00629843 4.21728 0.237183 4.21797 0.545029L4.21866 1.03478L8.32397 1.02919L8.32328 0.539431C8.32259 0.231586 8.55066 0.000701235 8.85476 1.58584e-06C9.15194 -0.000698064 9.38693 0.230186 9.38762 0.538032ZM1.06319 4.80387L11.5269 4.78988V4.545C11.4972 3.04075 10.7425 2.25155 9.38784 2.13401L9.38853 2.67274C9.38853 2.97359 9.15424 3.21217 8.85706 3.21217C8.55296 3.21287 8.3242 2.97499 8.3242 2.67414L8.3235 2.10742L4.21819 2.11302L4.21889 2.67903C4.21889 2.98058 3.9915 3.21846 3.68741 3.21846C3.38331 3.21916 3.15455 2.98198 3.15455 2.68043L3.15386 2.1417C1.80615 2.27673 1.06042 3.06874 1.0625 4.58628L1.06319 4.80387ZM8.5664 7.98419V7.99189C8.57331 8.31372 8.83594 8.5579 9.15455 8.55091C9.46556 8.54321 9.71368 8.27664 9.70676 7.9548C9.69225 7.64696 9.44275 7.39578 9.13244 7.39648C8.81452 7.40348 8.56571 7.66235 8.5664 7.98419ZM9.13765 11.1256C8.81973 11.1187 8.56332 10.8535 8.56263 10.5316C8.55572 10.2098 8.81075 9.94324 9.12867 9.93554H9.13558C9.46041 9.93554 9.72373 10.2007 9.72373 10.5295C9.72442 10.8584 9.46179 11.1249 9.13765 11.1256ZM5.71857 7.995C5.7324 8.31684 5.99572 8.56801 6.31364 8.55402C6.62464 8.53933 6.87276 8.27346 6.85894 7.95162C6.85134 7.63678 6.59562 7.3919 6.28461 7.3926C5.96669 7.40659 5.71788 7.67316 5.71857 7.995ZM6.31771 11.0931C5.99979 11.1071 5.73716 10.8559 5.72265 10.534C5.72265 10.2122 5.97077 9.94633 6.28868 9.93164C6.59969 9.93094 6.8561 10.1758 6.86301 10.49C6.87753 10.8125 6.62872 11.0784 6.31771 11.0931ZM2.87109 8.02037C2.88491 8.34221 3.14823 8.59408 3.46615 8.57939C3.77716 8.56539 4.02528 8.29883 4.01076 7.97699C4.00385 7.66215 3.74813 7.41727 3.43643 7.41797C3.11851 7.43196 2.8704 7.69853 2.87109 8.02037ZM3.47006 11.097C3.15214 11.1117 2.88951 10.8598 2.87499 10.5379C2.8743 10.2161 3.12311 9.94954 3.44103 9.93555C3.75204 9.93485 4.00845 10.1797 4.01536 10.4946C4.02987 10.8164 3.78176 11.083 3.47006 11.097Z"
+                                            fill="#328090" />
+                                    </svg>
+
+                                    </svg>
+                                    <p class="date">22 Jun, 2022</p>
+                                </div>
+                            </td>
+
+                            <!-- Level1 notes with dates -->
+                            <td class="font-montserrat level1-notes">
+                                <div class="bell-badge">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.668 9.91602H12.8346V11.0827H1.16797V9.91602H2.33464V5.83268C2.33464 4.59501 2.8263 3.40802 3.70147 2.53285C4.57664 1.65768 5.76363 1.16602 7.0013 1.16602C8.23898 1.16602 9.42596 1.65768 10.3011 2.53285C11.1763 3.40802 11.668 4.59501 11.668 5.83268V9.91602ZM5.2513 12.2493H8.7513V13.416H5.2513V12.2493Z"
+                                            fill="#226AD6" />
+                                    </svg>
+                                    30 Jun, 2022
+                                </div>
+                                <div class="dropdown">
+                                    <button id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="true"
+                                        class="btn shadow-none text-start p-0">
+                                        <p class="details">13/04/22Prochain audit :Prévu pour fin JuinRecontacter le
+                                            client mi
+                                            juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                            sor........</p>
+                                    </button>
+                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+
+                                        <div class="dropbox">
+                                            <div class="top-arrow"></div>
+
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="title">Comments</h6>
+
+                                                <button class="btn p-0">
+                                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <ellipse opacity="0.15" cx="16.27" cy="15.77" rx="16.27"
+                                                            ry="15.77" fill="#EE628F" />
+                                                        <path opacity="0.8"
+                                                            d="M18.8609 19.9101L18.5857 20.1941C18.9468 20.5442 19.5265 20.5442 19.8877 20.1941C20.256 19.8372 20.256 19.2542 19.8877 18.8973C19.8877 18.8973 19.8877 18.8972 19.8876 18.8972L17.0164 16.1141L19.8876 13.3309C19.8877 13.3309 19.8877 13.3309 19.8877 13.3309C20.256 12.974 20.256 12.3909 19.8876 12.034C19.7061 11.8582 19.4697 11.7716 19.2367 11.7716C19.0037 11.7716 18.7672 11.8582 18.5857 12.0341L15.6964 14.8347L12.8072 12.0341L12.5298 12.3202L12.8072 12.0341C12.6257 11.8582 12.3891 11.7716 12.1561 11.7716C11.9232 11.7716 11.6865 11.8581 11.505 12.0342C11.1368 12.3911 11.1369 12.9741 11.5051 13.3309C11.5051 13.3309 11.5052 13.3309 11.5052 13.3309L14.3764 16.1141L11.5052 18.8972C11.5052 18.8972 11.5051 18.8973 11.5051 18.8973C11.1368 19.2542 11.1368 19.8372 11.5051 20.1941L18.8609 19.9101ZM18.8609 19.9101L18.5857 20.1941L15.6964 17.3935L12.8072 20.1941L12.8071 20.1941M18.8609 19.9101L12.8071 20.1941M12.8071 20.1941C12.4459 20.5441 11.8664 20.5442 11.5052 20.1941L12.8071 20.1941Z"
+                                                            fill="#ED5485" stroke="#ED5485" stroke-width="0.8" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="parabox">
+                                                <p class="paragraph">
+                                                    13/04/22Prochain audit :Prévu pour fin JuinRecontacter le client mi
+                                                    juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                                    sorties financières s.
+                                                    <br>
+                                                    <br>
+
+                                                    13/04/22Prochain audit :Prévu pour fin JuinRecontacter le client mi
+                                                    juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                                    sorties financières s......13/04/22Prochain audit :Prévu pour fin
+                                                    JuinRecontacter le client mi juinRé-upseller le client sur ses 6
+                                                    comptes
+                                                    car le client avait des sorties financières s......13/04/22Prochain
+                                                    audit :Prévu pour fin JuinRecontacter le client mi juinRé-upseller
+                                                    le
+                                                    client sur ses 6 comptes car le client avait des ..... <a href="#"
+                                                        class="load-more">Load More...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <!-- Status -->
+                            <td class="font-montserrat status">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle shadow-none" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <!-- Status Circle -->
+                                        <div class="status-circle bg-red-10"></div>
+                                        <span>Super Hot</span>
+                                        <svg class="carte" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.42704 0.231507L4.66037 3.30747L7.8937 0.231507C7.97086 0.15811 8.06245 0.0998891 8.16325 0.0601672C8.26405 0.0204452 8.37209 7.73361e-10 8.4812 0C8.59031 -7.73357e-10 8.69835 0.0204452 8.79916 0.0601672C8.89996 0.0998891 8.99155 0.15811 9.0687 0.231507C9.14585 0.304903 9.20705 0.392038 9.24881 0.487935C9.29056 0.583833 9.31205 0.686615 9.31205 0.790413C9.31205 0.894212 9.29056 0.996994 9.24881 1.09289C9.20705 1.18879 9.14585 1.27592 9.0687 1.34932L5.2437 4.98816C5.16661 5.06165 5.07503 5.11996 4.97422 5.15974C4.87341 5.19952 4.76534 5.22 4.6562 5.22C4.54706 5.22 4.43899 5.19952 4.33818 5.15974C4.23737 5.11996 4.1458 5.06165 4.0687 4.98816L0.243703 1.34932C0.16645 1.27598 0.105161 1.18886 0.0633426 1.09296C0.0215248 0.997051 0 0.894242 0 0.790413C0 0.686585 0.0215248 0.583776 0.0633426 0.487871C0.105161 0.391966 0.16645 0.304849 0.243703 0.231507C0.568703 -0.0697477 1.10204 -0.0776755 1.42704 0.231507Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+
+                            <!-- LEAD OWNER -->
+                            <td class="leadOwner font-montserrat">Julien Wolff</td>
+
+                            <!-- HOT % -->
+                            <td class="hot font-montserrat">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>75%</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+
+                            <!-- AUDIT LINK -->
+                            <td class="auditLink font-montserrat">
+                                <a href="#"
+                                    class="">https://docs.google.com/documentd/1FCmK9wwVz4yLFMRDWRoMzgjE1Gw09ndBr84eE3eQZ8/edit#</a>
+                            </td>
+
+                            <!-- Remarketing start date -->
+                            <td class="remarketing font-montserrat">12 Jun, 2022</td>
+
+                            <!-- Audit STatus & theme -->
+                            <td class="auditStatus font-montserrat">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="form-check form-switch mb-3">
+                                        <label
+                                            class="form-check-label align-items-center d-flex flex-row-reverse justify-content-start"
+                                            for="flexSwitchCheckDefault">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <p class="details">Indpendant immobilier</p>
+                                </div>
+                            </td>
+
+                            <!-- Audit request date -->
+                            <td class="auditRequest font-montserrat">14 Jun, 2022</td>
+
+                            <!-- Budget -->
+                            <td class="budget font-montserrat">€ 100</td>
+
+                            <!-- Remarketing start date -->
+                            <td class="remarketing font-montserrat">Positive Respond</td>
+
+                            <!-- Mail status -->
+                            <td class="mailStatus font-montserrat">
+                                <div class="mailStatus-budge">
+                                    <div class="dot"></div>
+                                    Sequence started
+                                </div>
+                            </td>
+
+                            <!-- SEQUENCE date -->
+                            <td class="sequence-date font-montserrat">
+                                <p class="mb-3">Start date : 14 May, 2022</p>
+                                <p class="mb-0">End date : 25 May, 2022</p>
+                            </td>
+
+                            <!-- SMS STATUS -->
+                            <td class="smsStatus font-montserrat">
+                                <div class="smsStatus-budge">
+                                    <div class="dot"></div>
+                                    SMS#2 Sent
+                                </div>
+                                <p class="details">SMS Last sent : 26 Apr, 2022</p>
+                            </td>
+
+                            <!-- HOT % -->
+                            <td class="hot font-montserrat">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>75%</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+
+                            <!-- Audit STatus & theme -->
+                            <td class="auditStatus font-montserrat">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="form-check form-switch mb-3">
+                                        <label
+                                            class="form-check-label align-items-center d-flex flex-row-reverse justify-content-start"
+                                            for="flexSwitchCheckDefault">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <p class="details">Indpendant immobilier</p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row" class="bg-dark-10 font-gilroy-medium sticky-check">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                            </th>
+
+                            <!-- Personal Info -->
+                            <td class="bg-dark-10 font-gilroy-medium ">
+                                <div class="personal-info d-flex align-items-center">
+                                    <div class="d-flex flex-column justify-content-center align-items-center column1">
+                                        <button class="btn p-0 mb-4">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 6.99905C14.1217 6.99905 16.1566 7.8419 17.6569 9.34219C19.1571 10.8425 20 12.8773 20 14.999C20 17.1208 19.1571 19.1556 17.6569 20.6559C16.1566 22.1562 14.1217 22.999 12 22.999C9.87827 22.999 7.84344 22.1562 6.34315 20.6559C4.84285 19.1556 4 17.1208 4 14.999C4 12.8773 4.84285 10.8425 6.34315 9.34219C7.84344 7.8419 9.87827 6.99905 12 6.99905ZM12 10.499L10.677 13.179L7.72 13.609L9.86 15.694L9.355 18.64L12 17.249L14.645 18.639L14.14 15.694L16.28 13.608L13.323 13.178L12 10.499ZM13 1.99805L18 1.99905V4.99905L16.637 6.13705C15.5059 5.54363 14.2711 5.17388 13 5.04805V1.99905V1.99805ZM11 1.99805V5.04805C9.72935 5.17369 8.49482 5.5431 7.364 6.13605L6 4.99905V1.99905L11 1.99805Z"
+                                                    fill="#ED5485" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn p-0">
+                                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.08 11.1971C14.8347 11.4349 14.722 11.7788 14.7778 12.116L15.62 16.7768C15.691 17.1718 15.5243 17.5716 15.1937 17.7999C14.8697 18.0367 14.4387 18.0651 14.0854 17.8757L9.88975 15.6874C9.74386 15.6097 9.58187 15.568 9.4161 15.5633H9.15938C9.07033 15.5765 8.98318 15.605 8.9036 15.6485L4.70704 17.8472C4.49958 17.9514 4.26465 17.9884 4.03446 17.9514C3.47365 17.8453 3.09946 17.3111 3.19135 16.7474L4.03446 12.0867C4.09035 11.7466 3.97762 11.4008 3.73226 11.1593L0.311546 7.84369C0.0254596 7.56613 -0.0740075 7.14931 0.0567207 6.77323C0.18366 6.3981 0.507638 6.12433 0.898875 6.06275L5.60698 5.37975C5.96506 5.3428 6.27957 5.12492 6.44061 4.80284L8.51521 0.549437C8.56447 0.454706 8.62794 0.367554 8.70467 0.293665L8.78993 0.227353C8.83445 0.178093 8.8856 0.137359 8.94244 0.104204L9.0457 0.0663114L9.20674 0H9.60556C9.96174 0.0369449 10.2753 0.250089 10.4392 0.568383L12.5413 4.80284C12.6928 5.11261 12.9874 5.32764 13.3275 5.37975L18.0356 6.06275C18.4335 6.11959 18.766 6.39431 18.8977 6.77323C19.0218 7.1531 18.9147 7.56992 18.623 7.84369L15.08 11.1971Z"
+                                                    fill="#B3B3BF" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+
+                                    <!-- Option Buttons -->
+                                    <div class="me-5">
+                                        <h6 class="title text-nowrap">Myra Foster</h6>
+                                        <div class="row">
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M9.33333 6.66667H18V8H9.33333V6.66667ZM7.33333 6V8H8V8.66667H6V8H6.66667V6.66667H6V6H7.33333ZM6 13.3333V11.6667H7.33333V11.3333H6V10.6667H8V12.3333H6.66667V12.6667H8V13.3333H6ZM7.33333 17H6V16.3333H7.33333V16H6V15.3333H8V18H6V17.3333H7.33333V17ZM9.33333 11.3333H18V12.6667H9.33333V11.3333ZM9.33333 16H18V17.3333H9.33333V16Z"
+                                                            fill="#084279" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M6.0026 6H18.0026C18.1794 6 18.349 6.07024 18.474 6.19526C18.599 6.32029 18.6693 6.48986 18.6693 6.66667V17.3333C18.6693 17.5101 18.599 17.6797 18.474 17.8047C18.349 17.9298 18.1794 18 18.0026 18H6.0026C5.82579 18 5.65622 17.9298 5.5312 17.8047C5.40618 17.6797 5.33594 17.5101 5.33594 17.3333V6.66667C5.33594 6.48986 5.40618 6.32029 5.5312 6.19526C5.65622 6.07024 5.82579 6 6.0026 6ZM12.0426 11.7887L7.76794 8.15867L6.9046 9.17467L12.0513 13.5447L17.1053 9.17133L16.2333 8.16267L12.0433 11.7887H12.0426Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M18 14.9467V17.304C18.0001 17.4728 17.9361 17.6353 17.8211 17.7588C17.706 17.8823 17.5484 17.9575 17.38 17.9693C17.0887 17.9893 16.8507 18 16.6667 18C10.7753 18 6 13.2247 6 7.33333C6 7.14933 6.01 6.91133 6.03067 6.62C6.04248 6.45163 6.11772 6.29401 6.2412 6.17894C6.36468 6.06387 6.52722 5.99992 6.696 6H9.05333C9.13603 5.99992 9.2158 6.03057 9.27715 6.08601C9.33851 6.14145 9.37706 6.21772 9.38533 6.3C9.40067 6.45333 9.41467 6.57533 9.428 6.668C9.56049 7.59262 9.832 8.49189 10.2333 9.33533C10.2967 9.46867 10.2553 9.628 10.1353 9.71333L8.69667 10.7413C9.5763 12.791 11.2097 14.4244 13.2593 15.304L14.286 13.868C14.328 13.8093 14.3892 13.7673 14.459 13.7491C14.5288 13.7309 14.6028 13.7379 14.668 13.7687C15.5113 14.1692 16.4104 14.4401 17.3347 14.572C17.4273 14.5853 17.5493 14.6 17.7013 14.6147C17.7835 14.6231 17.8596 14.6617 17.9149 14.7231C17.9702 14.7844 18.0008 14.8641 18.0007 14.9467H18Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M17.9974 16.6667H19.3307V18H4.66406V16.6667H5.9974V6.66667C5.9974 6.48986 6.06763 6.32029 6.19266 6.19526C6.31768 6.07024 6.48725 6 6.66406 6H13.3307C13.5075 6 13.6771 6.07024 13.8021 6.19526C13.9272 6.32029 13.9974 6.48986 13.9974 6.66667V16.6667H15.3307V10H17.3307C17.5075 10 17.6771 10.0702 17.8021 10.1953C17.9272 10.3203 17.9974 10.4899 17.9974 10.6667V16.6667ZM8.66406 11.3333V12.6667H11.3307V11.3333H8.66406ZM8.66406 8.66667V10H11.3307V8.66667H8.66406Z"
+                                                            fill="#084279" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+
+                                                <div class="dropdown">
+                                                    <button id="dLabel" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="true" class="btn p-0">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="24" height="24" rx="4" fill="#084279"
+                                                                fill-opacity="0.05" />
+                                                            <path
+                                                                d="M16.0233 15.0787L18.8786 17.9333L17.9353 18.8766L15.0806 16.0213C14.0184 16.8728 12.6973 17.3359 11.3359 17.334C8.02394 17.334 5.33594 14.646 5.33594 11.334C5.33594 8.02198 8.02394 5.33398 11.3359 5.33398C14.6479 5.33398 17.3359 8.02198 17.3359 11.334C17.3379 12.6953 16.8748 14.0165 16.0233 15.0787ZM14.6859 14.584C15.532 13.7139 16.0045 12.5476 16.0026 11.334C16.0026 8.75532 13.9139 6.66732 11.3359 6.66732C8.75727 6.66732 6.66927 8.75532 6.66927 11.334C6.66927 13.912 8.75727 16.0007 11.3359 16.0007C12.5496 16.0026 13.7159 15.5301 14.5859 14.684L14.6859 14.584ZM12.1213 8.78465C11.9247 8.87345 11.7526 9.00862 11.6197 9.17855C11.4869 9.34849 11.3972 9.54812 11.3585 9.76032C11.3198 9.97252 11.3331 10.191 11.3973 10.3969C11.4616 10.6028 11.5748 10.79 11.7273 10.9426C11.8799 11.0951 12.0671 11.2083 12.273 11.2726C12.479 11.3368 12.6974 11.3502 12.9096 11.3114C13.1218 11.2727 13.3214 11.183 13.4914 11.0502C13.6613 10.9173 13.7965 10.7452 13.8853 10.5487C14.0605 11.1177 14.0402 11.7291 13.8276 12.2853C13.615 12.8415 13.2224 13.3105 12.7123 13.6177C12.2022 13.9249 11.604 14.0525 11.013 13.9802C10.4219 13.9079 9.87207 13.6399 9.45103 13.2189C9.02999 12.7979 8.76198 12.248 8.6897 11.657C8.61742 11.0659 8.74504 10.4677 9.05221 9.95761C9.35938 9.44752 9.82843 9.05491 10.3846 8.84233C10.9408 8.62976 11.5522 8.60945 12.1213 8.78465Z"
+                                                                fill="#084279" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+
+                                                        <div class="dropbox">
+                                                            <div class="top-arrow"></div>
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-SRC</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">Google</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-MEDIUM</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">Google</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-CAMPAIGN</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">3a_campaign</p>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-TERM</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">es_ad_3</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-CONTENT</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">google_spain</p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M10.4284 17.8258L16.5305 9.93463C16.8621 9.50908 16.98 9.0171 16.8695 8.51615C16.7737 8.06075 16.4936 7.62774 16.0736 7.29925L15.0492 6.4855C14.1575 5.77626 13.052 5.85092 12.4182 6.66467L11.7328 7.55383C11.6444 7.66507 11.6665 7.82931 11.777 7.9189C11.777 7.9189 13.5089 9.30751 13.5458 9.33737C13.6637 9.44936 13.7521 9.59867 13.7742 9.77785C13.8111 10.1287 13.5679 10.4572 13.2068 10.502C13.0373 10.5244 12.8751 10.4722 12.7572 10.3751L10.9369 8.92676C10.8485 8.86032 10.7158 8.8745 10.6421 8.96409L6.31609 14.5633C6.03604 14.9142 5.94024 15.3696 6.03604 15.8101L6.58877 18.2066C6.61825 18.3335 6.7288 18.4231 6.86145 18.4231L9.29345 18.3932C9.73563 18.3857 10.1483 18.1842 10.4284 17.8258ZM13.8305 17.0781H17.7961C18.183 17.0781 18.4977 17.3969 18.4977 17.7889C18.4977 18.1815 18.183 18.4996 17.7961 18.4996H13.8305C13.4436 18.4996 13.1289 18.1815 13.1289 17.7889C13.1289 17.3969 13.4436 17.0781 13.8305 17.0781Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+
+                            <!-- Call 1 &2 date -->
+                            <td class="callDate">
+                                <div class="d-flex align-items-center mb-4">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.38762 0.538032L9.38831 1.06277C11.3166 1.21389 12.5903 2.52784 12.5924 4.54283L12.6 10.4409C12.6028 12.6378 11.2226 13.9895 9.01026 13.993L3.60632 14C1.40784 14.0028 0.0103716 12.6189 0.00760708 10.4157L4.65482e-06 4.5869C-0.00275986 2.55862 1.22607 1.24818 3.15432 1.07117L3.15363 0.546428C3.15294 0.238582 3.38101 0.00699808 3.68511 0.00699808C3.9892 0.00629843 4.21728 0.237183 4.21797 0.545029L4.21866 1.03478L8.32397 1.02919L8.32328 0.539431C8.32259 0.231586 8.55066 0.000701235 8.85476 1.58584e-06C9.15194 -0.000698064 9.38693 0.230186 9.38762 0.538032ZM1.06319 4.80387L11.5269 4.78988V4.545C11.4972 3.04075 10.7425 2.25155 9.38784 2.13401L9.38853 2.67274C9.38853 2.97359 9.15424 3.21217 8.85706 3.21217C8.55296 3.21287 8.3242 2.97499 8.3242 2.67414L8.3235 2.10742L4.21819 2.11302L4.21889 2.67903C4.21889 2.98058 3.9915 3.21846 3.68741 3.21846C3.38331 3.21916 3.15455 2.98198 3.15455 2.68043L3.15386 2.1417C1.80615 2.27673 1.06042 3.06874 1.0625 4.58628L1.06319 4.80387ZM8.5664 7.98419V7.99189C8.57331 8.31372 8.83594 8.5579 9.15455 8.55091C9.46556 8.54321 9.71368 8.27664 9.70676 7.9548C9.69225 7.64696 9.44275 7.39578 9.13244 7.39648C8.81452 7.40348 8.56571 7.66235 8.5664 7.98419ZM9.13765 11.1256C8.81973 11.1187 8.56332 10.8535 8.56263 10.5316C8.55572 10.2098 8.81075 9.94324 9.12867 9.93554H9.13558C9.46041 9.93554 9.72373 10.2007 9.72373 10.5295C9.72442 10.8584 9.46179 11.1249 9.13765 11.1256ZM5.71857 7.995C5.7324 8.31684 5.99572 8.56801 6.31364 8.55402C6.62464 8.53933 6.87276 8.27346 6.85894 7.95162C6.85134 7.63678 6.59562 7.3919 6.28461 7.3926C5.96669 7.40659 5.71788 7.67316 5.71857 7.995ZM6.31771 11.0931C5.99979 11.1071 5.73716 10.8559 5.72265 10.534C5.72265 10.2122 5.97077 9.94633 6.28868 9.93164C6.59969 9.93094 6.8561 10.1758 6.86301 10.49C6.87753 10.8125 6.62872 11.0784 6.31771 11.0931ZM2.87109 8.02037C2.88491 8.34221 3.14823 8.59408 3.46615 8.57939C3.77716 8.56539 4.02528 8.29883 4.01076 7.97699C4.00385 7.66215 3.74813 7.41727 3.43643 7.41797C3.11851 7.43196 2.8704 7.69853 2.87109 8.02037ZM3.47006 11.097C3.15214 11.1117 2.88951 10.8598 2.87499 10.5379C2.8743 10.2161 3.12311 9.94954 3.44103 9.93555C3.75204 9.93485 4.00845 10.1797 4.01536 10.4946C4.02987 10.8164 3.78176 11.083 3.47006 11.097Z"
+                                            fill="#EE628F" fill-opacity="0.9" />
+                                    </svg>
+                                    <p class="date">01 May, 2022</p>
+                                </div>
+                                <p class="date ms-5 ps-2" style="color: #328090;">-</p>
+                            </td>
+
+                            <!-- Level1 notes with dates -->
+                            <td class="font-montserrat level1-notes">
+                                <div class="bell-badge">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.668 9.91602H12.8346V11.0827H1.16797V9.91602H2.33464V5.83268C2.33464 4.59501 2.8263 3.40802 3.70147 2.53285C4.57664 1.65768 5.76363 1.16602 7.0013 1.16602C8.23898 1.16602 9.42596 1.65768 10.3011 2.53285C11.1763 3.40802 11.668 4.59501 11.668 5.83268V9.91602ZM5.2513 12.2493H8.7513V13.416H5.2513V12.2493Z"
+                                            fill="#226AD6" />
+                                    </svg>
+                                    30 Jun, 2022
+                                </div>
+                                <div class="dropdown">
+                                    <button id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="true"
+                                        class="btn shadow-none text-start p-0">
+                                        <p class="details">13/04/22Prochain audit :Prévu pour fin JuinRecontacter le
+                                            client mi
+                                            juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                            sor........</p>
+                                    </button>
+                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+
+                                        <div class="dropbox">
+                                            <div class="top-arrow"></div>
+
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="title">Comments</h6>
+
+                                                <button class="btn p-0">
+                                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <ellipse opacity="0.15" cx="16.27" cy="15.77" rx="16.27"
+                                                            ry="15.77" fill="#EE628F" />
+                                                        <path opacity="0.8"
+                                                            d="M18.8609 19.9101L18.5857 20.1941C18.9468 20.5442 19.5265 20.5442 19.8877 20.1941C20.256 19.8372 20.256 19.2542 19.8877 18.8973C19.8877 18.8973 19.8877 18.8972 19.8876 18.8972L17.0164 16.1141L19.8876 13.3309C19.8877 13.3309 19.8877 13.3309 19.8877 13.3309C20.256 12.974 20.256 12.3909 19.8876 12.034C19.7061 11.8582 19.4697 11.7716 19.2367 11.7716C19.0037 11.7716 18.7672 11.8582 18.5857 12.0341L15.6964 14.8347L12.8072 12.0341L12.5298 12.3202L12.8072 12.0341C12.6257 11.8582 12.3891 11.7716 12.1561 11.7716C11.9232 11.7716 11.6865 11.8581 11.505 12.0342C11.1368 12.3911 11.1369 12.9741 11.5051 13.3309C11.5051 13.3309 11.5052 13.3309 11.5052 13.3309L14.3764 16.1141L11.5052 18.8972C11.5052 18.8972 11.5051 18.8973 11.5051 18.8973C11.1368 19.2542 11.1368 19.8372 11.5051 20.1941L18.8609 19.9101ZM18.8609 19.9101L18.5857 20.1941L15.6964 17.3935L12.8072 20.1941L12.8071 20.1941M18.8609 19.9101L12.8071 20.1941M12.8071 20.1941C12.4459 20.5441 11.8664 20.5442 11.5052 20.1941L12.8071 20.1941Z"
+                                                            fill="#ED5485" stroke="#ED5485" stroke-width="0.8" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="parabox">
+                                                <p class="paragraph">
+                                                    13/04/22Prochain audit :Prévu pour fin JuinRecontacter le client mi
+                                                    juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                                    sorties financières s.
+                                                    <br>
+                                                    <br>
+
+                                                    13/04/22Prochain audit :Prévu pour fin JuinRecontacter le client mi
+                                                    juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                                    sorties financières s......13/04/22Prochain audit :Prévu pour fin
+                                                    JuinRecontacter le client mi juinRé-upseller le client sur ses 6
+                                                    comptes
+                                                    car le client avait des sorties financières s......13/04/22Prochain
+                                                    audit :Prévu pour fin JuinRecontacter le client mi juinRé-upseller
+                                                    le
+                                                    client sur ses 6 comptes car le client avait des ..... <a href="#"
+                                                        class="load-more">Load More...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <!-- Status -->
+                            <td class="font-montserrat status">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle shadow-none" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <!-- Status Circle -->
+                                        <div class="status-circle bg-teal-10"></div>
+                                        <span>New</span>
+                                        <svg class="carte" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.42704 0.231507L4.66037 3.30747L7.8937 0.231507C7.97086 0.15811 8.06245 0.0998891 8.16325 0.0601672C8.26405 0.0204452 8.37209 7.73361e-10 8.4812 0C8.59031 -7.73357e-10 8.69835 0.0204452 8.79916 0.0601672C8.89996 0.0998891 8.99155 0.15811 9.0687 0.231507C9.14585 0.304903 9.20705 0.392038 9.24881 0.487935C9.29056 0.583833 9.31205 0.686615 9.31205 0.790413C9.31205 0.894212 9.29056 0.996994 9.24881 1.09289C9.20705 1.18879 9.14585 1.27592 9.0687 1.34932L5.2437 4.98816C5.16661 5.06165 5.07503 5.11996 4.97422 5.15974C4.87341 5.19952 4.76534 5.22 4.6562 5.22C4.54706 5.22 4.43899 5.19952 4.33818 5.15974C4.23737 5.11996 4.1458 5.06165 4.0687 4.98816L0.243703 1.34932C0.16645 1.27598 0.105161 1.18886 0.0633426 1.09296C0.0215248 0.997051 0 0.894242 0 0.790413C0 0.686585 0.0215248 0.583776 0.0633426 0.487871C0.105161 0.391966 0.16645 0.304849 0.243703 0.231507C0.568703 -0.0697477 1.10204 -0.0776755 1.42704 0.231507Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+
+                            <!-- LEAD OWNER -->
+                            <td class="leadOwner font-montserrat">Julien Wolff</td>
+
+                            <!-- HOT % -->
+                            <td class="hot font-montserrat">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>75%</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+
+                            <!-- AUDIT LINK -->
+                            <td class="auditLink font-montserrat">
+                                <a href="#"
+                                    class="">https://docs.google.com/documentd/1FCmK9wwVz4yLFMRDWRoMzgjE1Gw09ndBr84eE3eQZ8/edit#</a>
+                            </td>
+
+                            <!-- Remarketing start date -->
+                            <td class="remarketing font-montserrat">12 Jun, 2022</td>
+
+                            <!-- Audit STatus & theme -->
+                            <td class="auditStatus font-montserrat">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="form-check form-switch mb-3">
+                                        <label
+                                            class="form-check-label align-items-center d-flex flex-row-reverse justify-content-start"
+                                            for="flexSwitchCheckDefault">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <p class="details">Indpendant immobilier</p>
+                                </div>
+                            </td>
+
+                            <!-- Audit request date -->
+                            <td class="auditRequest font-montserrat">14 Jun, 2022</td>
+
+                            <!-- Budget -->
+                            <td class="budget font-montserrat">€ 100</td>
+
+                            <!-- Remarketing start date -->
+                            <td class="remarketing font-montserrat">Positive Respond</td>
+
+                            <!-- Mail status -->
+                            <td class="mailStatus font-montserrat">
+                                <div class="mailStatus-budge">
+                                    <div class="dot"></div>
+                                    Sequence started
+                                </div>
+                            </td>
+
+                            <!-- SEQUENCE date -->
+                            <td class="sequence-date font-montserrat">
+                                <p class="mb-3">Start date : 14 May, 2022</p>
+                                <p class="mb-0">End date : 25 May, 2022</p>
+                            </td>
+
+                            <!-- SMS STATUS -->
+                            <td class="smsStatus font-montserrat">
+                                <div class="smsStatus-budge">
+                                    <div class="dot"></div>
+                                    SMS#2 Sent
+                                </div>
+                                <p class="details">SMS Last sent : 26 Apr, 2022</p>
+                            </td>
+
+                            <!-- HOT % -->
+                            <td class="hot font-montserrat">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>75%</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+
+                            <!-- Audit STatus & theme -->
+                            <td class="auditStatus font-montserrat">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="form-check form-switch mb-3">
+                                        <label
+                                            class="form-check-label align-items-center d-flex flex-row-reverse justify-content-start"
+                                            for="flexSwitchCheckDefault">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <p class="details">Indpendant immobilier</p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row" class="bg-dark-10 font-gilroy-medium sticky-check">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                            </th>
+
+                            <!-- Personal Info -->
+                            <td class="bg-dark-10 font-gilroy-medium ">
+                                <div class="personal-info d-flex align-items-center">
+                                    <div class="d-flex flex-column justify-content-center align-items-center column1">
+                                        <button class="btn p-0 mb-4">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 6.99905C14.1217 6.99905 16.1566 7.8419 17.6569 9.34219C19.1571 10.8425 20 12.8773 20 14.999C20 17.1208 19.1571 19.1556 17.6569 20.6559C16.1566 22.1562 14.1217 22.999 12 22.999C9.87827 22.999 7.84344 22.1562 6.34315 20.6559C4.84285 19.1556 4 17.1208 4 14.999C4 12.8773 4.84285 10.8425 6.34315 9.34219C7.84344 7.8419 9.87827 6.99905 12 6.99905ZM12 10.499L10.677 13.179L7.72 13.609L9.86 15.694L9.355 18.64L12 17.249L14.645 18.639L14.14 15.694L16.28 13.608L13.323 13.178L12 10.499ZM13 1.99805L18 1.99905V4.99905L16.637 6.13705C15.5059 5.54363 14.2711 5.17388 13 5.04805V1.99905V1.99805ZM11 1.99805V5.04805C9.72935 5.17369 8.49482 5.5431 7.364 6.13605L6 4.99905V1.99905L11 1.99805Z"
+                                                    fill="#ED5485" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn p-0">
+                                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.08 11.1971C14.8347 11.4349 14.722 11.7788 14.7778 12.116L15.62 16.7768C15.691 17.1718 15.5243 17.5716 15.1937 17.7999C14.8697 18.0367 14.4387 18.0651 14.0854 17.8757L9.88975 15.6874C9.74386 15.6097 9.58187 15.568 9.4161 15.5633H9.15938C9.07033 15.5765 8.98318 15.605 8.9036 15.6485L4.70704 17.8472C4.49958 17.9514 4.26465 17.9884 4.03446 17.9514C3.47365 17.8453 3.09946 17.3111 3.19135 16.7474L4.03446 12.0867C4.09035 11.7466 3.97762 11.4008 3.73226 11.1593L0.311546 7.84369C0.0254596 7.56613 -0.0740075 7.14931 0.0567207 6.77323C0.18366 6.3981 0.507638 6.12433 0.898875 6.06275L5.60698 5.37975C5.96506 5.3428 6.27957 5.12492 6.44061 4.80284L8.51521 0.549437C8.56447 0.454706 8.62794 0.367554 8.70467 0.293665L8.78993 0.227353C8.83445 0.178093 8.8856 0.137359 8.94244 0.104204L9.0457 0.0663114L9.20674 0H9.60556C9.96174 0.0369449 10.2753 0.250089 10.4392 0.568383L12.5413 4.80284C12.6928 5.11261 12.9874 5.32764 13.3275 5.37975L18.0356 6.06275C18.4335 6.11959 18.766 6.39431 18.8977 6.77323C19.0218 7.1531 18.9147 7.56992 18.623 7.84369L15.08 11.1971Z"
+                                                    fill="#B3B3BF" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+
+                                    <!-- Option Buttons -->
+                                    <div class="me-5">
+                                        <h6 class="title text-nowrap">Myra Foster</h6>
+                                        <div class="row">
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M9.33333 6.66667H18V8H9.33333V6.66667ZM7.33333 6V8H8V8.66667H6V8H6.66667V6.66667H6V6H7.33333ZM6 13.3333V11.6667H7.33333V11.3333H6V10.6667H8V12.3333H6.66667V12.6667H8V13.3333H6ZM7.33333 17H6V16.3333H7.33333V16H6V15.3333H8V18H6V17.3333H7.33333V17ZM9.33333 11.3333H18V12.6667H9.33333V11.3333ZM9.33333 16H18V17.3333H9.33333V16Z"
+                                                            fill="#084279" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M6.0026 6H18.0026C18.1794 6 18.349 6.07024 18.474 6.19526C18.599 6.32029 18.6693 6.48986 18.6693 6.66667V17.3333C18.6693 17.5101 18.599 17.6797 18.474 17.8047C18.349 17.9298 18.1794 18 18.0026 18H6.0026C5.82579 18 5.65622 17.9298 5.5312 17.8047C5.40618 17.6797 5.33594 17.5101 5.33594 17.3333V6.66667C5.33594 6.48986 5.40618 6.32029 5.5312 6.19526C5.65622 6.07024 5.82579 6 6.0026 6ZM12.0426 11.7887L7.76794 8.15867L6.9046 9.17467L12.0513 13.5447L17.1053 9.17133L16.2333 8.16267L12.0433 11.7887H12.0426Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M18 14.9467V17.304C18.0001 17.4728 17.9361 17.6353 17.8211 17.7588C17.706 17.8823 17.5484 17.9575 17.38 17.9693C17.0887 17.9893 16.8507 18 16.6667 18C10.7753 18 6 13.2247 6 7.33333C6 7.14933 6.01 6.91133 6.03067 6.62C6.04248 6.45163 6.11772 6.29401 6.2412 6.17894C6.36468 6.06387 6.52722 5.99992 6.696 6H9.05333C9.13603 5.99992 9.2158 6.03057 9.27715 6.08601C9.33851 6.14145 9.37706 6.21772 9.38533 6.3C9.40067 6.45333 9.41467 6.57533 9.428 6.668C9.56049 7.59262 9.832 8.49189 10.2333 9.33533C10.2967 9.46867 10.2553 9.628 10.1353 9.71333L8.69667 10.7413C9.5763 12.791 11.2097 14.4244 13.2593 15.304L14.286 13.868C14.328 13.8093 14.3892 13.7673 14.459 13.7491C14.5288 13.7309 14.6028 13.7379 14.668 13.7687C15.5113 14.1692 16.4104 14.4401 17.3347 14.572C17.4273 14.5853 17.5493 14.6 17.7013 14.6147C17.7835 14.6231 17.8596 14.6617 17.9149 14.7231C17.9702 14.7844 18.0008 14.8641 18.0007 14.9467H18Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M17.9974 16.6667H19.3307V18H4.66406V16.6667H5.9974V6.66667C5.9974 6.48986 6.06763 6.32029 6.19266 6.19526C6.31768 6.07024 6.48725 6 6.66406 6H13.3307C13.5075 6 13.6771 6.07024 13.8021 6.19526C13.9272 6.32029 13.9974 6.48986 13.9974 6.66667V16.6667H15.3307V10H17.3307C17.5075 10 17.6771 10.0702 17.8021 10.1953C17.9272 10.3203 17.9974 10.4899 17.9974 10.6667V16.6667ZM8.66406 11.3333V12.6667H11.3307V11.3333H8.66406ZM8.66406 8.66667V10H11.3307V8.66667H8.66406Z"
+                                                            fill="#084279" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+
+                                                <div class="dropdown">
+                                                    <button id="dLabel" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="true" class="btn p-0">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="24" height="24" rx="4" fill="#084279"
+                                                                fill-opacity="0.05" />
+                                                            <path
+                                                                d="M16.0233 15.0787L18.8786 17.9333L17.9353 18.8766L15.0806 16.0213C14.0184 16.8728 12.6973 17.3359 11.3359 17.334C8.02394 17.334 5.33594 14.646 5.33594 11.334C5.33594 8.02198 8.02394 5.33398 11.3359 5.33398C14.6479 5.33398 17.3359 8.02198 17.3359 11.334C17.3379 12.6953 16.8748 14.0165 16.0233 15.0787ZM14.6859 14.584C15.532 13.7139 16.0045 12.5476 16.0026 11.334C16.0026 8.75532 13.9139 6.66732 11.3359 6.66732C8.75727 6.66732 6.66927 8.75532 6.66927 11.334C6.66927 13.912 8.75727 16.0007 11.3359 16.0007C12.5496 16.0026 13.7159 15.5301 14.5859 14.684L14.6859 14.584ZM12.1213 8.78465C11.9247 8.87345 11.7526 9.00862 11.6197 9.17855C11.4869 9.34849 11.3972 9.54812 11.3585 9.76032C11.3198 9.97252 11.3331 10.191 11.3973 10.3969C11.4616 10.6028 11.5748 10.79 11.7273 10.9426C11.8799 11.0951 12.0671 11.2083 12.273 11.2726C12.479 11.3368 12.6974 11.3502 12.9096 11.3114C13.1218 11.2727 13.3214 11.183 13.4914 11.0502C13.6613 10.9173 13.7965 10.7452 13.8853 10.5487C14.0605 11.1177 14.0402 11.7291 13.8276 12.2853C13.615 12.8415 13.2224 13.3105 12.7123 13.6177C12.2022 13.9249 11.604 14.0525 11.013 13.9802C10.4219 13.9079 9.87207 13.6399 9.45103 13.2189C9.02999 12.7979 8.76198 12.248 8.6897 11.657C8.61742 11.0659 8.74504 10.4677 9.05221 9.95761C9.35938 9.44752 9.82843 9.05491 10.3846 8.84233C10.9408 8.62976 11.5522 8.60945 12.1213 8.78465Z"
+                                                                fill="#084279" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+
+                                                        <div class="dropbox">
+                                                            <div class="top-arrow"></div>
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-SRC</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">Google</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-MEDIUM</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">Google</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-CAMPAIGN</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">3a_campaign</p>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-TERM</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">es_ad_3</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-CONTENT</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">google_spain</p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M10.4284 17.8258L16.5305 9.93463C16.8621 9.50908 16.98 9.0171 16.8695 8.51615C16.7737 8.06075 16.4936 7.62774 16.0736 7.29925L15.0492 6.4855C14.1575 5.77626 13.052 5.85092 12.4182 6.66467L11.7328 7.55383C11.6444 7.66507 11.6665 7.82931 11.777 7.9189C11.777 7.9189 13.5089 9.30751 13.5458 9.33737C13.6637 9.44936 13.7521 9.59867 13.7742 9.77785C13.8111 10.1287 13.5679 10.4572 13.2068 10.502C13.0373 10.5244 12.8751 10.4722 12.7572 10.3751L10.9369 8.92676C10.8485 8.86032 10.7158 8.8745 10.6421 8.96409L6.31609 14.5633C6.03604 14.9142 5.94024 15.3696 6.03604 15.8101L6.58877 18.2066C6.61825 18.3335 6.7288 18.4231 6.86145 18.4231L9.29345 18.3932C9.73563 18.3857 10.1483 18.1842 10.4284 17.8258ZM13.8305 17.0781H17.7961C18.183 17.0781 18.4977 17.3969 18.4977 17.7889C18.4977 18.1815 18.183 18.4996 17.7961 18.4996H13.8305C13.4436 18.4996 13.1289 18.1815 13.1289 17.7889C13.1289 17.3969 13.4436 17.0781 13.8305 17.0781Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+
+                            <!-- Call 1 &2 date -->
+                            <td class="callDate">
+                                <p class="date ms-5 ps-2 mb-4" style="color: #EE628F;">-</p>
+                                <div class="d-flex align-items-center">
+                                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.38762 0.538032L9.38831 1.06277C11.3166 1.21389 12.5903 2.52784 12.5924 4.54283L12.6 10.4409C12.6028 12.6378 11.2226 13.9895 9.01026 13.993L3.60632 14C1.40784 14.0028 0.0103716 12.6189 0.00760708 10.4157L4.65482e-06 4.5869C-0.00275986 2.55862 1.22607 1.24818 3.15432 1.07117L3.15363 0.546428C3.15294 0.238582 3.38101 0.00699808 3.68511 0.00699808C3.9892 0.00629843 4.21728 0.237183 4.21797 0.545029L4.21866 1.03478L8.32397 1.02919L8.32328 0.539431C8.32259 0.231586 8.55066 0.000701235 8.85476 1.58584e-06C9.15194 -0.000698064 9.38693 0.230186 9.38762 0.538032ZM1.06319 4.80387L11.5269 4.78988V4.545C11.4972 3.04075 10.7425 2.25155 9.38784 2.13401L9.38853 2.67274C9.38853 2.97359 9.15424 3.21217 8.85706 3.21217C8.55296 3.21287 8.3242 2.97499 8.3242 2.67414L8.3235 2.10742L4.21819 2.11302L4.21889 2.67903C4.21889 2.98058 3.9915 3.21846 3.68741 3.21846C3.38331 3.21916 3.15455 2.98198 3.15455 2.68043L3.15386 2.1417C1.80615 2.27673 1.06042 3.06874 1.0625 4.58628L1.06319 4.80387ZM8.5664 7.98419V7.99189C8.57331 8.31372 8.83594 8.5579 9.15455 8.55091C9.46556 8.54321 9.71368 8.27664 9.70676 7.9548C9.69225 7.64696 9.44275 7.39578 9.13244 7.39648C8.81452 7.40348 8.56571 7.66235 8.5664 7.98419ZM9.13765 11.1256C8.81973 11.1187 8.56332 10.8535 8.56263 10.5316C8.55572 10.2098 8.81075 9.94324 9.12867 9.93554H9.13558C9.46041 9.93554 9.72373 10.2007 9.72373 10.5295C9.72442 10.8584 9.46179 11.1249 9.13765 11.1256ZM5.71857 7.995C5.7324 8.31684 5.99572 8.56801 6.31364 8.55402C6.62464 8.53933 6.87276 8.27346 6.85894 7.95162C6.85134 7.63678 6.59562 7.3919 6.28461 7.3926C5.96669 7.40659 5.71788 7.67316 5.71857 7.995ZM6.31771 11.0931C5.99979 11.1071 5.73716 10.8559 5.72265 10.534C5.72265 10.2122 5.97077 9.94633 6.28868 9.93164C6.59969 9.93094 6.8561 10.1758 6.86301 10.49C6.87753 10.8125 6.62872 11.0784 6.31771 11.0931ZM2.87109 8.02037C2.88491 8.34221 3.14823 8.59408 3.46615 8.57939C3.77716 8.56539 4.02528 8.29883 4.01076 7.97699C4.00385 7.66215 3.74813 7.41727 3.43643 7.41797C3.11851 7.43196 2.8704 7.69853 2.87109 8.02037ZM3.47006 11.097C3.15214 11.1117 2.88951 10.8598 2.87499 10.5379C2.8743 10.2161 3.12311 9.94954 3.44103 9.93555C3.75204 9.93485 4.00845 10.1797 4.01536 10.4946C4.02987 10.8164 3.78176 11.083 3.47006 11.097Z"
+                                            fill="#328090" fill-opacity="0.9" />
+                                    </svg>
+                                    <p class="date">01 May, 2022</p>
+                                </div>
+                            </td>
+
+                            <!-- Level1 notes with dates -->
+                            <td class="font-montserrat level1-notes">
+                                <div class="bell-badge">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.668 9.91602H12.8346V11.0827H1.16797V9.91602H2.33464V5.83268C2.33464 4.59501 2.8263 3.40802 3.70147 2.53285C4.57664 1.65768 5.76363 1.16602 7.0013 1.16602C8.23898 1.16602 9.42596 1.65768 10.3011 2.53285C11.1763 3.40802 11.668 4.59501 11.668 5.83268V9.91602ZM5.2513 12.2493H8.7513V13.416H5.2513V12.2493Z"
+                                            fill="#226AD6" />
+                                    </svg>
+                                    30 Jun, 2022
+                                </div>
+                                <div class="dropdown">
+                                    <button id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="true"
+                                        class="btn shadow-none text-start p-0">
+                                        <p class="details">13/04/22Prochain audit :Prévu pour fin JuinRecontacter le
+                                            client mi
+                                            juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                            sor........</p>
+                                    </button>
+                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+
+                                        <div class="dropbox">
+                                            <div class="top-arrow"></div>
+
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="title">Comments</h6>
+
+                                                <button class="btn p-0">
+                                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <ellipse opacity="0.15" cx="16.27" cy="15.77" rx="16.27"
+                                                            ry="15.77" fill="#EE628F" />
+                                                        <path opacity="0.8"
+                                                            d="M18.8609 19.9101L18.5857 20.1941C18.9468 20.5442 19.5265 20.5442 19.8877 20.1941C20.256 19.8372 20.256 19.2542 19.8877 18.8973C19.8877 18.8973 19.8877 18.8972 19.8876 18.8972L17.0164 16.1141L19.8876 13.3309C19.8877 13.3309 19.8877 13.3309 19.8877 13.3309C20.256 12.974 20.256 12.3909 19.8876 12.034C19.7061 11.8582 19.4697 11.7716 19.2367 11.7716C19.0037 11.7716 18.7672 11.8582 18.5857 12.0341L15.6964 14.8347L12.8072 12.0341L12.5298 12.3202L12.8072 12.0341C12.6257 11.8582 12.3891 11.7716 12.1561 11.7716C11.9232 11.7716 11.6865 11.8581 11.505 12.0342C11.1368 12.3911 11.1369 12.9741 11.5051 13.3309C11.5051 13.3309 11.5052 13.3309 11.5052 13.3309L14.3764 16.1141L11.5052 18.8972C11.5052 18.8972 11.5051 18.8973 11.5051 18.8973C11.1368 19.2542 11.1368 19.8372 11.5051 20.1941L18.8609 19.9101ZM18.8609 19.9101L18.5857 20.1941L15.6964 17.3935L12.8072 20.1941L12.8071 20.1941M18.8609 19.9101L12.8071 20.1941M12.8071 20.1941C12.4459 20.5441 11.8664 20.5442 11.5052 20.1941L12.8071 20.1941Z"
+                                                            fill="#ED5485" stroke="#ED5485" stroke-width="0.8" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="parabox">
+                                                <p class="paragraph">
+                                                    13/04/22Prochain audit :Prévu pour fin JuinRecontacter le client mi
+                                                    juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                                    sorties financières s.
+                                                    <br>
+                                                    <br>
+
+                                                    13/04/22Prochain audit :Prévu pour fin JuinRecontacter le client mi
+                                                    juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                                    sorties financières s......13/04/22Prochain audit :Prévu pour fin
+                                                    JuinRecontacter le client mi juinRé-upseller le client sur ses 6
+                                                    comptes
+                                                    car le client avait des sorties financières s......13/04/22Prochain
+                                                    audit :Prévu pour fin JuinRecontacter le client mi juinRé-upseller
+                                                    le
+                                                    client sur ses 6 comptes car le client avait des ..... <a href="#"
+                                                        class="load-more">Load More...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <!-- Status -->
+                            <td class="font-montserrat status">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle shadow-none" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <!-- Status Circle -->
+                                        <div class="status-circle bg-purple-10"></div>
+                                        <span>Signed</span>
+                                        <svg class="carte" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.42704 0.231507L4.66037 3.30747L7.8937 0.231507C7.97086 0.15811 8.06245 0.0998891 8.16325 0.0601672C8.26405 0.0204452 8.37209 7.73361e-10 8.4812 0C8.59031 -7.73357e-10 8.69835 0.0204452 8.79916 0.0601672C8.89996 0.0998891 8.99155 0.15811 9.0687 0.231507C9.14585 0.304903 9.20705 0.392038 9.24881 0.487935C9.29056 0.583833 9.31205 0.686615 9.31205 0.790413C9.31205 0.894212 9.29056 0.996994 9.24881 1.09289C9.20705 1.18879 9.14585 1.27592 9.0687 1.34932L5.2437 4.98816C5.16661 5.06165 5.07503 5.11996 4.97422 5.15974C4.87341 5.19952 4.76534 5.22 4.6562 5.22C4.54706 5.22 4.43899 5.19952 4.33818 5.15974C4.23737 5.11996 4.1458 5.06165 4.0687 4.98816L0.243703 1.34932C0.16645 1.27598 0.105161 1.18886 0.0633426 1.09296C0.0215248 0.997051 0 0.894242 0 0.790413C0 0.686585 0.0215248 0.583776 0.0633426 0.487871C0.105161 0.391966 0.16645 0.304849 0.243703 0.231507C0.568703 -0.0697477 1.10204 -0.0776755 1.42704 0.231507Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+
+                            <!-- LEAD OWNER -->
+                            <td class="leadOwner font-montserrat">Julien Wolff</td>
+
+                            <!-- HOT % -->
+                            <td class="hot font-montserrat">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>75%</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+
+                            <!-- AUDIT LINK -->
+                            <td class="auditLink font-montserrat">
+                                <a href="#"
+                                    class="">https://docs.google.com/documentd/1FCmK9wwVz4yLFMRDWRoMzgjE1Gw09ndBr84eE3eQZ8/edit#</a>
+                            </td>
+
+                            <!-- Remarketing start date -->
+                            <td class="remarketing font-montserrat">12 Jun, 2022</td>
+
+                            <!-- Audit STatus & theme -->
+                            <td class="auditStatus font-montserrat">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="form-check form-switch mb-3">
+                                        <label
+                                            class="form-check-label align-items-center d-flex flex-row-reverse justify-content-start"
+                                            for="flexSwitchCheckDefault">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <p class="details">Indpendant immobilier</p>
+                                </div>
+                            </td>
+
+                            <!-- Audit request date -->
+                            <td class="auditRequest font-montserrat">14 Jun, 2022</td>
+
+                            <!-- Budget -->
+                            <td class="budget font-montserrat">€ 100</td>
+
+                            <!-- Remarketing start date -->
+                            <td class="remarketing font-montserrat">Positive Respond</td>
+
+                            <!-- Mail status -->
+                            <td class="mailStatus font-montserrat">
+                                <div class="mailStatus-budge">
+                                    <div class="dot"></div>
+                                    Sequence started
+                                </div>
+                            </td>
+
+                            <!-- SEQUENCE date -->
+                            <td class="sequence-date font-montserrat">
+                                <p class="mb-3">Start date : 14 May, 2022</p>
+                                <p class="mb-0">End date : 25 May, 2022</p>
+                            </td>
+
+                            <!-- SMS STATUS -->
+                            <td class="smsStatus font-montserrat">
+                                <div class="smsStatus-budge">
+                                    <div class="dot"></div>
+                                    SMS#2 Sent
+                                </div>
+                                <p class="details">SMS Last sent : 26 Apr, 2022</p>
+                            </td>
+
+                            <!-- HOT % -->
+                            <td class="hot font-montserrat">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>75%</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+
+                            <!-- Audit STatus & theme -->
+                            <td class="auditStatus font-montserrat">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="form-check form-switch mb-3">
+                                        <label
+                                            class="form-check-label align-items-center d-flex flex-row-reverse justify-content-start"
+                                            for="flexSwitchCheckDefault">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <p class="details">Indpendant immobilier</p>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row" class="bg-dark-10 font-gilroy-medium sticky-check">
+                                <input type="checkbox" name="" id="" class="form-check-input">
+                            </th>
+
+                            <!-- Personal Info -->
+                            <td class="bg-dark-10 font-gilroy-medium ">
+                                <div class="personal-info d-flex align-items-center">
+                                    <div class="d-flex flex-column justify-content-center align-items-center column1">
+                                        <button class="btn p-0 mb-4">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12 6.99905C14.1217 6.99905 16.1566 7.8419 17.6569 9.34219C19.1571 10.8425 20 12.8773 20 14.999C20 17.1208 19.1571 19.1556 17.6569 20.6559C16.1566 22.1562 14.1217 22.999 12 22.999C9.87827 22.999 7.84344 22.1562 6.34315 20.6559C4.84285 19.1556 4 17.1208 4 14.999C4 12.8773 4.84285 10.8425 6.34315 9.34219C7.84344 7.8419 9.87827 6.99905 12 6.99905ZM12 10.499L10.677 13.179L7.72 13.609L9.86 15.694L9.355 18.64L12 17.249L14.645 18.639L14.14 15.694L16.28 13.608L13.323 13.178L12 10.499ZM13 1.99805L18 1.99905V4.99905L16.637 6.13705C15.5059 5.54363 14.2711 5.17388 13 5.04805V1.99905V1.99805ZM11 1.99805V5.04805C9.72935 5.17369 8.49482 5.5431 7.364 6.13605L6 4.99905V1.99905L11 1.99805Z"
+                                                    fill="#31B997" />
+                                            </svg>
+                                        </button>
+                                        <button class="btn p-0">
+                                            <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.08 11.1971C14.8347 11.4349 14.722 11.7788 14.7778 12.116L15.62 16.7768C15.691 17.1718 15.5243 17.5716 15.1937 17.7999C14.8697 18.0367 14.4387 18.0651 14.0854 17.8757L9.88975 15.6874C9.74386 15.6097 9.58187 15.568 9.4161 15.5633H9.15938C9.07033 15.5765 8.98318 15.605 8.9036 15.6485L4.70704 17.8472C4.49958 17.9514 4.26465 17.9884 4.03446 17.9514C3.47365 17.8453 3.09946 17.3111 3.19135 16.7474L4.03446 12.0867C4.09035 11.7466 3.97762 11.4008 3.73226 11.1593L0.311546 7.84369C0.0254596 7.56613 -0.0740075 7.14931 0.0567207 6.77323C0.18366 6.3981 0.507638 6.12433 0.898875 6.06275L5.60698 5.37975C5.96506 5.3428 6.27957 5.12492 6.44061 4.80284L8.51521 0.549437C8.56447 0.454706 8.62794 0.367554 8.70467 0.293665L8.78993 0.227353C8.83445 0.178093 8.8856 0.137359 8.94244 0.104204L9.0457 0.0663114L9.20674 0H9.60556C9.96174 0.0369449 10.2753 0.250089 10.4392 0.568383L12.5413 4.80284C12.6928 5.11261 12.9874 5.32764 13.3275 5.37975L18.0356 6.06275C18.4335 6.11959 18.766 6.39431 18.8977 6.77323C19.0218 7.1531 18.9147 7.56992 18.623 7.84369L15.08 11.1971Z"
+                                                    fill="#FFD66B" />
+                                            </svg>
+
+                                        </button>
+                                    </div>
+
+                                    <!-- Option Buttons -->
+                                    <div class="me-5">
+                                        <h6 class="title text-nowrap">Myra Foster</h6>
+                                        <div class="row">
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M9.33333 6.66667H18V8H9.33333V6.66667ZM7.33333 6V8H8V8.66667H6V8H6.66667V6.66667H6V6H7.33333ZM6 13.3333V11.6667H7.33333V11.3333H6V10.6667H8V12.3333H6.66667V12.6667H8V13.3333H6ZM7.33333 17H6V16.3333H7.33333V16H6V15.3333H8V18H6V17.3333H7.33333V17ZM9.33333 11.3333H18V12.6667H9.33333V11.3333ZM9.33333 16H18V17.3333H9.33333V16Z"
+                                                            fill="#084279" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M6.0026 6H18.0026C18.1794 6 18.349 6.07024 18.474 6.19526C18.599 6.32029 18.6693 6.48986 18.6693 6.66667V17.3333C18.6693 17.5101 18.599 17.6797 18.474 17.8047C18.349 17.9298 18.1794 18 18.0026 18H6.0026C5.82579 18 5.65622 17.9298 5.5312 17.8047C5.40618 17.6797 5.33594 17.5101 5.33594 17.3333V6.66667C5.33594 6.48986 5.40618 6.32029 5.5312 6.19526C5.65622 6.07024 5.82579 6 6.0026 6ZM12.0426 11.7887L7.76794 8.15867L6.9046 9.17467L12.0513 13.5447L17.1053 9.17133L16.2333 8.16267L12.0433 11.7887H12.0426Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M18 14.9467V17.304C18.0001 17.4728 17.9361 17.6353 17.8211 17.7588C17.706 17.8823 17.5484 17.9575 17.38 17.9693C17.0887 17.9893 16.8507 18 16.6667 18C10.7753 18 6 13.2247 6 7.33333C6 7.14933 6.01 6.91133 6.03067 6.62C6.04248 6.45163 6.11772 6.29401 6.2412 6.17894C6.36468 6.06387 6.52722 5.99992 6.696 6H9.05333C9.13603 5.99992 9.2158 6.03057 9.27715 6.08601C9.33851 6.14145 9.37706 6.21772 9.38533 6.3C9.40067 6.45333 9.41467 6.57533 9.428 6.668C9.56049 7.59262 9.832 8.49189 10.2333 9.33533C10.2967 9.46867 10.2553 9.628 10.1353 9.71333L8.69667 10.7413C9.5763 12.791 11.2097 14.4244 13.2593 15.304L14.286 13.868C14.328 13.8093 14.3892 13.7673 14.459 13.7491C14.5288 13.7309 14.6028 13.7379 14.668 13.7687C15.5113 14.1692 16.4104 14.4401 17.3347 14.572C17.4273 14.5853 17.5493 14.6 17.7013 14.6147C17.7835 14.6231 17.8596 14.6617 17.9149 14.7231C17.9702 14.7844 18.0008 14.8641 18.0007 14.9467H18Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path
+                                                            d="M17.9974 16.6667H19.3307V18H4.66406V16.6667H5.9974V6.66667C5.9974 6.48986 6.06763 6.32029 6.19266 6.19526C6.31768 6.07024 6.48725 6 6.66406 6H13.3307C13.5075 6 13.6771 6.07024 13.8021 6.19526C13.9272 6.32029 13.9974 6.48986 13.9974 6.66667V16.6667H15.3307V10H17.3307C17.5075 10 17.6771 10.0702 17.8021 10.1953C17.9272 10.3203 17.9974 10.4899 17.9974 10.6667V16.6667ZM8.66406 11.3333V12.6667H11.3307V11.3333H8.66406ZM8.66406 8.66667V10H11.3307V8.66667H8.66406Z"
+                                                            fill="#084279" />
+                                                    </svg>
+
+                                                </button>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+
+                                                <div class="dropdown">
+                                                    <button id="dLabel" type="button" data-bs-toggle="dropdown"
+                                                        aria-expanded="true" class="btn p-0">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="24" height="24" rx="4" fill="#084279"
+                                                                fill-opacity="0.05" />
+                                                            <path
+                                                                d="M16.0233 15.0787L18.8786 17.9333L17.9353 18.8766L15.0806 16.0213C14.0184 16.8728 12.6973 17.3359 11.3359 17.334C8.02394 17.334 5.33594 14.646 5.33594 11.334C5.33594 8.02198 8.02394 5.33398 11.3359 5.33398C14.6479 5.33398 17.3359 8.02198 17.3359 11.334C17.3379 12.6953 16.8748 14.0165 16.0233 15.0787ZM14.6859 14.584C15.532 13.7139 16.0045 12.5476 16.0026 11.334C16.0026 8.75532 13.9139 6.66732 11.3359 6.66732C8.75727 6.66732 6.66927 8.75532 6.66927 11.334C6.66927 13.912 8.75727 16.0007 11.3359 16.0007C12.5496 16.0026 13.7159 15.5301 14.5859 14.684L14.6859 14.584ZM12.1213 8.78465C11.9247 8.87345 11.7526 9.00862 11.6197 9.17855C11.4869 9.34849 11.3972 9.54812 11.3585 9.76032C11.3198 9.97252 11.3331 10.191 11.3973 10.3969C11.4616 10.6028 11.5748 10.79 11.7273 10.9426C11.8799 11.0951 12.0671 11.2083 12.273 11.2726C12.479 11.3368 12.6974 11.3502 12.9096 11.3114C13.1218 11.2727 13.3214 11.183 13.4914 11.0502C13.6613 10.9173 13.7965 10.7452 13.8853 10.5487C14.0605 11.1177 14.0402 11.7291 13.8276 12.2853C13.615 12.8415 13.2224 13.3105 12.7123 13.6177C12.2022 13.9249 11.604 14.0525 11.013 13.9802C10.4219 13.9079 9.87207 13.6399 9.45103 13.2189C9.02999 12.7979 8.76198 12.248 8.6897 11.657C8.61742 11.0659 8.74504 10.4677 9.05221 9.95761C9.35938 9.44752 9.82843 9.05491 10.3846 8.84233C10.9408 8.62976 11.5522 8.60945 12.1213 8.78465Z"
+                                                                fill="#084279" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+
+                                                        <div class="dropbox">
+                                                            <div class="top-arrow"></div>
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-SRC</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">Google</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-MEDIUM</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">Google</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-CAMPAIGN</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">3a_campaign</p>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-TERM</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">es_ad_3</p>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row align-items-center">
+                                                                <div class="col-6 d-flex">
+                                                                    <p class="title">UTM-CONTENT</p>
+                                                                    <p class="colon ms-auto">:</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="detail">google_spain</p>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 mb-1">
+                                                <button class="btn p-0">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="24" height="24" rx="4" fill="#084279"
+                                                            fill-opacity="0.05" />
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                            d="M10.4284 17.8258L16.5305 9.93463C16.8621 9.50908 16.98 9.0171 16.8695 8.51615C16.7737 8.06075 16.4936 7.62774 16.0736 7.29925L15.0492 6.4855C14.1575 5.77626 13.052 5.85092 12.4182 6.66467L11.7328 7.55383C11.6444 7.66507 11.6665 7.82931 11.777 7.9189C11.777 7.9189 13.5089 9.30751 13.5458 9.33737C13.6637 9.44936 13.7521 9.59867 13.7742 9.77785C13.8111 10.1287 13.5679 10.4572 13.2068 10.502C13.0373 10.5244 12.8751 10.4722 12.7572 10.3751L10.9369 8.92676C10.8485 8.86032 10.7158 8.8745 10.6421 8.96409L6.31609 14.5633C6.03604 14.9142 5.94024 15.3696 6.03604 15.8101L6.58877 18.2066C6.61825 18.3335 6.7288 18.4231 6.86145 18.4231L9.29345 18.3932C9.73563 18.3857 10.1483 18.1842 10.4284 17.8258ZM13.8305 17.0781H17.7961C18.183 17.0781 18.4977 17.3969 18.4977 17.7889C18.4977 18.1815 18.183 18.4996 17.7961 18.4996H13.8305C13.4436 18.4996 13.1289 18.1815 13.1289 17.7889C13.1289 17.3969 13.4436 17.0781 13.8305 17.0781Z"
+                                                            fill="#084279" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+
+                            <!-- Call 1 &2 date -->
+                            <td class="callDate">
+                                <p class="date ms-5 ps-2 mb-4" style="color: #328090;">-</p>
+                                <p class="date ms-5 ps-2" style="color: #EE628F;">-</p>
+                            </td>
+
+                            <!-- Level1 notes with dates -->
+                            <td class="font-montserrat level1-notes">
+                                <div class="bell-badge">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.668 9.91602H12.8346V11.0827H1.16797V9.91602H2.33464V5.83268C2.33464 4.59501 2.8263 3.40802 3.70147 2.53285C4.57664 1.65768 5.76363 1.16602 7.0013 1.16602C8.23898 1.16602 9.42596 1.65768 10.3011 2.53285C11.1763 3.40802 11.668 4.59501 11.668 5.83268V9.91602ZM5.2513 12.2493H8.7513V13.416H5.2513V12.2493Z"
+                                            fill="#226AD6" />
+                                    </svg>
+                                    30 Jun, 2022
+                                </div>
+                                <div class="dropdown">
+                                    <button id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="true"
+                                        class="btn shadow-none text-start p-0">
+                                        <p class="details">13/04/22Prochain audit :Prévu pour fin JuinRecontacter le
+                                            client mi
+                                            juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                            sor........</p>
+                                    </button>
+                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+
+                                        <div class="dropbox">
+                                            <div class="top-arrow"></div>
+
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="title">Comments</h6>
+
+                                                <button class="btn p-0">
+                                                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <ellipse opacity="0.15" cx="16.27" cy="15.77" rx="16.27"
+                                                            ry="15.77" fill="#EE628F" />
+                                                        <path opacity="0.8"
+                                                            d="M18.8609 19.9101L18.5857 20.1941C18.9468 20.5442 19.5265 20.5442 19.8877 20.1941C20.256 19.8372 20.256 19.2542 19.8877 18.8973C19.8877 18.8973 19.8877 18.8972 19.8876 18.8972L17.0164 16.1141L19.8876 13.3309C19.8877 13.3309 19.8877 13.3309 19.8877 13.3309C20.256 12.974 20.256 12.3909 19.8876 12.034C19.7061 11.8582 19.4697 11.7716 19.2367 11.7716C19.0037 11.7716 18.7672 11.8582 18.5857 12.0341L15.6964 14.8347L12.8072 12.0341L12.5298 12.3202L12.8072 12.0341C12.6257 11.8582 12.3891 11.7716 12.1561 11.7716C11.9232 11.7716 11.6865 11.8581 11.505 12.0342C11.1368 12.3911 11.1369 12.9741 11.5051 13.3309C11.5051 13.3309 11.5052 13.3309 11.5052 13.3309L14.3764 16.1141L11.5052 18.8972C11.5052 18.8972 11.5051 18.8973 11.5051 18.8973C11.1368 19.2542 11.1368 19.8372 11.5051 20.1941L18.8609 19.9101ZM18.8609 19.9101L18.5857 20.1941L15.6964 17.3935L12.8072 20.1941L12.8071 20.1941M18.8609 19.9101L12.8071 20.1941M12.8071 20.1941C12.4459 20.5441 11.8664 20.5442 11.5052 20.1941L12.8071 20.1941Z"
+                                                            fill="#ED5485" stroke="#ED5485" stroke-width="0.8" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <div class="parabox">
+                                                <p class="paragraph">
+                                                    13/04/22Prochain audit :Prévu pour fin JuinRecontacter le client mi
+                                                    juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                                    sorties financières s.
+                                                    <br>
+                                                    <br>
+
+                                                    13/04/22Prochain audit :Prévu pour fin JuinRecontacter le client mi
+                                                    juinRé-upseller le client sur ses 6 comptes car le client avait des
+                                                    sorties financières s......13/04/22Prochain audit :Prévu pour fin
+                                                    JuinRecontacter le client mi juinRé-upseller le client sur ses 6
+                                                    comptes
+                                                    car le client avait des sorties financières s......13/04/22Prochain
+                                                    audit :Prévu pour fin JuinRecontacter le client mi juinRé-upseller
+                                                    le
+                                                    client sur ses 6 comptes car le client avait des ..... <a href="#"
+                                                        class="load-more">Load More...</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <!-- Status -->
+                            <td class="font-montserrat status">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle shadow-none" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <!-- Status Circle -->
+                                        <div class="status-circle bg-blue-20"></div>
+                                        <span>No Show</span>
+                                        <svg class="carte" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M1.42704 0.231507L4.66037 3.30747L7.8937 0.231507C7.97086 0.15811 8.06245 0.0998891 8.16325 0.0601672C8.26405 0.0204452 8.37209 7.73361e-10 8.4812 0C8.59031 -7.73357e-10 8.69835 0.0204452 8.79916 0.0601672C8.89996 0.0998891 8.99155 0.15811 9.0687 0.231507C9.14585 0.304903 9.20705 0.392038 9.24881 0.487935C9.29056 0.583833 9.31205 0.686615 9.31205 0.790413C9.31205 0.894212 9.29056 0.996994 9.24881 1.09289C9.20705 1.18879 9.14585 1.27592 9.0687 1.34932L5.2437 4.98816C5.16661 5.06165 5.07503 5.11996 4.97422 5.15974C4.87341 5.19952 4.76534 5.22 4.6562 5.22C4.54706 5.22 4.43899 5.19952 4.33818 5.15974C4.23737 5.11996 4.1458 5.06165 4.0687 4.98816L0.243703 1.34932C0.16645 1.27598 0.105161 1.18886 0.0633426 1.09296C0.0215248 0.997051 0 0.894242 0 0.790413C0 0.686585 0.0215248 0.583776 0.0633426 0.487871C0.105161 0.391966 0.16645 0.304849 0.243703 0.231507C0.568703 -0.0697477 1.10204 -0.0776755 1.42704 0.231507Z"
+                                                fill="black" />
+                                        </svg>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+
+                            <!-- LEAD OWNER -->
+                            <td class="leadOwner font-montserrat">Julien Wolff</td>
+
+                            <!-- HOT % -->
+                            <td class="hot font-montserrat">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>75%</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+
+                            <!-- AUDIT LINK -->
+                            <td class="auditLink font-montserrat">
+                                <a href="#"
+                                    class="">https://docs.google.com/documentd/1FCmK9wwVz4yLFMRDWRoMzgjE1Gw09ndBr84eE3eQZ8/edit#</a>
+                            </td>
+
+                            <!-- Remarketing start date -->
+                            <td class="remarketing font-montserrat">12 Jun, 2022</td>
+
+                            <!-- Audit STatus & theme -->
+                            <td class="auditStatus font-montserrat">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="form-check form-switch mb-3">
+                                        <label
+                                            class="form-check-label align-items-center d-flex flex-row-reverse justify-content-start"
+                                            for="flexSwitchCheckDefault">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <p class="details">Indpendant immobilier</p>
+                                </div>
+                            </td>
+
+                            <!-- Audit request date -->
+                            <td class="auditRequest font-montserrat">14 Jun, 2022</td>
+
+                            <!-- Budget -->
+                            <td class="budget font-montserrat">€ 100</td>
+
+                            <!-- Remarketing start date -->
+                            <td class="remarketing font-montserrat">Positive Respond</td>
+
+                            <!-- Mail status -->
+                            <td class="mailStatus font-montserrat">
+                                <div class="mailStatus-budge">
+                                    <div class="dot"></div>
+                                    Sequence started
+                                </div>
+                            </td>
+
+                            <!-- SEQUENCE date -->
+                            <td class="sequence-date font-montserrat">
+                                <p class="mb-3">Start date : 14 May, 2022</p>
+                                <p class="mb-0">End date : 25 May, 2022</p>
+                            </td>
+
+                            <!-- SMS STATUS -->
+                            <td class="smsStatus font-montserrat">
+                                <div class="smsStatus-budge">
+                                    <div class="dot"></div>
+                                    SMS#2 Sent
+                                </div>
+                                <p class="details">SMS Last sent : 26 Apr, 2022</p>
+                            </td>
+
+                            <!-- HOT % -->
+                            <td class="hot font-montserrat">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>75%</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </td>
+
+                            <!-- Audit STatus & theme -->
+                            <td class="auditStatus font-montserrat">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="form-check form-switch mb-3">
+                                        <label
+                                            class="form-check-label align-items-center d-flex flex-row-reverse justify-content-start"
+                                            for="flexSwitchCheckDefault">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                    <p class="details">Indpendant immobilier</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Table End -->
+
+
+            <!-- Table page-controller Start -->
+            <div class="d-flex flex-xl-row flex-column align-items-center page-controller">
+                <nav class="w-100" aria-label="Page navigation example">
+                    <ul class="pagination align-items-center w-100">
+                        <li class="page-item me-auto">
+                            <a class="page-link">
+                                <svg class="me-md-2" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.8327 9.99935H4.16602M4.16602 9.99935L9.99935 15.8327M4.16602 9.99935L9.99935 4.16602"
+                                        stroke="#344054" stroke-width="1.67" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <span class="d-none d-md-inline">Précédent</span></a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item d-none d-md-inline"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item d-none d-md-inline"><a class="page-link" href="#">8</a></li>
+                        <li class="page-item"><a class="page-link" href="#">9</a></li>
+                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                        <li class="page-item ms-auto">
+                            <a class="page-link" href="#">
+                                <span class="d-none d-md-inline">Suivant</span>
+                                <svg class="ms-md-2" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.16602 9.99935H15.8327M15.8327 9.99935L9.99935 4.16602M15.8327 9.99935L9.99935 15.8327"
+                                        stroke="#344054" stroke-width="1.67" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Table page-controller End -->
+
+
+
+
 
         </div>
         <!-- Table area End -->
