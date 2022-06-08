@@ -22,41 +22,30 @@
             <div class="d-flex flex-column align-items-center align-items-lg-stretch">
                 <div class="navbar-top w-100">
                     <div class="container-fluid d-flex align-items-center justify-content-between">
-                        <a href="#" class="navbar-brand d-none d-md-inline-block">
-                            <img src="./assets/images/logo-1.png" alt="" class="logo">
-                        </a>
-
-                        <button class="btn p-0 d-md-none navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="white" />
-                            </svg>
-                        </button>
+                        <div class="d-flex align-items-center">
+                            <button class="btn p-0 d-lg-none navbar-toggler mb-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="white" />
+                                </svg>
+                            </button>
+                            <a href="#" class="navbar-brand">
+                                <img src="./assets/images/logo-1.png" alt="" class="logo">
+                            </a>
+                        </div>
 
                         <ul class="nav d-flex flex-nowrap align-items-center justify-content-end">
                             <li class="nav-item dropdown me-3 me-lg-2 me-xl-3 me-xxl-4">
-                                <a class="nav-link dropdown-toggle language align-items-center text-white" href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-
-                                    <span class="mb-0 me-1">FR</span>
-
-                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
-                                            fill="white" />
-                                    </svg>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                                <div class="language-select">
+                                    <select class="mission-cms-translation-btn text-white">
+                                        <option value="en">EN</option>
+                                        <option value="fr">FR</option>
+                                        <option value="es">ES</option>
+                                    </select>
+                                </div>
                             </li>
 
                             <li class="nav-item d-flex align-items-center me-2 me-lg-2 me-xl-3 me-xxl-4">
@@ -106,56 +95,17 @@
                 <div class="container-fluid d-flex align-items-center justify-content-lg-between justify-content-end">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav d-flex flex-column flex-lg-row menus py-lg-3">
-                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
-                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="menu-icon" viewBox="0 0 24 25" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#a)">
-                                            <path
-                                                d="M3 13.101h8V3.023H3v10.078Zm0 8.062h8v-6.046H3v6.046Zm10 0h8V11.085h-8v10.078Zm0-18.14V9.07h8V3.023h-8Z"
-                                                fill="#fff" />
-                                            <path d="M11 21.163H3v-6.046h8v6.046ZM13 9.07V3.023h8V9.07h-8Z"
-                                                fill="#51CBFF" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="a">
-                                                <path fill="#fff" d="M0 0h24v24.186H0z" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link  align-items-center text-white" href="#">
+                                    <img src="./assets/images/dashboard-fill.svg" alt="" class="menu-icon">
                                     <span class="mb-0">Dashboard</span>
-
-                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
-                                            fill="white" />
-                                    </svg>
-
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
                             </li>
 
-                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
                                 <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M14 14.252V16.342C13.0949 16.022 12.1263 15.9239 11.1754 16.0558C10.2245 16.1877 9.3192 16.5459 8.53543 17.1002C7.75166 17.6545 7.11234 18.3888 6.67116 19.2414C6.22998 20.094 5.99982 21.04 6 22L4 21.999C3.99969 20.7779 4.27892 19.5729 4.8163 18.4764C5.35368 17.3799 6.13494 16.4209 7.10022 15.673C8.0655 14.9251 9.18918 14.4081 10.3852 14.1616C11.5811 13.9152 12.8177 13.9467 14 14.252ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13ZM12 11C14.21 11 16 9.21 16 7C16 4.79 14.21 3 12 3C9.79 3 8 4.79 8 7C8 9.21 9.79 11 12 11ZM17.793 19.914L21.328 16.379L22.743 17.793L17.793 22.743L14.257 19.207L15.672 17.793L17.793 19.914Z"
-                                            fill="white" />
-                                        <path
-                                            d="M17.7938 19.9139L21.3288 16.3789L22.7438 17.7929L17.7938 22.7429L14.2578 19.2069L15.6728 17.7929L17.7938 19.9139Z"
-                                            fill="#51CBFF" />
-                                    </svg>
+                                    <img src="./assets/images/user-follow-line.svg" alt="" class="menu-icon">
 
                                     <span class="mb-0">Usagers</span>
 
@@ -168,29 +118,20 @@
 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Client</a></li>
+                                    <li><a class="dropdown-item" href="#">Client - Juliedesk</a></li>
+                                    <li><a class="dropdown-item" href="#">City-makers</a></li>
+                                    <li><a class="dropdown-item" href="#">Travellers</a></li>
                                 </ul>
                             </li>
 
 
-                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
                                 <a class="nav-link active dropdown-toggle align-items-center text-white" href="#"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M21 3C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21ZM20 5H4V19H20V5ZM18 7V9H6V7H18Z"
-                                            fill="white" />
-                                        <rect x="6" y="7" width="12" height="2" fill="#51CBFF" />
-                                    </svg>
+                                    <img src="./assets/images/Cards.svg" alt="" class="menu-icon">
 
-
-                                    <span class="mb-0">Workspace</span>
+                                    <span class="mb-0">Cards</span>
 
                                     <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -201,30 +142,21 @@
 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Projet d'ajout de fiches</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets de cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Ajout de la carte</a></li>
+                                    <li><a class="dropdown-item" href="#">Cards à valider</a></li>
+                                    <li><a class="dropdown-item" href="#">Modèles de cards</a></li>
                                 </ul>
                             </li>
 
 
-                            <li class="nav-item dropdown me-xl-2 mb-4 mb-lg-0">
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
                                 <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
                                     id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2 18H9V20H2V18ZM2 11H11V13H2V11ZM2 4H22V6H2V4ZM20.674 13.025L21.83 12.634L22.83 14.366L21.914 15.171C22.0293 15.7177 22.0293 16.2823 21.914 16.829L22.83 17.634L21.83 19.366L20.674 18.975C20.264 19.345 19.776 19.63 19.239 19.805L19 21H17L16.76 19.804C16.2293 19.6306 15.7408 19.3478 15.326 18.974L14.17 19.366L13.17 17.634L14.086 16.829C13.9707 16.2823 13.9707 15.7177 14.086 15.171L13.17 14.366L14.17 12.634L15.326 13.025C15.736 12.655 16.224 12.37 16.761 12.195L17 11H19L19.24 12.196C19.776 12.37 20.264 12.656 20.674 13.026V13.025ZM18 17C18.2652 17 18.5196 16.8946 18.7071 16.7071C18.8946 16.5196 19 16.2652 19 16C19 15.7348 18.8946 15.4804 18.7071 15.2929C18.5196 15.1054 18.2652 15 18 15C17.7348 15 17.4804 15.1054 17.2929 15.2929C17.1054 15.4804 17 15.7348 17 16C17 16.2652 17.1054 16.5196 17.2929 16.7071C17.4804 16.8946 17.7348 17 18 17Z"
-                                            fill="white" />
-                                        <path
-                                            d="M20.504 13.025L21.66 12.634L22.66 14.366L21.744 15.171C21.8593 15.7177 21.8593 16.2823 21.744 16.829L22.66 17.634L21.66 19.366L20.504 18.975C20.094 19.345 19.606 19.63 19.069 19.805L18.83 21H16.83L16.59 19.804C16.0593 19.6306 15.5708 19.3478 15.156 18.974L14 19.366L13 17.634L13.916 16.829C13.8007 16.2823 13.8007 15.7177 13.916 15.171L13 14.366L14 12.634L15.156 13.025C15.566 12.655 16.054 12.37 16.591 12.195L16.83 11H18.83L19.07 12.196C19.606 12.37 20.094 12.656 20.504 13.026V13.025ZM17.83 17C18.0952 17 18.3496 16.8946 18.5371 16.7071C18.7246 16.5196 18.83 16.2652 18.83 16C18.83 15.7348 18.7246 15.4804 18.5371 15.2929C18.3496 15.1054 18.0952 15 17.83 15C17.5648 15 17.3104 15.1054 17.1229 15.2929C16.9354 15.4804 16.83 15.7348 16.83 16C16.83 16.2652 16.9354 16.5196 17.1229 16.7071C17.3104 16.8946 17.5648 17 17.83 17Z"
-                                            fill="#51CBFF" />
-                                    </svg>
+                                    <img src="./assets/images/Posts.svg" alt="" class="menu-icon">
 
-                                    <span class="mb-0">Usagers</span>
+                                    <span class="mb-0">Posts</span>
 
                                     <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -235,16 +167,108 @@
 
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <a href="#" class="dropdown-item">Ajouter Post</a>
+                                    <a href="#" class="dropdown-item">Modèles de posts</a>
+                                    <a href="#" class="dropdown-item">Projets de posts</a>
+                                    <a href="#" class="dropdown-item">Posts envoyés</a>
+                                    <a href="#" class="dropdown-item">Posts
+                                        validés</a>
                                 </ul>
                             </li>
 
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/AUdit.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Audit</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Audit</a>
+                                    <a href="#" class="dropdown-item">Default Audit</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/Missions.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Missions</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Pixcity Mission
+                                        List</a>
+                                    <a class="dropdown-item" href="#">Juliedesk Mission
+                                        List</a>
+                                    <a class="dropdown-item" href="#">Devis Clients</a>
+                                    <a class="dropdown-item" href="#">Ad Statistics</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/bank-card-line.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Payments</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Transactions</a>
+                                    <a class="dropdown-item" href="#">Facture Service</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/General.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">General</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Pages</a>
+                                    <a class="dropdown-item" href="#">Email Template Config</a>
+                                </ul>
+                            </li>
+
+
                         </ul>
+
+
+
                     </div>
                 </div>
             </div>
@@ -339,56 +363,60 @@
             <!-- Checkbox option Area Start -->
             <div class="d-sm-flex align-items-start checkboxs">
                 <!-- Check Btns -->
-                <div class="d-flex flex-wrap">
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="hot">
-                        <label for="hot" class="form-check-label">Hot%</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="Remarketing">
-                        <label for="Remarketing" class="form-check-label">Remarketing start Date</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="status">
-                        <label for="status" class="form-check-label">Remarketing status</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="Audit">
-                        <label for="Audit" class="form-check-label">Audit status & Theme</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="Audit Link">
-                        <label for="Audit Link" class="form-check-label">Audit Link</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="Audit Request Date">
-                        <label for="Audit Request Date" class="form-check-label">Audit Request Date</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="SMS Status">
-                        <label for="SMS Status" class="form-check-label">SMS Status</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="Mail status">
-                        <label for="Mail status" class="form-check-label">Mail status</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="Sequence start & End date">
-                        <label for="Sequence start & End date" class="form-check-label">Sequence start & End
-                            date</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="Last SMS Sent Date">
-                        <label for="Last SMS Sent Date" class="form-check-label">Last SMS Sent Date</label>
-                    </div>
-                    <div class="check-btn">
-                        <input type="checkbox" class="form-check-input" name="" id="Budget">
-                        <label for="Budget" class="form-check-label">Budget</label>
+                <div class="w-100">
+                    <div id="filterCheckBoxs">
+                        <div class="d-flex flex-wrap">
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="hot">
+                                <label for="hot" class="form-check-label">Hot%</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="Remarketing">
+                                <label for="Remarketing" class="form-check-label">Remarketing start Date</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="status">
+                                <label for="status" class="form-check-label">Remarketing status</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="Audit">
+                                <label for="Audit" class="form-check-label">Audit status & Theme</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="Audit Link">
+                                <label for="Audit Link" class="form-check-label">Audit Link</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="Audit Request Date">
+                                <label for="Audit Request Date" class="form-check-label">Audit Request Date</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="SMS Status">
+                                <label for="SMS Status" class="form-check-label">SMS Status</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="Mail status">
+                                <label for="Mail status" class="form-check-label">Mail status</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="Sequence start & End date">
+                                <label for="Sequence start & End date" class="form-check-label">Sequence start & End
+                                    date</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="Last SMS Sent Date">
+                                <label for="Last SMS Sent Date" class="form-check-label">Last SMS Sent Date</label>
+                            </div>
+                            <div class="check-btn">
+                                <input type="checkbox" class="form-check-input" name="" id="Budget">
+                                <label for="Budget" class="form-check-label">Budget</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Hide Show Btn -->
-                <button class="btn btn-hideShow">Hide/Show</button>
+
+                <button class="btn btn-hideShow" id="showHide">Hide/Show</button>
             </div>
             <!-- Checkbox option Area End -->
         </div>
@@ -884,7 +912,7 @@
                                     <!-- Option Buttons -->
                                     <div class="me-5">
                                         <h6 class="title text-nowrap">Myra Foster</h6>
-                                        <div class="row">
+                                        <div class="row btn-group">
                                             <div class="col-4 mb-1">
                                                 <button class="btn p-0">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1065,14 +1093,15 @@
                                     30 Jun, 2022
                                 </div>
                                 <div class="dropdown">
-                                    <button id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="true"
-                                        class="btn shadow-none text-start p-0">
+                                    <button type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="false" aria-expanded="false"
+                                        class="btn shadow-none text-start p-0 ">
                                         <p class="details">13/04/22Prochain audit :Prévu pour fin JuinRecontacter le
                                             client mi
                                             juinRé-upseller le client sur ses 6 comptes car le client avait des
                                             sor........</p>
                                     </button>
-                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dropdownMenuClickable">
 
                                         <div class="dropbox">
                                             <div class="top-arrow"></div>
@@ -1080,7 +1109,7 @@
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <h6 class="title">Comments</h6>
 
-                                                <button class="btn p-0">
+                                                <button class="btn p-0 btnClose" id="close">
                                                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <ellipse opacity="0.15" cx="16.27" cy="15.77" rx="16.27"
@@ -1108,8 +1137,7 @@
                                                     car le client avait des sorties financières s......13/04/22Prochain
                                                     audit :Prévu pour fin JuinRecontacter le client mi juinRé-upseller
                                                     le
-                                                    client sur ses 6 comptes car le client avait des ..... <a href="#"
-                                                        class="load-more">Load More...</a>
+                                                    client sur ses 6 comptes car le client avait des .....
                                                 </p>
                                             </div>
                                         </div>
@@ -1119,24 +1147,14 @@
 
                             <!-- Status -->
                             <td class="font-montserrat status">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle shadow-none" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <!-- Status Circle -->
-                                        <div class="status-circle bg-red-10"></div>
-                                        <span>Super Hot</span>
-                                        <svg class="carte" width="10" height="6" viewBox="0 0 10 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.42704 0.231507L4.66037 3.30747L7.8937 0.231507C7.97086 0.15811 8.06245 0.0998891 8.16325 0.0601672C8.26405 0.0204452 8.37209 7.73361e-10 8.4812 0C8.59031 -7.73357e-10 8.69835 0.0204452 8.79916 0.0601672C8.89996 0.0998891 8.99155 0.15811 9.0687 0.231507C9.14585 0.304903 9.20705 0.392038 9.24881 0.487935C9.29056 0.583833 9.31205 0.686615 9.31205 0.790413C9.31205 0.894212 9.29056 0.996994 9.24881 1.09289C9.20705 1.18879 9.14585 1.27592 9.0687 1.34932L5.2437 4.98816C5.16661 5.06165 5.07503 5.11996 4.97422 5.15974C4.87341 5.19952 4.76534 5.22 4.6562 5.22C4.54706 5.22 4.43899 5.19952 4.33818 5.15974C4.23737 5.11996 4.1458 5.06165 4.0687 4.98816L0.243703 1.34932C0.16645 1.27598 0.105161 1.18886 0.0633426 1.09296C0.0215248 0.997051 0 0.894242 0 0.790413C0 0.686585 0.0215248 0.583776 0.0633426 0.487871C0.105161 0.391966 0.16645 0.304849 0.243703 0.231507C0.568703 -0.0697477 1.10204 -0.0776755 1.42704 0.231507Z"
-                                                fill="black" />
-                                        </svg>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center status-select">
+                                    <div class="dot-icon bg-red-10"></div>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Super Hot</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                             </td>
 
@@ -1188,7 +1206,7 @@
 
                             <!-- Mail status -->
                             <td class="mailStatus font-montserrat">
-                                <div class="mailStatus-budge">
+                                <div class="mailStatus-budge-success">
                                     <div class="dot"></div>
                                     Sequence started
                                 </div>
@@ -1265,8 +1283,8 @@
 
                                     <!-- Option Buttons -->
                                     <div class="me-5">
-                                        <h6 class="title text-nowrap">Myra Foster</h6>
-                                        <div class="row">
+                                        <h6 class="title text-nowrap">Sweden</h6>
+                                        <div class="row btn-group">
                                             <div class="col-4 mb-1">
                                                 <button class="btn p-0">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1420,7 +1438,7 @@
                                             d="M9.38762 0.538032L9.38831 1.06277C11.3166 1.21389 12.5903 2.52784 12.5924 4.54283L12.6 10.4409C12.6028 12.6378 11.2226 13.9895 9.01026 13.993L3.60632 14C1.40784 14.0028 0.0103716 12.6189 0.00760708 10.4157L4.65482e-06 4.5869C-0.00275986 2.55862 1.22607 1.24818 3.15432 1.07117L3.15363 0.546428C3.15294 0.238582 3.38101 0.00699808 3.68511 0.00699808C3.9892 0.00629843 4.21728 0.237183 4.21797 0.545029L4.21866 1.03478L8.32397 1.02919L8.32328 0.539431C8.32259 0.231586 8.55066 0.000701235 8.85476 1.58584e-06C9.15194 -0.000698064 9.38693 0.230186 9.38762 0.538032ZM1.06319 4.80387L11.5269 4.78988V4.545C11.4972 3.04075 10.7425 2.25155 9.38784 2.13401L9.38853 2.67274C9.38853 2.97359 9.15424 3.21217 8.85706 3.21217C8.55296 3.21287 8.3242 2.97499 8.3242 2.67414L8.3235 2.10742L4.21819 2.11302L4.21889 2.67903C4.21889 2.98058 3.9915 3.21846 3.68741 3.21846C3.38331 3.21916 3.15455 2.98198 3.15455 2.68043L3.15386 2.1417C1.80615 2.27673 1.06042 3.06874 1.0625 4.58628L1.06319 4.80387ZM8.5664 7.98419V7.99189C8.57331 8.31372 8.83594 8.5579 9.15455 8.55091C9.46556 8.54321 9.71368 8.27664 9.70676 7.9548C9.69225 7.64696 9.44275 7.39578 9.13244 7.39648C8.81452 7.40348 8.56571 7.66235 8.5664 7.98419ZM9.13765 11.1256C8.81973 11.1187 8.56332 10.8535 8.56263 10.5316C8.55572 10.2098 8.81075 9.94324 9.12867 9.93554H9.13558C9.46041 9.93554 9.72373 10.2007 9.72373 10.5295C9.72442 10.8584 9.46179 11.1249 9.13765 11.1256ZM5.71857 7.995C5.7324 8.31684 5.99572 8.56801 6.31364 8.55402C6.62464 8.53933 6.87276 8.27346 6.85894 7.95162C6.85134 7.63678 6.59562 7.3919 6.28461 7.3926C5.96669 7.40659 5.71788 7.67316 5.71857 7.995ZM6.31771 11.0931C5.99979 11.1071 5.73716 10.8559 5.72265 10.534C5.72265 10.2122 5.97077 9.94633 6.28868 9.93164C6.59969 9.93094 6.8561 10.1758 6.86301 10.49C6.87753 10.8125 6.62872 11.0784 6.31771 11.0931ZM2.87109 8.02037C2.88491 8.34221 3.14823 8.59408 3.46615 8.57939C3.77716 8.56539 4.02528 8.29883 4.01076 7.97699C4.00385 7.66215 3.74813 7.41727 3.43643 7.41797C3.11851 7.43196 2.8704 7.69853 2.87109 8.02037ZM3.47006 11.097C3.15214 11.1117 2.88951 10.8598 2.87499 10.5379C2.8743 10.2161 3.12311 9.94954 3.44103 9.93555C3.75204 9.93485 4.00845 10.1797 4.01536 10.4946C4.02987 10.8164 3.78176 11.083 3.47006 11.097Z"
                                             fill="#EE628F" fill-opacity="0.9" />
                                     </svg>
-                                    <p class="date">01 May, 2022</p>
+                                    <p class="date">01 Jun, 2022</p>
                                 </div>
                                 <p class="date ms-5 ps-2" style="color: #328090;">-</p>
                             </td>
@@ -1437,14 +1455,15 @@
                                     30 Jun, 2022
                                 </div>
                                 <div class="dropdown">
-                                    <button id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="true"
-                                        class="btn shadow-none text-start p-0">
+                                    <button type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="false" aria-expanded="false"
+                                        class="btn shadow-none text-start p-0 ">
                                         <p class="details">13/04/22Prochain audit :Prévu pour fin JuinRecontacter le
                                             client mi
                                             juinRé-upseller le client sur ses 6 comptes car le client avait des
                                             sor........</p>
                                     </button>
-                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dropdownMenuClickable">
 
                                         <div class="dropbox">
                                             <div class="top-arrow"></div>
@@ -1452,7 +1471,7 @@
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <h6 class="title">Comments</h6>
 
-                                                <button class="btn p-0">
+                                                <button class="btn p-0 btnClose" id="close">
                                                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <ellipse opacity="0.15" cx="16.27" cy="15.77" rx="16.27"
@@ -1480,8 +1499,7 @@
                                                     car le client avait des sorties financières s......13/04/22Prochain
                                                     audit :Prévu pour fin JuinRecontacter le client mi juinRé-upseller
                                                     le
-                                                    client sur ses 6 comptes car le client avait des ..... <a href="#"
-                                                        class="load-more">Load More...</a>
+                                                    client sur ses 6 comptes car le client avait des .....
                                                 </p>
                                             </div>
                                         </div>
@@ -1491,34 +1509,24 @@
 
                             <!-- Status -->
                             <td class="font-montserrat status">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle shadow-none" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <!-- Status Circle -->
-                                        <div class="status-circle bg-teal-10"></div>
-                                        <span>New</span>
-                                        <svg class="carte" width="10" height="6" viewBox="0 0 10 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.42704 0.231507L4.66037 3.30747L7.8937 0.231507C7.97086 0.15811 8.06245 0.0998891 8.16325 0.0601672C8.26405 0.0204452 8.37209 7.73361e-10 8.4812 0C8.59031 -7.73357e-10 8.69835 0.0204452 8.79916 0.0601672C8.89996 0.0998891 8.99155 0.15811 9.0687 0.231507C9.14585 0.304903 9.20705 0.392038 9.24881 0.487935C9.29056 0.583833 9.31205 0.686615 9.31205 0.790413C9.31205 0.894212 9.29056 0.996994 9.24881 1.09289C9.20705 1.18879 9.14585 1.27592 9.0687 1.34932L5.2437 4.98816C5.16661 5.06165 5.07503 5.11996 4.97422 5.15974C4.87341 5.19952 4.76534 5.22 4.6562 5.22C4.54706 5.22 4.43899 5.19952 4.33818 5.15974C4.23737 5.11996 4.1458 5.06165 4.0687 4.98816L0.243703 1.34932C0.16645 1.27598 0.105161 1.18886 0.0633426 1.09296C0.0215248 0.997051 0 0.894242 0 0.790413C0 0.686585 0.0215248 0.583776 0.0633426 0.487871C0.105161 0.391966 0.16645 0.304849 0.243703 0.231507C0.568703 -0.0697477 1.10204 -0.0776755 1.42704 0.231507Z"
-                                                fill="black" />
-                                        </svg>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center status-select">
+                                    <div class="dot-icon bg-teal-10"></div>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>New</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                             </td>
 
                             <!-- LEAD OWNER -->
-                            <td class="leadOwner font-montserrat">Julien Wolff</td>
+                            <td class="leadOwner font-montserrat">Marie Fouris</td>
 
                             <!-- HOT % -->
                             <td class="hot font-montserrat">
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>75%</option>
+                                    <option selected>10%</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -1532,7 +1540,7 @@
                             </td>
 
                             <!-- Remarketing start date -->
-                            <td class="remarketing font-montserrat">12 Jun, 2022</td>
+                            <td class="remarketing font-montserrat">10 Jun, 2022</td>
 
                             <!-- Audit STatus & theme -->
                             <td class="auditStatus font-montserrat">
@@ -1545,22 +1553,22 @@
                                             <span></span>
                                         </label>
                                     </div>
-                                    <p class="details">Indpendant immobilier</p>
+                                    <p class="details">Chargé de développpement immobilier d'un réseau</p>
                                 </div>
                             </td>
 
                             <!-- Audit request date -->
-                            <td class="auditRequest font-montserrat">14 Jun, 2022</td>
+                            <td class="auditRequest font-montserrat">11 Jun, 2022</td>
 
                             <!-- Budget -->
-                            <td class="budget font-montserrat">€ 100</td>
+                            <td class="budget font-montserrat">11 Jun, 2022</td>
 
                             <!-- Remarketing start date -->
-                            <td class="remarketing font-montserrat">Positive Respond</td>
+                            <td class="remarketing font-montserrat">Purge</td>
 
                             <!-- Mail status -->
                             <td class="mailStatus font-montserrat">
-                                <div class="mailStatus-budge">
+                                <div class="mailStatus-budge-success">
                                     <div class="dot"></div>
                                     Sequence started
                                 </div>
@@ -1584,7 +1592,7 @@
                             <!-- HOT % -->
                             <td class="hot font-montserrat">
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>75%</option>
+                                    <option selected>10%</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -1602,7 +1610,7 @@
                                             <span></span>
                                         </label>
                                     </div>
-                                    <p class="details">Indpendant immobilier</p>
+                                    <p class="details">Chargé de développpement immobilier d'un réseau</p>
                                 </div>
                             </td>
                         </tr>
@@ -1637,8 +1645,8 @@
 
                                     <!-- Option Buttons -->
                                     <div class="me-5">
-                                        <h6 class="title text-nowrap">Myra Foster</h6>
-                                        <div class="row">
+                                        <h6 class="title text-nowrap">Matilda Robertson</h6>
+                                        <div class="row btn-group">
                                             <div class="col-4 mb-1">
                                                 <button class="btn p-0">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -1793,7 +1801,7 @@
                                             d="M9.38762 0.538032L9.38831 1.06277C11.3166 1.21389 12.5903 2.52784 12.5924 4.54283L12.6 10.4409C12.6028 12.6378 11.2226 13.9895 9.01026 13.993L3.60632 14C1.40784 14.0028 0.0103716 12.6189 0.00760708 10.4157L4.65482e-06 4.5869C-0.00275986 2.55862 1.22607 1.24818 3.15432 1.07117L3.15363 0.546428C3.15294 0.238582 3.38101 0.00699808 3.68511 0.00699808C3.9892 0.00629843 4.21728 0.237183 4.21797 0.545029L4.21866 1.03478L8.32397 1.02919L8.32328 0.539431C8.32259 0.231586 8.55066 0.000701235 8.85476 1.58584e-06C9.15194 -0.000698064 9.38693 0.230186 9.38762 0.538032ZM1.06319 4.80387L11.5269 4.78988V4.545C11.4972 3.04075 10.7425 2.25155 9.38784 2.13401L9.38853 2.67274C9.38853 2.97359 9.15424 3.21217 8.85706 3.21217C8.55296 3.21287 8.3242 2.97499 8.3242 2.67414L8.3235 2.10742L4.21819 2.11302L4.21889 2.67903C4.21889 2.98058 3.9915 3.21846 3.68741 3.21846C3.38331 3.21916 3.15455 2.98198 3.15455 2.68043L3.15386 2.1417C1.80615 2.27673 1.06042 3.06874 1.0625 4.58628L1.06319 4.80387ZM8.5664 7.98419V7.99189C8.57331 8.31372 8.83594 8.5579 9.15455 8.55091C9.46556 8.54321 9.71368 8.27664 9.70676 7.9548C9.69225 7.64696 9.44275 7.39578 9.13244 7.39648C8.81452 7.40348 8.56571 7.66235 8.5664 7.98419ZM9.13765 11.1256C8.81973 11.1187 8.56332 10.8535 8.56263 10.5316C8.55572 10.2098 8.81075 9.94324 9.12867 9.93554H9.13558C9.46041 9.93554 9.72373 10.2007 9.72373 10.5295C9.72442 10.8584 9.46179 11.1249 9.13765 11.1256ZM5.71857 7.995C5.7324 8.31684 5.99572 8.56801 6.31364 8.55402C6.62464 8.53933 6.87276 8.27346 6.85894 7.95162C6.85134 7.63678 6.59562 7.3919 6.28461 7.3926C5.96669 7.40659 5.71788 7.67316 5.71857 7.995ZM6.31771 11.0931C5.99979 11.1071 5.73716 10.8559 5.72265 10.534C5.72265 10.2122 5.97077 9.94633 6.28868 9.93164C6.59969 9.93094 6.8561 10.1758 6.86301 10.49C6.87753 10.8125 6.62872 11.0784 6.31771 11.0931ZM2.87109 8.02037C2.88491 8.34221 3.14823 8.59408 3.46615 8.57939C3.77716 8.56539 4.02528 8.29883 4.01076 7.97699C4.00385 7.66215 3.74813 7.41727 3.43643 7.41797C3.11851 7.43196 2.8704 7.69853 2.87109 8.02037ZM3.47006 11.097C3.15214 11.1117 2.88951 10.8598 2.87499 10.5379C2.8743 10.2161 3.12311 9.94954 3.44103 9.93555C3.75204 9.93485 4.00845 10.1797 4.01536 10.4946C4.02987 10.8164 3.78176 11.083 3.47006 11.097Z"
                                             fill="#328090" fill-opacity="0.9" />
                                     </svg>
-                                    <p class="date">01 May, 2022</p>
+                                    <p class="date">22 Jun, 2022</p>
                                 </div>
                             </td>
 
@@ -1809,14 +1817,15 @@
                                     30 Jun, 2022
                                 </div>
                                 <div class="dropdown">
-                                    <button id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="true"
-                                        class="btn shadow-none text-start p-0">
+                                    <button type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="false" aria-expanded="false"
+                                        class="btn shadow-none text-start p-0 ">
                                         <p class="details">13/04/22Prochain audit :Prévu pour fin JuinRecontacter le
                                             client mi
                                             juinRé-upseller le client sur ses 6 comptes car le client avait des
                                             sor........</p>
                                     </button>
-                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dropdownMenuClickable">
 
                                         <div class="dropbox">
                                             <div class="top-arrow"></div>
@@ -1824,7 +1833,7 @@
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <h6 class="title">Comments</h6>
 
-                                                <button class="btn p-0">
+                                                <button class="btn p-0 btnClose" id="close">
                                                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <ellipse opacity="0.15" cx="16.27" cy="15.77" rx="16.27"
@@ -1852,8 +1861,7 @@
                                                     car le client avait des sorties financières s......13/04/22Prochain
                                                     audit :Prévu pour fin JuinRecontacter le client mi juinRé-upseller
                                                     le
-                                                    client sur ses 6 comptes car le client avait des ..... <a href="#"
-                                                        class="load-more">Load More...</a>
+                                                    client sur ses 6 comptes car le client avait des .....
                                                 </p>
                                             </div>
                                         </div>
@@ -1863,34 +1871,24 @@
 
                             <!-- Status -->
                             <td class="font-montserrat status">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle shadow-none" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <!-- Status Circle -->
-                                        <div class="status-circle bg-purple-10"></div>
-                                        <span>Signed</span>
-                                        <svg class="carte" width="10" height="6" viewBox="0 0 10 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.42704 0.231507L4.66037 3.30747L7.8937 0.231507C7.97086 0.15811 8.06245 0.0998891 8.16325 0.0601672C8.26405 0.0204452 8.37209 7.73361e-10 8.4812 0C8.59031 -7.73357e-10 8.69835 0.0204452 8.79916 0.0601672C8.89996 0.0998891 8.99155 0.15811 9.0687 0.231507C9.14585 0.304903 9.20705 0.392038 9.24881 0.487935C9.29056 0.583833 9.31205 0.686615 9.31205 0.790413C9.31205 0.894212 9.29056 0.996994 9.24881 1.09289C9.20705 1.18879 9.14585 1.27592 9.0687 1.34932L5.2437 4.98816C5.16661 5.06165 5.07503 5.11996 4.97422 5.15974C4.87341 5.19952 4.76534 5.22 4.6562 5.22C4.54706 5.22 4.43899 5.19952 4.33818 5.15974C4.23737 5.11996 4.1458 5.06165 4.0687 4.98816L0.243703 1.34932C0.16645 1.27598 0.105161 1.18886 0.0633426 1.09296C0.0215248 0.997051 0 0.894242 0 0.790413C0 0.686585 0.0215248 0.583776 0.0633426 0.487871C0.105161 0.391966 0.16645 0.304849 0.243703 0.231507C0.568703 -0.0697477 1.10204 -0.0776755 1.42704 0.231507Z"
-                                                fill="black" />
-                                        </svg>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center status-select">
+                                    <div class="dot-icon bg-purple-10"></div>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Signed</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                             </td>
 
                             <!-- LEAD OWNER -->
-                            <td class="leadOwner font-montserrat">Julien Wolff</td>
+                            <td class="leadOwner font-montserrat">Marie Fouris</td>
 
                             <!-- HOT % -->
                             <td class="hot font-montserrat">
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>75%</option>
+                                    <option selected>10%</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -1904,7 +1902,7 @@
                             </td>
 
                             <!-- Remarketing start date -->
-                            <td class="remarketing font-montserrat">12 Jun, 2022</td>
+                            <td class="remarketing font-montserrat">29 May, 2022</td>
 
                             <!-- Audit STatus & theme -->
                             <td class="auditStatus font-montserrat">
@@ -1917,22 +1915,22 @@
                                             <span></span>
                                         </label>
                                     </div>
-                                    <p class="details">Indpendant immobilier</p>
+                                    <p class="details">-</p>
                                 </div>
                             </td>
 
                             <!-- Audit request date -->
-                            <td class="auditRequest font-montserrat">14 Jun, 2022</td>
+                            <td class="auditRequest font-montserrat">26 May, 2022</td>
 
                             <!-- Budget -->
-                            <td class="budget font-montserrat">€ 100</td>
+                            <td class="budget font-montserrat">€ 65</td>
 
                             <!-- Remarketing start date -->
-                            <td class="remarketing font-montserrat">Positive Respond</td>
+                            <td class="remarketing font-montserrat">Opt-out</td>
 
                             <!-- Mail status -->
                             <td class="mailStatus font-montserrat">
-                                <div class="mailStatus-budge">
+                                <div class="mailStatus-budge-success">
                                     <div class="dot"></div>
                                     Sequence started
                                 </div>
@@ -1956,7 +1954,7 @@
                             <!-- HOT % -->
                             <td class="hot font-montserrat">
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>75%</option>
+                                    <option selected>10%</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -1974,7 +1972,7 @@
                                             <span></span>
                                         </label>
                                     </div>
-                                    <p class="details">Indpendant immobilier</p>
+                                    <p class="details">-</p>
                                 </div>
                             </td>
                         </tr>
@@ -2009,8 +2007,8 @@
 
                                     <!-- Option Buttons -->
                                     <div class="me-5">
-                                        <h6 class="title text-nowrap">Myra Foster</h6>
-                                        <div class="row">
+                                        <h6 class="title text-nowrap">French Southern </h6>
+                                        <div class="row btn-group">
                                             <div class="col-4 mb-1">
                                                 <button class="btn p-0">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -2173,14 +2171,15 @@
                                     30 Jun, 2022
                                 </div>
                                 <div class="dropdown">
-                                    <button id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="true"
-                                        class="btn shadow-none text-start p-0">
+                                    <button type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="false" aria-expanded="false"
+                                        class="btn shadow-none text-start p-0 ">
                                         <p class="details">13/04/22Prochain audit :Prévu pour fin JuinRecontacter le
                                             client mi
                                             juinRé-upseller le client sur ses 6 comptes car le client avait des
                                             sor........</p>
                                     </button>
-                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dLabel">
+                                    <div class="dropdown-menu tooltip-area" aria-labelledby="dropdownMenuClickable">
 
                                         <div class="dropbox">
                                             <div class="top-arrow"></div>
@@ -2188,7 +2187,7 @@
                                             <div class="d-flex align-items-center justify-content-between">
                                                 <h6 class="title">Comments</h6>
 
-                                                <button class="btn p-0">
+                                                <button class="btn p-0 btnClose" id="close">
                                                     <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
                                                         xmlns="http://www.w3.org/2000/svg">
                                                         <ellipse opacity="0.15" cx="16.27" cy="15.77" rx="16.27"
@@ -2216,8 +2215,7 @@
                                                     car le client avait des sorties financières s......13/04/22Prochain
                                                     audit :Prévu pour fin JuinRecontacter le client mi juinRé-upseller
                                                     le
-                                                    client sur ses 6 comptes car le client avait des ..... <a href="#"
-                                                        class="load-more">Load More...</a>
+                                                    client sur ses 6 comptes car le client avait des .....
                                                 </p>
                                             </div>
                                         </div>
@@ -2227,24 +2225,14 @@
 
                             <!-- Status -->
                             <td class="font-montserrat status">
-                                <div class="dropdown">
-                                    <button class="btn dropdown-toggle shadow-none" type="button"
-                                        id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <!-- Status Circle -->
-                                        <div class="status-circle bg-blue-20"></div>
-                                        <span>No Show</span>
-                                        <svg class="carte" width="10" height="6" viewBox="0 0 10 6" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M1.42704 0.231507L4.66037 3.30747L7.8937 0.231507C7.97086 0.15811 8.06245 0.0998891 8.16325 0.0601672C8.26405 0.0204452 8.37209 7.73361e-10 8.4812 0C8.59031 -7.73357e-10 8.69835 0.0204452 8.79916 0.0601672C8.89996 0.0998891 8.99155 0.15811 9.0687 0.231507C9.14585 0.304903 9.20705 0.392038 9.24881 0.487935C9.29056 0.583833 9.31205 0.686615 9.31205 0.790413C9.31205 0.894212 9.29056 0.996994 9.24881 1.09289C9.20705 1.18879 9.14585 1.27592 9.0687 1.34932L5.2437 4.98816C5.16661 5.06165 5.07503 5.11996 4.97422 5.15974C4.87341 5.19952 4.76534 5.22 4.6562 5.22C4.54706 5.22 4.43899 5.19952 4.33818 5.15974C4.23737 5.11996 4.1458 5.06165 4.0687 4.98816L0.243703 1.34932C0.16645 1.27598 0.105161 1.18886 0.0633426 1.09296C0.0215248 0.997051 0 0.894242 0 0.790413C0 0.686585 0.0215248 0.583776 0.0633426 0.487871C0.105161 0.391966 0.16645 0.304849 0.243703 0.231507C0.568703 -0.0697477 1.10204 -0.0776755 1.42704 0.231507Z"
-                                                fill="black" />
-                                        </svg>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                <div class="d-flex align-items-center status-select">
+                                    <div class="dot-icon bg-blue-20"></div>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>No Show</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
                                 </div>
                             </td>
 
@@ -2254,7 +2242,7 @@
                             <!-- HOT % -->
                             <td class="hot font-montserrat">
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>75%</option>
+                                    <option selected>25%</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -2268,7 +2256,7 @@
                             </td>
 
                             <!-- Remarketing start date -->
-                            <td class="remarketing font-montserrat">12 Jun, 2022</td>
+                            <td class="remarketing font-montserrat text-gray-20">12 Jun, 2022</td>
 
                             <!-- Audit STatus & theme -->
                             <td class="auditStatus font-montserrat">
@@ -2281,24 +2269,24 @@
                                             <span></span>
                                         </label>
                                     </div>
-                                    <p class="details">Indpendant immobilier</p>
+                                    <p class="details">Agence Immo</p>
                                 </div>
                             </td>
 
                             <!-- Audit request date -->
-                            <td class="auditRequest font-montserrat">14 Jun, 2022</td>
+                            <td class="auditRequest font-montserrat">26 May, 2022</td>
 
                             <!-- Budget -->
-                            <td class="budget font-montserrat">€ 100</td>
+                            <td class="budget font-montserrat">€ 150</td>
 
                             <!-- Remarketing start date -->
-                            <td class="remarketing font-montserrat">Positive Respond</td>
+                            <td class="remarketing font-montserrat">Purge</td>
 
                             <!-- Mail status -->
                             <td class="mailStatus font-montserrat">
-                                <div class="mailStatus-budge">
+                                <div class="mailStatus-budge-warning">
                                     <div class="dot"></div>
-                                    Sequence started
+                                    Imported
                                 </div>
                             </td>
 
@@ -2320,7 +2308,7 @@
                             <!-- HOT % -->
                             <td class="hot font-montserrat">
                                 <select class="form-select" aria-label="Default select example">
-                                    <option selected>75%</option>
+                                    <option selected>25%</option>
                                     <option value="1">One</option>
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
@@ -2338,7 +2326,7 @@
                                             <span></span>
                                         </label>
                                     </div>
-                                    <p class="details">Indpendant immobilier</p>
+                                    <p class="details">Agence Immo</p>
                                 </div>
                             </td>
                         </tr>
@@ -2414,28 +2402,32 @@
 
 
     <script>
-        // Create From
-        $('#create').click(function () {
-            $('.social-details').first().clone().appendTo('.social-list').show();
-            attach_delete();
+
+        $("#showHide").click(function () {
+            $("#filterCheckBoxs").toggle();
         });
 
-        //Delete
-        function attach_delete() {
-            $('.delete').off();
-            $('.delete').click(function () {
-                console.log("click");
-                $(this).closest('.social-details').remove();
+        $(".dropdown-menu .btnClose").click(function () {
+            $(this).closest(".dropdown-menu").prev().dropdown("toggle");
+        });
+
+        $(document).ready(function () {
+            var maxLength = 1000;
+            $(".paragraph").each(function () {
+                var myStr = $(this).text();
+                if ($.trim(myStr).length > maxLength) {
+                    var newStr = myStr.substring(0, maxLength);
+                    var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+                    $(this).empty().html(newStr);
+                    $(this).append(' <a href="javascript:void(0);" class="load-more">Load More...</a>');
+                    $(this).append('<span class="more-text">' + removedStr + '</span>');
+                }
             });
-        }
-
-
-        CKEDITOR.replace('editor1', {
-            width: '100%',
-            height: '400px'
-
+            $(".load-more").click(function () {
+                $(this).siblings(".more-text").contents().unwrap();
+                $(this).remove();
+            });
         });
-
     </script>
 </body>
 

@@ -127,6 +127,10 @@
   background-color: #009EF7;
 }
 
+.text-gray-20 {
+  color: #A8AEB6 !important;
+}
+
 .breadcrumb {
   font-size: 16px;
   line-height: 19px;
@@ -153,6 +157,7 @@
 .header {
   -webkit-box-shadow: 0px 4px 70px 5px rgba(195, 197, 205, 0.9);
           box-shadow: 0px 4px 70px 5px rgba(195, 197, 205, 0.9);
+  background: #183555;
 }
 
 @media (min-width: 992px) {
@@ -579,7 +584,13 @@
 }
 
 .allLeadPage .table-box .table-tabArea .nav-tabs .nav-item:not(:last-child) {
-  padding-right: 32px;
+  padding-right: 16px;
+}
+
+@media (min-width: 1400px) {
+  .allLeadPage .table-box .table-tabArea .nav-tabs .nav-item:not(:last-child) {
+    padding-right: 32px;
+  }
 }
 
 .allLeadPage .table-box .table-tabArea .nav-tabs .nav-item .nav-link {
@@ -596,6 +607,18 @@
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 0px;
+}
+
+@media (min-width: 992px) {
+  .allLeadPage .table-box .table-tabArea .nav-tabs .nav-item .nav-link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .allLeadPage .table-box .table-tabArea .nav-tabs .nav-item .nav-link {
+    font-size: 14px;
+  }
 }
 
 .allLeadPage .table-box .table-tabArea .nav-tabs .nav-item .nav-link:focus {
@@ -647,6 +670,18 @@
 
 .allLeadPage .table-box .table-tabArea .filter-btn .btn:not(:last-child) {
   margin-right: 20px;
+}
+
+@media (min-width: 992px) {
+  .allLeadPage .table-box .table-tabArea .filter-btn .btn:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .allLeadPage .table-box .table-tabArea .filter-btn .btn:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .allLeadPage .table-box .table-tabArea .filter-btn .btn svg {
@@ -874,6 +909,10 @@
   color: #FFFFFF;
 }
 
+.allLeadPage .table-box .table-responsive .table tbody .personal-info .btn-group {
+  max-width: 96px;
+}
+
 .allLeadPage .table-box .table-responsive .table tbody .callDate .date {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -1011,6 +1050,10 @@
   max-width: 344px;
 }
 
+.allLeadPage .table-box .table-responsive .table tbody .level1-notes .dropdown .tooltip-area .dropbox .parabox .paragraph .more-text {
+  display: none;
+}
+
 .allLeadPage .table-box .table-responsive .table tbody .level1-notes .dropdown .tooltip-area .dropbox .load-more {
   font-weight: 600;
   font-size: 14px;
@@ -1018,6 +1061,36 @@
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #ED5485;
+}
+
+.allLeadPage .table-box .table-responsive .table tbody .status .status-select {
+  position: relative;
+}
+
+.allLeadPage .table-box .table-responsive .table tbody .status .status-select .dot-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 1000px;
+  margin-right: 8px;
+  position: absolute;
+  left: 12px;
+}
+
+.allLeadPage .table-box .table-responsive .table tbody .status .status-select .form-select {
+  border: 1px solid #E8ECF1;
+  border-radius: 6px;
+  padding: 10px 32px 10px 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #425466;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 142px;
 }
 
 .allLeadPage .table-box .table-responsive .table tbody .status .dropdown-toggle {
@@ -1179,7 +1252,7 @@
   min-width: min-content;
 }
 
-.allLeadPage .table-box .table-responsive .table .mailStatus .mailStatus-budge {
+.allLeadPage .table-box .table-responsive .table .mailStatus .mailStatus-budge-success {
   background: rgba(49, 185, 151, 0.1);
   border-radius: 120px;
   padding: 5px 8px;
@@ -1199,8 +1272,37 @@
   white-space: nowrap;
 }
 
-.allLeadPage .table-box .table-responsive .table .mailStatus .mailStatus-budge .dot {
+.allLeadPage .table-box .table-responsive .table .mailStatus .mailStatus-budge-success .dot {
   background: #31B997;
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  border-radius: 9999px;
+  margin-right: 4px;
+}
+
+.allLeadPage .table-box .table-responsive .table .mailStatus .mailStatus-budge-warning {
+  background: rgba(253, 170, 9, 0.1);
+  border-radius: 120px;
+  padding: 5px 8px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FDAA09;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  white-space: nowrap;
+}
+
+.allLeadPage .table-box .table-responsive .table .mailStatus .mailStatus-budge-warning .dot {
+  background: #FDAA09;
   width: 6px;
   height: 6px;
   min-width: 6px;

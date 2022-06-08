@@ -200,7 +200,13 @@
                     border-bottom: 1px solid #EDF2F7;
 
                     &:not(:last-child) {
-                        padding-right: 32px;
+                        padding-right: 16px;
+                    }
+
+                    @include br-up(xxl) {
+                        &:not(:last-child) {
+                            padding-right: 32px;
+                        }
                     }
 
                     .nav-link {
@@ -216,6 +222,14 @@
                         color: #718096;
                         box-shadow: none;
                         border: 0px;
+
+                        @include br-up(lg) {
+                            font-size: 12px;
+                        }
+
+                        @include br-up(xxl) {
+                            font-size: 14px;
+                        }
 
                         &:focus {
                             box-shadow: none;
@@ -267,6 +281,18 @@
 
                     &:not(:last-child) {
                         margin-right: 20px;
+                    }
+
+                    @include br-up(lg) {
+                        &:not(:last-child) {
+                            margin-right: 8px;
+                        }
+                    }
+
+                    @include br-up(xxl) {
+                        &:not(:last-child) {
+                            margin-right: 20px;
+                        }
                     }
 
                     svg {
@@ -474,6 +500,10 @@
                             }
                         }
 
+                        .btn-group {
+                            max-width: 96px;
+                        }
+
 
                     }
 
@@ -599,6 +629,10 @@
                                             line-height: 20px;
                                             color: #FFFFFF;
                                             max-width: 344px;
+
+                                            .more-text {
+                                                display: none;
+                                            }
                                         }
                                     }
 
@@ -616,6 +650,34 @@
                     }
 
                     .status {
+
+                        .status-select {
+                            position: relative;
+
+                            .dot-icon {
+                                width: 14px;
+                                height: 14px;
+                                border-radius: 1000px;
+                                margin-right: 8px;
+                                position: absolute;
+                                left: 12px;
+                            }
+
+                            .form-select {
+                                border: 1px solid #E8ECF1;
+                                border-radius: 6px;
+                                padding: 10px 32px 10px 32px;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 14px;
+                                color: #425466;
+                                display: flex;
+                                align-items: center;
+                                min-width: 142px;
+                            }
+                        }
+
+
                         .dropdown-toggle {
                             background: #FFFFFF;
                             border: 1px solid #E8ECF1;
@@ -772,7 +834,7 @@
                 .mailStatus {
                     min-width: min-content;
 
-                    .mailStatus-budge {
+                    .mailStatus-budge-success {
                         background: rgba(49, 185, 151, 0.1);
                         border-radius: 120px;
                         padding: 5px 8px;
@@ -787,6 +849,29 @@
 
                         .dot {
                             background: #31B997;
+                            width: 6px;
+                            height: 6px;
+                            min-width: 6px;
+                            border-radius: 9999px;
+                            margin-right: 4px;
+                        }
+                    }
+
+                    .mailStatus-budge-warning {
+                        background: rgba(253, 170, 9, 0.1);
+                        border-radius: 120px;
+                        padding: 5px 8px;
+                        display: inline-flex;
+                        align-items: center;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: #FDAA09;
+                        min-width: fit-content;
+                        white-space: nowrap;
+
+                        .dot {
+                            background: #FDAA09;
                             width: 6px;
                             height: 6px;
                             min-width: 6px;
