@@ -1,6 +1,7 @@
 @import url("http://fonts.cdnfonts.com/css/gilroy-bold");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 .font-gilroy-bold {
   font-family: 'Gilroy-Bold', sans-serif;
 }
@@ -27,6 +28,10 @@
 
 .font-inter {
   font-family: 'Inter', sans-serif;
+}
+
+.font-dmsans {
+  font-family: 'DM Sans', sans-serif;
 }
 
 .fw-light {
@@ -559,6 +564,266 @@
   .allLeadPage .filter .checkboxs .btn-hideShow {
     margin-left: 38px;
   }
+}
+
+.allLeadPage .filter .filterModal .modal-xl {
+  max-width: 1285px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .allLeadPage .filter .filterModal .modal-xl {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+.allLeadPage .filter .filterModal .modal-content {
+  border-radius: 0px 0px 10px 10px;
+  background: #FFFFFF;
+  -webkit-box-shadow: -14px 30px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: -14px 30px 20px rgba(0, 0, 0, 0.05);
+}
+
+.allLeadPage .filter .filterModal .modal-header {
+  padding: 16px 24px;
+  background: #F5F9FF;
+  border: 0px;
+}
+
+@media (min-width: 992px) {
+  .allLeadPage .filter .filterModal .modal-header {
+    padding: 30px 48px;
+  }
+}
+
+.allLeadPage .filter .filterModal .modal-header .modal-title {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.78px;
+  line-height: 30px;
+  color: #06152B;
+}
+
+.allLeadPage .filter .filterModal .modal-body {
+  padding: 16px 24px;
+}
+
+@media (min-width: 992px) {
+  .allLeadPage .filter .filterModal .modal-body {
+    padding: 18px 48px;
+  }
+}
+
+.allLeadPage .filter .filterModal .modal-body .check-label {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5873;
+  margin-right: 76px;
+  white-space: nowrap;
+}
+
+.allLeadPage .filter .filterModal .modal-body .form-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 46px;
+  padding: 0px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .form-check .form-check-input {
+  width: 18px;
+  height: 18px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .form-check .form-check-input:checked {
+  background-color: #31B997 !important;
+  border-color: #31B997 !important;
+}
+
+.allLeadPage .filter .filterModal .modal-body .form-check .form-check-label {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6E6B7B;
+  margin-left: 10px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .m-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #328090;
+  margin-top: 40px;
+  margin-bottom: 26px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .select-form {
+  margin-bottom: 20px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .select-form .mb-40px {
+  margin-bottom: 40px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .select-form .form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5873;
+  margin-bottom: 10px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .select-form .label2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #6E6B7B;
+  margin-bottom: 4px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .select-form .form-select {
+  border: 1px solid #D8D6DE;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #6E6B7B;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5E5873;
+  margin-bottom: 40px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .ui-widget.ui-widget-content {
+  background: rgba(237, 84, 133, 0.12) !important;
+  border-radius: 3px !important;
+  height: 6px !important;
+  border: 0 !important;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .ui-widget-header {
+  background: #ED5485;
+  border-radius: 3px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .ui-state-default,
+.allLeadPage .filter .filterModal .modal-body .range-slider .ui-widget-content .ui-state-default,
+.allLeadPage .filter .filterModal .modal-body .range-slider .ui-widget-header .ui-state-default,
+.allLeadPage .filter .filterModal .modal-body .range-slider .ui-button,
+.allLeadPage .filter .filterModal .modal-body .range-slider html .ui-button.ui-state-disabled:hover,
+.allLeadPage .filter .filterModal .modal-body .range-slider html .ui-button.ui-state-disabled:active {
+  width: 16px;
+  height: 16px;
+  border-radius: 8888px;
+  background: #FFFFFF;
+  border: 3px solid #ED5485;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .ui-slider-horizontal .ui-slider-handle {
+  top: -5px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .popUpRange {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  -webkit-transform: translateX(25%) translateY(-28px);
+          transform: translateX(25%) translateY(-28px);
+  pointer-events: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #6E6B7B;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .range-scaler {
+  margin-top: 12px;
+  margin-left: 0;
+  margin-right: -10px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .range-scaler .top-bdr {
+  width: 1px;
+  height: 6px;
+  background: #E1E5EA;
+  margin-bottom: 5px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .range-slider .range-scaler .top-bdr p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #4F4F55;
+}
+
+.allLeadPage .filter .filterModal .modal-body .btn-group-form {
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .btn-group-form .btn-apply {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #FFFFFF;
+  padding: 10px 22px;
+  background: #31B997;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+
+.allLeadPage .filter .filterModal .modal-body .btn-group-form .btn-cancel {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #31B997;
+  padding: 10px 22px;
+  border: 1px solid #31B997;
+  border-radius: 5px;
 }
 
 .allLeadPage .table-box {
