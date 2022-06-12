@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+    <!-- Header Section Start -->
+    <header class="bg-blue-10 header">
+        <nav class="navbar-expand-lg">
+            <div class="d-flex flex-column align-items-center align-items-lg-stretch">
+                <div class="navbar-top w-100">
+                    <div class="container-fluid d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <button class="btn p-0 d-lg-none navbar-toggler mb-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z" fill="white" />
+                                </svg>
+                            </button>
+                            <a href="#" class="navbar-brand">
+                                <img src="./assets/images/logo-1.png" alt="" class="logo">
+                            </a>
+                        </div>
+
+                        <ul class="nav d-flex flex-nowrap align-items-center justify-content-end">
+                            <li class="nav-item dropdown me-3 me-lg-2 me-xl-3 me-xxl-4">
+                                <div class="language-select">
+                                    <select class="mission-cms-translation-btn text-white">
+                                        <option value="en">EN</option>
+                                        <option value="fr">FR</option>
+                                        <option value="es">ES</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li class="nav-item d-flex align-items-center me-2 me-lg-2 me-xl-3 me-xxl-4">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.3 16V16.2899L17.505 16.495L19.3 18.29V18.3H4.7V18.2899L6.49497 16.495L6.7 16.2899V16V11C6.7 8.16412 8.17906 5.94929 10.6614 5.36114L11.2 5.23353V4.68V4C11.2 3.5566 11.5566 3.2 12 3.2C12.4434 3.2 12.8 3.5566 12.8 4V4.68V5.23308L13.3381 5.36102C15.8114 5.94907 17.3 8.17474 17.3 11V16ZM13.0932 20.7C12.861 21.0599 12.4565 21.3 12 21.3C11.5382 21.3 11.1347 21.0603 10.9042 20.7H13.0932Z"
+                                        fill="white" stroke="#C2CFE0" stroke-width="1.4" />
+                                </svg>
+                                <div class="noti-badge">99+</div>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle profile-dropdown align-items-center text-white"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <svg class="profile-icon" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="46" height="46" rx="23" fill="#C2CFE0" />
+                                        <path
+                                            d="M31 32v-2a4 4 0 0 0-4-4h-8a4 4 0 0 0-4 4v2M23 22a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                                            stroke="#687A92" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <span class="mb-0 me-0 me-md-1 ms-2 d-none d-md-inline">User Name 1</span>
+
+                                    <svg class="ms-auto d-none d-md-inline mb-1" width="20" height="20"
+                                        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="#687A92" />
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container-fluid d-flex align-items-center justify-content-lg-between justify-content-end">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav d-flex flex-column flex-lg-row menus py-lg-3">
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link  align-items-center text-white" href="#">
+                                    <img src="./assets/images/dashboard-fill.svg" alt="" class="menu-icon">
+                                    <span class="mb-0">Dashboard</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/user-follow-line.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Usagers</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Client</a></li>
+                                    <li><a class="dropdown-item" href="#">Client - Juliedesk</a></li>
+                                    <li><a class="dropdown-item" href="#">City-makers</a></li>
+                                    <li><a class="dropdown-item" href="#">Travellers</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link active dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/Cards.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Cards</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Projet d'ajout de fiches</a></li>
+                                    <li><a class="dropdown-item" href="#">Projets de cards</a></li>
+                                    <li><a class="dropdown-item" href="#">Ajout de la carte</a></li>
+                                    <li><a class="dropdown-item" href="#">Cards à valider</a></li>
+                                    <li><a class="dropdown-item" href="#">Modèles de cards</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/Posts.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Posts</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Ajouter Post</a>
+                                    <a href="#" class="dropdown-item">Modèles de posts</a>
+                                    <a href="#" class="dropdown-item">Projets de posts</a>
+                                    <a href="#" class="dropdown-item">Posts envoyés</a>
+                                    <a href="#" class="dropdown-item">Posts
+                                        validés</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/AUdit.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Audit</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a href="#" class="dropdown-item">Audit</a>
+                                    <a href="#" class="dropdown-item">Default Audit</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/Missions.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Missions</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Pixcity Mission
+                                        List</a>
+                                    <a class="dropdown-item" href="#">Juliedesk Mission
+                                        List</a>
+                                    <a class="dropdown-item" href="#">Devis Clients</a>
+                                    <a class="dropdown-item" href="#">Ad Statistics</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/bank-card-line.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">Payments</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Transactions</a>
+                                    <a class="dropdown-item" href="#">Facture Service</a>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown mb-4 mb-lg-0">
+                                <a class="nav-link dropdown-toggle align-items-center text-white" href="#"
+                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./assets/images/General.svg" alt="" class="menu-icon">
+
+                                    <span class="mb-0">General</span>
+
+                                    <svg class="ms-auto" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Pages</a>
+                                    <a class="dropdown-item" href="#">Email Template Config</a>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Content Section Start -->
+    <section class="leadViewPage content container-fluid">
+        <div class="row">
+            <!-- Left side column -->
+            <div class="col-lg-7 col-xl-8">
+                <!-- Breadcumb & Edit Buttton Start -->
+                <div class="d-flex align-items-center justify-content-between">
+                    <!-- Breadcumb Start -->
+                    <nav class="d-none d-md-block" aria-label="breadcrumb">
+                        <ol class="breadcrumb align-items-center">
+                            <li class="breadcrumb-item"><a href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 19.9999C20 20.2651 19.8946 20.5195 19.7071 20.707C19.5196 20.8946 19.2652 20.9999 19 20.9999H5C4.73478 20.9999 4.48043 20.8946 4.29289 20.707C4.10536 20.5195 4 20.2651 4 19.9999V10.9999H1L11.327 1.61192C11.5111 1.4444 11.7511 1.35156 12 1.35156C12.2489 1.35156 12.4889 1.4444 12.673 1.61192L23 10.9999H20V19.9999ZM11 12.9999V18.9999H13V12.9999H11Z"
+                                            fill="#31B997" />
+                                    </svg>
+                                </a></li>
+                            <li class="breadcrumb-item"><a href="#">Calendly</a></li>
+                        </ol>
+                    </nav>
+
+                    <!-- Edit Button -->
+                    <button class="btn btn-edit">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_136_22250" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="12" height="12">
+                                <path
+                                    d="M11.6262 1.45451C11.7726 1.60095 11.7726 1.83839 11.6262 1.98484L10.844 2.767L9.34403 1.267L10.1262 0.484835C10.2726 0.338388 10.5101 0.338388 10.6565 0.484835L11.6262 1.45451Z"
+                                    fill="black" />
+                                <path
+                                    d="M10.3137 3.29733L8.8137 1.79733L3.70396 6.90707C3.66279 6.94824 3.63178 6.99842 3.61337 7.05365L3.00995 8.86391C2.96109 9.01049 3.10054 9.14994 3.24712 9.10108L5.05738 8.49766C5.11261 8.47925 5.16279 8.44824 5.20396 8.40707L10.3137 3.29733Z"
+                                    fill="black" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0.75 10.125C0.75 10.7463 1.25368 11.25 1.875 11.25H10.125C10.7463 11.25 11.25 10.7463 11.25 10.125V5.625C11.25 5.41789 11.0821 5.25 10.875 5.25C10.6679 5.25 10.5 5.41789 10.5 5.625V10.125C10.5 10.3321 10.3321 10.5 10.125 10.5H1.875C1.66789 10.5 1.5 10.3321 1.5 10.125V1.875C1.5 1.66789 1.66789 1.5 1.875 1.5H6.75C6.95711 1.5 7.125 1.33211 7.125 1.125C7.125 0.917893 6.95711 0.75 6.75 0.75H1.875C1.25368 0.75 0.75 1.25368 0.75 1.875V10.125Z"
+                                    fill="black" />
+                            </mask>
+                            <g mask="url(#mask0_136_22250)">
+                                <rect width="12" height="12" fill="white" />
+                            </g>
+                        </svg>
+                        Edit
+                    </button>
+                </div>
+                <!-- Breadcumb & Edit Buttton End -->
+
+
+
+                <!-- Title Card Start -->
+                <div class="title-card d-md-flex align-items-center justify-content-between">
+                    <h1 class="title">Lead View</h1>
+                    <nav class="nav">
+                        <a class="nav-link" href="#">Personal</a>
+                        <a class="nav-link" href="#">Audit</a>
+                        <a class="nav-link" href="#">Meeting</a>
+                        <a class="nav-link" href="#">Hot</a>
+                        <a class="nav-link" href="#">Remarketing</a>
+                        <a class="nav-link" href="#">SMS</a>
+                        <a class="nav-link" href="#">Call</a>
+                    </nav>
+                </div>
+                <!-- Title Card End -->
+
+                <!-- Form Card Start -->
+                <div class="form-card">
+                    <h5 class="title">Personal Information</h5>
+                    <div class="row pb-2">
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Hubspot ID</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="1213243">
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Full Name</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="John Doe">
+                        </div>
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" class="form-control input-form" id="" placeholder="John Doe@gmail.com">
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="23142154671">
+                        </div>
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Company Name</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="Company Name herer">
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Postal code</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="01929">
+                        </div>
+                    </div>
+
+                    <h5 class="title mt-4">Audit Information</h5>
+
+                    <div class="row">
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Audit Status</label>
+
+                            <div class="form-check form-switch custom-switch">
+                                <label class="d-flex align-items-center" for="flexSwitchCheckDefault">
+                                    <input class="form-check-input order-2" type="checkbox" id="flexSwitchCheckDefault"
+                                        checked>
+                                    <span class="no order-1">NO</span>
+                                    <span class="yes order-3">YES</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Audit Theme</label>
+                            <select class="form-select input-form" aria-label="Default select example">
+                                <option value="1">Audit Theme 1</option>
+                                <option value="2">Audit Theme 2</option>
+                                <option value="3">Audit Theme 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Audit Status</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Audit Owner</label>
+                            <select class="form-select input-form" aria-label="Default select example">
+                                <option value="1">Audit Username</option>
+                                <option value="2">Audit Theme 2</option>
+                                <option value="3">Audit Theme 3</option>
+                            </select>
+                        </div>
+                        <div class="col-full mb-40px">
+                            <label for="" class="form-label">Audit Link</label>
+                            <div class="input-group input-link">
+                                <span class="input-group-text" id="basic-addon1"></span>
+                                <input type="text" class="form-control" placeholder="" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="title mt-4">Meeting Information</h5>
+
+                    <div class="row">
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Booking Date</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Meeting Date</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Lead Owner</label>
+                            <select class="form-select input-form" aria-label="Default select example">
+                                <option value="1">Julien</option>
+                                <option value="2">Audit Theme 2</option>
+                                <option value="3">Audit Theme 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Lead Status</label>
+                            <select class="form-select input-form" aria-label="Default select example">
+                                <option value="1">Lead status1</option>
+                                <option value="2">Audit Theme 2</option>
+                                <option value="3">Audit Theme 3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Next Followup Date</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Meeting Date</label>
+
+                            <div class="input-group subSelect">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <select class="form-select " aria-label="Default select example">
+                                        <option value="1">€ </option>
+                                        <option value="2">$</option>
+                                    </select>
+                                </span>
+                                <input type="text" class="form-control" placeholder="75.50" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="title mt-4">Hot Status</h5>
+                    <div class="d-sm-flex align-items-center slider-range mb-5">
+                        <div class="input-area">
+                            <label for="" class="form-label">Hot Status</label>
+                            <input type="text" class="form-control input-form" id="range-value" placeholder="75.5%">
+                        </div>
+                        <div class="range align-items-center pt-5">
+
+                            <!-- Slider Range -->
+                            <div id="slider-range" class="range-slider"></div>
+
+                            <!-- Range Scale -->
+                            <div class="range-scaler d-flex align-items-start justify-content-between">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="top-bdr big-bdr"></div>
+                                    <p>0</p>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr sml-bdr"></div>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr sml-bdr"></div>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr sml-bdr"></div>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr sml-bdr"></div>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr big-bdr"></div>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr sml-bdr"></div>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr sml-bdr"></div>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr sml-bdr"></div>
+                                </div>
+                                <div class="">
+                                    <div class="top-bdr sml-bdr"></div>
+                                </div>
+                                <div class="d-flex flex-column align-items-center text-right">
+                                    <div class="top-bdr big-bdr"></div>
+                                    <p>100</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="title mt-4">Remarketing</h5>
+                    <div class="row">
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Remarketing Start Date</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Remarketing Status</label>
+                            <select class="form-select input-form" aria-label="Default select example">
+                                <option value="1">Super Hot</option>
+                                <option value="2">Audit Theme 2</option>
+                                <option value="3">Audit Theme 3</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">No. of times Called</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="3">
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">No. of times Mailed</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="2">
+                        </div>
+
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">Sequence Start Date</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Sequence End Date</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Mail Status</label>
+                            <select class="form-select input-form" aria-label="Default select example">
+                                <option value="1">Audit Theme 1</option>
+                                <option value="2">Audit Theme 2</option>
+                                <option value="3">Audit Theme 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="border-brk mb-3"></div>
+
+                    <div class="d-flex align-items-center justify-content-between py-3 mb-3">
+                        <h5 class=" title2">SMS</h5>
+                        <button class="btn btn-add">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_136_9616)">
+                                    <g clip-path="url(#clip1_136_9616)">
+                                        <path d="M12.3252 7.71582V17.2783" stroke="#31B997" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.3877 12.4971H7.2627" stroke="#31B997" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <g clip-path="url(#clip2_136_9616)">
+                                        <rect x="12.3223" y="24.4971" width="0.00567708" height="0.00567708"
+                                            fill="#C4C4C4" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_136_9616">
+                                        <rect width="24.0057" height="24.0057" fill="white"
+                                            transform="translate(0.322266 0.49707)" />
+                                    </clipPath>
+                                    <clipPath id="clip1_136_9616">
+                                        <rect width="18" height="17" fill="white"
+                                            transform="translate(3.3252 3.99707)" />
+                                    </clipPath>
+                                    <clipPath id="clip2_136_9616">
+                                        <rect width="24.0057" height="0.00567413" fill="white"
+                                            transform="translate(0.322266 24.4971)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Add new
+                        </button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 pe-xl-4 mb-40px mb-md-0">
+                            <label for="" class="form-label">SMS Sent Status</label>
+                            <select class="form-select input-form" aria-label="Default select example">
+                                <option value="1">Status 1</option>
+                                <option value="2">Audit Theme 2</option>
+                                <option value="3">Audit Theme 3</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6 ps-xl-4 mb-40px mb-md-0">
+                            <label for="" class="form-label">Last SMS sent Date</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-end mb-4">
+                        <button class="btn btn-save">Save</button>
+                    </div>
+
+                    <div class="border-brk mb-4"></div>
+
+                    <div class="row pb-2">
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">SMS Sent Status</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="Status 1">
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Last SMS sent Date</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="12-09-2022">
+                        </div>
+                        <div class="col-md-6 pe-xl-4 mb-40px">
+                            <label for="" class="form-label">SMS Sent Status</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="Status 1">
+                        </div>
+                        <div class="col-md-6 ps-xl-4 mb-40px">
+                            <label for="" class="form-label">Last SMS sent Date</label>
+                            <input type="text" class="form-control input-form" id="" placeholder="12-09-2022">
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-between py-3 mb-3">
+                        <h5 class=" title2">Call</h5>
+                        <button class="btn btn-add">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_136_9616)">
+                                    <g clip-path="url(#clip1_136_9616)">
+                                        <path d="M12.3252 7.71582V17.2783" stroke="#31B997" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M17.3877 12.4971H7.2627" stroke="#31B997" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <g clip-path="url(#clip2_136_9616)">
+                                        <rect x="12.3223" y="24.4971" width="0.00567708" height="0.00567708"
+                                            fill="#C4C4C4" />
+                                    </g>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_136_9616">
+                                        <rect width="24.0057" height="24.0057" fill="white"
+                                            transform="translate(0.322266 0.49707)" />
+                                    </clipPath>
+                                    <clipPath id="clip1_136_9616">
+                                        <rect width="18" height="17" fill="white"
+                                            transform="translate(3.3252 3.99707)" />
+                                    </clipPath>
+                                    <clipPath id="clip2_136_9616">
+                                        <rect width="24.0057" height="0.00567413" fill="white"
+                                            transform="translate(0.322266 24.4971)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Add new
+                        </button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 pe-xl-4 mb-40px mb-md-0">
+                            <label for="" class="form-label">Call#1 Date</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 pe-xl-4 mb-40px mb-md-0">
+                            <label for="" class="form-label">Level#1 Status</label>
+
+                            <div class="calender">
+                                <input type="date" class="form-control">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 4.66602H5C3.89543 4.66602 3 5.59876 3 6.74935V21.3327C3 22.4833 3.89543 23.416 5 23.416H19C20.1046 23.416 21 22.4833 21 21.3327V6.74935C21 5.59876 20.1046 4.66602 19 4.66602Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M16 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M8 2.58398V6.75065" stroke="white" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 10.916H21" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 pe-xl-4 mb-40px mb-md-0">
+                            <label for="" class="form-label">Call#1 Date</label>
+
+                            <div class="calender">
+                                <input type="text" class="form-control" placeholder="9:30 AM">
+                                <div class="icon">
+                                    <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 23C6.477 23 2 18.523 2 13C2 7.477 6.477 3 12 3C17.523 3 22 7.477 22 13C22 18.523 17.523 23 12 23ZM12 21C14.1217 21 16.1566 20.1571 17.6569 18.6569C19.1571 17.1566 20 15.1217 20 13C20 10.8783 19.1571 8.84344 17.6569 7.34315C16.1566 5.84285 14.1217 5 12 5C9.87827 5 7.84344 5.84285 6.34315 7.34315C4.84285 8.84344 4 10.8783 4 13C4 15.1217 4.84285 17.1566 6.34315 18.6569C7.84344 20.1571 9.87827 21 12 21ZM13 13H17V15H11V8H13V13Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form Card End -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Content Section End -->
+
+
+
+    <!--  Editor -->
+    <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+    <!-- Bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- jquery.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script>
+        // Range Slider
+        $(function () {
+            $("#slider-range").slider({
+                range: "min",
+                value: 37,
+                min: 1,
+                max: 100,
+                slide: function (event, ui) {
+                    $(".valueRange").html(ui.value);
+                    $("#range-value").val(ui.value)
+                }
+            });
+
+            $(".ui-slider-handle").prepend("<div class='valueRange popUpRange'>" + $("#slider-range").slider("value") + "</div>");
+            $("#range-value").val($("#slider-range").slider("value"));
+        });
+
+
+    </script>
+</body>
+
+</html>
