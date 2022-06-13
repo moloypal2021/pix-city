@@ -1897,6 +1897,10 @@
   color: #4F4F55;
 }
 
+.leadViewPage.content .form-card .input-form:disabled {
+  background-color: transparent;
+}
+
 .leadViewPage.content .form-card .custom-switch {
   padding-left: 0px;
 }
@@ -1910,6 +1914,12 @@
 .leadViewPage.content .form-card .custom-switch .form-check-input:checked {
   background-color: #31B997;
   border-color: #31B997;
+}
+
+.leadViewPage.content .form-card .custom-switch .form-check-input:disabled {
+  background-color: #31B997;
+  border-color: #31B997;
+  opacity: 1;
 }
 
 .leadViewPage.content .form-card .custom-switch .no {
@@ -1951,6 +1961,10 @@
   color: #4F4F55;
 }
 
+.leadViewPage.content .form-card .calender input:disabled {
+  background-color: transparent;
+}
+
 .leadViewPage.content .form-card .calender .icon {
   position: absolute;
   top: 0;
@@ -1986,6 +2000,10 @@
   border: 1px solid #E8ECF1;
 }
 
+.leadViewPage.content .form-card .input-link input:disabled {
+  background-color: transparent;
+}
+
 .leadViewPage.content .form-card .input-link .input-group-text {
   width: 80px;
   background: #FFFFFF;
@@ -2011,6 +2029,10 @@
           box-shadow: none;
 }
 
+.leadViewPage.content .form-card .subSelect .input-group-text .form-select:disabled {
+  background-color: transparent;
+}
+
 .leadViewPage.content .form-card .subSelect input {
   padding: 12px 16px;
   font-style: normal;
@@ -2020,6 +2042,10 @@
   font-family: 'Montserrat', sans-serif;
   color: #000000;
   border: 1px solid #E8ECF1;
+}
+
+.leadViewPage.content .form-card .subSelect input:disabled {
+  background-color: transparent;
 }
 
 .leadViewPage.content .form-card .slider-range .input-area {
@@ -2165,6 +2191,441 @@
   border-radius: 6px;
   padding: 12px 32px;
   margin-top: 27px;
+}
+
+.leadViewPage.content .form-card .form-btns {
+  margin-top: 74px;
+}
+
+.leadViewPage.content .form-card .form-btns .btn-outline {
+  border: 1px solid rgba(58, 54, 219, 0.1);
+  border-radius: 6px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ED5485;
+  padding: 11px 35px;
+  margin-right: 28px;
+}
+
+.leadViewPage.content .form-card .form-btns .btn-submit {
+  background: #ED5485;
+  border-radius: 6px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 11px 35px;
+}
+
+.leadViewPage.content .card-view {
+  background: #FFFFFF;
+  border-radius: 8px 8px 0px 0px;
+  padding: 34px 30px;
+  margin-top: 18px;
+}
+
+.leadViewPage.content .card-view .note-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #183555;
+  margin-bottom: 28px;
+}
+
+.leadViewPage.content .card-view .textarea {
+  margin-bottom: 40px;
+}
+
+.leadViewPage.content .card-view .textarea .form-select {
+  max-width: 240px;
+  border: 1px solid #D0D5DD;
+  -webkit-box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+          box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+}
+
+.leadViewPage.content .card-view .textarea .form-select:disabled {
+  background-color: transparent;
+}
+
+.leadViewPage.content .card-view .textarea .btn {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.leadViewPage.content .card-view .textarea .btn:disabled {
+  opacity: 1;
+}
+
+.leadViewPage.content .card-view .textarea .text-area {
+  background: #FDFDFD;
+  border: 1px solid #E9EBF0;
+  border-radius: 8px;
+  overflow-y: auto;
+  padding: 20px;
+  width: 100%;
+  height: 430px;
+}
+
+.leadViewPage.content .card-view .textarea .text-area:focus {
+  outline: none;
+  border: 1px solid #E9EBF0;
+}
+
+.leadViewPage.content .card-view .textarea .text-area::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
+
+.leadViewPage.content .card-view .textarea .text-area::-webkit-scrollbar-track {
+  border-radius: 310px;
+}
+
+.leadViewPage.content .card-view .textarea .text-area::-webkit-scrollbar-thumb {
+  border-radius: 310px;
+  background: #D9D9D9;
+}
+
+.leadViewPage.content .card-view .tagArea {
+  margin-bottom: 40px;
+}
+
+.leadViewPage.content .card-view .tagArea .title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 38px;
+  color: #425466;
+}
+
+.leadViewPage.content .card-view .tagArea .title2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 38px;
+  color: #425466;
+}
+
+.leadViewPage.content .card-view .tagArea .tag-input-group {
+  margin-bottom: 18px;
+}
+
+.leadViewPage.content .card-view .tagArea .tag-input-group .form-control {
+  border: 1px solid #E8ECF1;
+  border-radius: 6px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  color: #B5B5BD;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.leadViewPage.content .card-view .tagArea .tag-input-group .form-control:disabled {
+  background-color: transparent;
+}
+
+.leadViewPage.content .card-view .tagArea .tag-input-group .btn-add {
+  background: #31B997;
+  border-radius: 0px 4px 4px 0px;
+  width: 52px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.leadViewPage.content .card-view .tagArea .quick-tag {
+  margin-bottom: 30px;
+}
+
+.leadViewPage.content .card-view .tagArea .quick-tag .tag-btn {
+  background: #EBF2FA;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #7C889D;
+  margin-right: 14px;
+  margin-bottom: 14px;
+}
+
+.leadViewPage.content .card-view .tagArea .quick-tag .tag-btn svg {
+  margin-left: 12px;
+}
+
+.leadViewPage.content .card-view .tagArea .added-tag {
+  border: 1px solid #D8D6DE;
+  border-radius: 6px;
+  padding: 0px 12px;
+}
+
+.leadViewPage.content .card-view .tagArea .added-tag .added-tag-btn {
+  background: #328090;
+  border-radius: 3px;
+  padding: 6px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #FFFFFF;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.leadViewPage.content .card-view .tagArea .added-tag .added-tag-btn svg {
+  margin-left: 12px;
+}
+
+.leadViewPage.content .card-view .attachmentArea .title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 38px;
+  color: #425466;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-box {
+  background: #F8FAFB;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 24px;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-box .file-type {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #4F4F55;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-box .upload-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EF5285;
+  border-radius: 4px;
+  padding: 9px 14px 9px 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 22px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-box .upload-btn input {
+  display: none;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-box .upload-btn svg {
+  margin-right: 10px;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-file {
+  background: #F9F9F9;
+  border: 1px solid #E2E2E2;
+  border-radius: 8px;
+  padding: 15px 16px;
+  width: 100%;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-file .file-icon {
+  width: 40px;
+  margin-right: 14px;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-file .file-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-file .file-size {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #878789;
+  margin-bottom: 0px;
+}
+
+.leadViewPage.content .card-view .attachmentArea .upload-file .delete-btn {
+  margin-left: auto;
+}
+
+.leadViewPage.content .card-view .save-note {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 12px 24px;
+  background: #31B997;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 67px;
+  margin-bottom: 36px;
+}
+
+.leadViewPage.content .card-view .border-t-dashed {
+  border-top: 1px dashed #C0C0C1;
+}
+
+.leadViewPage.content .card-view .history-area .title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.005em;
+  color: #16192C;
+  margin-top: 32px;
+}
+
+.leadViewPage.content .card-view .history-area .post {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.leadViewPage.content .card-view .history-area .post .avater {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+
+.leadViewPage.content .card-view .history-area .post .username {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #334253;
+  margin-bottom: 0px;
+}
+
+.leadViewPage.content .card-view .history-area .post .post-date {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #67727E;
+  margin-bottom: 0px;
+}
+
+.leadViewPage.content .card-view .history-area .post .post-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #67727E;
+}
+
+.leadViewPage.content .card-view .history-area .post .tag-list .tag-btn {
+  background: #328090;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-right: 14px;
+  margin-bottom: 14px;
+}
+
+.leadViewPage.content .card-view .history-area .post .tag-list .tag-btn svg {
+  margin-left: 12px;
+}
+
+.leadViewPage.content .card-view .history-area .post .upload-file-name {
+  background: #F9F9F9;
+  border: 1px solid #E2E2E2;
+  border-radius: 8px;
+  padding: 15px 16px;
+  width: 100%;
+}
+
+.leadViewPage.content .card-view .history-area .post .upload-file-name .file-icon {
+  width: 40px;
+  margin-right: 14px;
+}
+
+.leadViewPage.content .card-view .history-area .post .upload-file-name .file-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 0px;
+}
+
+.leadViewPage.content .card-view .history-area .post .upload-file-name .file-size {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #878789;
+  margin-bottom: 0px;
+}
+
+.leadViewPage.content .card-view .history-area .post .upload-file-name .delete-btn {
+  margin-left: auto;
 }
 
 .container {
