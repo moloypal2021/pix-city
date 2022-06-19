@@ -3012,7 +3012,13 @@
 }
 
 .adminAddNew .content .mb-40px {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .adminAddNew .content .mb-40px {
+    margin-bottom: 40px;
+  }
 }
 
 .adminAddNew .content .form-input {
@@ -3041,6 +3047,18 @@
 
 .adminAddNew .content .form-input::placeholder {
   color: #B5B5BD;
+}
+
+.adminAddNew .content .form-select {
+  background-color: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  border-radius: 6px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  padding: 6px 20px;
 }
 
 .adminAddNew .content .calender {
@@ -3084,8 +3102,30 @@
   pointer-events: none;
 }
 
-.adminAddNew .content .form-check {
+.adminAddNew .content .radioButtons .form-check {
   margin-right: 56px;
+}
+
+.adminAddNew .content .radioButtons .form-check .form-check-label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 4px;
+}
+
+.adminAddNew .content .radioButtons .form-check .form-check-input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9DB7D0;
+}
+
+.adminAddNew .content .radioButtons .form-check .form-check-input:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 20C12 15.5817 15.5817 12 20 12V12C24.4183 12 28 15.5817 28 20V20C28 24.4183 24.4183 28 20 28V28C15.5817 28 12 24.4183 12 20V20Z' fill='%23ED5485'/%3E%3Ccircle cx='20' cy='20' r='20' fill='%23EE628F' fill-opacity='0.24'/%3E%3Ccircle cx='20' cy='20' r='4' fill='white'/%3E%3C/svg%3E%0A");
+  background-size: 36px 36px;
+  background-color: rgba(238, 98, 143, 0.24);
+  border-color: rgba(238, 98, 143, 0.24);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(238, 98, 143, 0.24);
+          box-shadow: 0px 0px 0px 5px rgba(238, 98, 143, 0.24);
 }
 
 .adminAddNew .btn-outline {
@@ -3103,6 +3143,316 @@
 
 .adminAddNew .btn-Save {
   font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 14px 36px;
+  background: #31B997;
+  margin-left: 32px;
+}
+
+.adminEdit {
+  padding-top: 32px;
+  padding-bottom: 150px;
+  background: #F6F9FC;
+}
+
+.adminEdit .title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #084279;
+  margin-bottom: 56px;
+}
+
+.adminEdit .btn-modifire {
+  border: 1px solid #C4CACF;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 12px;
+  color: #16192C;
+}
+
+.adminEdit .content {
+  max-width: 850px;
+  padding-top: 32px;
+}
+
+@media (min-width: 1200px) {
+  .adminEdit .content {
+    max-width: 1000px;
+  }
+}
+
+.adminEdit .content .sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ED5485;
+  margin-bottom: 34px;
+}
+
+.adminEdit .content .form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 38px;
+  color: #425466;
+}
+
+.adminEdit .content .pro-photo {
+  width: 109px;
+  height: 109px;
+  border-radius: 5px;
+  background: #EE628F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 24px;
+}
+
+@media (min-width: 576px) {
+  .adminEdit .content .pro-photo {
+    margin-left: 54px;
+  }
+}
+
+.adminEdit .content .pro-photo img {
+  width: 102px;
+  height: 102px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.adminEdit .content .photo-upload input {
+  display: none;
+}
+
+.adminEdit .content .photo-upload .custom-upload {
+  width: 109px;
+  height: 109px;
+  background: #FFFFFF;
+  border: 1px solid #D6D6D6;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 24px;
+}
+
+@media (min-width: 576px) {
+  .adminEdit .content .photo-upload .custom-upload {
+    margin-left: 54px;
+  }
+}
+
+.adminEdit .content .mb-40px {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .adminEdit .content .mb-40px {
+    margin-bottom: 40px;
+  }
+}
+
+.adminEdit .content .form-input {
+  background: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  padding: 6px 20px;
+}
+
+.adminEdit .content .form-input::-webkit-input-placeholder {
+  color: #B5B5BD;
+}
+
+.adminEdit .content .form-input:-ms-input-placeholder {
+  color: #B5B5BD;
+}
+
+.adminEdit .content .form-input::-ms-input-placeholder {
+  color: #B5B5BD;
+}
+
+.adminEdit .content .form-input::placeholder {
+  color: #B5B5BD;
+}
+
+.adminEdit .content .form-select {
+  background-color: #FFFFFF;
+  border: 1px solid #E8ECF1;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 38px;
+  padding: 6px 20px;
+}
+
+.adminEdit .content .calender {
+  position: relative;
+}
+
+.adminEdit .content .calender input {
+  padding: 12px 16px;
+  border: 1px solid #E8ECF1;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: #4F4F55;
+}
+
+.adminEdit .content .calender input:disabled {
+  background-color: transparent;
+}
+
+.adminEdit .content .calender .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 48px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #31B997;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.adminEdit .content .reportSelect {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.adminEdit .content .reportSelect .avater {
+  width: 24px;
+  height: 24px;
+  border-radius: 995px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+}
+
+.adminEdit .content .reportSelect .form-select {
+  padding-left: 56px;
+}
+
+.adminEdit .content .radioButtons .form-check {
+  margin-right: 56px;
+}
+
+.adminEdit .content .radioButtons .form-check .form-check-label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 4px;
+}
+
+.adminEdit .content .radioButtons .form-check .form-check-input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9DB7D0;
+}
+
+.adminEdit .content .radioButtons .form-check .form-check-input:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 20C12 15.5817 15.5817 12 20 12V12C24.4183 12 28 15.5817 28 20V20C28 24.4183 24.4183 28 20 28V28C15.5817 28 12 24.4183 12 20V20Z' fill='%23ED5485'/%3E%3Ccircle cx='20' cy='20' r='20' fill='%23EE628F' fill-opacity='0.24'/%3E%3Ccircle cx='20' cy='20' r='4' fill='white'/%3E%3C/svg%3E%0A");
+  background-size: 36px 36px;
+  background-color: rgba(238, 98, 143, 0.24);
+  border-color: rgba(238, 98, 143, 0.24);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(238, 98, 143, 0.24);
+          box-shadow: 0px 0px 0px 5px rgba(238, 98, 143, 0.24);
+}
+
+.adminEdit .content .password-area {
+  position: relative;
+}
+
+.adminEdit .content .password-area .show-pass {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .adminEdit .content .password-area .show-pass {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    display: inline;
+    top: 0;
+    margin-top: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .adminEdit .content .password-area .show-pass {
+    margin-right: -64px;
+  }
+}
+
+.adminEdit .btn-outline {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #4F4F55;
+  padding: 14px 36px;
+  border: 1px solid #C4CACF;
+  border-radius: 6px;
+}
+
+.adminEdit .btn-Save {
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
