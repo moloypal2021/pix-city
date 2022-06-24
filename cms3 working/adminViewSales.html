@@ -284,65 +284,8 @@
 
 
     <!-- Content Section Start -->
-    <section class="adminAddNew">
-
-
-        <div class="container-fluid position-relative">
-            <!-- Success Alart -->
-            <div class="alertBox success-alert" id="success-alert">
-                <div class="d-flex align-items-center">
-                    <svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle opacity="0.7" cx="24" cy="24" r="24" fill="#4AAE8C" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M29.6088 17.49C30.1893 16.8367 31.1305 16.8367 31.7111 17.49C32.2845 18.1354 32.2915 19.1768 31.7322 19.8319L23.8195 30.964C23.8081 30.9801 23.7959 30.9954 23.783 31.01C23.2024 31.6633 22.2612 31.6633 21.6807 31.01L16.4354 25.1064C15.8549 24.453 15.8549 23.3936 16.4354 22.7403C17.0159 22.0869 17.9571 22.0869 18.5376 22.7403L22.687 27.4104L29.5694 17.5401C29.5816 17.5225 29.5948 17.5058 29.6088 17.49Z"
-                            fill="white" />
-                    </svg>
-                    <div class="ms-3">
-                        <h6 class="title mb-0">Changes saved</h6>
-                        <p class="details mb-0">A short alert message here…</p>
-                    </div>
-
-                    <div class="ms-auto">
-                        <button class="alert-btn btn" id="success-alert-btn">Got it!</button>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Error Alart -->
-            <div class="alertBox error-alert" id="error-alert">
-                <div class="d-flex align-items-center">
-                    <svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <ellipse cx="23.908" cy="24" rx="23.908" ry="24" fill="#D94E59" />
-                        <rect width="23.9081" height="24" transform="translate(11.9541 12)" fill="#D94E59" />
-                        <path
-                            d="M22.416 28.5C22.416 27.6716 23.085 27 23.9103 27C24.7355 27 25.4045 27.6716 25.4045 28.5C25.4045 29.3284 24.7355 30 23.9103 30C23.085 30 22.416 29.3284 22.416 28.5Z"
-                            fill="white" />
-                        <path
-                            d="M22.5624 19.4926C22.4828 18.6934 23.1079 18 23.908 18C24.708 18 25.3331 18.6934 25.2535 19.4926L24.7294 24.7537C24.6872 25.1774 24.3321 25.5 23.908 25.5C23.4838 25.5 23.1287 25.1774 23.0865 24.7537L22.5624 19.4926Z"
-                            fill="white" />
-                    </svg>
-
-                    <div class="ms-3">
-                        <h6 class="title mb-0">Error</h6>
-                        <p class="details mb-0">A short alert message here…</p>
-                    </div>
-
-                    <div class="ms-auto">
-                        <button class="alert-btn btn" id="error-alert-btn">Ooops!</button>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-
-
-
+    <section class="adminViewSales">
+        <div class="container-fluid">
             <!-- Breadcumb Start -->
             <nav class="d-none d-md-block" aria-label="breadcrumb">
                 <ol class="breadcrumb align-items-center">
@@ -360,90 +303,133 @@
                 </ol>
             </nav>
 
+            <!-- Title Start -->
+            <div class="d-flex flex-wrap align-items-center justify-content-between mt-4 pt-2">
+                <h1 class="title mb-2">Administrateurs</h1>
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-back mb-2">Back</button>
+                    <button class="btn btn-Ajouter mb-2 ms-4"><svg width="12" height="12" viewBox="0 0 12 12"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_178_18587" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="12" height="12">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 0C6.66274 0 7.2 0.537258 7.2 1.2V4.8H10.8C11.4627 4.8 12 5.33726 12 6C12 6.66274 11.4627 7.2 10.8 7.2H7.2V10.8C7.2 11.4627 6.66274 12 6 12C5.33726 12 4.8 11.4627 4.8 10.8V7.2H1.2C0.537258 7.2 0 6.66274 0 6C0 5.33726 0.537258 4.8 1.2 4.8H4.8V1.2C4.8 0.537258 5.33726 0 6 0Z"
+                                    fill="black" />
+                            </mask>
+                            <g mask="url(#mask0_178_18587)">
+                                <rect width="12" height="12" fill="white" />
+                            </g>
+                        </svg>
+                        Ajouter</button>
+                </div>
+            </div>
+            <!-- Title End -->
+
+            <!-- Stats Start -->
+            <div class="statusArea row">
+                <div class="col-lg-7 pe-lg-5 mb-5 chartBox">
+                    <div class="d-flex align-items-center justify-content-between mb-5">
+                        <h5 class="title">Revenue generated</h5>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Month</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <canvas id="myChart" class="chartView"></canvas>
+                </div>
+
+                <div class="col-lg-5 ps-lg-5 mb-5">
+                    <div class="stats-card d-inline-flex align-items-center">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 8C0 3.58172 3.58172 0 8 0H38C42.4183 0 46 3.58172 46 8V38C46 42.4183 42.4183 46 38 46H8C3.58172 46 0 42.4183 0 38V8Z"
+                                fill="#FFEEF1" />
+                            <mask id="mask0_178_18748" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="14"
+                                width="18" height="18">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.5 26.375H16.25V29.75H18.5V26.375ZM24.125 21.875H21.875V29.75H24.125V21.875ZM29.75 16.25L27.5 16.25V29.75H29.75V16.25ZM27.5 15.125C26.8787 15.125 26.375 15.6287 26.375 16.25V29.75C26.375 30.3713 26.8787 30.875 27.5 30.875H29.75C30.3713 30.875 30.875 30.3713 30.875 29.75V16.25C30.875 15.6287 30.3713 15.125 29.75 15.125H27.5ZM20.75 21.875C20.75 21.2537 21.2537 20.75 21.875 20.75H24.125C24.7463 20.75 25.25 21.2537 25.25 21.875V29.75C25.25 30.3713 24.7463 30.875 24.125 30.875H21.875C21.2537 30.875 20.75 30.3713 20.75 29.75V21.875ZM15.125 26.375C15.125 25.7537 15.6287 25.25 16.25 25.25H18.5C19.1213 25.25 19.625 25.7537 19.625 26.375V29.75C19.625 30.3713 19.1213 30.875 18.5 30.875H16.25C15.6287 30.875 15.125 30.3713 15.125 29.75V26.375Z"
+                                    fill="black" />
+                            </mask>
+                            <g mask="url(#mask0_178_18748)">
+                                <rect x="14" y="14" width="18" height="18" fill="#FF92AE" />
+                            </g>
+                        </svg>
+                        <div class="ms-3">
+                            <h6 class="title text-pink-10 mb-0">Number of missions engaged</h6>
+                            <p class="number-stats mb-0">10</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Stats End -->
+
+            <!-- Personal Details Start-->
             <div class="content">
-                <h1 class="title">Administrateurs</h1>
+
                 <p class="sub-title">Personal Details</p>
 
                 <!-- Photo Upload -->
                 <div class="d-flex align-items-center">
                     <p for="" class="form-label">Profile Photo</p>
                     <div class="">
-                        <label for="" class="photo-upload">
-                            <input type="file" class="">
-                            <div class="custom-upload">
-                                <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g opacity="0.7">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M20.844 4.20732C20.898 4.29822 20.9925 4.36315 21.114 4.36315C24.354 4.36315 27 6.90832 27 10.0249V17.7383C27 20.8548 24.354 23.4 21.114 23.4H5.886C2.6325 23.4 0 20.8548 0 17.7383V10.0249C0 6.90832 2.6325 4.36315 5.886 4.36315C5.994 4.36315 6.102 4.31121 6.1425 4.20732L6.2235 4.0515C6.27005 3.95714 6.31783 3.86023 6.36634 3.76185C6.71169 3.06137 7.09375 2.28642 7.3305 1.83097C7.9515 0.662264 9.0045 0.0129856 10.314 0H16.6725C17.982 0.0129856 19.0485 0.662264 19.6695 1.83097C19.8821 2.24006 20.2061 2.89905 20.5184 3.53417C20.5828 3.66514 20.6467 3.7951 20.709 3.92164L20.844 4.20732ZM19.8594 9.19341C19.8594 9.84268 20.3994 10.3621 21.0744 10.3621C21.7494 10.3621 22.3029 9.84268 22.3029 9.19341C22.3029 8.54413 21.7494 8.01172 21.0744 8.01172C20.3994 8.01172 19.8594 8.54413 19.8594 9.19341ZM11.1641 11.2064C11.7986 10.5961 12.6221 10.2715 13.4996 10.2715C14.3771 10.2715 15.2006 10.5961 15.8216 11.1935C16.4426 11.7908 16.7801 12.5829 16.7801 13.427C16.7666 15.167 15.3086 16.5825 13.4996 16.5825C12.6221 16.5825 11.7986 16.2578 11.1776 15.6605C10.5566 15.0632 10.2191 14.271 10.2191 13.427V13.414C10.2056 12.5959 10.5431 11.8038 11.1641 11.2064ZM17.2406 17.0375C16.2821 17.9595 14.9591 18.5309 13.5011 18.5309C12.0836 18.5309 10.7606 17.9985 9.74805 17.0375C8.74905 16.0636 8.19555 14.791 8.19555 13.4275C8.18205 12.077 8.73555 10.8045 9.73455 9.83055C10.7471 8.85663 12.0836 8.32422 13.5011 8.32422C14.9186 8.32422 16.2551 8.85663 17.2541 9.81756C18.2531 10.7915 18.8066 12.077 18.8066 13.4275C18.7931 14.843 18.1991 16.1156 17.2406 17.0375Z"
-                                            fill="#030229" />
-                                    </g>
-                                </svg>
-                            </div>
-                        </label>
+                        <div class="pro-photo">
+                            <img src="./assets/images/pro-pic.jpg" alt="" class="">
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="mb-40px">
                         <label for="Nom complet" class="form-label">Nom complet</label>
-                        <input type="text" class="form-control form-input" id="Nom complet" placeholder="Enter here...">
+                        <input type="text" class="form-control form-input" id="Nom complet" placeholder="Enter here..."
+                            value="Louis BONORON">
                     </div>
-                    <div class="col-md-6 pe-lg-5 mb-40px">
+                    <div class="col-md-6 pe-xl-5 mb-40px">
                         <div class="mb-40px">
                             <label for="Nom complet" class="form-label">E-mail</label>
                             <input type="text" class="form-control form-input" id="Nom complet"
-                                placeholder="Enter here...">
+                                placeholder="Enter here..." value="Ibonoron_deleted@pix.city">
                         </div>
                     </div>
-                    <div class="col-md-6 ps-lg-5 mb-40px">
+                    <div class="col-md-6 ps-xl-5 mb-40px">
                         <div class="mb-40px">
                             <label for="Nom complet" class="form-label">Téléphone</label>
                             <input type="text" class="form-control form-input" id="Nom complet"
-                                placeholder="Enter here...">
+                                placeholder="Enter here..." value="+91- 8918299121">
                         </div>
                     </div>
-                    <div class="col-md-6 pe-lg-5 mb-40px">
+                    <div class="col-md-6 pe-xl-5 mb-40px">
                         <div class="mb-40px">
                             <label for="Rôle" class="form-label">Rôle</label>
                             <select class="form-select" aria-label="Rôle">
-                                <option selected disabled>Select here...</option>
-                                <option value="1">One</option>
+                                <option disabled>Select here...</option>
+                                <option value="1" selected>Modérateur</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
                         </div>
                     </div>
 
-                    <div class="col-md-6 ps-lg-5 mb-40px">
+                    <div class="col-md-6 ps-xl-5 mb-40px">
                         <div class="mb-40px">
                             <label for="Désignation" class="form-label">Désignation</label>
                             <select class="form-select" aria-label="Désignation">
-                                <option selected disabled>Select here...</option>
-                                <option value="1">One</option>
+                                <option disabled>Select here...</option>
+                                <option value="1" selected>Sales Manager</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
                             </select>
                         </div>
                     </div>
 
-                    <div class="col-md-6 pe-lg-5 mb-40px">
-                        <div class="mb-40px">
-                            <label for="Rôle" class="form-label">Rôle</label>
-                            <select class="form-select" aria-label="Rôle">
-                                <option selected disabled>Select here...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 ps-lg-5 mb-40px">
+                    <div class="col-md-6 pe-xl-5 mb-40px">
                         <div class="mb-40px">
                             <label for="Date d’inscription" class="form-label">Date d’inscription</label>
                             <div class="calender">
-                                <input type="date" class="form-control">
+                                <input type="date" class="form-control" value="05/24/2022">
                                 <div class="icon">
                                     <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -463,71 +449,51 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 pe-lg-5 mb-40px">
+                    <div class="col-md-6 ps-xl-5 mb-40px">
                         <div class="mb-40px">
                             <label for="Reporting To" class="form-label">Reporting To</label>
-                            <select class="form-select" aria-label="Reporting To">
-                                <option selected disabled>Select here...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6 pe-lg-5 mb-40px">
-                        <div class="mb-40px radioButtons">
-                            <label for="Reporting To" class="form-label">Reporting To</label>
-                            <div class="d-flex flex-wrap align-items-center">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="1">
-                                    <label class="form-check-label" for="1">
-                                        Administrateur
-                                    </label>
-                                </div>
-
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="2" checked>
-                                    <label class="form-check-label" for="2">
-                                        Viewer
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="3">
-                                    <label class="form-check-label" for="3">
-                                        Modérateur
-                                    </label>
-                                </div>
+                            <div class="reportSelect">
+                                <img src="./assets/images/pro-pic.jpg" alt="" class="avater">
+                                <select class="form-select" aria-label="Reporting To">
+                                    <option disabled>Select here...</option>
+                                    <option value="1" selected>Theresa Webb</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-6 pe-lg-5 mb-40px">
-                        <div class="mb-40px">
-                            <label for="Mot de passe" class="form-label">Mot de passe</label>
-                            <input type="text" class="form-control form-input" id="Mot de passe"
-                                placeholder="Enter here...">
+                <h5 class="sub-title mb-3">Mot de passe</h5>
+                <div class="password-area">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 pe-xl-5 mb-40px">
+                            <div class="mb-40px">
+                                <label for="Mot de passe" class="form-label">Mot de passe</label>
+                                <input type="password" class="form-control form-input" id="Mot de passe"
+                                    placeholder="Enter here..." value="password">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 ps-xl-5 mb-40px">
+                            <div class="mb-40px">
+                                <label for="Confirmation du mot de passe" class="form-label">Confirmation du mot de
+                                    passe</label>
+                                <input type="password" class="form-control form-input" id="Confirmation du mot de passe"
+                                    placeholder="Enter here..." value="password">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 ps-lg-5 mb-40px">
-                        <div class="mb-40px">
-                            <label for="Confirmation du mot de passe" class="form-label">Confirmation du mot de
-                                passe</label>
-                            <input type="text" class="form-control form-input" id="Confirmation du mot de passe"
-                                placeholder="Enter here...">
-                        </div>
-                    </div>
+                    <button class="btn show-pass">
+                        <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.51869 5.93358L1.39169 2.80758L2.80669 1.39258L22.6057 21.1926L21.1907 22.6066L17.8807 19.2966C16.1219 20.4121 14.0814 21.0029 11.9987 20.9996C6.60669 20.9996 2.12069 17.1196 1.17969 11.9996C1.60972 9.6703 2.78132 7.54247 4.51969 5.93358H4.51869ZM14.7557 16.1716L13.2917 14.7076C12.7317 14.9755 12.1025 15.0631 11.4906 14.9584C10.8788 14.8536 10.3145 14.5616 9.87556 14.1227C9.43662 13.6838 9.14466 13.1195 9.0399 12.5076C8.93515 11.8958 9.02277 11.2665 9.29069 10.7066L7.82669 9.24258C7.1904 10.2041 6.90596 11.3559 7.02152 12.5031C7.13708 13.6502 7.64554 14.7222 8.46081 15.5375C9.27607 16.3527 10.348 16.8612 11.4952 16.9767C12.6424 17.0923 13.7942 16.8079 14.7557 16.1716ZM7.97269 3.75958C9.21969 3.26958 10.5787 2.99958 11.9987 2.99958C17.3907 2.99958 21.8767 6.87958 22.8177 11.9996C22.5113 13.6653 21.8225 15.2372 20.8057 16.5916L16.9457 12.7316C17.0603 11.9592 16.9925 11.1707 16.7476 10.4292C16.5027 9.68778 16.0876 9.01399 15.5354 8.46185C14.9833 7.9097 14.3095 7.49455 13.568 7.24965C12.8266 7.00475 12.0381 6.93692 11.2657 7.05158L7.97269 3.76058V3.75958Z"
+                                fill="#183555" />
+                        </svg>
+                    </button>
                 </div>
             </div>
-
-            <div class="mt-5 d-flex align-items-center justify-content-end">
-                <button class="btn btn-outline">Cancel</button>
-                <button class="btn btn-Save">Save</button>
-            </div>
+            <!-- Personal Details End-->
         </div>
     </section>
     <!-- Content Section End -->
@@ -536,6 +502,12 @@
 
     <!--  Editor -->
     <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
+        integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <!-- Bootstrap.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -546,15 +518,68 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script>
-        $("#success-alert-btn").click(function () {
-            $("#success-alert").hide()
-        });
 
-        $("#error-alert-btn").click(function () {
-            $("#error-alert").hide()
+    <script>
+        const ctx = document.getElementById('myChart');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: false,
+                    data: [95, 80, 60, 90, 20, 30, 60, 80, 50, 70, 20, 40],
+                    backgroundColor: '#31B997',
+                    barPercentage: 0.5,
+                    barThickness: 6,
+                    maxBarThickness: 8,
+                    minBarLength: 2,
+                    borderRadius: 200
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            min: 0,
+                            max: 100,
+                            callback: function (value) {
+                                return (value / this.max * 100).toFixed(0) + '%'; // convert it to percentage
+                            },
+                            font: {
+                                size: 12,
+                                weight: 300,
+                                fontColor: "#8F8F8F",
+                            }
+                        },
+                        gridLines: { color: "#F7F8FA" }
+                    },
+                    x: {
+                        ticks: {
+                            font: {
+                                size: 12,
+                                weight: 700,
+                                fontColor: "#333333",
+                            }
+                        },
+                        gridLines: { color: "#F7F8FA" }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false,
+                        labels: {
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                }
+            }
         });
     </script>
+
 </body>
 
 </html>

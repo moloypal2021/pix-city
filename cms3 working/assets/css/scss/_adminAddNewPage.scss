@@ -3,6 +3,87 @@
     padding-bottom: 150px;
     background: #F6F9FC;
 
+    .alertBox {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 580px;
+        box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+        padding: 16px;
+
+        .icon {
+            min-width: 48px;
+        }
+
+        .title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        .details {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 23px;
+        }
+
+        .alert-btn {
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 12px;
+            white-space: nowrap;
+        }
+    }
+
+    .success-alert {
+        background: #66CB9F;
+
+        .title {
+            color: #FFFFFF;
+        }
+
+        .details {
+            color: #FFFFFF;
+        }
+
+        .alert-btn {
+            background: #FFFFFF;
+            color: #31B997;
+        }
+    }
+
+    .error-alert {
+        background: #F16063;
+
+        .title {
+            color: #FFFFFF;
+        }
+
+        .details {
+            color: #FFFFFF;
+        }
+
+        .alert-btn {
+            background: #FFFFFF;
+            color: #F16063;
+        }
+    }
+
+
+
     .content {
         max-width: 1000px;
         padding-top: 32px;
