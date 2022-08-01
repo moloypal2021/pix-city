@@ -1,0 +1,30 @@
+@import "breakpoint";
+@import "fonts";
+@import "utilities";
+@import "colors";
+@import "components";
+
+
+.container {
+    padding-right: 16px;
+    padding-left: 6px;
+
+    @include br-up(xxl) {
+        max-width: 1330px;
+    }
+}
+
+.container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include br-up(sm) {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    @include br-up(xl) {
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+}

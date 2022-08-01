@@ -1,0 +1,509 @@
+@import "style";
+
+
+.content {
+    padding-top: 30px;
+    padding-bottom: 130px;
+    background: #F6F9FC;
+
+    .header-name {
+        background: #FFFFFF;
+        padding: 40px 40px 24px 40px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #EDF2F7;
+
+        .h-title {
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            color: #084279;
+        }
+    }
+
+    .first-content-box {
+        background: #FFFFFF;
+        padding: 48px 20px 40px 20px;
+
+        @include br-up(lg) {
+            padding: 68px 68px 40px 40px;
+        }
+
+        .form-label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #344054;
+            margin-right: 20px;
+            white-space: nowrap;
+        }
+
+        .form-select {
+            background-color: #FFFFFF;
+            border: 1px solid #D0D5DD;
+            box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #344054;
+        }
+
+        @include br-up(xl) {
+            .form-label {
+                margin-right: 50px;
+            }
+        }
+
+        .mb-60px {
+            margin-bottom: 30px;
+        }
+
+        @include br-up(lg) {
+            .mb-60px {
+                margin-bottom: 60px;
+            }
+        }
+
+        .form-label-title {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 38px;
+            color: #425466;
+            margin-bottom: 8px;
+        }
+
+        .btn-outline {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            color: #4F4F55;
+            padding: 14px 36px;
+            border: 1px solid #C4CACF;
+            border-radius: 6px;
+        }
+
+        .btn-Save {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            padding: 14px 36px;
+            background: #31B997;
+            margin-left: 32px;
+        }
+
+    }
+
+    .project-info-box {
+        background: #FFFFFF;
+        padding: 30px 20px 94px 20px;
+        margin-top: 40px;
+
+        @include br-up(lg) {
+            padding: 30px 40px 94px 40px;
+
+        }
+
+        .h-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: #101828;
+            margin-bottom: 32px;
+        }
+
+        .form-label {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 38px;
+            color: #425466;
+        }
+
+        .form-input {
+            background: #FFFFFF;
+            border: 1px solid #E8ECF1;
+            border-radius: 6px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 38px;
+            padding: 10px 20px;
+
+            &::placeholder {
+                color: #B5B5BD;
+            }
+        }
+
+        .mb-40px {
+            margin-bottom: 40px;
+        }
+
+        .mb-60px {
+            margin-bottom: 60px;
+        }
+
+        .files {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #F0F0F0;
+        }
+
+        .file-icon {
+            background: #FFFFFF;
+            border: 1px solid #F0F0F0;
+            border-radius: 4px;
+            padding: 8px;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+
+        .file-name {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #000000;
+            margin-bottom: 0px;
+        }
+
+        .file-date {
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 18px;
+            color: #A7B0BA;
+            margin-bottom: 0px;
+        }
+
+        .project-header {
+            margin-bottom: 12px;
+
+            .h-sub {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #667085;
+                margin-bottom: 20px;
+            }
+
+            .h-title {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: #101828;
+                margin-bottom: 4px;
+            }
+
+            hr {
+                background-color: #E4E7EC;
+                opacity: 1;
+            }
+
+            .btn-edit {
+                border: 1px solid #555657;
+                border-radius: 6px;
+                padding: 18px 24px;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 12px;
+                color: #16192C;
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 8px;
+                }
+            }
+
+        }
+
+        .projectItemsBox {
+            padding: 28px;
+            background: #F5F8FB;
+            box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.03);
+            border-radius: 8px;
+
+            .bg-indigo {
+                background: #623CE7;
+            }
+
+            .p-tile-area {
+                margin-right: 16px;
+                margin-bottom: 35px;
+
+                .items-icon {
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 99999px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.01em;
+                    color: #FFFFFF;
+                    margin-right: 20px;
+                }
+
+                .p-title {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: 0.01em;
+                    margin-bottom: 5px;
+                    color: #000000;
+                }
+
+                .p-qty {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 0px;
+                    color: #31B997;
+                }
+
+                @include br-down(xl) {
+                    .items-icon {
+                        width: 44px;
+                        height: 44px;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    .p-title {
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin-bottom: 0px;
+                    }
+
+                    .p-qty {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                }
+            }
+
+            .p-date-area {
+                margin-right: 16px;
+
+                .p-icon {
+                    width: 14px;
+                    margin-right: 8px;
+                }
+
+                .p-date {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #8A8B8E;
+
+                    @include br-up(xl) {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                }
+            }
+
+            .p-price {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                color: #EE628F;
+                margin-right: 16px;
+
+                @include br-up(xl) {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+
+            .p-commitment {
+                .i-circle {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 8px;
+                }
+
+                .form-label {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #8A8B8E;
+                    margin-right: 16px;
+
+                    @include br-up(xl) {
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-right: 28px;
+                    }
+                }
+
+                .form-check2 {
+                    .form-check-input {
+                        width: 40px;
+                        height: 22px;
+                    }
+                }
+            }
+
+            .itemsBoxArea {
+                padding-left: 6px;
+                padding-right: 6px;
+                background: #FFFFFF;
+                border-radius: 4px;
+                margin-bottom: 14px;
+
+                @include br-up(md) {
+                    padding-left: 12px;
+                    padding-right: 12px;
+                }
+
+                hr {
+                    background: #E4E7EC;
+                    opacity: 1;
+                }
+
+                .item-box {
+                    padding: 20px 8px;
+
+                    @include br-up(md) {
+                        padding: 20px 20px;
+                    }
+
+                    @include br-up(lg) {
+                        padding: 28px 32px;
+                    }
+
+                    .product-name {
+                        .title {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: #31B997;
+                            margin-bottom: 0px;
+
+                            @include br-up(md) {
+                                font-size: 18px;
+                                line-height: 25px;
+                            }
+
+                            @include br-up(lg) {
+                                font-size: 20px;
+                                line-height: 25px;
+                            }
+                        }
+
+                        .sub-title {
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 25px;
+                            color: #4F4F55;
+                            margin-bottom: 0px;
+
+                            span {
+                                color: #31B997;
+                            }
+
+
+                            @include br-up(md) {
+                                font-size: 14px;
+                                line-height: 25px;
+                            }
+
+                            @include br-up(lg) {
+                                font-size: 16px;
+                                line-height: 25px;
+                            }
+                        }
+                    }
+
+                    .qtyForm {
+                        .form-label {
+                            margin-bottom: 0px;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #8A8B8E;
+                            margin-right: 10px;
+
+                            @include br-up(md) {
+                                font-size: 18px;
+                                line-height: 24px;
+                                margin-right: 14px;
+
+                            }
+
+                            @include br-up(lg) {
+                                font-size: 20px;
+                                line-height: 24px;
+                                margin-right: 16px;
+
+                            }
+                        }
+
+                        .form-select {
+                            padding: 10px 28px 10px 13px;
+                            border: 1px solid #D0D5DD;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #344054;
+
+                            @include br-up(md) {
+                                font-size: 14px;
+                                line-height: 20px;
+                                padding: 10px 35px 10px 13px;
+                            }
+
+                            @include br-up(lg) {
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+
+                    .price {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #31B997;
+
+                        @include br-up(md) {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+
+                        @include br-up(lg) {
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    .trash-icon {
+                        width: 24px;
+
+                        @include br-up(sm) {
+                            width: 30px;
+                        }
+
+                        @include br-up(md) {
+                            width: 40px;
+                        }
+
+                    }
+
+
+                }
+            }
+        }
+
+
+    }
+}

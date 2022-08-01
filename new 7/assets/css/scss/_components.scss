@@ -1,0 +1,22 @@
+.breadcrumb {
+    font-size: 16px;
+    line-height: 19px;
+    color: #637381;
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    .breadcrumb-item {
+        margin-right: 8px;
+        padding-left: 0px;
+
+        &::before {
+            padding-right: 8px;
+        }
+
+        a {
+            color: #637381;
+            text-decoration: none;
+        }
+    }
+}
