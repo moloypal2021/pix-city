@@ -103,6 +103,10 @@
   box-shadow: 0px 0px 0px 5px rgba(238, 98, 143, 0.24);
 }
 
+.form-check-input:checked {
+  background-color: #605BFF;
+}
+
 .text-blue-10 {
   color: #1E3E62;
 }
@@ -247,6 +251,29 @@
   letter-spacing: 0.02em;
   color: #084279;
 }
+.content .btn-outline {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #4F4F55;
+  padding: 14px 36px;
+  border: 1px solid #C4CACF;
+  border-radius: 6px;
+}
+.content .btn-Save {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 14px 36px;
+  background: #31B997;
+  margin-left: 32px;
+}
 .content .first-content-box {
   background: #FFFFFF;
   padding: 48px 20px 40px 20px;
@@ -294,29 +321,6 @@
   line-height: 38px;
   color: #425466;
   margin-bottom: 8px;
-}
-.content .first-content-box .btn-outline {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #4F4F55;
-  padding: 14px 36px;
-  border: 1px solid #C4CACF;
-  border-radius: 6px;
-}
-.content .first-content-box .btn-Save {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-  padding: 14px 36px;
-  background: #31B997;
-  margin-left: 32px;
 }
 .content .project-info-box {
   background: #FFFFFF;
@@ -438,6 +442,9 @@
 }
 .content .project-info-box .projectItemsBox .bg-indigo {
   background: #623CE7;
+}
+.content .project-info-box .projectItemsBox .bg-yellow {
+  background-color: #FFAF2A;
 }
 .content .project-info-box .projectItemsBox .p-tile-area {
   margin-right: 16px;
@@ -688,4 +695,79 @@
   .content .project-info-box .projectItemsBox .itemsBoxArea .item-box .trash-icon {
     width: 40px;
   }
+}
+.content .project-info-box .projectItemsBox .extra-inputCheck {
+  position: absolute;
+  bottom: -16px;
+  left: 28px;
+}
+.content .project-info-box .extraInputCheckTop {
+  transform: translateY(-10px);
+}
+.content .paymentLink-model {
+  max-width: 780px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.content .paymentLink-model .paymentLink-model-content {
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 58px 38px;
+}
+@media (min-width: 768px) {
+  .content .paymentLink-model .paymentLink-model-content {
+    padding: 8px 8px 8px 38px;
+  }
+}
+.content .paymentLink-model .paymentLink-model-content .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 136.02%;
+  color: #16192C;
+}
+@media (min-width: 768px) {
+  .content .paymentLink-model .paymentLink-model-content .title {
+    font-size: 28px;
+  }
+}
+.content .paymentLink-model .paymentLink-model-content .link-primary {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 162.02%;
+  color: #1D80FF;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 280px;
+}
+@media (min-width: 576px) {
+  .content .paymentLink-model .paymentLink-model-content .link-primary {
+    max-width: 580px;
+  }
+}
+.content .paymentLink-model .paymentLink-model-content .button-area {
+  padding: 65px 52px;
+  background: rgba(247, 248, 253, 0.9);
+  border-radius: 14px;
+}
+@media (min-width: 768px) {
+  .content .paymentLink-model .paymentLink-model-content .button-area {
+    margin-left: auto;
+  }
+}
+.content .paymentLink-model .paymentLink-model-content .button-area .btn-openlink {
+  background: #31B997;
+  border-radius: 8px;
+  padding: 16px 22px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+.content .paymentLink-model .paymentLink-model-content .button-area .btn-openlink svg {
+  margin-left: 8px;
 }/*# sourceMappingURL=productMissionCreation.css.map */

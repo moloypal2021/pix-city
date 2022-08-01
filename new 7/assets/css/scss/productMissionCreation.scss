@@ -20,6 +20,31 @@
         }
     }
 
+    .btn-outline {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #4F4F55;
+        padding: 14px 36px;
+        border: 1px solid #C4CACF;
+        border-radius: 6px;
+    }
+
+    .btn-Save {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        padding: 14px 36px;
+        background: #31B997;
+        margin-left: 32px;
+    }
+
     .first-content-box {
         background: #FFFFFF;
         padding: 48px 20px 40px 20px;
@@ -73,30 +98,7 @@
             margin-bottom: 8px;
         }
 
-        .btn-outline {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            text-align: center;
-            color: #4F4F55;
-            padding: 14px 36px;
-            border: 1px solid #C4CACF;
-            border-radius: 6px;
-        }
 
-        .btn-Save {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 20px;
-            color: #FFFFFF;
-            padding: 14px 36px;
-            background: #31B997;
-            margin-left: 32px;
-        }
 
     }
 
@@ -223,14 +225,20 @@
 
         }
 
+
         .projectItemsBox {
             padding: 28px;
             background: #F5F8FB;
             box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.03);
             border-radius: 8px;
+            // margin-bottom: 28px;
 
             .bg-indigo {
                 background: #623CE7;
+            }
+
+            .bg-yellow {
+                background-color: #FFAF2A;
             }
 
             .p-tile-area {
@@ -502,8 +510,90 @@
 
                 }
             }
+
+            .extra-inputCheck {
+                position: absolute;
+                bottom: -16px;
+                left: 28px
+            }
         }
 
+        .extraInputCheckTop {
+            transform: translateY(-10px);
+        }
+
+    }
+
+    .paymentLink-model {
+        max-width: 780px;
+        padding-left: 12px;
+        padding-right: 12px;
+
+        .paymentLink-model-content {
+            border-radius: 16px;
+            background-color: #fff;
+            padding: 58px 38px;
+
+            @include br-up(md) {
+                padding: 8px 8px 8px 38px;
+            }
+
+            .title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 136.02%;
+                color: #16192C;
+
+                @include br-up(md) {
+                    font-size: 28px;
+                }
+            }
+
+            .link-primary {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162.02%;
+                color: #1D80FF;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 280px;
+
+                @include br-up(sm) {
+                    max-width: 580px;
+
+                }
+            }
+
+            .button-area {
+
+                padding: 65px 52px;
+                background: rgba(247, 248, 253, 0.9);
+                border-radius: 14px;
+
+                @include br-up(md) {
+                    margin-left: auto;
+                }
+
+                .btn-openlink {
+                    background: #31B997;
+                    border-radius: 8px;
+                    padding: 16px 22px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                    white-space: nowrap;
+                    flex-wrap: nowrap;
+
+                    svg {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
 
     }
 }
