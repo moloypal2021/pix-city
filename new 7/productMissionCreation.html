@@ -363,7 +363,7 @@
             </div>
 
             <!-- Project Info Card Section Start -->
-            <div class="project-info-box font-montserrat d-none" id="projectInfo">
+            <div class="project-info-box font-montserrat d-non " id="projectInfo">
                 <h5 class="h-title">Project Info</h5>
                 <div class="row">
                     <div class="col-lg-6 mb-40px">
@@ -409,7 +409,7 @@
                         <hr>
                     </div>
                     <div class="col-auto ms-auto">
-                        <button class="btn btn-edit">
+                        <button class="btn btn-edit" data-bs-toggle="modal" data-bs-target="#editModal">
                             <img src="./assets/images/edit.svg" alt="" class="">
                             <span>Edit</span>
                         </button>
@@ -581,7 +581,7 @@
             </div>
             <!-- Project Info Card Section End -->
 
-            <!-- Payment Link -->
+            <!-- Payment Link Modal -->
             <div class="modal fade" id="paymentLink" tabindex="-1" aria-labelledby="paymentLinkLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered  paymentLink-model font-montserrat">
@@ -601,6 +601,81 @@
                                     </svg>
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Edit Modal Start -->
+            <!-- Modal -->
+            <div class="modal fade modal-dialog-scrollable modal-edit show" style="display: block; " id="editModal"
+                tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="container-fluid d-flex align-items-center justify-content-between">
+                                <h5 class="modal-title font-gilroy-bold" id="editLabel">Edit</h5>
+                            </div>
+                        </div>
+                        <div class="modal-body container-fluid">
+                            <h1 class="c-title font-gilroy-bold">Choose your products</h1>
+
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="accordion community-manage" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="headingOne">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <input type="checkbox" name="" id=""
+                                                            class="form-check-input com-check">
+
+                                                        <div class="">
+                                                            <h5 class="title">COMMUNITY MANAGEMENT</h5>
+                                                            <p class="sub-title">Posts, stories, vidéos, quizz....</p>
+                                                        </div>
+                                                    </div>
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                        aria-expanded="true" aria-controls="collapseOne">
+                                                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M10.8002 8L12 6.66682L6 3.02284e-08L-3.96372e-07 6.66682L1.19983 8L6 2.66636L10.8002 8Z"
+                                                                fill="#038090" />
+                                                        </svg>
+
+                                                    </button>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <label for=""
+                                                        class="d-flex align-items-center justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <input type="checkbox" name="" id=""
+                                                                class="form-check-input p-check">
+                                                        </div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
