@@ -773,13 +773,15 @@
 }
 .content .modal-edit {
   height: 100vh;
-  padding: 50px 16px;
 }
 .content .modal-edit .modal-dialog {
-  max-width: 100vw;
+  max-width: 1440px;
+  width: 100%;
+  padding: 20px;
 }
 .content .modal-edit .modal-dialog .modal-content {
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 5px;
+  border: 0;
 }
 .content .modal-edit .modal-dialog .modal-header {
   background: #31B997;
@@ -1387,6 +1389,9 @@
   background: #328090;
   border-radius: 8px;
 }
+.content .modal-edit .modal-dialog .modal-body .summary-area {
+  margin-bottom: 50px;
+}
 .content .modal-edit .modal-dialog .modal-body .summary-area .title {
   font-family: "Gilroy-Bold";
   font-size: 28px;
@@ -1558,4 +1563,158 @@
 .content .modal-edit .modal-dialog .modal-body .summary-area .body-card .accordion .accordion-item .accordion-header:not(.collapsed) .accordion-button svg {
   color: #fff;
   transform: rotate(-180deg);
+}
+.content .modal-edit .modal-dialog .modal-body .total-card {
+  max-width: 990px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 58px;
+  background: #ED5485;
+  border-radius: 10px;
+  padding: 32px 40px;
+}
+.content .modal-edit .modal-dialog .modal-body .total-card .title {
+  font-family: "Gilroy-Bold";
+  font-size: 18px;
+  line-height: 112%;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .content .modal-edit .modal-dialog .modal-body .total-card .title {
+    font-size: 22px;
+  }
+}
+.content .modal-edit .modal-dialog .modal-body .total-card .price {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 112%;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .content .modal-edit .modal-dialog .modal-body .total-card .price {
+    font-size: 32px;
+  }
+}
+.content .modal-edit .modal-dialog .discount-area {
+  background: #EBFBFF;
+  padding: 44px 20px;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.content .modal-edit .modal-dialog .discount-area .title {
+  font-family: "Gilroy-Bold";
+  font-size: 24px;
+  line-height: 32px;
+  background: linear-gradient(270deg, #EE628F 40%, #038090 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 6px;
+}
+@media (min-width: 576px) {
+  .content .modal-edit .modal-dialog .discount-area .title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+@media (min-width: 992px) {
+  .content .modal-edit .modal-dialog .discount-area .title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+.content .modal-edit .modal-dialog .discount-area .paragraph {
+  max-width: 636px;
+  margin: 0px auto 32px auto;
+  font-family: "Gilroy-Medium";
+  font-size: 14px;
+  line-height: 19px;
+  color: #878787;
+}
+@media (min-width: 768px) {
+  .content .modal-edit .modal-dialog .discount-area .paragraph {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.content .modal-edit .modal-dialog .discount-area .btn-add {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  padding: 12px 40px;
+  background: #328090;
+  border-radius: 6px;
+}
+@media (min-width: 768px) {
+  .content .modal-edit .modal-dialog .discount-area .btn-add {
+    font-size: 18px;
+    padding: 16px 48px;
+  }
+}
+@media (min-width: 992px) {
+  .content .modal-edit .modal-dialog .discount-area .btn-add {
+    font-size: 20px;
+    padding: 20px 60px;
+  }
+}
+.content .modal-edit .modal-dialog .modal-butttons {
+  margin-bottom: 110px;
+}
+.content .modal-edit .modal-dialog .modal-butttons .btn-outline {
+  border: 1px solid #31B997;
+  border-radius: 6px;
+  padding: 12px 48px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #31B997;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .content .modal-edit .modal-dialog .modal-butttons .btn-outline {
+    font-size: 18px;
+    padding: 16px 60px;
+  }
+}
+@media (min-width: 992px) {
+  .content .modal-edit .modal-dialog .modal-butttons .btn-outline {
+    font-size: 20px;
+    padding: 20px 80px;
+  }
+}
+.content .modal-edit .modal-dialog .modal-butttons .btn-save {
+  background: #31B997;
+  border: 1px solid #31B997;
+  border-radius: 6px;
+  padding: 12px 58px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 12px;
+}
+@media (min-width: 768px) {
+  .content .modal-edit .modal-dialog .modal-butttons .btn-save {
+    font-size: 18px;
+    padding: 16px 70px;
+  }
+}
+@media (min-width: 992px) {
+  .content .modal-edit .modal-dialog .modal-butttons .btn-save {
+    font-size: 20px;
+    padding: 20px 90px;
+  }
 }/*# sourceMappingURL=productMissionCreation.css.map */
