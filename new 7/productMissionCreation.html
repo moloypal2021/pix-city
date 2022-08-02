@@ -608,8 +608,8 @@
 
             <!-- Edit Modal Start -->
             <!-- Modal -->
-            <div class="modal fade modal-dialog-scrollable modal-edit show" style="display: block; " id="editModal"
-                tabindex="-1" aria-labelledby="editLabel" aria-hidden="true">
+            <div class="modal fade modal-edit show" style="display: block; " id="editModal" tabindex="-1"
+                aria-labelledby="editLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -620,7 +620,8 @@
                         <div class="modal-body container-fluid">
                             <h1 class="c-title font-gilroy-bold">Choose your products</h1>
 
-                            <div class="row">
+                            <!-- Choose your products Start -->
+                            <div class="row products-area">
                                 <div class="col-lg-7">
                                     <div class="accordion community-manage" id="accordionExample">
                                         <div class="accordion-item">
@@ -654,21 +655,1056 @@
                                             <div id="collapseOne" class="accordion-collapse collapse show"
                                                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                    <label for=""
-                                                        class="d-flex align-items-center justify-content-between">
-                                                        <div class="d-flex align-items-center">
-                                                            <input type="checkbox" name="" id=""
+
+                                                    <div
+                                                        class="position-relative d-flex align-items-center postbox-area">
+                                                        <label for="post" class="post-checkbox">
+                                                            <input type="checkbox" name="" id="post"
                                                                 class="form-check-input p-check">
+                                                            <div class="bg-box">
+                                                                <span class="label">Posts</span>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected disabled>Volume/month</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <h5 class="price mb-0">20 € <span>/ month</span>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+
+                                                        </label>
+                                                    </div>
+
+
+                                                    <div
+                                                        class="position-relative d-flex align-items-center postbox-area">
+                                                        <label for="Stories" class="post-checkbox">
+                                                            <input type="checkbox" name="" id="Stories"
+                                                                class="form-check-input p-check">
+                                                            <div class="bg-box">
+                                                                <span class="label">Stories</span>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected disabled>Volume/month</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <h5 class="price mb-0">20 € <span>/ month</span>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+
+                                                        </label>
+                                                    </div>
+
+                                                    <div
+                                                        class="position-relative d-flex align-items-center postbox-area">
+                                                        <label for="Repost" class="post-checkbox">
+                                                            <input type="checkbox" name="" id="Repost"
+                                                                class="form-check-input p-check">
+                                                            <div class="bg-box">
+                                                                <span class="label">Stories Repost</span>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected disabled>Volume/month</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <h5 class="price mb-0">20 € <span>/ month</span>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+
+                                                        </label>
+                                                    </div>
+
+                                                    <div
+                                                        class="position-relative d-flex align-items-center postbox-area">
+                                                        <label for="Boost" class="post-checkbox">
+                                                            <input type="checkbox" name="" id="Boost"
+                                                                class="form-check-input p-check">
+                                                            <div class="bg-box">
+                                                                <span class="label">Boost Subscribers</span>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected disabled>Volume/month</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <h5 class="price mb-0">20 € <span>/ month</span>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+
+                                                        </label>
+                                                    </div>
+
+                                                    <div
+                                                        class="position-relative d-flex align-items-center postbox-area">
+                                                        <label for="Contest" class="post-checkbox">
+                                                            <input type="checkbox" name="" id="Contest"
+                                                                class="form-check-input p-check">
+                                                            <div class="bg-box">
+                                                                <span class="label">Game Contest</span>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected disabled>Volume/month</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <h5 class="price mb-0">20 € <span>/ month</span>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+
+                                                        </label>
+                                                    </div>
+
+                                                    <div
+                                                        class="position-relative d-flex align-items-center postbox-area">
+                                                        <label for="Video" class="post-checkbox">
+                                                            <input type="checkbox" name="" id="Video"
+                                                                class="form-check-input p-check">
+                                                            <div class="bg-box">
+                                                                <span class="label">Video</span>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected disabled>Volume/month</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <h5 class="price mb-0">20 € <span>/ month</span>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+
+                                                        </label>
+                                                    </div>
+
+                                                    <div
+                                                        class="position-relative d-flex align-items-center postbox-area">
+                                                        <label for="Shooting" class="post-checkbox">
+                                                            <input type="checkbox" name="" id="Shooting"
+                                                                class="form-check-input p-check">
+                                                            <div class="bg-box">
+                                                                <span class="label">Shooting Photo</span>
+
+                                                                <div class="d-flex align-items-center">
+                                                                    <select class="form-select"
+                                                                        aria-label="Default select example">
+                                                                        <option selected disabled>Volume/month</option>
+                                                                        <option value="1">One</option>
+                                                                        <option value="2">Two</option>
+                                                                        <option value="3">Three</option>
+                                                                    </select>
+                                                                    <h5 class="price mb-0">20 € <span>/ month</span>
+                                                                    </h5>
+                                                                </div>
+                                                            </div>
+
+                                                        </label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5">
+                                    <div class="calender-area">
+                                        <div class="calender-box">
+
+                                            <!-- Select Year -->
+                                            <div class="d-flex align-items-center justify-content-between year-select">
+                                                <button class="btn arrow left" id="left-arrow">
+                                                    <img src="./assets/images/left-arrow.svg" alt="">
+                                                </button>
+                                                <h5 class="year" id="year">2021</h5>
+                                                <button class="btn arrow right" id="right-arrow">
+                                                    <img src="./assets/images/right-arrow.svg" alt="">
+                                                </button>
+                                            </div>
+
+                                            <!-- Select Month -->
+                                            <div class="month-select">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <label for="January" class="mnt-box">
+                                                            <input type="checkbox" name="" id="January">
+                                                            <span class="label">January</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="February" class="mnt-box">
+                                                            <input type="checkbox" name="" id="February">
+                                                            <span class="label">February</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="March" class="mnt-box">
+                                                            <input type="checkbox" name="" id="March">
+                                                            <span class="label">March</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="April" class="mnt-box">
+                                                            <input type="checkbox" name="" id="April">
+                                                            <span class="label">April</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="May" class="mnt-box">
+                                                            <input type="checkbox" name="" id="May">
+                                                            <span class="label">May</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="June" class="mnt-box">
+                                                            <input type="checkbox" name="" id="June">
+                                                            <span class="label">June</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="July" class="mnt-box">
+                                                            <input type="checkbox" name="" id="July">
+                                                            <span class="label">July</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="August" class="mnt-box">
+                                                            <input type="checkbox" name="" id="August">
+                                                            <span class="label">August</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="September" class="mnt-box">
+                                                            <input type="checkbox" name="" id="September">
+                                                            <span class="label">September</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="October" class="mnt-box">
+                                                            <input type="checkbox" name="" id="October">
+                                                            <span class="label">October</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="November" class="mnt-box">
+                                                            <input type="checkbox" name="" id="November">
+                                                            <span class="label">November</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <label for="December" class="mnt-box">
+                                                            <input type="checkbox" name="" id="December">
+                                                            <span class="label">December</span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex items-center form-check2">
+                                                <input type="checkbox" name="" id="selectall" class="form-check-input">
+                                                <label for="selectall" class="form-check-label">Select all the
+                                                    months</label>
+                                            </div>
+
+                                            <!-- Buttons -->
+                                            <div class="d-flex align-items-center justify-content-center cl-btns">
+                                                <button class="btn btn-outline">Cancel</button>
+                                                <button class="btn btn-add">Add</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="tag-box">
+                                            <div class="d-flex align-items-center justify-content-between title-area">
+                                                <h4 class="month-name">August</h4>
+                                                <button class="btn close-btn p-0">
+                                                    <img src="./assets/images/close-icon.svg" alt="" class="">
+                                                </button>
+                                            </div>
+
+                                            <div class="d-flex align-items-center flex-wrap tags">
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Posts</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Stories</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Stories Repost</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Shooting Photo</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tag-box">
+                                            <div class="d-flex align-items-center justify-content-between title-area">
+                                                <h4 class="month-name">September</h4>
+                                                <button class="btn close-btn p-0">
+                                                    <img src="./assets/images/close-icon.svg" alt="" class="">
+                                                </button>
+                                            </div>
+
+                                            <div class="d-flex align-items-center flex-wrap tags">
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Posts</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Stories</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Stories Repost</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Shooting Photo</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="tag-box">
+                                            <div class="d-flex align-items-center justify-content-between title-area">
+                                                <h4 class="month-name">October</h4>
+                                                <button class="btn close-btn p-0">
+                                                    <img src="./assets/images/close-icon.svg" alt="" class="">
+                                                </button>
+                                            </div>
+
+                                            <div class="d-flex align-items-center flex-wrap tags">
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Posts</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Stories</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Stories Repost</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                                <div class="tag d-flex align-items-center">
+                                                    <p class="tag-name">Shooting Photo</p>
+                                                    <button class="btn close-btn p-0"> <img
+                                                            src="./assets/images/close-icon-2.svg" alt=""
+                                                            class=""></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="create-mission-btn">
+                                            <button class="btn">Create Mission</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Choose your products End -->
+
+                            <!-- Summary of your Mission Start -->
+                            <div class="summary-area">
+                                <h1 class="title">Summary of your Mission</h1>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">August</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="one" class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </label>
+
+
+                                                        <div class="accordion-header" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#one"
+                                                            aria-expanded="true" aria-controls="one">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">September</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="two" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-header collapsed" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#two"
+                                                            aria-expanded="false" aria-controls="two">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">October</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="three" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-header collapsed" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#three"
+                                                            aria-expanded="false" aria-controls="three">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">October</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="four" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-header collapsed" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#four"
+                                                            aria-expanded="false" aria-controls="four">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">October</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="five" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-header collapsed" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#five"
+                                                            aria-expanded="false" aria-controls="five">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">October</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="six" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-header collapsed" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#six"
+                                                            aria-expanded="false" aria-controls="six">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">October</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="seven" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-header collapsed" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#seven"
+                                                            aria-expanded="false" aria-controls="seven">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">October</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="eight" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-header collapsed" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#eight"
+                                                            aria-expanded="false" aria-controls="eight">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 mb-4 ">
+                                        <div class="card-mission">
+
+                                            <!-- header  -->
+                                            <div class="d-flex align-items-center header-card">
+                                                <div class="bar bar-red"></div>
+                                                <h3 class="title mb-0">October</h3>
+                                                <button class="btn p-0 ms-auto">
+                                                    <img src="./assets/images/trash-2.svg" alt="" class="">
+                                                </button>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="body-card">
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                        <div id="nine" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingOne"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Posts</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Stories</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+
+                                                                <div class="d-flex align-items-center mb-4 items">
+                                                                    <img src="./assets/images/dark-check-circle.svg"
+                                                                        alt="" class="icon">
+                                                                    <p class="title">Paid Campaign</p>
+                                                                    <p class="price ms-auto">20 €<span>/month</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="accordion-header collapsed" id="headingOne"
+                                                            data-bs-toggle="collapse" data-bs-target="#nine"
+                                                            aria-expanded="false" aria-controls="nine">
+                                                            <hr>
+
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-between total">
+                                                                <h4 class="title">Total</h4>
+                                                                <p class="price">80 €<span>/month</span></p>
+                                                            </div>
+
+
+                                                            <button class="accordion-button" type="button">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="currentColor"
+                                                                    xmlns="http://www.w3.org/2000/svg">
+                                                                    <path
+                                                                        d="M16.0066 11.4667C15.7133 11.4667 15.4466 11.5733 15.2333 11.7867L8.56664 18.72C8.16664 19.1467 8.16663 19.8133 8.5933 20.24C9.01997 20.64 9.68665 20.64 10.1133 20.2133L16.0066 14.08L21.9 20.2133C22.3 20.64 22.9933 20.64 23.42 20.24C23.8467 19.84 23.8466 19.1467 23.4466 18.72L16.78 11.7867C16.5667 11.5733 16.3 11.4667 16.0066 11.4667Z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
+                            <!-- Summary of your Mission End -->
 
 
 
