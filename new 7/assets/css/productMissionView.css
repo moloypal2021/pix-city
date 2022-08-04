@@ -825,16 +825,17 @@
     width: 100%;
   }
 }
-.content .projectInfo .product-card-1 {
+.content .projectInfo .project-area .product-card {
   background: #FFFFFF;
   box-shadow: 0px 18px 40px rgba(112, 144, 176, 0.12);
   border-radius: 15px;
   padding: 26px 16px;
+  margin-bottom: 40px;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-item {
+.content .projectInfo .project-area .product-card .accordion .accordion-item {
   border: 0;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .check-title .form-check-input {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .check-title .form-check-input {
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -842,7 +843,7 @@
   flex-shrink: 0;
   margin-bottom: 10px;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .check-title .title {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .check-title .title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -852,18 +853,18 @@
   margin-bottom: 0px;
 }
 @media (max-width: 991.98px) {
-  .content .projectInfo .product-card-1 .accordion .accordion-header .check-title .title {
+  .content .projectInfo .project-area .product-card .accordion .accordion-header .check-title .title {
     font-size: 18px;
     line-height: 24px;
   }
 }
 @media (max-width: 575.98px) {
-  .content .projectInfo .product-card-1 .accordion .accordion-header .check-title .title {
+  .content .projectInfo .project-area .product-card .accordion .accordion-header .check-title .title {
     font-size: 16px;
     line-height: 24px;
   }
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .check-title .details {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .check-title .details {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -872,22 +873,22 @@
   margin-bottom: 0px;
   color: #4F4F55;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .check-title .details span {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .check-title .details span {
   color: #31B997;
 }
 @media (max-width: 991.98px) {
-  .content .projectInfo .product-card-1 .accordion .accordion-header .check-title .details {
+  .content .projectInfo .project-area .product-card .accordion .accordion-header .check-title .details {
     font-size: 14px;
     line-height: 24px;
   }
 }
 @media (max-width: 575.98px) {
-  .content .projectInfo .product-card-1 .accordion .accordion-header .check-title .details {
+  .content .projectInfo .project-area .product-card .accordion .accordion-header .check-title .details {
     font-size: 12px;
     line-height: 24px;
   }
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .btns .btn-apply {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .btns .btn-apply {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -900,41 +901,41 @@
   margin-right: 40px;
 }
 @media (max-width: 767.98px) {
-  .content .projectInfo .product-card-1 .accordion .accordion-header .btns .btn-apply {
+  .content .projectInfo .project-area .product-card .accordion .accordion-header .btns .btn-apply {
     padding: 12px 20px;
     font-size: 14px;
     margin-right: 16px;
   }
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .btns .accordion-button {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .btns .accordion-button {
   background: none;
   padding: 0px;
   box-shadow: none;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .btns .accordion-button::after {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .btns .accordion-button::after {
   display: none;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .btns .accordion-button .plus {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .btns .accordion-button .plus {
   display: block;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .btns .accordion-button .minus {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .btns .accordion-button .minus {
   display: none;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .btns .accordion-button:not(.collapsed) .plus {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .btns .accordion-button:not(.collapsed) .plus {
   display: none;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-header .btns .accordion-button:not(.collapsed) .minus {
+.content .projectInfo .project-area .product-card .accordion .accordion-header .btns .accordion-button:not(.collapsed) .minus {
   display: block;
 }
-.content .projectInfo .product-card-1 .accordion .accordion-body {
+.content .projectInfo .project-area .product-card .accordion .accordion-body {
   padding: 20px 32px;
 }
 @media (max-width: 767.98px) {
-  .content .projectInfo .product-card-1 .accordion .accordion-body {
+  .content .projectInfo .project-area .product-card .accordion .accordion-body {
     padding: 20px 12px;
   }
 }
-.content .projectInfo .product-card-1 .accordion .accordion-body .p-label {
+.content .projectInfo .project-area .product-card .accordion .accordion-body .p-label {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -945,10 +946,10 @@
   width: 100%;
   margin-right: 40px;
 }
-.content .projectInfo .product-card-1 .accordion .max-w-320px {
+.content .projectInfo .project-area .product-card .accordion .max-w-320px {
   max-width: 320px;
 }
-.content .projectInfo .product-card-1 .accordion .p-select {
+.content .projectInfo .project-area .product-card .accordion .p-select {
   padding: 10px 14px;
   font-family: "Montserrat";
   font-style: normal;
@@ -961,6 +962,247 @@
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   border-radius: 6px;
 }
-.content .projectInfo .product-card-1 .accordion .mb-48px {
+.content .projectInfo .project-area .product-card .accordion .mb-48px {
   margin-bottom: 48px;
+}
+.content .projectInfo .project-area .product-card .accordion .mb-36px {
+  margin-bottom: 36px;
+}
+.content .projectInfo .project-area .product-card .accordion .max-w-770px {
+  max-width: 770px;
+}
+.content .projectInfo .project-area .product-card .accordion .carecter {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  margin-top: 6px;
+}
+.content .projectInfo .project-area .product-card .accordion .date-area {
+  position: relative;
+  width: 100%;
+}
+.content .projectInfo .project-area .product-card .accordion .date-area input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 6px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 12px 14px 12px 14px;
+}
+.content .projectInfo .project-area .product-card .accordion .date-area .input-group-text {
+  background: #31B997;
+  border-radius: 0px 7px 7px 0px;
+  width: 42px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 5;
+}
+.content .projectInfo .project-area .product-card .accordion .checks .left-side {
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px 0px 0px 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  padding: 10px 16px 10px 16px;
+}
+.content .projectInfo .project-area .product-card .accordion .checks .right-side {
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  border-radius: 0px 8px 8px 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  padding: 10px 16px 10px 16px;
+}
+.content .projectInfo .project-area .product-card .accordion .group-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+}
+.content .projectInfo .project-area .product-card .accordion .group-select .form-control {
+  width: 100%;
+  padding: 10px 30px;
+}
+.content .projectInfo .project-area .product-card .accordion .group-select .left {
+  position: absolute;
+  left: 16px;
+  margin-bottom: 0px;
+}
+.content .projectInfo .project-area .product-card .accordion .group-select .right {
+  position: absolute;
+  right: 0;
+  width: 86px;
+  border: 0;
+  margin-right: 2px;
+}
+.content .projectInfo .project-area .product-card .accordion .link-group .input-group {
+  background: #FFFFFF;
+}
+.content .projectInfo .project-area .product-card .accordion .link-group .input-group .input-group-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.content .projectInfo .project-area .product-card .accordion .link-group .input-group .form-control {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+  border: 1px solid #D0D5DD;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.content .projectInfo .project-area .product-card .accordion .p-sublebel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+}
+.content .projectInfo .project-area .product-card .accordion .max-w-512px {
+  max-width: 512px;
+}
+.content .projectInfo .project-area .product-card .accordion .click-upload input {
+  display: none;
+}
+.content .projectInfo .project-area .product-card .accordion .click-upload .content {
+  width: 100%;
+  padding: 16px;
+  background: #FFFFFF;
+  border: 1px dashed #E4E7EC;
+  border-radius: 8px;
+}
+.content .projectInfo .project-area .product-card .accordion .click-upload .content .upload-icon {
+  width: 40px;
+  margin: 0px auto 12px auto;
+}
+.content .projectInfo .project-area .product-card .accordion .click-upload .content .text-click {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  margin-bottom: 4px;
+}
+.content .projectInfo .project-area .product-card .accordion .click-upload .content .text-click span {
+  color: #EE628F;
+}
+.content .projectInfo .project-area .product-card .accordion .click-upload .content .text-size {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #667085;
+}
+.content .projectInfo .project-area .product-card .accordion .progress-area {
+  background: #FFFFFF;
+  border: 1px solid #FFC5D7;
+  border-radius: 8px;
+  padding: 14px;
+}
+.content .projectInfo .project-area .product-card .accordion .progress-area .file-icon {
+  width: 32px;
+  flex-shrink: 0;
+  margin-right: 14px;
+}
+.content .projectInfo .project-area .product-card .accordion .progress-area .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  margin-bottom: 0px;
+}
+.content .projectInfo .project-area .product-card .accordion .progress-area .check-icon {
+  width: 16px;
+  flex-shrink: 0;
+}
+.content .projectInfo .project-area .product-card .accordion .progress-area .file-size {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  margin-bottom: 10px;
+}
+.content .projectInfo .project-area .product-card .accordion .progress-area .progress {
+  border-radius: 4px;
+  height: 8px;
+}
+.content .projectInfo .project-area .product-card .accordion .progress-area .progress .progress-bar {
+  background: #EE628F;
+  border-radius: 4px;
+}
+.content .projectInfo .project-area .product-card .accordion .progress-area .progress-amount {
+  margin-left: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  margin-bottom: 0px;
+}
+.content .projectInfo .btn-assign {
+  max-width: 390px;
+  width: 100%;
+  background: #31B997;
+  border-radius: 6px;
+  padding: 13px 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+@media (max-width: 991.98px) {
+  .content .projectInfo .btn-assign {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=productMissionView.css.map */
