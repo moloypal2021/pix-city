@@ -154,7 +154,7 @@
         }
 
         .files {
-            padding-bottom: 20px;
+            padding: 20px;
             border-bottom: 1px solid #F0F0F0;
         }
 
@@ -181,6 +181,73 @@
             line-height: 18px;
             color: #A7B0BA;
             margin-bottom: 0px;
+        }
+
+
+        .s-title {
+            font-family: 'Gilroy-SemiBold';
+            font-size: 14px;
+            line-height: 38px;
+            color: #272B30;
+            opacity: 0.7;
+            margin-bottom: 2px;
+        }
+
+        .drop-img {
+            width: 100%;
+            height: 295px;
+            background: #FFFFFF;
+            border: 1px solid #E8ECF1;
+            border-radius: 6px;
+            margin-bottom: 32px;
+
+            .icon {
+                width: 56px;
+            }
+
+            .drop-text {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
+                margin-bottom: 0px;
+            }
+
+            .or {
+                font-family: 'Gilroy-SemiBold';
+                font-size: 14px;
+                line-height: 28px;
+                color: #000000
+            }
+
+            .browser {
+                input {
+                    display: none;
+                }
+
+                .br-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    padding: 5px 28px 5px 12px;
+                    background: #EF5285;
+                    border-radius: 4px;
+
+                    img {
+                        width: 32px;
+                        margin-right: 16px;
+                    }
+
+                    .text {
+                        font-family: 'Gilroy-Bold';
+                        font-size: 13px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
         }
 
         .project-header {

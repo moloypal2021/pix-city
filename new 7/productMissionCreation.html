@@ -363,15 +363,34 @@
             </div>
 
             <!-- Project Info Card Section Start -->
-            <div class="project-info-box font-montserrat d-none" id="projectInfo">
+            <div class="project-info-box font-montserrat d-non" id="projectInfo">
                 <h5 class="h-title">Project Info</h5>
                 <div class="row">
-                    <div class="col-lg-6 mb-40px">
-                        <label for="Title" class="form-label">Title:</label>
-                        <input type="text" class="form-control form-input" id="Title" placeholder="Enter here...">
+                    <div class="col-lg-6 pe-xl-5 mb-40px">
+                        <div class="mb-40px">
+                            <label for="Title" class="form-label">Title:</label>
+                            <input type="text" class="form-control form-input" id="Title" placeholder="Enter here...">
+                        </div>
+                        <div class="">
+                            <label for="details" class="form-label">Détail de la mission</label>
+                            <textarea name="editor1" id="" class="w-100"></textarea>
+                        </div>
                     </div>
-                    <div class="col-lg-4 pe-xl-5 ms-auto mb-40px">
-                        <label for="Title" class="form-label">Title:</label>
+                    <div class="col-lg-5 ms-auto mb-40px">
+                        <label for="Title" class="form-label mb-0">Title:</label>
+                        <p class="s-title">Work Documents</p>
+                        <div class="drop-img d-flex flex-column align-items-center justify-content-center">
+                            <img src="./assets/images/d-file-icon.svg" alt="" class="icon">
+                            <p class="drop-text text-center">Drag and drop image here</p>
+                            <p class="or text-center">OR</p>
+                            <label for="browser" class="browser">
+                                <input type="file" id="browser" accept="image/*">
+                                <div class="br-btn">
+                                    <img src="./assets/images/browse-plus.svg" alt="">
+                                    <p class="text">Browse Files</p>
+                                </div>
+                            </label>
+                        </div>
                         <div class="d-flex align-items-center justify-content-between files">
                             <div class="d-flex align-items-center">
                                 <div class="file-icon">
@@ -392,12 +411,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-lg-7 mb-60px">
-                        <label for="details" class="form-label">Détail de la mission</label>
-                        <textarea type="text" class="form-control form-input" id="details" cols="8"
-                            placeholder="Enter description here..."></textarea>
                     </div>
                 </div>
 
@@ -452,7 +465,7 @@
                         <hr>
                         <div class="d-flex align-items-center flex-wrap justify-content-between item-box">
                             <div class="d-flex align-items-center me-3">
-                                <div class="me-4 invisible">
+                                <div class="me-4">
                                     <input type="checkbox" name="" id="" class="form-check-input">
                                 </div>
                                 <div class="d-flex align-items-center product-name">
@@ -465,7 +478,7 @@
                                 <label for="Qty " class="form-label">Qty :</label>
                                 <select class="form-select w-auto" id="Qty">
                                     <option value="1">1</option>
-                                    <option value="2">2</option>
+                                    <option value="2" selected>2</option>
                                     <option value="3">3</option>
                                 </select>
                             </div>
@@ -489,11 +502,11 @@
 
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center qtyForm pe-2 invisible">
+                            <div class="d-flex align-items-center qtyForm pe-2">
                                 <label for="Qty " class="form-label">Qty :</label>
                                 <select class="form-select w-auto" id="Qty">
                                     <option value="1">1</option>
-                                    <option value="2">2</option>
+                                    <option value="2" selected>2</option>
                                     <option value="3">3</option>
                                 </select>
                             </div>
@@ -505,16 +518,12 @@
 
 
                 </div>
-                <div class="extraInputCheckTop">
-                    <input type="checkbox" name="" id="" class="form-check-input ms-5 ">
-                </div>
                 <div class="projectItemsBox">
 
                     <!-- Project Item Header -->
                     <div class="d-flex align-items-center flex-wrap justify-content-between">
                         <div class="d-flex align-items-center ms-xl-5 ms-lg-4 mb-4 position-relative">
                             <input type="checkbox" name="" id="" class="form-check-input me-3 checked">
-                            <input type="checkbox" name="" id="" class="form-check-input extra-inputCheck" checked>
                             <div class="d-flex items-center p-tile-area mb-0">
                                 <div class="items-icon bg-yellow">
                                     M2
@@ -560,12 +569,12 @@
                                 <label for="Qty " class="form-label">Qty :</label>
                                 <select class="form-select w-auto" id="Qty">
                                     <option value="1">1</option>
-                                    <option value="2">2</option>
+                                    <option value="2" selected>2</option>
                                     <option value="3">3</option>
                                 </select>
                             </div>
-                            <p class="price mb-0 invisible">€150.00</p>
-                            <button class="btn flex-shrink-0 invisible"><img src="./assets/images/trash.svg" alt=""
+                            <p class="price mb-0">€250.00</p>
+                            <button class="btn flex-shrink-0"><img src="./assets/images/trash.svg" alt=""
                                     class="trash-icon"></button>
                         </div>
                     </div>
@@ -1745,12 +1754,21 @@
 
 
 
+    <!--  Editor -->
+    <script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
     <!-- Bootstrap.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
     <script>
+        CKEDITOR.replace('editor1', {
+            width: '100%',
+            height: '310px'
+
+        });
+
         function projectInfo(params) {
             let projectInfo = document.getElementById("projectInfo");
             projectInfo.classList.add('d-block');
