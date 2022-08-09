@@ -304,6 +304,9 @@
   background-image: url("data:image/svg+xml,%3Csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.88094 6L0.941406 0H10.8205L5.88094 6Z' fill='white'/%3E%3C/svg%3E%0A");
   background-size: 12px;
 }
+.paymentContent .left-side .client-details {
+  margin-bottom: 58px;
+}
 .paymentContent .left-side .client-details .client-logo {
   width: 88px;
   height: 88px;
@@ -380,6 +383,252 @@
 .paymentContent .left-side .client-details .details-input .input-box .form-floating > .form-control:focus ~ svg,
 .paymentContent .left-side .client-details .details-input .input-box .form-floating > .form-select ~ svg {
   color: #038090;
+}
+.paymentContent .left-side .projects {
+  padding-bottom: 200px;
+}
+.paymentContent .left-side .projects .project-header {
+  margin-bottom: 28px;
+}
+.paymentContent .left-side .projects .project-header .bar {
+  width: 4px;
+  height: 40px;
+  background: #EE628F;
+  border-radius: 30px;
+  margin-right: 16px;
+}
+.paymentContent .left-side .projects .project-header .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: #EE628F;
+  margin-bottom: 4px;
+}
+.paymentContent .left-side .projects .project-header .sub-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #757D8A;
+  margin-bottom: 0px;
+}
+.paymentContent .left-side .projects .project-list {
+  max-height: 340px;
+}
+.paymentContent .left-side .projects .project-list .accordion-item {
+  border: 0px;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header {
+  border-radius: 8px;
+  padding: 20px 28px 20px 36px;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header.with-border {
+  background: rgba(194, 207, 224, 0.2);
+  border: 0.2px solid rgba(104, 122, 146, 0.1);
+}
+@media (max-width: 767.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header {
+    padding: 20px;
+  }
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .month {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 50px -10px rgba(17, 24, 39, 0.2);
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #345273;
+}
+@media (max-width: 991.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .month {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .month {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .product {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #687A92;
+  margin-bottom: 0px;
+}
+@media (max-width: 767.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .product {
+    font-size: 12px;
+  }
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool {
+  position: relative;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .toggle-btn {
+  background: #328090;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .toggle-btn {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .toggle-btn::after {
+  display: none;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool {
+  background: #334155;
+  border-radius: 12px;
+  width: 423px;
+  padding: 16px 40px 20px 20px;
+  transform: translateX(-38%) translateY(40px);
+  top: 0;
+  position: absolute;
+  display: none;
+  z-index: 99999 !important;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .top-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -8px;
+  pointer-events: none;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.0125em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .border-dot {
+  width: 16px;
+  height: 16px;
+  border: 1.88322px solid rgba(255, 255, 255, 0.56);
+  border-radius: 320px;
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .bg-purple {
+  background: #9B59B6;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .bg-green {
+  background: #1ABC9C;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .bg-blue {
+  background: #00BCD4;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .bg-orange {
+  background: #E67E22;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .text-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #D1D1D1;
+  margin-bottom: 0px;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .text-price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  color: #EE628F;
+  margin-bottom: 0px;
+  margin-left: auto;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .mb-20px {
+  margin-bottom: 20px;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool:hover .pop-tool {
+  display: block;
+  margin-top: 0;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-body {
+  padding: 0px;
+  max-height: 340px;
+  overflow-y: auto;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-body thead tr th {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #183555;
+  padding: 16px 24px;
+  background: rgba(215, 227, 238, 0.5);
+  box-shadow: inset 0px -1px 0px #EDF2F7;
+  border-bottom: 0px;
+  white-space: nowrap;
+  text-align: left;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-body .mtn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  color: #183555;
+  padding: 22px 16px 22px 30px;
+  border-right: 1px solid #E8ECF1;
+  border-bottom: 1px solid #E8ECF1;
+  white-space: nowrap;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-body .prod {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 25px;
+  color: #4F4F55;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(232, 233, 235, 0.4);
+  border-left: 0px;
+  height: 64px;
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-body .qty {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #000000;
+  padding: 12px 24px;
+  border-bottom: 1px solid rgba(232, 233, 235, 0.4);
+}
+.paymentContent .left-side .projects .project-list .accordion-item .accordion-body .border-b-last {
+  border-bottom: 1px solid #E8ECF1;
 }
 .paymentContent .right-side {
   background: #103558;
