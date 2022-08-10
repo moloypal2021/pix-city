@@ -409,11 +409,239 @@
 
 
             </div>
-            <div class="col-lg-6 right-side">
-                <div class="" step="1" is-open="show">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nihil eos cupiditate fuga porro
-                    impedit suscipit quae magni ipsam rem deleniti accusantium dolores illo commodi, voluptas corrupti
-                    laborum cum perspiciatis!
+            <div class="col-lg-6 right-side d-flex flex-column">
+                <div class="flex-grow-1 d-flex flex-column">
+                    <!-- Step Navs -->
+                    <ul class="d-flex align-items-center justify-content-center nav step-tabs">
+                        <li><a href="#" class="btn step-tab active" id="checkoutNav">CHECKOUT</a></li>
+                        <li class="border-line"></li>
+                        <li><a href="#" class="btn step-tab" id="paymentNav">PAYMENT</a></li>
+                        <li class="border-line"></li>
+                        <li><a href="#" class="btn step-tab " id="confirmNav">CONFIRMATION</a></li>
+                    </ul>
+
+
+                    <!-- CheckOut Step Start -->
+                    <div class="checkout-step" id="checkoutStep">
+                        <h6 class="check-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+                        <p class="check-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                        <p class="payment-sumry">PAYMENT SUMMARY</p>
+                        <div class="d-flex align-items-center justify-content-between mb-12px">
+                            <p class="d-title">Net Amount</p>
+                            <p class="d-price">120 € </p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-12px">
+                            <p class="d-title">VAT</p>
+                            <p class="d-price">120 € </p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-12px">
+                            <p class="d-title">Total Amount</p>
+                            <p class="d-price">240 € </p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <p class="d-title">Due Amount</p>
+                            <p class="d-price">20 € </p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between total-amount mb-3">
+                            <p class="d-title">TOTAL</p>
+                            <p class="d-price">20 € </p>
+                        </div>
+
+                        <div class="note-card">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./assets/images/info-icon.svg" alt="" class="info-icon">
+                                <p class="title">NOTE</p>
+                            </div>
+                            <ul class="details">
+                                <li>This payment is assimilated to a cantonment of the mission. </li>
+                                <li>The payment will only be triggered to the city-maker when the mission is completed
+                                    in the case of a one-shot mission. </li>
+                                <li>In the case of a recurrent mission, pre-payment will be made each month by direct
+                                    debit. </li>
+                                <li>The final triggering at the Citymaker will be done under the same conditions as for
+                                    a one shot mission.</li>
+                            </ul>
+                        </div>
+                        <div class="form-check2">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                By clicking here, I accept the Terms and Conditions of Pix.city services
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-payment" id="btnPayment">Continue to Payment</button>
+                        </div>
+                    </div>
+                    <!-- CheckOut Step End -->
+
+                    <!-- Payment Step Start -->
+                    <div class="payment-step d-none" id="paymentStep">
+                        <h3 class="title">Payment</h3>
+                        <h6 class="p-d-title mb-3">PAYMENT DETAILS</h6>
+                        <div class="d-flex align-items-center justify-content-between mb-5">
+                            <p class="d-tile">Amount to be paid TTC </p>
+                            <p class="d-tile">158.4 €</p>
+                        </div>
+
+                        <h6 class="p-d-title mb-3">PAYMENT METHOD</h6>
+
+
+                        <div class="d-flex align-items-center custom-check-box mb-4">
+                            <label for="creditcard" class="checkingBox me-3">
+                                <input type="radio" name="cardtype" id="creditcard">
+                                <span class="card-check">
+                                    <svg class="card-icon" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.25 9C1.25 6.37665 3.37665 4.25 6 4.25H18C20.6234 4.25 22.75 6.37665 22.75 9V15C22.75 17.6234 20.6234 19.75 18 19.75H6C3.37665 19.75 1.25 17.6234 1.25 15V9ZM2.83697 8.25H21.163C20.8245 6.81665 19.5368 5.75 18 5.75H6C4.46321 5.75 3.17555 6.81665 2.83697 8.25ZM21.25 9.75H2.75V15C2.75 16.7949 4.20507 18.25 6 18.25H18C19.7949 18.25 21.25 16.7949 21.25 15V9.75ZM13.25 15C13.25 14.5858 13.5858 14.25 14 14.25H18C18.4142 14.25 18.75 14.5858 18.75 15C18.75 15.4142 18.4142 15.75 18 15.75H14C13.5858 15.75 13.25 15.4142 13.25 15Z"
+                                            fill="currentColor" />
+                                    </svg>
+
+                                    <p class="title">Credit Card</p>
+                                    <img src="./assets/images/checkicon.svg" alt="" class="check-icon">
+                                </span>
+                            </label>
+
+                            <label for="banking" class="checkingBox ms-3">
+                                <input type="radio" id="banking" name="cardtype">
+                                <span class="card-check">
+                                    <svg class="card-icon" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 18H20V20H0V18ZM2 10H4V17H2V10ZM7 10H9V17H7V10ZM11 10H13V17H11V10ZM16 10H18V17H16V10ZM0 5L10 0L20 5V9H0V5ZM2 6.236V7H18V6.236L10 2.236L2 6.236ZM10 6C9.73478 6 9.48043 5.89464 9.29289 5.70711C9.10536 5.51957 9 5.26522 9 5C9 4.73478 9.10536 4.48043 9.29289 4.29289C9.48043 4.10536 9.73478 4 10 4C10.2652 4 10.5196 4.10536 10.7071 4.29289C10.8946 4.48043 11 4.73478 11 5C11 5.26522 10.8946 5.51957 10.7071 5.70711C10.5196 5.89464 10.2652 6 10 6Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    <p class="title">Net Banking</p>
+                                    <img src="./assets/images/checkicon.svg" alt="" class="check-icon">
+                                </span>
+                            </label>
+                        </div>
+
+                        <div class="card-form">
+                            <div class="mb-28px">
+                                <label for="CardholderName" class="form-label">Cardholder Name</label>
+                                <input type="text" class="form-control" id="CardholderName" placeholder="Levi Ackerman">
+                            </div>
+                            <div class="mb-28px">
+                                <label for="CardNumber" class="form-label">Card Number</label>
+                                <input type="text" class="form-control" id="CardNumber"
+                                    placeholder="2564 1421 0897 1244">
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-6 pe-sm-5">
+                                    <div class="mb-28px">
+                                        <label for="ExpirationDate" class="form-label">Expiration Date</label>
+                                        <input type="text" class="form-control" id="ExpirationDate"
+                                            placeholder="02/2022">
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-sm-5">
+                                    <div class="mb-28px">
+                                        <label for="CVV" class="form-label">CVV</label>
+                                        <input type="password" class="form-control" id="CVV" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-sm-row align-items-center">
+                                <button class="btn btn-payNow" id="payNowBtn">Pay Now</button>
+                                <button class="btn btn-back" id="backCheckoutBtn">Back to Checkout</button>
+                            </div>
+                        </div>
+
+                        <div class="payment-security mx-auto text-center">
+                            <img src="./assets/images/security.svg" alt="" class="security-icon">
+                            <div class="payment-methods">
+                                <div class="title">
+                                    Paiement sécurisé par Stripe
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between position-relative">
+                                    <img src="./assets/images/mastercard-2.svg" alt="" class="icon">
+                                    <img src="./assets/images/visa.svg" alt="" class="icon">
+                                    <img src="./assets/images/american-express-630.svg" alt="" class="icon">
+                                    <img src="./assets/images/ob.svg" alt="" class="icon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Payment Step End -->
+
+                    <!-- Confirm Step Start -->
+                    <div class="confirm-step flex-grow-1 d-flex flex-column text-center mx-auto d-none"
+                        id="confirmStep">
+                        <!-- Success Message -->
+                        <div class="success" id="successMessage">
+                            <img src="./assets/images/checked 1.svg" alt="" class="check-icon mx-auto">
+                            <h3 class="title">Your payment is validated!</h3>
+                            <div class="payment-details">
+                                <div class="d-flex align-items-center justify-content-center ">
+                                    <p class="title">Transaction ID :</p>
+                                    <p class="details"> KJADHKAFHK72874</p>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <p class="title">Mission name :</p>
+                                    <p class="details"> Roll back test pack</p>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <p class="title">Amount :</p>
+                                    <p class="details">300€</p>
+                                </div>
+                            </div>
+
+                            <p class="c-details mb-5">Your city maker has been notified! The mission shall begin!</p>
+
+                            <div class="important-card text-center">
+                                <div class="d-flex align-items-center justify-content-center mb-3">
+                                    <img src="./assets/images/info-icon.svg" alt="" class="info-icon">
+                                    <p class="title">IMPORTANT</p>
+                                </div>
+                                <p class="details mb-2">If you wish to cancel,
+                                    please contact us by email at
+                                    least 5 days before the end of your non-commitment period:
+                                </p>
+                                <a href="#" class="btn btn-client mb-2">clients@pix.city</a>
+                                <p class="details mb-0">Until then we are delighted to work together!</p>
+                            </div>
+
+                            <button class="btn btn-alright" id="alrightBtn">Alright, Thanks!</button>
+
+                        </div>
+
+                        <!-- Error Message -->
+                        <div class="error flex-grow-1 d-flex align-items-center justify-content-center d-none"
+                            id="errorMessage">
+                            <div class="error-box text-center">
+                                <img src="./assets/images/decline 1.svg" alt="" class="dt-icon mx-auto">
+                                <h5 class="title">Oh Snap!</h5>
+                                <p class="details">Something went wrong!
+                                    Please try again.</p>
+                                <button class="btn btn-try" id="tryBtn">Try Again!</button>
+                            </div>
+                        </div>
+
+
+                        <div class="payment-security mx-auto text-center mt-auto">
+                            <img src="./assets/images/security.svg" alt="" class="security-icon">
+                            <div class="payment-methods">
+                                <div class="title">
+                                    Paiement sécurisé par Stripe
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-between position-relative">
+                                    <img src="./assets/images/mastercard-2.svg" alt="" class="icon">
+                                    <img src="./assets/images/visa.svg" alt="" class="icon">
+                                    <img src="./assets/images/american-express-630.svg" alt="" class="icon">
+                                    <img src="./assets/images/ob.svg" alt="" class="icon">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Confirm Step End -->
+
                 </div>
             </div>
         </div>
@@ -423,6 +651,70 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    <script>
+        // buttons
+        const btnPayment = document.getElementById('btnPayment');
+        const payNowBtn = document.getElementById('payNowBtn');
+        const backCheckoutBtn = document.getElementById('backCheckoutBtn');
+        const alrightBtn = document.getElementById('alrightBtn');
+        const tryBtn = document.getElementById('tryBtn');
+
+        // Step Boxs
+        const checkoutStep = document.getElementById('checkoutStep');
+        const paymentStep = document.getElementById('paymentStep');
+        const confirmStep = document.getElementById('confirmStep');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        // Step Navs
+        const checkoutNav = document.getElementById('checkoutNav');
+        const paymentNav = document.getElementById('paymentNav');
+        const confirmNav = document.getElementById('confirmNav');
+
+        // Checout step to payment step
+        btnPayment.addEventListener('click', function () {
+            checkoutStep.classList.add('d-none');
+            paymentStep.classList.remove('d-none');
+            checkoutNav.classList.remove('active');
+            paymentNav.classList.add('active');
+        });
+
+        // Payment step to Checkout step
+        backCheckoutBtn.addEventListener('click', function () {
+            checkoutStep.classList.remove('d-none');
+            paymentStep.classList.add('d-none');
+            checkoutNav.classList.add('active');
+            paymentNav.classList.remove('active');
+        })
+
+        // Payment step to Confirm step
+        payNowBtn.addEventListener('click', function () {
+            confirmStep.classList.remove('d-none');
+            paymentStep.classList.add('d-none');
+            confirmNav.classList.add('active');
+            paymentNav.classList.remove('active');
+
+            // Payment Success or error
+            successMessage.classList.remove('d-none');
+            errorMessage.classList.add('d-none');
+        })
+
+
+        // Error Messsage show on Confirm step
+        alrightBtn.addEventListener('click', function () {
+            errorMessage.classList.remove('d-none');
+            successMessage.classList.add('d-none');
+        })
+
+        // Confirm step to Checkout step
+        tryBtn.addEventListener('click', function () {
+            checkoutStep.classList.remove('d-none');
+            confirmStep.classList.add('d-none');
+            checkoutNav.classList.add('active');
+            confirmNav.classList.remove('active');
+        })
+
+    </script>
 </body>
 
 </html>
