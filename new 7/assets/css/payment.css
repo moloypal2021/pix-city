@@ -634,4 +634,11 @@
   background: #103558;
   border-radius: 5px 0px 0px 5px;
   min-height: 100vh;
+  padding: 90px 20px;
+}
+.paymentContent .right-side div[step="1"] {
+  color: white;
+}
+.paymentContent .right-side div[is-open=show] {
+  display: block;
 }/*# sourceMappingURL=payment.css.map */

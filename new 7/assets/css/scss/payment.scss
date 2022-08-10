@@ -446,5 +446,16 @@
         background: #103558;
         border-radius: 5px 0px 0px 5px;
         min-height: 100vh;
+        padding: 90px 20px;
+
+        div {
+            &[step='1'] {
+                color: white;
+            }
+
+            &[is-open="show"] {
+                display: block;
+            }
+        }
     }
 }
