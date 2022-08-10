@@ -417,6 +417,8 @@
 }
 .paymentContent .left-side .projects .project-list {
   max-height: 340px;
+  overflow-y: auto;
+  overflow-x: visible;
 }
 .paymentContent .left-side .projects .project-list .accordion-item {
   border: 0px;
@@ -471,9 +473,6 @@
     font-size: 12px;
   }
 }
-.paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool {
-  position: relative;
-}
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .toggle-btn {
   background: #328090;
   border-radius: 4px;
@@ -500,11 +499,21 @@
   border-radius: 12px;
   width: 423px;
   padding: 16px 40px 20px 20px;
-  transform: translateX(-38%) translateY(40px);
-  top: 0;
+  transform: translateX(-38%) translateY(10px);
   position: absolute;
   display: none;
   z-index: 99999 !important;
+}
+@media (max-width: 991.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool {
+    transform: translateX(-75%) translateY(10px);
+  }
+}
+@media (max-width: 575.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool {
+    width: 280px;
+    transform: translateX(-60%) translateY(10px);
+  }
 }
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .top-icon {
   position: absolute;
@@ -516,6 +525,11 @@
   margin-top: -8px;
   pointer-events: none;
 }
+@media (max-width: 991.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .top-icon {
+    margin-right: 8px;
+  }
+}
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .title {
   font-family: "Montserrat";
   font-style: normal;
@@ -526,6 +540,11 @@
   text-transform: capitalize;
   color: #FFFFFF;
   margin-bottom: 14px;
+}
+@media (max-width: 575.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .title {
+    font-size: 16px;
+  }
 }
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .border-dot {
   width: 16px;
@@ -556,6 +575,11 @@
   color: #D1D1D1;
   margin-bottom: 0px;
 }
+@media (max-width: 575.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .text-title {
+    font-size: 14px;
+  }
+}
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .text-price {
   font-family: "Montserrat";
   font-style: normal;
@@ -566,8 +590,18 @@
   margin-bottom: 0px;
   margin-left: auto;
 }
+@media (max-width: 575.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .text-price {
+    font-size: 16px;
+  }
+}
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .mb-20px {
   margin-bottom: 20px;
+}
+@media (max-width: 575.98px) {
+  .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool .pop-tool .mb-20px {
+    margin-bottom: 8px;
+  }
 }
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-header .dropdown-tool:hover .pop-tool {
   display: block;
@@ -575,8 +609,6 @@
 }
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-body {
   padding: 0px;
-  max-height: 340px;
-  overflow-y: auto;
 }
 .paymentContent .left-side .projects .project-list .accordion-item .accordion-body thead tr th {
   font-family: "Montserrat";

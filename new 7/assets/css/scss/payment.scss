@@ -196,6 +196,8 @@
 
             .project-list {
                 max-height: 340px;
+                overflow-y: auto;
+                overflow-x: visible;
 
                 .accordion-item {
                     border: 0px;
@@ -252,7 +254,6 @@
 
 
                         .dropdown-tool {
-                            position: relative;
 
                             .toggle-btn {
                                 background: #328090;
@@ -282,11 +283,19 @@
                                 border-radius: 12px;
                                 width: 423px;
                                 padding: 16px 40px 20px 20px;
-                                transform: translateX(-38%) translateY(40px);
-                                top: 0;
+                                transform: translateX(-38%) translateY(10px);
                                 position: absolute;
                                 display: none;
                                 z-index: 99999 !important;
+
+                                @include br-down(lg) {
+                                    transform: translateX(-75%) translateY(10px);
+                                }
+
+                                @include br-down(sm) {
+                                    width: 280px;
+                                    transform: translateX(-60%) translateY(10px);
+                                }
 
                                 .top-icon {
                                     position: absolute;
@@ -297,6 +306,10 @@
                                     margin-right: auto;
                                     margin-top: -8px;
                                     pointer-events: none;
+
+                                    @include br-down(lg) {
+                                        margin-right: 8px;
+                                    }
                                 }
 
                                 .title {
@@ -309,6 +322,10 @@
                                     text-transform: capitalize;
                                     color: #FFFFFF;
                                     margin-bottom: 14px;
+
+                                    @include br-down(sm) {
+                                        font-size: 16px;
+                                    }
                                 }
 
                                 .border-dot {
@@ -344,6 +361,10 @@
                                     line-height: 25px;
                                     color: #D1D1D1;
                                     margin-bottom: 0px;
+
+                                    @include br-down(sm) {
+                                        font-size: 14px;
+                                    }
                                 }
 
                                 .text-price {
@@ -355,10 +376,19 @@
                                     color: #EE628F;
                                     margin-bottom: 0px;
                                     margin-left: auto;
+
+                                    @include br-down(sm) {
+                                        font-size: 16px;
+                                    }
                                 }
 
                                 .mb-20px {
                                     margin-bottom: 20px;
+
+                                    @include br-down(sm) {
+                                        margin-bottom: 8px;
+                                    }
+
                                 }
                             }
                         }
@@ -371,8 +401,6 @@
 
                     .accordion-body {
                         padding: 0px;
-                        max-height: 340px;
-                        overflow-y: auto;
 
                         thead {
                             tr th {
