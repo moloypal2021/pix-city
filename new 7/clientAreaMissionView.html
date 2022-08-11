@@ -21,7 +21,21 @@
 
 <body>
 
+    <div class="d-flex w-100 vh-100 overflow-hidden position-relative">
+        <!-- Sidebar Start -->
+        <!-- Sidebar overlay bg -->
+        <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+        <div class="sidebar show-sidebar" id="sidebar">
 
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Content Section Start -->
+        <div class="content-section">
+            <button class="btn btn-primary" onclick="toggleSidebar()">Open</button>
+        </div>
+        <!-- Content Section End -->
+    </div>
 
 
 
@@ -30,6 +44,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let sidebarOverlay = document.getElementById("sidebarOverlay");
+
+            if (sidebar.classList.contains('hide-sidebar')) {
+                sidebar.classList.add('show-sidebar');
+                sidebar.classList.remove('hide-sidebar');
+                sidebarOverlay.classList.add('d-block');
+                sidebarOverlay.classList.remove('d-none');
+
+            } else {
+                sidebar.classList.add('hide-sidebar');
+                sidebar.classList.remove('show-sidebar');
+                sidebarOverlay.classList.add('d-none');
+                sidebarOverlay.classList.remove('d-block');
+            }
+        }
+    </script>
 </body>
 
 </html>
