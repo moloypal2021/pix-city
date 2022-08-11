@@ -1,0 +1,235 @@
+@import url("http://fonts.cdnfonts.com/css/gilroy-bold");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.font-gilroy-bold {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.font-gilroy-heavy {
+  font-family: "Gilroy-Heavy", sans-serif;
+}
+
+.font-gilroy-light {
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+.font-gilroy-medium {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.font-gilroy {
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-dmsans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.fw-light {
+  font-weight: 300 !important;
+}
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-extrabold {
+  font-weight: 800 !important;
+}
+
+.fw-black {
+  font-weight: 900 !important;
+}
+
+.success-btn {
+  background: #31B997;
+  border-radius: 6px;
+  padding: 16px 24px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.mb-40px {
+  margin-bottom: 40px;
+}
+
+.form-check {
+  margin-right: 56px;
+}
+.form-check .form-check-label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 4px;
+}
+.form-check .form-check-input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9DB7D0;
+}
+.form-check .form-check-input:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 20C12 15.5817 15.5817 12 20 12V12C24.4183 12 28 15.5817 28 20V20C28 24.4183 24.4183 28 20 28V28C15.5817 28 12 24.4183 12 20V20Z' fill='%23ED5485'/%3E%3Ccircle cx='20' cy='20' r='20' fill='%23EE628F' fill-opacity='0.24'/%3E%3Ccircle cx='20' cy='20' r='4' fill='white'/%3E%3C/svg%3E%0A");
+  background-size: 36px 36px;
+  background-color: rgba(238, 98, 143, 0.24);
+  border-color: rgba(238, 98, 143, 0.24);
+  box-shadow: 0px 0px 0px 5px rgba(238, 98, 143, 0.24);
+}
+
+.form-check-input:checked {
+  background-color: #605BFF;
+}
+
+.text-blue-10 {
+  color: #1E3E62;
+}
+
+.bg-blue-10 {
+  background-color: #1E3E62;
+}
+
+.text-dark-10 {
+  color: #4F4F55;
+}
+
+.bg-dark-10 {
+  background-color: #4F4F55;
+}
+
+.text-pink-10 {
+  color: #ED5485 !important;
+}
+
+.bg-pink-10 {
+  background-color: #ED5485;
+}
+
+.bg-pink-20 {
+  background-color: #FF92AE;
+}
+
+.bg-pink-30 {
+  background: #EE628F;
+}
+
+.text-gray-10 {
+  color: #425466;
+}
+
+.bg-primary-10 {
+  background-color: #4C6FFF;
+}
+
+.text-primary-10 {
+  color: #4C6FFF;
+}
+
+.text-primary-20 {
+  color: #A7B6CD;
+}
+
+.text-green-10 {
+  color: #31B997;
+}
+
+.bg-green-10 {
+  background-color: #31B997;
+}
+
+.bg-red-10 {
+  background-color: #FC3263;
+}
+
+.bg-teal-10 {
+  background-color: #00D9D9;
+}
+
+.bg-purple-10 {
+  background-color: #8452ED;
+}
+
+.bg-blue-20 {
+  background-color: #009EF7;
+}
+
+.text-gray-20 {
+  color: #A8AEB6 !important;
+}
+
+.bg-dark-20 {
+  background: #183555;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  line-height: 19px;
+  color: #637381;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.breadcrumb .breadcrumb-item {
+  margin-right: 8px;
+  padding-left: 0px;
+}
+.breadcrumb .breadcrumb-item::before {
+  padding-right: 8px;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #637381;
+  text-decoration: none;
+}
+
+.container {
+  padding-right: 16px;
+  padding-left: 6px;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1330px;
+  }
+}
+
+.container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 576px) {
+  .container-fluid {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}/*# sourceMappingURL=clientAreaMissionView.css.map */
