@@ -290,6 +290,10 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.content-section .main-content .container {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .content-section .main-content .content-header {
   padding: 28px 0px 22px 0px;
 }
@@ -307,41 +311,126 @@
 }
 .content-section .main-content .mission-card {
   background: #FFFFFF;
-  border-radius: 8px;
-  padding: 26px 90px 26px 26px;
-  overflow: hidden;
+  box-shadow: inset 0px -1px 0px #EDF2F7;
+  padding-bottom: 200px;
 }
-@media (max-width: 991.98px) {
-  .content-section .main-content .mission-card {
-    padding: 26px;
+.content-section .main-content .mission-card .table {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+.content-section .main-content .mission-card .table .form-check-input {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  border: 1px solid #C9C9C9;
+  border-radius: 6px;
+}
+.content-section .main-content .mission-card .table thead {
+  background: #F2F4F7;
+  box-shadow: inset 0px -1px 0px #EDF2F7;
+}
+.content-section .main-content .mission-card .table thead .th-name {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  color: #8492A6;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.content-section .main-content .mission-card .table thead .sort-group {
+  background: rgba(215, 227, 238, 0.5);
+  border-radius: 4px;
+}
+.content-section .main-content .mission-card .table thead .sort-group .btn-sort-up {
+  padding: 0px 6px;
+  margin-bottom: -4px;
+  box-shadow: none;
+}
+.content-section .main-content .mission-card .table thead .sort-group .btn-sort-down {
+  padding: 0px 6px;
+  margin-top: -4px;
+  box-shadow: none;
+}
+.content-section .main-content .mission-card .table .max-w-205px {
+  max-width: 205px;
+}
+.content-section .main-content .mission-card .table th,
+.content-section .main-content .mission-card .table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.content-section .main-content .mission-card .table th:first-child,
+.content-section .main-content .mission-card .table td:first-child {
+  padding-left: 16px;
+}
+@media (min-width: 992px) {
+  .content-section .main-content .mission-card .table th:first-child,
+.content-section .main-content .mission-card .table td:first-child {
+    padding-left: 24px;
   }
 }
-.content-section .main-content .mission-card .title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 38px;
-  color: #183555;
-  margin-bottom: 0px;
+@media (min-width: 992px) {
+  .content-section .main-content .mission-card .table th:first-child,
+.content-section .main-content .mission-card .table td:first-child {
+    padding-left: 48px;
+  }
 }
-.content-section .main-content .mission-card .details {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 32px;
+.content-section .main-content .mission-card .table th:last-child,
+.content-section .main-content .mission-card .table td:last-child {
+  padding-right: 20px;
+}
+@media (min-width: 992px) {
+  .content-section .main-content .mission-card .table th:last-child,
+.content-section .main-content .mission-card .table td:last-child {
+    padding-right: 0px;
+  }
+}
+@media (min-width: 992px) {
+  .content-section .main-content .mission-card .table th:last-child,
+.content-section .main-content .mission-card .table td:last-child {
+    padding-right: 0px;
+  }
+}
+.content-section .main-content .mission-card .table tbody th,
+.content-section .main-content .mission-card .table tbody td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(232, 233, 235, 0.4);
+  font-size: 15px;
   color: #4F4F55;
+  background: #FFFFFF;
 }
-.content-section .main-content .mission-card .mb-40px {
-  margin-bottom: 40px;
+.content-section .main-content .mission-card .table tbody th .max-w-220px,
+.content-section .main-content .mission-card .table tbody td .max-w-220px {
+  max-width: 220px;
+  min-width: 220px;
 }
-.content-section .main-content .mission-card .mb-170px {
-  margin-bottom: 170px;
+.content-section .main-content .mission-card .table tbody th .status-dot,
+.content-section .main-content .mission-card .table tbody td .status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 40px;
+  margin-right: 12px;
 }
-.content-section .main-content .mission-card .card-pici {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 438px;
-}/*# sourceMappingURL=clientAreaMissionView.css.map */
+.content-section .main-content .mission-card .table tbody th .bg-green,
+.content-section .main-content .mission-card .table tbody td .bg-green {
+  background: #66CB9F;
+}
+.content-section .main-content .mission-card .table tbody th .bg-orange,
+.content-section .main-content .mission-card .table tbody td .bg-orange {
+  background: #F7936F;
+}
+.content-section .main-content .mission-card .table tbody th .bg-red,
+.content-section .main-content .mission-card .table tbody td .bg-red {
+  background: #F16063;
+}
+.content-section .main-content .mission-card .table .client-avater {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  margin-right: 12px;
+}/*# sourceMappingURL=clientAreaMissionList.css.map */

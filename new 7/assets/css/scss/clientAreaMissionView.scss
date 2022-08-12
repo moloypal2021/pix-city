@@ -1,1 +1,130 @@
 @import "style";
+
+.content-section {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+
+    .sidebar-header {
+        padding: 22px 60px;
+        background: #FFFFFF;
+
+        @include br-down(lg) {
+            padding: 22px 20px;
+
+        }
+
+        .hamburger-btn {
+            img {
+                width: 24px;
+            }
+        }
+
+        .bell-icon {
+            width: 24px;
+            position: relative;
+
+            .dot {
+                width: 8px;
+                height: 8px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: #ED5B75;
+                margin-top: 1px;
+                border-radius: 20px;
+            }
+        }
+
+        .bar {
+            width: 1px;
+            height: 42px;
+            margin: 0px 20px;
+            background: #CCD2E3;
+        }
+
+        .btn-mission {
+            border: 1px solid #328090;
+            border-radius: 4px;
+            padding: 8px 44px;
+            font-family: 'Gilroy-Bold';
+            font-size: 14px;
+            line-height: 22px;
+            color: #354252;
+
+            @include br-down(md) {
+                padding: 8px 24px;
+            }
+        }
+    }
+
+    .main-content {
+        padding-bottom: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .content-header {
+            padding: 28px 0px 22px 0px;
+
+            .title {
+                font-family: 'Gilroy-Bold';
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: 0.02em;
+                color: #084279;
+
+                @include br-down(lg) {
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+        .mission-card {
+            background: #FFFFFF;
+            border-radius: 8px;
+            padding: 26px 90px 26px 26px;
+            overflow: hidden;
+
+            @include br-down(lg) {
+                padding: 26px;
+
+            }
+
+            .title {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 38px;
+                color: #183555;
+                margin-bottom: 0px;
+            }
+
+            .details {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 32px;
+                color: #4F4F55;
+            }
+
+            .mb-40px {
+                margin-bottom: 40px;
+            }
+
+            .mb-170px {
+                margin-bottom: 170px;
+            }
+
+            .card-pici {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 438px;
+            }
+        }
+    }
+
+}
