@@ -275,7 +275,7 @@
   border: 1px solid #328090;
   border-radius: 4px;
   padding: 8px 44px;
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy-Bold", sans-serif;
   font-size: 14px;
   line-height: 22px;
   color: #354252;
@@ -298,7 +298,7 @@
   padding: 28px 0px 22px 0px;
 }
 .content-section .main-content .content-header .title {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy-Bold", sans-serif;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;

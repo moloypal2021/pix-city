@@ -323,7 +323,7 @@ body {
   justify-content: center;
 }
 .sidebar .profile-menu .profile-bg .title {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy-Bold", sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
@@ -344,7 +344,7 @@ body {
 .sidebar .menus .side-menu {
   padding: 16px;
   border-radius: 14px 0px 0px 14px;
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Medium", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #CCD2E3;
@@ -375,7 +375,7 @@ body {
   background: #436580;
   border-radius: 14px;
   padding: 12px 16px;
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Medium", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #FFFFFF;
@@ -390,7 +390,7 @@ body {
   display: flex;
   align-items: center;
   padding: 16px;
-  font-family: "Gilroy-Medium";
+  font-family: "Gilroy-Medium", sans-serif;
   font-size: 16px;
   line-height: 19px;
   color: #ED5485;
