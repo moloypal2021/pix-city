@@ -336,7 +336,7 @@ body {
 .sidebar .menus {
   list-style: none;
   padding: 0px;
-  margin-bottom: 170px;
+  margin-bottom: 16px;
 }
 .sidebar .menus li {
   margin-bottom: 2px;
@@ -366,7 +366,8 @@ body {
 .sidebar .menus-2 {
   list-style: none;
   padding: 0px 16px 0px 0px;
-  margin-bottom: 54px;
+  margin-bottom: 14px;
+  margin-top: auto;
 }
 .sidebar .menus-2 li {
   margin-bottom: 12px;
