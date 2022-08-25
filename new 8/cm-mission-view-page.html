@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- Sidebar CSS -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+
+    <!-- Client Area Mission View CSS -->
+    <link rel="stylesheet" href="./assets/css/cm-mission-view-page.css">
+</head>
+
+<body>
+
+    <div class="d-flex w-100 vh-100 overflow-hidden position-relative">
+        <!-- Sidebar Start -->
+        <!-- Sidebar overlay bg -->
+        <div class="sidebar-overlay d-none" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+        <div class="sidebar hide-sidebar d-flex flex-column" id="sidebar">
+            <button class="btn p-0 close-sidebar" onclick="toggleSidebar()">
+                <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 10.9993H7.14L10.77 6.6393C10.9397 6.43508 11.0214 6.1718 10.997 5.90738C10.9726 5.64295 10.8442 5.39904 10.64 5.2293C10.4358 5.05956 10.1725 4.9779 9.90808 5.00228C9.64365 5.02666 9.39974 5.15508 9.23 5.3593L4.23 11.3593C4.19636 11.407 4.16628 11.4572 4.14 11.5093C4.14 11.5593 4.14 11.5893 4.07 11.6393C4.02467 11.754 4.00094 11.876 4 11.9993C4.00094 12.1226 4.02467 12.2446 4.07 12.3593C4.07 12.4093 4.07 12.4393 4.14 12.4893C4.16628 12.5414 4.19636 12.5916 4.23 12.6393L9.23 18.6393C9.32402 18.7522 9.44176 18.843 9.57485 18.9052C9.70793 18.9674 9.85309 18.9995 10 18.9993C10.2337 18.9998 10.4601 18.9184 10.64 18.7693C10.7413 18.6854 10.825 18.5822 10.8863 18.4659C10.9477 18.3496 10.9855 18.2222 10.9975 18.0913C11.0096 17.9603 10.9957 17.8282 10.9567 17.7026C10.9176 17.577 10.8542 17.4603 10.77 17.3593L7.14 12.9993H19C19.2652 12.9993 19.5196 12.8939 19.7071 12.7064C19.8946 12.5189 20 12.2645 20 11.9993C20 11.7341 19.8946 11.4797 19.7071 11.2922C19.5196 11.1047 19.2652 10.9993 19 10.9993Z"
+                        fill="white" />
+                </svg>
+            </button>
+
+            <!-- Profile Menu -->
+            <div class="profile-menu d-flex align-items-center">
+                <div class="bar"></div>
+                <div class="d-flex align-items-center profile-bg active">
+                    <div class="icon-box">
+                        <img src="./assets/images/user-icon.svg" alt="" class="">
+                    </div>
+                    <h6 class="title">My Profile</h6>
+
+                    <button class="btn p-0 edit-btn">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.2875 5.99863L14.9992 9.71125L6.33675 18.3729H2.625V14.6603L11.2875 5.99775V5.99863ZM12.5247 4.76138L14.3806 2.90463C14.5447 2.74059 14.7672 2.64844 14.9992 2.64844C15.2313 2.64844 15.4538 2.74059 15.6179 2.90463L18.0932 5.38C18.2573 5.54409 18.3494 5.76661 18.3494 5.99863C18.3494 6.23064 18.2573 6.45316 18.0932 6.61725L16.2365 8.47313L12.5247 4.76138Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Menus -->
+            <ul class="menus">
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu">
+                        <img src="./assets/images/home-4-line 1.svg" alt="" class="icon">
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu">
+                        <img src="./assets/images/file-user-line 1.svg" alt="" class="icon">
+                        <span>Mes Missions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu">
+                        <img src="./assets/images/bill-line (1) 1.svg" alt="" class="icon">
+                        <span>Facturation</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Menu 2 -->
+            <ul class="menus-2">
+                <li><a href="#" class="side-menu-2 btn d-flex align-items-center">
+                        <img src="./assets/images/article-line 1.svg" alt="" class="icon">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li><a href="#" class="side-menu-2 btn d-flex align-items-center">
+                        <img src="./assets/images/question-line 1.svg" alt="" class="icon">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <!-- Logout btn -->
+            <a href="#" class="btn logout-btn">
+                <img src="./assets/images/logout-circle-r-line 1.svg" alt="" class="icon">
+                <span>Se déconnecter</span>
+            </a>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Content Section Start -->
+        <div class="content-section">
+
+            <!-- Header section Start -->
+            <header class="d-flex align-items-center justify-content-between sidebar-header">
+                <div class="">
+                    <button class="btn p-0 hamburger-btn shadow-none" onclick="toggleSidebar()">
+                        <img src="./assets/images/menu-fold-line.svg" alt="" class="">
+                    </button>
+                </div>
+
+                <div class="search-group d-none d-sm-flex align-items-center flex-grow-1">
+                    <img src="./assets/images/search.svg" alt="" class="search-icon">
+                    <input type="text" class="form-control search-input font-gilroy-bold"
+                        placeholder="Search here.....">
+                </div>
+
+                <ul class="nav d-flex flex-nowrap align-items-center justify-content-end">
+                    <li class="nav-item dropdown me-3 me-lg-2 me-xl-3 me-xxl-4">
+                        <div class="language-select">
+                            <select class="mission-cms-translation-btn text-white form-select">
+                                <option value="en">EN</option>
+                                <option value="fr">FR</option>
+                                <option value="es">ES</option>
+                            </select>
+                        </div>
+                    </li>
+
+                    <li class="nav-item d-flex align-items-center me-2 me-lg-2 me-xl-3 me-xxl-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.3 16V16.2899L17.505 16.495L19.3 18.29V18.3H4.7V18.2899L6.49497 16.495L6.7 16.2899V16V11C6.7 8.16412 8.17906 5.94929 10.6614 5.36114L11.2 5.23353V4.68V4C11.2 3.5566 11.5566 3.2 12 3.2C12.4434 3.2 12.8 3.5566 12.8 4V4.68V5.23308L13.3381 5.36102C15.8114 5.94907 17.3 8.17474 17.3 11V16ZM13.0932 20.7C12.861 21.0599 12.4565 21.3 12 21.3C11.5382 21.3 11.1347 21.0603 10.9042 20.7H13.0932Z"
+                                fill="white" stroke="#C2CFE0" stroke-width="1.4" />
+                        </svg>
+                        <div class="noti-badge">99+</div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle profile-dropdown align-items-center text-white" href="#"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg class="profile-icon" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="46" height="46" rx="23" fill="#C2CFE0" />
+                                <path d="M31 32v-2a4 4 0 0 0-4-4h-8a4 4 0 0 0-4 4v2M23 22a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"
+                                    stroke="#687A92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span class="mb-0 me-0 me-md-1 ms-2 d-none d-md-inline">User Name 1</span>
+
+                            <svg class="ms-auto d-none d-md-inline mb-1" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.76688 7.74335L10.0002 10.9767L13.2335 7.74335C13.3107 7.6662 13.4023 7.605 13.5031 7.56325C13.6039 7.52149 13.7119 7.5 13.821 7.5C13.9302 7.5 14.0382 7.52149 14.139 7.56325C14.2398 7.605 14.3314 7.6662 14.4085 7.74335C14.4857 7.8205 14.5469 7.91209 14.5887 8.0129C14.6304 8.1137 14.6519 8.22174 14.6519 8.33085C14.6519 8.43996 14.6304 8.548 14.5887 8.6488C14.5469 8.74961 14.4857 8.8412 14.4085 8.91835L10.5835 12.7434C10.5065 12.8206 10.4149 12.8819 10.3141 12.9237C10.2133 12.9655 10.1052 12.9871 9.99605 12.9871C9.88691 12.9871 9.77884 12.9655 9.67803 12.9237C9.57722 12.8819 9.48564 12.8206 9.40855 12.7434L5.58355 8.91835C5.50629 8.84126 5.445 8.74968 5.40319 8.64887C5.36137 8.54806 5.33984 8.43999 5.33984 8.33085C5.33984 8.22171 5.36137 8.11364 5.40319 8.01283C5.445 7.91202 5.50629 7.82045 5.58355 7.74335C5.90855 7.42668 6.44188 7.41835 6.76688 7.74335V7.74335Z"
+                                    fill="#687A92" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </header>
+            <!-- Header section End -->
+
+            <!-- Main Content Start -->
+            <main class="main-content">
+                <div class="container-fluid">
+
+                    <!-- Page Head Area -->
+                    <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between page-head">
+
+                        <a href="#" class="btn back-btn font-gilroy-bold"><svg width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.828 11.0007H20V13.0007H7.828L13.192 18.3647L11.778 19.7787L4 12.0007L11.778 4.22266L13.192 5.63666L7.828 11.0007Z"
+                                    fill="black" />
+                            </svg>
+                            <span class="text-title">My Mission</span>
+                        </a>
+
+                        <div class="d-flex align-items-center">
+                            <button class="btn btn-calender">
+                                <img src="./assets/images/calendar-event-fill (3) 1.svg" alt="" class=""> <span>View
+                                    Calendar</span> </button>
+
+                            <button class="btn btn-cycle">
+                                <img src="./assets/images/checkbox-line 1.svg" alt="" class=""> <span>Validate your
+                                    Cycle</span> </button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+            <!-- Main Content End -->
+
+
+        </div>
+        <!-- Content Section End -->
+    </div>
+
+
+
+
+    <!-- Bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let sidebarOverlay = document.getElementById("sidebarOverlay");
+
+            if (sidebar.classList.contains('hide-sidebar')) {
+                sidebar.classList.add('show-sidebar');
+                sidebar.classList.remove('hide-sidebar');
+                sidebarOverlay.classList.add('d-block');
+                sidebarOverlay.classList.remove('d-none');
+
+            } else {
+                sidebar.classList.add('hide-sidebar');
+                sidebar.classList.remove('show-sidebar');
+                sidebarOverlay.classList.add('d-none');
+                sidebarOverlay.classList.remove('d-block');
+            }
+        }
+    </script>
+</body>
+
+</html>
