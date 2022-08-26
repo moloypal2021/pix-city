@@ -370,10 +370,14 @@
   padding-left: 0px;
   padding-right: 0px;
 }
+.content-section .main-content .page-head {
+  margin-bottom: 22px;
+}
 .content-section .main-content .page-head .back-btn {
   font-size: 20px;
   line-height: 23px;
   color: #1C1F37;
+  padding: 12px 0px;
 }
 .content-section .main-content .page-head .back-btn svg {
   margin-right: 20px;
@@ -387,13 +391,19 @@
   color: #ED5485;
   border: 1px solid #ED5485;
   border-radius: 6px;
-  margin-right: 20px;
   padding: 6px 12px;
+  margin-bottom: 16px;
 }
 .content-section .main-content .page-head .btn-calender img {
   width: 24px;
   height: 24px;
   margin-right: 6px;
+}
+@media (min-width: 576px) {
+  .content-section .main-content .page-head .btn-calender {
+    margin-right: 20px;
+    margin-bottom: 0px;
+  }
 }
 .content-section .main-content .page-head .btn-cycle {
   padding: 6px 12px;
@@ -410,4 +420,369 @@
   width: 24px;
   height: 24px;
   margin-right: 6px;
+}
+.content-section .main-content .card-1 {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 18px 16px;
+  margin-bottom: 30px;
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+}
+.content-section .main-content .card-1 .card-img {
+  width: 100%;
+  height: 297px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 10px;
+  margin-bottom: 36px;
+}
+.content-section .main-content .card-1 .des-title {
+  font-size: 20px;
+  line-height: 25px;
+  color: #16192C;
+}
+.content-section .main-content .card-1 .des-para {
+  font-size: 16px;
+  line-height: 23px;
+  color: #8E8E8E;
+  margin-bottom: 30px;
+}
+.content-section .main-content .card-1 .res-title {
+  font-size: 16px;
+  line-height: 25px;
+  color: #16192C;
+  margin-bottom: 16px;
+}
+.content-section .main-content .card-1 .res-para {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #425466;
+}
+.content-section .main-content .card-1 .res-list {
+  list-style: none;
+  list-style-position: outside;
+  padding: 0px;
+}
+.content-section .main-content .card-1 .res-list li {
+  margin-bottom: 16px;
+}
+.content-section .main-content .card-1 .res-list li.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.content-section .main-content .card-1 .res-list li .check-text {
+  font-size: 14px;
+  line-height: 23px;
+  color: #425466;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+.content-section .main-content .card-2 {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 68px 24px 48px 24px;
+  box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+  filter: drop-shadow(0px 0px 1px rgba(12, 26, 75, 0.24));
+  margin-bottom: 30px;
+}
+.content-section .main-content .card-2 .title-5 {
+  font-size: 20px;
+  line-height: 162.02%;
+  color: #000000;
+  margin-bottom: 16px;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-2 .title-5 {
+    font-size: 18px;
+  }
+}
+.content-section .main-content .card-2 .docs {
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+.content-section .main-content .card-2 .docs .doc-icon {
+  width: 18px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+.content-section .main-content .card-2 .docs .doc-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  color: #000000;
+  margin-bottom: 0px;
+  margin-right: 16px;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-2 .docs .doc-title {
+    font-size: 14px;
+  }
+}
+.content-section .main-content .card-2 .docs .btn-download {
+  background: #EE628F;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 12px;
+  color: #FFFFFF;
+  flex-shrink: 0;
+  padding: 8px 35px;
+}
+.content-section .main-content .card-2 .docs .btn-download img {
+  width: 18px;
+  flex-shrink: 0;
+  margin-right: 8px;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-2 .docs .btn-download {
+    padding: 8px 16px;
+  }
+}
+.content-section .main-content .card-2 .docs .down-quote {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #000000;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-2 .docs .down-quote {
+    font-size: 16px;
+  }
+}
+.content-section .main-content .card-2 .border-hr {
+  background-color: #E4ECF7;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.content-section .main-content .card-2 .amount {
+  margin-bottom: 20px;
+  padding-right: 24px;
+}
+.content-section .main-content .card-2 .amount .price-tag {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+.content-section .main-content .card-2 .amount .price-tag .price {
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: -0.005em;
+  color: #000000;
+  margin-right: 8px;
+  margin-bottom: 0px;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-2 .amount .price-tag .price {
+    font-size: 32px;
+  }
+}
+.content-section .main-content .card-2 .amount .price-tag .ttc {
+  font-size: 14px;
+  line-height: 47px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-2 .amount .price-tag .ttc {
+    font-size: 13px;
+  }
+}
+.content-section .main-content .card-3 {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 28px;
+  width: 100%;
+  margin-bottom: 28px;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-3 {
+    padding: 16px;
+  }
+}
+.content-section .main-content .card-3 .roadmap {
+  margin-bottom: 64px;
+}
+.content-section .main-content .card-3 .roadmap .step {
+  max-width: 92px;
+  width: 100%;
+  margin-right: 2px;
+}
+.content-section .main-content .card-3 .roadmap .step .check-icon {
+  margin-right: 2px;
+}
+.content-section .main-content .card-3 .roadmap .step .check-icon .circle-line {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: block;
+}
+.content-section .main-content .card-3 .roadmap .step .check-icon .check {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: none;
+}
+.content-section .main-content .card-3 .roadmap .step .check-icon.active .check {
+  display: block;
+}
+.content-section .main-content .card-3 .roadmap .step .check-icon.active .circle-line {
+  display: none;
+}
+.content-section .main-content .card-3 .roadmap .step .line {
+  width: 100%;
+  height: 2px;
+  background: #E2E2E2;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.content-section .main-content .card-3 .roadmap .step .line .progres-line {
+  height: 100%;
+  background: #EE628F;
+  border-radius: 40px;
+}
+.content-section .main-content .card-3 .roadmap .step .date {
+  font-size: 12px;
+  line-height: 112%;
+  color: #000000;
+  opacity: 0.43;
+}
+.content-section .main-content .card-3 .roadmap .step .date.active {
+  opacity: 1;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-3 .roadmap .step .date {
+    font-size: 10px;
+  }
+}
+.content-section .main-content .card-3 .title-publication {
+  font-size: 20px;
+  line-height: 112%;
+  color: #000000;
+}
+.content-section .main-content .card-3 .track {
+  background: #FFFFFF;
+  border: 1px solid #F2F2F4;
+  border-radius: 10px;
+  padding: 16px;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-3 .track {
+    padding: 6px;
+  }
+}
+.content-section .main-content .card-3 .track .step {
+  max-width: 142px;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .content-section .main-content .card-3 .track .step {
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-3 .track .step {
+    max-width: 100px;
+  }
+}
+.content-section .main-content .card-3 .track .step .badge {
+  padding: 4px 14px;
+  border-radius: 99px;
+  margin-bottom: 12px;
+  flex-shrink: 0;
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #030229;
+  background: #FFD66B;
+}
+.content-section .main-content .card-3 .track .step .badge.complete {
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #FFFFFF;
+  background: #31B997;
+  box-shadow: 0px 2px 20px 4px rgba(49, 185, 151, 0.35);
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-3 .track .step .badge {
+    font-size: 10px;
+  }
+}
+.content-section .main-content .card-3 .track .step .date {
+  font-size: 12px;
+  line-height: 112%;
+  color: #000000;
+  opacity: 0.43;
+}
+.content-section .main-content .card-3 .track .step .date.active {
+  opacity: 1;
+}
+.content-section .main-content .card-3 .track .step .line {
+  width: 100%;
+  height: 2px;
+  background: #E2E2E2;
+  border-radius: 50px;
+  margin-top: 14px;
+}
+.content-section .main-content .card-3 .track .step .line .progress-line {
+  height: 100%;
+  background: #31B997;
+  border-radius: 40px;
+}
+.content-section .main-content .card-4 {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 18px 40px 26px 0px;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-4 {
+    padding: 16px 20px 16px 0px;
+  }
+}
+.content-section .main-content .card-4 .border-black {
+  width: 7px;
+  height: 80px;
+  background: #000000;
+  border-radius: 0px 16px 16px 0px;
+  margin-right: 20px;
+}
+.content-section .main-content .card-4 .price-tag .total {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.005em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.content-section .main-content .card-4 .price-tag .price {
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: -0.005em;
+  color: #000000;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-4 .price-tag .price {
+    font-size: 32px;
+  }
+}
+.content-section .main-content .card-4 .btn-mission {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  background: #328090;
+  border-radius: 70px;
+  padding: 12px 35px;
+}
+@media (max-width: 575.98px) {
+  .content-section .main-content .card-4 .btn-mission {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }/*# sourceMappingURL=cm-mission-view-page.css.map */
