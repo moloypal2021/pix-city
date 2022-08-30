@@ -448,15 +448,15 @@
             let sidebar = document.getElementById("sidebar");
             let sidebarOverlay = document.getElementById("sidebarOverlay");
 
-            if (sidebar.classList.contains('hide-sidebar')) {
-                sidebar.classList.add('show-sidebar');
-                sidebar.classList.remove('hide-sidebar');
+            if (sidebar.classList.contains('hide-sidebar', 'd-none')) {
+                sidebar.classList.add('show-sidebar', 'd-block');
+                sidebar.classList.remove('hide-sidebar', 'd-none');
                 sidebarOverlay.classList.add('d-block');
                 sidebarOverlay.classList.remove('d-none');
 
             } else {
-                sidebar.classList.add('hide-sidebar');
-                sidebar.classList.remove('show-sidebar');
+                sidebar.classList.add('hide-sidebar', 'd-none');
+                sidebar.classList.remove('show-sidebar', 'd-block');
                 sidebarOverlay.classList.add('d-none');
                 sidebarOverlay.classList.remove('d-block');
             }
