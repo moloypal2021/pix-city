@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- Sidebar CSS -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+
+    <!-- Client Area Mission View CSS -->
+    <link rel="stylesheet" href="./assets/css/payment-Cycle-2.css">
+</head>
+
+<body>
+
+    <div class="d-flex w-100 vh-100 overflow-hidden position-relative">
+        <!-- Sidebar Start -->
+        <!-- Sidebar overlay bg -->
+        <div class="sidebar-overlay d-none" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+        <div class="sidebar hide-sidebar d-flex flex-column" id="sidebar">
+            <button class="btn p-0 close-sidebar" onclick="toggleSidebar()">
+                <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 10.9993H7.14L10.77 6.6393C10.9397 6.43508 11.0214 6.1718 10.997 5.90738C10.9726 5.64295 10.8442 5.39904 10.64 5.2293C10.4358 5.05956 10.1725 4.9779 9.90808 5.00228C9.64365 5.02666 9.39974 5.15508 9.23 5.3593L4.23 11.3593C4.19636 11.407 4.16628 11.4572 4.14 11.5093C4.14 11.5593 4.14 11.5893 4.07 11.6393C4.02467 11.754 4.00094 11.876 4 11.9993C4.00094 12.1226 4.02467 12.2446 4.07 12.3593C4.07 12.4093 4.07 12.4393 4.14 12.4893C4.16628 12.5414 4.19636 12.5916 4.23 12.6393L9.23 18.6393C9.32402 18.7522 9.44176 18.843 9.57485 18.9052C9.70793 18.9674 9.85309 18.9995 10 18.9993C10.2337 18.9998 10.4601 18.9184 10.64 18.7693C10.7413 18.6854 10.825 18.5822 10.8863 18.4659C10.9477 18.3496 10.9855 18.2222 10.9975 18.0913C11.0096 17.9603 10.9957 17.8282 10.9567 17.7026C10.9176 17.577 10.8542 17.4603 10.77 17.3593L7.14 12.9993H19C19.2652 12.9993 19.5196 12.8939 19.7071 12.7064C19.8946 12.5189 20 12.2645 20 11.9993C20 11.7341 19.8946 11.4797 19.7071 11.2922C19.5196 11.1047 19.2652 10.9993 19 10.9993Z"
+                        fill="white" />
+                </svg>
+            </button>
+
+            <!-- Profile Menu -->
+            <div class="profile-menu d-flex align-items-center">
+                <div class="bar"></div>
+                <div class="d-flex align-items-center profile-bg">
+                    <div class="icon-box">
+                        <img src="./assets/images/user-icon.svg" alt="" class="">
+                    </div>
+                    <h6 class="title">My Profile</h6>
+
+                    <button class="btn p-0 edit-btn">
+                        <img src="./assets/images/pencil-icon.svg" alt="" class="">
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Menus -->
+            <ul class="menus">
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu">
+                        <img src="./assets/images/home-4-line 1.svg" alt="" class="icon">
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu active">
+                        <img src="./assets/images/file-user-line 1.svg" alt="" class="icon">
+                        <span>Mes Missions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu">
+                        <img src="./assets/images/bill-line (1) 1.svg" alt="" class="icon">
+                        <span>Facturation</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Menu 2 -->
+            <ul class="menus-2">
+                <li><a href="#" class="side-menu-2 btn d-flex align-items-center">
+                        <img src="./assets/images/article-line 1.svg" alt="" class="icon">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li><a href="#" class="side-menu-2 btn d-flex align-items-center">
+                        <img src="./assets/images/question-line 1.svg" alt="" class="icon">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <!-- Logout btn -->
+            <a href="#" class="btn logout-btn">
+                <img src="./assets/images/logout-circle-r-line 1.svg" alt="" class="icon">
+                <span>Se déconnecter</span>
+            </a>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Content Section Start -->
+        <div class="content-section">
+
+            <!-- Header section Start -->
+            <header class="d-flex align-items-center justify-content-between sidebar-header">
+                <div class="">
+                    <button class="btn p-0 d-block d-lg-none hamburger-btn" onclick="toggleSidebar()">
+                        <img src="./assets/images/charm_menu-hamburger.svg" alt="" class="">
+                    </button>
+                </div>
+                <div class="d-flex align-items-center justify-content-end">
+                    <button class="btn p-0 bell-icon">
+                        <div class="dot"></div>
+                        <img src="./assets/images/bell-icon.svg" alt="" class="">
+                    </button>
+                    <div class="bar"></div>
+                    <button class="btn btn-mission">0 mission en cours</button>
+                </div>
+            </header>
+            <!-- Header section End -->
+
+            <!-- Main Content Start -->
+            <main class="main-content">
+                <div class="container">
+                    <!-- Contnet Header Start -->
+                    <div
+                        class="content-header d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+                        <button class="btn btn-back flex-shrink-0 font-montserrat p-0 mb-3 mb-md-0">
+                            <img src="./assets/images/back-icon.svg" alt="" class="icon">
+                            <span>Your Cycles</span>
+                        </button>
+                    </div>
+                    <!-- Contnet Header End -->
+
+                    <div class="row cycle-content">
+                        <div class="col-xl-4 col-sm-6">
+                            <div class="d-flex align-items-center justify-content-between cycle-header font-montserrat">
+                                <h4 class="title">CYCLE 1</h4>
+                                <p class="date">02/08/2022</p>
+                            </div>
+
+                            <div class="cycle-body">
+                                <div
+                                    class="d-flex align-items-center justify-content-between card-head font-montserrat">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/check-2.svg" alt="" class="mark-icon">
+                                        <p class="c-title">Completed</p>
+                                    </div>
+
+                                    <div class="dropdown">
+                                        <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/images/Menu.svg" alt="" class="">
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row font-montserrat">
+                                    <div class="col-6 mb-44px">
+                                        <p class="c-date-time">23/07/2022, 10:30AM</p>
+                                        <div class="cycle-img">
+                                            <img src="./assets/images/cycle-1.png" alt="" class="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-44px">
+                                        <p class="c-date-time">28/07/2022, 5:00PM</p>
+                                        <div class="cycle-img">
+                                            <img src="./assets/images/cycle-2.png" alt="" class="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-44px">
+                                        <p class="c-date-time">20/07/2022, 12:30PM</p>
+                                        <div class="cycle-img">
+                                            <img src="./assets/images/cycle-3.png" alt="" class="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6">
+                            <div class="d-flex align-items-center justify-content-between cycle-header font-montserrat">
+                                <h4 class="title">CYCLE 2</h4>
+                                <p class="date">02/08/2022</p>
+                            </div>
+
+                            <div class="cycle-body">
+                                <div
+                                    class="d-flex align-items-center justify-content-between card-head font-montserrat">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/check-2.svg" alt="" class="mark-icon">
+                                        <p class="c-title">Completed</p>
+                                    </div>
+
+                                    <div class="dropdown">
+                                        <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/images/Menu.svg" alt="" class="">
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row font-montserrat">
+                                    <div class="col-6 mb-44px">
+                                        <p class="c-date-time">23/07/2022, 10:30AM</p>
+                                        <div class="cycle-img">
+                                            <img src="./assets/images/cycle-1.png" alt="" class="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-44px">
+                                        <p class="c-date-time">28/07/2022, 5:00PM</p>
+                                        <div class="cycle-img">
+                                            <img src="./assets/images/cycle-2.png" alt="" class="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-6">
+                            <div class="d-flex align-items-center justify-content-between cycle-header font-montserrat">
+                                <h4 class="title">CYCLE 2</h4>
+                                <p class="date">02/08/2022</p>
+                            </div>
+
+                            <div class="cycle-body">
+                                <div
+                                    class="d-flex align-items-center justify-content-between card-head font-montserrat">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/check-3.svg" alt="" class="mark-icon">
+                                        <p class="c-title">Ongoing</p>
+                                    </div>
+
+                                    <div class="dropdown">
+                                        <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/images/Menu.svg" alt="" class="">
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="row font-montserrat">
+                                    <div class="col-6 mb-44px">
+                                        <p class="c-date-time">23/07/2022, 10:30AM</p>
+                                        <div class="cycle-img">
+                                            <img src="./assets/images/cycle-1.png" alt="" class="">
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mb-44px">
+                                        <p class="c-date-time">28/07/2022, 5:00PM</p>
+                                        <div class="cycle-img">
+                                            <img src="./assets/images/cycle-2.png" alt="" class="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+            <!-- Main Content End -->
+
+
+        </div>
+        <!-- Content Section End -->
+    </div>
+
+
+
+
+    <!-- Bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let sidebarOverlay = document.getElementById("sidebarOverlay");
+
+            if (sidebar.classList.contains('hide-sidebar')) {
+                sidebar.classList.add('show-sidebar');
+                sidebar.classList.remove('hide-sidebar');
+                sidebarOverlay.classList.add('d-block');
+                sidebarOverlay.classList.remove('d-none');
+
+            } else {
+                sidebar.classList.add('hide-sidebar');
+                sidebar.classList.remove('show-sidebar');
+                sidebarOverlay.classList.add('d-none');
+                sidebarOverlay.classList.remove('d-block');
+            }
+        }
+    </script>
+</body>
+
+</html>
