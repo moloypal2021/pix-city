@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- Sidebar CSS -->
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+
+    <!-- Client Area Mission View CSS -->
+    <link rel="stylesheet" href="./assets/css/postpreview.css">
+</head>
+
+<body>
+
+    <div class="d-flex w-100 vh-100 overflow-hidden position-relative">
+        <!-- Sidebar Start -->
+        <!-- Sidebar overlay bg -->
+        <div class="sidebar-overlay d-none" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+        <div class="sidebar hide-sidebar d-flex flex-column" id="sidebar">
+            <button class="btn p-0 close-sidebar" onclick="toggleSidebar()">
+                <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 10.9993H7.14L10.77 6.6393C10.9397 6.43508 11.0214 6.1718 10.997 5.90738C10.9726 5.64295 10.8442 5.39904 10.64 5.2293C10.4358 5.05956 10.1725 4.9779 9.90808 5.00228C9.64365 5.02666 9.39974 5.15508 9.23 5.3593L4.23 11.3593C4.19636 11.407 4.16628 11.4572 4.14 11.5093C4.14 11.5593 4.14 11.5893 4.07 11.6393C4.02467 11.754 4.00094 11.876 4 11.9993C4.00094 12.1226 4.02467 12.2446 4.07 12.3593C4.07 12.4093 4.07 12.4393 4.14 12.4893C4.16628 12.5414 4.19636 12.5916 4.23 12.6393L9.23 18.6393C9.32402 18.7522 9.44176 18.843 9.57485 18.9052C9.70793 18.9674 9.85309 18.9995 10 18.9993C10.2337 18.9998 10.4601 18.9184 10.64 18.7693C10.7413 18.6854 10.825 18.5822 10.8863 18.4659C10.9477 18.3496 10.9855 18.2222 10.9975 18.0913C11.0096 17.9603 10.9957 17.8282 10.9567 17.7026C10.9176 17.577 10.8542 17.4603 10.77 17.3593L7.14 12.9993H19C19.2652 12.9993 19.5196 12.8939 19.7071 12.7064C19.8946 12.5189 20 12.2645 20 11.9993C20 11.7341 19.8946 11.4797 19.7071 11.2922C19.5196 11.1047 19.2652 10.9993 19 10.9993Z"
+                        fill="white" />
+                </svg>
+            </button>
+
+            <!-- Profile Menu -->
+            <div class="profile-menu d-flex align-items-center">
+                <div class="bar"></div>
+                <div class="d-flex align-items-center profile-bg">
+                    <div class="icon-box">
+                        <img src="./assets/images/user-icon.svg" alt="" class="">
+                    </div>
+                    <h6 class="title">My Profile</h6>
+
+                    <button class="btn p-0 edit-btn">
+                        <img src="./assets/images/pencil-icon.svg" alt="" class="">
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Menus -->
+            <ul class="menus">
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu">
+                        <img src="./assets/images/home-4-line 1.svg" alt="" class="icon">
+                        <span>Accueil</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu active">
+                        <img src="./assets/images/file-user-line 1.svg" alt="" class="icon">
+                        <span>Mes Missions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="d-flex align-items-center btn side-menu">
+                        <img src="./assets/images/bill-line (1) 1.svg" alt="" class="icon">
+                        <span>Facturation</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Menu 2 -->
+            <ul class="menus-2">
+                <li><a href="#" class="side-menu-2 btn d-flex align-items-center">
+                        <img src="./assets/images/article-line 1.svg" alt="" class="icon">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li><a href="#" class="side-menu-2 btn d-flex align-items-center">
+                        <img src="./assets/images/question-line 1.svg" alt="" class="icon">
+                        <span>FAQ</span>
+                    </a>
+                </li>
+            </ul>
+
+
+            <!-- Logout btn -->
+            <a href="#" class="btn logout-btn">
+                <img src="./assets/images/logout-circle-r-line 1.svg" alt="" class="icon">
+                <span>Se déconnecter</span>
+            </a>
+        </div>
+        <!-- Sidebar End -->
+
+        <!-- Content Section Start -->
+        <div class="content-section">
+            <!-- Header Section Start -->
+            <div class="d-flex flex-wrap align-items-center justify-content-between sidebar-header font-montserrat">
+                <button class="btn back-btn mr-2 mb-2 sm:mb-0">Back</button>
+                <button class="btn validez-btn">
+                    <img src="./assets/images/checkbox-multiple.svg" alt="" class="icon">
+                    <span>Validez tous les posts</span>
+                </button>
+            </div>
+            <!-- Header Section End -->
+
+
+            <!-- Post Section Start -->
+            <div class="posts-section">
+                <div class="d-flex w-100">
+                    <div class="post-card-1 d-flex w-100">
+                        <input type="checkbox" name="" id="" class="form-check">
+                        <div class="w-100 me-1">
+                            <div class="card">
+                                <div class="d-flex align-items-center justify-content-between post-header">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/your-avater.svg" alt="" class="your-avater">
+                                        <div class="font-sf-pro">
+                                            <h6 class="title">pieroborgo</h6>
+                                            <p class="address">Florence, Italy</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="dropdown">
+                                        <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="./assets/images/Menu.svg" alt="" class="">
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
+                                    data-bs-interval="0">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./assets/images/photo-1.svg" class="d-block w-100" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/images/photo-1.svg" class="d-block w-100" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/images/photo-1.svg" class="d-block w-100" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="action-buttons d-flex align-items-center justify-content-between mb-2">
+                                    <div class="d-flex align-items-center">
+                                        <button class="btn p-0 mx-2 shadow-none"><img src="./assets/images/Like.svg"
+                                                alt="" class=""></button>
+                                        <button class="btn p-0 mx-2 shadow-none"><img src="./assets/images/Comment.svg"
+                                                alt="" class=""></button>
+                                        <button class="btn p-0 mx-2 shadow-none"><img src="./assets/images/Vector.svg"
+                                                alt="" class=""></button>
+                                    </div>
+
+                                    <button class="btn p-0 mx-2 shadow-none"><img src="./assets/images/Collect.svg"
+                                            alt="" class=""></button>
+                                </div>
+
+                                <div class="card-content">
+                                    <p class="liked-by font-sf-pro">Liked by <span class="font-medium">leeviahq</span>
+                                        and
+                                        <span class="font-medium">others</span>
+                                    </p>
+                                    <p class="details font-poppins">pieroborgo Who are we? <br>
+                                        ✅ We are VoxSun, a leader in cloud IP telephony. <br>
+                                        ✅ We proudly offer telephone systems and lines for businesses, mobile
+                                        professionals,
+                                        and individuals. <br>
+                                        ✅ We deliver services throughout Canada and the US. <br>
+                                        ✅ We utilize the most advanced technology at a huge cost savings.</p>
+                                    <div class="d-flex flex-wrap font-poppins mb-5">
+                                        <a href="#" class="me-1 hasTag">#freebie</a>
+                                        <a href="#" class="me-1 hasTag">
+                                            #instagram</a>
+                                        <a href="#" class="me-1 hasTag">#figma</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post-time d-flex align-self-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/images/timer-2-fill 1.svg" alt="" class="timer-icon me-2">
+                                    <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <button class="btn reject-btn me-4">
+                                        <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
+                                        <span>REJECT</span>
+                                    </button>
+                                    <button class="btn approve-btn">
+                                        <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
+                                        <span>APPROVE</span>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="btn-group ms-3 plus-btn-dropdown">
+                            <button class="btn p-0 plus-btn" type="button" onclick="dropdown(event)">
+                                <img src="./assets/images/chat-new-line (1) 1.svg" alt="" class="">
+                            </button>
+                            <div class="cmt-dropdown d-none" aria-labelledby="dropdownMenuClickable">
+                                <div class="">
+                                    <textarea name="" id="" class="comment font-montserrat" oninput="cmtFunction(event)"
+                                        placeholder="Add a comment or @mention"></textarea>
+
+                                    <div class="d-flex align-items-center justify-content-end font-montserrat">
+                                        <div class="btn btn-cancle" onclick="closeDropdown()">Cancel</div>
+                                        <div class="btn btn-comment">Comment</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- Post Section End -->
+
+
+
+
+
+        </div>
+        <!-- Content Section End -->
+    </div>
+
+
+
+
+    <!-- Bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        function dropdown(event) {
+            if (event.target.nextElementSibling.classList.contains('d-none')) {
+                event.target.nextElementSibling.classList.add('d-block');
+                event.target.nextElementSibling.classList.remove('d-none');
+            } else {
+                event.target.nextElementSibling.classList.add('d-none');
+                event.target.nextElementSibling.classList.remove('d-block');
+            }
+        }
+        function closeDropdown() {
+            // console.log(document.querySelector('.cmt-dropdown').classList.remove('d-block'))
+            document.querySelector('.cmt-dropdown').classList.remove('d-block');
+            document.querySelector('.cmt-dropdown').classList.add('d-none');
+        }
+
+        function cmtFunction(event) {
+            if (event.target.nextElementSibling.classList.contains('active') === false) {
+                event.target.nextElementSibling.classList.add('active')
+            }
+        }
+
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            let sidebarOverlay = document.getElementById("sidebarOverlay");
+
+            if (sidebar.classList.contains('hide-sidebar')) {
+                sidebar.classList.add('show-sidebar');
+                sidebar.classList.remove('hide-sidebar');
+                sidebarOverlay.classList.add('d-block');
+                sidebarOverlay.classList.remove('d-none');
+
+            } else {
+                sidebar.classList.add('hide-sidebar');
+                sidebar.classList.remove('show-sidebar');
+                sidebarOverlay.classList.add('d-none');
+                sidebarOverlay.classList.remove('d-block');
+            }
+        }
+    </script>
+</body>
+
+</html>
