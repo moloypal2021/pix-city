@@ -697,6 +697,11 @@
   border: 3px solid rgba(0, 0, 0, 0.15);
   padding: 11px 30px;
 }
+@media (max-width: 767.98px) {
+  .content-section .posts-section .post-card-2 .card .post-preview .details-box {
+    fopadding: 11px 20px;
+  }
+}
 .content-section .posts-section .post-card-2 .card .post-preview .web-link {
   font-family: "Roboto";
   font-style: normal;
@@ -742,6 +747,7 @@
 @media (max-width: 767.98px) {
   .content-section .posts-section .post-card-2 .card .post-preview .btn-learn {
     font-size: 16px;
+    padding: 13px 16px;
   }
 }
 .content-section .posts-section .post-card-2 .card .total-like-cmt {

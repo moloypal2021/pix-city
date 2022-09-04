@@ -115,20 +115,22 @@
             <div class="posts-section">
 
                 <!-- Post Card 1 Section Start -->
-                <div class="post-card-1 d-flex w-100 mb-40px">
-                    <div class="d-flex align-items-start">
-                        <div class="d-flex align-items-center justify-content-between post-status">
+                <div class="post-card-1 d-flex w-100 mb-40px post-card">
+                    <div class="d-flex align-items-start card-box">
+
+                        <div class="d-flex align-items-center justify-content-between post-status mb-3 p">
                             <input type="checkbox" name="" id="" class="form-check">
-                            <div class="d-none align-items-center approve-status">
+                            <div class="d-none align-items-center approve-status me-3">
                                 <img src="./assets/images/like-approve.svg" alt="" class="">
                                 <p class="mb-0">Approved</p>
                             </div>
-                            <div class="d-none align-items-center reject-status">
+                            <div class="d-none align-items-center reject-status me-3">
                                 <img src="./assets/images/like-reject.svg" alt="" class="">
                                 <p class="mb-0">Rejected</p>
                             </div>
                         </div>
-                        <div class="w-100 me-1">
+
+                        <div class="w-100 me-1 cardPart">
 
                             <!-- Post Card Start -->
                             <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -461,109 +463,120 @@
 
 
                 <!-- Post Card 2 Section Start -->
-                <div class="post-card-2 d-flex w-100 mb-40px">
-                    <input type="checkbox" name="" id="" class="form-check">
-                    <div class="w-100 me-1">
-
-                        <!-- Post Card Start -->
-                        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <div class="d-flex align-items-center justify-content-between post-header">
-                                <div class="d-flex align-items-center">
-                                    <img src="./assets/images/Profile Picture.svg" alt="" class="your-avater">
-                                    <div class="font-sf-pro">
-                                        <h6 class="title">Page_Name</h6>
-                                        <div class="d-flex align-items-center sponsored">
-                                            <p class="mb-0">Sponsored .</p>
-                                            <img src="./assets/images/globe-icon.svg" alt="" class="">
+                <div class="post-card-2 d-flex w-100 mb-40px post-card">
+                    <div class="d-flex align-items-start card-box">
+                        <div class="d-flex align-items-center justify-content-between post-status mb-3 p">
+                            <input type="checkbox" name="" id="" class="form-check">
+                            <div class="d-none align-items-center approve-status me-3">
+                                <img src="./assets/images/like-approve.svg" alt="" class="">
+                                <p class="mb-0">Approved</p>
+                            </div>
+                            <div class="d-none align-items-center reject-status me-3">
+                                <img src="./assets/images/like-reject.svg" alt="" class="">
+                                <p class="mb-0">Rejected</p>
+                            </div>
+                        </div>
+                        <div class="w-100 me-1 cardPart">
+                            <!-- Post Card Start -->
+                            <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <div class="d-flex align-items-center justify-content-between post-header">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/Profile Picture.svg" alt="" class="your-avater">
+                                        <div class="font-sf-pro">
+                                            <h6 class="title">Page_Name</h6>
+                                            <div class="d-flex align-items-center sponsored">
+                                                <p class="mb-0">Sponsored .</p>
+                                                <img src="./assets/images/globe-icon.svg" alt="" class="">
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
 
-                            </div>
 
-
-                            <div class="card-content">
-                                <p class="details font-poppins mb-2">Insert text here. </p>
-                                <div class="d-flex flex-wrap font-poppins mb-0">
-                                    <a href="#" class="me-1 hasTag">#tagOne</a>
-                                    <a href="#" class="me-1 hasTag">
-                                        #tagTwo</a>
-                                    <a href="#" class="me-1 hasTag">#tagThree</a>
-                                    <a href="#" class="me-1 hasTag">#tagOne</a>
-                                    <a href="#" class="me-1 hasTag">
-                                        #tagTwo</a>
-                                    <a href="#" class="me-1 hasTag">#tagThree</a>
-                                    <a href="#" class="me-1 hasTag">#tagThree</a>
-                                </div>
-                                <a href="#" class="link">https://enter-url</a>
-                            </div>
-
-                            <div class="post-preview">
-                                <img src="./assets/images/post-svg.svg" alt="" class="w-100 prev-img">
-                                <div class="details-box d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <p class="web-link">WEBSITENAME.COM</p>
-                                        <p class="web-title">Headline copy here</p>
+                                <div class="card-content">
+                                    <p class="details font-poppins mb-2">Insert text here. </p>
+                                    <div class="d-flex flex-wrap font-poppins mb-0">
+                                        <a href="#" class="me-1 hasTag">#tagOne</a>
+                                        <a href="#" class="me-1 hasTag">
+                                            #tagTwo</a>
+                                        <a href="#" class="me-1 hasTag">#tagThree</a>
+                                        <a href="#" class="me-1 hasTag">#tagOne</a>
+                                        <a href="#" class="me-1 hasTag">
+                                            #tagTwo</a>
+                                        <a href="#" class="me-1 hasTag">#tagThree</a>
+                                        <a href="#" class="me-1 hasTag">#tagThree</a>
                                     </div>
-                                    <button class="btn btn-learn">Learn More</button>
-                                </div>
-                            </div>
-
-                            <div class="total-like-cmt d-flex align-items-center justify-content-between">
-                                <div class="d-flex align-items-center">
-                                    <img src="./assets/images/like-1.svg" alt="" class="like">
-                                    <img src="./assets/images/heart.svg" alt="" class="heart">
-                                    <p class="total">541</p>
+                                    <a href="#" class="link">https://enter-url</a>
                                 </div>
 
-                                <div class="d-flex align-items-center">
-                                    <p class="total-cmt">26 Comments</p>
-                                    <p class="total-share">87 Shares</p>
+                                <div class="post-preview">
+                                    <img src="./assets/images/post-svg.svg" alt="" class="w-100 prev-img">
+                                    <div class="details-box d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <p class="web-link">WEBSITENAME.COM</p>
+                                            <p class="web-title">Headline copy here</p>
+                                        </div>
+                                        <button class="btn btn-learn">Learn More</button>
+                                    </div>
+                                </div>
+
+                                <div class="total-like-cmt d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="./assets/images/like-1.svg" alt="" class="like">
+                                        <img src="./assets/images/heart.svg" alt="" class="heart">
+                                        <p class="total">541</p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <p class="total-cmt">26 Comments</p>
+                                        <p class="total-share">87 Shares</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="action-btn d-flex align-items-center justify-content-between">
+                                    <button class="btn p-0 d-flex align-items-center">
+                                        <img src="./assets/images/like-3.svg" alt="" class="icon">
+                                        <span>Like</span>
+                                    </button>
+                                    <button class="btn p-0 d-flex align-items-center">
+                                        <img src="./assets/images/cmt.svg" alt="" class="icon">
+                                        <span>Comment</span>
+                                    </button>
+                                    <button class="btn p-0 d-flex align-items-center">
+                                        <img src="./assets/images/shr.svg" alt="" class="icon">
+                                        <span>Share</span>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                            <!-- Post Card End -->
+
+                            <!-- Time start -->
+                            <div
+                                class="post-time d-flex flex-column flex-md-row align-self-center justify-content-between ">
+                                <div class="d-flex align-items-center mb-3 mb-md-0">
+                                    <img src="./assets/images/timer-2-fill 1.svg" alt="" class="timer-icon me-2">
+                                    <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
+                                </div>
+
+                                <div class="d-flex align-items-center aproval-btn">
+                                    <button class="btn reject-btn me-4" onclick="reject(event)">
+                                        <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
+                                        <span>REJECT</span>
+                                    </button>
+                                    <button class="btn approve-btn" onclick="approve(event)">
+                                        <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
+                                        <span>APPROVE</span>
+                                    </button>
                                 </div>
 
                             </div>
-
-                            <div class="action-btn d-flex align-items-center justify-content-between">
-                                <button class="btn p-0 d-flex align-items-center">
-                                    <img src="./assets/images/like-3.svg" alt="" class="icon">
-                                    <span>Like</span>
-                                </button>
-                                <button class="btn p-0 d-flex align-items-center">
-                                    <img src="./assets/images/cmt.svg" alt="" class="icon">
-                                    <span>Comment</span>
-                                </button>
-                                <button class="btn p-0 d-flex align-items-center">
-                                    <img src="./assets/images/shr.svg" alt="" class="icon">
-                                    <span>Share</span>
-                                </button>
-                            </div>
-
+                            <!-- Time end -->
 
                         </div>
-                        <!-- Post Card End -->
-
-                        <!-- Time start -->
-                        <div
-                            class="post-time d-flex flex-column flex-md-row align-self-center justify-content-between ">
-                            <div class="d-flex align-items-center mb-3 mb-md-0">
-                                <img src="./assets/images/timer-2-fill 1.svg" alt="" class="timer-icon me-2">
-                                <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
-                            </div>
-
-                            <div class="d-flex align-items-center aproval-btn">
-                                <button class="btn reject-btn me-4" onclick="reject(event)">
-                                    <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
-                                    <span>REJECT</span>
-                                </button>
-                                <button class="btn approve-btn" onclick="approve(event)">
-                                    <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
-                                    <span>APPROVE</span>
-                                </button>
-                            </div>
-
-                        </div>
-                        <!-- Time end -->
-
                     </div>
 
                     <!-- Comment Plus button -->
@@ -768,150 +781,164 @@
 
 
                 <!-- Post Card 3 Section Start -->
-                <div class="post-card-3 d-flex w-100 mb-40px">
-                    <input type="checkbox" name="" id="" class="form-check">
-                    <div class="w-100 me-1">
+                <div class="post-card-3 d-flex w-100 mb-40px post-card">
+                    <div class="d-flex align-items-start card-box">
 
-                        <!-- Post Card Start -->
-                        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                            <div class="border-card">
-                                <div class="d-flex align-items-center justify-content-between post-header">
-                                    <div class="d-flex align-items-center">
-                                        <img src="./assets/images/comn.svg" alt="" class="your-avater">
-                                        <div class="font-sf-pro">
-                                            <h6 class="title">Company name</h6>
-                                            <p class="total-followers">326 followers</p>
-                                            <div class="d-flex align-items-center post-timing">
-                                                <p class="mb-0 title">20 h .</p>
-                                                <img src="./assets/images/globe-icon.svg" alt="" class="globe">
+                        <div class="d-flex align-items-center justify-content-between post-status mb-3 p">
+                            <input type="checkbox" name="" id="" class="form-check">
+                            <div class="d-none align-items-center approve-status me-3">
+                                <img src="./assets/images/like-approve.svg" alt="" class="">
+                                <p class="mb-0">Approved</p>
+                            </div>
+                            <div class="d-none align-items-center reject-status me-3">
+                                <img src="./assets/images/like-reject.svg" alt="" class="">
+                                <p class="mb-0">Rejected</p>
+                            </div>
+                        </div>
+
+                        <div class="w-100 me-1 cardPart">
+
+                            <!-- Post Card Start -->
+                            <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                <div class="border-card">
+                                    <div class="d-flex align-items-center justify-content-between post-header">
+                                        <div class="d-flex align-items-center">
+                                            <img src="./assets/images/comn.svg" alt="" class="your-avater">
+                                            <div class="font-sf-pro">
+                                                <h6 class="title">Company name</h6>
+                                                <p class="total-followers">326 followers</p>
+                                                <div class="d-flex align-items-center post-timing">
+                                                    <p class="mb-0 title">20 h .</p>
+                                                    <img src="./assets/images/globe-icon.svg" alt="" class="globe">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./assets/images/Menu.svg" alt="" class="">
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="details font-poppins">Lacus amet, laoreet viverra id faucibus nisi
+                                            cras est sit pellentesque amet in auctor ac sapien enim nulla tellus risus
+                                            ornare lobortis commodo in proin in fermentum morbi at sem facilisi orci
+                                            magna in sagittis, tortor ac maecenas eget etiam ullamcorper magna eu risus
+                                            ipsum nec nibh lacus, suspendisse <span class="see-more"> ...see more</span>
+                                        </p>
+                                        <div class="d-flex flex-wrap font-poppins mb-5">
+                                            <a href="#" class="me-1 hasTag">#hastag</a>
+                                            <a href="#" class="me-1 hasTag">
+                                                #hastag</a>
+                                            <a href="#" class="me-1 hasTag">#hastag</a>
+                                        </div>
+
+                                        <a href="#" class="btn btn-translate">See translation</a>
+                                    </div>
+
+                                    <div class="post-prev">
+                                        <img src="./assets/images/Image place holder.svg" alt="" class="prev-img">
+                                        <div class="prev-details">
+                                            <p class="title">Name of the article</p>
+                                            <div class="d-flex align-items-center details">
+                                                <p class="mb-0">Source</p>
+                                                <svg class="mx-1" width="3" height="4" viewBox="0 0 3 4" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M3 2C3 2.82843 2.32843 3.5 1.5 3.5C0.671573 3.5 0 2.82843 0 2C0 1.17157 0.671573 0.5 1.5 0.5C2.32843 0.5 3 1.17157 3 2Z"
+                                                        fill="#565C65" />
+                                                </svg>
+                                                <p class="mb-0">10 min read</p>
+
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="dropdown">
-                                        <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="./assets/images/Menu.svg" alt="" class="">
+                                    <div class="emoji-box d-flex align-items-center">
+                                        <button class="btn p-0 emoji-btn me-2">
+                                            <img src="./assets/images/Reactions elements.svg" alt="" class="">
                                         </button>
-                                        <ul class="dropdown-menu dropdown-menu-end"
-                                            aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Action</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
+
+                                        <button class="btn p-0 emoji-btn me-2">
+                                            <img src="./assets/images/Reactions elements-2.svg" alt="" class="">
+                                        </button>
+
+                                        <button class="btn p-0 emoji-btn me-2">
+                                            <img src="./assets/images/Reactions elements-3.svg" alt="" class="">
+                                        </button>
+                                        <button class="btn p-0 emoji-btn me-2">
+                                            <img src="./assets/images/Reactions elements-4.svg" alt="" class="">
+                                        </button>
+                                        <button class="btn p-0 emoji-btn me-2">
+                                            <img src="./assets/images/Reactions elements-5.svg" alt="" class="">
+                                        </button>
+                                        <button class="btn p-0 emoji-btn me-2">
+                                            <img src="./assets/images/Reactions elements-6.svg" alt="" class="">
+                                        </button>
+                                        <p class="total-like mb-0">88</p>
+                                        <svg class="mx-2" width="3" height="3" viewBox="0 0 3 3" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z"
+                                                fill="#565C65" />
+                                        </svg>
+                                        <p class="cmt mb-0">4 comments</p>
+
+                                    </div>
+
+                                    <div class="actions-btns d-flex align-items-center">
+                                        <button class="btn p-0 me-4">
+                                            <img src="./assets/images/like-4.svg" alt="" class="icon">
+                                            <span>Like</span>
+                                        </button>
+                                        <button class="btn p-0 me-4">
+                                            <img src="./assets/images/Comment-2.svg" alt="" class="icon">
+                                            <span>Comment</span>
+                                        </button>
+                                        <button class="btn p-0 me-4">
+                                            <img src="./assets/images/Share.svg" alt="" class="icon">
+                                            <span>Share</span>
+                                        </button>
+                                        <button class="btn p-0 me-4">
+                                            <img src="./assets/images/Send.svg" alt="" class="icon">
+                                            <span>Send</span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="card-content">
-                                    <p class="details font-poppins">Lacus amet, laoreet viverra id faucibus nisi
-                                        cras est sit pellentesque amet in auctor ac sapien enim nulla tellus risus
-                                        ornare lobortis commodo in proin in fermentum morbi at sem facilisi orci
-                                        magna in sagittis, tortor ac maecenas eget etiam ullamcorper magna eu risus
-                                        ipsum nec nibh lacus, suspendisse <span class="see-more"> ...see more</span>
-                                    </p>
-                                    <div class="d-flex flex-wrap font-poppins mb-5">
-                                        <a href="#" class="me-1 hasTag">#hastag</a>
-                                        <a href="#" class="me-1 hasTag">
-                                            #hastag</a>
-                                        <a href="#" class="me-1 hasTag">#hastag</a>
-                                    </div>
-
-                                    <a href="#" class="btn btn-translate">See translation</a>
-                                </div>
-
-                                <div class="post-prev">
-                                    <img src="./assets/images/Image place holder.svg" alt="" class="prev-img">
-                                    <div class="prev-details">
-                                        <p class="title">Name of the article</p>
-                                        <div class="d-flex align-items-center details">
-                                            <p class="mb-0">Source</p>
-                                            <svg class="mx-1" width="3" height="4" viewBox="0 0 3 4" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M3 2C3 2.82843 2.32843 3.5 1.5 3.5C0.671573 3.5 0 2.82843 0 2C0 1.17157 0.671573 0.5 1.5 0.5C2.32843 0.5 3 1.17157 3 2Z"
-                                                    fill="#565C65" />
-                                            </svg>
-                                            <p class="mb-0">10 min read</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="emoji-box d-flex align-items-center">
-                                    <button class="btn p-0 emoji-btn me-2">
-                                        <img src="./assets/images/Reactions elements.svg" alt="" class="">
-                                    </button>
-
-                                    <button class="btn p-0 emoji-btn me-2">
-                                        <img src="./assets/images/Reactions elements-2.svg" alt="" class="">
-                                    </button>
-
-                                    <button class="btn p-0 emoji-btn me-2">
-                                        <img src="./assets/images/Reactions elements-3.svg" alt="" class="">
-                                    </button>
-                                    <button class="btn p-0 emoji-btn me-2">
-                                        <img src="./assets/images/Reactions elements-4.svg" alt="" class="">
-                                    </button>
-                                    <button class="btn p-0 emoji-btn me-2">
-                                        <img src="./assets/images/Reactions elements-5.svg" alt="" class="">
-                                    </button>
-                                    <button class="btn p-0 emoji-btn me-2">
-                                        <img src="./assets/images/Reactions elements-6.svg" alt="" class="">
-                                    </button>
-                                    <p class="total-like mb-0">88</p>
-                                    <svg class="mx-2" width="3" height="3" viewBox="0 0 3 3" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z"
-                                            fill="#565C65" />
-                                    </svg>
-                                    <p class="cmt mb-0">4 comments</p>
-
-                                </div>
-
-                                <div class="actions-btns d-flex align-items-center">
-                                    <button class="btn p-0 me-4">
-                                        <img src="./assets/images/like-4.svg" alt="" class="icon">
-                                        <span>Like</span>
-                                    </button>
-                                    <button class="btn p-0 me-4">
-                                        <img src="./assets/images/Comment-2.svg" alt="" class="icon">
-                                        <span>Comment</span>
-                                    </button>
-                                    <button class="btn p-0 me-4">
-                                        <img src="./assets/images/Share.svg" alt="" class="icon">
-                                        <span>Share</span>
-                                    </button>
-                                    <button class="btn p-0 me-4">
-                                        <img src="./assets/images/Send.svg" alt="" class="icon">
-                                        <span>Send</span>
-                                    </button>
-                                </div>
                             </div>
-                        </div>
-                        <!-- Post Card End -->
+                            <!-- Post Card End -->
 
-                        <!-- Time start -->
-                        <div
-                            class="post-time d-flex flex-column flex-md-row align-self-center justify-content-between ">
-                            <div class="d-flex align-items-center mb-3 mb-md-0">
-                                <img src="./assets/images/timer-2-fill 1.svg" alt="" class="timer-icon me-2">
-                                <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
-                            </div>
+                            <!-- Time start -->
+                            <div
+                                class="post-time d-flex flex-column flex-md-row align-self-center justify-content-between ">
+                                <div class="d-flex align-items-center mb-3 mb-md-0">
+                                    <img src="./assets/images/timer-2-fill 1.svg" alt="" class="timer-icon me-2">
+                                    <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
+                                </div>
 
-                            <div class="d-flex align-items-center aproval-btn">
-                                <button class="btn reject-btn me-4" onclick="reject(event)">
-                                    <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
-                                    <span>REJECT</span>
-                                </button>
-                                <button class="btn approve-btn" onclick="approve(event)">
-                                    <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
-                                    <span>APPROVE</span>
-                                </button>
+                                <div class="d-flex align-items-center aproval-btn">
+                                    <button class="btn reject-btn me-4" onclick="reject(event)">
+                                        <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
+                                        <span>REJECT</span>
+                                    </button>
+                                    <button class="btn approve-btn" onclick="approve(event)">
+                                        <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
+                                        <span>APPROVE</span>
+                                    </button>
+                                </div>
+
                             </div>
+                            <!-- Time end -->
 
                         </div>
-                        <!-- Time end -->
-
                     </div>
 
                     <!-- Comment Plus button -->
@@ -1222,9 +1249,15 @@
             event.target.closest('.aproval-btn').classList.add('d-none');
             event.target.closest('.aproval-btn').classList.remove('d-flex');
 
-            event.target.closest('.post-status').classList.add('flex-wrap');
-            event.target.closest('.approve-status').classList.add('d-flex');
-            event.target.closest('.approve-status').classList.remove('d-none');
+            event.target.closest('.post-card').querySelector('.card-box').classList.add('flex-wrap');
+            event.target.closest('.post-card').querySelector('.post-status').classList.add('w-100');
+            event.target.closest('.post-card').querySelector('.cardPart').classList.add('ms-5');
+
+
+            event.target.closest('.post-card').querySelector('.approve-status').classList.add('d-inline-flex');
+            event.target.closest('.post-card').querySelector('.approve-status').classList.remove('d-none');
+
+
 
 
         }
@@ -1236,9 +1269,15 @@
             }, 3000);
             event.target.closest('.aproval-btn').classList.add('d-none');
             event.target.closest('.aproval-btn').classList.remove('d-flex');
-            event.target.closest('.post-status').classList.add('flex-wrap');
-            event.target.closest('.reject-status').classList.add('d-flex');
-            event.target.closest('.reject-status').classList.remove('d-none');
+
+
+            event.target.closest('.post-card').querySelector('.card-box').classList.add('flex-wrap');
+            event.target.closest('.post-card').querySelector('.post-status').classList.add('w-100');
+            event.target.closest('.post-card').querySelector('.cardPart').classList.add('ms-5');
+
+
+            event.target.closest('.post-card').querySelector('.reject-status').classList.add('d-inline-flex');
+            event.target.closest('.post-card').querySelector('.reject-status').classList.remove('d-none');
         }
 
 

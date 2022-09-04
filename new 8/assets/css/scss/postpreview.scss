@@ -518,6 +518,10 @@
                         background: #F2F3F5;
                         border: 3px solid rgba(0, 0, 0, 0.15);
                         padding: 11px 30px;
+
+                        @include br-down(md) {
+                            fopadding: 11px 20px;
+                        }
                     }
 
                     .web-link {
@@ -566,6 +570,7 @@
 
                         @include br-down(md) {
                             font-size: 16px;
+                            padding: 13px 16px;
                         }
                     }
                 }
