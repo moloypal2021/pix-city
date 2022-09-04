@@ -99,6 +99,9 @@
         <div class="content-section">
             <!-- Header Section Start -->
             <div class="d-flex flex-wrap align-items-center justify-content-between sidebar-header font-montserrat">
+                <button class="btn p-0 d-block d-lg-none hamburger-btn" onclick="toggleSidebar()">
+                    <img src="./assets/images/charm_menu-hamburger.svg" alt="" class="">
+                </button>
                 <button class="btn back-btn mr-2 mb-2 sm:mb-0">Back</button>
                 <button class="btn validez-btn">
                     <img src="./assets/images/checkbox-multiple.svg" alt="" class="icon">
@@ -110,11 +113,21 @@
 
             <!-- Post Section Start -->
             <div class="posts-section">
-                <div class="w-100">
 
-                    <!-- Post Card 1 Section Start -->
-                    <div class="post-card-1 d-flex w-100 mb-40px">
-                        <input type="checkbox" name="" id="" class="form-check">
+                <!-- Post Card 1 Section Start -->
+                <div class="post-card-1 d-flex w-100 mb-40px">
+                    <div class="d-flex align-items-start">
+                        <div class="d-flex align-items-center justify-content-between post-status">
+                            <input type="checkbox" name="" id="" class="form-check">
+                            <div class="d-none align-items-center approve-status">
+                                <img src="./assets/images/like-approve.svg" alt="" class="">
+                                <p class="mb-0">Approved</p>
+                            </div>
+                            <div class="d-none align-items-center reject-status">
+                                <img src="./assets/images/like-reject.svg" alt="" class="">
+                                <p class="mb-0">Rejected</p>
+                            </div>
+                        </div>
                         <div class="w-100 me-1">
 
                             <!-- Post Card Start -->
@@ -210,12 +223,12 @@
                                     <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
                                 </div>
 
-                                <div class="d-flex align-items-center">
-                                    <button class="btn reject-btn me-4">
+                                <div class="d-flex align-items-center aproval-btn">
+                                    <button class="btn reject-btn me-4" onclick="reject(event)">
                                         <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
                                         <span>REJECT</span>
                                     </button>
-                                    <button class="btn approve-btn">
+                                    <button class="btn approve-btn" onclick="approve(event)">
                                         <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
                                         <span>APPROVE</span>
                                     </button>
@@ -225,222 +238,217 @@
                             <!-- Time end -->
 
                         </div>
+                    </div>
 
-                        <!-- Comment Plus button -->
-                        <div class="btn-group ms-md-3 plus-btn-dropdown">
-                            <button class="btn p-0 plus-btn" type="button" onclick="dropdown(event)">
-                                <img src="./assets/images/chat-new-line (1) 1.svg" alt="" class="">
-                            </button>
-                            <div class="cmt-dropdown d-none" aria-labelledby="dropdownMenuClickable">
-                                <div class="">
-                                    <div class="add_text d-block">
-                                        <textarea name="" id="" class="comment font-montserrat"
-                                            oninput="cmtFunction(event)"
-                                            placeholder="Add a comment or @mention"></textarea>
+                    <!-- Comment Plus button -->
+                    <div class="btn-group ms-md-3 plus-btn-dropdown">
+                        <button class="btn p-0 plus-btn" type="button" onclick="dropdown(event)">
+                            <img src="./assets/images/chat-new-line (1) 1.svg" alt="" class="">
+                        </button>
+                        <div class="cmt-dropdown d-none" aria-labelledby="dropdownMenuClickable">
+                            <div class="">
+                                <div class="add_text d-block">
+                                    <textarea name="" id="" class="comment font-montserrat" oninput="cmtFunction(event)"
+                                        placeholder="Add a comment or @mention"></textarea>
 
-                                        <div
-                                            class="d-flex align-items-center justify-content-end font-montserrat btn-cmts">
-                                            <div class="btn btn-cancle" onclick="closeDropdown()">Cancel</div>
-                                            <div class="btn btn-comment" onclick="comment(event)">Comment</div>
-                                        </div>
+                                    <div class="d-flex align-items-center justify-content-end font-montserrat btn-cmts">
+                                        <div class="btn btn-cancle" onclick="closeDropdown()">Cancel</div>
+                                        <div class="btn btn-comment" onclick="comment(event)">Comment</div>
                                     </div>
-                                    <div class="view_text d-none">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <p class="cmnt-text"></p>
-
-                                            <div class="dropdown d-inline">
-                                                <button class="btn p-0 shadow-none" type="button"
-                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                    aria-expanded="false">
-                                                    <img src="./assets/images/Menu.svg" alt="" class="">
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end cmnt-drop"
-                                                    aria-labelledby="dropdownMenuButton1">
-                                                    <li><a class="dropdown-item edit-btn mb-1" href="#"><img
-                                                                src="./assets/images/Edit-2.svg" alt="" class="">
-                                                            <span>Edit</span></a>
-                                                    </li>
-                                                    <li><a class="dropdown-item delete-btn" href="#"><img
-                                                                src="./assets/images/Delete.svg" alt="" class="">
-                                                            <span>Delete</span></a>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
                                 </div>
+                                <div class="view_text d-none">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="cmnt-text"></p>
+
+                                        <div class="dropdown d-inline">
+                                            <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./assets/images/Menu.svg" alt="" class="">
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end cmnt-drop"
+                                                aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item edit-btn mb-1" href="#"><img
+                                                            src="./assets/images/Edit-2.svg" alt="" class="">
+                                                        <span>Edit</span></a>
+                                                </li>
+                                                <li><a class="dropdown-item delete-btn" href="#"><img
+                                                            src="./assets/images/Delete.svg" alt="" class="">
+                                                        <span>Delete</span></a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Modal -->
-                        <div class="modal fade post-modal" id="exampleModal" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body w-100 p-0">
-                                        <div class="row">
-                                            <div class="col-lg-8 px-4 py-3">
-                                                <button type="button" class="btn p-0 mb-1" data-bs-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <img src="./assets/images/back btn.svg" alt="" class="">
-                                                </button>
+                    <!-- Modal -->
+                    <div class="modal fade post-modal" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body w-100 p-0">
+                                    <div class="row">
+                                        <div class="col-lg-8 px-4 py-3">
+                                            <button type="button" class="btn p-0 mb-1" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <img src="./assets/images/back btn.svg" alt="" class="">
+                                            </button>
 
-                                                <div class="left-side-content mb-5">
-                                                    <div class="card">
-                                                        <div
-                                                            class="d-flex align-items-center justify-content-between post-header">
-                                                            <div class="d-flex align-items-center">
-                                                                <img src="./assets/images/your-avater.svg" alt=""
-                                                                    class="your-avater">
-                                                                <div class="font-sf-pro">
-                                                                    <h6 class="title">pieroborgo</h6>
-                                                                    <p class="address">Florence, Italy</p>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="dropdown">
-                                                                <button class="btn p-0 shadow-none" type="button"
-                                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                                    aria-expanded="false">
-                                                                    <img src="./assets/images/Menu.svg" alt="" class="">
-                                                                </button>
-                                                                <ul class="dropdown-menu dropdown-menu-end"
-                                                                    aria-labelledby="dropdownMenuButton1">
-                                                                    <li><a class="dropdown-item" href="#">Action</a>
-                                                                    </li>
-                                                                    <li><a class="dropdown-item" href="#">Another
-                                                                            action</a></li>
-                                                                    <li><a class="dropdown-item" href="#">Something else
-                                                                            here</a></li>
-                                                                </ul>
+                                            <div class="left-side-content mb-5">
+                                                <div class="card">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between post-header">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/your-avater.svg" alt=""
+                                                                class="your-avater">
+                                                            <div class="font-sf-pro">
+                                                                <h6 class="title">pieroborgo</h6>
+                                                                <p class="address">Florence, Italy</p>
                                                             </div>
                                                         </div>
 
-                                                        <div id="carouselExampleIndicators1" class="carousel slide"
-                                                            data-bs-ride="carousel" data-bs-interval="0">
-                                                            <div class="carousel-indicators">
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleIndicators1"
-                                                                    data-bs-slide-to="0" class="active"
-                                                                    aria-current="true" aria-label="Slide 1"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleIndicators1"
-                                                                    data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                                                <button type="button"
-                                                                    data-bs-target="#carouselExampleIndicators1"
-                                                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                                            </div>
-                                                            <div class="carousel-inner">
-                                                                <div class="carousel-item active">
-                                                                    <img src="./assets/images/photo-1.svg"
-                                                                        class="d-block w-100" alt="">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="./assets/images/photo-1.svg"
-                                                                        class="d-block w-100" alt="">
-                                                                </div>
-                                                                <div class="carousel-item">
-                                                                    <img src="./assets/images/photo-1.svg"
-                                                                        class="d-block w-100" alt="">
-                                                                </div>
-                                                            </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn p-0 shadow-none" type="button"
+                                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                <img src="./assets/images/Menu.svg" alt="" class="">
+                                                            </button>
+                                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                                aria-labelledby="dropdownMenuButton1">
+                                                                <li><a class="dropdown-item" href="#">Action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Another
+                                                                        action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a></li>
+                                                            </ul>
                                                         </div>
+                                                    </div>
 
-                                                        <div
-                                                            class="action-buttons d-flex align-items-center justify-content-between mb-2">
-                                                            <div class="d-flex align-items-center">
-                                                                <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
-                                                                        src="./assets/images/Like.svg" alt=""
-                                                                        class=""></button>
-                                                                <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
-                                                                        src="./assets/images/Comment.svg" alt=""
-                                                                        class=""></button>
-                                                                <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
-                                                                        src="./assets/images/Vector.svg" alt=""
-                                                                        class=""></button>
-                                                            </div>
-
-                                                            <button class="btn p-0 mx-2 shadow-none"><img
-                                                                    src="./assets/images/Collect.svg" alt=""
-                                                                    class=""></button>
+                                                    <div id="carouselExampleIndicators1" class="carousel slide"
+                                                        data-bs-ride="carousel" data-bs-interval="0">
+                                                        <div class="carousel-indicators">
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators1"
+                                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                                aria-label="Slide 1"></button>
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators1"
+                                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                            <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators1"
+                                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
                                                         </div>
-
-                                                        <div class="card-content">
-                                                            <p class="liked-by font-sf-pro">Liked by <span
-                                                                    class="font-medium">leeviahq</span>
-                                                                and
-                                                                <span class="font-medium">others</span>
-                                                            </p>
-                                                            <p class="details font-poppins">pieroborgo Who are we? <br>
-                                                                ✅ We are VoxSun, a leader in cloud IP telephony. <br>
-                                                                ✅ We proudly offer telephone systems and lines for
-                                                                businesses, mobile
-                                                                professionals,
-                                                                and individuals. <br>
-                                                                ✅ We deliver services throughout Canada and the US. <br>
-                                                                ✅ We utilize the most advanced technology at a huge cost
-                                                                savings.</p>
-                                                            <div class="d-flex flex-wrap font-poppins mb-5">
-                                                                <a href="#" class="me-1 hasTag">#freebie</a>
-                                                                <a href="#" class="me-1 hasTag">
-                                                                    #instagram</a>
-                                                                <a href="#" class="me-1 hasTag">#figma</a>
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <img src="./assets/images/photo-1.svg"
+                                                                    class="d-block w-100" alt="">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="./assets/images/photo-1.svg"
+                                                                    class="d-block w-100" alt="">
+                                                            </div>
+                                                            <div class="carousel-item">
+                                                                <img src="./assets/images/photo-1.svg"
+                                                                    class="d-block w-100" alt="">
                                                             </div>
                                                         </div>
                                                     </div>
 
                                                     <div
-                                                        class="d-flex flex-column flex-sm-row align-items-center justify-content-center font-montserrat">
-                                                        <a href="#" class="btn btn-outline">Demandez une reprise</a>
-                                                        <a href="#" class="btn btn-success">Validez ce post</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <div class="right-side-content">
-                                                    <h3 class="title font-montserrat">Votre demande de reprise</h3>
+                                                        class="action-buttons d-flex align-items-center justify-content-between mb-2">
+                                                        <div class="d-flex align-items-center">
+                                                            <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
+                                                                    src="./assets/images/Like.svg" alt=""
+                                                                    class=""></button>
+                                                            <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
+                                                                    src="./assets/images/Comment.svg" alt=""
+                                                                    class=""></button>
+                                                            <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
+                                                                    src="./assets/images/Vector.svg" alt=""
+                                                                    class=""></button>
+                                                        </div>
 
-                                                    <div class="mb-40px font-montserrat">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label w-100">Commentaire</label>
-                                                        <textarea name="" id="" class="addCmnt"
-                                                            placeholder="Add your comment here..."></textarea>
+                                                        <button class="btn p-0 mx-2 shadow-none"><img
+                                                                src="./assets/images/Collect.svg" alt=""
+                                                                class=""></button>
                                                     </div>
 
-                                                    <!-- Attachment -->
-                                                    <div class="attachment mb-106px">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label w-100">Attachment</label>
-                                                        <div class="browser-file-box text-center">
-                                                            <input type="file" id="file-br" class="d-none">
-                                                            <label for="file-br" class="file-btn">
-                                                                <svg width="33" height="32" viewBox="0 0 33 32"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M0.0351562 4C0.0351562 1.79086 1.82602 0 4.03516 0H28.0352C30.2443 0 32.0352 1.79086 32.0352 4V28C32.0352 30.2091 30.2443 32 28.0352 32H4.03516C1.82602 32 0.0351562 30.2091 0.0351562 28V4Z"
-                                                                        fill="#FB739F" />
-                                                                    <path
-                                                                        d="M22.2574 8H9.81293C8.83109 8 8.03516 8.79594 8.03516 9.77778V22.2222C8.03516 23.2041 8.83109 24 9.81293 24H22.2574C23.2392 24 24.0352 23.2041 24.0352 22.2222V9.77778C24.0352 8.79594 23.2392 8 22.2574 8Z"
-                                                                        stroke="white" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <path d="M16.0352 12V20" stroke="white"
-                                                                        stroke-width="2" stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <path d="M12.0352 16H20.0352" stroke="white"
-                                                                        stroke-width="2" stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                </svg>
-                                                                <div class="btn-text">Browse Files</div>
-                                                            </label>
+                                                    <div class="card-content">
+                                                        <p class="liked-by font-sf-pro">Liked by <span
+                                                                class="font-medium">leeviahq</span>
+                                                            and
+                                                            <span class="font-medium">others</span>
+                                                        </p>
+                                                        <p class="details font-poppins">pieroborgo Who are we? <br>
+                                                            ✅ We are VoxSun, a leader in cloud IP telephony. <br>
+                                                            ✅ We proudly offer telephone systems and lines for
+                                                            businesses, mobile
+                                                            professionals,
+                                                            and individuals. <br>
+                                                            ✅ We deliver services throughout Canada and the US. <br>
+                                                            ✅ We utilize the most advanced technology at a huge cost
+                                                            savings.</p>
+                                                        <div class="d-flex flex-wrap font-poppins mb-5">
+                                                            <a href="#" class="me-1 hasTag">#freebie</a>
+                                                            <a href="#" class="me-1 hasTag">
+                                                                #instagram</a>
+                                                            <a href="#" class="me-1 hasTag">#figma</a>
                                                         </div>
                                                     </div>
-
-                                                    <button class="btn btn-cmnt">Post Comment</button>
                                                 </div>
+
+                                                <div
+                                                    class="d-flex flex-column flex-sm-row align-items-center justify-content-center font-montserrat">
+                                                    <a href="#" class="btn btn-outline">Demandez une reprise</a>
+                                                    <a href="#" class="btn btn-success">Validez ce post</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 ">
+                                            <div class="right-side-content">
+                                                <h3 class="title font-montserrat">Votre demande de reprise</h3>
+
+                                                <div class="mb-40px font-montserrat">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label w-100">Commentaire</label>
+                                                    <textarea name="" id="" class="addCmnt"
+                                                        placeholder="Add your comment here..."></textarea>
+                                                </div>
+
+                                                <!-- Attachment -->
+                                                <div class="attachment mb-106px">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label w-100">Attachment</label>
+                                                    <div class="browser-file-box text-center">
+                                                        <input type="file" id="file-br" class="d-none">
+                                                        <label for="file-br" class="file-btn">
+                                                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M0.0351562 4C0.0351562 1.79086 1.82602 0 4.03516 0H28.0352C30.2443 0 32.0352 1.79086 32.0352 4V28C32.0352 30.2091 30.2443 32 28.0352 32H4.03516C1.82602 32 0.0351562 30.2091 0.0351562 28V4Z"
+                                                                    fill="#FB739F" />
+                                                                <path
+                                                                    d="M22.2574 8H9.81293C8.83109 8 8.03516 8.79594 8.03516 9.77778V22.2222C8.03516 23.2041 8.83109 24 9.81293 24H22.2574C23.2392 24 24.0352 23.2041 24.0352 22.2222V9.77778C24.0352 8.79594 23.2392 8 22.2574 8Z"
+                                                                    stroke="white" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M16.0352 12V20" stroke="white" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M12.0352 16H20.0352" stroke="white"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <div class="btn-text">Browse Files</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <button class="btn btn-cmnt">Post Comment</button>
                                             </div>
                                         </div>
                                     </div>
@@ -448,22 +456,335 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Post Card 1 Section End -->
+                </div>
+                <!-- Post Card 1 Section End -->
 
 
-                    <!-- Post Card 2 Section Start -->
-                    <div class="post-card-2 d-flex w-100 mb-40px">
-                        <input type="checkbox" name="" id="" class="form-check">
-                        <div class="w-100 me-1">
+                <!-- Post Card 2 Section Start -->
+                <div class="post-card-2 d-flex w-100 mb-40px">
+                    <input type="checkbox" name="" id="" class="form-check">
+                    <div class="w-100 me-1">
 
-                            <!-- Post Card Start -->
-                            <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <!-- Post Card Start -->
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                            <div class="d-flex align-items-center justify-content-between post-header">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/images/Profile Picture.svg" alt="" class="your-avater">
+                                    <div class="font-sf-pro">
+                                        <h6 class="title">Page_Name</h6>
+                                        <div class="d-flex align-items-center sponsored">
+                                            <p class="mb-0">Sponsored .</p>
+                                            <img src="./assets/images/globe-icon.svg" alt="" class="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <p class="details font-poppins mb-2">Insert text here. </p>
+                                <div class="d-flex flex-wrap font-poppins mb-0">
+                                    <a href="#" class="me-1 hasTag">#tagOne</a>
+                                    <a href="#" class="me-1 hasTag">
+                                        #tagTwo</a>
+                                    <a href="#" class="me-1 hasTag">#tagThree</a>
+                                    <a href="#" class="me-1 hasTag">#tagOne</a>
+                                    <a href="#" class="me-1 hasTag">
+                                        #tagTwo</a>
+                                    <a href="#" class="me-1 hasTag">#tagThree</a>
+                                    <a href="#" class="me-1 hasTag">#tagThree</a>
+                                </div>
+                                <a href="#" class="link">https://enter-url</a>
+                            </div>
+
+                            <div class="post-preview">
+                                <img src="./assets/images/post-svg.svg" alt="" class="w-100 prev-img">
+                                <div class="details-box d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="web-link">WEBSITENAME.COM</p>
+                                        <p class="web-title">Headline copy here</p>
+                                    </div>
+                                    <button class="btn btn-learn">Learn More</button>
+                                </div>
+                            </div>
+
+                            <div class="total-like-cmt d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="./assets/images/like-1.svg" alt="" class="like">
+                                    <img src="./assets/images/heart.svg" alt="" class="heart">
+                                    <p class="total">541</p>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p class="total-cmt">26 Comments</p>
+                                    <p class="total-share">87 Shares</p>
+                                </div>
+
+                            </div>
+
+                            <div class="action-btn d-flex align-items-center justify-content-between">
+                                <button class="btn p-0 d-flex align-items-center">
+                                    <img src="./assets/images/like-3.svg" alt="" class="icon">
+                                    <span>Like</span>
+                                </button>
+                                <button class="btn p-0 d-flex align-items-center">
+                                    <img src="./assets/images/cmt.svg" alt="" class="icon">
+                                    <span>Comment</span>
+                                </button>
+                                <button class="btn p-0 d-flex align-items-center">
+                                    <img src="./assets/images/shr.svg" alt="" class="icon">
+                                    <span>Share</span>
+                                </button>
+                            </div>
+
+
+                        </div>
+                        <!-- Post Card End -->
+
+                        <!-- Time start -->
+                        <div
+                            class="post-time d-flex flex-column flex-md-row align-self-center justify-content-between ">
+                            <div class="d-flex align-items-center mb-3 mb-md-0">
+                                <img src="./assets/images/timer-2-fill 1.svg" alt="" class="timer-icon me-2">
+                                <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
+                            </div>
+
+                            <div class="d-flex align-items-center aproval-btn">
+                                <button class="btn reject-btn me-4" onclick="reject(event)">
+                                    <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
+                                    <span>REJECT</span>
+                                </button>
+                                <button class="btn approve-btn" onclick="approve(event)">
+                                    <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
+                                    <span>APPROVE</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- Time end -->
+
+                    </div>
+
+                    <!-- Comment Plus button -->
+                    <div class="btn-group ms-md-3 plus-btn-dropdown">
+                        <button class="btn p-0 plus-btn" type="button" onclick="dropdown(event)">
+                            <img src="./assets/images/chat-new-line (1) 1.svg" alt="" class="">
+                        </button>
+                        <div class="cmt-dropdown d-none" aria-labelledby="dropdownMenuClickable">
+                            <div class="">
+                                <div class="add_text d-block">
+                                    <textarea name="" id="" class="comment font-montserrat" oninput="cmtFunction(event)"
+                                        placeholder="Add a comment or @mention"></textarea>
+
+                                    <div class="d-flex align-items-center justify-content-end font-montserrat btn-cmts">
+                                        <div class="btn btn-cancle" onclick="closeDropdown()">Cancel</div>
+                                        <div class="btn btn-comment" onclick="comment(event)">Comment</div>
+                                    </div>
+                                </div>
+                                <div class="view_text d-none">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="cmnt-text"></p>
+
+                                        <div class="dropdown d-inline">
+                                            <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./assets/images/Menu.svg" alt="" class="">
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end cmnt-drop"
+                                                aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item edit-btn mb-1" href="#"><img
+                                                            src="./assets/images/Edit-2.svg" alt="" class="">
+                                                        <span>Edit</span></a>
+                                                </li>
+                                                <li><a class="dropdown-item delete-btn" href="#"><img
+                                                            src="./assets/images/Delete.svg" alt="" class="">
+                                                        <span>Delete</span></a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade post-modal" id="exampleModal2" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body w-100 p-0">
+                                    <div class="row">
+                                        <div class="col-lg-8 px-4 py-3">
+                                            <button type="button" class="btn p-0 mb-1" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <img src="./assets/images/back btn.svg" alt="" class="">
+                                            </button>
+
+                                            <div class="left-side-content mb-5">
+
+                                                <div class="card">
+                                                    <div
+                                                        class="d-flex align-items-center justify-content-between post-header">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/Profile Picture.svg" alt=""
+                                                                class="your-avater">
+                                                            <div class="font-sf-pro">
+                                                                <h6 class="title">Page_Name</h6>
+                                                                <div class="d-flex align-items-center sponsored">
+                                                                    <p class="mb-0">Sponsored .</p>
+                                                                    <img src="./assets/images/globe-icon.svg" alt=""
+                                                                        class="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                    <div class="card-content">
+                                                        <p class="details font-poppins mb-2">Insert text here. </p>
+                                                        <div class="d-flex flex-wrap font-poppins mb-0">
+                                                            <a href="#" class="me-1 hasTag">#tagOne</a>
+                                                            <a href="#" class="me-1 hasTag">
+                                                                #tagTwo</a>
+                                                            <a href="#" class="me-1 hasTag">#tagThree</a>
+                                                            <a href="#" class="me-1 hasTag">#tagOne</a>
+                                                            <a href="#" class="me-1 hasTag">
+                                                                #tagTwo</a>
+                                                            <a href="#" class="me-1 hasTag">#tagThree</a>
+                                                            <a href="#" class="me-1 hasTag">#tagThree</a>
+                                                        </div>
+                                                        <a href="#" class="link">https://enter-url</a>
+                                                    </div>
+
+                                                    <div class="post-preview">
+                                                        <img src="./assets/images/post-svg.svg" alt=""
+                                                            class="w-100 prev-img">
+                                                        <div
+                                                            class="details-box d-flex align-items-center justify-content-between">
+                                                            <div>
+                                                                <p class="web-link">WEBSITENAME.COM</p>
+                                                                <p class="web-title">Headline copy here</p>
+                                                            </div>
+                                                            <button class="btn btn-learn">Learn More</button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="total-like-cmt d-flex align-items-center justify-content-between">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="./assets/images/like-1.svg" alt="" class="like">
+                                                            <img src="./assets/images/heart.svg" alt="" class="heart">
+                                                            <p class="total">541</p>
+                                                        </div>
+
+                                                        <div class="d-flex align-items-center">
+                                                            <p class="total-cmt">26 Comments</p>
+                                                            <p class="total-share">87 Shares</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div
+                                                        class="action-btn d-flex align-items-center justify-content-between">
+                                                        <button class="btn p-0 d-flex align-items-center">
+                                                            <img src="./assets/images/like-3.svg" alt="" class="icon">
+                                                            <span>Like</span>
+                                                        </button>
+                                                        <button class="btn p-0 d-flex align-items-center">
+                                                            <img src="./assets/images/cmt.svg" alt="" class="icon">
+                                                            <span>Comment</span>
+                                                        </button>
+                                                        <button class="btn p-0 d-flex align-items-center">
+                                                            <img src="./assets/images/shr.svg" alt="" class="icon">
+                                                            <span>Share</span>
+                                                        </button>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <div
+                                                    class="d-flex flex-column flex-sm-row align-items-center justify-content-center font-montserrat">
+                                                    <a href="#" class="btn btn-outline">Demandez une reprise</a>
+                                                    <a href="#" class="btn btn-success">Validez ce post</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 ">
+                                            <div class="right-side-content">
+                                                <h3 class="title font-montserrat">Votre demande de reprise</h3>
+
+                                                <div class="mb-40px font-montserrat">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label w-100">Commentaire</label>
+                                                    <textarea name="" id="" class="addCmnt"
+                                                        placeholder="Add your comment here..."></textarea>
+                                                </div>
+
+                                                <!-- Attachment -->
+                                                <div class="attachment mb-106px">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label w-100">Attachment</label>
+                                                    <div class="browser-file-box text-center">
+                                                        <input type="file" id="file-br" class="d-none">
+                                                        <label for="file-br" class="file-btn">
+                                                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M0.0351562 4C0.0351562 1.79086 1.82602 0 4.03516 0H28.0352C30.2443 0 32.0352 1.79086 32.0352 4V28C32.0352 30.2091 30.2443 32 28.0352 32H4.03516C1.82602 32 0.0351562 30.2091 0.0351562 28V4Z"
+                                                                    fill="#FB739F" />
+                                                                <path
+                                                                    d="M22.2574 8H9.81293C8.83109 8 8.03516 8.79594 8.03516 9.77778V22.2222C8.03516 23.2041 8.83109 24 9.81293 24H22.2574C23.2392 24 24.0352 23.2041 24.0352 22.2222V9.77778C24.0352 8.79594 23.2392 8 22.2574 8Z"
+                                                                    stroke="white" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M16.0352 12V20" stroke="white" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M12.0352 16H20.0352" stroke="white"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <div class="btn-text">Browse Files</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <button class="btn btn-cmnt">Post Comment</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post Card 2 Section End -->
+
+
+
+                <!-- Post Card 3 Section Start -->
+                <div class="post-card-3 d-flex w-100 mb-40px">
+                    <input type="checkbox" name="" id="" class="form-check">
+                    <div class="w-100 me-1">
+
+                        <!-- Post Card Start -->
+                        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            <div class="border-card">
                                 <div class="d-flex align-items-center justify-content-between post-header">
                                     <div class="d-flex align-items-center">
-                                        <img src="./assets/images/Profile Picture.svg" alt="" class="your-avater">
+                                        <img src="./assets/images/comn.svg" alt="" class="your-avater">
                                         <div class="font-sf-pro">
-                                            <h6 class="title">pieroborgo</h6>
-                                            <p class="address">Florence, Italy</p>
+                                            <h6 class="title">Company name</h6>
+                                            <p class="total-followers">326 followers</p>
+                                            <div class="d-flex align-items-center post-timing">
+                                                <p class="mb-0 title">20 h .</p>
+                                                <img src="./assets/images/globe-icon.svg" alt="" class="globe">
+                                            </div>
                                         </div>
                                     </div>
 
@@ -480,205 +801,365 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"
-                                    data-bs-interval="0">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="0" class="active" aria-current="true"
-                                            aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators"
-                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                    </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="./assets/images/photo-1.svg" class="d-block w-100" alt="">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./assets/images/photo-1.svg" class="d-block w-100" alt="">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="./assets/images/photo-1.svg" class="d-block w-100" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="action-buttons d-flex align-items-center justify-content-between mb-2">
-                                    <div class="d-flex align-items-center">
-                                        <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
-                                                src="./assets/images/Like.svg" alt="" class=""></button>
-                                        <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
-                                                src="./assets/images/Comment.svg" alt="" class=""></button>
-                                        <button class="btn p-0 mx-1 mx-sm-2 shadow-none"><img
-                                                src="./assets/images/Vector.svg" alt="" class=""></button>
-                                    </div>
-
-                                    <button class="btn p-0 mx-2 shadow-none"><img src="./assets/images/Collect.svg"
-                                            alt="" class=""></button>
-                                </div>
-
                                 <div class="card-content">
-                                    <p class="liked-by font-sf-pro">Liked by <span class="font-medium">leeviahq</span>
-                                        and
-                                        <span class="font-medium">others</span>
+                                    <p class="details font-poppins">Lacus amet, laoreet viverra id faucibus nisi
+                                        cras est sit pellentesque amet in auctor ac sapien enim nulla tellus risus
+                                        ornare lobortis commodo in proin in fermentum morbi at sem facilisi orci
+                                        magna in sagittis, tortor ac maecenas eget etiam ullamcorper magna eu risus
+                                        ipsum nec nibh lacus, suspendisse <span class="see-more"> ...see more</span>
                                     </p>
-                                    <p class="details font-poppins">pieroborgo Who are we? <br>
-                                        ✅ We are VoxSun, a leader in cloud IP telephony. <br>
-                                        ✅ We proudly offer telephone systems and lines for businesses, mobile
-                                        professionals,
-                                        and individuals. <br>
-                                        ✅ We deliver services throughout Canada and the US. <br>
-                                        ✅ We utilize the most advanced technology at a huge cost savings.</p>
                                     <div class="d-flex flex-wrap font-poppins mb-5">
-                                        <a href="#" class="me-1 hasTag">#freebie</a>
+                                        <a href="#" class="me-1 hasTag">#hastag</a>
                                         <a href="#" class="me-1 hasTag">
-                                            #instagram</a>
-                                        <a href="#" class="me-1 hasTag">#figma</a>
+                                            #hastag</a>
+                                        <a href="#" class="me-1 hasTag">#hastag</a>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- Post Card End -->
 
-                            <!-- Time start -->
-                            <div
-                                class="post-time d-flex flex-column flex-md-row align-self-center justify-content-between ">
-                                <div class="d-flex align-items-center mb-3 mb-md-0">
-                                    <img src="./assets/images/timer-2-fill 1.svg" alt="" class="timer-icon me-2">
-                                    <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
+                                    <a href="#" class="btn btn-translate">See translation</a>
                                 </div>
 
-                                <div class="d-flex align-items-center">
-                                    <button class="btn reject-btn me-4">
-                                        <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
-                                        <span>REJECT</span>
-                                    </button>
-                                    <button class="btn approve-btn">
-                                        <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
-                                        <span>APPROVE</span>
-                                    </button>
-                                </div>
+                                <div class="post-prev">
+                                    <img src="./assets/images/Image place holder.svg" alt="" class="prev-img">
+                                    <div class="prev-details">
+                                        <p class="title">Name of the article</p>
+                                        <div class="d-flex align-items-center details">
+                                            <p class="mb-0">Source</p>
+                                            <svg class="mx-1" width="3" height="4" viewBox="0 0 3 4" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M3 2C3 2.82843 2.32843 3.5 1.5 3.5C0.671573 3.5 0 2.82843 0 2C0 1.17157 0.671573 0.5 1.5 0.5C2.32843 0.5 3 1.17157 3 2Z"
+                                                    fill="#565C65" />
+                                            </svg>
+                                            <p class="mb-0">10 min read</p>
 
-                            </div>
-                            <!-- Time end -->
-
-                        </div>
-
-                        <!-- Comment Plus button -->
-                        <div class="btn-group ms-md-3 plus-btn-dropdown">
-                            <button class="btn p-0 plus-btn" type="button" onclick="dropdown(event)">
-                                <img src="./assets/images/chat-new-line (1) 1.svg" alt="" class="">
-                            </button>
-                            <div class="cmt-dropdown d-none" aria-labelledby="dropdownMenuClickable">
-                                <div class="">
-                                    <div class="add_text d-block">
-                                        <textarea name="" id="" class="comment font-montserrat"
-                                            oninput="cmtFunction(event)"
-                                            placeholder="Add a comment or @mention"></textarea>
-
-                                        <div
-                                            class="d-flex align-items-center justify-content-end font-montserrat btn-cmts">
-                                            <div class="btn btn-cancle" onclick="closeDropdown()">Cancel</div>
-                                            <div class="btn btn-comment" onclick="comment(event)">Comment</div>
                                         </div>
                                     </div>
-                                    <div class="view_text d-none">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <p class="cmnt-text"></p>
+                                </div>
 
-                                            <div class="dropdown d-inline">
-                                                <button class="btn p-0 shadow-none" type="button"
-                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                    aria-expanded="false">
-                                                    <img src="./assets/images/Menu.svg" alt="" class="">
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end cmnt-drop"
-                                                    aria-labelledby="dropdownMenuButton1">
-                                                    <li><a class="dropdown-item edit-btn mb-1" href="#"><img
-                                                                src="./assets/images/Edit-2.svg" alt="" class="">
-                                                            <span>Edit</span></a>
-                                                    </li>
-                                                    <li><a class="dropdown-item delete-btn" href="#"><img
-                                                                src="./assets/images/Delete.svg" alt="" class="">
-                                                            <span>Delete</span></a>
-                                                    </li>
+                                <div class="emoji-box d-flex align-items-center">
+                                    <button class="btn p-0 emoji-btn me-2">
+                                        <img src="./assets/images/Reactions elements.svg" alt="" class="">
+                                    </button>
 
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <button class="btn p-0 emoji-btn me-2">
+                                        <img src="./assets/images/Reactions elements-2.svg" alt="" class="">
+                                    </button>
 
+                                    <button class="btn p-0 emoji-btn me-2">
+                                        <img src="./assets/images/Reactions elements-3.svg" alt="" class="">
+                                    </button>
+                                    <button class="btn p-0 emoji-btn me-2">
+                                        <img src="./assets/images/Reactions elements-4.svg" alt="" class="">
+                                    </button>
+                                    <button class="btn p-0 emoji-btn me-2">
+                                        <img src="./assets/images/Reactions elements-5.svg" alt="" class="">
+                                    </button>
+                                    <button class="btn p-0 emoji-btn me-2">
+                                        <img src="./assets/images/Reactions elements-6.svg" alt="" class="">
+                                    </button>
+                                    <p class="total-like mb-0">88</p>
+                                    <svg class="mx-2" width="3" height="3" viewBox="0 0 3 3" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z"
+                                            fill="#565C65" />
+                                    </svg>
+                                    <p class="cmt mb-0">4 comments</p>
 
+                                </div>
+
+                                <div class="actions-btns d-flex align-items-center">
+                                    <button class="btn p-0 me-4">
+                                        <img src="./assets/images/like-4.svg" alt="" class="icon">
+                                        <span>Like</span>
+                                    </button>
+                                    <button class="btn p-0 me-4">
+                                        <img src="./assets/images/Comment-2.svg" alt="" class="icon">
+                                        <span>Comment</span>
+                                    </button>
+                                    <button class="btn p-0 me-4">
+                                        <img src="./assets/images/Share.svg" alt="" class="icon">
+                                        <span>Share</span>
+                                    </button>
+                                    <button class="btn p-0 me-4">
+                                        <img src="./assets/images/Send.svg" alt="" class="icon">
+                                        <span>Send</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                        <!-- Post Card End -->
 
-                        <!-- Modal -->
-                        <div class="modal fade post-modal" id="exampleModal" tabindex="-1"
-                            aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-body w-100 p-0">
-                                        <div class="row">
-                                            <div class="col-lg-8 px-4 py-3">
-                                                <button type="button" class="btn p-0 mb-1" data-bs-dismiss="modal"
-                                                    aria-label="Close">
-                                                    <img src="./assets/images/back btn.svg" alt="" class="">
-                                                </button>
+                        <!-- Time start -->
+                        <div
+                            class="post-time d-flex flex-column flex-md-row align-self-center justify-content-between ">
+                            <div class="d-flex align-items-center mb-3 mb-md-0">
+                                <img src="./assets/images/timer-2-fill 1.svg" alt="" class="timer-icon me-2">
+                                <p class="time font-montserrat mb-0">MON, MAY 30TH, 10:30PM</p>
+                            </div>
 
-                                                <div class="left-side-content mb-5">
+                            <div class="d-flex align-items-center aproval-btn">
+                                <button class="btn reject-btn me-4" onclick="reject(event)">
+                                    <img src="./assets/images/thumb-up-fill (1) 1.svg" alt="" class="icon me-2">
+                                    <span>REJECT</span>
+                                </button>
+                                <button class="btn approve-btn" onclick="approve(event)">
+                                    <img src="./assets/images/thumb-up-fill 2.svg" alt="" class="icon me-2">
+                                    <span>APPROVE</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- Time end -->
+
+                    </div>
+
+                    <!-- Comment Plus button -->
+                    <div class="btn-group ms-md-3 plus-btn-dropdown">
+                        <button class="btn p-0 plus-btn" type="button" onclick="dropdown(event)">
+                            <img src="./assets/images/chat-new-line (1) 1.svg" alt="" class="">
+                        </button>
+                        <div class="cmt-dropdown d-none" aria-labelledby="dropdownMenuClickable">
+                            <div class="">
+                                <div class="add_text d-block">
+                                    <textarea name="" id="" class="comment font-montserrat" oninput="cmtFunction(event)"
+                                        placeholder="Add a comment or @mention"></textarea>
+
+                                    <div class="d-flex align-items-center justify-content-end font-montserrat btn-cmts">
+                                        <div class="btn btn-cancle" onclick="closeDropdown()">Cancel</div>
+                                        <div class="btn btn-comment" onclick="comment(event)">Comment</div>
+                                    </div>
+                                </div>
+                                <div class="view_text d-none">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="cmnt-text"></p>
+
+                                        <div class="dropdown d-inline">
+                                            <button class="btn p-0 shadow-none" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <img src="./assets/images/Menu.svg" alt="" class="">
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end cmnt-drop"
+                                                aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item edit-btn mb-1" href="#"><img
+                                                            src="./assets/images/Edit-2.svg" alt="" class="">
+                                                        <span>Edit</span></a>
+                                                </li>
+                                                <li><a class="dropdown-item delete-btn" href="#"><img
+                                                            src="./assets/images/Delete.svg" alt="" class="">
+                                                        <span>Delete</span></a>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
 
 
-                                                    <div
-                                                        class="d-flex flex-column flex-sm-row align-items-center justify-content-center font-montserrat">
-                                                        <a href="#" class="btn btn-outline">Demandez une reprise</a>
-                                                        <a href="#" class="btn btn-success">Validez ce post</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 ">
-                                                <div class="right-side-content">
-                                                    <h3 class="title font-montserrat">Votre demande de reprise</h3>
+                            </div>
+                        </div>
+                    </div>
 
-                                                    <div class="mb-40px font-montserrat">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label w-100">Commentaire</label>
-                                                        <textarea name="" id="" class="addCmnt"
-                                                            placeholder="Add your comment here..."></textarea>
-                                                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade post-modal" id="exampleModal3" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body w-100 p-0">
+                                    <div class="row">
+                                        <div class="col-lg-8 px-4 py-3">
+                                            <button type="button" class="btn p-0 mb-1" data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                <img src="./assets/images/back btn.svg" alt="" class="">
+                                            </button>
 
-                                                    <!-- Attachment -->
-                                                    <div class="attachment mb-106px">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label w-100">Attachment</label>
-                                                        <div class="browser-file-box text-center">
-                                                            <input type="file" id="file-br" class="d-none">
-                                                            <label for="file-br" class="file-btn">
-                                                                <svg width="33" height="32" viewBox="0 0 33 32"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M0.0351562 4C0.0351562 1.79086 1.82602 0 4.03516 0H28.0352C30.2443 0 32.0352 1.79086 32.0352 4V28C32.0352 30.2091 30.2443 32 28.0352 32H4.03516C1.82602 32 0.0351562 30.2091 0.0351562 28V4Z"
-                                                                        fill="#FB739F" />
-                                                                    <path
-                                                                        d="M22.2574 8H9.81293C8.83109 8 8.03516 8.79594 8.03516 9.77778V22.2222C8.03516 23.2041 8.83109 24 9.81293 24H22.2574C23.2392 24 24.0352 23.2041 24.0352 22.2222V9.77778C24.0352 8.79594 23.2392 8 22.2574 8Z"
-                                                                        stroke="white" stroke-width="2"
-                                                                        stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <path d="M16.0352 12V20" stroke="white"
-                                                                        stroke-width="2" stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                    <path d="M12.0352 16H20.0352" stroke="white"
-                                                                        stroke-width="2" stroke-linecap="round"
-                                                                        stroke-linejoin="round" />
-                                                                </svg>
-                                                                <div class="btn-text">Browse Files</div>
-                                                            </label>
+                                            <div class="left-side-content mb-5">
+                                                <div class="card">
+                                                    <div class="border-card">
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between post-header">
+                                                            <div class="d-flex align-items-center">
+                                                                <img src="./assets/images/comn.svg" alt=""
+                                                                    class="your-avater">
+                                                                <div class="font-sf-pro">
+                                                                    <h6 class="title">Company name</h6>
+                                                                    <p class="total-followers">326 followers</p>
+                                                                    <div class="d-flex align-items-center post-timing">
+                                                                        <p class="mb-0 title">20 h .</p>
+                                                                        <img src="./assets/images/globe-icon.svg" alt=""
+                                                                            class="globe">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="dropdown">
+                                                                <button class="btn p-0 shadow-none" type="button"
+                                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                                    aria-expanded="false">
+                                                                    <img src="./assets/images/Menu.svg" alt="" class="">
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-end"
+                                                                    aria-labelledby="dropdownMenuButton1">
+                                                                    <li><a class="dropdown-item" href="#">Action</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Another
+                                                                            action</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Something
+                                                                            else here</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <p class="details font-poppins">Lacus amet, laoreet
+                                                                viverra id faucibus nisi
+                                                                cras est sit pellentesque amet in auctor ac sapien
+                                                                enim nulla tellus risus
+                                                                ornare lobortis commodo in proin in fermentum morbi
+                                                                at sem facilisi orci
+                                                                magna in sagittis, tortor ac maecenas eget etiam
+                                                                ullamcorper magna eu risus
+                                                                ipsum nec nibh lacus, suspendisse <span
+                                                                    class="see-more"> ...see more</span>
+                                                            </p>
+                                                            <div class="d-flex flex-wrap font-poppins mb-5">
+                                                                <a href="#" class="me-1 hasTag">#hastag</a>
+                                                                <a href="#" class="me-1 hasTag">
+                                                                    #hastag</a>
+                                                                <a href="#" class="me-1 hasTag">#hastag</a>
+                                                            </div>
+
+                                                            <a href="#" class="btn btn-translate">See
+                                                                translation</a>
+                                                        </div>
+
+                                                        <div class="post-prev">
+                                                            <img src="./assets/images/Image place holder.svg" alt=""
+                                                                class="prev-img">
+                                                            <div class="prev-details">
+                                                                <p class="title">Name of the article</p>
+                                                                <div class="d-flex align-items-center details">
+                                                                    <p class="mb-0">Source</p>
+                                                                    <svg class="mx-1" width="3" height="4"
+                                                                        viewBox="0 0 3 4" fill="none"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M3 2C3 2.82843 2.32843 3.5 1.5 3.5C0.671573 3.5 0 2.82843 0 2C0 1.17157 0.671573 0.5 1.5 0.5C2.32843 0.5 3 1.17157 3 2Z"
+                                                                            fill="#565C65" />
+                                                                    </svg>
+                                                                    <p class="mb-0">10 min read</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="emoji-box d-flex align-items-center">
+                                                            <button class="btn p-0 emoji-btn me-2">
+                                                                <img src="./assets/images/Reactions elements.svg" alt=""
+                                                                    class="">
+                                                            </button>
+
+                                                            <button class="btn p-0 emoji-btn me-2">
+                                                                <img src="./assets/images/Reactions elements-2.svg"
+                                                                    alt="" class="">
+                                                            </button>
+
+                                                            <button class="btn p-0 emoji-btn me-2">
+                                                                <img src="./assets/images/Reactions elements-3.svg"
+                                                                    alt="" class="">
+                                                            </button>
+                                                            <button class="btn p-0 emoji-btn me-2">
+                                                                <img src="./assets/images/Reactions elements-4.svg"
+                                                                    alt="" class="">
+                                                            </button>
+                                                            <button class="btn p-0 emoji-btn me-2">
+                                                                <img src="./assets/images/Reactions elements-5.svg"
+                                                                    alt="" class="">
+                                                            </button>
+                                                            <button class="btn p-0 emoji-btn me-2">
+                                                                <img src="./assets/images/Reactions elements-6.svg"
+                                                                    alt="" class="">
+                                                            </button>
+                                                            <p class="total-like mb-0">88</p>
+                                                            <svg class="mx-2" width="3" height="3" viewBox="0 0 3 3"
+                                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M3 1.5C3 2.32843 2.32843 3 1.5 3C0.671573 3 0 2.32843 0 1.5C0 0.671573 0.671573 0 1.5 0C2.32843 0 3 0.671573 3 1.5Z"
+                                                                    fill="#565C65" />
+                                                            </svg>
+                                                            <p class="cmt mb-0">4 comments</p>
+
+                                                        </div>
+
+                                                        <div class="actions-btns d-flex align-items-center">
+                                                            <button class="btn p-0 me-4">
+                                                                <img src="./assets/images/like-4.svg" alt=""
+                                                                    class="icon">
+                                                                <span>Like</span>
+                                                            </button>
+                                                            <button class="btn p-0 me-4">
+                                                                <img src="./assets/images/Comment-2.svg" alt=""
+                                                                    class="icon">
+                                                                <span>Comment</span>
+                                                            </button>
+                                                            <button class="btn p-0 me-4">
+                                                                <img src="./assets/images/Share.svg" alt=""
+                                                                    class="icon">
+                                                                <span>Share</span>
+                                                            </button>
+                                                            <button class="btn p-0 me-4">
+                                                                <img src="./assets/images/Send.svg" alt="" class="icon">
+                                                                <span>Send</span>
+                                                            </button>
                                                         </div>
                                                     </div>
-
-                                                    <button class="btn btn-cmnt">Post Comment</button>
                                                 </div>
+
+                                                <div
+                                                    class="d-flex flex-column flex-sm-row align-items-center justify-content-center font-montserrat">
+                                                    <a href="#" class="btn btn-outline">Demandez une reprise</a>
+                                                    <a href="#" class="btn btn-success">Validez ce post</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 ">
+                                            <div class="right-side-content">
+                                                <h3 class="title font-montserrat">Votre demande de reprise</h3>
+
+                                                <div class="mb-40px font-montserrat">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label w-100">Commentaire</label>
+                                                    <textarea name="" id="" class="addCmnt"
+                                                        placeholder="Add your comment here..."></textarea>
+                                                </div>
+
+                                                <!-- Attachment -->
+                                                <div class="attachment mb-106px">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label w-100">Attachment</label>
+                                                    <div class="browser-file-box text-center">
+                                                        <input type="file" id="file-br" class="d-none">
+                                                        <label for="file-br" class="file-btn">
+                                                            <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M0.0351562 4C0.0351562 1.79086 1.82602 0 4.03516 0H28.0352C30.2443 0 32.0352 1.79086 32.0352 4V28C32.0352 30.2091 30.2443 32 28.0352 32H4.03516C1.82602 32 0.0351562 30.2091 0.0351562 28V4Z"
+                                                                    fill="#FB739F" />
+                                                                <path
+                                                                    d="M22.2574 8H9.81293C8.83109 8 8.03516 8.79594 8.03516 9.77778V22.2222C8.03516 23.2041 8.83109 24 9.81293 24H22.2574C23.2392 24 24.0352 23.2041 24.0352 22.2222V9.77778C24.0352 8.79594 23.2392 8 22.2574 8Z"
+                                                                    stroke="white" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M16.0352 12V20" stroke="white" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M12.0352 16H20.0352" stroke="white"
+                                                                    stroke-width="2" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <div class="btn-text">Browse Files</div>
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <button class="btn btn-cmnt">Post Comment</button>
                                             </div>
                                         </div>
                                     </div>
@@ -686,11 +1167,33 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Post Card 2 Section End -->
-
-
-
                 </div>
+                <!-- Post Card 3 Section End -->
+
+                <div class="toast approve-toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex align-items-center">
+                        <div class="emoji">
+                            <img src="./assets/images/emoji-smile.svg" alt="" class="icon">
+                        </div>
+                        <div>
+                            <p class="title">Success</p>
+                            <p class="details">You have approved your post</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="toast reject-toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="d-flex align-items-center">
+                        <div class="emoji">
+                            <img src="./assets/images/emoji-frown.svg" alt="" class="icon">
+                        </div>
+                        <div>
+                            <p class="title">Rejected</p>
+                            <p class="details">You have Rejected your post</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <!-- Post Section End -->
 
@@ -710,6 +1213,36 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script>
+
+        function approve(event) {
+            document.querySelector('.approve-toast').classList.add('show');
+            setTimeout(() => {
+                document.querySelector('.approve-toast').classList.remove('show');
+            }, 3000);
+            event.target.closest('.aproval-btn').classList.add('d-none');
+            event.target.closest('.aproval-btn').classList.remove('d-flex');
+
+            event.target.closest('.post-status').classList.add('flex-wrap');
+            event.target.closest('.approve-status').classList.add('d-flex');
+            event.target.closest('.approve-status').classList.remove('d-none');
+
+
+        }
+
+        function reject(event) {
+            document.querySelector('.reject-toast').classList.add('show');
+            setTimeout(() => {
+                document.querySelector('.reject-toast').classList.remove('show');
+            }, 3000);
+            event.target.closest('.aproval-btn').classList.add('d-none');
+            event.target.closest('.aproval-btn').classList.remove('d-flex');
+            event.target.closest('.post-status').classList.add('flex-wrap');
+            event.target.closest('.reject-status').classList.add('d-flex');
+            event.target.closest('.reject-status').classList.remove('d-none');
+        }
+
+
+
         function comment(event) {
             var value = event.target.parentElement.parentElement.getElementsByClassName('comment')[0].value;
 
