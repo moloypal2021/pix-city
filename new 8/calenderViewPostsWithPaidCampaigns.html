@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assets/css/sidebar.css">
 
     <!-- Client Area Mission View CSS -->
-    <link rel="stylesheet" href="./assets/css/calenderViewPaidCampaign.css">
+    <link rel="stylesheet" href="./assets/css/calenderViewPostsWithPaidCampaigns.css">
 </head>
 
 <body>
@@ -136,6 +136,228 @@
 
 
 
+                    <!-- Calender Start -->
+                    <div class="calender-area">
+
+                        <!-- Calender Header -->
+                        <div class="d-flex flex-wrap align-items-center position-relative calender-header">
+                            <div class="d-flex align-items-center order-2 order-lg-1">
+                                <!-- Month Dropdown -->
+                                <div class="dropdown month-dropdown font-montserrat">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="./assets/images/calendar-month-schedule-time-date-svgrepo-com 1.svg"
+                                            alt="" class="me-1">
+                                        Month
+                                        <svg class="ms-1" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1491_61839)">
+                                                <path
+                                                    d="M12.0007 13.1727L16.9507 8.22266L18.3647 9.63666L12.0007 16.0007L5.63672 9.63666L7.05072 8.22266L12.0007 13.1727Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1491_61839">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(0)">January</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(1)">February</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(2)">March</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(3)">April</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(4)">May</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(5)">June</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(6)">July</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(7)">August</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(8)">September</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(9)">October</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(10)">November</button>
+                                        </li>
+                                        <li><button class="btn btn-block bg-transparent text-black-50 py-1"
+                                                onclick="selectMonth(11)">December</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <!-- Calender Next prev button -->
+                                <div class="d-flex align-items-center calender-page">
+                                    <button class="btn p-0" id="prev">
+                                        <img src="./assets/images/arrow-left.svg" alt="" class="arrow-left">
+                                    </button>
+                                    <img src="./assets/images/calendar-event-fill (4) 1.svg" alt="" class="callen-icon">
+                                    <button class="btn p-0" id="next">
+                                        <img src="./assets/images/arrow-right.svg" alt="" class="arrow-right">
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Month Year Header -->
+                            <div class="mnt-year order-1 order-md-2">
+                                <span class="mnth" id="mnth">May,</span> <span class="yr" id="yr">2022</span>
+                            </div>
+                        </div>
+
+
+                        <!-- Calender Weeks -->
+                        <div class="calender-weeks d-flex align-items-center">
+                            <div class="day">SUN</div>
+                            <div class="day">MON</div>
+                            <div class="day">Tue</div>
+                            <div class="day">Wed</div>
+                            <div class="day">Thu</div>
+                            <div class="day">Fri</div>
+                            <div class="day">SAT</div>
+                        </div>
+
+                        <!-- Calender Dates -->
+                        <div class="calender-dates" id="calendar-body">
+                            <div class="date-box">
+                                <p class="date">1</p>
+                                <div class="cover-photo">
+                                    <div class="d-flex align-items-center event-status">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1491_61875)">
+                                                <path
+                                                    d="M10.6345 12.6131L11.9288 13.9074L19.6893 6.14689L20.9855 7.44305L11.9288 16.4997L6.09518 10.6661L7.39135 9.36989L9.33927 11.3178L10.6345 12.6121V12.6131ZM10.6363 10.0207L15.1757 5.48047L16.4682 6.77297L11.9288 11.3132L10.6363 10.0207ZM8.04493 15.2045L6.74968 16.4997L0.916016 10.6661L2.21218 9.36989L3.50743 10.6651L3.50652 10.6661L8.04493 15.2045Z"
+                                                    fill="#02F1B5" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1491_61875">
+                                                    <rect width="22" height="22" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="time">11:ooPM</p>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="./assets/images/img-1.png" alt="" class="">
+                                    </div>
+                                </div>
+
+                                <div class="e-status complete">
+                                    <div class="top-bar"></div>
+
+                                    <div class="d-flex align-items-center timer">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1491_61881)">
+                                                <path
+                                                    d="M10.6345 12.6131L11.9288 13.9074L19.6893 6.14689L20.9855 7.44305L11.9288 16.4997L6.09518 10.6661L7.39135 9.36989L9.33927 11.3178L10.6345 12.6121V12.6131ZM10.6363 10.0207L15.1757 5.48047L16.4682 6.77297L11.9288 11.3132L10.6363 10.0207ZM8.04493 15.2045L6.74968 16.4997L0.916016 10.6661L2.21218 9.36989L3.50743 10.6651L3.50652 10.6661L8.04493 15.2045Z"
+                                                    fill="#02F1B5" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1491_61881">
+                                                    <rect width="22" height="22" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="time">10:00
+                                            AM</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <a href="#" class="btn p-0 more-btn">+2 more</a>
+                                </div>
+                            </div>
+                            <div class="date-box">
+                                <p class="date">2</p>
+                            </div>
+                            <div class="date-box">
+                                <p class="date">3</p>
+                                <div class="cover-photo">
+                                    <div class="d-flex align-items-center event-status">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1491_61875)">
+                                                <path
+                                                    d="M10.6345 12.6131L11.9288 13.9074L19.6893 6.14689L20.9855 7.44305L11.9288 16.4997L6.09518 10.6661L7.39135 9.36989L9.33927 11.3178L10.6345 12.6121V12.6131ZM10.6363 10.0207L15.1757 5.48047L16.4682 6.77297L11.9288 11.3132L10.6363 10.0207ZM8.04493 15.2045L6.74968 16.4997L0.916016 10.6661L2.21218 9.36989L3.50743 10.6651L3.50652 10.6661L8.04493 15.2045Z"
+                                                    fill="#02F1B5" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1491_61875">
+                                                    <rect width="22" height="22" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="time">11:ooPM</p>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img src="./assets/images/img-1.png" alt="" class="">
+                                    </div>
+                                </div>
+
+                                <div class="e-status pending">
+                                    <div class="top-bar"></div>
+
+                                    <div class="d-flex align-items-center timer">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1491_61902)">
+                                                <path
+                                                    d="M11.0007 20.1663C5.9379 20.1663 1.83398 16.0624 1.83398 10.9997C1.83398 5.93692 5.9379 1.83301 11.0007 1.83301C16.0634 1.83301 20.1673 5.93692 20.1673 10.9997C20.1673 16.0624 16.0634 20.1663 11.0007 20.1663ZM11.9173 10.9997V6.41634H10.084V12.833H15.584V10.9997H11.9173Z"
+                                                    fill="#00656C" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1491_61902">
+                                                    <rect width="22" height="22" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                        <p class="time">10:00
+                                            AM</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <a href="#" class="btn p-0 more-btn">+2 more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Calender End -->
+
+
+
+
+
+
+
+
+
+
+
 
                     <!-- Banner Start -->
                     <div class="overflow-hidden">
@@ -164,6 +386,9 @@
                         </div>
                     </div>
                     <!-- Banner End -->
+
+
+
                 </div>
             </main>
             <!-- Main Content End -->
@@ -180,6 +405,245 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script>
+
+        const events = [
+            {
+                upTime: "11:00PM",
+                completeTime: true,
+                img: "./assets/images/img-1.png",
+                pendingStatus: true,
+                penTime: "10:00 AM",
+                eventDate: "09/1/2022",
+                morePost: 0
+            },
+            {
+                upTime: "11:00PM",
+                completeTime: true,
+                img: "./assets/images/img-2.png",
+                pendingStatus: false,
+                penTime: "10:00 AM",
+                eventDate: "09/3/2022",
+                morePost: 2
+            },
+            {
+                upTime: "12:00PM",
+                completeTime: false,
+                img: "./assets/images/img-3.png",
+                pendingStatus: false,
+                penTime: null,
+                eventDate: "09/5/2022",
+                morePost: 0
+            },
+            {
+                upTime: "11:00PM",
+                completeTime: false,
+                img: "./assets/images/img-4.png",
+                pendingStatus: false,
+                penTime: "10:00 AM",
+                eventDate: "09/11/2022",
+                morePost: 2
+            },
+            {
+                upTime: "11:00PM",
+                completeTime: false,
+                img: "./assets/images/img-5.png",
+                pendingStatus: false,
+                penTime: "10:00 AM",
+                eventDate: "09/15/2022",
+                morePost: 2
+            },
+            {
+                upTime: "11:00PM",
+                completeTime: false,
+                img: "./assets/images/img-5.png",
+                pendingStatus: false,
+                penTime: "10:00 AM",
+                eventDate: "09/22/2022",
+                morePost: 2
+            },
+        ]
+
+
+        const date = new Date();
+
+
+        const generateCalender = () => {
+            date.setDate(1);
+
+            const totalDayInMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+
+            // Month List
+            let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+            // Set Header Month and Year
+            document.getElementById("mnth").innerHTML = months[date.getMonth()] + ", ";
+            document.getElementById("yr").innerHTML = date.getFullYear();
+
+            const firstDayIndex = date.getDay();
+            const prevDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+
+            const nextDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay();
+            const lastDayIndex = 7 - nextDay - 1;
+
+            const calenderBody = document.getElementById("calendar-body");
+
+            let days = ""; // for days html 
+            // Prev month Days
+            for (let k = firstDayIndex; k > 0; k--) {
+                days += `
+                        <div class="date-box prev-day">
+                            <p class="date">${prevDay - k + 1}</p>
+                        </div>`;
+            }
+            // Current month Days
+            for (let i = 1; i <= totalDayInMonth; i++) {
+                let dataAdded = false;
+                for (let itemIndex = 0; itemIndex < events.length; itemIndex++) {
+                    let eventDate = new Date(events[itemIndex].eventDate);
+                    let penTime = '';
+                    let completeTime = '';
+                    let morePost = '';
+                    // Pending Time
+                    if (events[itemIndex].penTime != null) {
+                        if (events[itemIndex].pendingStatus) {
+                            penTime = `<div class="e-status complete">
+                                    <div class="top-bar"></div>
+                                    <div class="d-flex align-items-center timer">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1491_61881)">
+                                                <path
+                                                    d="M10.6345 12.6131L11.9288 13.9074L19.6893 6.14689L20.9855 7.44305L11.9288 16.4997L6.09518 10.6661L7.39135 9.36989L9.33927 11.3178L10.6345 12.6121V12.6131ZM10.6363 10.0207L15.1757 5.48047L16.4682 6.77297L11.9288 11.3132L10.6363 10.0207ZM8.04493 15.2045L6.74968 16.4997L0.916016 10.6661L2.21218 9.36989L3.50743 10.6651L3.50652 10.6661L8.04493 15.2045Z"
+                                                    fill="#02F1B5" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1491_61881">
+                                                    <rect width="22" height="22" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="time">${events[itemIndex].penTime}</p>
+                                    </div>
+                                </div>`;
+                        } else {
+                            penTime = `<div class="e-status pending">
+                                    <div class="top-bar"></div>
+                                    <div class="d-flex align-items-center timer">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0007 19.1663C4.9379 19.1663 0.833984 15.0624 0.833984 9.99967C0.833984 4.93692 4.9379 0.833008 10.0007 0.833008C15.0634 0.833008 19.1673 4.93692 19.1673 9.99967C19.1673 15.0624 15.0634 19.1663 10.0007 19.1663ZM10.9173 9.99967V5.41634H9.08398V11.833H14.584V9.99967H10.9173Z" fill="#00656C"/>
+                                        </svg>
+                                        <p class="time">${events[itemIndex].penTime}</p>
+                                    </div>
+                                </div>`;
+                        }
+
+                    }
+
+                    // Complete Time
+                    if (events[itemIndex].completeTime) {
+                        completeTime = `<div class="d-flex align-items-center event-status">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1491_61875)">
+                                                <path
+                                                    d="M10.6345 12.6131L11.9288 13.9074L19.6893 6.14689L20.9855 7.44305L11.9288 16.4997L6.09518 10.6661L7.39135 9.36989L9.33927 11.3178L10.6345 12.6121V12.6131ZM10.6363 10.0207L15.1757 5.48047L16.4682 6.77297L11.9288 11.3132L10.6363 10.0207ZM8.04493 15.2045L6.74968 16.4997L0.916016 10.6661L2.21218 9.36989L3.50743 10.6651L3.50652 10.6661L8.04493 15.2045Z"
+                                                    fill="#02F1B5" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1491_61875">
+                                                    <rect width="22" height="22" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="time">${events[itemIndex].upTime}</p>
+                                    </div>`;
+                    } else {
+                        completeTime = `<div class="d-flex align-items-center event-status">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1491_61911)">
+                                        <path d="M11.0007 20.1673C5.9379 20.1673 1.83398 16.0634 1.83398 11.0007C1.83398 5.9379 5.9379 1.83398 11.0007 1.83398C16.0634 1.83398 20.1673 5.9379 20.1673 11.0007C20.1673 16.0634 16.0634 20.1673 11.0007 20.1673ZM11.9173 11.0007V6.41732H10.084V12.834H15.584V11.0007H11.9173Z" fill="#FF7A00"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1491_61911">
+                                        <rect width="22" height="22" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        <p class="time">${events[itemIndex].upTime}</p>
+                                    </div>`;
+                    }
+
+                    // More Post
+                    if (events[itemIndex].morePost != 0) {
+                        morePost = `<div class="text-center">
+                            <a href="#" class="btn p-0 more-btn">+2 more</a>
+                        </div>`;
+                    }
+
+                    if (i === eventDate.getDate() && date.getMonth() === eventDate.getMonth()) {
+                        days += `<div class="date-box">
+                                                <p class="date">${i}</p>
+                                                <div class="cover-photo">       
+                                            ${completeTime}
+                                        <div class="photo">
+                                            <img src="${events[itemIndex].img}" alt="" class="">
+                                        </div>
+                                    </div>
+                                    ${penTime}  
+                                    ${morePost}  
+                                </div>`;
+                        dataAdded = true
+                    }
+                }
+
+                if (dataAdded === false) {
+                    days += `
+                            <div class="date-box">
+                                <p class="date">${i}</p>
+                            </div>`;
+                }
+            }
+
+            // Next month Day
+            for (let j = 1; j <= lastDayIndex; j++) {
+                days += `
+            <div class="date-box prev-day">
+    <p class="date">${j}</p>
+</div>`;
+                calenderBody.innerHTML = days;
+            }
+
+        }
+
+        // Prev Month
+        let prev = document.getElementById('prev');
+        prev.addEventListener("click", () => {
+            date.setMonth(date.getMonth() - 1);
+            generateCalender();
+
+        });
+
+        // Next Month
+        let next = document.getElementById('next');
+        next.addEventListener("click", () => {
+            date.setMonth(date.getMonth() + 1);
+            generateCalender();
+
+        });
+
+
+        // Select Month
+        function selectMonth(month) {
+            date.setMonth(month);
+            generateCalender();
+        }
+        generateCalender();
+
+    </script>
+
+
+
     <script>
 
         function toggleSidebar() {

@@ -296,6 +296,7 @@
   }
 }
 .content-section .main-content {
+  padding-top: 30px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -391,4 +392,208 @@
     width: 110%;
     transform: translateX(-40px) translateY(-8%);
   }
+}
+.content-section .main-content .calender-area {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  margin-bottom: 78px;
+}
+.content-section .main-content .calender-area .calender-header {
+  padding: 22px;
+}
+.content-section .main-content .calender-area .calender-header .month-dropdown {
+  position: relative;
+  z-index: 5;
+}
+.content-section .main-content .calender-area .calender-header .month-dropdown .btn {
+  background: #31B997;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+.content-section .main-content .calender-area .calender-header .month-dropdown .btn::after {
+  display: none;
+}
+.content-section .main-content .calender-area .calender-header .calender-page {
+  margin-left: 32px;
+  position: relative;
+  z-index: 1;
+}
+.content-section .main-content .calender-area .calender-header .calender-page .arrow-left,
+.content-section .main-content .calender-area .calender-header .calender-page .arrow-right {
+  width: 24px;
+  flex-shrink: 0;
+}
+.content-section .main-content .calender-area .calender-header .calender-page .callen-icon {
+  width: 24px;
+  flex-shrink: 0;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+@media (min-width: 1200px) {
+  .content-section .main-content .calender-area .calender-header .calender-page .callen-icon {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.content-section .main-content .calender-area .calender-header .mnt-year {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #585757;
+  margin-right: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.content-section .main-content .calender-area .calender-header .mnt-year .mnth {
+  font-weight: 800;
+}
+.content-section .main-content .calender-area .calender-header .mnt-year .yr {
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .content-section .main-content .calender-area .calender-header .mnt-year {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 1200px) {
+  .content-section .main-content .calender-area .calender-header .mnt-year {
+    margin-left: 0px;
+  }
+}
+.content-section .main-content .calender-area .calender-weeks {
+  background: #D5E4F4;
+  border-radius: 0px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.content-section .main-content .calender-area .calender-weeks .day {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #455974;
+  padding-left: 6px;
+  text-transform: uppercase;
+  width: 14.2857142857%;
+}
+.content-section .main-content .calender-area .calender-dates {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+.content-section .main-content .calender-area .calender-dates .date-box {
+  padding: 14px 6px 8px 6px;
+  box-shadow: 1px 1px 0 0 #E8E8E8;
+  height: 270px;
+}
+.content-section .main-content .calender-area .calender-dates .date-box.prev-day {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #969696;
+  margin-bottom: 12px;
+  margin-left: 6px;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .cover-photo {
+  position: relative;
+  margin-bottom: 10px;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .cover-photo .event-status {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  z-index: 1;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .cover-photo .event-status .time {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  margin-left: 8px;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .cover-photo .photo {
+  aspect-ratio: 16/14;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .cover-photo .photo::after {
+  content: "";
+  background: linear-gradient(180.3deg, rgba(0, 0, 0, 0.6) 15.89%, rgba(73, 73, 73, 0) 51.49%, rgba(0, 0, 0, 0.6) 82.22%);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .cover-photo .photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status {
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status .top-bar {
+  border-radius: 4px 0px 0px 4px;
+  width: 100%;
+  height: 4px;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status .timer {
+  padding: 8px;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status .timer .time {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 0px;
+  margin-left: 6px;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status.complete {
+  background: #FFDEF6;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status.complete .top-bar {
+  background: #A93898;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status.complete .timer {
+  color: #A93898;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status.pending {
+  background: #E6F5F1;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status.pending .top-bar {
+  background: #00656C;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .e-status.pending .timer {
+  color: #00656C;
+}
+.content-section .main-content .calender-area .calender-dates .date-box .more-btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EE628F;
 }/*# sourceMappingURL=calenderViewPostsWithPaidCampaigns.css.map */
