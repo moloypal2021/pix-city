@@ -272,7 +272,7 @@
 
                         <!-- Roademap -->
                         <div class="d-flex align-items-start roadmap">
-                            <div class="step">
+                            <div class="step cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="check-icon active">
                                         <img src="./assets/images/checkbox-circle-fill 1.svg" alt="" class="check">
@@ -284,7 +284,7 @@
                                 </div>
                                 <p class="date font-gilroy-bold active">JUL 9, 2021</p>
                             </div>
-                            <div class="step">
+                            <div class="step cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="check-icon active">
                                         <img src="./assets/images/checkbox-circle-fill 1.svg" alt="" class="check">
@@ -340,6 +340,34 @@
                                     </div>
                                 </div>
                                 <p class="date font-gilroy-bold">DEC 9, 2021</p>
+                            </div>
+                        </div>
+
+                        <!-- Modal Popup -->
+                        <div class="modal fade video-popUp" id="exampleModal" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-skip">SKIP
+                                            <svg width="24" height="12" viewBox="0 0 24 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.5 5.99976L2.625 10.5464V1.45312L10.5 5.99976Z"
+                                                    fill="#EE628F" />
+                                                <path d="M22.5 5.99976L14.625 10.5464V1.45312L22.5 5.99976Z"
+                                                    fill="#EE628F" />
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                    <div class="video-frame">
+                                        <iframe class="video" src="https://www.youtube.com/embed/iary5CVv-YI"
+                                            title="একবার চলো ফিরে যাই || aro ekbar cholo phire jai || Rupom Islam"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
