@@ -1,0 +1,44 @@
+.success-btn {
+    background: #31B997;
+    border-radius: 6px;
+    padding: 16px 24px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+
+.mb-40px {
+    margin-bottom: 40px;
+}
+
+
+.form-check {
+    margin-right: 56px;
+
+    .form-check-label {
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+        margin-left: 4px;
+    }
+
+    .form-check-input {
+        width: 16px;
+        height: 16px;
+        border: 1px solid #9DB7D0;
+
+        &:checked {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 20C12 15.5817 15.5817 12 20 12V12C24.4183 12 28 15.5817 28 20V20C28 24.4183 24.4183 28 20 28V28C15.5817 28 12 24.4183 12 20V20Z' fill='%23ED5485'/%3E%3Ccircle cx='20' cy='20' r='20' fill='%23EE628F' fill-opacity='0.24'/%3E%3Ccircle cx='20' cy='20' r='4' fill='white'/%3E%3C/svg%3E%0A");
+            background-size: 36px 36px;
+            background-color: rgba(238, 98, 143, 0.24);
+            border-color: rgba(238, 98, 143, 0.24);
+            box-shadow: 0px 0px 0px 5px rgba(238, 98, 143, 0.24);
+        }
+    }
+}
+
+.form-check-input:checked {
+    background-color: #605BFF;
+}
