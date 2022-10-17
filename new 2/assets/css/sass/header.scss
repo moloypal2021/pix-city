@@ -34,6 +34,19 @@
         fill: currentColor;
     }
 
+    .navbar-brand {
+
+        svg,
+        img {
+            width: 93px !important;
+
+            @include br-up(lg) {
+                width: 128px !important;
+            }
+        }
+
+    }
+
     .navbar-toggler {
         position: absolute;
         top: 10px;
