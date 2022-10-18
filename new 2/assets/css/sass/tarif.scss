@@ -3,7 +3,9 @@
 
 .container {
     @include br-up(xl) {
-        max-width: 1180px;
+        max-width: 1292px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
     @include br-up(xxl) {
@@ -545,6 +547,11 @@
             line-height: 59px;
             text-align: center;
             color: #000000;
+
+            @include br-down(xxl) {
+                font-size: 44px;
+                line-height: 59px;
+            }
         }
 
         .p-details {

@@ -248,7 +248,9 @@
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1180px;
+    max-width: 1292px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 @media (min-width: 1400px) {
