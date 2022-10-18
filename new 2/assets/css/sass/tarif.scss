@@ -2,6 +2,10 @@
 @import url('http://fonts.cdnfonts.com/css/metamorphous');
 
 .container {
+    @include br-up(xl) {
+        max-width: 1180px;
+    }
+
     @include br-up(xxl) {
         max-width: 1292px;
     }
@@ -573,6 +577,14 @@
             line-height: 22px;
             text-align: center;
             color: #000000;
+
+            @include br-down(xxl) {
+                font-size: 11px;
+            }
+
+            @include br-down(lg) {
+                font-size: 12px;
+            }
         }
 
         .btn-outline-success {
@@ -587,6 +599,15 @@
             color: #303B3F;
             padding: 4px 8px;
             border-radius: 162px;
+
+            @include br-down(xxl) {
+                font-size: 11px;
+                padding: 4px 6px;
+            }
+
+            @include br-down(lg) {
+                font-size: 12px;
+            }
         }
 
         .btn-check:active+.btn-outline-success,
@@ -604,6 +625,14 @@
             color: #FFFFFF;
             background: #31B997;
             border-radius: 162px;
+
+            @include br-down(xxl) {
+                font-size: 11px;
+            }
+
+            @include br-down(lg) {
+                font-size: 12px;
+            }
         }
 
         .btn-check:active+.btn-outline-success,
@@ -621,6 +650,14 @@
             color: #FFFFFF;
             background: #31B997;
             border-radius: 162px;
+
+            @include br-down(xxl) {
+                font-size: 11px;
+            }
+
+            @include br-down(lg) {
+                font-size: 12px;
+            }
         }
 
         .border-bar {

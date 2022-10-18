@@ -1,6 +1,10 @@
 @import "style";
 
 .container {
+    @include br-up(xl) {
+        max-width: 1180px;
+    }
+
     @include br-up(xxl) {
         max-width: 1292px;
     }

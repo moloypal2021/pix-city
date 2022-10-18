@@ -247,6 +247,11 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1292px;
@@ -792,6 +797,16 @@
   text-align: center;
   color: #000000;
 }
+@media (max-width: 1399.98px) {
+  .price-sec .card-price .text-sm {
+    font-size: 11px;
+  }
+}
+@media (max-width: 991.98px) {
+  .price-sec .card-price .text-sm {
+    font-size: 12px;
+  }
+}
 .price-sec .card-price .btn-outline-success {
   border: none;
   font-family: "Montserrat";
@@ -804,6 +819,17 @@
   color: #303B3F;
   padding: 4px 8px;
   border-radius: 162px;
+}
+@media (max-width: 1399.98px) {
+  .price-sec .card-price .btn-outline-success {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+}
+@media (max-width: 991.98px) {
+  .price-sec .card-price .btn-outline-success {
+    font-size: 12px;
+  }
 }
 .price-sec .card-price .btn-check:active + .btn-outline-success,
 .price-sec .card-price .btn-check:checked + .btn-outline-success,
@@ -821,6 +847,24 @@
   background: #31B997;
   border-radius: 162px;
 }
+@media (max-width: 1399.98px) {
+  .price-sec .card-price .btn-check:active + .btn-outline-success,
+.price-sec .card-price .btn-check:checked + .btn-outline-success,
+.price-sec .card-price .btn-outline-success.active,
+.price-sec .card-price .btn-outline-success.dropdown-toggle.show,
+.price-sec .card-price .btn-outline-success:active {
+    font-size: 11px;
+  }
+}
+@media (max-width: 991.98px) {
+  .price-sec .card-price .btn-check:active + .btn-outline-success,
+.price-sec .card-price .btn-check:checked + .btn-outline-success,
+.price-sec .card-price .btn-outline-success.active,
+.price-sec .card-price .btn-outline-success.dropdown-toggle.show,
+.price-sec .card-price .btn-outline-success:active {
+    font-size: 12px;
+  }
+}
 .price-sec .card-price .btn-check:active + .btn-outline-success,
 .price-sec .card-price .btn-check:checked + .btn-outline-success,
 .price-sec .card-price .btn-outline-success.active,
@@ -836,6 +880,24 @@
   color: #FFFFFF;
   background: #31B997;
   border-radius: 162px;
+}
+@media (max-width: 1399.98px) {
+  .price-sec .card-price .btn-check:active + .btn-outline-success,
+.price-sec .card-price .btn-check:checked + .btn-outline-success,
+.price-sec .card-price .btn-outline-success.active,
+.price-sec .card-price .btn-outline-success.dropdown-toggle.show,
+.price-sec .card-price .btn-outline-success:hover {
+    font-size: 11px;
+  }
+}
+@media (max-width: 991.98px) {
+  .price-sec .card-price .btn-check:active + .btn-outline-success,
+.price-sec .card-price .btn-check:checked + .btn-outline-success,
+.price-sec .card-price .btn-outline-success.active,
+.price-sec .card-price .btn-outline-success.dropdown-toggle.show,
+.price-sec .card-price .btn-outline-success:hover {
+    font-size: 12px;
+  }
 }
 .price-sec .card-price .border-bar {
   padding-bottom: 18px;

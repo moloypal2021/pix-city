@@ -246,6 +246,11 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1180px;
+  }
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1292px;
