@@ -512,6 +512,10 @@
         transform: translateX(75%);
     }
 
+    .gx-24 {
+        --bs-gutter-x: 24px;
+    }
+
     .card-price {
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(17.5px);

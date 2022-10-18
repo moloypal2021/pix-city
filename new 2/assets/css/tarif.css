@@ -732,6 +732,9 @@
   margin-right: auto;
   transform: translateX(75%);
 }
+.price-sec .gx-24 {
+  --bs-gutter-x: 24px;
+}
 .price-sec .card-price {
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(17.5px);
