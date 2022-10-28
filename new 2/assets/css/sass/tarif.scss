@@ -722,6 +722,29 @@
             line-height: 28px;
             text-align: center;
             color: #31B997;
+            display: none;
+        }
+
+        .month-ammount {
+            display: block;
+        }
+
+        .anual-ammount {
+            display: none;
+        }
+
+        &.active-anual {
+            .commision {
+                display: flex;
+            }
+
+            .month-ammount {
+                display: none;
+            }
+
+            .anual-ammount {
+                display: block;
+            }
         }
 
         .tag {

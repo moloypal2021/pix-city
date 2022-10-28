@@ -953,6 +953,22 @@
   line-height: 28px;
   text-align: center;
   color: #31B997;
+  display: none;
+}
+.price-sec .card-price .month-ammount {
+  display: block;
+}
+.price-sec .card-price .anual-ammount {
+  display: none;
+}
+.price-sec .card-price.active-anual .commision {
+  display: flex;
+}
+.price-sec .card-price.active-anual .month-ammount {
+  display: none;
+}
+.price-sec .card-price.active-anual .anual-ammount {
+  display: block;
 }
 .price-sec .card-price .tag {
   position: relative;
