@@ -1,0 +1,830 @@
+@import url("../font/style.css");
+@import url("http://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/metamorphous");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.font-gilroy-bold {
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.font-gilroy-heavy {
+  font-family: "Gilroy-Heavy", sans-serif;
+}
+
+.font-gilroy-light {
+  font-family: "Gilroy-Light", sans-serif;
+}
+
+.font-gilroy-medium {
+  font-family: "Gilroy-Medium", sans-serif;
+}
+
+.font-gilroy {
+  font-family: "Gilroy-Regular", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-dmsans {
+  font-family: "DM Sans", sans-serif;
+}
+
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+.font-sf-pro {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.fw-light {
+  font-weight: 300 !important;
+}
+
+.fw-normal {
+  font-weight: 400 !important;
+}
+
+.fw-medium {
+  font-weight: 500 !important;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-extrabold {
+  font-weight: 800 !important;
+}
+
+.fw-black {
+  font-weight: 900 !important;
+}
+
+.success-btn {
+  background: #31B997;
+  border-radius: 6px;
+  padding: 16px 24px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.mb-40px {
+  margin-bottom: 40px;
+}
+
+.form-check {
+  margin-right: 56px;
+}
+.form-check .form-check-label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-left: 4px;
+}
+.form-check .form-check-input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #9DB7D0;
+}
+.form-check .form-check-input:checked {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 20C12 15.5817 15.5817 12 20 12V12C24.4183 12 28 15.5817 28 20V20C28 24.4183 24.4183 28 20 28V28C15.5817 28 12 24.4183 12 20V20Z' fill='%23ED5485'/%3E%3Ccircle cx='20' cy='20' r='20' fill='%23EE628F' fill-opacity='0.24'/%3E%3Ccircle cx='20' cy='20' r='4' fill='white'/%3E%3C/svg%3E%0A");
+  background-size: 36px 36px;
+  background-color: rgba(238, 98, 143, 0.24);
+  border-color: rgba(238, 98, 143, 0.24);
+  box-shadow: 0px 0px 0px 5px rgba(238, 98, 143, 0.24);
+}
+
+.form-check-input:checked {
+  background-color: #605BFF;
+}
+
+.text-blue-10 {
+  color: #1E3E62;
+}
+
+.bg-blue-10 {
+  background-color: #1E3E62;
+}
+
+.text-dark-10 {
+  color: #4F4F55;
+}
+
+.bg-dark-10 {
+  background-color: #4F4F55;
+}
+
+.text-pink-10 {
+  color: #ED5485 !important;
+}
+
+.bg-pink-10 {
+  background-color: #ED5485;
+}
+
+.bg-pink-20 {
+  background-color: #FF92AE;
+}
+
+.bg-pink-30 {
+  background: #EE628F;
+}
+
+.text-gray-10 {
+  color: #425466;
+}
+
+.bg-primary-10 {
+  background-color: #4C6FFF;
+}
+
+.text-primary-10 {
+  color: #4C6FFF;
+}
+
+.text-primary-20 {
+  color: #A7B6CD;
+}
+
+.text-green-10 {
+  color: #31B997;
+}
+
+.bg-green-10 {
+  background-color: #31B997;
+}
+
+.bg-red-10 {
+  background-color: #FC3263;
+}
+
+.bg-teal-10 {
+  background-color: #00D9D9;
+}
+
+.bg-purple-10 {
+  background-color: #8452ED;
+}
+
+.bg-blue-20 {
+  background-color: #009EF7;
+}
+
+.text-gray-20 {
+  color: #A8AEB6 !important;
+}
+
+.bg-dark-20 {
+  background: #183555;
+}
+
+.breadcrumb {
+  font-size: 16px;
+  line-height: 19px;
+  color: #637381;
+  font-family: "Gilroy-Regular", sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.breadcrumb .breadcrumb-item {
+  margin-right: 8px;
+  padding-left: 0px;
+}
+.breadcrumb .breadcrumb-item::before {
+  padding-right: 8px;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #637381;
+  text-decoration: none;
+}
+
+.container {
+  padding-right: 16px;
+  padding-left: 6px;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1330px;
+  }
+}
+
+.container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media (min-width: 576px) {
+  .container-fluid {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+
+.content {
+  padding-top: 30px;
+  padding-bottom: 130px;
+  background: #ffffff;
+}
+.content .breadcrumb {
+  margin-bottom: 0px;
+}
+.content .breadcrumb .breadcrumb-item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #637381;
+}
+.content .monthWeeklyTab {
+  margin-top: 16px;
+}
+@media (min-width: 992px) {
+  .content .monthWeeklyTab {
+    margin-top: -8px;
+  }
+}
+.content .monthWeeklyTab .btn-box {
+  background: #F5F9FF;
+  border-radius: 5px;
+  padding: 6px 7px;
+}
+.content .monthWeeklyTab .btn-box .btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  padding: 7px 18px;
+}
+.content .monthWeeklyTab .btn-box .btn.active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+.content .profile-details {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .content .profile-details {
+    margin-top: -6px;
+  }
+}
+.content .profile-details .profile-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 999px;
+  margin-right: 30px;
+}
+.content .profile-details .pr-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #343A40;
+  margin-right: 26px;
+  margin-bottom: 0px;
+}
+@media (max-width: 575.98px) {
+  .content .profile-details .pr-name {
+    font-size: 18px;
+  }
+}
+.content .profile-details .pr-stats span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #5F5F5F;
+  margin-left: 8px;
+}
+.content .profile-details .pr-create {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #868E96;
+  margin-bottom: 0px;
+  margin-top: 6px;
+}
+.content .socialFilterTab {
+  margin-bottom: 50px;
+}
+.content .socialFilterTab .social-tab .tab-btn {
+  background: rgba(79, 79, 85, 0.2);
+  border-radius: 8px;
+  padding: 9px 16px 0px 16px;
+}
+.content .socialFilterTab .social-tab .tab-btn .icon {
+  width: 60px;
+}
+.content .socialFilterTab .social-tab .tab-btn.active {
+  background: rgba(0, 164, 255, 0.2);
+}
+.content .socialFilterTab .dateFilter .weekFilter {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 4px;
+}
+@media (min-width: 992px) {
+  .content .socialFilterTab .dateFilter .weekFilter {
+    margin-right: 75px;
+  }
+}
+@media (min-width: 768px) {
+  .content .socialFilterTab .dateFilter .weekFilter {
+    margin-right: 45px;
+  }
+}
+@media (min-width: 576px) {
+  .content .socialFilterTab .dateFilter .weekFilter {
+    margin-right: 25px;
+  }
+}
+.content .socialFilterTab .dateFilter .weekFilter .filter-btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  text-align: right;
+  letter-spacing: -0.018em;
+  color: #1E2029;
+  opacity: 0.6;
+  padding: 4px 27px;
+  border-radius: 16px;
+}
+.content .socialFilterTab .dateFilter .weekFilter .filter-btn.active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  text-align: right;
+  letter-spacing: -0.018em;
+  color: #FFFFFF;
+  opacity: 1;
+  background: linear-gradient(180deg, #31B997 0%, #31B997 100%);
+}
+.content .socialFilterTab .dateFilter .dateRange {
+  background: #FFFFFF;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 2px 12px rgba(37, 51, 66, 0.1);
+  border-radius: 5px;
+  padding: 11px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #344054;
+  display: flex;
+  align-items: center;
+}
+.content .socialFilterTab .dateFilter .dateRange span {
+  margin-right: auto;
+  width: 100%;
+}
+.content .stats-cards {
+  padding-bottom: 60px;
+}
+.content .stats-cards .stats-card {
+  background: #FFFFFF;
+  box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
+  border-radius: 6.87889px;
+  height: 100%;
+}
+.content .stats-cards .stats-card .card-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18.2963px;
+  line-height: 29px;
+  color: #05004E;
+  padding: 18px;
+  background-color: transparent;
+  border-bottom: 0.859862px solid #ECF0F2;
+}
+.content .stats-cards .stats-card .card-body {
+  padding: 14px 17px 16px 17px;
+}
+.content .stats-cards .stats-card .card-body .chart-img {
+  width: 100%;
+  max-width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 66px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-color::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 669px;
+  background-color: white;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-green {
+  background: #30B392;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-gray {
+  background: #EEEEEF;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-pink {
+  background: #F85186;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-yellow {
+  background: #FDA92A;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-blue {
+  background: #0095FF;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-purple {
+  background: #7E12B7;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-lemon {
+  background: #3CD655;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-red {
+  background: #F34237;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-blue-2 {
+  background: #1D80FF;
+}
+.content .stats-cards .stats-card .card-body .stats-value .stats-dark {
+  background: #183555;
+}
+.content .stats-cards .stats-card .card-body .stats-value .number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 9.97048px;
+  line-height: 13px;
+  margin-left: 5px;
+  margin-right: 4px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.content .stats-cards .stats-card .card-body .stats-value .details {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.3183px;
+  line-height: 11px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.content .city-card {
+  background: #FFFFFF;
+  box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
+  border-radius: 6.87889px;
+  margin-bottom: 55px;
+}
+.content .city-card .city-stats .c-header {
+  padding: 17px 27px;
+  border-bottom: 1px solid #ECF0F2;
+}
+@media (max-width: 575.98px) {
+  .content .city-card .city-stats .c-header {
+    padding: 16px;
+  }
+}
+.content .city-card .city-stats .c-header .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18.2963px;
+  line-height: 29px;
+  color: #05004E;
+  margin-bottom: 2px;
+}
+.content .city-card .city-stats .c-header .sub-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #868E96;
+  margin-bottom: 0px;
+}
+.content .city-card .city-stats .c-body {
+  padding: 20px 0px 20px 24px;
+}
+@media (max-width: 575.98px) {
+  .content .city-card .city-stats .c-body {
+    padding: 16px;
+  }
+}
+.content .city-card .city-stats .c-body .line-progress {
+  margin-bottom: 34px;
+}
+.content .city-card .city-stats .c-body .line-progress .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343A40;
+  margin-bottom: 0px;
+}
+.content .city-card .city-stats .c-body .line-progress .total {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #868E96;
+  margin-bottom: 0px;
+}
+.content .city-card .city-stats .c-body .line-progress .progress-bar {
+  background: #F5F5F5;
+  border-radius: 7px;
+  height: 28px;
+}
+.content .city-card .city-stats .c-body .line-progress .progress {
+  height: 100%;
+  background: #3399EE;
+  border-radius: 7px;
+}
+.content .city-card .city-map {
+  padding: 40px;
+}
+.content .city-card .city-map .map {
+  width: 100%;
+  max-height: 250px;
+}
+.content .ageAds .ageChart {
+  background: #FFFFFF;
+  box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
+  border-radius: 6.87889px;
+}
+.content .ageAds .ageChart .a-header {
+  padding: 32px 32px 20px 28px;
+}
+@media (max-width: 575.98px) {
+  .content .ageAds .ageChart .a-header {
+    padding: 16px;
+  }
+}
+.content .ageAds .ageChart .a-header .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #05004E;
+  margin-bottom: 2px;
+}
+.content .ageAds .ageChart .a-header .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #868E96;
+}
+.content .ageAds .ageChart .a-header .tabs-btn {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 4px;
+}
+.content .ageAds .ageChart .a-header .tabs-btn .tab-btn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  color: #1E2029;
+  opacity: 0.6;
+  padding: 4px 16px;
+  border-radius: 16px;
+}
+@media (max-width: 575.98px) {
+  .content .ageAds .ageChart .a-header .tabs-btn .tab-btn {
+    padding: 2px 8px;
+    font-size: 10px;
+  }
+}
+.content .ageAds .ageChart .a-header .tabs-btn .tab-btn.active {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  color: #FFFFFF;
+  opacity: 1;
+  background: linear-gradient(180deg, #31B997 0%, #31B997 100%);
+}
+.content .ageAds .ageChart .line {
+  width: 90%;
+  height: 1px;
+  background-color: #ECF0F2;
+}
+.content .ageAds .ageChart .a-body {
+  padding: 25px 25px 48px 25px;
+}
+.content .ageAds .ageChart .a-body .chart-img {
+  width: 100%;
+}
+.content .ageAds .ageChart .a-body .chart-value {
+  margin-bottom: 38px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+@media (max-width: 575.98px) {
+  .content .ageAds .ageChart .a-body .chart-value {
+    margin-bottom: 0px;
+    margin-right: 16px;
+    margin-top: 20px;
+  }
+}
+.content .ageAds .ageChart .a-body .chart-value .stats-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 66px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.content .ageAds .ageChart .a-body .chart-value .stats-color::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 669px;
+  background-color: white;
+}
+.content .ageAds .ageChart .a-body .chart-value .stats-green {
+  background: #00E096;
+}
+.content .ageAds .ageChart .a-body .chart-value .stats-blue {
+  background: #0095FF;
+}
+.content .ageAds .ageChart .a-body .chart-value .stats-type {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #979699;
+  margin-left: 12px;
+}
+.content .ageAds .ageChart .a-body .chart-value .percentage {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #23005B;
+  margin-bottom: 0px;
+  margin-top: 12px;
+}
+.content .ageAds .adsChart .ads-header {
+  padding: 16px;
+  margin-bottom: 55px;
+}
+.content .ageAds .adsChart .ads-header .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #05004E;
+  margin-bottom: 2px;
+}
+.content .ageAds .adsChart .ads-header .subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5E60;
+  margin-bottom: 0px;
+}
+.content .ageAds .adsChart .ads-header .date-select {
+  width: auto;
+  margin-left: auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  border: 0px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1C1D22;
+  padding: 10px 38px 10px 14px;
+}
+.content .ageAds .adsChart .gx-30px {
+  --bs-gutter-x: 30px;
+}
+.content .ageAds .adsChart .chart-card {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+}
+.content .ageAds .adsChart .title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+.content .ageAds .adsChart .number {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.content .ageAds .adsChart .trend .percentage {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+  margin-bottom: 0px;
+  margin-left: 6px;
+}
+.content .ageAds .adsChart .chart-circle {
+  position: relative;
+}
+.content .ageAds .adsChart .chart-circle .chart-img {
+  width: 58px;
+  height: 58px;
+}
+.content .ageAds .adsChart .chart-circle .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+}/*# sourceMappingURL=statsReportFB.css.map */
