@@ -604,6 +604,9 @@
   width: 100%;
   max-height: 250px;
 }
+.content .ageAds {
+  margin-bottom: 60px;
+}
 .content .ageAds .ageChart {
   background: #FFFFFF;
   box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
@@ -827,4 +830,144 @@
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+}
+.content .top-post {
+  background: #FFFFFF;
+  box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
+  border-radius: 6.87889px;
+}
+.content .top-post .top-header {
+  padding: 20px;
+  border-bottom: 0.5px solid #dfe9f6;
+}
+.content .top-post .top-header .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #05004E;
+  margin-bottom: 2px;
+}
+.content .top-post .top-header .details {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #868E96;
+  max-width: 695px;
+  margin-bottom: 0px;
+}
+.content .top-post table {
+  padding: 0px;
+  margin: 0px;
+}
+.content .top-post table thead tr {
+  padding: 0px;
+}
+.content .top-post table thead tr th {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  padding: 12px 24px !important;
+  vertical-align: middle;
+  border-bottom: 1px solid #ECF0F2 !important;
+}
+.content .top-post table tbody tr:first-child td {
+  padding-top: 16px !important;
+}
+.content .top-post table tbody tr td {
+  padding: 16px 24px !important;
+  vertical-align: middle;
+}
+.content .top-post table tbody tr td .page-img {
+  border-radius: 6px;
+  width: 125px;
+  height: 86px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 18px;
+}
+.content .top-post table tbody tr td .page-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+.content .top-post table tbody tr td .page-details {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0px;
+}
+.content .top-post table tbody tr td .fb-icon {
+  width: 44px;
+  margin-right: 8px;
+}
+.content .top-post table tbody tr td .fb-post {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #1E293B;
+  margin: 0px !important;
+}
+.content .top-post table tbody tr td .fb-post-date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0px;
+}
+.content .top-post table tbody tr td .percentage {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: 0.1px;
+  color: #1E293B;
+  margin-bottom: 0px;
+}
+.content .top-post table tbody tr td .percentage-icon {
+  width: 20px;
+  margin-left: 8px;
+}
+.content .top-post table tbody tr td .total-people {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.content .top-post table tbody tr td .numtext {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #183555;
+}
+.content .top-post table tbody tr td .text-red {
+  color: #FF6A77;
 }/*# sourceMappingURL=statsReportFB.css.map */

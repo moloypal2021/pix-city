@@ -417,6 +417,8 @@
     }
 
     .ageAds {
+        margin-bottom: 60px;
+
         .ageChart {
             background: #FFFFFF;
             box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
@@ -671,6 +673,175 @@
                     line-height: 15px;
                     color: #333333;
                 }
+            }
+        }
+    }
+
+    .top-post {
+        background: #FFFFFF;
+        box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
+        border-radius: 6.87889px;
+
+        .top-header {
+            padding: 20px;
+            border-bottom: 0.5px solid #dfe9f6;
+
+            .title {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+                color: #05004E;
+                margin-bottom: 2px;
+            }
+
+            .details {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #868E96;
+                max-width: 695px;
+                margin-bottom: 0px;
+            }
+        }
+
+        table {
+            padding: 0px;
+            margin: 0px;
+
+
+
+            thead tr {
+                padding: 0px;
+
+                th {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #000000;
+                    padding: 12px 24px !important;
+                    vertical-align: middle;
+                    border-bottom: 1px solid #ECF0F2 !important;
+                }
+            }
+
+            tbody {
+                tr {
+                    &:first-child {
+                        td {
+                            padding-top: 16px !important;
+                        }
+                    }
+
+                    td {
+
+                        padding: 16px 24px !important;
+                        vertical-align: middle;
+
+                        .page-img {
+                            border-radius: 6px;
+                            width: 125px;
+                            height: 86px;
+                            object-fit: cover;
+                            margin-right: 18px;
+                        }
+
+                        .page-title {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #000000;
+                            margin-bottom: 6px;
+                        }
+
+                        .page-details {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: rgba(0, 0, 0, 0.5);
+                            margin-bottom: 0px;
+                        }
+
+                        .fb-icon {
+                            width: 44px;
+                            margin-right: 8px;
+                        }
+
+                        .fb-post {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.1px;
+                            color: #1E293B;
+                            margin: 0px !important;
+                        }
+
+                        .fb-post-date {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: rgba(0, 0, 0, 0.5);
+                            margin-bottom: 0px;
+                        }
+
+                        .percentage {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-align: right;
+                            letter-spacing: 0.1px;
+                            color: #1E293B;
+                            margin-bottom: 0px;
+                        }
+
+                        .percentage-icon {
+                            width: 20px;
+                            margin-left: 8px;
+                        }
+
+                        .total-people {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            letter-spacing: 1px;
+                            color: rgba(0, 0, 0, 0.5);
+                            margin-top: 20px;
+                            margin-bottom: 0px;
+                        }
+
+                        .numtext {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 24px;
+                            letter-spacing: 0.1px;
+                            color: #183555;
+                        }
+
+                        .text-red {
+                            color: #FF6A77;
+                        }
+                    }
+                }
+
             }
         }
     }
