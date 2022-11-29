@@ -727,6 +727,7 @@
                     padding: 12px 24px !important;
                     vertical-align: middle;
                     border-bottom: 1px solid #ECF0F2 !important;
+                    white-space: nowrap;
                 }
             }
 
@@ -749,6 +750,11 @@
                             height: 86px;
                             object-fit: cover;
                             margin-right: 18px;
+
+                            @include br-down(md) {
+                                width: 90px;
+                                flex-shrink: 0;
+                            }
                         }
 
                         .page-title {
@@ -759,6 +765,7 @@
                             line-height: 18px;
                             color: #000000;
                             margin-bottom: 6px;
+                            white-space: nowrap;
                         }
 
                         .page-details {
@@ -785,6 +792,7 @@
                             letter-spacing: 0.1px;
                             color: #1E293B;
                             margin: 0px !important;
+                            white-space: nowrap;
                         }
 
                         .fb-post-date {

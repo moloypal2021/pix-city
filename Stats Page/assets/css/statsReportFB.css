@@ -876,6 +876,7 @@
   padding: 12px 24px !important;
   vertical-align: middle;
   border-bottom: 1px solid #ECF0F2 !important;
+  white-space: nowrap;
 }
 .content .top-post table tbody tr:first-child td {
   padding-top: 16px !important;
@@ -892,6 +893,12 @@
      object-fit: cover;
   margin-right: 18px;
 }
+@media (max-width: 767.98px) {
+  .content .top-post table tbody tr td .page-img {
+    width: 90px;
+    flex-shrink: 0;
+  }
+}
 .content .top-post table tbody tr td .page-title {
   font-family: "Montserrat";
   font-style: normal;
@@ -900,6 +907,7 @@
   line-height: 18px;
   color: #000000;
   margin-bottom: 6px;
+  white-space: nowrap;
 }
 .content .top-post table tbody tr td .page-details {
   font-family: "Montserrat";
@@ -923,6 +931,7 @@
   letter-spacing: 0.1px;
   color: #1E293B;
   margin: 0px !important;
+  white-space: nowrap;
 }
 .content .top-post table tbody tr td .fb-post-date {
   font-family: "Montserrat";
