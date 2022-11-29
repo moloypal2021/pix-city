@@ -267,48 +267,38 @@
   line-height: 17px;
   color: #637381;
 }
-.content .monthWeeklyTab {
-  margin-top: 16px;
+.content .grettings {
+  background: #CDE9EF;
+  border-radius: 2px;
+  margin-top: 48px;
+  padding: 24px;
+  background-image: url(../images/Shapes-bg.png);
+  background-repeat: no-repeat;
+  background-position: center right 10%;
 }
-@media (min-width: 992px) {
-  .content .monthWeeklyTab {
-    margin-top: -8px;
-  }
+.content .grettings .title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.25px;
+  color: #1E293B;
+  margin-bottom: 4px;
 }
-.content .monthWeeklyTab .btn-box {
-  background: #F5F9FF;
-  border-radius: 5px;
-  padding: 6px 7px;
-}
-.content .monthWeeklyTab .btn-box .btn {
-  font-family: "Montserrat";
+.content .grettings .details {
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.03em;
-  color: #000000;
-  padding: 7px 18px;
-}
-.content .monthWeeklyTab .btn-box .btn.active {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.03em;
-  color: #000000;
-  background: #FFFFFF;
-  border-radius: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #475569;
+  margin-bottom: 0px;
 }
 .content .profile-details {
   margin-bottom: 30px;
-  margin-top: 20px;
-}
-@media (min-width: 992px) {
-  .content .profile-details {
-    margin-top: -6px;
-  }
+  margin-top: 48px;
 }
 .content .profile-details .profile-pic {
   width: 75px;
@@ -361,8 +351,8 @@
 .content .socialFilterTab .social-tab .tab-btn .icon {
   width: 60px;
 }
-.content .socialFilterTab .social-tab .tab-btn.active {
-  background: rgba(0, 164, 255, 0.2);
+.content .socialFilterTab .social-tab .tab-btn.active-instagram {
+  background: rgba(255, 111, 66, 0.2);
 }
 .content .socialFilterTab .dateFilter .weekFilter {
   background: #FFFFFF;
@@ -396,7 +386,7 @@
   color: #1E2029;
   opacity: 0.6;
   padding: 4px 27px;
-  border-radius: 16px;
+  border-radius: 5px;
 }
 .content .socialFilterTab .dateFilter .weekFilter .filter-btn.active {
   font-family: "Montserrat";
@@ -430,220 +420,172 @@
   width: 100%;
 }
 .content .stats-cards {
-  padding-bottom: 60px;
+  margin-bottom: 70px;
 }
 .content .stats-cards .stats-card {
+  position: relative;
   background: #FFFFFF;
-  box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
-  border-radius: 6.87889px;
-  height: 100%;
+  border-radius: 16px;
+  padding: 24px 24px 34px 24px;
+  filter: drop-shadow(0px 12px 50px rgba(0, 0, 0, 0.04));
 }
-.content .stats-cards .stats-card .card-header {
+.content .stats-cards .stats-card .bar {
+  width: 7px;
+  height: 73px;
+  border-radius: 0px 100px 100px 0px;
+  position: absolute;
+  left: 0;
+  top: 24px;
+}
+.content .stats-cards .stats-card .bar-purple {
+  background: #9664FF;
+}
+.content .stats-cards .stats-card .bar-red {
+  background: #F82E2E;
+}
+.content .stats-cards .stats-card .bar-yellow {
+  background: #FFB200;
+}
+.content .stats-cards .stats-card .bar-teal {
+  background: #0FA0DE;
+}
+.content .stats-cards .stats-card .s-title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18.2963px;
   line-height: 29px;
   color: #05004E;
-  padding: 18px;
-  background-color: transparent;
-  border-bottom: 0.859862px solid #ECF0F2;
+  margin-bottom: 16px;
 }
-.content .stats-cards .stats-card .card-body {
-  padding: 14px 17px 16px 17px;
-}
-.content .stats-cards .stats-card .card-body .chart-img {
-  width: 100%;
-  max-width: 140px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-color {
-  width: 12px;
-  height: 12px;
-  border-radius: 66px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-color::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 669px;
-  background-color: white;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-green {
-  background: #30B392;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-gray {
-  background: #EEEEEF;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-pink {
-  background: #F85186;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-yellow {
-  background: #FDA92A;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-blue {
-  background: #0095FF;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-purple {
-  background: #7E12B7;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-lemon {
-  background: #3CD655;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-red {
-  background: #F34237;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-blue-2 {
-  background: #1D80FF;
-}
-.content .stats-cards .stats-card .card-body .stats-value .stats-dark {
-  background: #183555;
-}
-.content .stats-cards .stats-card .card-body .stats-value .number {
+.content .stats-cards .stats-card .number {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 9.97048px;
-  line-height: 13px;
-  margin-left: 5px;
-  margin-right: 4px;
-  color: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  color: #1E2029;
+  margin-bottom: 10px;
 }
-.content .stats-cards .stats-card .card-body .stats-value .details {
+.content .stats-cards .stats-card .text-percentage {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 10.3183px;
-  line-height: 11px;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.018em;
+  color: #00B69B;
+  margin-bottom: 0px;
+  margin-right: 6px;
 }
-.content .city-card {
+.content .stats-cards .stats-card .text-gray {
+  color: #A0A0A0;
+}
+.content .stats-cards .stats-card .text-red {
+  color: #FF3A29;
+}
+.content .stats-cards .stats-card .text-up {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #606060;
+  margin-bottom: 0px;
+}
+.content .stats-cards .stats-card .avater-icon {
+  width: 36px;
+  margin-right: 6px;
+}
+.content .stats-cards .stats-card .value-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #151D48;
+  margin-bottom: 0px;
+  margin-right: auto;
+}
+.content .stats-cards .stats-card .number-2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: right;
+  color: #183555;
+  margin-bottom: 0px;
+}
+.content .stats-cards .stats-card .graphic {
+  height: 44px;
+}
+.content .cityAgeGender {
+  margin-bottom: 106px;
+}
+.content .cityAgeGender .cityCard {
+  filter: drop-shadow(0px 24.6174px 102.572px rgba(0, 0, 0, 0.04));
   background: #FFFFFF;
-  box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
-  border-radius: 6.87889px;
-  margin-bottom: 55px;
+  border-radius: 32.8232px;
+  padding: 40px;
+  height: 100%;
 }
-.content .city-card .city-stats .c-header {
-  padding: 17px 27px;
-  border-bottom: 1px solid #ECF0F2;
-}
-@media (max-width: 575.98px) {
-  .content .city-card .city-stats .c-header {
-    padding: 16px;
-  }
-}
-.content .city-card .city-stats .c-header .title {
+.content .cityAgeGender .cityCard .title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18.2963px;
   line-height: 29px;
   color: #05004E;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
-.content .city-card .city-stats .c-header .sub-title {
+.content .cityAgeGender .cityCard .details {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #868E96;
-  margin-bottom: 0px;
-}
-.content .city-card .city-stats .c-body {
-  padding: 20px 0px 20px 24px;
-}
-@media (max-width: 575.98px) {
-  .content .city-card .city-stats .c-body {
-    padding: 16px;
-  }
-}
-.content .city-card .city-stats .c-body .line-progress {
-  margin-bottom: 34px;
-}
-.content .city-card .city-stats .c-body .line-progress .title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #343A40;
-  margin-bottom: 0px;
-}
-.content .city-card .city-stats .c-body .line-progress .total {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: #868E96;
-  margin-bottom: 0px;
+  margin-bottom: 65px;
 }
-.content .city-card .city-stats .c-body .line-progress .progress-bar {
-  background: #F5F5F5;
-  border-radius: 7px;
-  height: 28px;
-}
-.content .city-card .city-stats .c-body .line-progress .progress {
-  height: 100%;
-  background: #3399EE;
-  border-radius: 7px;
-}
-.content .city-card .city-map {
-  padding: 40px;
-}
-.content .city-card .city-map .map {
+.content .cityAgeGender .cityCard .tube-chart {
   width: 100%;
-  max-height: 250px;
+  max-width: 550px;
 }
-.content .ageAds {
-  margin-bottom: 60px;
-}
-.content .ageAds .ageChart {
+.content .cityAgeGender .ageCard {
+  filter: drop-shadow(0px 24.6174px 102.572px rgba(0, 0, 0, 0.04));
   background: #FFFFFF;
-  box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
-  border-radius: 6.87889px;
+  border-radius: 32.8232px;
+  padding: 40px;
+  height: 100%;
 }
-.content .ageAds .ageChart .a-header {
-  padding: 32px 32px 20px 28px;
-}
-@media (max-width: 575.98px) {
-  .content .ageAds .ageChart .a-header {
-    padding: 16px;
-  }
-}
-.content .ageAds .ageChart .a-header .title {
-  font-family: "Poppins";
+.content .cityAgeGender .ageCard .title {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 18.2963px;
+  line-height: 29px;
   color: #05004E;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
-.content .ageAds .ageChart .a-header .subtitle {
+.content .cityAgeGender .ageCard .details {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #868E96;
+  margin-bottom: 25px;
 }
-.content .ageAds .ageChart .a-header .tabs-btn {
+.content .cityAgeGender .ageCard .tabs-btn {
   background: #FFFFFF;
   box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
   padding: 4px;
+  margin-bottom: 20px;
 }
-.content .ageAds .ageChart .a-header .tabs-btn .tab-btn {
+.content .cityAgeGender .ageCard .tabs-btn .tab-btn {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -656,12 +598,12 @@
   border-radius: 16px;
 }
 @media (max-width: 575.98px) {
-  .content .ageAds .ageChart .a-header .tabs-btn .tab-btn {
+  .content .cityAgeGender .ageCard .tabs-btn .tab-btn {
     padding: 2px 8px;
     font-size: 10px;
   }
 }
-.content .ageAds .ageChart .a-header .tabs-btn .tab-btn.active {
+.content .cityAgeGender .ageCard .tabs-btn .tab-btn.active {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -672,77 +614,18 @@
   opacity: 1;
   background: linear-gradient(180deg, #31B997 0%, #31B997 100%);
 }
-.content .ageAds .ageChart .line {
-  width: 90%;
-  height: 1px;
-  background-color: #ECF0F2;
-}
-.content .ageAds .ageChart .a-body {
-  padding: 25px 25px 48px 25px;
-}
-.content .ageAds .ageChart .a-body .chart-img {
+.content .cityAgeGender .ageCard .chart {
   width: 100%;
 }
-.content .ageAds .ageChart .a-body .chart-value {
-  margin-bottom: 38px;
-  margin-right: 0px;
-  margin-top: 0px;
+.content .adsSummary {
+  max-width: 1200px;
+  margin-bottom: 70px;
 }
-@media (max-width: 575.98px) {
-  .content .ageAds .ageChart .a-body .chart-value {
-    margin-bottom: 0px;
-    margin-right: 16px;
-    margin-top: 20px;
-  }
+.content .adsSummary .titleArea {
+  max-width: 1024px;
+  margin-bottom: 30px;
 }
-.content .ageAds .ageChart .a-body .chart-value .stats-color {
-  width: 12px;
-  height: 12px;
-  border-radius: 66px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.content .ageAds .ageChart .a-body .chart-value .stats-color::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 669px;
-  background-color: white;
-}
-.content .ageAds .ageChart .a-body .chart-value .stats-green {
-  background: #00E096;
-}
-.content .ageAds .ageChart .a-body .chart-value .stats-blue {
-  background: #0095FF;
-}
-.content .ageAds .ageChart .a-body .chart-value .stats-type {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  color: #979699;
-  margin-left: 12px;
-}
-.content .ageAds .ageChart .a-body .chart-value .percentage {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: #23005B;
-  margin-bottom: 0px;
-  margin-top: 12px;
-}
-.content .ageAds .adsChart .ads-header {
-  padding: 16px;
-  margin-bottom: 55px;
-}
-.content .ageAds .adsChart .ads-header .title {
+.content .adsSummary .titleArea .title {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -751,7 +634,7 @@
   color: #05004E;
   margin-bottom: 2px;
 }
-.content .ageAds .adsChart .ads-header .subtitle {
+.content .adsSummary .titleArea .details {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -760,7 +643,7 @@
   color: #5D5E60;
   margin-bottom: 0px;
 }
-.content .ageAds .adsChart .ads-header .date-select {
+.content .adsSummary .titleArea .date-select {
   width: auto;
   margin-left: auto;
   background-color: #FFFFFF;
@@ -775,16 +658,17 @@
   color: #1C1D22;
   padding: 10px 38px 10px 14px;
 }
-.content .ageAds .adsChart .gx-30px {
-  --bs-gutter-x: 30px;
+.content .adsSummary .g-44px {
+  --bs-gutter-y: 44px;
+  --bs-gutter-x: 44px;
 }
-.content .ageAds .adsChart .chart-card {
+.content .adsSummary .chart-card {
   background: #FFFFFF;
   box-shadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
   border-radius: 16px;
   padding: 20px;
 }
-.content .ageAds .adsChart .title {
+.content .adsSummary .chart-card .title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -793,7 +677,7 @@
   color: #000000;
   margin-bottom: 6px;
 }
-.content .ageAds .adsChart .number {
+.content .adsSummary .chart-card .number {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
@@ -802,7 +686,7 @@
   color: #000000;
   margin-bottom: 8px;
 }
-.content .ageAds .adsChart .trend .percentage {
+.content .adsSummary .chart-card .trend .percentage {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
@@ -812,14 +696,14 @@
   margin-bottom: 0px;
   margin-left: 6px;
 }
-.content .ageAds .adsChart .chart-circle {
+.content .adsSummary .chart-card .chart-circle {
   position: relative;
 }
-.content .ageAds .adsChart .chart-circle .chart-img {
+.content .adsSummary .chart-card .chart-circle .chart-img {
   width: 58px;
   height: 58px;
 }
-.content .ageAds .adsChart .chart-circle .percentage {
+.content .adsSummary .chart-card .chart-circle .percentage {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -835,7 +719,7 @@
   background: #FFFFFF;
   box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
   border-radius: 6.87889px;
-  padding-bottom: 43px;
+  padding-bottom: 65px;
 }
 .content .top-post .top-header {
   padding: 20px;
@@ -981,4 +865,4 @@
 }
 .content .top-post table tbody tr td .text-red {
   color: #FF6A77;
-}/*# sourceMappingURL=statsReportFB.css.map */
+}/*# sourceMappingURL=statsReportInstagram.css.map */

@@ -1,6 +1,5 @@
 @import "style";
 
-
 .content {
     padding-top: 30px;
     padding-bottom: 130px;
@@ -20,50 +19,44 @@
         }
     }
 
-    .monthWeeklyTab {
-        margin-top: 16px;
+    .grettings {
+        background: #CDE9EF;
+        border-radius: 2px;
+        margin-top: 48px;
+        padding: 24px;
+        background-image: url(../images/Shapes-bg.png);
+        background-repeat: no-repeat;
+        background-position: center right 10%;
 
-        @include br-up(lg) {
-            margin-top: -8px;
+        .title {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+            letter-spacing: -0.25px;
+            color: #1E293B;
+            margin-bottom: 4px;
         }
 
-        .btn-box {
-            background: #F5F9FF;
-            border-radius: 5px;
-            padding: 6px 7px;
-
-            .btn {
-                font-family: 'Montserrat';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 15px;
-                letter-spacing: 0.03em;
-                color: #000000;
-                padding: 7px 18px;
-
-                &.active {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 12px;
-                    line-height: 15px;
-                    letter-spacing: 0.03em;
-                    color: #000000;
-                    background: #FFFFFF;
-                    border-radius: 4px;
-                }
-            }
+        .details {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.25px;
+            color: #475569;
+            margin-bottom: 0px;
         }
     }
 
+
     .profile-details {
         margin-bottom: 30px;
-        margin-top: 20px;
+        margin-top: 48px;
 
-        @include br-up(lg) {
-            margin-top: -6px;
-        }
+
 
         .profile-pic {
             width: 75px;
@@ -126,13 +119,14 @@
                     width: 60px;
                 }
 
-                &.active {
-                    background: rgba(0, 164, 255, 0.2);
+                &.active-instagram {
+                    background: rgba(255, 111, 66, 0.2);
                 }
             }
         }
 
         .dateFilter {
+
             .weekFilter {
                 background: #FFFFFF;
                 box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
@@ -151,6 +145,9 @@
                     margin-right: 75px;
                 }
 
+
+
+
                 .filter-btn {
                     font-family: 'Montserrat';
                     font-style: normal;
@@ -164,7 +161,7 @@
 
                     opacity: 0.6;
                     padding: 4px 27px;
-                    border-radius: 16px;
+                    border-radius: 5px;
 
                     &.active {
                         font-family: 'Montserrat';
@@ -204,420 +201,289 @@
         }
     }
 
+
     .stats-cards {
-        padding-bottom: 60px;
+        margin-bottom: 70px;
 
         .stats-card {
+            position: relative;
             background: #FFFFFF;
-            box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
-            border-radius: 6.87889px;
-            height: 100%;
+            border-radius: 16px;
+            padding: 24px 24px 34px 24px;
+            filter: drop-shadow(0px 12px 50px rgba(0, 0, 0, 0.04));
 
-            .card-header {
+            .bar {
+                width: 7px;
+                height: 73px;
+                border-radius: 0px 100px 100px 0px;
+                position: absolute;
+                left: 0;
+                top: 24px;
+            }
+
+            .bar-purple {
+                background: #9664FF;
+            }
+
+            .bar-red {
+                background: #F82E2E;
+            }
+
+            .bar-yellow {
+                background: #FFB200;
+            }
+
+            .bar-teal {
+                background: #0FA0DE;
+            }
+
+            .s-title {
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 600;
                 font-size: 18.2963px;
                 line-height: 29px;
                 color: #05004E;
-                padding: 18px;
-                background-color: transparent;
-                border-bottom: 0.859862px solid #ECF0F2;
+                margin-bottom: 16px;
             }
 
-            .card-body {
+            .number {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 32px;
+                letter-spacing: -0.018em;
+                color: #1E2029;
+                margin-bottom: 10px;
+            }
 
-                padding: 14px 17px 16px 17px;
+            .text-percentage {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: -0.018em;
+                color: #00B69B;
+                margin-bottom: 0px;
+                margin-right: 6px;
+            }
 
-                .chart-img {
-                    width: 100%;
-                    max-width: 140px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-bottom: 25px;
-                }
+            .text-gray {
+                color: #A0A0A0;
+            }
 
-                .stats-value {
-                    .stats-color {
-                        width: 12px;
-                        height: 12px;
-                        border-radius: 66px;
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-shrink: 0;
+            .text-red {
+                color: #FF3A29;
+            }
 
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            width: 6px;
-                            height: 6px;
-                            border-radius: 669px;
-                            background-color: white;
-                        }
-                    }
+            .text-up {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #606060;
+                margin-bottom: 0px;
+            }
 
-                    .stats-green {
-                        background: #30B392;
-                    }
+            .avater-icon {
+                width: 36px;
+                margin-right: 6px;
+            }
 
-                    .stats-gray {
-                        background: #EEEEEF;
-                    }
+            .value-text {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 16px;
+                color: #151D48;
+                margin-bottom: 0px;
+                margin-right: auto;
+            }
 
-                    .stats-pink {
-                        background: #F85186;
-                    }
+            .number-2 {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
+                text-align: right;
+                color: #183555;
+                margin-bottom: 0px;
+            }
 
-                    .stats-yellow {
-                        background: #FDA92A;
-                    }
-
-                    .stats-blue {
-                        background: #0095FF;
-                    }
-
-                    .stats-purple {
-                        background: #7E12B7;
-                    }
-
-                    .stats-lemon {
-                        background: #3CD655;
-                    }
-
-                    .stats-red {
-                        background: #F34237;
-                    }
-
-                    .stats-blue-2 {
-                        background:
-                            #1D80FF;
-                    }
-
-                    .stats-dark {
-                        background: #183555;
-                    }
-
-                    .number {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 9.97048px;
-                        line-height: 13px;
-                        margin-left: 5px;
-                        margin-right: 4px;
-
-                        color: rgba(0, 0, 0, 0.7);
-
-                    }
-
-                    .details {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 10.3183px;
-                        line-height: 11px;
-                        color: rgba(0, 0, 0, 0.5);
-                    }
-                }
+            .graphic {
+                height: 44px;
             }
         }
     }
 
-    .city-card {
-        background: #FFFFFF;
-        box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
-        border-radius: 6.87889px;
-        margin-bottom: 55px;
+    .cityAgeGender {
+        margin-bottom: 106px;
 
-        .city-stats {
-            .c-header {
-                padding: 17px 27px;
-                border-bottom: 1px solid #ECF0F2;
-
-                @include br-down(sm) {
-                    padding: 16px;
-                }
-
-                .title {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 18.2963px;
-                    line-height: 29px;
-                    color: #05004E;
-                    margin-bottom: 2px;
-                }
-
-                .sub-title {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 15px;
-                    color: #868E96;
-                    margin-bottom: 0px;
-                }
-            }
-
-            .c-body {
-                padding: 20px 0px 20px 24px;
-
-                @include br-down(sm) {
-                    padding: 16px;
-                }
-
-                .line-progress {
-                    margin-bottom: 34px;
-
-                    .title {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 20px;
-                        color: #343A40;
-                        margin-bottom: 0px;
-                    }
-
-                    .total {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 17px;
-                        color: #868E96;
-                        margin-bottom: 0px;
-                    }
-
-                    .progress-bar {
-                        background: #F5F5F5;
-                        border-radius: 7px;
-                        height: 28px;
-                    }
-
-                    .progress {
-                        height: 100%;
-                        background: #3399EE;
-                        border-radius: 7px;
-                    }
-                }
-            }
-        }
-
-        .city-map {
-            padding: 40px;
-
-            .map {
-                width: 100%;
-                max-height: 250px;
-            }
-        }
-    }
-
-    .ageAds {
-        margin-bottom: 60px;
-
-        .ageChart {
+        .cityCard {
+            filter: drop-shadow(0px 24.6174px 102.572px rgba(0, 0, 0, 0.04));
             background: #FFFFFF;
-            box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
-            border-radius: 6.87889px;
+            border-radius: 32.8232px;
+            padding: 40px;
+            height: 100%;
 
-            .a-header {
-                padding: 32px 32px 20px 28px;
+            .title {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18.2963px;
+                line-height: 29px;
+                color: #05004E;
+                margin-bottom: 4px;
+            }
 
-                @include br-down(sm) {
-                    padding: 16px;
-                }
+            .details {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #868E96;
+                margin-bottom: 65px;
+            }
 
-                .title {
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 32px;
-                    color: #05004E;
-                    margin-bottom: 2px;
-                }
+            .tube-chart {
+                width: 100%;
+                max-width: 550px;
+            }
+        }
 
-                .subtitle {
+        .ageCard {
+            filter: drop-shadow(0px 24.6174px 102.572px rgba(0, 0, 0, 0.04));
+            background: #FFFFFF;
+            border-radius: 32.8232px;
+            padding: 40px;
+            height: 100%;
+
+            .title {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18.2963px;
+                line-height: 29px;
+                color: #05004E;
+                margin-bottom: 4px;
+            }
+
+            .details {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #868E96;
+                margin-bottom: 25px;
+            }
+
+            .tabs-btn {
+                background: #FFFFFF;
+                box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
+                border-radius: 16px;
+                padding: 4px;
+                margin-bottom: 20px;
+
+                .tab-btn {
                     font-family: 'Montserrat';
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: 700;
                     font-size: 12px;
-                    line-height: 15px;
-                    color: #868E96;
-                }
-
-                .tabs-btn {
-                    background: #FFFFFF;
-                    box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
+                    line-height: 32px;
+                    letter-spacing: -0.018em;
+                    color: #1E2029;
+                    opacity: 0.6;
+                    padding: 4px 16px;
                     border-radius: 16px;
-                    padding: 4px;
 
-                    .tab-btn {
+                    @include br-down(sm) {
+                        padding: 2px 8px;
+                        font-size: 10px;
+                    }
+
+                    &.active {
                         font-family: 'Montserrat';
                         font-style: normal;
                         font-weight: 700;
                         font-size: 12px;
                         line-height: 32px;
                         letter-spacing: -0.018em;
-                        color: #1E2029;
-                        opacity: 0.6;
-                        padding: 4px 16px;
-                        border-radius: 16px;
-
-                        @include br-down(sm) {
-                            padding: 2px 8px;
-                            font-size: 10px;
-                        }
-
-                        &.active {
-                            font-family: 'Montserrat';
-                            font-style: normal;
-                            font-weight: 700;
-                            font-size: 12px;
-                            line-height: 32px;
-                            letter-spacing: -0.018em;
-                            color: #FFFFFF;
-                            opacity: 1;
-                            background: linear-gradient(180deg, #31B997 0%, #31B997 100%);
-                        }
+                        color: #FFFFFF;
+                        opacity: 1;
+                        background: linear-gradient(180deg, #31B997 0%, #31B997 100%);
                     }
                 }
             }
 
-            .line {
-                width: 90%;
-                height: 1px;
-                background-color: #ECF0F2;
-            }
-
-            .a-body {
-                padding: 25px 25px 48px 25px;
-
-                .chart-img {
-                    width: 100%;
-                }
-
-                .chart-value {
-                    margin-bottom: 38px;
-                    margin-right: 0px;
-                    margin-top: 0px;
-
-                    @include br-down(sm) {
-                        margin-bottom: 0px;
-                        margin-right: 16px;
-                        margin-top: 20px;
-                    }
-
-                    .stats-color {
-                        width: 12px;
-                        height: 12px;
-                        border-radius: 66px;
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-shrink: 0;
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            width: 6px;
-                            height: 6px;
-                            border-radius: 669px;
-                            background-color: white;
-                        }
-                    }
-
-                    .stats-green {
-                        background: #00E096;
-                    }
-
-                    .stats-blue {
-                        background: #0095FF;
-                    }
-
-                    .stats-type {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 500;
-                        font-size: 24px;
-                        line-height: 29px;
-                        color: #979699;
-                        margin-left: 12px;
-                    }
-
-                    .percentage {
-                        font-family: 'Montserrat';
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 24px;
-                        line-height: 29px;
-
-                        color: #23005B;
-
-                        margin-bottom: 0px;
-                        margin-top: 12px;
-                    }
-                }
+            .chart {
+                width: 100%;
             }
         }
 
-        .adsChart {
-            .ads-header {
-                padding: 16px;
-                margin-bottom: 55px;
+    }
 
-                .title {
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 20px;
-                    line-height: 32px;
-                    color: #05004E;
-                    margin-bottom: 2px;
-                }
+    .adsSummary {
+        max-width: 1200px;
+        margin-bottom: 70px;
 
-                .subtitle {
-                    font-family: 'Montserrat';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 14px;
-                    line-height: 17px;
-                    color: #5D5E60;
-                    margin-bottom: 0px;
-                }
+        .titleArea {
+            max-width: 1024px;
+            margin-bottom: 30px;
 
-                .date-select {
-                    width: auto;
-                    margin-left: auto;
-                    background-color: #FFFFFF;
-                    box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
-                    border-radius: 16px;
-                    border: 0px;
-                    font-family: 'Inter';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 15px;
-                    color: #1C1D22;
-                    padding: 10px 38px 10px 14px;
-                }
+            .title {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+                color: #05004E;
+                margin-bottom: 2px;
             }
 
-            .gx-30px {
-                --bs-gutter-x: 30px;
+            .details {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #5D5E60;
+                margin-bottom: 0px;
             }
 
-            .chart-card {
-                background: #FFFFFF;
-                box-shadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
+            .date-select {
+                width: auto;
+                margin-left: auto;
+                background-color: #FFFFFF;
+                box-shadow: 0px 12px 50px rgba(0, 0, 0, 0.04);
                 border-radius: 16px;
-                padding: 20px;
+                border: 0px;
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #1C1D22;
+                padding: 10px 38px 10px 14px;
             }
+        }
+
+        .g-44px {
+            --bs-gutter-y: 44px;
+            --bs-gutter-x: 44px;
+        }
+
+        .chart-card {
+            background: #FFFFFF;
+            box-shadow: 0px 8px 16px rgba(143, 149, 178, 0.15);
+            border-radius: 16px;
+            padding: 20px;
 
             .title {
                 font-family: 'Montserrat';
@@ -675,13 +541,15 @@
                 }
             }
         }
+
+
     }
 
     .top-post {
         background: #FFFFFF;
         box-shadow: 0px 1.71972px 10.3183px rgba(37, 51, 66, 0.15);
         border-radius: 6.87889px;
-        padding-bottom: 43px;
+        padding-bottom: 65px;
 
         .top-header {
             padding: 20px;
